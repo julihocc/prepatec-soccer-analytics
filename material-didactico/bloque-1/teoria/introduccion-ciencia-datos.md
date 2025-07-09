@@ -133,11 +133,29 @@ La ciencia de datos es un campo interdisciplinario que utiliza métodos científ
 - Democratización del acceso
 - Educación de stakeholders
 
-## Actividades Prácticas
+## De la Teoría a la Práctica: Guía de los Cuadernos Semanales
 
-1. **Discusión grupal:** Identificar ejemplos de uso de datos en deportes
-2. **Análisis de caso:** Revisar un ejemplo de análisis exitoso
-3. **Reflexión:** Considerar implicaciones éticas del análisis de datos
+Este documento ha sentado las bases teóricas. Ahora es el momento de aplicar estos conceptos utilizando los cuadernos de práctica interactivos que encontrarás en la carpeta `practica`. Cada cuaderno semanal se enfoca en un aspecto del proceso de ciencia de datos:
+
+- **Semana 1: Introducción y Exploración (`semana-1-exploracion-inicial.ipynb`)**
+  - **Conceptos aplicados:** Recolección y procesamiento inicial de datos.
+  - **Actividad:** Te familiarizarás con el dataset `champs.csv`, aprenderás a cargarlo con `pandas` y a usar funciones como `.head()`, `.info()` y `.shape` para entender su estructura básica, tal como se describe en la sección "Herramientas y Tecnologías".
+
+- **Semana 2: Tipos de Datos y Consultas Básicas (`semana-2-consultas-basicas.ipynb`)**
+  - **Conceptos aplicados:** Tipos de datos en el fútbol, recolección de datos.
+  - **Actividad:** Aprenderás a seleccionar columnas específicas y a filtrar filas basadas en condiciones (ej. partidos de un equipo o de una fase), poniendo en práctica la manipulación de "Datos de Resultados".
+
+- **Semana 3: Estadística Descriptiva (`semana-3-estadistica-descriptiva.ipynb`)**
+  - **Conceptos aplicados:** Análisis estadístico.
+  - **Actividad:** Calcularás estadísticas fundamentales como la media, mediana y desviación estándar de los goles. Utilizarás `groupby()` para realizar análisis agregados, una técnica clave en el "Análisis de Rendimiento".
+
+- **Semana 4: Visualización de Datos (`semana-4-visualizacion-datos.ipynb`)**
+  - **Conceptos aplicados:** Visualización y comunicación de resultados.
+  - **Actividad:** Crearás histogramas, gráficos de barras y diagramas de caja con `matplotlib` y `seaborn` para visualizar distribuciones y hacer comparaciones, un pilar fundamental para la "Interpretación" de insights.
+
+- **Semana 5: Análisis e Interpretación (`semana-5-analisis-interpretacion.ipynb`)**
+  - **Conceptos aplicados:** Interpretación, generación de insights, análisis de rendimiento.
+  - **Actividad:** Integrarás todas las habilidades adquiridas para responder preguntas de análisis complejas, como la "ventaja de local" o si los partidos se vuelven más cerrados en las fases finales. El objetivo es pasar de los datos a las conclusiones.
 
 ## Recursos Adicionales
 

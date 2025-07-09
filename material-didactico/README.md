@@ -40,8 +40,89 @@
 3. Completa las actividades prácticas antes de continuar
 4. Utiliza los recursos de referencia cuando sea necesario
 
-## Requisitos Técnicos
+## 📊 Estado del Desarrollo
 
+### ✅ Completado
+- **Estructura general** del curso con organización por bloques
+- **README principal** con información completa del curso
+- **Bloque 1: Fundamentos** (100% completo)
+  - Teoría: Introducción a ciencia de datos
+  - Práctica: Notebook completo de exploración
+  - Evaluación: Rúbricas y criterios
+- **Bloque 2: Modelado Avanzado** (100% completo)
+  - Teoría: Modelado predictivo y optimización
+  - Práctica: Notebook completo de modelos avanzados
+  - Evaluación: Proyecto de modelo predictivo
+  - Recursos: Ejercicios complementarios
+- **Bloque 3: Aplicaciones** (estructura completa)
+  - Teoría: Aplicaciones en producción
+  - Evaluación: Proyecto final integral
+  - README con cronograma detallado
+- **Material de referencias** y recursos completos
+
+### 🔄 Desarrollo Futuro
+- Videos tutoriales para cada bloque
+- Materiales prácticos adicionales para Bloque 3
+- Datasets reales curados
+- Ejemplos de proyectos exitosos
+
+## 🎯 Cómo Usar Este Material
+
+### Para Instructores:
+1. Revisa el programa completo en `programa.md`
+2. Adapta el contenido según el nivel del grupo
+3. Utiliza los notebooks como base para las clases
+4. Personaliza ejemplos con datos locales si es posible
+
+### Para Estudiantes:
+1. Sigue la secuencia de bloques en orden
+2. Completa las actividades prácticas antes de continuar
+3. Experimenta con los códigos y parámetros
+4. Utiliza los recursos de referencia cuando sea necesario
+
+## 🛠️ Configuración del Entorno
+
+### Requisitos Técnicos:
 - Python 3.8+
-- Jupyter Notebook
-- Librerías: pandas, numpy, matplotlib, seaborn, scikit-learn, streamlit
+- Jupyter Notebook/Lab
+- Git para control de versiones
+- Editor de código (VS Code recomendado)
+
+### Librerías Principales:
+```python
+# Análisis de datos
+pandas, numpy, matplotlib, seaborn, plotly
+
+# Machine Learning
+scikit-learn, xgboost, lightgbm
+
+# Interpretabilidad
+shap, lime
+
+# Dashboards
+streamlit, dash
+
+# Utilidades
+jupyter, ipywidgets
+```
+
+### Instalación:
+```bash
+pip install -r requirements.txt
+```
+
+## 📞 Soporte y Contribuciones
+
+### Reportar Problemas:
+- Crear issue en el repositorio
+- Describir el problema con detalle
+- Incluir información del entorno
+
+### Contribuir:
+- Fork del repositorio
+- Crear branch para la mejora
+- Submeter pull request con descripción
+
+---
+
+**¡Material completo para un curso profesional de ciencia de datos aplicada al fútbol!** ⚽📊

@@ -46,9 +46,17 @@ Al finalizar este bloque, los estudiantes serán capaces de:
 
 ## Evaluación
 
-La evaluación del Bloque 1 consiste en:
-- **Participación en clase:** 30%
-- **Ejercicios prácticos:** 40%
-- **Proyecto final del bloque:** 30%
+La evaluación del Bloque 1 consiste en un **proyecto integrado** que se desarrolla progresivamente durante las 5 semanas del bloque:
 
-**Proyecto final:** Análisis descriptivo completo de una temporada específica del dataset "champs", incluyendo visualizaciones y interpretación de hallazgos.
+### Proyecto: "Análisis de Jugadores FIFA 22"
+
+**Dataset:** [FIFA 22 Complete Player Dataset](https://www.kaggle.com/datasets/stefanoleone992/fifa-22-complete-player-dataset)
+
+**Estructura del Proyecto:**
+- **Semana 1:** Exploración inicial del dataset (20%)
+- **Semana 2:** Análisis de tipos de datos y limpieza (20%) 
+- **Semana 3:** Estadísticas descriptivas por posición y liga (20%)
+- **Semana 4:** Visualizaciones comparativas de rendimiento (20%)
+- **Semana 5:** Interpretación de resultados y conclusiones (20%)
+
+**Entrega:** Un notebook Jupyter consolidado al final del bloque que integre todos los análisis semanales, con conclusiones profesionales sobre el mercado de jugadores y recomendaciones estratégicas.

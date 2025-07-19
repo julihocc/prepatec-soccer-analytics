@@ -129,6 +129,55 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 - Tutoriales de scikit-learn
 - Kaggle Learn (cursos gratuitos)
 
+## 📊 Estado del Desarrollo
+
+### ✅ Completado
+- **Estructura general** del curso con organización por bloques
+- **README principal** con información completa del curso
+- **Bloque 0: Prerrequisitos** (100% completo)
+  - Teoría: Fundamentos de programación con Python
+  - Práctica: Notebooks completos de configuración, estructuras de datos, funciones y pandas/numpy
+  - Evaluación: Evaluación continua de programación
+  - Recursos: Material didáctico interactivo
+- **Bloque 1: Fundamentos** (100% completo)
+  - Teoría: Introducción a ciencia de datos
+  - Práctica: Notebook completo de exploración
+  - Evaluación: Rúbricas y criterios
+- **Bloque 2: Modelado Avanzado** (100% completo)
+  - Teoría: Modelado predictivo y optimización
+  - Práctica: Notebook completo de modelos avanzados
+  - Evaluación: Proyecto de modelo predictivo
+  - Recursos: Ejercicios complementarios
+- **Material de referencias** y recursos completos
+
+### 🔄 Desarrollo Futuro
+- Videos tutoriales para cada bloque
+- Datasets reales curados adicionales
+- Ejemplos de proyectos exitosos
+- Material complementario avanzado
+
+## 🎯 Guía de Uso del Material
+
+### Para Instructores:
+1. **Revisa la estructura completa** del curso en este README
+2. **Adapta el contenido** según el nivel del grupo
+3. **Utiliza los notebooks** como base para las clases
+4. **Personaliza ejemplos** con datos locales si es posible
+5. **Sigue la progresión** de prerrequisitos a análisis avanzado
+
+### Para Estudiantes:
+1. **Comienza con el Bloque 0** - Es fundamental dominar la programación básica
+2. **Sigue la secuencia** de bloques en orden
+3. **Completa las actividades prácticas** antes de continuar
+4. **Experimenta** con los códigos y parámetros
+5. **Utiliza los recursos** de referencia cuando sea necesario
+
+### Metodología de Aprendizaje:
+- **Teoría + Práctica**: Cada semana combina conceptos teóricos con ejercicios prácticos
+- **Proyección deportiva**: Todos los ejemplos están contextualizados en análisis de fútbol
+- **Evaluación continua**: Cada bloque tiene su evaluación específica
+- **Construcción progresiva**: Los conocimientos se construyen incrementalmente
+
 ## 📋 Evaluación
 
 ### Distribución de Calificaciones
@@ -165,6 +214,37 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 5. **Navega por el material:**
    - Cada bloque tiene su propia carpeta con notebooks y recursos
 
+## 🛠️ Configuración del Entorno
+
+### Requisitos Técnicos:
+- **Python 3.8+**
+- **Jupyter Notebook/Lab**
+- **Git** (control de versiones)
+- **Editor de código** (VS Code recomendado)
+
+### Librerías Esenciales:
+```python
+# Análisis de datos
+pandas, numpy, matplotlib, seaborn
+
+# Machine Learning
+scikit-learn
+
+# Utilidades
+jupyter, ipywidgets
+```
+
+### Instalación Completa:
+```bash
+pip install -r requirements.txt
+```
+
+### Dataset Principal:
+- **Fuente**: [Champs - Kaggle](https://www.kaggle.com/datasets/julihocc/champs)
+- **Formato**: CSV con datos de partidos de fútbol
+- **Contenido**: Resultados, estadísticas, equipos, temporadas
+- **Notebook guía**: ["La Remontada"](https://www.kaggle.com/code/julihocc/la-remontada)
+
 ## 📁 Estructura del Repositorio
 
 ```
@@ -181,9 +261,25 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 ## 🤝 Contribución
 
 Si encuentras errores o tienes sugerencias para mejorar el material, siéntete libre de:
-1. Crear un issue
-2. Enviar un pull request
-3. Contactar al instructor
+
+### Reportar Problemas:
+1. **Crear un issue** en el repositorio
+2. **Describir el problema** con detalle
+3. **Incluir información** del entorno
+4. **Proporcionar contexto** del error
+
+### Contribuir Mejoras:
+1. **Fork** del repositorio
+2. **Crear branch** para la mejora
+3. **Enviar pull request** con descripción
+4. **Contactar** al equipo docente
+
+### Áreas de Contribución:
+- **Corrección de errores** en notebooks
+- **Mejora de explicaciones** teóricas
+- **Nuevos ejemplos** deportivos
+- **Optimización de código**
+- **Traducción** de contenido
 
 ## 📞 Contacto
 

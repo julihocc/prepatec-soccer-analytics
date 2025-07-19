@@ -2,7 +2,7 @@
 
 ## 📋 Información del Curso
 
-**Duración:** 19 semanas  
+**Duración:** 14 semanas  
 **Modalidad:** 3 horas semanales  
 **Lenguaje:** Python  
 **Dataset principal:** [Champs - Kaggle](https://www.kaggle.com/datasets/julihocc/champs)  
@@ -99,34 +99,6 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 
 ---
 
-### 🎯 Bloque 3: Aplicaciones, Ética y Presentación de Resultados
-**Semanas 15-19**
-
-#### Semana 15: Casos de Estudio Reales
-- **Teoría:** Casos de estudio reales en clubes/selecciones
-- **Práctica:** Análisis crítico de ejemplos del notebook "La Remontada"
-- **Laboratorio:** Discusión sobre ética y limitaciones del análisis de datos
-
-#### Semana 16: Comunicación Efectiva
-- **Teoría:** Comunicación efectiva de resultados: públicos técnicos y no técnicos
-- **Práctica:** Ejercicio: simulación de presentación ante "cuerpo técnico"
-- **Laboratorio:** Feedback y mejora en la comunicación de hallazgos
-
-#### Semana 17: Dashboards Interactivos
-- **Teoría:** Introducción a dashboards interactivos con Streamlit/Dash
-- **Práctica:** Ejemplo guiado: creación de un dashboard básico
-- **Laboratorio:** Práctica: personalización del dashboard con filtros y gráficos
-
-#### Semana 18: Integración y Reflexión
-- **Teoría:** Integración de análisis descriptivo y predictivo en dashboards
-- **Práctica:** Reflexión sobre sesgos y limitaciones del análisis
-- **Laboratorio:** Preparación de la presentación final
-
-#### Semana 19: Presentación Final
-- **Teoría:** Presentación final de proyectos integrales
-- **Práctica:** Retroalimentación grupal y discusión ética
-- **Evaluación:** **Entrega y defensa de análisis integral interactivo**
-
 ## 🛠️ Herramientas y Tecnologías
 
 ### Lenguajes y Entornos
@@ -140,7 +112,6 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 - **matplotlib** - Visualización básica
 - **seaborn** - Visualización estadística
 - **scikit-learn** - Machine learning
-- **Streamlit** o **Dash** - Dashboards interactivos
 
 ### Recursos de Datos
 - **Dataset "champs"** - [Kaggle](https://www.kaggle.com/datasets/julihocc/champs)
@@ -161,10 +132,9 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 ## 📋 Evaluación
 
 ### Distribución de Calificaciones
-- **Bloque 0:** Prerrequisitos (sin calificación, pero obligatorio)
+- **Bloque 0:** 33.3% - Prerrequisitos de programación y fundamentos
 - **Bloque 1:** 33.3% - Análisis descriptivo y visualización
-- **Bloque 2:** 33.3% - Proyecto de modelo predictivo
-- **Bloque 3:** 33.3% - Análisis integral interactivo
+- **Bloque 2:** 33.4% - Proyecto de modelo predictivo
 
 ### Criterios de Evaluación
 - **Correctitud técnica** (30%)
@@ -174,19 +144,25 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 
 ## 🚀 Cómo Empezar
 
-1. **Configura tu entorno:**
+1. **Inicia con el Bloque 0:**
+   - Configura tu entorno de desarrollo
+   - Aprende los fundamentos de Python
+   - Domina las estructuras de datos básicas
+   - Familiarízate con pandas y numpy
+
+2. **Configura tu entorno:**
    ```bash
    pip install pandas numpy matplotlib seaborn scikit-learn jupyter
    ```
 
-2. **Descarga el dataset:**
+3. **Descarga el dataset:**
    - Visita [Kaggle - Champs Dataset](https://www.kaggle.com/datasets/julihocc/champs)
    - Descarga y coloca en la carpeta `data/`
 
-3. **Revisa el notebook de referencia:**
+4. **Revisa el notebook de referencia:**
    - Explora ["La Remontada"](https://www.kaggle.com/code/julihocc/la-remontada)
 
-4. **Navega por el material:**
+5. **Navega por el material:**
    - Cada bloque tiene su propia carpeta con notebooks y recursos
 
 ## 📁 Estructura del Repositorio
@@ -196,7 +172,6 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 │   ├── bloque-0/           # Prerrequisitos de programación
 │   ├── bloque-1/           # Fundamentos
 │   ├── bloque-2/           # Análisis avanzado
-│   ├── bloque-3/           # Aplicaciones
 │   └── referencias/        # Bibliografía y recursos
 ├── data/                   # Datasets
 ├── notebooks/              # Notebooks de ejemplo

@@ -2,7 +2,7 @@
 
 ## 📋 Información del Curso
 
-**Duración:** 15 semanas  
+**Duración:** 19 semanas  
 **Modalidad:** 3 horas semanales  
 **Lenguaje:** Python  
 **Dataset principal:** [Champs - Kaggle](https://www.kaggle.com/datasets/julihocc/champs)  
@@ -14,30 +14,55 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 
 ## 📚 Estructura del Curso
 
-### 🔰 Bloque 1: Fundamentos de Ciencia de Datos y Fútbol con Python
-**Semanas 1-5**
+### � Bloque 0: Prerrequisitos de Programación con Python
+**Semanas 1-4**
 
-#### Semana 1: Introducción y Exploración
+#### Semana 1: Configuración y Fundamentos
+- **Teoría:** Configuración del entorno de desarrollo (Python, Jupyter, pandas, numpy)
+- **Práctica:** Variables, tipos de datos, operadores y estructuras básicas
+- **Laboratorio:** Verificación de instalación y primeros pasos con Python para análisis deportivo
+
+#### Semana 2: Estructuras de Control y Datos
+- **Teoría:** Estructuras de datos (listas, diccionarios, tuplas, conjuntos)
+- **Práctica:** Estructuras de control (if/else, bucles for/while)
+- **Laboratorio:** Manipulación de datos deportivos básicos con estructuras nativas de Python
+
+#### Semana 3: Funciones y Módulos
+- **Teoría:** Definición de funciones, parámetros, valores de retorno
+- **Práctica:** Importación y uso de módulos (math, random, datetime)
+- **Laboratorio:** Creación de funciones reutilizables para análisis básico de datos deportivos
+
+#### Semana 4: Introducción a Pandas y NumPy
+- **Teoría:** Conceptos fundamentales de NumPy (arrays) y Pandas (Series, DataFrames)
+- **Práctica:** Operaciones básicas con arrays y lectura de archivos CSV
+- **Laboratorio:** Análisis básico de datos deportivos con pandas y numpy
+
+---
+
+### �🔰 Bloque 1: Fundamentos de Ciencia de Datos y Fútbol con Python
+**Semanas 5-9**
+
+#### Semana 5: Introducción y Exploración
 - **Teoría:** Presentación del curso y objetivos. Introducción a la ciencia de datos en el deporte
 - **Práctica:** Exploración del dataset "champs". Estructura de datos en fútbol
 - **Laboratorio:** Instalación y uso básico de Jupyter Notebook y pandas
 
-#### Semana 2: Tipos de Datos y Primeras Consultas
+#### Semana 6: Tipos de Datos y Primeras Consultas
 - **Teoría:** Tipos de datos: resultados, eventos, posiciones
 - **Práctica:** Lectura de archivos CSV con pandas. Primeras consultas al dataset
 - **Laboratorio:** Ejercicio: conteo y filtrado de partidos por liga/temporada
 
-#### Semana 3: Estadística Descriptiva
+#### Semana 7: Estadística Descriptiva
 - **Teoría:** Estadística descriptiva (media, mediana, moda, desviación estándar)
 - **Práctica:** Cálculo de estadísticas básicas de goles usando Python
 - **Laboratorio:** Visualización básica: histogramas de goles por partido (matplotlib/seaborn)
 
-#### Semana 4: Visualización de Datos
+#### Semana 8: Visualización de Datos
 - **Teoría:** Profundización en visualización de datos
 - **Práctica:** Gráficas comparativas: goles locales vs. visitantes
 - **Laboratorio:** Ejercicio guiado: replicar y adaptar visualizaciones del notebook "La Remontada"
 
-#### Semana 5: Análisis e Interpretación
+#### Semana 9: Análisis e Interpretación
 - **Teoría:** Discusión de hallazgos, interpretación de resultados descriptivos
 - **Práctica:** Práctica: análisis descriptivo de una temporada específica
 - **Evaluación:** **Entrega de análisis descriptivo y visualización de hallazgos**
@@ -45,29 +70,29 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 ---
 
 ### 🚀 Bloque 2: Análisis Avanzado y Modelado en Fútbol con Python
-**Semanas 6-10**
+**Semanas 10-14**
 
-#### Semana 6: Introducción al Modelado Predictivo
+#### Semana 10: Introducción al Modelado Predictivo
 - **Teoría:** Introducción al modelado predictivo en fútbol
 - **Práctica:** Selección de variables relevantes del dataset
 - **Laboratorio:** Preparación de datos para modelado (limpieza, codificación)
 
-#### Semana 7: Modelos de Clasificación
+#### Semana 11: Modelos de Clasificación
 - **Teoría:** Introducción a scikit-learn y modelos de clasificación
 - **Práctica:** Implementación de regresión logística para predecir resultados
 - **Laboratorio:** Evaluación inicial del modelo y ajuste de parámetros
 
-#### Semana 8: Métricas de Evaluación
+#### Semana 12: Métricas de Evaluación
 - **Teoría:** Métricas de evaluación: accuracy, precision, recall
 - **Práctica:** Visualización de matriz de confusión
 - **Laboratorio:** Ejercicio: interpretación y mejora del modelo
 
-#### Semana 9: KPIs y Variables Avanzadas
+#### Semana 13: KPIs y Variables Avanzadas
 - **Teoría:** Análisis de KPIs: localía, rachas, goles esperados
 - **Práctica:** Incorporación de nuevas variables al modelo
 - **Laboratorio:** Taller: comparación de modelos y justificación de elecciones
 
-#### Semana 10: Presentación de Resultados
+#### Semana 14: Presentación de Resultados
 - **Teoría:** Presentación y discusión de resultados de modelos
 - **Práctica:** Práctica: reporte escrito y defensa oral de hallazgos
 - **Evaluación:** **Entrega de proyecto de modelo predictivo**
@@ -75,29 +100,29 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 ---
 
 ### 🎯 Bloque 3: Aplicaciones, Ética y Presentación de Resultados
-**Semanas 11-15**
+**Semanas 15-19**
 
-#### Semana 11: Casos de Estudio Reales
+#### Semana 15: Casos de Estudio Reales
 - **Teoría:** Casos de estudio reales en clubes/selecciones
 - **Práctica:** Análisis crítico de ejemplos del notebook "La Remontada"
 - **Laboratorio:** Discusión sobre ética y limitaciones del análisis de datos
 
-#### Semana 12: Comunicación Efectiva
+#### Semana 16: Comunicación Efectiva
 - **Teoría:** Comunicación efectiva de resultados: públicos técnicos y no técnicos
 - **Práctica:** Ejercicio: simulación de presentación ante "cuerpo técnico"
 - **Laboratorio:** Feedback y mejora en la comunicación de hallazgos
 
-#### Semana 13: Dashboards Interactivos
+#### Semana 17: Dashboards Interactivos
 - **Teoría:** Introducción a dashboards interactivos con Streamlit/Dash
 - **Práctica:** Ejemplo guiado: creación de un dashboard básico
 - **Laboratorio:** Práctica: personalización del dashboard con filtros y gráficos
 
-#### Semana 14: Integración y Reflexión
+#### Semana 18: Integración y Reflexión
 - **Teoría:** Integración de análisis descriptivo y predictivo en dashboards
 - **Práctica:** Reflexión sobre sesgos y limitaciones del análisis
 - **Laboratorio:** Preparación de la presentación final
 
-#### Semana 15: Presentación Final
+#### Semana 19: Presentación Final
 - **Teoría:** Presentación final de proyectos integrales
 - **Práctica:** Retroalimentación grupal y discusión ética
 - **Evaluación:** **Entrega y defensa de análisis integral interactivo**
@@ -136,6 +161,7 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 ## 📋 Evaluación
 
 ### Distribución de Calificaciones
+- **Bloque 0:** Prerrequisitos (sin calificación, pero obligatorio)
 - **Bloque 1:** 33.3% - Análisis descriptivo y visualización
 - **Bloque 2:** 33.3% - Proyecto de modelo predictivo
 - **Bloque 3:** 33.3% - Análisis integral interactivo
@@ -167,6 +193,7 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 
 ```
 ├── material-didactico/
+│   ├── bloque-0/           # Prerrequisitos de programación
 │   ├── bloque-1/           # Fundamentos
 │   ├── bloque-2/           # Análisis avanzado
 │   ├── bloque-3/           # Aplicaciones

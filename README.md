@@ -14,7 +14,7 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 
 ## 📚 Estructura del Curso
 
-### � Bloque 0: Prerrequisitos de Programación con Python
+### � Bloque 1: Prerrequisitos de Programación con Python
 **Semanas 1-4**
 
 #### Semana 1: Configuración y Fundamentos
@@ -39,7 +39,7 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 
 ---
 
-### �🔰 Bloque 1: Fundamentos de Ciencia de Datos y Fútbol con Python
+### �🔰 Bloque 2: Fundamentos de Ciencia de Datos y Fútbol con Python
 **Semanas 5-9**
 
 #### Semana 5: Introducción y Exploración
@@ -69,7 +69,7 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 
 ---
 
-### 🚀 Bloque 2: Análisis Avanzado y Modelado en Fútbol con Python
+### 🚀 Bloque 3: Análisis Avanzado y Modelado en Fútbol con Python
 **Semanas 10-14**
 
 #### Semana 10: Introducción al Modelado Predictivo

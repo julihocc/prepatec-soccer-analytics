@@ -1,166 +1,160 @@
-# Bloque 3: Análisis Avanzado y Modelado en Fútbol con Python
+# Bloque 3: Mi Primera Predicción con Datos de Fútbol
 
 ## Objetivos del Bloque
 
 Al finalizar este bloque, los estudiantes serán capaces de:
 
-1. Implementar modelos predictivos avanzados para análisis futbolístico
-2. Seleccionar y evaluar variables relevantes para modelado
-3. Aplicar técnicas de machine learning usando scikit-learn
-4. Evaluar y comparar diferentes modelos de clasificación
-5. Calcular e interpretar métricas de evaluación avanzadas
-6. Incorporar KPIs futbolísticos en modelos predictivos
-7. Realizar análisis de características y optimización de modelos
+1. **Comprender** qué significa "predecir" usando datos de manera simple
+2. **Crear** modelos básicos de predicción para resultados de fútbol
+3. **Usar scikit-learn** para hacer predicciones sencillas
+4. **Evaluar** si las predicciones son buenas o malas
+5. **Aplicar machine learning básico** a problemas deportivos
+6. **Interpretar resultados** de modelos predictivos simples
+7. **Consolidar** todo lo aprendido en el curso a través de un proyecto final
 
 ## Contenido por Semana
 
-### Semana 11: Introducción al Modelado Predictivo
-- **Teoría:** Fundamentos del modelado predictivo en fútbol
-- **Práctica:** Selección de variables relevantes y preparación de datos
-- **Aplicación:** Primer modelo de regresión logística
-- **Archivo:** `semana-1/modelado-predictivo-introduccion.ipynb` ✅
+### Semana 1: Mi Primera Predicción
 
-### Semana 12: Scikit-learn y Modelos de Clasificación
-- **Teoría:** Introducción a scikit-learn y algoritmos de clasificación
-- **Práctica:** Implementación de regresión logística y Random Forest
-- **Evaluación:** Comparación inicial de modelos
-- **Estado:** Planificado
+- **Notebook:** `modelado-predictivo-introduccion.ipynb`
+- **Teoría:** ¿Qué es predecir con datos? Conceptos básicos de machine learning
+- **Práctica:** Primera predicción simple usando scikit-learn
+- **Ejercicios:** Predecir resultados de partidos con datos históricos
+- **Aplicación:** Modelo básico de "¿quién va a ganar?"
 
-### Semana 13: Métricas de Evaluación Avanzadas
-- **Teoría:** Accuracy, precision, recall, F1-score, ROC-AUC
-- **Práctica:** Visualización de matriz de confusión y curvas ROC
-- **Análisis:** Interpretación y mejora del rendimiento del modelo
-- **Estado:** Planificado
+### Semana 2: Modelos Más Inteligentes
 
-### Semana 14: KPIs y Variables Avanzadas
-- **Teoría:** Análisis de KPIs: localía, rachas, goles esperados
-- **Práctica:** Incorporación de nuevas variables al modelo
-- **Taller:** Comparación de modelos y justificación de elecciones
-- **Estado:** Planificado
+- **Notebook:** `modelos-avanzados-clasificacion.ipynb`
+- **Teoría:** Diferentes tipos de "cerebros" para predecir (algoritmos)
+- **Práctica:** Comparar múltiples modelos de predicción
+- **Ejercicios:** Usar Random Forest y otros algoritmos básicos
+- **Aplicación:** Elegir el mejor modelo para nuestros datos
 
-### Semana 15: Presentación y Defensa de Modelos
-- **Teoría:** Comunicación técnica de resultados
-- **Práctica:** Reporte escrito y defensa oral de hallazgos
-- **Evaluación:** Entrega de proyecto de modelo predictivo
-- **Estado:** Planificado
+### Semana 3: ¿Qué Tan Buena es Mi Predicción?
 
-## Materiales Incluidos
+- **Notebook:** `metricas-avanzadas-evaluacion.ipynb`
+- **Teoría:** Cómo medir si mis predicciones son correctas
+- **Práctica:** Calcular porcentajes de aciertos y errores
+- **Ejercicios:** Interpretar matrices de confusión simples
+- **Aplicación:** Evaluar la calidad de nuestros modelos
+
+### Semana 4: Mejorando Mis Predicciones
+
+- **Notebook:** `feature-engineering-optimizacion.ipynb`
+- **Teoría:** ¿Qué datos son más importantes? Feature engineering básico
+- **Práctica:** Crear nuevas variables útiles para predecir
+- **Ejercicios:** Optimizar modelos para mejores resultados
+- **Aplicación:** Hacer el modelo más preciso
+
+### Semana 5: Cierre del Curso
+
+- **Notebook:** `cierre-de-curso.ipynb`
+- **Teoría:** Repaso de todo lo aprendido en el curso
+- **Práctica:** Proyecto final integrador con análisis completo
+- **Ejercicios:** Consolidación de habilidades adquiridas
+- **Aplicación:** Presentación de resultados y reflexión final
+
+## Materiales y Herramientas
 
 ### Teoría
-- **Fundamentos de Machine Learning en Deportes**
-- **Algoritmos de Clasificación Aplicados**
-- **Métricas de Evaluación Avanzadas**
-- **Feature Engineering para Datos Deportivos**
+
+- **Fundamentos de Predicciones con Datos**
+  - ¿Qué es machine learning de forma simple?
+  - Tipos básicos de predicciones: ¿quién gana?, ¿cuántos goles?
+  - Casos de uso en el fútbol para principiantes
 
 ### Práctica
-- **Notebooks interactivos con implementaciones**
-- **Ejercicios guiados paso a paso**
-- **Datasets preparados para modelado**
-- **Código reutilizable y comentado**
+
+- **Notebooks paso a paso con explicaciones sencillas**
+  - Ejemplos visuales y fáciles de seguir
+  - Código comentado línea por línea
+  - Ejercicios guiados sin complejidad excesiva
 
 ### Evaluaciones
-- **Rúbricas detalladas para cada entrega**
-- **Criterios de evaluación técnica**
-- **Ejemplos de reportes exitosos**
-- **Guías para presentación oral**
 
-## Herramientas y Librerías
+- **Proyecto final integrador**
+  - Análisis básico de datos de fútbol
+  - Primera predicción exitosa
+  - Presentación de resultados simples y claros
+
+## Librerías a Utilizar
 
 ### Principales
-- **scikit-learn:** Algoritmos de machine learning
-- **pandas:** Manipulación de datos
-- **numpy:** Computación numérica
-- **matplotlib/seaborn:** Visualización
+
+- **pandas:** Para trabajar con tablas de datos
+- **numpy:** Para cálculos matemáticos básicos
+- **matplotlib/seaborn:** Para hacer gráficas bonitas
+- **scikit-learn:** Para hacer predicciones (la "magia" del machine learning)
 
 ### Complementarias
-- **plotly:** Visualizaciones interactivas
-- **yellowbrick:** Visualización de machine learning
-- **imbalanced-learn:** Manejo de datos desbalanceados
-- **optuna:** Optimización de hiperparámetros
 
-## Metodología
+- **plotly:** Para gráficas interactivas (opcional)
+
+## Metodología de Enseñanza
 
 ### Enfoque Práctico
-1. **Análisis de problema** → Definir objetivos predictivos
-2. **Preparación de datos** → Feature engineering específico
-3. **Implementación** → Múltiples algoritmos de clasificación
-4. **Evaluación** → Métricas técnicas y de negocio
-5. **Optimización** → Tuning de hiperparámetros
-6. **Comunicación** → Presentación de resultados
+
+1. **Ver ejemplos** → Observar cómo se hace
+2. **Practicar junto al instructor** → Hacer paso a paso
+3. **Intentar solo** → Aplicar lo aprendido
+4. **Presentar resultados** → Mostrar lo que descubrí
 
 ### Proyectos Aplicados
-- **Predicción de resultados de partidos**
-- **Clasificación de estilos de juego**
-- **Detección de patrones tácticos**
-- **Análisis de rendimiento de jugadores**
 
-## Evaluación del Bloque
+- **Mi primera predicción de partidos**
+- **Análisis de mi equipo favorito**
+- **Comparar diferentes modelos simples**
+
+## Sistema de Evaluación
 
 ### Distribución de Notas
-- **Ejercicios prácticos:** 30%
-- **Proyecto de modelado:** 50%
-- **Presentación oral:** 20%
+
+- **Participación en clase:** 20%
+- **Ejercicios prácticos:** 40%
+- **Proyecto final:** 40%
 
 ### Criterios de Evaluación
-- **Técnica:** Implementación correcta de algoritmos
-- **Análisis:** Interpretación de resultados y métricas
-- **Innovación:** Uso creativo de variables y técnicas
-- **Comunicación:** Claridad en presentación de hallazgos
+
+- **Comprensión:** ¿Entiendo lo que hago?
+- **Aplicación:** ¿Puedo usar las herramientas?
+- **Presentación:** ¿Explico bien mis resultados?
 
 ## Recursos Adicionales
 
-### Lecturas Recomendadas
-- "Pattern Recognition and Machine Learning" - Bishop
-- "The Elements of Statistical Learning" - Hastie et al.
-- "Hands-On Machine Learning" - Géron
+### Material de Apoyo
 
-### Datasets Complementarios
-- FIFA player ratings
-- UEFA match statistics
-- Expected Goals (xG) data
-- Player tracking data
+- Videos tutoriales básicos de Python
+- Glosario de términos técnicos
+- Ejemplos extra para practicar en casa
 
-### Herramientas Avanzadas
-- **AutoML:** Automated machine learning
-- **MLflow:** Experiment tracking
-- **Docker:** Containerización de modelos
-- **APIs:** Deployment de modelos
+## Herramientas Necesarias
 
-## Preparación para Bloque 3
+### Software
+- **Python:** Lenguaje de programación principal
+- **Jupyter Notebook:** Para escribir y ejecutar código
+- **Visual Studio Code:** Editor de código (recomendado)
+
+### Conocimientos Previos
+- Haber completado el Bloque 1 (fundamentos de programación)
+- Haber completado el Bloque 2 (análisis de datos básico)
+- Conocimientos básicos de matemáticas de preparatoria
+
+## Preparación para el Futuro
 
 Este bloque prepara a los estudiantes para:
-- Implementar modelos en producción
-- Crear dashboards avanzados
-- Considerar aspectos éticos del modelado
-- Comunicar resultados a stakeholders no técnicos
+- Entender conceptos básicos de inteligencia artificial
+- Despertar interés en carreras de tecnología y datos
+- Desarrollar pensamiento analítico y lógico
+- Aplicar matemáticas en problemas reales
 
-## Cronograma Sugerido
+## Expectativas del Curso
 
-### Semana 6
-- **Lunes:** Teoría de modelado predictivo
-- **Miércoles:** Práctica de feature engineering
-- **Viernes:** Evaluación de preparación de datos
-
-### Semana 7
-- **Lunes:** Introducción a scikit-learn
-- **Miércoles:** Implementación de modelos
-- **Viernes:** Comparación de algoritmos
-
-### Semana 8
-- **Lunes:** Métricas de evaluación
-- **Miércoles:** Visualización de resultados
-- **Viernes:** Análisis de errores
-
-### Semana 9
-- **Lunes:** KPIs avanzados
-- **Miércoles:** Feature engineering avanzado
-- **Viernes:** Optimización de modelos
-
-### Semana 10
-- **Lunes:** Preparación de presentaciones
-- **Miércoles:** Presentaciones grupales
-- **Viernes:** Evaluación final y retroalimentación
+Al finalizar este bloque, los estudiantes podrán:
+- Hacer predicciones simples usando datos
+- Entender qué es machine learning de forma básica
+- Presentar resultados de manera clara
+- Despertar curiosidad por la ciencia de datos
 
 ---
 
-**¡Bienvenidos al Bloque 2!** Este bloque profundiza en las técnicas avanzadas de machine learning aplicadas al análisis futbolístico, preparando a los estudiantes para implementar soluciones predictivas robustas y escalables.
+*"No necesitas ser un experto en matemáticas para empezar a predecir con datos. ¡Solo necesitas curiosidad y ganas de aprender!"*

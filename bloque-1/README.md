@@ -1,55 +1,75 @@
-# Bloque 1: Prerrequisitos de Programación con Python
+# Bloque 1: Fundamentos de Programación con Python
 
 ## Objetivos del Bloque
 
 Al finalizar este bloque, los estudiantes serán capaces de:
 
-1. Configurar un entorno de desarrollo Python funcional
-2. Comprender la sintaxis básica de Python y sus estructuras de datos
-3. Trabajar con archivos y manipular datos básicos
-4. Utilizar Jupyter Notebook de manera efectiva
-5. Instalar y usar librerías básicas de ciencia de datos
-6. Realizar operaciones básicas de programación necesarias para el análisis de datos
+1. **Configurar** un entorno de desarrollo Python funcional con Jupyter Notebook
+2. **Comprender** la sintaxis básica de Python y sus estructuras de datos fundamentales
+3. **Trabajar** con listas, diccionarios, tuplas y conjuntos para organizar datos
+4. **Implementar** control de flujo con bucles y condicionales
+5. **Crear** funciones reutilizables y utilizar módulos de Python
+6. **Manipular datos** básicos usando pandas y numpy
+7. **Crear visualizaciones** simples con matplotlib
+8. **Aplicar** estos conocimientos a ejemplos deportivos prácticos
 
 ## Contenido por Semana
 
 ### Semana 1: Configuración del Entorno y Fundamentos
-- **Teoría:** Introducción a Python y su ecosistema
+
+- **Notebook:** `configuracion-fundamentos.ipynb`
+- **Teoría:** Introducción a Python y su ecosistema para ciencia de datos
 - **Práctica:** Instalación de Python, pip, y Jupyter Notebook
-- **Ejercicio:** Primeros pasos con variables, tipos de datos y operadores
+- **Ejercicios:** Primeros pasos con variables, tipos de datos y operadores básicos
+- **Aplicación deportiva:** Calculadora de estadísticas básicas de jugadores
 
 ### Semana 2: Estructuras de Datos y Control de Flujo
-- **Teoría:** Listas, diccionarios, tuplas y conjuntos
+
+- **Notebook:** `estructuras-control.ipynb`
+- **Teoría:** Listas, diccionarios, tuplas y conjuntos en Python
 - **Práctica:** Bucles (for, while) y condicionales (if, elif, else)
-- **Ejercicio:** Manipulación de datos estructurados simples
+- **Ejercicios:** Manipulación de datos estructurados de equipos deportivos
+- **Aplicación deportiva:** Análisis de plantillas de equipos y resultados
 
 ### Semana 3: Funciones y Módulos
-- **Teoría:** Definición de funciones, parámetros y return
-- **Práctica:** Importación de módulos y uso de librerías
-- **Ejercicio:** Creación de funciones para análisis básico
+
+- **Notebook:** `funciones-modulos.ipynb`
+- **Teoría:** Definición de funciones, parámetros, return y scope
+- **Práctica:** Creación de funciones reutilizables e importación de módulos
+- **Ejercicios:** Desarrollo de funciones para análisis deportivo
+- **Aplicación deportiva:** Calculadora de métricas de rendimiento deportivo
 
 ### Semana 4: Introducción a Pandas y NumPy
-- **Teoría:** Conceptos básicos de DataFrames y Series
-- **Práctica:** Lectura de archivos CSV y operaciones básicas
-- **Ejercicio:** Exploración de un dataset deportivo simple
 
-### Semana 5: Visualización Básica y Preparación
-- **Teoría:** Matplotlib básico para gráficos simples
-- **Práctica:** Creación de gráficos de barras, líneas y dispersión
-- **Evaluación:** Proyecto integrador con dataset simple
+- **Notebook:** `pandas-numpy-introduccion.ipynb`
+- **Teoría:** Conceptos básicos de DataFrames, Series y arrays
+- **Práctica:** Lectura de archivos CSV y operaciones básicas con datos
+- **Ejercicios:** Exploración y manipulación de datasets deportivos
+- **Aplicación deportiva:** Análisis de estadísticas de temporada
+
+### Semana 5: Visualización Básica
+
+- **Notebook:** `visualizacion-basica.ipynb`
+- **Teoría:** Matplotlib básico para gráficos de datos
+- **Práctica:** Creación de gráficos de barras, líneas, dispersión e histogramas
+- **Ejercicios:** Visualización de tendencias y comparaciones deportivas
+- **Aplicación deportiva:** Dashboard básico de estadísticas de equipo
 
 ## Materiales Incluidos
 
-- **Teoría:** Notebooks explicativos con conceptos clave
-- **Práctica:** Ejercicios progresivos con retroalimentación
-- **Recursos:** Guías de instalación y configuración
-- **Evaluación:** Proyecto final preparatorio
+- **Notebooks interactivos:** Un notebook completo por semana con teoría, práctica y ejercicios integrados
+- **Ejemplos deportivos:** Casos prácticos aplicados al análisis de datos deportivos
+- **Ejercicios progresivos:** Actividades que van aumentando en complejidad
+- **Código reutilizable:** Funciones y ejemplos que pueden ser aplicados en proyectos reales
 
 ## Prerequisitos
 
-- **Conocimientos básicos de matemáticas** (álgebra básica, estadística descriptiva)
-- **Familiaridad con computadoras** (navegación, descarga de archivos)
-- **Motivación para aprender** programación aplicada al deporte
+- **Conocimientos básicos de matemáticas** (álgebra básica, operaciones aritméticas)
+- **Familiaridad con computadoras** (navegación de archivos, instalación de software)
+- **Acceso a computadora** con capacidad de instalar software
+- **Conexión a internet** para descargar librerías y recursos
+- **Motivación para aprender** programación aplicada al análisis deportivo
+- **No se requiere experiencia previa** en programación
 
 ## Herramientas Necesarias
 
@@ -98,71 +118,51 @@ import matplotlib.pyplot as plt
 ## Estructura de Carpetas
 
 ```
-bloque-0/
+bloque-1/
 ├── semana-1/
-│   ├── teoria/
-│   │   └── introduccion-python.ipynb
-│   ├── practica/
-│   │   └── configuracion-entorno.ipynb
-│   └── ejercicios/
-│       └── variables-operadores.ipynb
+│   └── configuracion-fundamentos.ipynb
 ├── semana-2/
-│   ├── teoria/
-│   │   └── estructuras-datos.ipynb
-│   ├── practica/
-│   │   └── control-flujo.ipynb
-│   └── ejercicios/
-│       └── listas-diccionarios.ipynb
+│   └── estructuras-control.ipynb
 ├── semana-3/
-│   ├── teoria/
-│   │   └── funciones-modulos.ipynb
-│   ├── practica/
-│   │   └── creacion-funciones.ipynb
-│   └── ejercicios/
-│       └── funciones-analisis.ipynb
+│   └── funciones-modulos.ipynb
 ├── semana-4/
-│   ├── teoria/
-│   │   └── pandas-numpy-intro.ipynb
-│   ├── practica/
-│   │   └── dataframes-series.ipynb
-│   └── ejercicios/
-│       └── exploracion-dataset.ipynb
+│   └── pandas-numpy-introduccion.ipynb
 ├── semana-5/
-│   ├── teoria/
-│   │   └── matplotlib-basico.ipynb
-│   ├── practica/
-│   │   └── graficos-simples.ipynb
-│   └── evaluacion/
-│       └── proyecto-final.ipynb
-└── recursos/
-    ├── guia-instalacion.md
-    ├── troubleshooting.md
-    └── datasets-practica/
+│   └── visualizacion-basica.ipynb
+└── README.md
 ```
 
 ## Criterios de Éxito
 
-### Al finalizar el Bloque 0, el estudiante debe poder:
+### Al finalizar el Bloque 1, el estudiante debe poder
 
 ✅ **Programación Básica:**
-- Escribir código Python funcional
-- Usar variables y estructuras de datos apropiadas
+
+- Escribir código Python funcional y bien estructurado
+- Usar variables, listas, diccionarios y estructuras de control apropiadas
 - Implementar lógica con bucles y condicionales
+- Crear y utilizar funciones reutilizables
 
 ✅ **Manipulación de Datos:**
-- Cargar datos desde archivos CSV
-- Realizar operaciones básicas con pandas
-- Filtrar y transformar datos simples
+
+- Cargar datos desde archivos CSV usando pandas
+- Realizar operaciones básicas con DataFrames y Series
+- Filtrar, transformar y agregar datos simples
+- Manejar valores faltantes básicos
 
 ✅ **Visualización:**
+
 - Crear gráficos básicos con matplotlib
+- Personalizar gráficos con títulos, etiquetas y colores
 - Interpretar visualizaciones simples
-- Comunicar hallazgos básicos
+- Comunicar hallazgos básicos mediante gráficos
 
 ✅ **Entorno de Trabajo:**
-- Usar Jupyter Notebook eficientemente
+
+- Usar Jupyter Notebook eficientemente para análisis interactivo
 - Instalar librerías según necesidad
-- Documentar código básico
+- Documentar código con comentarios claros
+- Organizar proyectos de manera estructurada
 
 ## Recursos Adicionales
 
@@ -181,24 +181,25 @@ bloque-0/
 - **"Automate the Boring Stuff with Python"** - Al Sweigart
 - **"Python for Data Analysis"** - Wes McKinney
 
-## Transición al Bloque 1
+## Transición al Bloque 2
 
-Una vez completado exitosamente el Bloque 0, los estudiantes estarán preparados para:
+Una vez completado exitosamente el Bloque 1, los estudiantes estarán preparados para:
 
-- **Bloque 1:** Aplicar Python al análisis específico de datos futbolísticos
-- **Proyectos complejos:** Trabajar con datasets reales y análisis avanzados
-- **Herramientas especializadas:** Incorporar librerías como seaborn, scikit-learn
+- **Bloque 2:** Análisis exploratorio de datos deportivos más profundo
+- **Estadística descriptiva:** Aplicar conceptos estadísticos a datos reales
+- **Visualizaciones avanzadas:** Crear gráficos más sofisticados con seaborn
+- **Proyectos complejos:** Trabajar con datasets deportivos reales y completos
 
 ## Notas Importantes
 
-⚠️ **Advertencia:** Este bloque es fundamental para el éxito en el resto del curso. Los estudiantes que no completen satisfactoriamente el Bloque 0 tendrán dificultades significativas en los bloques posteriores.
+⚠️ **Importante:** Este bloque proporciona las bases fundamentales de programación necesarias para el análisis de datos. Los estudiantes que no dominen estos conceptos tendrán dificultades en los bloques posteriores.
 
-💡 **Sugerencia:** Dedica tiempo extra a la práctica fuera del aula. La programación se aprende haciendo.
+💡 **Sugerencia:** Practica escribiendo código regularmente. La programación se aprende mejor con la práctica constante.
 
-🎯 **Meta:** Al final del Bloque 0, deberías sentirte cómodo escribiendo código Python básico y emocionado por aplicarlo al análisis deportivo.
+🎯 **Meta:** Al final del Bloque 1, deberías sentirte cómodo escribiendo código Python básico y emocionado por aplicarlo al análisis de datos deportivos más avanzado.
 
 ---
 
-**¡Bienvenido al mundo de la programación aplicada al deporte!** 🐍⚽
+**¡Bienvenido al mundo de la programación con Python!** 🐍⚽
 
-*Este bloque te proporcionará las bases sólidas necesarias para convertirte en un analista de datos deportivos competente.*
+*Este bloque te proporcionará las bases sólidas de programación necesarias para convertirte en un analista de datos deportivos competente.*

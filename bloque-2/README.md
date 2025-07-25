@@ -76,32 +76,21 @@ bloque-2/
 │   └── visualizacion-datos.ipynb
 ├── semana-5/
 │   └── analisis-interpretacion.ipynb
-├── evaluacion/
-│   └── README.md (proyecto FIFA 22)
 └── README.md
 ```
 
-## Evaluación
+## Metodología de Aprendizaje
 
-La evaluación del Bloque 2 consiste en un **proyecto integrado** que se desarrolla progresivamente durante las 5 semanas del bloque:
+### Enfoque Práctico
 
-### Proyecto: "Análisis Completo de Jugadores FIFA 22"
+Cada semana sigue una estructura consistente:
 
-**Dataset:** [FIFA 22 Complete Player Dataset](https://www.kaggle.com/datasets/stefanoleone992/fifa-22-complete-player-dataset)
+1. **Exploración inicial** → Familiarización con nuevos conceptos
+2. **Práctica guiada** → Ejercicios paso a paso con ejemplos deportivos
+3. **Aplicación independiente** → Resolución de problemas reales
+4. **Reflexión y síntesis** → Consolidación del aprendizaje
 
-**Descripción:** Análisis profesional de más de 19,000 jugadores de FIFA 22, incluyendo estadísticas de rendimiento, datos económicos y atributos técnicos.
-
-**Estructura del Proyecto:**
-
-- **Semana 1:** Exploración inicial del dataset (20%)
-- **Semana 2:** Análisis de tipos de datos y limpieza (20%)
-- **Semana 3:** Estadísticas descriptivas por posición y liga (20%)
-- **Semana 4:** Visualizaciones comparativas de rendimiento (20%)
-- **Semana 5:** Interpretación de resultados y conclusiones (20%)
-
-**Entrega Final:** Un notebook Jupyter consolidado que integre todos los análisis semanales, con conclusiones profesionales sobre el mercado de jugadores y recomendaciones estratégicas para equipos.
-
-### Habilidades Evaluadas
+### Habilidades Desarrolladas
 
 ✅ **Exploración de Datos:**
 - Carga y comprensión de datasets complejos

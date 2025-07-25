@@ -14,87 +14,102 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 
 ## 📚 Estructura del Curso
 
-### � Bloque 1: Prerrequisitos de Programación con Python
-**Semanas 1-4**
+### 🐍 Bloque 1: Prerrequisitos de Programación con Python
+**Semanas 1-5**
 
-#### Semana 1: Configuración y Fundamentos
-- **Teoría:** Configuración del entorno de desarrollo (Python, Jupyter, pandas, numpy)
-- **Práctica:** Variables, tipos de datos, operadores y estructuras básicas
-- **Laboratorio:** Verificación de instalación y primeros pasos con Python para análisis deportivo
+#### Semana 1: Configuración del Entorno y Fundamentos
+- **Teoría:** Introducción a Python y su ecosistema para ciencia de datos
+- **Práctica:** Instalación de Python, pip, y Jupyter Notebook
+- **Laboratorio:** Variables, tipos de datos, operadores y estructuras básicas
+- **Archivo:** `bloque-1/semana-1/configuracion-fundamentos.ipynb`
 
-#### Semana 2: Estructuras de Control y Datos
-- **Teoría:** Estructuras de datos (listas, diccionarios, tuplas, conjuntos)
-- **Práctica:** Estructuras de control (if/else, bucles for/while)
-- **Laboratorio:** Manipulación de datos deportivos básicos con estructuras nativas de Python
+#### Semana 2: Estructuras de Datos y Control de Flujo
+- **Teoría:** Listas, diccionarios, tuplas y conjuntos aplicados al deporte
+- **Práctica:** Bucles (for, while) y condicionales (if, elif, else)
+- **Laboratorio:** Manipulación de datos deportivos con estructuras nativas de Python
+- **Archivo:** `bloque-1/semana-2/estructuras-control.ipynb`
 
 #### Semana 3: Funciones y Módulos
 - **Teoría:** Definición de funciones, parámetros, valores de retorno
-- **Práctica:** Importación y uso de módulos (math, random, datetime)
-- **Laboratorio:** Creación de funciones reutilizables para análisis básico de datos deportivos
+- **Práctica:** Importación y uso de módulos especializados
+- **Laboratorio:** Creación de funciones reutilizables para análisis deportivo
+- **Archivo:** `bloque-1/semana-3/funciones-modulos.ipynb`
 
 #### Semana 4: Introducción a Pandas y NumPy
 - **Teoría:** Conceptos fundamentales de NumPy (arrays) y Pandas (Series, DataFrames)
 - **Práctica:** Operaciones básicas con arrays y lectura de archivos CSV
 - **Laboratorio:** Análisis básico de datos deportivos con pandas y numpy
+- **Archivo:** `bloque-1/semana-4/pandas-numpy-introduccion.ipynb`
+
+#### Semana 5: Visualización Básica
+- **Teoría:** Matplotlib básico para gráficos deportivos
+- **Práctica:** Creación de gráficos de barras, líneas y dispersión
+- **Laboratorio:** Primeros gráficos con datos de fútbol
+- **Archivo:** `bloque-1/semana-5/visualizacion-basica.ipynb`
 
 ---
 
-### �🔰 Bloque 2: Fundamentos de Ciencia de Datos y Fútbol con Python
-**Semanas 5-9**
+### ⚽ Bloque 2: Fundamentos de Ciencia de Datos y Fútbol con Python
+**Semanas 6-10**
 
-#### Semana 5: Introducción y Exploración
-- **Teoría:** Presentación del curso y objetivos. Introducción a la ciencia de datos en el deporte
-- **Práctica:** Exploración del dataset "champs". Estructura de datos en fútbol
-- **Laboratorio:** Instalación y uso básico de Jupyter Notebook y pandas
+#### Semana 6: Introducción y Exploración de Datos Deportivos
+- **Teoría:** Presentación del curso y ciencia de datos en el deporte
+- **Práctica:** Exploración básica de datos de fútbol con seaborn
+- **Laboratorio:** Primeros gráficos y análisis con datos reales
+- **Archivo:** `bloque-2/semana-1/introduccion-exploracion.ipynb`
 
-#### Semana 6: Tipos de Datos y Primeras Consultas
-- **Teoría:** Tipos de datos: resultados, eventos, posiciones
-- **Práctica:** Lectura de archivos CSV con pandas. Primeras consultas al dataset
-- **Laboratorio:** Ejercicio: conteo y filtrado de partidos por liga/temporada
+#### Semana 7: Tipos de Datos en Fútbol
+- **Teoría:** Tipos de datos: resultados, eventos, posiciones y jugadores
+- **Práctica:** Lectura de archivos CSV y consultas básicas con pandas
+- **Laboratorio:** Ejercicios de conteo y filtrado por liga/temporada
+- **Archivo:** `bloque-2/semana-2/tipos-datos-futbol.ipynb`
 
-#### Semana 7: Estadística Descriptiva
-- **Teoría:** Estadística descriptiva (media, mediana, moda, desviación estándar)
-- **Práctica:** Cálculo de estadísticas básicas de goles usando Python
-- **Laboratorio:** Visualización básica: histogramas de goles por partido (matplotlib/seaborn)
+#### Semana 8: Estadística Descriptiva Básica
+- **Teoría:** Estadística descriptiva (media, máximo, mínimo) aplicada al fútbol
+- **Práctica:** Cálculo de estadísticas básicas de goles usando seaborn
+- **Laboratorio:** Visualización con histogramas y boxplots
+- **Archivo:** `bloque-2/semana-3/estadistica-descriptiva.ipynb`
 
-#### Semana 8: Visualización de Datos
-- **Teoría:** Profundización en visualización de datos
-- **Práctica:** Gráficas comparativas: goles locales vs. visitantes
-- **Laboratorio:** Ejercicio guiado: replicar y adaptar visualizaciones del notebook "La Remontada"
+#### Semana 9: Visualización de Datos Deportivos
+- **Teoría:** Principios de visualización efectiva para datos deportivos
+- **Práctica:** Gráficas comparativas: equipos locales vs. visitantes
+- **Laboratorio:** Creación de gráficos informativos con seaborn
+- **Archivo:** `bloque-2/semana-4/visualizacion-datos.ipynb`
 
-#### Semana 9: Análisis e Interpretación
-- **Teoría:** Discusión de hallazgos, interpretación de resultados descriptivos
-- **Práctica:** Práctica: análisis descriptivo de una temporada específica
+#### Semana 10: Análisis e Interpretación de Resultados
+- **Teoría:** Interpretación de resultados descriptivos y patrones básicos
+- **Práctica:** Análisis descriptivo de temporadas específicas
 - **Evaluación:** **Entrega de análisis descriptivo y visualización de hallazgos**
+- **Archivo:** `bloque-2/semana-5/analisis-interpretacion.ipynb`
 
 ---
 
 ### 🚀 Bloque 3: Análisis Avanzado y Modelado en Fútbol con Python
-**Semanas 10-14**
+**Semanas 11-15**
 
-#### Semana 10: Introducción al Modelado Predictivo
-- **Teoría:** Introducción al modelado predictivo en fútbol
+#### Semana 11: Introducción al Modelado Predictivo
+- **Teoría:** Fundamentos del modelado predictivo en fútbol
 - **Práctica:** Selección de variables relevantes del dataset
-- **Laboratorio:** Preparación de datos para modelado (limpieza, codificación)
+- **Laboratorio:** Preparación de datos para modelado avanzado
 
-#### Semana 11: Modelos de Clasificación
-- **Teoría:** Introducción a scikit-learn y modelos de clasificación
-- **Práctica:** Implementación de regresión logística para predecir resultados
+#### Semana 12: Scikit-learn y Modelos de Clasificación
+- **Teoría:** Introducción a scikit-learn y algoritmos de clasificación
+- **Práctica:** Implementación de regresión logística y Random Forest
 - **Laboratorio:** Evaluación inicial del modelo y ajuste de parámetros
 
-#### Semana 12: Métricas de Evaluación
-- **Teoría:** Métricas de evaluación: accuracy, precision, recall
-- **Práctica:** Visualización de matriz de confusión
-- **Laboratorio:** Ejercicio: interpretación y mejora del modelo
+#### Semana 13: Métricas de Evaluación Avanzadas
+- **Teoría:** Accuracy, precision, recall, F1-score, ROC-AUC
+- **Práctica:** Visualización de matriz de confusión y curvas ROC
+- **Laboratorio:** Interpretación y mejora del rendimiento del modelo
 
-#### Semana 13: KPIs y Variables Avanzadas
-- **Teoría:** Análisis de KPIs: localía, rachas, goles esperados
+#### Semana 14: KPIs y Variables Avanzadas
+- **Teoría:** Análisis de KPIs futbolísticos: localía, rachas, goles esperados
 - **Práctica:** Incorporación de nuevas variables al modelo
-- **Laboratorio:** Taller: comparación de modelos y justificación de elecciones
+- **Laboratorio:** Comparación de modelos y justificación de elecciones
 
-#### Semana 14: Presentación de Resultados
+#### Semana 15: Presentación de Resultados
 - **Teoría:** Presentación y discusión de resultados de modelos
-- **Práctica:** Práctica: reporte escrito y defensa oral de hallazgos
+- **Práctica:** Reporte escrito y defensa oral de hallazgos
 - **Evaluación:** **Entrega de proyecto de modelo predictivo**
 
 ---
@@ -132,29 +147,55 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 ## 📊 Estado del Desarrollo
 
 ### ✅ Completado
-- **Estructura general** del curso con organización por bloques
-- **README principal** con información completa del curso
-- **Bloque 0: Prerrequisitos** (100% completo)
-  - Teoría: Fundamentos de programación con Python
-  - Práctica: Notebooks completos de configuración, estructuras de datos, funciones y pandas/numpy
-  - Evaluación: Evaluación continua de programación
-  - Recursos: Material didáctico interactivo
-- **Bloque 1: Fundamentos** (100% completo)
-  - Teoría: Introducción a ciencia de datos
-  - Práctica: Notebook completo de exploración
-  - Evaluación: Rúbricas y criterios
-- **Bloque 2: Modelado Avanzado** (100% completo)
-  - Teoría: Modelado predictivo y optimización
-  - Práctica: Notebook completo de modelos avanzados
-  - Evaluación: Proyecto de modelo predictivo
-  - Recursos: Ejercicios complementarios
-- **Material de referencias** y recursos completos
 
-### 🔄 Desarrollo Futuro
-- Videos tutoriales para cada bloque
-- Datasets reales curados adicionales
-- Ejemplos de proyectos exitosos
-- Material complementario avanzado
+#### **Bloque 1: Prerrequisitos de Programación con Python** (100% completo)
+- **Semana 1**: `configuracion-fundamentos.ipynb` - Configuración y fundamentos ✅
+- **Semana 2**: `estructuras-control.ipynb` - Estructuras de datos y control ✅
+- **Semana 3**: `funciones-modulos.ipynb` - Funciones y módulos ✅
+- **Semana 4**: `pandas-numpy-introduccion.ipynb` - Pandas y NumPy ✅
+- **Semana 5**: `visualizacion-basica.ipynb` - Visualización básica ✅
+
+#### **Bloque 2: Fundamentos de Ciencia de Datos y Fútbol** (100% completo)
+- **Semana 6**: `introduccion-exploracion.ipynb` - Exploración de datos deportivos ✅
+- **Semana 7**: `tipos-datos-futbol.ipynb` - Tipos de datos en fútbol ✅  
+- **Semana 8**: `estadistica-descriptiva.ipynb` - Estadística descriptiva ✅
+- **Semana 9**: `visualizacion-datos.ipynb` - Visualización de datos ✅
+- **Semana 10**: `analisis-interpretacion.ipynb` - Análisis e interpretación ✅
+
+#### **Material de Apoyo Completo**
+- **README principal** con información completa del curso ✅
+- **README por bloque** con objetivos y metodología ✅
+- **Referencias y bibliografía** especializada ✅
+- **Guías de instalación** y configuración ✅
+
+### 🔄 En Desarrollo
+
+#### **Bloque 3: Análisis Avanzado y Modelado** (Planificado)
+- Teoría: Modelado predictivo y machine learning aplicado al fútbol
+- Práctica: Implementación con scikit-learn
+- Evaluación: Proyecto de modelo predictivo
+- Estado: Estructura conceptual definida, implementación pendiente
+
+### 🎯 Características del Material Actual
+
+#### **Enfoque Pedagógico**
+- **Progresión gradual**: De conceptos básicos a aplicaciones prácticas
+- **Contexto deportivo**: Todos los ejemplos están aplicados al fútbol
+- **Notebooks interactivos**: Material didáctico hands-on
+- **Evaluación continua**: Cada bloque construye sobre el anterior
+
+#### **Herramientas Utilizadas**
+- **Python 3.8+** como lenguaje principal
+- **Jupyter Notebooks** para material interactivo
+- **Pandas & NumPy** para manipulación de datos
+- **Seaborn & Matplotlib** para visualización
+- **Git** para control de versiones
+
+#### **Recursos de Datos**
+- **Datos sintéticos** para aprendizaje progresivo
+- **Ejemplos futbolísticos** contextualizados
+- **Referencias al dataset "champs"** de Kaggle
+- **Conexión con notebook "La Remontada"**
 
 ## 🎯 Guía de Uso del Material
 
@@ -181,38 +222,70 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 ## 📋 Evaluación
 
 ### Distribución de Calificaciones
-- **Bloque 0:** 33.3% - Prerrequisitos de programación y fundamentos
-- **Bloque 1:** 33.3% - Análisis descriptivo y visualización
-- **Bloque 2:** 33.4% - Proyecto de modelo predictivo
+- **Bloque 1 (Prerrequisitos):** 40% - Fundamentos de programación Python
+- **Bloque 2 (Fundamentos):** 40% - Análisis descriptivo y visualización de datos deportivos  
+- **Bloque 3 (Avanzado):** 20% - Proyecto de modelo predictivo (futuro)
+
+### Metodología de Evaluación
+
+#### **Bloque 1: Evaluación Continua**
+- **Ejercicios prácticos**: Completar notebooks con ejercicios progresivos
+- **Proyectos mini**: Aplicaciones de programación a contextos deportivos
+- **Participación**: Engagement con material interactivo
+
+#### **Bloque 2: Proyecto Integrado**
+- **Análisis descriptivo**: Exploración de dataset de fútbol
+- **Visualizaciones**: Gráficos informativos con seaborn/matplotlib
+- **Interpretación**: Conclusiones basadas en evidencia estadística
+- **Presentación**: Comunicación clara de hallazgos
 
 ### Criterios de Evaluación
-- **Correctitud técnica** (30%)
-- **Calidad del análisis** (25%)
-- **Presentación y comunicación** (25%)
-- **Innovación y creatividad** (20%)
+- **Correctitud técnica** (30%): Código funcional y uso apropiado de herramientas
+- **Calidad del análisis** (25%): Profundidad y rigor en el análisis de datos
+- **Presentación y comunicación** (25%): Claridad en visualizaciones y explicaciones
+- **Aplicación contextual** (20%): Relevancia y pertinencia deportiva del análisis
 
 ## 🚀 Cómo Empezar
 
-1. **Inicia con el Bloque 0:**
-   - Configura tu entorno de desarrollo
-   - Aprende los fundamentos de Python
-   - Domina las estructuras de datos básicas
-   - Familiarízate con pandas y numpy
+### 1. **Inicia con el Bloque 1: Prerrequisitos**
+   - Configura tu entorno de desarrollo Python
+   - Completa `semana-1/configuracion-fundamentos.ipynb`
+   - Aprende estructuras de datos con `semana-2/estructuras-control.ipynb` 
+   - Domina funciones con `semana-3/funciones-modulos.ipynb`
+   - Familiarízate con pandas/numpy en `semana-4/pandas-numpy-introduccion.ipynb`
+   - Crea tus primeros gráficos con `semana-5/visualizacion-basica.ipynb`
 
-2. **Configura tu entorno:**
+### 2. **Continúa con el Bloque 2: Análisis de Datos Deportivos**
+   - Explora datos de fútbol con `semana-1/introduccion-exploracion.ipynb`
+   - Comprende tipos de datos con `semana-2/tipos-datos-futbol.ipynb`
+   - Aprende estadística básica con `semana-3/estadistica-descriptiva.ipynb`
+   - Crea visualizaciones con `semana-4/visualizacion-datos.ipynb`
+   - Interpreta resultados con `semana-5/analisis-interpretacion.ipynb`
+
+### 3. **Configura tu entorno técnico:**
    ```bash
-   pip install pandas numpy matplotlib seaborn scikit-learn jupyter
+   # Crear entorno virtual
+   python -m venv .venv
+   source .venv/bin/activate  # Linux/Mac
+   # .venv\Scripts\activate   # Windows
+   
+   # Instalar dependencias
+   pip install pandas numpy matplotlib seaborn jupyter
+   
+   # Iniciar Jupyter
+   jupyter notebook
    ```
 
-3. **Descarga el dataset:**
-   - Visita [Kaggle - Champs Dataset](https://www.kaggle.com/datasets/julihocc/champs)
-   - Descarga y coloca en la carpeta `data/`
+### 4. **Navega por el material:**
+   - Cada notebook está diseñado para completarse secuencialmente
+   - Lee el README de cada bloque para contexto adicional
+   - Ejecuta las celdas paso a paso para aprendizaje interactivo
+   - Experimenta modificando parámetros y código
 
-4. **Revisa el notebook de referencia:**
-   - Explora ["La Remontada"](https://www.kaggle.com/code/julihocc/la-remontada)
-
-5. **Navega por el material:**
-   - Cada bloque tiene su propia carpeta con notebooks y recursos
+### 5. **Progresión recomendada:**
+   - **Semanas 1-5**: Domina fundamentos de Python
+   - **Semanas 6-10**: Aplica conocimientos a datos deportivos
+   - **Semana 11+**: Prepárate para modelado avanzado (futuro)
 
 ## 🛠️ Configuración del Entorno
 
@@ -248,14 +321,38 @@ pip install -r requirements.txt
 ## 📁 Estructura del Repositorio
 
 ```
-├── material-didactico/
-│   ├── bloque-0/           # Prerrequisitos de programación
-│   ├── bloque-1/           # Fundamentos
-│   ├── bloque-2/           # Análisis avanzado
-│   └── referencias/        # Bibliografía y recursos
-├── data/                   # Datasets
-├── notebooks/              # Notebooks de ejemplo
-└── README.md              # Este archivo
+├── bloque-1/                    # Prerrequisitos de Programación con Python
+│   ├── README.md               # Información del bloque 1
+│   ├── semana-1/
+│   │   └── configuracion-fundamentos.ipynb
+│   ├── semana-2/
+│   │   └── estructuras-control.ipynb
+│   ├── semana-3/
+│   │   └── funciones-modulos.ipynb
+│   ├── semana-4/
+│   │   └── pandas-numpy-introduccion.ipynb
+│   └── semana-5/
+│       └── visualizacion-basica.ipynb
+├── bloque-2/                    # Fundamentos de Ciencia de Datos y Fútbol
+│   ├── README.md               # Información del bloque 2
+│   ├── evaluacion/
+│   │   └── README.md           # Criterios de evaluación
+│   ├── semana-1/
+│   │   └── introduccion-exploracion.ipynb
+│   ├── semana-2/
+│   │   └── tipos-datos-futbol.ipynb
+│   ├── semana-3/
+│   │   └── estadistica-descriptiva.ipynb
+│   ├── semana-4/
+│   │   └── visualizacion-datos.ipynb
+│   └── semana-5/
+│       └── analisis-interpretacion.ipynb
+├── bloque-3/                    # Análisis Avanzado y Modelado (Planificado)
+│   └── README.md               # Información del bloque 3
+├── referencias/                 # Material de apoyo
+│   ├── bibliografia-recursos.md # Bibliografía especializada
+│   └── guia-instalacion.md     # Guías técnicas
+└── README.md                   # Este archivo
 ```
 
 ## 🤝 Contribución

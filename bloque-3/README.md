@@ -14,30 +14,35 @@ Al finalizar este bloque, los estudiantes serán capaces de:
 
 ## Contenido por Semana
 
-### Semana 6: Introducción al Modelado Predictivo
+### Semana 11: Introducción al Modelado Predictivo
 - **Teoría:** Fundamentos del modelado predictivo en fútbol
-- **Práctica:** Selección de variables relevantes del dataset
-- **Aplicación:** Preparación de datos para modelado avanzado
+- **Práctica:** Selección de variables relevantes y preparación de datos
+- **Aplicación:** Primer modelo de regresión logística
+- **Archivo:** `semana-1/modelado-predictivo-introduccion.ipynb` ✅
 
-### Semana 7: Scikit-learn y Modelos de Clasificación
+### Semana 12: Scikit-learn y Modelos de Clasificación
 - **Teoría:** Introducción a scikit-learn y algoritmos de clasificación
 - **Práctica:** Implementación de regresión logística y Random Forest
 - **Evaluación:** Comparación inicial de modelos
+- **Estado:** Planificado
 
-### Semana 8: Métricas de Evaluación Avanzadas
+### Semana 13: Métricas de Evaluación Avanzadas
 - **Teoría:** Accuracy, precision, recall, F1-score, ROC-AUC
 - **Práctica:** Visualización de matriz de confusión y curvas ROC
 - **Análisis:** Interpretación y mejora del rendimiento del modelo
+- **Estado:** Planificado
 
-### Semana 9: KPIs y Variables Avanzadas
+### Semana 14: KPIs y Variables Avanzadas
 - **Teoría:** Análisis de KPIs: localía, rachas, goles esperados
 - **Práctica:** Incorporación de nuevas variables al modelo
 - **Taller:** Comparación de modelos y justificación de elecciones
+- **Estado:** Planificado
 
-### Semana 10: Presentación y Defensa de Modelos
+### Semana 15: Presentación y Defensa de Modelos
 - **Teoría:** Comunicación técnica de resultados
 - **Práctica:** Reporte escrito y defensa oral de hallazgos
 - **Evaluación:** Entrega de proyecto de modelo predictivo
+- **Estado:** Planificado
 
 ## Materiales Incluidos
 

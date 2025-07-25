@@ -156,3 +156,14 @@ print(f"Promedio de goles por partido: {promedio:.1f}")
 - Cell IDs: Use VSCode.Cell format with `#VSC-xxxxxxxx` pattern
 
 When working on this codebase, maintain the educational Spanish-language focus, progressive difficulty, and consistent football/soccer context throughout all materials.
+
+### Additional Guidelines
+- Use clear, concise explanations and avoid jargon unless defined
+- Maintain a professional yet engaging tone suitable for high school students
+- Ensure all content is accessible and understandable for beginners
+- Keep the focus on practical applications in sports data analysis  
+- Do not use emojis or informal language
+- Maintain a professional yet engaging tone suitable for high school students
+- Ensure all content is accessible and understandable for beginners
+- Use clear, concise explanations and avoid jargon unless defined
+- Keep the focus on practical applications in sports data analysis

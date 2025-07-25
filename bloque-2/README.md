@@ -14,7 +14,7 @@ Al finalizar este bloque, los estudiantes serán capaces de:
 
 ## Contenido por Semana
 
-### Semana 1: Introducción y Exploración de Datos
+### Semana 6: Introducción y Exploración de Datos
 
 - **Notebook:** `introduccion-exploracion.ipynb`
 - **Teoría:** ¿Qué son los datos deportivos? Introducción a la ciencia de datos en el fútbol
@@ -22,7 +22,7 @@ Al finalizar este bloque, los estudiantes serán capaces de:
 - **Ejercicios:** Exploración básica de datasets de fútbol, lectura de archivos CSV
 - **Aplicación:** Análisis inicial de datos de partidos y estadísticas básicas
 
-### Semana 2: Tipos de Datos en Fútbol
+### Semana 7: Tipos de Datos en Fútbol
 
 - **Notebook:** `tipos-datos-futbol.ipynb`
 - **Teoría:** Clasificación de datos deportivos: numéricos, categóricos, temporales
@@ -30,7 +30,7 @@ Al finalizar este bloque, los estudiantes serán capaces de:
 - **Ejercicios:** Limpieza y preparación de datos de jugadores y equipos
 - **Aplicación:** Análisis de datos de rendimiento y características de jugadores
 
-### Semana 3: Estadística Descriptiva Aplicada
+### Semana 8: Estadística Descriptiva Aplicada
 
 - **Notebook:** `estadistica-descriptiva.ipynb`
 - **Teoría:** Medidas de tendencia central y dispersión en el contexto deportivo
@@ -38,7 +38,7 @@ Al finalizar este bloque, los estudiantes serán capaces de:
 - **Ejercicios:** Análisis estadístico de temporadas y competiciones
 - **Aplicación:** Evaluación del rendimiento de equipos y jugadores
 
-### Semana 4: Visualización de Datos Deportivos
+### Semana 9: Visualización de Datos Deportivos
 
 - **Notebook:** `visualizacion-datos.ipynb`
 - **Teoría:** Principios de visualización efectiva para datos deportivos
@@ -46,7 +46,7 @@ Al finalizar este bloque, los estudiantes serán capaces de:
 - **Ejercicios:** Gráficos de tendencias, comparaciones locales vs visitantes
 - **Aplicación:** Dashboard básico de análisis futbolístico
 
-### Semana 5: Análisis e Interpretación de Resultados
+### Semana 10: Análisis e Interpretación de Resultados
 
 - **Notebook:** `analisis-interpretacion.ipynb`
 - **Teoría:** Interpretación profesional de análisis descriptivos
@@ -66,15 +66,15 @@ Al finalizar este bloque, los estudiantes serán capaces de:
 
 ```
 bloque-2/
-├── semana-1/
+├── semana-6/
 │   └── introduccion-exploracion.ipynb
-├── semana-2/
+├── semana-7/
 │   └── tipos-datos-futbol.ipynb
-├── semana-3/
+├── semana-8/
 │   └── estadistica-descriptiva.ipynb
-├── semana-4/
+├── semana-9/
 │   └── visualizacion-datos.ipynb
-├── semana-5/
+├── semana-10/
 │   └── analisis-interpretacion.ipynb
 └── README.md
 ```

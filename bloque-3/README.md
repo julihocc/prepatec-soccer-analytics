@@ -14,7 +14,7 @@ Al finalizar este bloque, los estudiantes serán capaces de:
 
 ## Contenido por Semana
 
-### Semana 1: Mi Primera Predicción
+### Semana 11: Mi Primera Predicción
 
 - **Notebook:** `modelado-predictivo-introduccion.ipynb`
 - **Teoría:** ¿Qué es predecir con datos? Conceptos básicos de machine learning
@@ -22,7 +22,7 @@ Al finalizar este bloque, los estudiantes serán capaces de:
 - **Ejercicios:** Predecir resultados de partidos con datos históricos
 - **Aplicación:** Modelo básico de "¿quién va a ganar?"
 
-### Semana 2: Modelos Más Inteligentes
+### Semana 12: Modelos Más Inteligentes
 
 - **Notebook:** `modelos-avanzados-clasificacion.ipynb`
 - **Teoría:** Diferentes tipos de "cerebros" para predecir (algoritmos)
@@ -30,7 +30,7 @@ Al finalizar este bloque, los estudiantes serán capaces de:
 - **Ejercicios:** Usar Random Forest y otros algoritmos básicos
 - **Aplicación:** Elegir el mejor modelo para nuestros datos
 
-### Semana 3: ¿Qué Tan Buena es Mi Predicción?
+### Semana 13: ¿Qué Tan Buena es Mi Predicción?
 
 - **Notebook:** `metricas-avanzadas-evaluacion.ipynb`
 - **Teoría:** Cómo medir si mis predicciones son correctas
@@ -38,7 +38,7 @@ Al finalizar este bloque, los estudiantes serán capaces de:
 - **Ejercicios:** Interpretar matrices de confusión simples
 - **Aplicación:** Evaluar la calidad de nuestros modelos
 
-### Semana 4: Mejorando Mis Predicciones
+### Semana 14: Mejorando Mis Predicciones
 
 - **Notebook:** `feature-engineering-optimizacion.ipynb`
 - **Teoría:** ¿Qué datos son más importantes? Feature engineering básico
@@ -46,9 +46,9 @@ Al finalizar este bloque, los estudiantes serán capaces de:
 - **Ejercicios:** Optimizar modelos para mejores resultados
 - **Aplicación:** Hacer el modelo más preciso
 
-### Semana 5: Cierre del Curso
+### Semana 15: Cierre del Curso
 
-- **Notebook:** `cierre-de-curso.ipynb`
+- **Notebook:** `proyecto-final-integrador.ipynb`
 - **Teoría:** Repaso de todo lo aprendido en el curso
 - **Práctica:** Proyecto final integrador con análisis completo
 - **Ejercicios:** Consolidación de habilidades adquiridas

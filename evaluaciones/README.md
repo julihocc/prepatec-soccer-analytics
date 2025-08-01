@@ -85,31 +85,28 @@ evaluaciones/
 ├── README.md                          # Este archivo
 ├── bloque-1/                          # Evaluaciones del Bloque 1
 │   ├── README.md                      # Información específica del bloque
+│   ├── datasets/                      # Datasets específicos del bloque
+│   │   ├── futbol-basico.csv          # Datos básicos para ejercicios
+│   │   └── README.md                  # Documentación de datasets
 │   ├── ejercicios-semanales/          # Mini-ejercicios por semana
 │   ├── proyecto-integrador/           # Proyecto final del bloque
 │   └── rubricas/                      # Criterios de evaluación
 ├── bloque-2/                          # Evaluaciones del Bloque 2
 │   ├── README.md                      # Información específica del bloque
-│   ├── ejercicios-preparatorios/      # Ejercicios de preparación
-│   ├── proyecto-analisis/             # Proyecto principal
-│   └── rubricas/                      # Criterios de evaluación
-├── bloque-3/                          # Evaluaciones del Bloque 3
-│   ├── README.md                      # Información específica del bloque
-│   ├── ejercicios-practica/           # Ejercicios de práctica
-│   ├── proyecto-predictivo/           # Proyecto final del curso
-│   └── rubricas/                      # Criterios de evaluación
-├── bloque-1/                          # Evaluaciones del Bloque 1
-│   ├── datasets/                      # Datasets específicos del bloque
-│   │   ├── futbol-basico.csv          # Datos básicos para ejercicios
-│   │   └── README.md                  # Documentación de datasets
-├── bloque-2/                          # Evaluaciones del Bloque 2
 │   ├── datasets/                      # Datasets específicos del bloque
 │   │   ├── equipos-europa-2023-24.csv # Datos de ligas europeas
 │   │   ├── jugadores-estrellas-2024.csv # Datos de jugadores elite
 │   │   └── README.md                  # Documentación de datasets
+│   ├── ejercicios-preparatorios/      # Ejercicios de preparación
+│   ├── proyecto-analisis/             # Proyecto principal
+│   └── rubricas/                      # Criterios de evaluación
 └── bloque-3/                          # Evaluaciones del Bloque 3
+    ├── README.md                      # Información específica del bloque
     ├── datasets/                      # Datasets específicos del bloque
     │   └── README.md                  # Documentación (datasets en proyecto-predictivo)
+    ├── ejercicios-practica/           # Ejercicios de práctica
+    ├── proyecto-predictivo/           # Proyecto final del curso
+    └── rubricas/                      # Criterios de evaluación
 ```
 
 ## 🎯 Competencias Evaluadas

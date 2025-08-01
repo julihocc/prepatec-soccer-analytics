@@ -98,10 +98,18 @@ evaluaciones/
 │   ├── ejercicios-practica/           # Ejercicios de práctica
 │   ├── proyecto-predictivo/           # Proyecto final del curso
 │   └── rubricas/                      # Criterios de evaluación
-└── datasets/                          # Datasets compartidos para evaluaciones
-    ├── futbol-basico.csv              # Datos básicos para Bloque 1
-    ├── futbol-completo.csv            # Datos completos para Bloque 2
-    └── futbol-prediccion.csv          # Datos para modelos del Bloque 3
+├── bloque-1/                          # Evaluaciones del Bloque 1
+│   ├── datasets/                      # Datasets específicos del bloque
+│   │   ├── futbol-basico.csv          # Datos básicos para ejercicios
+│   │   └── README.md                  # Documentación de datasets
+├── bloque-2/                          # Evaluaciones del Bloque 2
+│   ├── datasets/                      # Datasets específicos del bloque
+│   │   ├── equipos-europa-2023-24.csv # Datos de ligas europeas
+│   │   ├── jugadores-estrellas-2024.csv # Datos de jugadores elite
+│   │   └── README.md                  # Documentación de datasets
+└── bloque-3/                          # Evaluaciones del Bloque 3
+    ├── datasets/                      # Datasets específicos del bloque
+    │   └── README.md                  # Documentación (datasets en proyecto-predictivo)
 ```
 
 ## 🎯 Competencias Evaluadas

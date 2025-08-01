@@ -1,3 +1,7 @@
+---
+applyTo: '**'
+---
+
 # Copilot Workspace Configuration
 
 ## Project Context for AI Assistance
@@ -188,24 +192,3 @@ print(f"Promedio de goles por partido: {promedio:.1f}")
 - Cell IDs: Use VSCode.Cell format with `#VSC-xxxxxxxx` pattern
 
 When working on this codebase, maintain the educational Spanish-language focus, progressive difficulty, and consistent football/soccer context throughout all materials.
-
-### Additional Guidelines
-- Use clear, concise explanations and avoid jargon unless defined
-- Maintain a professional yet engaging tone suitable for high school students
-- Ensure all content is accessible and understandable for beginners
-- Keep the focus on practical applications in sports data analysis  
-- Do not use emojis or informal language
-- Maintain a professional yet engaging tone suitable for high school students
-- Ensure all content is accessible and understandable for beginners
-- Use clear, concise explanations and avoid jargon unless defined
-- Keep the focus on practical applications in sports data analysis
-- Make small incremental changes to existing code rather than large rewrites
-- Use comments to explain complex logic or calculations
-- Ensure all code is executable in a Jupyter notebook environment
-- After making changes, always run the entire notebook to ensure everything works as expected
-- Avoid making large rewrites; instead, focus on small, incremental improvements
-- After making changes, propose a commit with a clear message summarizing the changes made
-- If proposing a commit, offer to sync the changes with the current branch
-- Use descriptive commit messages that reflect the changes made, e.g., "Added data visualization for team performance"
-- Ensure all code is well-documented with comments explaining the purpose of each section
-- Use consistent naming conventions for variables and functions, preferably in Spanish

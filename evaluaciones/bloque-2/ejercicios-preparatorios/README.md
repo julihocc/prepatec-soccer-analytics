@@ -1,243 +1,295 @@
-# Ejercicios Preparatorios - Bloque 2
-
-**Bloque:** 2 - Fundamentos de Ciencia de Datos  
-**Propósito:** Preparación para el proyecto principal de análisis  
-**Peso:** 30% de la calificación del Bloque 2  
-**Duración:** 2-3 semanas (distribuidos a lo largo del bloque)  
+# Ejercicios Semanales - Bloque 2
 
 ## Información General
 
-Los ejercicios preparatorios están diseñados para desarrollar gradualmente las habilidades necesarias para el proyecto principal de análisis. Cada ejercicio se enfoca en un aspecto específico del análisis de datos deportivos y prepara componentes que serán integrados en el proyecto final.
+Este directorio contiene todos los ejercicios semanales del **Bloque 2: Fundamentos de Data Science** aplicados al análisis de fútbol. Cada ejercicio está diseñado para consolidar los conceptos aprendidos en las clases teóricas y aplicarlos a casos prácticos del mundo deportivo.
 
-## Estructura de Ejercicios Preparatorios
+## Estructura del Bloque 2
 
-### Ejercicio Preparatorio 1: Fundamentos de EDA Deportivo
-**Semana:** 6  
-**Duración:** 2-3 horas  
-**Peso:** 25% de ejercicios preparatorios  
+**Duración:** Semanas 6-10 del curso  
+**Enfoque:** Fundamentos de ciencia de datos con contexto deportivo  
+**Prerrequisitos:** Completar satisfactoriamente el Bloque 1
 
-#### Objetivos
-- Aplicar técnicas básicas de análisis exploratorio a datos deportivos
-- Desarrollar intuición sobre patrones en datos de fútbol
-- Practicar interpretación de estadísticas en contexto deportivo
+## Ejercicios Disponibles
 
-#### Tareas Específicas
-1. **Carga y primera exploración** de dataset de partidos básico
-2. **Análisis de distribuciones** de goles, posesión, tiros
-3. **Identificación de patrones básicos** en ventaja local
-4. **Visualizaciones exploratorias** iniciales
+### Ejercicio Semana 6: Introducción y Exploración de Datos (`ejercicio-semana-6-exploracion.md`)
 
-#### Entregables
-- Notebook con análisis exploratorio básico
-- 5 visualizaciones diferentes con interpretación
-- Lista de 3 insights iniciales sobre los datos
+- Carga y exploración inicial de datasets deportivos reales
+- Análisis exploratorio de datos (EDA) básico
+- Identificación de patrones y anomalías
+- Técnicas de limpieza de datos básicas
+- **Estado:** ✅ Completado
 
----
+### Ejercicio Semana 7: Tipos de Datos en Fútbol (`ejercicio-semana-7-tipos-datos.md`)
 
-### Ejercicio Preparatorio 2: Manipulación Avanzada de Datos
-**Semana:** 7  
-**Duración:** 2-3 horas  
-**Peso:** 25% de ejercicios preparatorios  
+- Identificación y conversión de tipos de datos
+- Trabajo avanzado con datos categóricos
+- Manipulación de datos temporales
+- Optimización de memoria y rendimiento
+- **Estado:** ✅ Completado
 
-#### Objetivos
-- Dominar técnicas de limpieza y transformación de datos deportivos
-- Practicar creación de variables derivadas relevantes
-- Desarrollar skills de manipulación de datasets complejos
+### Ejercicio Semana 8: Estadística Descriptiva (`ejercicio-semana-8-estadistica.md`)
 
-#### Tareas Específicas
-1. **Limpieza de inconsistencias** en nombres de equipos y fechas
-2. **Creación de variables derivadas** (diferencia de goles, puntos, etc.)
-3. **Agregaciones por equipo y temporada**
-4. **Joins entre múltiples datasets** deportivos
+- Medidas de tendencia central y dispersión
+- Análisis de distribuciones y normalidad
+- Detección y análisis de outliers
+- Reportes estadísticos profesionales
+- **Estado:** ✅ Completado
 
-#### Entregables
-- Dataset limpio y enriquecido
-- Documentación de transformaciones realizadas
-- Función reutilizable para limpieza de datos
+### Ejercicio Semana 9: Visualización de Datos (`ejercicio-semana-9-visualizacion.md`)
 
----
+- Visualizaciones deportivas especializadas
+- Dashboards interactivos básicos
+- Storytelling con datos
+- Optimización para diferentes audiencias
+- **Estado:** ✅ Completado
 
-### Ejercicio Preparatorio 3: Estadística Descriptiva Aplicada
-**Semana:** 8  
-**Duración:** 3-4 horas  
-**Peso:** 25% de ejercicios preparatorios  
+### Ejercicio Semana 10: Análisis e Interpretación (`ejercicio-semana-10-analisis.md`)
 
-#### Objetivos
-- Aplicar estadística descriptiva a problemas deportivos específicos
-- Interpretar medidas estadísticas en contexto futbolístico
-- Desarrollar criterios para identificar anomalías en rendimiento
+- Integración de todas las técnicas del bloque
+- Análisis multidimensional completo
+- Generación de insights profundos
+- Reporte ejecutivo integral
+- **Estado:** ✅ Completado
 
-#### Tareas Específicas
-1. **Análisis de tendencia central** por equipo y posición en tabla
-2. **Análisis de variabilidad** en rendimiento (consistencia)
-3. **Detección de outliers** en rendimiento individual y de equipo
-4. **Comparaciones estadísticas** entre equipos de diferentes niveles
+## Objetivos de Aprendizaje por Semana
 
-#### Entregables
-- Reporte estadístico de rendimiento por equipo
-- Identificación de equipos "inconsistentes" vs "consistentes"
-- Análisis de factores que contribuyen a variabilidad
+### **Semana 6: Exploración de Datos**
 
----
+**Conceptos Clave:**
+- Análisis exploratorio de datos (EDA)
+- Identificación de patrones en datos deportivos
+- Técnicas básicas de limpieza
 
-### Ejercicio Preparatorio 4: Visualización Efectiva
-**Semana:** 9  
-**Duración:** 3-4 horas  
-**Peso:** 25% de ejercicios preparatorios  
+**Habilidades Desarrolladas:**
+- Usar `.info()`, `.describe()`, `.head()` efectivamente
+- Identificar problemas de calidad de datos
+- Generar primeros insights sobre datasets deportivos
 
-#### Objetivos
-- Crear visualizaciones profesionales para datos deportivos
-- Desarrollar storytelling visual efectivo
-- Practicar comunicación de insights através de gráficos
+**Entregables:**
+1. **Exploración inicial**: Análisis completo de estructura de datos
+2. **Limpieza básica**: Detección y corrección de problemas evidentes
+3. **Insights preliminares**: Identificación de patrones interesantes
 
-#### Tareas Específicas
-1. **Dashboard básico** con métricas clave de liga
-2. **Gráficos de comparación** entre equipos
-3. **Visualizaciones temporales** de tendencias
-4. **Mapa de calor** de correlaciones entre variables
+### **Semana 7: Tipos de Datos**
 
-#### Entregables
-- Dashboard interactivo básico
-- Portfolio de 8 visualizaciones diferentes
-- Guía de estilo visual para el proyecto principal
+**Conceptos Clave:**
+- Tipos de datos apropiados para análisis
+- Optimización de memoria y rendimiento
+- Creación de variables categóricas
 
----
+**Habilidades Desarrolladas:**
+- Convertir tipos de datos apropiadamente
+- Crear categorías significativas para análisis
+- Validar calidad de conversiones
 
-## Criterios de Evaluación
+**Entregables:**
+1. **Conversión de tipos**: Sistema completo de optimización
+2. **Variables categóricas**: Creación de categorías deportivas lógicas
+3. **Validación**: Sistema de control de calidad de datos
 
-### Evaluación Individual por Ejercicio
+### **Semana 8: Estadística Descriptiva**
 
-Cada ejercicio preparatorio se evalúa usando los siguientes criterios:
+**Conceptos Clave:**
+- Medidas de tendencia central y dispersión
+- Distribuciones y pruebas de normalidad
+- Detección estadística de outliers
 
-#### Competencia Técnica (40%)
-- **Implementación correcta:** Código funciona sin errores
-- **Uso apropiado de herramientas:** pandas, numpy, matplotlib, seaborn
-- **Eficiencia:** Código optimizado y bien estructurado
+**Habilidades Desarrolladas:**
+- Calcular e interpretar estadísticas descriptivas
+- Identificar outliers usando métodos estadísticos
+- Generar reportes estadísticos profesionales
 
-#### Análisis y Comprensión (35%)
-- **Interpretación correcta:** Comprensión apropiada de resultados
-- **Relevancia deportiva:** Análisis pertinente al contexto futbolístico
-- **Insights valiosos:** Descubrimientos más allá de lo obvio
+**Entregables:**
+1. **Análisis estadístico**: Medidas completas por variable
+2. **Detección de outliers**: Identificación y análisis contextual
+3. **Reporte estadístico**: Dashboard integrado de métricas
 
-#### Presentación (25%)
-- **Claridad:** Explicaciones comprensibles
-- **Organización:** Estructura lógica del análisis
-- **Visualización:** Gráficos efectivos y profesionales
+### **Semana 9: Visualización de Datos**
 
-### Escala de Calificación
+**Conceptos Clave:**
+- Visualizaciones especializadas para datos deportivos
+- Principios de diseño visual efectivo
+- Storytelling con datos
 
-| Nivel | Rango | Descripción |
-|-------|--------|-------------|
-| **Excelente** | 9.0-10.0 | Trabajo sobresaliente con insights valiosos y técnica superior |
-| **Competente** | 7.5-8.9 | Trabajo sólido con análisis correcto y presentación clara |
-| **Satisfactorio** | 6.0-7.4 | Trabajo básico que cumple requisitos mínimos |
-| **Insuficiente** | 0-5.9 | Trabajo incompleto o con errores significativos |
+**Habilidades Desarrolladas:**
+- Crear gráficos especializados (radar, heatmaps, etc.)
+- Desarrollar dashboards interactivos básicos
+- Adaptar visualizaciones para diferentes audiencias
 
-## Recursos Proporcionados
+**Entregables:**
+1. **Gráficos especializados**: Radar charts, mapas de calor deportivos
+2. **Dashboard interactivo**: Panel de control de liga
+3. **Storytelling visual**: Narrativa de temporada con datos
 
-### Datasets Específicos para Cada Ejercicio
+### **Semana 10: Análisis e Interpretación**
 
-#### Ejercicio 1: `futbol_exploratorio.csv`
-- 200 partidos de muestra para exploración inicial
-- Variables básicas: equipos, goles, fecha, resultado
+**Conceptos Clave:**
+- Integración de todas las técnicas aprendidas
+- Análisis multidimensional complejo
+- Generación de insights accionables
 
-#### Ejercicio 2: `futbol_sucio.csv`
-- Dataset con inconsistencias intencionales para práctica de limpieza
-- Múltiples archivos para práctica de joins
+**Habilidades Desarrolladas:**
+- Combinar múltiples técnicas de análisis
+- Generar predicciones básicas
+- Crear reportes ejecutivos profesionales
 
-#### Ejercicio 3: `futbol_estadisticas.csv`
-- 500+ partidos con variables estadísticas detalladas
-- Datos de múltiples temporadas para análisis temporal
+**Entregables:**
+1. **Análisis integral**: Combinación de todas las técnicas
+2. **Predicciones básicas**: Proyecciones de rendimiento
+3. **Reporte ejecutivo**: Documento profesional con recomendaciones
 
-#### Ejercicio 4: `futbol_visualizacion.csv`
-- Dataset enriquecido con variables categóricas y temporales
-- Preparado específicamente para práctica de visualización
+## Evaluación y Calificaciones
 
-### Plantillas y Ejemplos
+### Distribución de Puntajes
 
-#### Notebooks Template
-- Estructura sugerida para cada ejercicio
-- Secciones claramente definidas
-- Comentarios guía para orientación
+- **Ejercicios Semanales:** 60% (12% cada ejercicio)
+- **Proyecto de Análisis:** 40% (Proyecto integrador del bloque)
 
-#### Ejemplos de Código
-- Fragmentos de código ejemplo para técnicas específicas
-- Funciones auxiliares reutilizables
-- Patrones de programación recomendados
+### Criterios Generales de Evaluación
 
-### Documentación de Apoyo
+#### **Dominio Técnico (40-50%)**
 
-#### Guías Metodológicas
-- **Guía de EDA Deportivo:** Checklist de elementos a explorar
-- **Guía de Limpieza:** Problemas comunes en datos deportivos
-- **Guía de Visualización:** Mejores prácticas para gráficos deportivos
+- Uso correcto de herramientas de análisis
+- Aplicación apropiada de técnicas estadísticas
+- Implementación efectiva de visualizaciones
+- Calidad técnica del código
 
-#### Referencias Técnicas
-- Cheat sheets de pandas y seaborn específicas para datos deportivos
-- Glosario de términos estadísticos en contexto futbolístico
-- FAQ de problemas técnicos comunes
+#### **Aplicación Práctica (25-35%)**
 
-## Cronograma de Entregas
+- Relevancia del análisis para contexto deportivo
+- Interpretación correcta de resultados
+- Generación de insights valiosos
+- Resolución efectiva de problemas planteados
 
-### Calendario Detallado
+#### **Comunicación (15-30%)**
 
-| Ejercicio | Semana | Fecha Asignación | Fecha Entrega | Retroalimentación |
-|-----------|--------|------------------|---------------|-------------------|
-| Preparatorio 1 | 6 | Lunes W6 | Viernes W6 | Lunes W7 |
-| Preparatorio 2 | 7 | Lunes W7 | Viernes W7 | Lunes W8 |
-| Preparatorio 3 | 8 | Lunes W8 | Viernes W8 | Lunes W9 |
-| Preparatorio 4 | 9 | Lunes W9 | Viernes W9 | Lunes W10 |
+- Claridad en presentación de resultados
+- Documentación apropiada del proceso
+- Visualizaciones efectivas y profesionales
+- Estructura lógica del análisis
+
+### Criterios Específicos por Ejercicio
+
+#### **Semana 6: Exploración**
+
+- **Exploración de datos (35%):** Uso efectivo de métodos EDA
+- **Limpieza de datos (25%):** Detección y corrección de problemas
+- **Interpretación (40%):** Insights relevantes y bien fundamentados
+
+#### **Semana 7: Tipos de Datos**
+
+- **Conversiones (40%):** Identificación y aplicación correcta
+- **Categorías (30%):** Creación lógica de variables categóricas
+- **Validación (30%):** Sistema efectivo de control de calidad
+
+#### **Semana 8: Estadística**
+
+- **Cálculos estadísticos (45%):** Precisión en medidas y pruebas
+- **Interpretación deportiva (35%):** Contextualización apropiada
+- **Comunicación (20%):** Presentación clara de resultados
+
+#### **Semana 9: Visualización**
+
+- **Técnica visual (40%):** Dominio de herramientas y técnicas
+- **Diseño (35%):** Principios de comunicación visual efectiva
+- **Creatividad (25%):** Originalidad y adaptación al contexto
+
+#### **Semana 10: Análisis Integral**
+
+- **Integración técnica (30%):** Combinación efectiva de herramientas
+- **Insights (35%):** Profundidad y originalidad de hallazgos
+- **Comunicación (35%):** Calidad de reporte ejecutivo
+
+## Instrucciones Generales
 
 ### Formato de Entrega
-- **Jupyter Notebook:** Con código, análisis y narrativa
-- **Datasets procesados:** Archivos CSV resultantes cuando aplicable
-- **Documentación:** README con explicación de proceso
 
-### Retroalimentación
-- **Retroalimentación rápida:** Comentarios generales en 48 horas
-- **Retroalimentación detallada:** Análisis específico en 1 semana
-- **Sesiones de consulta:** Disponibles para dudas específicas
+1. **Archivo:** Jupyter Notebook (`.ipynb`)
+2. **Nomenclatura:** `ejercicio-semana-X-[apellido].ipynb`
+3. **Contenido:** Código ejecutable con resultados visibles
+4. **Documentación:** Comentarios explicativos en código
+5. **Interpretaciones:** Análisis de resultados en markdown
 
-## Integración con Proyecto Principal
+### Recursos Necesarios
 
-### Preparación Progresiva
-- **Semana 6:** Fundamentos de exploración → Base para análisis inicial del proyecto
-- **Semana 7:** Manipulación de datos → Preparación de datasets del proyecto
-- **Semana 8:** Estadística aplicada → Análisis cuantitativo del proyecto
-- **Semana 9:** Visualización → Dashboard y gráficos del proyecto
+#### **Datasets Requeridos**
 
-### Reutilización de Componentes
-- **Código desarrollado:** Puede ser adaptado para proyecto principal
-- **Técnicas practicadas:** Aplicación directa en proyecto
-- **Datasets procesados:** Base para análisis más profundo
-- **Visualizaciones:** Inspiración y componentes para dashboard final
+- `equipos-europa-2023-24.csv` (20 equipos, 5 ligas principales)
+- `jugadores-estrellas-2024.csv` (25 jugadores de élite mundial)
+- Datasets adicionales según ejercicio específico
 
-### Evaluación Integrada
-- **Progreso acumulativo:** Cada ejercicio construye sobre el anterior
-- **Competencias desarrolladas:** Preparación directa para proyecto principal
-- **Retroalimentación formativa:** Ajustes antes del proyecto final
+#### **Librerías Estándar**
 
-## Consideraciones Especiales
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.express as px
+import plotly.graph_objects as go
+from scipy import stats
+```
 
-### Flexibilidad en Implementación
-- **Enfoques múltiples:** Diferentes soluciones válidas para cada ejercicio
-- **Creatividad valorada:** Enfoques innovadores son bienvenidos
-- **Adaptación personal:** Conexión con intereses deportivos específicos
+#### **Configuración Recomendada**
 
-### Soporte Disponible
-- **Horas de consulta:** 2 horas semanales disponibles
-- **Foro de dudas:** Plataforma para preguntas técnicas
-- **Peer learning:** Oportunidades de colaboración entre estudiantes
+```python
+# Estilo visual estándar
+sns.set_theme(style="whitegrid", palette="viridis")
+plt.rcParams['figure.figsize'] = (12, 8)
 
-### Recuperación y Mejora
-- **Resubmisión:** Posibilidad de mejorar ejercicios con calificación < 7.0
-- **Ejercicios de refuerzo:** Actividades adicionales para estudiantes que lo necesiten
-- **Aceleración:** Ejercicios adicionales para estudiantes avanzados
+# Supresión de warnings
+import warnings
+warnings.filterwarnings('ignore')
+```
+
+### Plazos de Entrega
+
+- **Semana 6:** Final de Semana 6
+- **Semana 7:** Final de Semana 7  
+- **Semana 8:** Final de Semana 8
+- **Semana 9:** Final de Semana 9
+- **Semana 10:** Final de Semana 10
+
+**Nota:** No se aceptan entregas tardías sin justificación previa.
+
+## Progresión de Complejidad
+
+### Nivel Básico (Semanas 6-7)
+
+- Exploración y preparación de datos
+- Técnicas fundamentales de limpieza
+- Análisis descriptivo básico
+
+### Nivel Intermedio (Semanas 8-9)
+
+- Estadística descriptiva completa
+- Visualizaciones especializadas
+- Detección de patrones complejos
+
+### Nivel Avanzado (Semana 10)
+
+- Análisis multidimensional integrado
+- Predicciones básicas
+- Reportes ejecutivos profesionales
+
+## Soporte y Recursos
+
+### Documentación de Referencia
+
+- **Pandas:** Análisis y manipulación de datos
+- **NumPy:** Computación numérica
+- **Matplotlib/Seaborn:** Visualización estática
+- **Plotly:** Visualización interactiva
+- **SciPy:** Estadística y análisis científico
+
+### Ejemplos y Templates
+
+- Notebooks de clase de cada semana
+- Templates de visualizaciones deportivas
+- Ejemplos de reportes ejecutivos
+- Datasets de práctica adicionales
 
 ---
 
-**Los ejercicios preparatorios son tu oportunidad de desarrollar gradualmente las habilidades necesarias para el análisis de datos deportivos. Cada ejercicio te acerca más a convertirte en un analista competente.** ⚽📊
-
-**Peso total en curso:** 10.5% (35% del bloque × 30% de ejercicios preparatorios)  
-**Enfoque:** Desarrollo progresivo de competencias  
-**Objetivo:** Preparación óptima para proyecto principal
+**¡Desarrolla expertise en ciencia de datos aplicada al análisis deportivo profesional!** ⚽📊

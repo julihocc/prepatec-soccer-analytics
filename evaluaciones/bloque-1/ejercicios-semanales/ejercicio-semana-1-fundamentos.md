@@ -1,167 +1,237 @@
 # Ejercicio Semana 1: Configuración y Fundamentos
 
-## Información del Ejercicio
+## Información General
 
 **Bloque:** 1 - Prerrequisitos de Programación  
-**Peso:** 12% de la calificación del bloque (60% ÷ 5 ejercicios)  
-**Tiempo estimado:** 1-2 horas  
-**Entrega:** Final de Semana 1
+**Semana:** 1  
+**Tiempo estimado:** 60 minutos  
+**Puntos totales:** 100 puntos  
+**Fecha límite:** Final de la Semana 1
 
-## Objetivos
+## Objetivos de Aprendizaje
 
-Al completar este ejercicio, serás capaz de:
-- Verificar la configuración correcta de tu entorno Python
-- Trabajar con variables y tipos de datos básicos en contextos deportivos
+Al completar este ejercicio, el estudiante será capaz de:
+- Verificar la configuración correcta del entorno Python
+- Crear y manipular variables con tipos de datos básicos
 - Aplicar operadores aritméticos y de comparación
-- Formatear y presentar resultados de análisis básicos
+- Presentar resultados de manera clara y profesional
 
-## Ejercicio 1: Verificación del Entorno (15 puntos)
+## Conocimientos Previos Requeridos
 
-### Instrucciones
-Ejecuta el siguiente código para verificar que tu entorno está correctamente configurado:
+- Conceptos básicos de programación (variables, tipos de datos)
+- Operadores aritméticos y de comparación
+- Uso básico de Python
+
+## Ejercicio: Análisis de un Partido de Fútbol
+
+### Contexto
+Eres un analista deportivo junior y tu primera tarea es crear un programa que analice los datos básicos de un partido de fútbol. Utilizarás Python para procesar la información y generar un reporte básico.
+
+### Parte 1: Configuración del Entorno (25 puntos)
+
+**Instrucciones:**
+1. Crea un nuevo notebook de Jupyter o archivo Python
+2. Ejecuta el siguiente código para verificar tu entorno:
 
 ```python
-# Verificar versión de Python
+# Verificación del entorno de trabajo
 import sys
-print(f"Versión de Python: {sys.version}")
+print("=== VERIFICACIÓN DEL ENTORNO ===")
+print(f"Versión de Python: {sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}")
 
 # Verificar librerías principales
-try:
-    import pandas as pd
-    import numpy as np
-    import matplotlib.pyplot as plt
-    print("✅ Todas las librerías están instaladas correctamente")
-    print(f"pandas: {pd.__version__}")
-    print(f"numpy: {np.__version__}")
-    print(f"matplotlib: {matplotlib.__version__}")
-except ImportError as e:
-    print(f"❌ Error al importar: {e}")
+librerias_requeridas = ['pandas', 'numpy', 'matplotlib']
+librerias_instaladas = []
+
+for libreria in librerias_requeridas:
+    try:
+        __import__(libreria)
+        librerias_instaladas.append(libreria)
+        print(f"✅ {libreria}: Instalada")
+    except ImportError:
+        print(f"❌ {libreria}: NO instalada")
+
+print(f"\nLibrerías instaladas: {len(librerias_instaladas)}/{len(librerias_requeridas)}")
+if len(librerias_instaladas) == len(librerias_requeridas):
+    print("🎉 ¡Entorno listo para trabajar!")
+else:
+    print("⚠️ Algunas librerías faltan por instalar")
 ```
 
-### Tu Respuesta
-*Ejecuta el código y pega aquí la salida de tu sistema.*
+**Entrega requerida:**
+- Captura de pantalla de la salida del código
+- Confirmación de que todas las librerías están instaladas
 
-## Ejercicio 2: Variables Deportivas (20 puntos)
+### Parte 2: Datos del Partido (25 puntos)
 
-### Instrucciones
-Crea variables para representar la información de un partido de fútbol y muestra los resultados:
+**Instrucciones:**
+Crea variables para almacenar la información de un partido entre Barcelona y Real Madrid:
 
 ```python
-# Información del partido
-equipo_local = "Barcelona"
-equipo_visitante = "Real Madrid" 
+# Información básica del partido
+equipo_local = "FC Barcelona"
+equipo_visitante = "Real Madrid"
+estadio = "Camp Nou"
+fecha_partido = "2024-10-26"
+
+# Resultados del partido
 goles_local = 2
 goles_visitante = 1
 minutos_jugados = 90
-asistencia = 85000
+tiempo_extra = 3  # minutos de tiempo añadido
 
-# Tu código aquí - muestra toda la información del partido
-# Usa f-strings para una presentación clara
+# Información adicional
+asistencia = 85_000
+capacidad_estadio = 99_354
+temperatura = 18  # grados Celsius
+
+# Tu código aquí - Agrega 3 variables más relevantes para el análisis
+# Ejemplos: árbitro, tarjetas_amarillas, tarjetas_rojas, etc.
+
+# Tu código aquí - Muestra toda la información usando print()
+print("=== INFORMACIÓN DEL PARTIDO ===")
+# Completa con f-strings para mostrar todos los datos
 ```
 
-### Tu Respuesta
-*Completa el código para mostrar toda la información del partido de forma clara y profesional.*
+**Requisitos específicos:**
+1. Copia el código anterior
+2. Agrega 3 variables más que consideres relevantes para el análisis del partido
+3. Muestra toda la información usando `print()` con formato claro
+4. Usa f-strings para una presentación profesional
 
-## Ejercicio 3: Cálculos Deportivos (25 puntos)
+### Parte 3: Cálculos Estadísticos (25 puntos)
 
-### Instrucciones
-Usando los datos del ejercicio anterior, calcula y muestra:
+**Instrucciones:**
+Realiza los siguientes cálculos usando las variables de la Parte 2:
 
 ```python
-# Tu código aquí:
+# Tu código aquí - calcula:
+
 # 1. Total de goles en el partido
+total_goles = goles_local + goles_visitante
+
 # 2. Diferencia de goles
-# 3. Promedio de goles por minuto
-# 4. Promedio de espectadores por gol
-# 5. Porcentaje de goles del equipo local
+diferencia_goles = # Tu código aquí
 
-# Muestra todos los resultados con explicaciones claras
+# 3. Promedio de goles por minuto (considera tiempo extra)
+tiempo_total = # Tu código aquí
+promedio_goles_minuto = # Tu código aquí
+
+# 4. Porcentaje de ocupación del estadio
+porcentaje_ocupacion = # Tu código aquí
+
+# 5. Goles por cada 10,000 espectadores
+goles_por_espectadores = # Tu código aquí
+
+# Mostrar todos los resultados con formato claro
+print("=== ESTADÍSTICAS DEL PARTIDO ===")
+print(f"Total de goles: {total_goles}")
+# Completa con el resto de estadísticas usando f-strings
 ```
 
-### Tu Respuesta
-*Completa los cálculos y presenta los resultados con explicaciones.*
+**Requisitos específicos:**
+- Usa operadores aritméticos para todos los cálculos
+- Redondea los decimales a 2 posiciones usando `round()`
+- Presenta los resultados con descripciones claras
+- Incluye las unidades correspondientes (%, minutos, etc.)
 
-## Ejercicio 4: Análisis del Resultado (25 puntos)
+### Parte 4: Análisis del Resultado (25 puntos)
 
-### Instrucciones
-Determina el resultado del partido y proporciona un análisis básico:
+**Instrucciones:**
+Crea un programa que analice el resultado del partido y proporcione insights:
 
 ```python
-# Tu código aquí:
-# 1. Determinar quién ganó (usar condicionales)
-# 2. Categorizar el tipo de partido:
-#    - "Goleada" si la diferencia es >= 3
-#    - "Victoria clara" si la diferencia es 2
-#    - "Victoria ajustada" si la diferencia es 1
-#    - "Empate" si no hay diferencia
+# Tu código aquí - implementa:
 
-# 3. Evaluar la asistencia:
-#    - "Lleno total" si >= 80,000
-#    - "Buena asistencia" si >= 50,000
-#    - "Asistencia regular" si < 50,000
+# 1. Determinar el ganador del partido
+if goles_local > goles_visitante:
+    ganador = # Tu código
+elif goles_visitante > goles_local:
+    ganador = # Tu código
+else:
+    ganador = # Tu código
 
-# Presenta un resumen completo del análisis
+# 2. Clasificar el tipo de victoria
+if diferencia_goles >= 3:
+    tipo_partido = "Goleada"
+elif diferencia_goles == 2:
+    tipo_partido = "Victoria clara"
+elif diferencia_goles == 1:
+    tipo_partido = "Victoria ajustada"
+else:
+    tipo_partido = "Empate"
+
+# 3. Evaluar la asistencia al estadio
+if porcentaje_ocupacion >= 90:
+    evaluacion_asistencia = "Lleno total"
+elif porcentaje_ocupacion >= 75:
+    evaluacion_asistencia = "Excelente asistencia"
+elif porcentaje_ocupacion >= 50:
+    evaluacion_asistencia = "Buena asistencia"
+else:
+    evaluacion_asistencia = "Asistencia regular"
+
+# 4. Generar reporte final
+print("=== ANÁLISIS FINAL DEL PARTIDO ===")
+# Tu código para mostrar el análisis completo
 ```
 
-### Tu Respuesta
-*Completa el análisis y presenta un resumen del partido.*
-
-## Ejercicio 5: Comparación de Equipos (15 puntos)
-
-### Instrucciones
-Compara el rendimiento de dos equipos en la temporada:
-
-```python
-# Datos de la temporada
-equipo_a = "Manchester City"
-goles_a = 95
-partidos_a = 38
-
-equipo_b = "Liverpool" 
-goles_b = 86
-partidos_b = 38
-
-# Tu código aquí:
-# 1. Calcular promedio de goles por partido para cada equipo
-# 2. Determinar cuál equipo tiene mejor promedio
-# 3. Calcular la diferencia en promedio de goles
-# 4. Hacer una comparación completa
-
-# Presenta los resultados de forma clara
-```
-
-### Tu Respuesta
-*Completa la comparación y presenta las conclusiones.*
-
-## Criterios de Evaluación
-
-### Correctitud Técnica (40%)
-- [ ] Código ejecuta sin errores (20%)
-- [ ] Uso correcto de variables y tipos de datos (10%)
-- [ ] Implementación correcta de operadores (10%)
-
-### Aplicación Práctica (30%)
-- [ ] Cálculos deportivos son correctos (15%)
-- [ ] Análisis lógico y coherente (15%)
-
-### Claridad y Presentación (30%)
-- [ ] Código bien comentado (10%)
-- [ ] Resultados claramente presentados (10%)
-- [ ] Uso efectivo de f-strings (10%)
+**Entrega requerida:**
+Un reporte final que incluya:
+- Ganador del partido
+- Tipo de partido según la diferencia de goles
+- Evaluación de la asistencia
+- Una conclusión de 2-3 líneas sobre el partido
 
 ## Instrucciones de Entrega
 
-1. **Completa todos los ejercicios** en este notebook
-2. **Ejecuta todas las celdas** y verifica que muestren resultados
-3. **Guarda el archivo** como `ejercicio-semana-1-[tu-apellido].ipynb`
-4. **Entrega antes del final de Semana 1**
+1. **Formato:** Archivo `.py` o notebook `.ipynb`
+2. **Nombre del archivo:** `[matricula]-ejercicio-semana-1.ipynb`
+3. **Contenido mínimo:**
+   - Código completo de las 4 partes
+   - Comentarios explicando cada sección
+   - Salida de todos los `print()` statements
+4. **Documentación adicional:**
+   - Captura de pantalla de la verificación del entorno
+   - Breve reflexión (2-3 líneas) sobre lo aprendido
 
-## Recursos de Apoyo
+## Criterios de Evaluación (100 puntos)
 
-- Notebook de la Semana 1: `configuracion-fundamentos.ipynb`
-- Documentación de Python: https://docs.python.org/3/
-- Tutorial de f-strings: https://docs.python.org/3/tutorial/inputoutput.html
+### Correctitud Técnica (40 puntos)
+
+- **Excelente (36-40):** Código ejecuta sin errores, sintaxis correcta, cálculos precisos
+- **Competente (28-35):** Errores menores, sintaxis mayormente correcta
+- **En desarrollo (20-27):** Errores significativos, implementación parcial
+- **Insuficiente (0-19):** Código no ejecuta o errores graves
+
+### Aplicación Práctica (30 puntos)
+
+- **Excelente (27-30):** Resolución completa, uso creativo del contexto deportivo
+- **Competente (21-26):** Resolución adecuada de todos los problemas
+- **En desarrollo (15-20):** Resolución básica, uso limitado del contexto
+- **Insuficiente (0-14):** Problemas no resueltos correctamente
+
+### Claridad y Documentación (30 puntos)
+
+- **Excelente (27-30):** Código bien comentado, presentación profesional, explicaciones claras
+- **Competente (21-26):** Comentarios adecuados, presentación clara
+- **En desarrollo (15-20):** Comentarios básicos, presentación simple
+- **Insuficiente (0-14):** Sin comentarios, presentación deficiente
+
+## Consejos para el Éxito
+
+1. **Planifica antes de programar:** Lee todo el ejercicio antes de empezar
+2. **Prueba tu código:** Ejecuta cada parte por separado para verificar errores
+3. **Usa nombres descriptivos:** Las variables deben explicar qué contienen
+4. **Comenta tu código:** Explica qué hace cada sección importante
+5. **Revisa los cálculos:** Verifica que las operaciones matemáticas sean correctas
+
+## 🔗 Recursos Adicionales
+
+- [Documentación oficial de Python](https://docs.python.org/3/)
+- [Tutorial de variables en Python](https://www.w3schools.com/python/python_variables.asp)
+- [Operadores en Python](https://www.w3schools.com/python/python_operators.asp)
 
 ---
 
-**¡Buena suerte! Este es tu primer paso hacia el análisis de datos deportivos.** ⚽🐍
+*¿Preguntas? Contacta a tu instructor durante las horas de oficina o en el foro del curso.*

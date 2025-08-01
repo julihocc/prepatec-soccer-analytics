@@ -1,53 +1,479 @@
-# Ejercicio Semana 3: Funciones y Módulos en Análisis Deportivo
+# Información General
 
-## Información del Ejercicio
-
+**Tema:** Funciones y Módulos en Python  
+**Semana:** 3  
 **Bloque:** 1 - Prerrequisitos de Programación  
-**Peso:** 12% de la calificación del bloque (60% ÷ 5 ejercicios)  
-**Tiempo estimado:** 1.5-2 horas  
-**Entrega:** Final de Semana 3
+**Tiempo estimado:** 60 minutos  
+**Puntos totales:** 100 puntos  
+**Fecha límite:** Final de la Semana 3  
+**Archivo entrega:** `[matricula]-ejercicio-semana-3.ipynb`
 
-## Objetivos
+## Objetivos de Aprendizaje
 
-Al completar este ejercicio, serás capaz de:
+Al finalizar este ejercicio, el estudiante será capaz de:
 
-- Crear funciones reutilizables para análisis deportivo
-- Implementar funciones con parámetros y valores de retorno
-- Organizar código en módulos para mayor eficiencia
-- Aplicar principios de programación modular a datos de fútbol
+1. **Crear funciones modulares** para análisis deportivo reutilizable
+2. **Implementar parámetros y valores de retorno** de manera eficiente
+3. **Documentar funciones** con docstrings claros y precisos
+4. **Organizar código** en módulos para proyectos escalables
+5. **Validar datos** usando funciones de control de calidad
 
-## Ejercicio 1: Funciones Básicas de Estadísticas (20 puntos)
+## Prerrequisitos
 
-### Instrucciones
+- Ejercicios de las Semanas 1 y 2 completados exitosamente
+- Dominio de estructuras de control (if, for, while)
+- Conocimiento de listas y diccionarios en Python
+- Comprensión de operaciones matemáticas básicas
 
-Crea funciones para calcular estadísticas básicas de equipos:
+## Contexto del Ejercicio
+
+Eres el **desarrollador principal** del sistema de análisis del FC Barcelona. El director técnico necesita herramientas reutilizables para:
+
+- Calcular estadísticas avanzadas de manera consistente
+- Generar reportes automáticos para diferentes equipos
+- Analizar patrones de rendimiento usando funciones especializadas
+- Crear un módulo completo de análisis deportivo
+
+---
+
+# Ejercicio Integrador: Sistema Modular de Análisis FC Barcelona
+
+## Parte 1: Biblioteca de Funciones Estadísticas (25 puntos)
+
+### Objetivo
+Desarrollar una biblioteca completa de funciones para cálculos estadísticos deportivos.
+
+### Instrucciones Detalladas
+
+**Paso 1:** Crea funciones especializadas para análisis estadístico:
 
 ```python
-# Datos de ejemplo para probar tus funciones
-goles_barcelona = [3, 1, 2, 4, 0, 2, 1, 3, 2, 1]
-goles_real_madrid = [2, 3, 1, 2, 1, 3, 0, 2, 4, 1]
+# Datos de prueba del FC Barcelona temporada 2023-24
+goles_por_partido = [3, 1, 2, 4, 0, 2, 1, 3, 2, 1, 4, 2, 1, 3, 0]
+asistencias_messi = [2, 1, 3, 2, 0, 1, 2, 1, 1, 2, 3, 1, 0, 2, 1]
+minutos_jugados = [90, 85, 90, 78, 90, 88, 90, 82, 90, 75, 90, 90, 65, 90, 80]
 
-# Crear las siguientes funciones:
+# TU CÓDIGO AQUÍ:
+# Implementa estas 5 funciones con docstrings completos:
 
-def promedio_goles(lista_goles):
+def calcular_promedio_deportivo(lista_valores, nombre_estadistica):
     """
-    Calcula el promedio de goles por partido
+    Calcula el promedio de cualquier estadística deportiva
     
     Parámetros:
-    lista_goles (list): Lista con goles por partido
+    lista_valores (list): Lista con valores numéricos
+    nombre_estadistica (str): Nombre de la estadística para el reporte
     
     Retorna:
-    float: Promedio de goles
+    dict: {"promedio": float, "estadistica": str, "total_partidos": int}
     """
-    # Tu código aquí
-    pass
+    # Tu implementación aquí
 
-def maximo_goles(lista_goles):
+def encontrar_mejor_actuacion(lista_valores, lista_rivales):
     """
-    Encuentra la mayor cantidad de goles en un partido
+    Encuentra la mejor actuación y contra qué rival fue
     
     Parámetros:
-    lista_goles (list): Lista con goles por partido
+    lista_valores (list): Valores de rendimiento
+    lista_rivales (list): Nombres de equipos rivales
+    
+    Retorna:
+    dict: {"valor_maximo": int, "rival": str, "partido_numero": int}
+    """
+    # Tu implementación aquí
+
+def calcular_consistencia(lista_valores):
+    """
+    Calcula la consistencia del rendimiento (desviación estándar simple)
+    
+    Parámetros:
+    lista_valores (list): Lista de valores numéricos
+    
+    Retorna:
+    dict: {"consistencia": str, "variabilidad": float}
+    # Categorías: "Muy Consistente" < 1.0, "Consistente" < 1.5, "Variable" >= 1.5
+    """
+    # Tu implementación aquí
+
+def generar_reporte_rendimiento(goles, asistencias, minutos, nombre_jugador):
+    """
+    Genera un reporte completo de rendimiento de un jugador
+    
+    Parámetros:
+    goles (list): Goles por partido
+    asistencias (list): Asistencias por partido  
+    minutos (list): Minutos jugados por partido
+    nombre_jugador (str): Nombre del jugador
+    
+    Retorna:
+    dict: Reporte completo con todas las estadísticas
+    """
+    # Tu implementación aquí
+
+def validar_datos_partido(goles_local, goles_visitante, minutos_partido):
+    """
+    Valida que los datos de un partido sean coherentes
+    
+    Parámetros:
+    goles_local (int): Goles del equipo local
+    goles_visitante (int): Goles del equipo visitante
+    minutos_partido (int): Duración del partido
+    
+    Retorna:
+    dict: {"valido": bool, "errores": list, "advertencias": list}
+    """
+    # Tu implementación aquí
+
+# PRUEBA TUS FUNCIONES:
+rivales = ["Real Madrid", "Sevilla", "Valencia", "Atletico", "Betis", 
+          "Sociedad", "Villarreal", "Celta", "Getafe", "Osasuna",
+          "Granada", "Cadiz", "Mallorca", "Girona", "Almeria"]
+
+# Ejecuta todas las funciones y muestra los resultados
+```
+
+### Criterios de Evaluación
+- **Funciones implementadas correctamente** (15 puntos)
+- **Docstrings completos y claros** (5 puntos)
+- **Validación y manejo de errores** (5 puntos)
+
+---
+
+## Parte 2: Sistema de Análisis de Plantilla (25 puntos)
+
+### Objetivo
+Crear funciones para analizar el rendimiento de toda la plantilla del FC Barcelona.
+
+### Instrucciones Detalladas
+
+**Paso 2:** Desarrolla un sistema completo de análisis de plantilla:
+
+```python
+# Base de datos de la plantilla del FC Barcelona
+plantilla_barcelona = [
+    {"nombre": "Ter Stegen", "posicion": "Portero", "edad": 31, "partidos": 25, "goles": 0, "asistencias": 0},
+    {"nombre": "Pedri", "posicion": "Centrocampista", "edad": 21, "partidos": 28, "goles": 4, "asistencias": 6},
+    {"nombre": "Gavi", "posicion": "Centrocampista", "edad": 19, "partidos": 32, "goles": 2, "asistencias": 8},
+    {"nombre": "Lewandowski", "posicion": "Delantero", "edad": 35, "partidos": 30, "goles": 22, "asistencias": 3},
+    {"nombre": "Raphinha", "posicion": "Extremo", "edad": 27, "partidos": 29, "goles": 8, "asistencias": 12},
+    {"nombre": "Frenkie de Jong", "posicion": "Centrocampista", "edad": 27, "partidos": 24, "goles": 3, "asistencias": 4},
+    {"nombre": "Ronald Araujo", "posicion": "Defensa", "edad": 25, "partidos": 26, "goles": 2, "asistencias": 1}
+]
+
+# TU CÓDIGO AQUÍ:
+# Implementa estas funciones especializadas:
+
+def filtrar_por_posicion(plantilla, posicion_buscada):
+    """
+    Filtra jugadores por posición específica
+    
+    Parámetros:
+    plantilla (list): Lista de diccionarios con datos de jugadores
+    posicion_buscada (str): Posición a filtrar
+    
+    Retorna:
+    list: Lista de jugadores de esa posición
+    """
+    # Tu implementación aquí
+
+def calcular_promedio_edad_posicion(plantilla, posicion):
+    """
+    Calcula la edad promedio de jugadores por posición
+    
+    Parámetros:
+    plantilla (list): Lista de jugadores
+    posicion (str): Posición a analizar
+    
+    Retorna:
+    float: Edad promedio de la posición
+    """
+    # Tu implementación aquí
+
+def encontrar_goleador_equipo(plantilla):
+    """
+    Encuentra al máximo goleador del equipo
+    
+    Parámetros:
+    plantilla (list): Lista de jugadores
+    
+    Retorna:
+    dict: Información completa del máximo goleador
+    """
+    # Tu implementación aquí
+
+def analizar_efectividad_por_minuto(plantilla):
+    """
+    Calcula goles + asistencias por partido para cada jugador
+    
+    Parámetros:
+    plantilla (list): Lista de jugadores
+    
+    Retorna:
+    list: Lista ordenada por efectividad (mayor a menor)
+    """
+    # Tu implementación aquí
+
+def generar_reporte_plantilla_completo(plantilla):
+    """
+    Genera un análisis completo de toda la plantilla
+    
+    Parámetros:
+    plantilla (list): Lista de jugadores
+    
+    Retorna:
+    dict: Reporte completo con estadísticas generales
+    """
+    # Tu implementación aquí
+
+# EJECUTA EL ANÁLISIS COMPLETO:
+# 1. Filtra por cada posición y muestra estadísticas
+# 2. Encuentra los 3 jugadores más efectivos
+# 3. Calcula la edad promedio del equipo
+# 4. Genera el reporte completo de la plantilla
+```
+
+### Criterios de Evaluación
+- **Análisis por posición correcto** (10 puntos)
+- **Cálculos de efectividad precisos** (10 puntos)
+- **Reporte integral coherente** (5 puntos)
+
+---
+
+## Parte 3: Simulador de Partidos con Funciones (25 puntos)
+
+### Objetivo
+Desarrollar un simulador de partidos usando funciones modulares y reutilizables.
+
+### Instrucciones Detalladas
+
+**Paso 3:** Crea un simulador completo de enfrentamientos:
+
+```python
+import random
+
+# TU CÓDIGO AQUÍ:
+# Implementa este simulador modular:
+
+def calcular_fuerza_ataque(plantilla):
+    """
+    Calcula la fuerza ofensiva total del equipo
+    
+    Parámetros:
+    plantilla (list): Lista de jugadores
+    
+    Retorna:
+    float: Índice de fuerza ofensiva (0-100)
+    """
+    # Fórmula: (total_goles + total_asistencias) / total_partidos * 10
+    # Tu implementación aquí
+
+def calcular_fuerza_defensa(plantilla):
+    """
+    Calcula la solidez defensiva del equipo
+    
+    Parámetros:
+    plantilla (list): Lista de jugadores
+    
+    Retorna:
+    float: Índice defensivo (0-100)
+    """
+    # Fórmula basada en minutos jugados de defensas y portero
+    # Tu implementación aquí
+
+def simular_partido_individual(equipo_local, equipo_visitante, nombre_local, nombre_visitante):
+    """
+    Simula un partido entre dos equipos
+    
+    Parámetros:
+    equipo_local (list): Plantilla del equipo local
+    equipo_visitante (list): Plantilla del equipo visitante
+    nombre_local (str): Nombre del equipo local
+    nombre_visitante (str): Nombre del equipo visitante
+    
+    Retorna:
+    dict: Resultado completo del partido simulado
+    """
+    # Tu implementación aquí
+    # Incluye: goles, goleadores, tiempo de goles, estadísticas
+
+def simular_temporada_completa(equipos_liga):
+    """
+    Simula una temporada completa entre múltiples equipos
+    
+    Parámetros:
+    equipos_liga (dict): Diccionario con equipos y sus plantillas
+    
+    Retorna:
+    dict: Tabla de clasificación y estadísticas de temporada
+    """
+    # Tu implementación aquí
+
+def generar_reporte_simulacion(resultados_temporada):
+    """
+    Genera un reporte detallado de la temporada simulada
+    
+    Parámetros:
+    resultados_temporada (dict): Resultados de la simulación
+    
+    Retorna:
+    str: Reporte formateado para presentación
+    """
+    # Tu implementación aquí
+
+# EJECUTA LA SIMULACIÓN:
+# Crea datos de al menos 3 equipos diferentes
+# Simula una mini-liga entre ellos
+# Muestra el reporte final con estadísticas completas
+```
+
+### Criterios de Evaluación
+- **Simulación matemáticamente coherente** (15 puntos)
+- **Modularidad y reutilización** (5 puntos)
+- **Presentación de resultados** (5 puntos)
+
+---
+
+## Parte 4: Módulo de Validación y Testing (25 puntos)
+
+### Objetivo
+Crear un sistema de validación y testing para asegurar la calidad del código.
+
+### Instrucciones Detalladas
+
+**Paso 4:** Desarrolla funciones de testing y validación:
+
+```python
+# TU CÓDIGO AQUÍ:
+# Crea un módulo completo de testing:
+
+def test_funcion_promedio():
+    """
+    Prueba la función calcular_promedio_deportivo con casos conocidos
+    
+    Retorna:
+    bool: True si todas las pruebas pasan, False en caso contrario
+    """
+    # Casos de prueba:
+    # Lista [1, 2, 3, 4, 5] debe dar promedio 3.0
+    # Lista vacía debe manejar el error apropiadamente
+    # Lista [10] debe dar promedio 10.0
+    # Tu implementación aquí
+
+def test_validacion_datos():
+    """
+    Prueba la función validar_datos_partido
+    
+    Retorna:
+    bool: True si todas las validaciones funcionan correctamente
+    """
+    # Casos de prueba:
+    # Goles negativos deben ser inválidos
+    # Minutos > 120 deben generar advertencia
+    # Datos normales deben ser válidos
+    # Tu implementación aquí
+
+def test_analisis_plantilla():
+    """
+    Prueba las funciones de análisis de plantilla
+    
+    Retorna:
+    bool: True si el análisis es correcto
+    """
+    # Crear datos de prueba conocidos
+    # Verificar cálculos matemáticos
+    # Tu implementación aquí
+
+def ejecutar_bateria_completa_tests():
+    """
+    Ejecuta todas las pruebas del sistema
+    
+    Retorna:
+    dict: Reporte completo de testing con resultados
+    """
+    # Tu implementación aquí
+
+def validar_integridad_datos_liga(datos_liga):
+    """
+    Valida que los datos de una liga sean coherentes y completos
+    
+    Parámetros:
+    datos_liga (dict): Datos completos de equipos y jugadores
+    
+    Retorna:
+    dict: Reporte de integridad con errores y advertencias
+    """
+    # Verificar:
+    # - Todos los equipos tienen jugadores
+    # - No hay datos faltantes críticos
+    # - Rangos de valores son realistas
+    # Tu implementación aquí
+
+# EJECUTA EL TESTING COMPLETO:
+# 1. Ejecuta todos los tests individuales
+# 2. Muestra un reporte de cobertura
+# 3. Valida la integridad de todos los datos usados
+# 4. Genera recomendaciones de mejora
+```
+
+### Criterios de Evaluación
+- **Tests comprensivos y correctos** (15 puntos)
+- **Validación robusta de datos** (5 puntos)
+- **Reporte de calidad detallado** (5 puntos)
+
+---
+
+# Criterios de Evaluación Total
+
+## Distribución de Puntos (100 total)
+
+### 1. Correctitud Técnica (40 puntos)
+- **Sintaxis y ejecución:** Código funciona sin errores
+- **Implementación de funciones:** Lógica correcta y eficiente
+- **Uso de parámetros:** Manejo apropiado de entradas y salidas
+- **Validación de datos:** Control de errores y casos extremos
+
+### 2. Aplicación Práctica (30 puntos)
+- **Modularidad:** Funciones reutilizables y bien organizadas
+- **Análisis deportivo:** Cálculos estadísticos correctos y relevantes
+- **Simulaciones:** Resultados coherentes y realistas
+- **Integración:** Combinación efectiva de múltiples funciones
+
+### 3. Claridad y Documentación (30 puntos)
+- **Docstrings completos:** Documentación clara de todas las funciones
+- **Comentarios explicativos:** Código bien documentado
+- **Nombres descriptivos:** Variables y funciones con nombres claros
+- **Presentación:** Outputs formateados profesionalmente
+
+---
+
+# Instrucciones de Entrega
+
+## Lista de Verificación
+
+Antes de entregar, asegúrate de:
+
+1. **✅ Implementar todas las funciones** solicitadas en las 4 partes
+2. **✅ Incluir docstrings completos** en cada función
+3. **✅ Ejecutar testing completo** sin errores
+4. **✅ Usar nombres en español** para variables y comentarios
+5. **✅ Mostrar ejemplos de uso** de cada función importante
+
+## Formato de Entrega
+
+- **Nombre del archivo:** `[matricula]-ejercicio-semana-3.ipynb`
+- **Formato:** Jupyter Notebook ejecutado completamente
+- **Fecha límite:** Final de la Semana 3
+- **Método:** Subir a la plataforma del curso
+
+## Recursos de Apoyo
+
+- **Notebook principal:** `bloque-1/semana-3/funciones-modulos.ipynb`
+- **Documentación Python:** [Defining Functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
+- **Rúbrica detallada:** `evaluaciones/bloque-1/rubrica-unificada-bloque1.md`
+
+---
+
+**¡Domina la programación modular y construye herramientas de análisis deportivo profesionales!**
     
     Retorna:
     int: Máximo de goles en un partido
@@ -457,7 +883,7 @@ jugadores = [
 1. **Completa todos los ejercicios** en este notebook
 2. **Prueba todas las funciones** con diferentes datos
 3. **Documenta tu código** con comentarios claros
-4. **Guarda como:** `ejercicio-semana-3-[tu-apellido].ipynb`
+4. **Guarda como:** `[matricula]-ejercicio-semana-3.ipynb`
 5. **Entrega antes del final de Semana 3**
 
 ## Recursos de Apoyo

@@ -1,214 +1,262 @@
-# Ejercicio Semana 2: Estructuras de Datos y Control de Flujo
+# Información General
 
-## Información del Ejercicio
-
+**Tema:** Estructuras de Control en Python  
+**Semana:** 2  
 **Bloque:** 1 - Prerrequisitos de Programación  
-**Peso:** 12% de la calificación del bloque (60% ÷ 5 ejercicios)  
-**Tiempo estimado:** 1-2 horas  
-**Entrega:** Final de Semana 2
+**Tiempo estimado:** 60 minutos  
+**Puntos totales:** 100 puntos  
+**Fecha límite:** Final de la Semana 2  
+**Archivo entrega:****¡Domina las estructuras de control y conviértete en un analista deportivo experto!**`[matricula]-ejercicio-semana-2.ipynb`
 
-## Objetivos
+## Objetivos de Aprendizaje
 
-Al completar este ejercicio, serás capaz de:
-- Crear y manipular listas con datos deportivos
-- Usar diccionarios para almacenar información estructurada de jugadores y equipos
-- Implementar bucles for y while para análisis iterativo
-- Aplicar condicionales para categorizar y filtrar datos deportivos
+Al finalizar este ejercicio, el estudiante será capaz de:
 
-## Ejercicio 1: Listas de Equipos (20 puntos)
+1. **Implementar condicionales** (if, elif, else) para tomar decisiones automáticas
+2. **Utilizar bucles** (for, while) para procesar conjuntos de datos deportivos
+3. **Aplicar estructuras de control anidadas** para resolver problemas complejos
+4. **Procesar listas y diccionarios** usando iteraciones eficientes
+5. **Crear sistemas de clasificación** para análisis deportivo automatizado
 
-### Instrucciones
-Trabaja con listas de equipos de diferentes ligas europeas:
+## Prerrequisitos
 
-```python
-# Listas de equipos por liga
-la_liga = ["Barcelona", "Real Madrid", "Atletico Madrid", "Valencia", "Sevilla"]
-premier_league = ["Manchester City", "Liverpool", "Chelsea", "Arsenal", "Manchester United"]
-bundesliga = ["Bayern Munich", "Borussia Dortmund", "RB Leipzig", "Bayer Leverkusen"]
+- Ejercicio de la Semana 1 completado exitosamente
+- Conocimientos básicos de variables y tipos de datos en Python
+- Comprensión de operadores de comparación y lógicos
+- Python 3.8+ instalado y configurado en Jupyter
 
-# Tu código aquí:
-# 1. Combinar todas las listas en una sola llamada "todos_equipos"
-# 2. Mostrar el total de equipos
-# 3. Agregar "Paris Saint-Germain" a la lista combinada
-# 4. Eliminar "RB Leipzig" de la lista combinada
-# 5. Mostrar los primeros 3 y últimos 3 equipos
-# 6. Verificar si "Barcelona" está en la lista
-```
+## Contexto del Ejercicio
 
-### Tu Respuesta
-*Completa el código para todas las operaciones con listas.*
+Eres el **analista principal** del Real Madrid. El cuerpo técnico te ha encargado desarrollar un sistema automatizado para:
 
-## Ejercicio 2: Diccionarios de Jugadores (20 puntos)
-
-### Instrucciones
-Crea y manipula diccionarios con información de jugadores:
-
-```python
-# Crear diccionarios de jugadores
-messi = {
-    "nombre": "Lionel Messi",
-    "equipo": "Inter Miami",
-    "posicion": "Delantero",
-    "edad": 36,
-    "goles_temporada": 12,
-    "asistencias": 8
-}
-
-# Tu código aquí:
-# 1. Crear un diccionario similar para Cristiano Ronaldo (Al-Nassr, Delantero, 39 años, 15 goles, 3 asistencias)
-# 2. Crear un diccionario para Kylian Mbappé (Real Madrid, Delantero, 25 años, 18 goles, 6 asistencias)
-# 3. Crear una lista llamada "jugadores" que contenga los 3 diccionarios
-# 4. Mostrar el nombre y goles de cada jugador
-# 5. Calcular el total de goles entre los 3 jugadores
-# 6. Determinar quién tiene más asistencias
-```
-
-### Tu Respuesta
-*Completa el código para crear y manipular los diccionarios de jugadores.*
-
-## Ejercicio 3: Análisis con Bucles For (20 puntos)
-
-### Instrucciones
-Usa bucles para analizar datos de múltiples partidos:
-
-```python
-# Lista de resultados de partidos (formato: [equipo_local, goles_local, equipo_visitante, goles_visitante])
-partidos = [
-    ["Barcelona", 3, "Real Madrid", 1],
-    ["Manchester City", 2, "Liverpool", 2],
-    ["Bayern Munich", 4, "Borussia Dortmund", 1],
-    ["Paris Saint-Germain", 1, "Olympique Lyon", 0],
-    ["Juventus", 2, "AC Milan", 3]
-]
-
-# Tu código aquí usando bucles for:
-# 1. Mostrar el resultado de cada partido en formato: "Barcelona 3-1 Real Madrid"
-# 2. Contar cuántos partidos ganó el equipo local
-# 3. Contar cuántos partidos fueron empates
-# 4. Calcular el total de goles marcados en todos los partidos
-# 5. Encontrar el partido con más goles
-# 6. Crear una lista con solo los nombres de los equipos ganadores
-```
-
-### Tu Respuesta
-*Completa el código usando bucles for para analizar todos los partidos.*
-
-## Ejercicio 4: Clasificación con Bucles While (20 puntos)
-
-### Instrucciones
-Simula un sistema de clasificación usando bucles while:
-
-```python
-# Datos de equipos: [nombre, puntos_actuales, partidos_restantes]
-equipos_liga = [
-    ["Barcelona", 45, 5],
-    ["Real Madrid", 43, 5], 
-    ["Atletico Madrid", 38, 5],
-    ["Valencia", 35, 5],
-    ["Sevilla", 32, 5]
-]
-
-# Tu código aquí usando while:
-# 1. Crear una función que simule ganar partidos (3 puntos por victoria)
-# 2. Simular que cada equipo gana la mitad de sus partidos restantes (redondear hacia abajo)
-# 3. Actualizar los puntos de cada equipo
-# 4. Ordenar la lista por puntos (puedes usar el método sort o hacer ordenamiento manual)
-# 5. Mostrar la clasificación final
-# 6. Determinar el campeón y los equipos en puestos europeos (top 4)
-```
-
-### Tu Respuesta
-*Completa el código usando bucles while para simular la temporada.*
-
-## Ejercicio 5: Análisis Condicional Avanzado (20 puntos)
-
-### Instrucciones
-Categoriza equipos y jugadores usando condicionales complejos:
-
-```python
-# Estadísticas de equipos
-equipos_stats = [
-    {"nombre": "Barcelona", "goles_favor": 68, "goles_contra": 35, "partidos": 30},
-    {"nombre": "Manchester City", "goles_favor": 89, "goles_contra": 31, "partidos": 32},
-    {"nombre": "Bayern Munich", "goles_favor": 92, "goles_contra": 38, "partidos": 28},
-    {"nombre": "Paris Saint-Germain", "goles_favor": 75, "goles_contra": 28, "partidos": 30}
-]
-
-# Tu código aquí usando condicionales:
-# 1. Para cada equipo, calcular:
-#    - Promedio de goles por partido
-#    - Diferencia de goles (favor - contra)
-#    - Eficiencia defensiva (goles_contra / partidos)
-
-# 2. Categorizar cada equipo según su promedio de goles:
-#    - "Muy ofensivo": >= 2.5 goles por partido
-#    - "Ofensivo": >= 2.0 goles por partido  
-#    - "Equilibrado": >= 1.5 goles por partido
-#    - "Defensivo": < 1.5 goles por partido
-
-# 3. Categorizar según eficiencia defensiva:
-#    - "Muy sólido": <= 1.0 goles contra por partido
-#    - "Sólido": <= 1.3 goles contra por partido
-#    - "Regular": <= 1.6 goles contra por partido
-#    - "Vulnerable": > 1.6 goles contra por partido
-
-# 4. Crear un reporte completo para cada equipo
-```
-
-### Tu Respuesta
-*Completa el análisis condicional para categorizar todos los equipos.*
-
-## Ejercicio Bonus: Simulador de Torneo (10 puntos extra)
-
-### Instrucciones
-**Ejercicio opcional para puntos adicionales:**
-
-```python
-# Crear un simulador básico de torneo eliminatorio
-import random
-
-equipos_torneo = ["Barcelona", "Real Madrid", "Manchester City", "Bayern Munich"]
-
-# Tu código aquí:
-# 1. Simular partidos entre equipos (usar random para generar goles)
-# 2. Implementar sistema de eliminación directa
-# 3. Mostrar resultados de cada ronda
-# 4. Determinar el campeón del torneo
-# 5. Mostrar estadísticas del torneo (total de goles, partido más emocionante, etc.)
-```
-
-### Tu Respuesta
-*Ejercicio opcional: Crea un simulador completo de torneo.*
-
-## Criterios de Evaluación
-
-### Correctitud Técnica (40%)
-- [ ] Listas: Creación, manipulación y operaciones correctas (10%)
-- [ ] Diccionarios: Uso apropiado para datos estructurados (10%)
-- [ ] Bucles: Implementación correcta de for y while (10%)
-- [ ] Condicionales: Lógica apropiada para categorización (10%)
-
-### Aplicación Práctica (30%)
-- [ ] Análisis deportivo relevante y lógico (15%)
-- [ ] Resolución completa de problemas planteados (15%)
-
-### Claridad y Presentación (30%)
-- [ ] Código bien comentado y estructurado (15%)
-- [ ] Resultados claramente presentados (15%)
-
-## Instrucciones de Entrega
-
-1. **Completa todos los ejercicios** en este notebook
-2. **Ejecuta todas las celdas** y verifica resultados
-3. **Guarda como:** `ejercicio-semana-2-[tu-apellido].ipynb`
-4. **Entrega antes del final de Semana 2**
-
-## Recursos de Apoyo
-
-- Notebook de la Semana 2: `estructuras-control.ipynb`
-- Documentación de Python: Listas y diccionarios
-- Tutorial de bucles: https://docs.python.org/3/tutorial/controlflow.html
+- Clasificar rendimiento de jugadores según sus estadísticas
+- Analizar patrones de victoria/derrota en múltiples partidos
+- Generar reportes automáticos de rendimiento del equipo
+- Predecir clasificaciones de liga usando simulaciones
 
 ---
 
-**¡Domina las estructuras de datos y el control de flujo para análisis deportivos más sofisticados!** ⚽🔄
+# Ejercicio Integrador: Sistema de Análisis Automático Real Madrid
+
+## Parte 1: Clasificador de Rendimiento de Jugadores (25 puntos)
+
+### Objetivo
+Crear un sistema que clasifique automáticamente el rendimiento de jugadores usando condicionales.
+
+### Instrucciones Detalladas
+
+**Paso 1:** Crea un sistema de clasificación basado en estadísticas:
+
+```python
+# Datos de jugadores del Real Madrid
+jugadores_real_madrid = [
+    {"nombre": "Karim Benzema", "goles": 27, "asistencias": 12, "partidos": 32, "posicion": "Delantero"},
+    {"nombre": "Vinicius Jr", "goles": 20, "asistencias": 20, "partidos": 35, "posicion": "Extremo"},
+    {"nombre": "Luka Modric", "goles": 3, "asistencias": 12, "partidos": 30, "posicion": "Centrocampista"},
+    {"nombre": "Thibaut Courtois", "goles": 0, "asistencias": 0, "partidos": 31, "posicion": "Portero"},
+    {"nombre": "David Alaba", "goles": 2, "asistencias": 1, "partidos": 28, "posicion": "Defensa"}
+]
+
+# TU CÓDIGO AQUÍ:
+# 1. Para cada jugador, calcula su "promedio de contribución" = (goles + asistencias) / partidos
+# 2. Clasifica según promedio de contribución:
+#    - "Estrella": >= 1.0
+#    - "Muy Bueno": >= 0.6  
+#    - "Bueno": >= 0.3
+#    - "Promedio": < 0.3
+# 3. Muestra un reporte detallado para cada jugador
+```
+
+### Criterios de Evaluación
+- **Cálculos correctos** (10 puntos)
+- **Condicionales apropiados** (10 puntos) 
+- **Presentación clara** (5 puntos)
+
+---
+
+## Parte 2: Analizador de Patrones de Victoria (25 puntos)
+
+### Objetivo
+Usar bucles for para analizar patrones en múltiples partidos y detectar tendencias.
+
+### Instrucciones Detalladas
+
+**Paso 2:** Analiza los últimos 10 partidos del Real Madrid:
+
+```python
+# Resultados de los últimos 10 partidos (formato: [rival, goles_rm, goles_rival, local_visitante])
+ultimos_partidos = [
+    ["Barcelona", 2, 1, "visitante"],
+    ["Sevilla", 3, 0, "local"],
+    ["Manchester City", 1, 1, "visitante"],
+    ["Atletico Madrid", 2, 0, "local"],
+    ["Valencia", 2, 2, "visitante"],
+    ["Real Sociedad", 4, 1, "local"],
+    ["Betis", 1, 0, "visitante"],
+    ["Getafe", 3, 0, "local"],
+    ["Celta", 2, 1, "local"],
+    ["Villarreal", 3, 2, "visitante"]
+]
+
+# TU CÓDIGO AQUÍ usando bucle FOR:
+# 1. Calcula estadísticas generales:
+#    - Total de victorias, empates, derrotas
+#    - Goles a favor y en contra
+#    - Diferencia de goles promedio
+# 2. Analiza rendimiento según ubicación:
+#    - Victorias como local vs visitante
+#    - Promedio de goles como local vs visitante
+# 3. Encuentra el partido más goleador
+# 4. Identifica la mejor y peor actuación
+```
+
+### Criterios de Evaluación
+- **Bucle implementado correctamente** (10 puntos)
+- **Cálculos estadísticos precisos** (10 puntos)
+- **Análisis de patrones completo** (5 puntos)
+
+---
+
+## Parte 3: Simulador de Clasificación de Liga (25 puntos)
+
+### Objetivo  
+Utilizar bucles while para simular la evolución de la tabla de clasificación.
+
+### Instrucciones Detalladas
+
+**Paso 3:** Simula las próximas jornadas de La Liga:
+
+```python
+# Clasificación actual (formato: [equipo, puntos, partidos_jugados, diferencia_goles])
+clasificacion_actual = [
+    ["Real Madrid", 78, 32, 35],
+    ["Barcelona", 76, 32, 28], 
+    ["Atletico Madrid", 68, 32, 18],
+    ["Real Sociedad", 65, 32, 12],
+    ["Villarreal", 56, 32, 8]
+]
+
+partidos_restantes = 6  # Cada equipo tiene 6 partidos restantes
+
+# TU CÓDIGO AQUÍ usando bucle WHILE:
+# 1. Simula que cada equipo gana el 60% de sus partidos restantes
+# 2. Por cada victoria, suma 3 puntos y mejora diferencia de goles (+2)
+# 3. Por cada no-victoria, suma 1 punto (empate) y mantén diferencia
+# 4. Actualiza la tabla después de cada jornada simulada
+# 5. Muestra la clasificación final proyectada
+# 6. Determina quién será campeón y quiénes van a Champions League (top 4)
+```
+
+### Criterios de Evaluación
+- **Bucle while correctamente implementado** (10 puntos)
+- **Simulación matemáticamente correcta** (10 puntos)
+- **Análisis de resultados completo** (5 puntos)
+
+---
+
+## Parte 4: Sistema de Recomendaciones Estratégicas (25 puntos)
+
+### Objetivo
+Combinar estructuras de control anidadas para crear un sistema de recomendaciones complejas.
+
+### Instrucciones Detalladas
+
+**Paso 4:** Desarrolla un asistente estratégico para el entrenador:
+
+```python
+# Datos del próximo rival
+proximo_rival = {
+    "nombre": "Manchester City",
+    "goles_promedio_casa": 2.8,
+    "goles_promedio_fuera": 2.1,
+    "defensas_limpias": 15,
+    "partidos_jugados": 32,
+    "estilo_juego": "posesion",  # opciones: "posesion", "contraataque", "fisico"
+    "ubicacion": "visitante"  # donde juega el Real Madrid
+}
+
+estado_real_madrid = {
+    "jugadores_lesionados": 3,
+    "partidos_seguidos": 2,  # partidos consecutivos jugados
+    "goles_ultimos_5": [2, 3, 1, 2, 4],  # goles en últimos 5 partidos
+    "condicion_fisica": "buena"  # opciones: "excelente", "buena", "regular", "mala"
+}
+
+# TU CÓDIGO AQUÍ usando CONDICIONALES ANIDADOS:
+# 1. Analiza el nivel de amenaza del rival:
+#    - Si promedio > 2.5 goles = "Muy peligroso"
+#    - Si promedio > 2.0 goles = "Peligroso"  
+#    - Si promedio > 1.5 goles = "Moderado"
+#    - Caso contrario = "Manejable"
+#
+# 2. Evalúa el estado del Real Madrid:
+#    - Promedio de goles en últimos 5 partidos
+#    - Nivel de fatiga (si partidos_seguidos > 2)
+#    - Disponibilidad de jugadores
+#
+# 3. Genera recomendación estratégica:
+#    - Formación recomendada (defensiva/equilibrada/ofensiva)
+#    - Estilo de juego sugerido
+#    - Predicción de resultado
+#    - Recomendaciones específicas
+```
+
+### Criterios de Evaluación
+- **Lógica de condicionales anidados** (10 puntos)
+- **Análisis estratégico coherente** (10 puntos)
+- **Recomendaciones prácticas** (5 puntos)
+
+---
+
+# Criterios de Evaluación Total
+
+## Distribución de Puntos (100 total)
+
+### 1. Correctitud Técnica (40 puntos)
+- **Sintaxis Python perfecta:** Sin errores de ejecución
+- **Condicionales apropiados:** Uso correcto de if, elif, else
+- **Bucles eficientes:** Implementación correcta de for y while
+- **Cálculos precisos:** Operaciones matemáticas exactas
+
+### 2. Aplicación Práctica (30 puntos)  
+- **Resolución completa:** Todos los problemas resueltos
+- **Contexto deportivo:** Uso apropiado del análisis futbolístico
+- **Innovación:** Soluciones creativas y eficientes
+- **Integración:** Combinación efectiva de conceptos
+
+### 3. Claridad y Documentación (30 puntos)
+- **Código comentado:** Explicaciones claras de la lógica
+- **Variables descriptivas:** Nombres en español y apropiados
+- **Presentación profesional:** Outputs claros y bien formateados
+- **Interpretación:** Análisis correcto de los resultados
+
+---
+
+# Instrucciones de Entrega
+
+## Lista de Verificación
+
+Antes de entregar, asegúrate de:
+
+1. **✅ Completar las 4 partes** del ejercicio integrador
+2. **✅ Ejecutar todo el código** sin errores
+3. **✅ Incluir comentarios explicativos** en español
+4. **✅ Usar nombres de variables descriptivos** en español
+5. **✅ Mostrar resultados claramente formateados**
+
+## Formato de Entrega
+
+- **Nombre del archivo:** `[matricula]-ejercicio-semana-2.ipynb`
+- **Formato:** Jupyter Notebook ejecutado completamente
+- **Fecha límite:** Final de la Semana 2
+- **Método:** Subir a la plataforma del curso
+
+## Recursos de Apoyo
+
+- **Notebook principal:** `bloque-1/semana-2/estructuras-control.ipynb`
+- **Documentación Python:** [Control Flow](https://docs.python.org/3/tutorial/controlflow.html)
+- **Rúbrica detallada:** `evaluaciones/bloque-1/rubrica-unificada-bloque1.md`
+
+---
+
+**¡Domina las estructuras de control y conviértete en un analista deportivo experto!** ⚽�

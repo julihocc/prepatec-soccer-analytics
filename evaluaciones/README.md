@@ -1,21 +1,21 @@
-# Sistema de Evaluaciones - Ciencia de Datos Aplicada al Fútbol
+# Sistema de Evaluaciones Refactorizado
 
-## 📋 Información General
+## � Nuevo Sistema Simplificado
 
-Este directorio contiene todas las evaluaciones del curso "Ciencia de Datos Aplicada al Análisis de Resultados en Fútbol", organizadas por bloques y diseñadas para evaluar progresivamente las competencias adquiridas.
+Este directorio contiene el sistema de evaluaciones refactorizado del curso de análisis de datos deportivos. **Cambio principal**: Un ejercicio por semana con instrucciones detalladas y rúbrica muy precisa.
 
-## 🎯 Filosofía de Evaluación
+## 🔄 Cambios Principales
 
-### Evaluación Formativa y Continua
-- **Enfoque progresivo**: Cada evaluación construye sobre la anterior
-- **Aplicación práctica**: Todos los ejercicios están contextualizados en análisis deportivo
-- **Aprendizaje activo**: Las evaluaciones son herramientas de aprendizaje, no solo de medición
+### ✅ Antes (Sistema Antiguo)
+- Múltiples ejercicios por semana con rúbricas dispersas
+- Proyectos integradores separados
+- Evaluaciones complejas y fragmentadas
 
-### Criterios de Evaluación
-1. **Correctitud técnica** (30%): Código funcional y uso apropiado de herramientas
-2. **Calidad del análisis** (25%): Profundidad y rigor en el análisis de datos
-3. **Presentación y comunicación** (25%): Claridad en visualizaciones y explicaciones
-4. **Aplicación contextual** (20%): Relevancia y pertinencia deportiva del análisis
+### 🆕 Ahora (Sistema Refactorizado)
+- **Un solo ejercicio por semana** con instrucciones detalladas
+- **Rúbrica unificada** y muy precisa para todos los ejercicios
+- **Tiempo estimado**: 60 minutos por ejercicio
+- **Evaluación consistente** en todos los bloques
 
 ## 📚 Estructura de Evaluaciones
 

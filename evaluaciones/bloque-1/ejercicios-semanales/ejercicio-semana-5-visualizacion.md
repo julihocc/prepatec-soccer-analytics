@@ -1,302 +1,369 @@
-# Ejercicio Semana 5: Visualización Básica con Matplotlib y Seaborn
+# Información General
 
-## Información del Ejercicio
-
+**Tema:** Visualización Básica con Matplotlib y Seaborn  
+**Semana:** 5  
 **Bloque:** 1 - Prerrequisitos de Programación  
-**Peso:** 12% de la calificación del bloque (60% ÷ 5 ejercicios)  
-**Tiempo estimado:** 2-2.5 horas  
-**Entrega:** Final de Semana 5
+**Tiempo estimado:** 60 minutos  
+**Puntos totales:** 100 puntos  
+**Fecha límite:** Final de la Semana 5  
+**Archivo entrega:** `[matricula]-ejercicio-semana-5.ipynb`
 
-## Objetivos
+## Objetivos de Aprendizaje
 
-Al completar este ejercicio, serás capaz de:
+Al finalizar este ejercicio, el estudiante será capaz de:
 
-- Crear gráficos básicos con matplotlib para datos deportivos
-- Utilizar seaborn para visualizaciones estadísticas avanzadas
-- Personalizar gráficos con títulos, etiquetas y colores apropiados
-- Interpretar y comunicar resultados a través de visualizaciones
+1. **Crear gráficos básicos** con matplotlib para análisis deportivo
+2. **Personalizar visualizaciones** con seaborn para presentaciones profesionales
+3. **Interpretar patrones** visuales en datos de rendimiento deportivo
+4. **Generar dashboards** básicos para reportes ejecutivos
+5. **Combinar múltiples gráficos** en presentaciones coherentes
 
-## Configuración Inicial
+## Prerrequisitos
 
-```python
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
+- Ejercicios de las Semanas 1-4 completados exitosamente
+- Dominio sólido de pandas y numpy
+- Conocimiento de DataFrames y manipulación de datos
+- Instalación de matplotlib y seaborn
 
-# Configurar tema de seaborn
-sns.set_theme(style="whitegrid", palette="viridis")
+## Contexto del Ejercicio
 
-# Configurar matplotlib
-plt.rcParams['figure.figsize'] = (10, 6)
-plt.rcParams['font.size'] = 12
+Eres el **responsable de visualización de datos** del Valencia CF. La junta directiva necesita presentaciones visuales para:
 
-print("¡Herramientas de visualización listas!")
-```
-
-## Ejercicio 1: Gráficos Básicos con Matplotlib (20 puntos)
-
-### Parte A: Gráficos de Línea y Barras
-
-```python
-# Datos de goles por jornada de dos equipos
-jornadas = list(range(1, 21))  # 20 jornadas
-goles_barcelona = [2, 3, 1, 4, 0, 2, 1, 3, 2, 1, 4, 2, 0, 3, 1, 2, 3, 1, 2, 4]
-goles_real_madrid = [1, 2, 3, 2, 1, 3, 0, 2, 4, 1, 2, 1, 3, 2, 2, 1, 4, 0, 3, 2]
-
-# Tu código aquí:
-# 1. Crear gráfico de línea comparando ambos equipos
-# 2. Agregar título: "Evolución de Goles por Jornada"
-# 3. Etiquetar ejes apropiadamente
-# 4. Agregar leyenda
-# 5. Personalizar colores (azul para Barcelona, blanco para Real Madrid)
-# 6. Crear gráfico de barras agrupadas para las primeras 10 jornadas
-# 7. Agregar línea de tendencia simple
-```
-
-### Parte B: Histogramas y Gráficos de Dispersión
-
-```python
-# Datos de jugadores
-np.random.seed(42)
-edades = np.random.normal(26, 4, 50)
-goles_temporada = np.random.poisson(12, 50) + np.random.normal(0, 2, 50)
-valor_mercado = goles_temporada * 3 + np.random.normal(0, 5, 50) + edades * 0.5
-
-# Tu código aquí:
-# 1. Crear histograma de distribución de edades
-# 2. Crear histograma de goles por temporada
-# 3. Crear gráfico de dispersión: edad vs goles
-# 4. Crear gráfico de dispersión: goles vs valor de mercado
-# 5. Personalizar todos los gráficos con títulos y etiquetas
-# 6. Usar subplots para mostrar múltiples gráficos
-```
-
-### Respuesta Parte A
-
-*Completa los gráficos de línea y barras con matplotlib.*
-
-### Respuesta Parte B
-
-*Completa los histogramas y gráficos de dispersión.*
-
-## Ejercicio 2: Visualizaciones Avanzadas con Seaborn (20 puntos)
-
-### Parte A: Gráficos Estadísticos
-
-```python
-# Crear DataFrame de jugadores
-datos_jugadores = {
-    'Nombre': [f'Jugador_{i}' for i in range(1, 31)],
-    'Posicion': np.random.choice(['Portero', 'Defensa', 'Centrocampista', 'Delantero'], 30),
-    'Liga': np.random.choice(['La Liga', 'Premier League', 'Serie A', 'Bundesliga'], 30),
-    'Edad': np.random.randint(18, 35, 30),
-    'Goles': np.random.poisson(8, 30),
-    'Asistencias': np.random.poisson(5, 30),
-    'Partidos': np.random.randint(15, 30, 30),
-    'Salario': np.random.normal(2000000, 800000, 30)  # En euros
-}
-
-df_jugadores = pd.DataFrame(datos_jugadores)
-
-# Tu código aquí:
-# 1. Crear boxplot de goles por posición
-# 2. Crear violinplot de salarios por liga
-# 3. Crear heatmap de correlación entre variables numéricas
-# 4. Crear pairplot para explorar relaciones entre variables
-# 5. Personalizar todos los gráficos con títulos en español
-```
-
-### Parte B: Gráficos de Distribución y Comparación
-
-```python
-# Continuando con el DataFrame anterior
-
-# Tu código aquí:
-# 1. Crear countplot de jugadores por liga
-# 2. Crear barplot promedio de goles por posición
-# 3. Crear stripplot de edad vs goles, coloreado por posición
-# 4. Crear FacetGrid para analizar goles por liga y posición
-# 5. Crear jointplot de goles vs asistencias
-# 6. Personalizar paletas de colores para cada gráfico
-```
-
-### Respuesta Parte A
-
-*Completa los gráficos estadísticos con seaborn.*
-
-### Respuesta Parte B
-
-*Completa los gráficos de distribución y comparación.*
-
-## Ejercicio 3: Análisis de Equipos y Rendimiento (20 puntos)
-
-### Tareas de Visualización
-
-```python
-# Datos de equipos en múltiples temporadas
-equipos_data = {
-    'Equipo': ['Barcelona', 'Real Madrid', 'Atletico Madrid', 'Valencia', 'Sevilla'] * 3,
-    'Temporada': ['2021-22'] * 5 + ['2022-23'] * 5 + ['2023-24'] * 5,
-    'Puntos': [73, 86, 71, 48, 68, 88, 85, 78, 52, 70, 82, 85, 76, 49, 68],
-    'Goles_Favor': [68, 80, 65, 48, 53, 70, 75, 70, 45, 58, 75, 85, 72, 40, 56],
-    'Goles_Contra': [38, 31, 43, 53, 30, 26, 28, 33, 48, 32, 35, 36, 28, 55, 38],
-    'Presupuesto': [800, 750, 400, 200, 180, 850, 800, 450, 180, 200, 900, 850, 500, 150, 220]
-}
-
-df_equipos = pd.DataFrame(equipos_data)
-
-# Tu código aquí:
-# 1. Crear gráfico de barras: evolución de puntos por equipo y temporada
-# 2. Crear lineplot: evolución de puntos a lo largo de las temporadas
-# 3. Crear scatterplot: presupuesto vs puntos, con tamaño por goles a favor
-# 4. Crear heatmap: equipos vs temporadas mostrando diferencia de goles
-# 5. Crear boxplot: distribución de puntos por temporada
-# 6. Crear gráfico de barras horizontales: promedio de goles por equipo
-# 7. Personalizar todos con colores representativos de cada equipo
-```
-
-### Respuesta
-
-*Completa el análisis visual completo de equipos.*
-
-## Ejercicio 4: Dashboard Básico de Estadísticas (20 puntos)
-
-### Creación de Dashboard
-
-```python
-# Crear un dashboard con múltiples gráficos en una sola figura
-
-# Datos simulados de una liga completa
-np.random.seed(123)
-equipos = ['Equipo_' + str(i) for i in range(1, 21)]
-datos_liga = {
-    'Equipo': equipos,
-    'Puntos': np.random.randint(25, 85, 20),
-    'Goles_Favor': np.random.randint(30, 90, 20),
-    'Goles_Contra': np.random.randint(25, 70, 20),
-    'Partidos_Casa': np.random.randint(8, 15, 20),
-    'Partidos_Visitante': np.random.randint(8, 15, 20)
-}
-
-for equipo in equipos:
-    datos_liga[equipo + '_Victorias'] = np.random.randint(5, 25, 1)[0]
-
-df_liga = pd.DataFrame(datos_liga)
-
-# Tu código aquí:
-# Crear figura con subplots (2x3 = 6 gráficos):
-# 1. Top 10 equipos por puntos (barplot)
-# 2. Distribución de goles a favor (histogram)
-# 3. Relación goles favor vs contra (scatterplot)
-# 4. Promedio de puntos por rango de goles favor (barplot)
-# 5. Boxplot de distribución de puntos
-# 6. Pie chart de equipos por rango de puntos (alto, medio, bajo)
-
-# Requisitos:
-# - Usar plt.subplots() con figsize=(15, 10)
-# - Títulos descriptivos en español para cada gráfico
-# - Colores consistentes y atractivos
-# - Leyendas donde sea apropiado
-# - Título general del dashboard
-```
-
-### Respuesta
-
-*Completa el dashboard con 6 visualizaciones integradas.*
-
-## Ejercicio 5: Análisis Temporal y Tendencias (20 puntos)
-
-### Visualización de Series Temporales
-
-```python
-# Datos de rendimiento temporal de un equipo
-fechas = pd.date_range('2024-01-01', '2024-12-31', freq='W')
-rendimiento_semanal = {
-    'Fecha': fechas,
-    'Goles_Favor': np.random.poisson(2, len(fechas)) + np.sin(np.arange(len(fechas)) * 2 * np.pi / 52) + 2,
-    'Goles_Contra': np.random.poisson(1, len(fechas)) + np.cos(np.arange(len(fechas)) * 2 * np.pi / 52) + 1,
-    'Puntos_Acumulados': np.cumsum(np.random.choice([0, 1, 3], len(fechas), p=[0.2, 0.3, 0.5])),
-    'Asistencia_Promedio': np.random.normal(45000, 10000, len(fechas))
-}
-
-df_temporal = pd.DataFrame(rendimiento_semanal)
-
-# Tu código aquí:
-# 1. Crear gráfico de línea doble: goles favor vs contra a lo largo del año
-# 2. Crear gráfico de área: puntos acumulados durante la temporada
-# 3. Crear gráfico de barras mensuales: promedio de asistencia por mes
-# 4. Crear heatmap calendario: goles favor por semana del año
-# 5. Crear gráfico de tendencia con línea de regresión
-# 6. Crear análisis de estacionalidad (trimestres)
-# 7. Personalizar con anotaciones en fechas importantes
-```
-
-### Respuesta
-
-*Completa el análisis temporal completo.*
-
-## Ejercicio Bonus: Visualización Interactiva Básica (10 puntos extra)
-
-### Gráficos Avanzados
-
-**Ejercicio opcional para puntos adicionales:**
-
-```python
-# Crear visualizaciones más sofisticadas
-
-# Tu código aquí:
-# 1. Crear gráfico de radar para comparar jugadores
-# 2. Crear mapa de calor animado (simular con múltiples frames)
-# 3. Crear gráfico de cascada para análisis de puntos
-# 4. Crear gráfico de Sankey para transferencias (simulado)
-# 5. Personalizar con estilos avanzados y anotaciones
-
-# Usar técnicas como:
-# - plt.annotate() para anotaciones
-# - matplotlib.patches para formas personalizadas
-# - Colormaps personalizados
-# - Múltiples ejes Y
-# - Gráficos polares
-```
-
-### Respuesta Bonus
-
-*Ejercicio opcional: Crea visualizaciones avanzadas y creativas.*
-
-## Criterios de Evaluación
-
-### Técnica de Visualización (40%)
-
-- [ ] Uso correcto de matplotlib y seaborn (20%)
-- [ ] Personalización apropiada de gráficos (20%)
-
-### Comunicación Visual (35%)
-
-- [ ] Títulos y etiquetas claros en español (15%)
-- [ ] Elección apropiada de tipo de gráfico (10%)
-- [ ] Paletas de colores efectivas (10%)
-
-### Análisis e Interpretación (25%)
-
-- [ ] Interpretación correcta de los gráficos (15%)
-- [ ] Insights relevantes del análisis visual (10%)
-
-## Instrucciones de Entrega
-
-1. **Completa todos los ejercicios** en este notebook
-2. **Ejecuta todas las celdas** de visualización
-3. **Incluye interpretaciones** de cada gráfico creado
-4. **Guarda como:** `ejercicio-semana-5-[tu-apellido].ipynb`
-5. **Entrega antes del final de Semana 5**
-
-## Recursos de Apoyo
-
-- Notebook de la Semana 5: `visualizacion-basica.ipynb`
-- Documentación Matplotlib: <https://matplotlib.org/>
-- Documentación Seaborn: <https://seaborn.pydata.org/>
-- Galería de gráficos: <https://python-graph-gallery.com/>
+- Evaluar el rendimiento de la temporada actual
+- Comparar con temporadas anteriores
+- Identificar áreas de mejora visualmente
+- Preparar informes para sponsors y medios de comunicación
 
 ---
 
-**¡Transforma datos en historias visuales que comuniquen insights deportivos!** ⚽📈
+# Ejercicio Integrador: Dashboard Visual Valencia CF
+
+## Parte 1: Gráficos de Rendimiento Individual (25 puntos)
+
+### Objetivo
+Crear visualizaciones que muestren el rendimiento individual de los jugadores estrella del Valencia.
+
+### Instrucciones Detalladas
+
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+import numpy as np
+
+# Configuración visual estándar
+sns.set_theme(style="whitegrid", palette="viridis")
+plt.rcParams['figure.figsize'] = (12, 8)
+plt.rcParams['font.size'] = 11
+
+# Datos de los jugadores estrella del Valencia CF
+datos_valencia = {
+    'jugador': ['Carlos Soler', 'Gonçalo Guedes', 'Rodrigo Moreno', 'Daniel Wass', 
+                'José Gayà', 'Maxi Gómez', 'Lee Kang-in', 'Manu Vallejo'],
+    'posicion': ['Centrocampista', 'Extremo', 'Delantero', 'Lateral', 
+                'Lateral', 'Delantero', 'Centrocampista', 'Delantero'],
+    'goles': [13, 11, 16, 2, 1, 9, 4, 3],
+    'asistencias': [6, 7, 4, 5, 8, 2, 3, 1],
+    'minutos_jugados': [2850, 2640, 2720, 2480, 2950, 1980, 1650, 1200],
+    'tarjetas_amarillas': [7, 4, 3, 8, 6, 5, 2, 3],
+    'edad': [25, 24, 30, 32, 27, 25, 21, 24],
+    'valor_mercado': [35, 30, 25, 8, 15, 20, 18, 5]  # en millones
+}
+
+df_valencia = pd.DataFrame(datos_valencia)
+
+# TU CÓDIGO AQUÍ:
+
+# 1. GRÁFICO DE BARRAS - Goles por jugador
+#    - Crear gráfico de barras horizontal
+#    - Personalizar colores según posición
+#    - Añadir título: "Goleadores Valencia CF 2023-24"
+#    - Incluir valores sobre las barras
+#    - Configurar etiquetas en español
+
+# 2. GRÁFICO DE DISPERSIÓN - Goles vs Asistencias  
+#    - Usar scatter plot con seaborn
+#    - Colorear puntos según posición
+#    - Añadir línea de tendencia
+#    - Título: "Relación Goles-Asistencias Valencia CF"
+#    - Incluir leyenda clara
+
+# 3. GRÁFICO CIRCULAR - Distribución por posición
+#    - Mostrar porcentaje de jugadores por posición
+#    - Usar colores distintivos
+#    - Incluir etiquetas con porcentajes
+#    - Título: "Distribución de Jugadores por Posición"
+
+# 4. BOXPLOT - Análisis de edad por posición
+#    - Crear boxplot con seaborn
+#    - Mostrar distribución de edades
+#    - Personalizar con palette="Set2"
+#    - Título: "Distribución de Edades por Posición"
+
+# 5. HEATMAP - Correlación de estadísticas
+#    - Matriz de correlación entre variables numéricas
+#    - Usar seaborn heatmap con anotaciones
+#    - Colormap='coolwarm'
+#    - Título: "Correlaciones Estadísticas Valencia CF"
+```
+
+### Criterios de Evaluación
+- **5 gráficos implementados correctamente** (15 puntos)
+- **Personalización visual profesional** (5 puntos)
+- **Títulos y etiquetas en español** (5 puntos)
+
+---
+
+## Parte 2: Análisis Temporal de Rendimiento (25 puntos)
+
+### Objetivo
+Crear visualizaciones que muestren la evolución del equipo a lo largo de la temporada.
+
+### Instrucciones Detalladas
+
+```python
+# Datos de rendimiento por jornada
+jornadas = list(range(1, 21))  # Primeras 20 jornadas
+goles_por_jornada = [2, 1, 3, 0, 2, 1, 4, 2, 1, 3, 2, 0, 1, 3, 2, 1, 2, 3, 1, 2]
+goles_recibidos = [1, 2, 1, 1, 0, 2, 1, 1, 2, 0, 1, 1, 0, 2, 1, 1, 0, 1, 2, 1]
+puntos_acumulados = [3, 3, 6, 6, 9, 10, 13, 16, 16, 19, 22, 22, 25, 28, 31, 34, 37, 40, 40, 43]
+
+# Datos comparativos con rivales
+equipos_comparison = ['Valencia', 'Sevilla', 'Real Sociedad', 'Villarreal', 'Athletic']
+goles_temporada = [38, 42, 35, 45, 33]
+goles_contra_temporada = [28, 25, 30, 22, 31]
+puntos_totales = [43, 48, 41, 51, 39]
+
+# TU CÓDIGO AQUÍ:
+
+# 1. GRÁFICO DE LÍNEAS - Evolución de goles por jornada
+#    - Línea para goles a favor (verde)
+#    - Línea para goles en contra (rojo)
+#    - Área sombreada entre las líneas
+#    - Título: "Evolución Goleadora Valencia CF - 20 Jornadas"
+#    - Leyenda y grid personalizado
+
+# 2. GRÁFICO DE ÁREA - Puntos acumulados
+#    - Mostrar crecimiento de puntos a lo largo de jornadas
+#    - Añadir línea de objetivo (60 puntos al final de temporada)
+#    - Color fill azul con transparencia
+#    - Título: "Progresión de Puntos Valencia CF"
+
+# 3. SUBPLOTS - Panel de seguimiento
+#    - Crear figura con 2x2 subplots
+#    - Subplot 1: Goles por jornada (barras)
+#    - Subplot 2: Diferencia de goles acumulada 
+#    - Subplot 3: Tendencia de puntos (línea con marcadores)
+#    - Subplot 4: Promedio móvil de goles (ventana de 5 partidos)
+
+# 4. GRÁFICO DE BARRAS AGRUPADAS - Comparación con rivales
+#    - Goles a favor vs goles en contra por equipo
+#    - Barras agrupadas por equipo
+#    - Colores diferenciados
+#    - Título: "Valencia vs Rivales Directos 2023-24"
+
+# 5. GRÁFICO RADAR - Perfil del equipo
+#    - Crear gráfico radar con 6 métricas:
+#      (Ataque, Defensa, Disciplina, Experiencia, Valor, Efectividad)
+#    - Normalizar valores 0-10
+#    - Comparar con promedio de La Liga
+```
+
+### Criterios de Evaluación
+- **Gráficos temporales correctos** (15 puntos)
+- **Subplots bien organizados** (5 puntos)
+- **Gráfico radar implementado** (5 puntos)
+
+---
+
+## Parte 3: Dashboard Interactivo y Comparativo (25 puntos)
+
+### Objetivo
+Crear un dashboard completo que combine múltiples visualizaciones para análisis integral.
+
+### Instrucciones Detalladas
+
+```python
+# Datos ampliados para dashboard
+datos_completos = {
+    'temporada': ['2020-21', '2021-22', '2022-23', '2023-24'],
+    'posicion_liga': [13, 9, 12, 10],
+    'goles_favor': [47, 48, 38, 43],
+    'goles_contra': [53, 53, 48, 35],
+    'puntos': [45, 48, 41, 49],
+    'valor_plantilla': [180, 220, 185, 210],  # millones
+    'presupuesto': [75, 85, 80, 90]  # millones
+}
+
+df_historico = pd.DataFrame(datos_completos)
+
+# TU CÓDIGO AQUÍ:
+
+# 1. DASHBOARD PRINCIPAL - Figura con múltiples subplots
+#    Crear figura de 3x3 con 9 gráficos diferentes:
+
+# Fila 1:
+#    - Subplot (0,0): Evolución histórica posición en liga
+#    - Subplot (0,1): Goles favor vs contra por temporada  
+#    - Subplot (0,2): Eficiencia goleadora (goles/partido)
+
+# Fila 2:
+#    - Subplot (1,0): Relación valor plantilla vs posición
+#    - Subplot (1,1): Distribución de goles temporada actual (histograma)
+#    - Subplot (1,2): Comparación presupuesto vs rendimiento
+
+# Fila 3:
+#    - Subplot (2,0): Top goleadores individuales (barras)
+#    - Subplot (2,1): Análisis disciplinario (tarjetas)
+#    - Subplot (2,2): Proyección resto de temporada
+
+# 2. CONFIGURACIÓN AVANZADA:
+#    - Título general del dashboard
+#    - Espaciado apropiado entre subplots
+#    - Colores consistentes en todo el dashboard
+#    - Tamaño de figura: (20, 15)
+
+# 3. GRÁFICOS ESPECIALIZADOS:
+
+# A) Gráfico de Violin - Distribución de minutos por posición
+#    - Mostrar densidad de distribución
+#    - Comparar con otras posiciones
+#    - Identificar outliers
+
+# B) Heatmap de rendimiento por mes
+#    - Crear matriz mes vs métrica
+#    - Mostrar patrones estacionales
+#    - Usar diverging colormap
+
+# C) Gráfico de Gantt - Calendario de partidos importantes
+#    - Visualizar fixture congestionado
+#    - Destacar partidos contra equipos top
+#    - Mostrar períodos de descanso
+
+# 4. ANÁLISIS PREDICTIVO VISUAL:
+#    - Tendencia polinomial de puntos
+#    - Proyección final de liga
+#    - Zona de confianza estadística
+```
+
+### Criterios de Evaluación
+- **Dashboard completo con 9 subplots** (15 puntos)
+- **Gráficos especializados** (5 puntos)  
+- **Análisis predictivo visual** (5 puntos)
+
+---
+
+## Parte 4: Presentación Profesional para Directiva (25 puntos)
+
+### Objetivo
+Crear una presentación visual ejecutiva que resuma los hallazgos clave para la directiva.
+
+### Instrucciones Detalladas
+
+```python
+# TU CÓDIGO AQUÍ:
+
+# 1. SLIDE 1 - Resumen Ejecutivo (1 figura, 4 subplots)
+#    - KPI principal: Posición actual vs objetivo
+#    - Progreso de puntos vs temporada pasada
+#    - Diferencial goleador mensual
+#    - Comparación con presupuesto
+
+# 2. SLIDE 2 - Análisis de Jugadores Clave (1 figura grande)
+#    - Bubble chart: Goles vs Asistencias vs Valor de Mercado
+#    - Tamaño de burbuja = Minutos jugados
+#    - Color = Posición
+#    - Añadir anotaciones para jugadores estrella
+
+# 3. SLIDE 3 - Benchmarking Competitivo (2 subplots)
+#    - Subplot izquierdo: Ranking en métricas clave vs 5 rivales
+#    - Subplot derecho: Radar chart comparativo
+#    - Destacar fortalezas y debilidades
+
+# 4. SLIDE 4 - Proyecciones y Recomendaciones (3 subplots)
+#    - Proyección de puntos finales (con intervalo confianza)
+#    - ROI de inversiones en fichajes
+#    - Roadmap visual de objetivos restantes
+
+# 5. CONFIGURACIÓN PROFESIONAL:
+#    - Usar colores corporativos del Valencia (naranja/negro/blanco)
+#    - Títulos ejecutivos claros y concisos
+#    - Incluir logos/branding simulado
+#    - Texto explicativo en cada gráfico
+
+# 6. INSIGHTS CLAVE DESTACADOS:
+#    - Cajas de texto con hallazgos principales
+#    - Métricas en formato de tarjetas
+#    - Call-to-action para decisiones estratégicas
+
+# 7. EXPORTACIÓN:
+#    - Guardar cada slide como PNG de alta resolución
+#    - Crear versión PDF del reporte completo
+#    - Optimizar para presentación en pantalla
+
+# 8. INTERACTIVIDAD SIMULADA:
+#    - Crear función que actualice gráficos con nuevos datos
+#    - Demostrar cómo cambiarían las visualizaciones
+#    - Preparar versiones alternativas de escenarios
+```
+
+### Criterios de Evaluación
+- **4 slides profesionales completos** (15 puntos)
+- **Branding y diseño corporativo** (5 puntos)
+- **Insights ejecutivos claros** (5 puntos)
+
+---
+
+# Criterios de Evaluación Total
+
+## Distribución de Puntos (100 total)
+
+### 1. Correctitud Técnica (40 puntos)
+- **Sintaxis matplotlib/seaborn correcta:** Sin errores de ejecución
+- **Tipos de gráficos apropiados:** Selección correcta para cada análisis
+- **Configuración visual:** Parámetros y personalización correctos
+- **Exportación y formato:** Calidad profesional de outputs
+
+### 2. Aplicación Práctica (30 puntos)
+- **Análisis visual relevante:** Gráficos útiles para decisiones deportivas
+- **Interpretación correcta:** Insights válidos de las visualizaciones
+- **Comparaciones efectivas:** Benchmarking visual significativo
+- **Dashboard integrado:** Presentación cohesiva de múltiples métricas
+
+### 3. Claridad y Documentación (30 puntos)
+- **Títulos y etiquetas claros:** Información completa en español
+- **Leyendas apropiadas:** Explicación clara de todos los elementos
+- **Colores y diseño:** Paleta coherente y profesional
+- **Narrativa visual:** Historia clara contada a través de gráficos
+
+---
+
+# Instrucciones de Entrega
+
+## Lista de Verificación
+
+Antes de entregar, asegúrate de:
+
+1. **✅ Completar las 4 partes** del ejercicio de visualización
+2. **✅ Ejecutar todos los gráficos** sin errores
+3. **✅ Usar configuración estándar** con sns.set_theme()
+4. **✅ Incluir títulos y etiquetas** en español
+5. **✅ Mostrar interpretaciones** de cada visualización
+
+## Formato de Entrega
+
+- **Nombre del archivo:** `[matricula]-ejercicio-semana-5.ipynb`
+- **Formato:** Jupyter Notebook ejecutado con todas las visualizaciones
+- **Fecha límite:** Final de la Semana 5
+- **Método:** Subir a la plataforma del curso
+
+## Recursos de Apoyo
+
+- **Notebook principal:** `bloque-1/semana-5/visualizacion-basica.ipynb`
+- **Galería Matplotlib:** [Gallery](https://matplotlib.org/stable/gallery/index.html)
+- **Tutorial Seaborn:** [User Guide](https://seaborn.pydata.org/tutorial.html)
+- **Rúbrica detallada:** `evaluaciones/bloque-1/rubrica-unificada-bloque1.md`
+
+---
+
+**¡Domina la visualización de datos deportivos y comunica insights como un analista profesional!**

@@ -329,11 +329,11 @@ df_mercado = pd.DataFrame(mercado_fichajes)
 
 Antes de entregar, asegúrate de:
 
-1. **✅ Completar las 4 partes** del análisis con pandas y numpy
-2. **✅ Ejecutar todo el código** sin errores
-3. **✅ Incluir interpretaciones** de todos los resultados estadísticos
-4. **✅ Usar nombres descriptivos** en español para variables
-5. **✅ Mostrar DataFrames** claramente formateados
+1. **Completar las 4 partes** del análisis con pandas y numpy
+2. **Ejecutar todo el código** sin errores
+3. **Incluir interpretaciones** de todos los resultados estadísticos
+4. **Usar nombres descriptivos** en español para variables
+5. **Mostrar DataFrames** claramente formateados
 
 ## Formato de Entrega
 

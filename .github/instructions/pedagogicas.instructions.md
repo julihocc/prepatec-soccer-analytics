@@ -4,7 +4,7 @@ applyTo: '**'
 
 Este curso esta dirigido a estudiantes de la preparatoria del Tec de Monterrey, en su último año, que exploran opciones de carrera en tecnología y datos. El objetivo es introducirlos a conceptos básicos de programación y análisis de datos, utilizando el contexto del fútbol para hacer el aprendizaje más atractivo y relevante.
 
-## 📚 Instrucciones Pedagógicas
+## Instrucciones Pedagógicas
 
 ### Enfoque del Curso
 - **Lenguaje**: Español

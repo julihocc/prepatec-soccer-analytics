@@ -1,53 +1,466 @@
-# Ejercicio Semana 9: Visualización Avanzada de Datos Deportivos
+# Ejercicio Semana 9: Visualización Avanzada de Datos
 
-## Información del Ejercicio
+## Información General
 
 **Bloque:** 2 - Fundamentos de Data Science  
-**Peso:** 12% de la calificación del bloque (60% ÷ 5 ejercicios)  
-**Tiempo estimado:** 3-3.5 horas  
-**Entrega:** Final de Semana 9
+**Semana:** 9  
+**Tiempo estimado:** 60 minutos  
+**Puntos totales:** 100 puntos  
+**Fecha límite:** Final de la Semana 9  
+**Archivo entrega:** `[matricula]-ejercicio-semana-9.ipynb`
 
-## Objetivos
+## Objetivos de Aprendizaje
 
-Al completar este ejercicio, serás capaz de:
-
+Al completar este ejercicio, el estudiante será capaz de:
 - Crear visualizaciones avanzadas específicas para análisis deportivo
-- Aplicar principios de diseño visual para comunicación efectiva
-- Desarrollar dashboards interactivos básicos para análisis futbolístico
-- Implementar storytelling con datos usando visualizaciones
-- Crear gráficos personalizados para métricas deportivas específicas
-- Optimizar visualizaciones para diferentes audiencias
+- Aplicar principios de diseño visual para comunicación efectiva de datos
+- Desarrollar dashboards coherentes para análisis futbolístico
+- Implementar storytelling visual con datos deportivos
+- Personalizar gráficos para diferentes audiencias y contextos
 
-## Configuración Inicial
+## Prerrequisitos
+
+- Ejercicios de las Semanas 6-8 completados exitosamente  
+- Dominio de matplotlib y seaborn básico
+- Conocimiento de estadística descriptiva aplicada
+- Comprensión de principios de visualización de datos
+
+## Contexto del Ejercicio
+
+Eres el **director de visualización de datos** del Liverpool FC. El club necesita un sistema visual integral para:
+
+- Presentar análisis de rendimiento a diferentes audiencias
+- Crear reportes visuales para medios de comunicación
+- Desarrollar dashboards para el cuerpo técnico
+- Comunicar insights de forma clara y atractiva
+
+---
+
+# Ejercicio Integrador: Centro Visual Liverpool FC
+
+## Parte 1: Gráficos Especializados para Análisis Deportivo (25 puntos)
+
+### Objetivo
+Crear visualizaciones especializadas que comuniquen efectivamente el rendimiento del Liverpool FC.
+
+### Instrucciones Detalladas
+
+**Paso 1:** Configura el centro visual del Liverpool:
 
 ```python
+# Configuración del centro visual Liverpool FC
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import plotly.express as px
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
+from math import pi
 import matplotlib.patches as patches
-from matplotlib.patches import Rectangle
 import warnings
 warnings.filterwarnings('ignore')
 
-# Configurar estilos
-sns.set_theme(style="whitegrid", palette="viridis")
+# Configuración visual del Liverpool (colores oficiales)
+colores_liverpool = ['#C8102E', '#F6EB61', '#00B2A9', '#212121']
+sns.set_theme(style="whitegrid", palette=colores_liverpool)
 plt.rcParams['figure.figsize'] = (14, 10)
 plt.rcParams['font.size'] = 12
 
-# Cargar datos
-df_equipos = pd.read_csv('equipos-europa-2023-24.csv')
-df_jugadores = pd.read_csv('jugadores-estrellas-2024.csv')
+print("=== CENTRO VISUAL LIVERPOOL FC ===")
+print("Sistema de visualización avanzada iniciado")
+print("¡Herramientas gráficas listas!")
 
-print("¡Herramientas de visualización avanzada listas!")
+# Cargar datos de equipos europeos
+df_equipos = pd.read_csv('equipos-europa-2023-24.csv')
+print(f"Visualizando datos de {len(df_equipos)} equipos europeos")
 ```
 
-## Ejercicio 1: Visualizaciones Deportivas Especializadas (20 puntos)
+**Paso 2:** Crea gráfico radar para análisis multidimensional:
 
-### Gráfico de Radar para Análisis de Equipos
+```python
+# Gráfico radar para análisis integral del Liverpool
+
+# TU CÓDIGO AQUÍ:
+# 1. Seleccionar métricas clave: Puntos, Goles_Favor, Goles_Contra, Presupuesto
+# 2. Normalizar todas las métricas a escala 0-10
+# 3. Crear función para gráfico radar del Liverpool vs promedio de liga
+# 4. Incluir líneas para Liverpool, promedio Premier League y mejor equipo
+# 5. Personalizar colores, etiquetas y leyenda
+# 6. Añadir valores específicos en cada eje
+
+def crear_radar_liverpool(datos_equipo, datos_referencia, metricas):
+    """
+    Crea gráfico radar comparativo para el Liverpool
+    
+    Parámetros:
+    datos_equipo: Series con datos del Liverpool
+    datos_referencia: DataFrame con datos de comparación
+    metricas: Lista de métricas a incluir
+    """
+    # Tu implementación aquí
+    
+    # Configurar radar
+    angulos = [n / float(len(metricas)) * 2 * pi for n in range(len(metricas))]
+    angulos += angulos[:1]  # Cerrar el círculo
+    
+    fig, ax = plt.subplots(figsize=(10, 10), subplot_kw=dict(projection='polar'))
+    
+    # Implementar radar aquí
+    
+    plt.title("Análisis Radar: Liverpool FC vs Competencia", size=16, fontweight='bold')
+    return fig, ax
+
+print("=== GRÁFICO RADAR LIVERPOOL FC ===")
+# Implementar y mostrar radar
+```
+
+### Criterios de Evaluación
+- **Gráfico radar funcional y preciso** (15 puntos)
+- **Personalización visual efectiva** (10 puntos)
+
+---
+
+## Parte 2: Dashboard Comparativo de Rendimiento (25 puntos)
+
+### Objetivo
+Desarrollar un dashboard visual completo para comparar el Liverpool con la competencia europea.
+
+### Instrucciones Detalladas
+
+**Paso 3:** Crea visualizaciones comparativas múltiples:
+
+```python
+# Dashboard de comparación Liverpool vs élite europea
+
+# TU CÓDIGO AQUÍ:
+# 1. Crear subplot con 6 visualizaciones:
+#    - Gráfico de barras: Top 10 equipos por puntos (destacar Liverpool)
+#    - Scatter plot: Eficiencia presupuestaria (Puntos vs Presupuesto)
+#    - Boxplot: Distribución de goles por liga (destacar Liverpool)
+#    - Heatmap: Correlación entre métricas (solo equipos top)
+#    - Pie chart: Proporción de victorias/empates/derrotas Liverpool
+#    - Line plot: Progresión temporal simulada del Liverpool
+
+fig, axes = plt.subplots(2, 3, figsize=(18, 12))
+
+# Panel 1: Top 10 equipos por puntos
+ax1 = axes[0, 0]
+# Implementar gráfico de barras
+
+# Panel 2: Eficiencia presupuestaria
+ax2 = axes[0, 1]  
+# Implementar scatter plot
+
+# Panel 3: Distribución goles por liga
+ax3 = axes[0, 2]
+# Implementar boxplot
+
+# Panel 4: Heatmap correlaciones
+ax4 = axes[1, 0]
+# Implementar heatmap
+
+# Panel 5: Distribución resultados Liverpool
+ax5 = axes[1, 1]
+# Implementar pie chart
+
+# Panel 6: Tendencia temporal
+ax6 = axes[1, 2]
+# Implementar line plot
+
+plt.suptitle("Dashboard Liverpool FC: Análisis Comparativo Temporada 2023-24", 
+             fontsize=16, fontweight='bold')
+plt.tight_layout()
+plt.show()
+
+print("Dashboard comparativo Liverpool FC generado")
+```
+
+**Paso 4:** Crea visualización de rendimiento por competición:
+
+```python
+# Análisis de rendimiento Liverpool por tipo de competición
+
+# TU CÓDIGO AQUÍ:
+# 1. Simular datos de Liverpool en diferentes competiciones:
+#    - Premier League, Champions League, FA Cup, Carabao Cup
+# 2. Crear gráfico de barras agrupadas por competición
+# 3. Mostrar goles favor, goles contra, puntos por partido
+# 4. Incluir líneas de promedio general
+# 5. Personalizar con colores del Liverpool
+# 6. Añadir anotaciones explicativas
+
+competiciones_liverpool = {
+    'Premier League': {'partidos': 38, 'puntos': 82, 'goles_favor': 86, 'goles_contra': 41},
+    'Champions League': {'partidos': 8, 'puntos': 18, 'goles_favor': 24, 'goles_contra': 12},
+    'FA Cup': {'partidos': 6, 'puntos': 15, 'goles_favor': 18, 'goles_contra': 8},
+    'Carabao Cup': {'partidos': 4, 'puntos': 9, 'goles_favor': 12, 'goles_contra': 5}
+}
+
+print("=== RENDIMIENTO LIVERPOOL POR COMPETICIÓN ===")
+# Implementar visualización por competición
+```
+
+### Criterios de Evaluación
+- **Dashboard completo y coherente** (15 puntos)
+- **Visualizaciones especializadas efectivas** (10 puntos)
+
+---
+
+## Parte 3: Storytelling Visual con Datos (25 puntos)
+
+### Objetivo
+Crear una narrativa visual que cuente la historia del Liverpool a través de datos.
+
+### Instrucciones Detalladas
+
+**Paso 5:** Desarrolla narrativa visual progresiva:
+
+```python
+# Storytelling: La temporada del Liverpool en datos
+
+# TU CÓDIGO AQUÍ:
+# 1. Crear secuencia de 4 gráficos que cuenten una historia:
+#    - Gráfico 1: "El Punto de Partida" (posición inicial vs objetivos)
+#    - Gráfico 2: "El Camino" (evolución durante la temporada)
+#    - Gráfico 3: "Los Desafíos" (comparación con rivales)
+#    - Gráfico 4: "El Resultado" (logros y áreas de mejora)
+# 2. Usar anotaciones, flechas y texto explicativo
+# 3. Colores consistentes y progresión visual clara
+# 4. Cada gráfico debe tener un mensaje principal
+
+fig, axes = plt.subplots(2, 2, figsize=(16, 12))
+
+# Historia 1: El Punto de Partida
+ax1 = axes[0, 0]
+# Crear visualización de objetivos vs realidad inicial
+ax1.set_title("1. El Punto de Partida", fontsize=14, fontweight='bold')
+
+# Historia 2: El Camino  
+ax2 = axes[0, 1]
+# Mostrar evolución durante temporada
+ax2.set_title("2. El Camino Recorrido", fontsize=14, fontweight='bold')
+
+# Historia 3: Los Desafíos
+ax3 = axes[1, 0]
+# Comparar con principales rivales
+ax3.set_title("3. Los Desafíos Enfrentados", fontsize=14, fontweight='bold')
+
+# Historia 4: El Resultado
+ax4 = axes[1, 1]
+# Mostrar logros y áreas de mejora
+ax4.set_title("4. El Resultado Final", fontsize=14, fontweight='bold')
+
+plt.suptitle("La Temporada del Liverpool FC: Una Historia en Datos", 
+             fontsize=16, fontweight='bold')
+plt.tight_layout()
+plt.show()
+
+print("=== NARRATIVA VISUAL LIVERPOOL ===")
+print("Historia de la temporada contada a través de datos")
+```
+
+**Paso 6:** Crea infografía ejecutiva:
+
+```python
+# Infografía ejecutiva: Liverpool FC en números
+
+# TU CÓDIGO AQUÍ:
+# 1. Crear infografía estilo "fact sheet" con métricas clave
+# 2. Usar iconos, colores y tipografía atractiva
+# 3. Incluir comparaciones clave (vs temporada anterior, vs rivales)
+# 4. Métricas destacadas: puntos, posición, goles, eficiencia
+# 5. Sección de logros y reconocimientos
+# 6. Proyecciones para próxima temporada
+
+fig, ax = plt.subplots(figsize=(12, 16))
+ax.set_xlim(0, 10)
+ax.set_ylim(0, 14)
+ax.axis('off')
+
+# Título principal
+ax.text(5, 13, "LIVERPOOL FC", fontsize=32, fontweight='bold', 
+        ha='center', color='#C8102E')
+ax.text(5, 12.5, "TEMPORADA 2023-24 EN NÚMEROS", fontsize=16, 
+        ha='center', color='#212121')
+
+# Implementar secciones de la infografía
+# Sección 1: Métricas principales
+# Sección 2: Comparaciones
+# Sección 3: Logros destacados
+# Sección 4: Proyecciones
+
+plt.savefig('liverpool_infografia_2023-24.png', dpi=300, bbox_inches='tight')
+plt.show()
+
+print("Infografía ejecutiva Liverpool FC generada")
+```
+
+### Criterios de Evaluación
+- **Narrativa visual coherente y efectiva** (15 puntos)
+- **Infografía profesional y atractiva** (10 puntos)
+
+---
+
+## Parte 4: Visualización para Diferentes Audiencias (25 puntos)
+
+### Objetivo
+Adaptar visualizaciones para diferentes stakeholders del Liverpool FC.
+
+### Instrucciones Detalladas
+
+**Paso 7:** Crea visualizaciones específicas por audiencia:
+
+```python
+# Visualizaciones adaptadas por audiencia objetivo
+
+# TU CÓDIGO AQUÍ:
+# 1. Audiencia 1: Junta Directiva (métricas financieras y estratégicas)
+# 2. Audiencia 2: Cuerpo Técnico (métricas tácticas y rendimiento)
+# 3. Audiencia 3: Medios de Comunicación (métricas atractivas y destacadas)
+# 4. Audiencia 4: Aficionados (métricas emocionales y comparativas)
+
+def visualizacion_junta_directiva():
+    """Gráficos enfocados en ROI, eficiencia presupuestaria, valor de marca"""
+    fig, axes = plt.subplots(1, 3, figsize=(15, 5))
+    
+    # Gráfico 1: ROI presupuestario
+    # Gráfico 2: Comparación financiera vs rivales
+    # Gráfico 3: Valor de marca y proyecciones
+    
+    plt.suptitle("Liverpool FC - Reporte Ejecutivo Junta Directiva", fontweight='bold')
+    return fig
+
+def visualizacion_cuerpo_tecnico():
+    """Gráficos enfocados en táctica, rendimiento individual, patrones de juego"""
+    fig, axes = plt.subplots(2, 2, figsize=(12, 10))
+    
+    # Gráfico 1: Mapa de calor posicional
+    # Gráfico 2: Eficiencia por zona del campo
+    # Gráfico 3: Rendimiento individual por posición
+    # Gráfico 4: Patrones tácticos vs rivales
+    
+    plt.suptitle("Liverpool FC - Análisis Técnico Avanzado", fontweight='bold')
+    return fig
+
+def visualizacion_medios():
+    """Gráficos atractivos, fáciles de entender, con cifras impactantes"""
+    fig, ax = plt.subplots(figsize=(10, 8))
+    
+    # Gráfico principal: Comparación visual impactante
+    # Elementos destacados, colores llamativos, cifras grandes
+    
+    plt.title("Liverpool FC - Los Números que Impresionan", fontweight='bold')
+    return fig
+
+def visualizacion_aficionados():
+    """Gráficos emotivos, comparaciones históricas, logros destacados"""
+    fig, axes = plt.subplots(2, 2, figsize=(12, 10))
+    
+    # Gráfico 1: Evolución histórica del club
+    # Gráfico 2: Comparación con el pasado glorioso
+    # Gráfico 3: Jugadores estrella del equipo
+    # Gráfico 4: Próximos objetivos y sueños
+    
+    plt.suptitle("Liverpool FC - Para Nuestros Fieles Seguidores", fontweight='bold')
+    return fig
+
+print("=== VISUALIZACIONES POR AUDIENCIA ===")
+# Generar cada tipo de visualización
+```
+
+**Paso 8:** Evalúa la efectividad de las visualizaciones:
+
+```python
+# Sistema de evaluación de efectividad visual
+
+# TU CÓDIGO AQUÍ:
+# 1. Crear criterios de evaluación por audiencia:
+#    - Claridad del mensaje
+#    - Relevancia de la información
+#    - Atractivo visual
+#    - Facilidad de comprensión
+# 2. Autoevaluar cada visualización creada
+# 3. Proponer mejoras específicas
+# 4. Crear checklist de buenas prácticas
+# 5. Documentar lecciones aprendidas
+
+criterios_evaluacion = {
+    'Junta Directiva': {
+        'enfoque': 'Estratégico y financiero',
+        'metricas_clave': ['ROI', 'Eficiencia', 'Competitividad'],
+        'estilo': 'Profesional, sobrio, preciso'
+    },
+    'Cuerpo Técnico': {
+        'enfoque': 'Táctico y rendimiento',
+        'metricas_clave': ['Rendimiento', 'Patrones', 'Mejoras'],
+        'estilo': 'Detallado, técnico, actionable'
+    },
+    'Medios': {
+        'enfoque': 'Impacto y simplicidad',
+        'metricas_clave': ['Highlights', 'Comparaciones', 'Records'],
+        'estilo': 'Atractivo, simple, memorable'
+    },
+    'Aficionados': {
+        'enfoque': 'Emocional y aspiracional',
+        'metricas_clave': ['Historia', 'Orgullo', 'Futuro'],
+        'estilo': 'Emotivo, inspirador, accesible'
+    }
+}
+
+print("=== EVALUACIÓN DE EFECTIVIDAD VISUAL ===")
+print("\n📊 RESUMEN DE VISUALIZACIONES CREADAS:")
+for audiencia, criterios in criterios_evaluacion.items():
+    print(f"\n{audiencia.upper()}:")
+    print(f"  Enfoque: {criterios['enfoque']}")
+    print(f"  Métricas: {', '.join(criterios['metricas_clave'])}")
+    print(f"  Estilo: {criterios['estilo']}")
+
+print("\n🎯 LECCIONES APRENDIDAS:")
+print("1. [Tu reflexión sobre audiencias específicas]")
+print("2. [Tu reflexión sobre diseño efectivo]")
+print("3. [Tu reflexión sobre storytelling visual]")
+```
+
+### Criterios de Evaluación
+- **Adaptación efectiva por audiencia** (15 puntos)
+- **Reflexión y evaluación crítica** (10 puntos)
+
+## Criterios de Evaluación General
+
+### Correctitud Técnica (40 puntos)
+- Visualizaciones ejecutan sin errores
+- Uso correcto de librerías de visualización
+- Implementación adecuada de gráficos especializados
+- Personalización efectiva de estilos y colores
+
+### Aplicación Práctica (30 puntos)
+- Visualizaciones relevantes para análisis deportivo
+- Adaptación apropiada para diferentes audiencias
+- Storytelling efectivo con datos
+- Insights comunicados claramente
+
+### Claridad y Documentación (30 puntos)
+- Gráficos profesionales y bien diseñados
+- Etiquetas, títulos y leyendas claros
+- Código bien comentado en español
+- Narrativa visual coherente y atractiva
+
+## Instrucciones de Entrega
+
+1. **Completa todas las visualizaciones** con calidad profesional
+2. **Incluye reflexiones** sobre decisiones de diseño
+3. **Verifica legibilidad** en diferentes tamaños de pantalla
+4. **Guarda como:** `[matricula]-ejercicio-semana-9.ipynb`
+5. **Entrega antes del final de Semana 9**
+
+## Recursos de Apoyo
+
+- Notebook de la Semana 9: `visualizacion-datos.ipynb`
+- Dataset: `equipos-europa-2023-24.csv`
+- Paletas de colores: Colores oficiales de equipos
+- Guía de visualización efectiva en deportes
+
+---
+
+**¡Transforma los datos del Liverpool FC en historias visuales que inspiren y informen!** ⚽🎨
 
 ```python
 # Crear visualización tipo radar para comparar equipos

@@ -1,26 +1,54 @@
-# Ejercicio Semana 8: Estadística Descriptiva en Análisis Deportivo
+# Ejercicio Semana 8: Estadística Descriptiva Deportiva
 
-## Información del Ejercicio
+## Información General
 
 **Bloque:** 2 - Fundamentos de Data Science  
-**Peso:** 12% de la calificación del bloque (60% ÷ 5 ejercicios)  
-**Tiempo estimado:** 2.5-3 horas  
-**Entrega:** Final de Semana 8
+**Semana:** 8  
+**Tiempo estimado:** 60 minutos  
+**Puntos totales:** 100 puntos  
+**Fecha límite:** Final de la Semana 8  
+**Archivo entrega:** `[matricula]-ejercicio-semana-8.ipynb`
 
-## Objetivos
+## Objetivos de Aprendizaje
 
-Al completar este ejercicio, serás capaz de:
+Al completar este ejercicio, el estudiante será capaz de:
+- Calcular e interpretar medidas de tendencia central en análisis deportivo
+- Aplicar medidas de dispersión para evaluar variabilidad en rendimiento
+- Identificar y analizar valores atípicos en estadísticas futbolísticas
+- Realizar análisis de distribuciones para caracterizar rendimiento
+- Comparar equipos y jugadores usando estadística descriptiva avanzada
 
-- Calcular e interpretar medidas de tendencia central en contexto deportivo
-- Aplicar medidas de dispersión para analizar variabilidad en rendimiento
-- Identificar y analizar outliers en datos futbolísticos
-- Realizar análisis de distribuciones y normalidad
-- Comparar rendimientos usando estadística descriptiva
-- Crear reportes estadísticos profesionales
+## Prerrequisitos
 
-## Configuración Inicial
+- Ejercicios de las Semanas 6-7 completados exitosamente
+- Conocimiento sólido de pandas y tipos de datos
+- Comprensión básica de conceptos estadísticos
+- Familiaridad con visualizaciones en seaborn
+
+## Contexto del Ejercicio
+
+Eres el **estadístico jefe** del departamento de análisis del Arsenal FC. El cuerpo técnico necesita un análisis estadístico profundo para:
+
+- Evaluar la consistencia del rendimiento del equipo
+- Comparar estadísticamente con la competencia
+- Identificar fortalezas y debilidades usando métrica objetivas
+- Generar reportes estadísticos para la junta directiva
+
+---
+
+# Ejercicio Integrador: Análisis Estadístico Arsenal FC
+
+## Parte 1: Medidas de Tendencia Central (25 puntos)
+
+### Objetivo
+Calcular y comparar medidas de tendencia central para evaluar el rendimiento del Arsenal vs competencia.
+
+### Instrucciones Detalladas
+
+**Paso 1:** Configura el entorno estadístico:
 
 ```python
+# Configuración del laboratorio estadístico Arsenal FC
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -29,25 +57,326 @@ from scipy import stats
 import warnings
 warnings.filterwarnings('ignore')
 
-# Configurar estilo
+# Configuración visual para Arsenal
 sns.set_theme(style="whitegrid", palette="viridis")
 plt.rcParams['figure.figsize'] = (12, 8)
+plt.rcParams['font.size'] = 11
 
-# Cargar datos
+print("=== LABORATORIO ESTADÍSTICO ARSENAL FC ===")
+print("Sistema de análisis estadístico deportivo iniciado")
+print("¡Herramientas de análisis listas!")
+
+# Cargar datos de equipos europeos
 df_equipos = pd.read_csv('equipos-europa-2023-24.csv')
-df_jugadores = pd.read_csv('jugadores-estrellas-2024.csv')
-
-print("¡Herramientas estadísticas listas para el análisis deportivo!")
+print(f"Analizando {len(df_equipos)} equipos de élite europea")
 ```
 
-## Ejercicio 1: Medidas de Tendencia Central (20 puntos)
-
-### Análisis de Rendimiento Ofensivo
+**Paso 2:** Calcula medidas de tendencia central:
 
 ```python
-# Extraer goles por equipo para análisis
-goles_equipos = df_equipos['Goles_Favor'].values
-puntos_equipos = df_equipos['Puntos'].values
+# Análisis de tendencia central en rendimiento ofensivo
+
+# TU CÓDIGO AQUÍ:
+# 1. Extraer datos de goles a favor de todos los equipos
+# 2. Calcular media, mediana y moda de goles por liga
+# 3. Identificar la posición del Arsenal en cada métrica
+# 4. Comparar Arsenal vs promedio de Premier League
+# 5. Calcular percentiles (25, 50, 75, 90) para goles y puntos
+# 6. Determinar en qué percentil está el Arsenal
+# 7. Crear ranking de equipos por media de múltiples métricas
+
+goles_por_liga = df_equipos.groupby('Liga')['Goles_Favor'].agg(['mean', 'median', 'std']).round(2)
+
+print("=== ANÁLISIS DE TENDENCIA CENTRAL ARSENAL ===")
+print("\n1. POSICIÓN OFENSIVA DEL ARSENAL:")
+# Implementar análisis específico del Arsenal
+
+print("\n2. COMPARACIÓN POR LIGAS:")
+# Mostrar estadísticas por liga
+
+print("\n3. PERCENTILES DE RENDIMIENTO:")
+# Calcular y mostrar percentiles
+```
+
+### Criterios de Evaluación
+- **Cálculos estadísticos correctos** (15 puntos)
+- **Interpretación en contexto Arsenal** (10 puntos)
+
+---
+
+## Parte 2: Medidas de Dispersión y Variabilidad (25 puntos)
+
+### Objetivo
+Analizar la consistencia y variabilidad del rendimiento utilizando medidas de dispersión.
+
+### Instrucciones Detalladas
+
+**Paso 3:** Calcula medidas de dispersión:
+
+```python
+# Análisis de consistencia y variabilidad en rendimiento
+
+# TU CÓDIGO AQUÍ:
+# 1. Calcular desviación estándar de goles, puntos y presupuesto por liga
+# 2. Calcular coeficiente de variación para comparar ligas
+# 3. Identificar liga más consistente (menor variabilidad)
+# 4. Analizar dispersión en relación presupuesto-rendimiento
+# 5. Calcular rango intercuartílico (IQR) para detectar outliers
+# 6. Determinar qué liga tiene mayor competitividad (variabilidad en puntos)
+
+# Análisis de variabilidad por liga
+variabilidad_ligas = df_equipos.groupby('Liga').agg({
+    'Puntos': ['std', 'var'],
+    'Goles_Favor': ['std', 'var'],
+    'Presupuesto': ['std', 'var']
+}).round(2)
+
+print("=== ANÁLISIS DE VARIABILIDAD Y CONSISTENCIA ===")
+print("\n1. CONSISTENCIA POR LIGA:")
+# Mostrar análisis de variabilidad
+
+print("\n2. COMPETITIVIDAD (DISPERSIÓN DE PUNTOS):")
+# Identificar liga más competitiva
+
+print("\n3. EFICIENCIA PRESUPUESTARIA:")
+# Analizar relación presupuesto-variabilidad
+```
+
+**Paso 4:** Identifica y analiza valores atípicos:
+
+```python
+# Detección y análisis de outliers
+
+# TU CÓDIGO AQUÍ:
+# 1. Usar método IQR para detectar outliers en goles y puntos
+# 2. Identificar equipos outliers (positivos y negativos)
+# 3. Analizar si Arsenal es outlier en alguna métrica
+# 4. Crear visualización de boxplots para mostrar outliers
+# 5. Calcular z-scores para identificar valores extremos
+# 6. Interpretar qué significan estos outliers en contexto deportivo
+
+def detectar_outliers_iqr(serie, factor=1.5):
+    """Detecta outliers usando método IQR"""
+    Q1 = serie.quantile(0.25)
+    Q3 = serie.quantile(0.75)
+    IQR = Q3 - Q1
+    limite_inferior = Q1 - factor * IQR
+    limite_superior = Q3 + factor * IQR
+    return serie[(serie < limite_inferior) | (serie > limite_superior)]
+
+print("=== DETECCIÓN DE VALORES ATÍPICOS ===")
+# Aplicar análisis de outliers
+```
+
+### Criterios de Evaluación
+- **Análisis de dispersión correcto** (15 puntos)
+- **Detección e interpretación de outliers** (10 puntos)
+
+---
+
+## Parte 3: Análisis de Distribuciones (25 puntos)
+
+### Objetivo
+Analizar las distribuciones de variables clave para entender patrones de rendimiento.
+
+### Instrucciones Detalladas
+
+**Paso 5:** Analiza distribuciones de variables:
+
+```python
+# Análisis de distribuciones en métricas deportivas
+
+# TU CÓDIGO AQUÍ:
+# 1. Crear histogramas de goles, puntos y presupuesto
+# 2. Calcular medidas de forma: asimetría (skewness) y curtosis
+# 3. Probar normalidad usando test de Shapiro-Wilk
+# 4. Comparar distribuciones entre ligas
+# 5. Identificar si alguna variable sigue distribución normal
+# 6. Crear Q-Q plots para verificar normalidad visualmente
+
+# Análisis de forma de distribuciones
+from scipy.stats import skew, kurtosis, shapiro
+
+metricas_forma = {}
+for columna in ['Puntos', 'Goles_Favor', 'Presupuesto']:
+    datos = df_equipos[columna]
+    metricas_forma[columna] = {
+        'asimetria': skew(datos),
+        'curtosis': kurtosis(datos),
+        'shapiro_p': shapiro(datos)[1]
+    }
+
+print("=== ANÁLISIS DE DISTRIBUCIONES ===")
+print("\n1. FORMA DE DISTRIBUCIONES:")
+# Mostrar métricas de forma
+
+print("\n2. PRUEBAS DE NORMALIDAD:")
+# Interpretar resultados de normalidad
+
+print("\n3. COMPARACIÓN ENTRE LIGAS:")
+# Analizar diferencias distribucionales
+```
+
+**Paso 6:** Crea visualizaciones de distribuciones:
+
+```python
+# Dashboard de distribuciones múltiples
+
+# TU CÓDIGO AQUÍ:
+# 1. Crear subplot con 6 gráficos:
+#    - Histograma de puntos por liga
+#    - Boxplot de goles por liga
+#    - Distribución de presupuestos (log scale)
+#    - Q-Q plot de puntos vs normal
+#    - Kernel density de goles por liga
+#    - Violin plot de eficiencia (puntos/presupuesto)
+# 2. Añadir líneas de referencia (media, mediana)
+# 3. Destacar posición del Arsenal en cada gráfico
+# 4. Incluir estadísticas relevantes en cada plot
+
+fig, axes = plt.subplots(2, 3, figsize=(15, 10))
+# Implementar visualizaciones
+
+plt.suptitle("Análisis de Distribuciones: Fútbol Europeo 2023-24", fontsize=16, fontweight='bold')
+plt.tight_layout()
+plt.show()
+
+print("Dashboard de distribuciones generado para análisis Arsenal")
+```
+
+### Criterios de Evaluación
+- **Análisis distribucional completo** (15 puntos)
+- **Visualizaciones estadísticas efectivas** (10 puntos)
+
+---
+
+## Parte 4: Reporte Estadístico Ejecutivo (25 puntos)
+
+### Objetivo
+Generar un reporte estadístico profesional con conclusiones para la dirección del Arsenal.
+
+### Instrucciones Detalladas
+
+**Paso 7:** Genera análisis comparativo completo:
+
+```python
+# Análisis estadístico comparativo Arsenal vs competencia
+
+# TU CÓDIGO AQUÍ:
+# 1. Crear perfil estadístico completo del Arsenal
+# 2. Comparar Arsenal vs promedio de Premier League
+# 3. Posicionar Arsenal en rankings europeos
+# 4. Identificar fortalezas estadísticas del Arsenal
+# 5. Detectar áreas de mejora basadas en datos
+# 6. Calcular correlaciones entre métricas del Arsenal
+
+def crear_perfil_estadistico(equipo_nombre, dataframe):
+    """Crea perfil estadístico completo de un equipo"""
+    equipo_data = dataframe[dataframe['Equipo'] == equipo_nombre]
+    if len(equipo_data) == 0:
+        return None
+    
+    # Tu implementación aquí
+    perfil = {}
+    return perfil
+
+print("=== REPORTE ESTADÍSTICO ARSENAL FC ===")
+print("\n1. PERFIL ESTADÍSTICO ARSENAL:")
+# Generar perfil completo
+
+print("\n2. POSICIÓN COMPETITIVA:")
+# Comparar con competencia
+
+print("\n3. ANÁLISIS DE FORTALEZAS:")
+# Identificar ventajas estadísticas
+
+print("\n4. ÁREAS DE MEJORA:")
+# Detectar debilidades
+```
+
+**Paso 8:** Crea dashboard ejecutivo final:
+
+```python
+# Dashboard ejecutivo para presentación a la junta directiva
+
+# TU CÓDIGO AQUÍ:
+# 1. Crear visualización tipo "spider chart" con métricas clave del Arsenal
+# 2. Gráfico de barras: Arsenal vs Top 5 equipos europeos
+# 3. Scatter plot: Eficiencia presupuestaria (Arsenal destacado)
+# 4. Trend chart: Progresión histórica (simular datos)
+# 5. Heatmap de correlaciones entre métricas del Arsenal
+# 6. Incluir estadísticas clave y percentiles
+
+print("=== DASHBOARD EJECUTIVO ARSENAL FC ===")
+
+# Métricas clave para la junta directiva
+metricas_clave = {
+    'Rendimiento Ofensivo': 'percentil',
+    'Eficiencia Defensiva': 'percentil', 
+    'Consistencia': 'ranking',
+    'Eficiencia Presupuestaria': 'percentil',
+    'Competitividad Liga': 'posición'
+}
+
+print("\n🎯 MÉTRICAS CLAVE ARSENAL FC:")
+for metrica, tipo in metricas_clave.items():
+    # Calcular y mostrar cada métrica
+    pass
+
+print("\n📊 RECOMENDACIONES ESTRATÉGICAS:")
+print("1. [Basada en análisis estadístico]")
+print("2. [Basada en análisis estadístico]") 
+print("3. [Basada en análisis estadístico]")
+
+# Crear visualización final
+plt.figure(figsize=(14, 10))
+# Implementar dashboard ejecutivo
+plt.suptitle("Arsenal FC: Dashboard Estadístico Ejecutivo 2023-24", fontsize=16, fontweight='bold')
+plt.show()
+```
+
+### Criterios de Evaluación
+- **Reporte estadístico profesional** (15 puntos)
+- **Dashboard ejecutivo efectivo** (10 puntos)
+
+## Criterios de Evaluación General
+
+### Correctitud Técnica (40 puntos)
+- Cálculos estadísticos precisos y verificables
+- Uso correcto de métodos estadísticos
+- Implementación adecuada de pruebas de hipótesis
+- Detección correcta de outliers y normalidad
+
+### Aplicación Práctica (30 puntos)
+- Interpretación relevante para contexto Arsenal
+- Insights útiles para toma de decisiones
+- Comparaciones significativas con competencia
+- Recomendaciones basadas en evidencia estadística
+
+### Claridad y Documentación (30 puntos)
+- Explicaciones claras de resultados estadísticos
+- Visualizaciones profesionales y comprensibles
+- Reporte ejecutivo bien estructurado
+- Variables y análisis con nombres descriptivos
+
+## Instrucciones de Entrega
+
+1. **Completa todos los análisis** con rigor estadístico
+2. **Incluye interpretaciones** para cada resultado estadístico
+3. **Verifica cálculos** con métodos alternativos cuando sea posible
+4. **Guarda como:** `[matricula]-ejercicio-semana-8.ipynb`
+5. **Entrega antes del final de Semana 8**
+
+## Recursos de Apoyo
+
+- Notebook de la Semana 8: `estadistica-descriptiva.ipynb`
+- Dataset: `equipos-europa-2023-24.csv`
+- Documentación scipy.stats: Pruebas estadísticas
+- Guía de interpretación estadística en deportes
+
+---
+
+**¡Domina la estadística descriptiva y convierte al Arsenal en una potencia basada en datos!** ⚽📈
 
 # Tu código aquí:
 # 1. Calcular media, mediana y moda de goles por equipo

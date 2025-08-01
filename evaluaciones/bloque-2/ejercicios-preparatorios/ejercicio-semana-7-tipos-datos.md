@@ -1,103 +1,353 @@
-# Ejercicio Semana 7: Dominando Tipos de Datos en Análisis Futbolístico
+# Ejercicio Semana 7: Tipos de Datos en Análisis Deportivo
 
-## Información del Ejercicio
+## Información General
 
 **Bloque:** 2 - Fundamentos de Data Science  
-**Peso:** 12% de la calificación del bloque (60% ÷ 5 ejercicios)  
-**Tiempo estimado:** 2-2.5 horas  
-**Entrega:** Final de Semana 7
+**Semana:** 7  
+**Tiempo estimado:** 60 minutos  
+**Puntos totales:** 100 puntos  
+**Fecha límite:** Final de la Semana 7  
+**Archivo entrega:** `[matricula]-ejercicio-semana-7.ipynb`
 
-## Objetivos
+## Objetivos de Aprendizaje
 
-Al completar este ejercicio, serás capaz de:
+Al completar este ejercicio, el estudiante será capaz de:
+- Identificar y manejar diferentes tipos de datos en análisis futbolístico
+- Convertir tipos de datos apropiadamente usando pandas
+- Trabajar eficientemente con datos categóricos, numéricos y temporales
+- Optimizar el uso de memoria mediante tipos de datos correctos
+- Crear categorías significativas para análisis deportivo avanzado
 
-- Identificar y trabajar con diferentes tipos de datos en contexto futbolístico
-- Convertir y manipular tipos de datos apropiadamente
-- Aplicar operaciones específicas para datos categóricos, numéricos y temporales
-- Optimizar el uso de memoria y rendimiento con tipos correctos
-- Crear variables categóricas significativas para análisis deportivo
+## Prerrequisitos
 
-## Configuración Inicial
+- Ejercicio de la Semana 6 completado exitosamente
+- Conocimiento básico de pandas y exploratory data analysis
+- Comprensión de tipos de datos básicos en Python
+- Familiaridad con operaciones de DataFrame
+
+## Contexto del Ejercicio
+
+Eres el **analista de datos principal** del Manchester United. El departamento de analytics necesita un sistema robusto para:
+
+- Optimizar la gestión de datos de jugadores y partidos
+- Asegurar la calidad y consistencia de tipos de datos
+- Crear categorías útiles para análisis de rendimiento
+- Preparar datos para modelos predictivos avanzados
+
+---
+
+# Ejercicio Integrador: Sistema de Calidad de Datos Manchester United
+
+## Parte 1: Identificación y Conversión de Tipos (25 puntos)
+
+### Objetivo
+Analizar y corregir tipos de datos en el sistema de información deportiva del Manchester United.
+
+### Instrucciones Detalladas
+
+**Paso 1:** Configura el entorno y carga datos problemáticos:
 
 ```python
+# Configuración del sistema de análisis Manchester United
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime, timedelta
 
-# Configurar estilo
+# Configuración visual estándar
 sns.set_theme(style="whitegrid", palette="viridis")
 plt.rcParams['figure.figsize'] = (10, 6)
+plt.rcParams['font.size'] = 11
 
-print("¡Herramientas para análisis de tipos de datos listas!")
+print("=== SISTEMA DE CALIDAD DE DATOS MAN UNITED ===")
+print("Módulo de optimización de tipos de datos iniciado")
+print("¡Herramientas de análisis listas!")
 ```
 
-## Ejercicio 1: Identificación y Conversión de Tipos (20 puntos)
-
-### Parte A: Análisis de Tipos Actuales
+**Paso 2:** Analiza y corrige tipos de datos problemáticos:
 
 ```python
-# Crear dataset con tipos mixtos (simular datos reales mal formateados)
-datos_partidos = {
+# Dataset con tipos incorrectos (simula datos reales mal formateados)
+datos_partidos_mufc = {
     'Fecha': ['2024-01-15', '2024-01-22', '2024-01-29', '2024-02-05', '2024-02-12'],
-    'Jornada': ['1', '2', '3', '4', '5'],  # String pero debería ser int
-    'Equipo_Local': ['Barcelona', 'Real Madrid', 'Atletico', 'Valencia', 'Sevilla'],
-    'Equipo_Visitante': ['Valencia', 'Barcelona', 'Sevilla', 'Real Madrid', 'Atletico'],
-    'Goles_Local': ['2', '1', '3', '0', '2'],  # String pero debería ser int
-    'Goles_Visitante': [1, 2, 1, 1, 0],  # Ya int
-    'Temperatura': ['15.5', '18.2', '12.8', '20.1', '16.7'],  # String pero debería ser float
-    'Asistencia': [85000, 88000, 75000, 65000, 42000],  # Ya int
-    'Arbitro': ['García', 'López', 'Martínez', 'Rodríguez', 'Fernández'],
-    'Liga': ['La Liga', 'La Liga', 'La Liga', 'La Liga', 'La Liga']
+    'Jornada': ['1', '2', '3', '4', '5'],  # String pero debe ser int
+    'Rival': ['Liverpool', 'Arsenal', 'Chelsea', 'Man City', 'Tottenham'],
+    'Ubicacion': ['Old Trafford', 'Emirates', 'Old Trafford', 'Etihad', 'Old Trafford'],
+    'Goles_MUFC': ['2', '1', '3', '0', '2'],  # String pero debe ser int
+    'Goles_Rival': [1, 2, 1, 1, 0],  # Ya int correcto
+    'Temperatura': ['15.5', '18.2', '12.8', '20.1', '16.7'],  # String pero debe ser float
+    'Asistencia': [74310, 60260, 74310, 55017, 74310],  # Ya int correcto
+    'Arbitro': ['Oliver', 'Taylor', 'Atkinson', 'Dean', 'Friend'],
+    'Competicion': ['Premier', 'Premier', 'Premier', 'Premier', 'Premier']
 }
 
-df_partidos = pd.DataFrame(datos_partidos)
+df_mufc = pd.DataFrame(datos_partidos_mufc)
 
-# Tu código aquí:
+# TU CÓDIGO AQUÍ:
 # 1. Mostrar tipos de datos actuales con .dtypes
-# 2. Identificar qué columnas tienen tipos incorrectos
-# 3. Convertir 'Fecha' a datetime
-# 4. Convertir 'Jornada' y 'Goles_Local' a int
-# 5. Convertir 'Temperatura' a float
-# 6. Convertir columnas de texto a category cuando sea apropiado
-# 7. Verificar los nuevos tipos de datos
-# 8. Mostrar el uso de memoria antes y después de conversiones
+# 2. Mostrar uso de memoria inicial con .memory_usage(deep=True)
+# 3. Identificar columnas con tipos incorrectos
+# 4. Convertir 'Fecha' a datetime usando pd.to_datetime()
+# 5. Convertir 'Jornada' y 'Goles_MUFC' a enteros
+# 6. Convertir 'Temperatura' a float
+# 7. Convertir columnas de texto a 'category' para optimizar memoria
+# 8. Verificar los tipos después de conversión
+# 9. Comparar uso de memoria antes y después
+
+print("=== ANÁLISIS DE TIPOS DE DATOS MUFC ===")
+print("Estado inicial del dataset:")
+# Mostrar análisis aquí
 ```
 
-### Parte B: Validación de Conversiones
+### Criterios de Evaluación
+- **Identificación correcta de tipos problemáticos** (10 puntos)
+- **Conversiones exitosas y verificadas** (15 puntos)
+
+---
+
+## Parte 2: Gestión de Datos Categóricos (25 puntos)
+
+### Objetivo
+Crear y gestionar categorías eficientes para análisis de rendimiento de jugadores.
+
+### Instrucciones Detalladas
+
+**Paso 3:** Crea dataset de jugadores con categorías:
 
 ```python
-# Continuando con el dataset anterior
+# Información de jugadores del Manchester United
+jugadores_mufc = {
+    'Nombre': ['Rashford', 'Fernandes', 'Casemiro', 'Varane', 'Shaw', 'Garnacho', 'Eriksen', 'Maguire'],
+    'Edad': [26, 29, 31, 30, 28, 19, 31, 30],
+    'Altura_cm': [180, 179, 185, 191, 185, 180, 182, 194],
+    'Peso_kg': [70, 69, 84, 81, 85, 73, 76, 100],
+    'Posicion': ['Delantero', 'Centrocampista', 'Centrocampista', 'Defensa', 'Defensa', 'Extremo', 'Centrocampista', 'Defensa'],
+    'Pie_Habil': ['Derecho', 'Derecho', 'Derecho', 'Derecho', 'Izquierdo', 'Derecho', 'Derecho', 'Derecho'],
+    'Partidos_Jugados': [45, 48, 38, 29, 35, 42, 40, 25],
+    'Goles_Temporada': [17, 8, 1, 2, 1, 9, 3, 1],
+    'Salario_Semanal': [300000, 240000, 350000, 340000, 150000, 50000, 150000, 190000],
+    'Estado_Contrato': ['Renovado', 'Vigente', 'Vigente', 'Vigente', 'Renovado', 'Joven', 'Vigente', 'Vigente']
+}
 
-# Tu código aquí:
-# 1. Verificar que todas las conversiones fueron exitosas
-# 2. Crear función para validar tipos de un DataFrame
-# 3. Mostrar estadísticas descriptivas para cada tipo de dato
-# 4. Identificar posibles errores en los datos convertidos
-# 5. Crear alertas para valores fuera de rango esperado
-# 6. Documentar el proceso de conversión
+df_jugadores_mufc = pd.DataFrame(jugadores_mufc)
+
+# TU CÓDIGO AQUÍ:
+# 1. Convertir 'Posicion' y 'Pie_Habil' a tipo category
+# 2. Crear categoría 'Grupo_Edad': 'Joven' (<23), 'Medio' (23-29), 'Veterano' (30+)
+# 3. Crear categoría 'Nivel_Salario': 'Bajo' (<100k), 'Medio' (100k-250k), 'Alto' (250k+)
+# 4. Crear categoría 'Efectividad_Gol': Basada en goles/partidos
+# 5. Crear categoría 'Tipo_Fisico': Basada en altura y peso
+# 6. Verificar todas las categorías creadas
+# 7. Mostrar distribución de jugadores por cada categoría
+
+print("=== CATEGORIZACIÓN DE JUGADORES MUFC ===")
 ```
 
-### Respuesta Parte A
-
-*Completa la identificación y conversión de tipos de datos.*
-
-### Respuesta Parte B
-
-*Completa la validación del proceso de conversión.*
-
-## Ejercicio 2: Trabajando con Datos Categóricos (20 puntos)
-
-### Creación de Categorías Futbolísticas
+**Paso 4:** Analiza las categorías creadas:
 
 ```python
-# Crear dataset de jugadores con información categórica
-jugadores_data = {
-    'Nombre': ['Messi', 'Ronaldo', 'Mbappé', 'Haaland', 'Neymar', 'Salah', 'Benzema', 'Lewandowski'],
-    'Edad': [36, 39, 25, 23, 32, 31, 36, 35],
-    'Altura_cm': [170, 187, 178, 194, 175, 175, 185, 184],
-    'Peso_kg': [72, 84, 73, 88, 68, 71, 81, 80],
+# Análisis de distribuciones categóricas
+
+# TU CÓDIGO AQUÍ:
+# 1. Mostrar conteo de jugadores por posición
+# 2. Calcular estadísticas por grupo de edad
+# 3. Analizar rendimiento por nivel de salario
+# 4. Crear tabla cruzada posición vs grupo de edad
+# 5. Identificar patrones en las categorías
+# 6. Calcular correlaciones entre categorías numéricas
+
+print("=== ANÁLISIS CATEGÓRICO DETALLADO ===")
+```
+
+### Criterios de Evaluación
+- **Creación correcta de categorías** (15 puntos)
+- **Análisis categórico completo** (10 puntos)
+
+---
+
+## Parte 3: Manipulación de Datos Temporales (25 puntos)
+
+### Objetivo
+Gestionar y analizar datos temporales para seguimiento de rendimiento estacional.
+
+### Instrucciones Detalladas
+
+**Paso 5:** Crea y analiza series temporales:
+
+```python
+# Crear datos de rendimiento temporal del Manchester United
+fechas_temporada = pd.date_range('2023-08-01', '2024-05-30', freq='W')
+np.random.seed(42)  # Para reproducibilidad
+
+datos_temporales = {
+    'Fecha': fechas_temporada[:20],  # 20 partidos de muestra
+    'Puntos_Obtenidos': np.random.choice([0, 1, 3], 20, p=[0.15, 0.25, 0.60]),
+    'Goles_Favor': np.random.poisson(1.8, 20),
+    'Goles_Contra': np.random.poisson(1.2, 20),
+    'Posesion_Promedio': np.random.normal(58, 8, 20),
+    'Pases_Completados': np.random.normal(520, 80, 20)
+}
+
+df_temporal_mufc = pd.DataFrame(datos_temporales)
+
+# TU CÓDIGO AQUÍ:
+# 1. Verificar que 'Fecha' es tipo datetime
+# 2. Extraer componentes temporales: mes, día de la semana, quarter
+# 3. Crear columnas: 'Mes', 'Dia_Semana', 'Trimestre'
+# 4. Calcular estadísticas por mes y trimestre
+# 5. Identificar tendencias temporales en el rendimiento
+# 6. Crear categoría 'Epoca_Temporada': 'Inicio', 'Medio', 'Final'
+# 7. Analizar diferencias de rendimiento por época de temporada
+
+print("=== ANÁLISIS TEMPORAL RENDIMIENTO MUFC ===")
+```
+
+**Paso 6:** Visualiza patrones temporales:
+
+```python
+# Crear visualizaciones de tendencias temporales
+
+# TU CÓDIGO AQUÍ:
+# 1. Gráfico de línea: Puntos acumulados a lo largo de la temporada
+# 2. Gráfico de barras: Rendimiento promedio por mes
+# 3. Boxplot: Distribución de goles por trimestre
+# 4. Heatmap: Rendimiento por día de la semana y mes
+# 5. Identificar patrones estacionales
+# 6. Detectar mejores y peores períodos de rendimiento
+
+plt.figure(figsize=(12, 8))
+# Implementar visualizaciones
+
+print("=== VISUALIZACIÓN DE PATRONES TEMPORALES ===")
+```
+
+### Criterios de Evaluación
+- **Manipulación temporal correcta** (15 puntos)
+- **Análisis de patrones temporales** (10 puntos)
+
+---
+
+## Parte 4: Optimización y Validación Final (25 puntos)
+
+### Objetivo
+Crear un sistema integral de validación y optimización de tipos de datos.
+
+### Instrucciones Detalladas
+
+**Paso 7:** Desarrolla sistema de validación:
+
+```python
+# Sistema de validación automática de tipos de datos
+
+# TU CÓDIGO AQUÍ:
+# 1. Crear función que valide tipos esperados para cada columna
+# 2. Función que detecte valores atípicos por tipo de dato
+# 3. Función que optimice uso de memoria automáticamente
+# 4. Sistema de alertas para tipos incorrectos
+# 5. Reporte de calidad de datos con recomendaciones
+# 6. Función que documente cambios realizados
+
+def validar_tipos_mufc(dataframe, tipos_esperados):
+    """
+    Valida tipos de datos en DataFrames del Manchester United
+    
+    Parámetros:
+    dataframe: DataFrame a validar
+    tipos_esperados: Dict con tipos esperados por columna
+    
+    Retorna:
+    Dict con resultado de validación y recomendaciones
+    """
+    # Tu implementación aquí
+    pass
+
+def optimizar_memoria_mufc(dataframe):
+    """
+    Optimiza uso de memoria del DataFrame
+    """
+    # Tu implementación aquí
+    pass
+
+# Probar funciones con datasets creados
+print("=== SISTEMA DE VALIDACIÓN MUFC ===")
+```
+
+**Paso 8:** Genera reporte final de optimización:
+
+```python
+# Reporte ejecutivo de optimización de datos
+
+# TU CÓDIGO AQUÍ:
+# 1. Comparar uso de memoria antes y después de optimizaciones
+# 2. Calcular porcentaje de mejora en eficiencia
+# 3. Documentar todos los cambios realizados
+# 4. Crear dashboard de calidad de datos
+# 5. Proponer mejoras adicionales
+# 6. Generar recomendaciones para futuros datasets
+
+print("=== REPORTE FINAL DE OPTIMIZACIÓN MUFC ===")
+print("\n1. MEJORAS EN USO DE MEMORIA:")
+# Tu análisis aquí
+
+print("\n2. CALIDAD DE DATOS ALCANZADA:")
+# Tu análisis aquí
+
+print("\n3. CATEGORÍAS ÚTILES CREADAS:")
+# Tu análisis aquí
+
+print("\n4. RECOMENDACIONES FUTURAS:")
+# Tu análisis aquí
+
+# Crear visualización final de eficiencia
+plt.figure(figsize=(10, 6))
+# Gráfico comparativo de optimización
+
+plt.title("Optimización de Datos: Antes vs Después", fontsize=14, fontweight='bold')
+plt.show()
+```
+
+### Criterios de Evaluación
+- **Sistema de validación funcional** (15 puntos)
+- **Reporte ejecutivo completo** (10 puntos)
+
+## Criterios de Evaluación General
+
+### Correctitud Técnica (40 puntos)
+- Conversiones de tipos correctas y verificadas
+- Uso apropiado de métodos de pandas
+- Funciones de validación implementadas correctamente
+- Cálculos de optimización precisos
+
+### Aplicación Práctica (30 puntos)
+- Categorías relevantes para análisis deportivo
+- Análisis temporal útil para toma de decisiones
+- Sistema de validación aplicable al contexto real
+- Optimizaciones que impacten el rendimiento
+
+### Claridad y Documentación (30 puntos)
+- Código bien documentado en español
+- Explicaciones claras de optimizaciones realizadas
+- Presentación profesional de resultados
+- Variables con nombres descriptivos del contexto MUFC
+
+## Instrucciones de Entrega
+
+1. **Completa todas las partes** siguiendo la secuencia lógica
+2. **Incluye explicaciones** para cada optimización realizada
+3. **Verifica funcionamiento** de todas las funciones creadas
+4. **Guarda como:** `[matricula]-ejercicio-semana-7.ipynb`
+5. **Entrega antes del final de Semana 7**
+
+## Recursos de Apoyo
+
+- Notebook de la Semana 7: `tipos-datos-futbol.ipynb`
+- Documentación pandas: Métodos `.astype()`, `.category()`, `pd.to_datetime()`
+- Guía de optimización de memoria en pandas
+
+---
+
+**¡Optimiza los datos del Manchester United y lleva el análisis deportivo al siguiente nivel!** ⚽🔧
     'Posicion': ['Delantero', 'Delantero', 'Delantero', 'Delantero', 'Delantero', 'Delantero', 'Delantero', 'Delantero'],
     'Pie_Dominante': ['Izquierdo', 'Derecho', 'Derecho', 'Izquierdo', 'Derecho', 'Izquierdo', 'Derecho', 'Derecho'],
     'Goles_Temporada': [12, 15, 18, 22, 8, 16, 12, 19],

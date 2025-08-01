@@ -1,53 +1,485 @@
-# Ejercicio Semana 10: Análisis e Interpretación Integral de Datos Deportivos
+# Ejercicio Semana 10: Análisis e Interpretación Integral
 
-## Información del Ejercicio
+## Información General
 
 **Bloque:** 2 - Fundamentos de Data Science  
-**Peso:** 12% de la calificación del bloque (60% ÷ 5 ejercicios)  
-**Tiempo estimado:** 3-4 horas  
-**Entrega:** Final de Semana 10
+**Semana:** 10  
+**Tiempo estimado:** 60 minutos  
+**Puntos totales:** 100 puntos  
+**Fecha límite:** Final de la Semana 10  
+**Archivo entrega:** `[matricula]-ejercicio-semana-10.ipynb`
 
-## Objetivos
+## Objetivos de Aprendizaje
 
-Al completar este ejercicio, serás capaz de:
-
+Al completar este ejercicio, el estudiante será capaz de:
 - Integrar todas las técnicas de análisis aprendidas en el Bloque 2
 - Realizar análisis multidimensional completo de datos deportivos
 - Generar insights profundos y recomendaciones basadas en evidencia
-- Comunicar hallazgos de manera profesional y convincente
-- Desarrollar pensamiento crítico para análisis de datos deportivos
-- Crear reportes ejecutivos con conclusiones accionables
+- Comunicar hallazgos de forma profesional y convincente
+- Desarrollar pensamiento crítico para interpretación de datos deportivos
 
-## Configuración Inicial
+## Prerrequisitos
+
+- Ejercicios completos de las Semanas 6-9 del Bloque 2
+- Dominio integrado de exploración, tipos de datos, estadística y visualización
+- Capacidad de síntesis e interpretación de resultados
+- Conocimiento contextual del fútbol europeo
+
+## Contexto del Ejercicio
+
+Eres el **director de analytics** del Tottenham Hotspur. La junta directiva te encarga un análisis integral que combine:
+
+- Evaluación completa de la posición competitiva del club
+- Identificación de oportunidades estratégicas basadas en datos
+- Recomendaciones para la próxima ventana de fichajes
+- Propuesta de estrategia deportiva basada en evidencia analítica
+
+---
+
+# Ejercicio Integrador: Análisis Estratégico Tottenham Hotspur
+
+## Parte 1: Evaluación Integral de Posición Competitiva (25 puntos)
+
+### Objetivo
+Realizar un análisis multidimensional completo para determinar la posición competitiva real del Tottenham.
+
+### Instrucciones Detalladas
+
+**Paso 1:** Configura el centro de analytics del Tottenham:
 
 ```python
+# Configuración del centro de analytics Tottenham Hotspur
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import plotly.express as px
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
 from scipy import stats
-from sklearn.preprocessing import StandardScaler
-from sklearn.decomposition import PCA
 import warnings
 warnings.filterwarnings('ignore')
 
-# Configurar estilos
-sns.set_theme(style="whitegrid", palette="viridis")
+# Configuración visual del Tottenham
+colores_tottenham = ['#132257', '#FFFFFF', '#1BB1E7', '#FFE100']
+sns.set_theme(style="whitegrid", palette=colores_tottenham)
 plt.rcParams['figure.figsize'] = (14, 10)
+plt.rcParams['font.size'] = 12
 
-# Cargar todos los datasets disponibles
+print("=== CENTRO DE ANALYTICS TOTTENHAM HOTSPUR ===")
+print("Sistema de análisis estratégico iniciado")
+print("¡Herramientas de análisis integral listas!")
+
+# Cargar y preparar datos
 df_equipos = pd.read_csv('equipos-europa-2023-24.csv')
-df_jugadores = pd.read_csv('jugadores-estrellas-2024.csv')
-
-print("¡Sistema completo de análisis deportivo activado!")
+print(f"Analizando posición del Tottenham entre {len(df_equipos)} equipos europeos")
 ```
 
-## Ejercicio 1: Análisis Multidimensional Integrado (25 puntos)
+**Paso 2:** Realiza análisis dimensional completo:
 
-### Análisis de Correlaciones y Patrones Complejos
+```python
+# Análisis multidimensional de posición competitiva
+
+# TU CÓDIGO AQUÍ:
+# 1. Crear índice de competitividad integral que combine:
+#    - Rendimiento deportivo (puntos, goles, diferencia goles)
+#    - Eficiencia económica (puntos/presupuesto, goles/presupuesto)
+#    - Consistencia (variabilidad en rendimiento)
+#    - Potencial (comparación con expectativas)
+# 2. Normalizar todas las métricas a escala 0-100
+# 3. Calcular puntuación integral del Tottenham
+# 4. Posicionar Tottenham en rankings multidimensionales
+# 5. Identificar fortalezas y debilidades específicas
+# 6. Comparar con "equipos similares" en presupuesto y ambición
+
+def calcular_indice_competitividad(dataframe):
+    """
+    Calcula índice integral de competitividad para todos los equipos
+    
+    Parámetros:
+    dataframe: DataFrame con datos de equipos
+    
+    Retorna:
+    DataFrame con índices calculados y rankings
+    """
+    df = dataframe.copy()
+    
+    # Tu implementación aquí:
+    # 1. Calcular subíndices
+    # 2. Normalizar a escala 0-100
+    # 3. Combinar con pesos apropiados
+    # 4. Crear rankings por categoría
+    
+    return df
+
+print("=== EVALUACIÓN COMPETITIVA TOTTENHAM ===")
+df_analisis = calcular_indice_competitividad(df_equipos)
+
+# Extraer y mostrar posición del Tottenham
+# (Nota: Si Tottenham no está en el dataset, usar datos simulados)
+print("\n🏆 POSICIÓN COMPETITIVA DEL TOTTENHAM:")
+print("Índice General: [calcular]")
+print("Ranking Europeo: [posición] de [total]")
+print("Fortalezas Principales: [identificar]")
+print("Áreas de Mejora: [identificar]")
+```
+
+### Criterios de Evaluación
+- **Análisis multidimensional correcto** (15 puntos)
+- **Interpretación contextual del Tottenham** (10 puntos)
+
+---
+
+## Parte 2: Análisis de Mercado y Oportunidades (25 puntos)
+
+### Objetivo
+Identificar oportunidades de mercado y estrategias de mejora basadas en análisis de datos.
+
+### Instrucciones Detalladas
+
+**Paso 3:** Analiza oportunidades de mercado:
+
+```python
+# Análisis de oportunidades estratégicas y de mercado
+
+# TU CÓDIGO AQUÍ:
+# 1. Identificar equipos "sobrevalorados" (alto presupuesto, bajo rendimiento)
+# 2. Encontrar equipos "infravalorados" (bajo presupuesto, alto rendimiento)
+# 3. Analizar gaps en el mercado donde puede competir Tottenham
+# 4. Identificar modelos de éxito replicables
+# 5. Evaluar amenazas competitivas emergentes
+# 6. Proponer estrategias de posicionamiento
+
+# Análisis de eficiencia comparativa
+def analizar_oportunidades_mercado(dataframe, presupuesto_tottenham=400):
+    """
+    Identifica oportunidades de mercado para el Tottenham
+    
+    Parámetros:
+    dataframe: DataFrame con datos de equipos
+    presupuesto_tottenham: Presupuesto estimado del Tottenham en millones
+    
+    Retorna:
+    Dict con análisis de oportunidades
+    """
+    # Tu implementación aquí
+    
+    oportunidades = {
+        'equipos_sobrevalorados': [],
+        'equipos_infravalorados': [],
+        'benchmarks_seguir': [],
+        'amenazas_emergentes': [],
+        'gaps_mercado': []
+    }
+    
+    return oportunidades
+
+print("=== ANÁLISIS DE OPORTUNIDADES DE MERCADO ===")
+oportunidades = analizar_oportunidades_mercado(df_equipos)
+
+print("\n💡 OPORTUNIDADES IDENTIFICADAS:")
+print("1. Equipos sobrevalorados para estudiar:")
+print("2. Modelos de eficiencia para replicar:")
+print("3. Gaps de mercado para explotar:")
+print("4. Amenazas competitivas a monitorear:")
+```
+
+**Paso 4:** Desarrolla matriz de posicionamiento estratégico:
+
+```python
+# Matriz de posicionamiento estratégico del Tottenham
+
+# TU CÓDIGO AQUÍ:
+# 1. Crear scatter plot bidimensional: Rendimiento vs Presupuesto
+# 2. Dividir en cuadrantes estratégicos:
+#    - Alto rendimiento, Alto presupuesto (Elite)
+#    - Alto rendimiento, Bajo presupuesto (Eficientes)
+#    - Bajo rendimiento, Alto presupuesto (Sobrevalorados)
+#    - Bajo rendimiento, Bajo presupuesto (En desarrollo)
+# 3. Posicionar Tottenham y analizar movimientos deseables
+# 4. Identificar trayectorias exitosas de otros equipos
+# 5. Crear líneas de tendencia y zonas objetivo
+
+plt.figure(figsize=(12, 8))
+
+# Implementar scatter plot estratégico
+# Añadir cuadrantes y etiquetas
+# Destacar posición del Tottenham
+# Incluir vectores de movimiento deseables
+
+plt.title("Matriz de Posicionamiento Estratégico: Fútbol Europeo", 
+          fontsize=16, fontweight='bold')
+plt.xlabel('Presupuesto (Millones €)')
+plt.ylabel('Rendimiento (Puntos)')
+
+# Añadir líneas de cuadrantes
+# Incluir leyenda y anotaciones explicativas
+
+plt.show()
+
+print("=== POSICIONAMIENTO ESTRATÉGICO TOTTENHAM ===")
+print("Cuadrante actual: [identificar]")
+print("Cuadrante objetivo: [definir]")
+print("Estrategia recomendada: [proponer]")
+```
+
+### Criterios de Evaluación
+- **Análisis de oportunidades completo** (15 puntos)
+- **Matriz estratégica efectiva** (10 puntos)
+
+---
+
+## Parte 3: Recomendaciones Basadas en Evidencia (25 puntos)
+
+### Objetivo
+Generar recomendaciones específicas y accionables basadas en todo el análisis realizado.
+
+### Instrucciones Detalladas
+
+**Paso 5:** Desarrolla recomendaciones estratégicas:
+
+```python
+# Sistema de recomendaciones basado en evidencia analítica
+
+# TU CÓDIGO AQUÍ:
+# 1. Analizar brechas específicas del Tottenham vs objetivos
+# 2. Identificar palancas de mejora más efectivas
+# 3. Priorizar recomendaciones por impacto y factibilidad
+# 4. Cuantificar beneficios esperados de cada recomendación
+# 5. Establecer métricas de seguimiento y éxito
+# 6. Crear roadmap de implementación
+
+def generar_recomendaciones_tottenham(analisis_competitividad, oportunidades_mercado):
+    """
+    Genera recomendaciones estratégicas priorizadas para el Tottenham
+    
+    Parámetros:
+    analisis_competitividad: Resultados del análisis de posición
+    oportunidades_mercado: Resultados del análisis de mercado
+    
+    Retorna:
+    Dict con recomendaciones priorizadas y justificadas
+    """
+    recomendaciones = {
+        'corto_plazo': [],  # 6-12 meses
+        'medio_plazo': [],  # 1-2 años
+        'largo_plazo': []   # 2-5 años
+    }
+    
+    # Tu implementación aquí
+    
+    return recomendaciones
+
+print("=== RECOMENDACIONES ESTRATÉGICAS TOTTENHAM ===")
+
+# Implementar análisis de recomendaciones
+recomendaciones = generar_recomendaciones_tottenham(df_analisis, oportunidades)
+
+print("\n🎯 RECOMENDACIONES PRIORIZADAS:")
+print("\nCORTO PLAZO (6-12 meses):")
+print("1. [Recomendación específica con justificación]")
+print("2. [Recomendación específica con justificación]")
+
+print("\nMEDIO PLAZO (1-2 años):")
+print("1. [Recomendación específica con justificación]")
+print("2. [Recomendación específica con justificación]")
+
+print("\nLARGO PLAZO (2-5 años):")
+print("1. [Recomendación específica con justificación]")
+print("2. [Recomendación específica con justificación]")
+```
+
+**Paso 6:** Crea plan de seguimiento y métricas:
+
+```python
+# Plan de seguimiento y sistema de métricas
+
+# TU CÓDIGO AQUÍ:
+# 1. Definir KPIs específicos para cada recomendación
+# 2. Establecer targets cuantitativos y temporales
+# 3. Crear sistema de alertas y revisiones
+# 4. Proponer frecuencia de análisis y reportes
+# 5. Identificar riesgos y planes de contingencia
+# 6. Estimar recursos necesarios para implementación
+
+metricas_seguimiento = {
+    'rendimiento_deportivo': {
+        'kpis': ['Puntos por temporada', 'Posición liga', 'Diferencia de goles'],
+        'targets': ['70+ puntos', 'Top 6', '+15 diferencia'],
+        'frecuencia': 'Mensual durante temporada'
+    },
+    'eficiencia_economica': {
+        'kpis': ['Puntos/€ presupuesto', 'ROI fichajes', 'Ingresos por rendimiento'],
+        'targets': ['0.18 puntos/millón', '15% ROI', '+10% ingresos'],
+        'frecuencia': 'Trimestral'
+    },
+    'desarrollo_organizacional': {
+        'kpis': ['Índice competitividad', 'Satisfacción fans', 'Valor marca'],
+        'targets': ['Top 8 europeo', '80% satisfacción', '+20% valor'],
+        'frecuencia': 'Semestral'
+    }
+}
+
+print("=== PLAN DE SEGUIMIENTO Y MÉTRICAS ===")
+for categoria, detalles in metricas_seguimiento.items():
+    print(f"\n{categoria.upper().replace('_', ' ')}:")
+    print(f"  KPIs: {', '.join(detalles['kpis'])}")
+    print(f"  Targets: {', '.join(detalles['targets'])}")
+    print(f"  Revisión: {detalles['frecuencia']}")
+
+print("\n⚠️ RIESGOS IDENTIFICADOS:")
+print("1. [Riesgo y plan de mitigación]")
+print("2. [Riesgo y plan de mitigación]")
+print("3. [Riesgo y plan de mitigación]")
+```
+
+### Criterios de Evaluación
+- **Recomendaciones específicas y justificadas** (15 puntos)
+- **Plan de implementación y seguimiento** (10 puntos)
+
+---
+
+## Parte 4: Presentación Ejecutiva Integral (25 puntos)
+
+### Objetivo
+Crear una presentación ejecutiva que sintetice todo el análisis en formato profesional para la junta directiva.
+
+### Instrucciones Detalladas
+
+**Paso 7:** Desarrolla executive summary visual:
+
+```python
+# Executive Summary: Análisis Estratégico Tottenham Hotspur
+
+# TU CÓDIGO AQUÍ:
+# 1. Crear dashboard ejecutivo de una página con:
+#    - Posición competitiva actual (gráfico radar)
+#    - Benchmarking vs competencia (ranking visual)
+#    - Oportunidades de mercado (matriz estratégica)
+#    - Roadmap de recomendaciones (timeline)
+# 2. Usar colores del Tottenham consistentemente
+# 3. Incluir métricas clave destacadas
+# 4. Añadir conclusiones principales como texto
+
+fig = plt.figure(figsize=(16, 12))
+
+# Crear layout de 4 cuadrantes para executive summary
+gs = fig.add_gridspec(2, 2, hspace=0.3, wspace=0.3)
+
+# Cuadrante 1: Posición competitiva (radar)
+ax1 = fig.add_subplot(gs[0, 0])
+# Implementar gráfico radar de posición
+
+# Cuadrante 2: Benchmarking (barras)
+ax2 = fig.add_subplot(gs[0, 1])
+# Implementar ranking vs competencia
+
+# Cuadrante 3: Matriz estratégica (scatter)
+ax3 = fig.add_subplot(gs[1, 0])
+# Implementar matriz de posicionamiento
+
+# Cuadrante 4: Roadmap (timeline)
+ax4 = fig.add_subplot(gs[1, 1])
+# Implementar timeline de recomendaciones
+
+plt.suptitle("TOTTENHAM HOTSPUR: ANÁLISIS ESTRATÉGICO INTEGRAL\nTemporada 2023-24", 
+             fontsize=18, fontweight='bold')
+
+plt.savefig('tottenham_executive_summary.png', dpi=300, bbox_inches='tight')
+plt.show()
+
+print("Executive Summary generado para presentación a la junta directiva")
+```
+
+**Paso 8:** Genera conclusiones ejecutivas finales:
+
+```python
+# Conclusiones ejecutivas y síntesis final
+
+# TU CÓDIGO AQUÍ:
+# 1. Resumir hallazgos más importantes en bullets ejecutivos
+# 2. Cuantificar impacto potencial de recomendaciones
+# 3. Establecer timeline de implementación crítica
+# 4. Definir recursos y presupuesto necesarios
+# 5. Crear call-to-action específico para la junta
+# 6. Preparar anexo con detalles técnicos
+
+print("=" * 60)
+print("TOTTENHAM HOTSPUR - ANÁLISIS ESTRATÉGICO INTEGRAL")
+print("Reporte Ejecutivo para Junta Directiva")
+print("=" * 60)
+
+print("\n🔍 SITUACIÓN ACTUAL:")
+print("• Posición competitiva: [resumir en 1 línea]")
+print("• Fortalezas principales: [listar 2-3]")
+print("• Áreas críticas de mejora: [listar 2-3]")
+
+print("\n💡 OPORTUNIDADES IDENTIFICADAS:")
+print("• Oportunidad #1: [describir y cuantificar impacto]")
+print("• Oportunidad #2: [describir y cuantificar impacto]")
+print("• Oportunidad #3: [describir y cuantificar impacto]")
+
+print("\n🎯 RECOMENDACIONES CLAVE:")
+print("• Prioridad 1: [acción específica - timeline - recursos]")
+print("• Prioridad 2: [acción específica - timeline - recursos]")
+print("• Prioridad 3: [acción específica - timeline - recursos]")
+
+print("\n📈 IMPACTO ESPERADO:")
+print("• Mejora en posición liga: [cuantificar]")
+print("• Incremento en eficiencia: [cuantificar]")
+print("• ROI estimado: [cuantificar]")
+
+print("\n⏰ PRÓXIMOS PASOS INMEDIATOS:")
+print("1. [Acción específica - responsable - fecha]")
+print("2. [Acción específica - responsable - fecha]")
+print("3. [Acción específica - responsable - fecha]")
+
+print("\n" + "=" * 60)
+print("Análisis preparado por: Director de Analytics")
+print("Fecha: [Fecha actual]")
+print("Próxima revisión: [Fecha + 3 meses]")
+print("=" * 60)
+```
+
+### Criterios de Evaluación
+- **Executive summary visual efectivo** (15 puntos)
+- **Conclusiones ejecutivas claras y accionables** (10 puntos)
+
+## Criterios de Evaluación General
+
+### Correctitud Técnica (40 puntos)
+- Integración correcta de todas las técnicas aprendidas
+- Análisis estadístico y visual preciso
+- Implementación adecuada de métodos de análisis
+- Cálculos y métricas verificables
+
+### Aplicación Práctica (30 puntos)
+- Insights relevantes y profundos para el Tottenham
+- Recomendaciones específicas y accionables
+- Comprensión del contexto competitivo
+- Propuestas viables y estratégicamente sólidas
+
+### Claridad y Documentación (30 puntos)
+- Presentación profesional y ejecutiva
+- Comunicación clara de hallazgos complejos
+- Estructura lógica y coherente del análisis
+- Síntesis efectiva de múltiples dimensiones
+
+## Instrucciones de Entrega
+
+1. **Completa el análisis integral** siguiendo todos los pasos
+2. **Incluye justificaciones** para todas las recomendaciones
+3. **Verifica coherencia** entre diferentes secciones del análisis
+4. **Guarda como:** `[matricula]-ejercicio-semana-10.ipynb`
+5. **Entrega antes del final de Semana 10**
+
+## Recursos de Apoyo
+
+- Notebooks de las Semanas 6-9: Técnicas específicas aplicadas
+- Dataset: `equipos-europa-2023-24.csv`
+- Plantillas de reportes ejecutivos
+- Guías de análisis estratégico en deportes
+
+---
+
+**¡Culmina tu formación en Data Science deportivo con un análisis estratégico que transforme al Tottenham!** ⚽🚀
 
 ```python
 # Análisis profundo de relaciones entre variables

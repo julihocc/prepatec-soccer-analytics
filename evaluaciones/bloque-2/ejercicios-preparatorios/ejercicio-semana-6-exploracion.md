@@ -1,293 +1,321 @@
-# Ejercicio Semana 6: Introducción y Exploración de Datos Deportivos
+# Ejercicio Semana 6: Introducción y Exploración de Datos
 
-## Información del Ejercicio
+## Información General
 
 **Bloque:** 2 - Fundamentos de Data Science  
-**Peso:** 12% de la calificación del bloque (60% ÷ 5 ejercicios)  
-**Tiempo estimado:** 2-2.5 horas  
-**Entrega:** Final de Semana 6
+**Semana:** 6  
+**Tiempo estimado:** 60 minutos  
+**Puntos totales:** 100 puntos  
+**Fecha límite:** Final de la Semana 6  
+**Archivo entrega:** `[matricula]-ejercicio-semana-6.ipynb`
 
-## Objetivos
+## Objetivos de Aprendizaje
 
-Al completar este ejercicio, serás capaz de:
+Al completar este ejercicio, el estudiante será capaz de:
+- Cargar y explorar datasets deportivos utilizando pandas
+- Realizar análisis exploratorio de datos (EDA) básico sistemático
+- Identificar patrones iniciales en rendimiento de equipos europeos
+- Aplicar métodos de inspección de datos estructurados
+- Generar insights preliminares sobre competitividad futbolística
 
-- Cargar y explorar datasets deportivos reales
-- Realizar análisis exploratorio de datos (EDA) básico
-- Identificar patrones y anomalías en datos de fútbol
-- Aplicar técnicas de limpieza de datos básicas
-- Generar primeros insights sobre rendimiento deportivo
+## Prerrequisitos
 
-## Configuración Inicial
+- Ejercicios del Bloque 1 (Semanas 1-5) completados exitosamente
+- Dominio sólido de pandas y numpy
+- Conocimiento de DataFrames y manipulación de datos
+- Comprensión de estadísticas descriptivas básicas
+
+## Contexto del Ejercicio
+
+Eres el **analista de datos junior** del departamento de scouting del PSG. La dirección deportiva necesita un análisis inicial de la competencia europea para identificar:
+
+- Patrones de rendimiento en las principales ligas
+- Equipos con mejor relación rendimiento-presupuesto
+- Oportunidades de mercado y benchmarking competitivo
+- Tendencias que puedan influir en estrategias futuras
+
+---
+
+# Ejercicio Integrador: Análisis Exploratorio PSG Scouting
+
+## Parte 1: Configuración y Carga de Datos (25 puntos)
+
+### Objetivo
+Configurar el entorno de análisis y realizar la primera exploración del dataset de equipos europeos.
+
+### Instrucciones Detalladas
+
+**Paso 1:** Configura tu entorno de trabajo:
 
 ```python
+# Configuración del entorno de análisis
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Configurar estilo
+# Configuración visual estándar para el PSG
 sns.set_theme(style="whitegrid", palette="viridis")
 plt.rcParams['figure.figsize'] = (10, 6)
+plt.rcParams['font.size'] = 11
 
-# Cargar datos
+# Mensaje de bienvenida
+print("=== CENTRO DE ANÁLISIS PSG ===")
+print("Sistema de scouting europeo iniciado")
+print("¡Herramientas de análisis listas!")
+```
+
+**Paso 2:** Carga y explora el dataset principal:
+
+```python
+# Cargar datos de equipos europeos temporada 2023-24
 df_equipos = pd.read_csv('equipos-europa-2023-24.csv')
-df_jugadores = pd.read_csv('jugadores-estrellas-2024.csv')
 
-print("¡Datos cargados y listos para explorar!")
+# TU CÓDIGO AQUÍ:
+# 1. Mostrar las primeras 5 filas del dataset con .head()
+# 2. Mostrar información general del dataset con .info()
+# 3. Verificar las dimensiones con .shape
+# 4. Mostrar los nombres de las columnas disponibles
+# 5. Identificar tipos de datos de cada columna
+# 6. Verificar si existen valores nulos con .isnull().sum()
+# 7. Mostrar estadísticas descriptivas básicas con .describe()
+
+print("Dataset de equipos europeos cargado exitosamente")
+print(f"Analizando {len(df_equipos)} equipos de las principales ligas")
 ```
 
-## Ejercicio 1: Exploración Inicial de Datos (20 puntos)
+### Criterios de Evaluación
+- **Configuración correcta del entorno** (8 puntos)
+- **Carga exitosa de datos** (7 puntos)
+- **Exploración inicial completa** (10 puntos)
 
-### Parte A: Primeras Impresiones del Dataset
+---
 
-```python
-# Usar el dataset de equipos europeos
+## Parte 2: Análisis de Distribuciones por Liga (25 puntos)
 
-# Tu código aquí:
-# 1. Mostrar las primeras 5 filas del dataset
-# 2. Mostrar información general con .info()
-# 3. Mostrar estadísticas descriptivas con .describe()
-# 4. Verificar el shape del dataset (filas y columnas)
-# 5. Mostrar los nombres de todas las columnas
-# 6. Verificar tipos de datos de cada columna
-# 7. Identificar si hay valores faltantes
-```
+### Objetivo
+Analizar la distribución de equipos y rendimiento por liga para identificar patrones competitivos.
 
-### Parte B: Análisis de Distribuciones
+### Instrucciones Detalladas
+
+**Paso 3:** Analiza la composición del dataset:
 
 ```python
-# Continuando con el dataset de equipos
+# Análisis de distribución por liga
 
-# Tu código aquí:
+# TU CÓDIGO AQUÍ:
 # 1. Mostrar todas las ligas únicas en el dataset
-# 2. Contar cuántos equipos hay por liga
-# 3. Calcular estadísticas básicas por liga (promedio de puntos, goles)
-# 4. Identificar el equipo con más puntos y el que tiene menos
-# 5. Encontrar el equipo más goleador y el más defensivo
-# 6. Calcular la diferencia de goles promedio por liga
-# 7. Mostrar el rango de presupuestos (mínimo y máximo)
+# 2. Contar el número de equipos por liga usando .value_counts()
+# 3. Crear un DataFrame con estadísticas por liga:
+#    - Promedio de puntos por liga
+#    - Promedio de goles a favor por liga
+#    - Promedio de goles en contra por liga
+#    - Promedio de presupuesto por liga
+# 4. Identificar la liga más competitiva (menor diferencia entre max y min puntos)
+# 5. Encontrar la liga más goleadora (más goles promedio)
+# 6. Calcular la eficiencia defensiva promedio por liga (goles_contra/partidos)
+
+# Ejemplo de análisis requerido:
+stats_por_liga = df_equipos.groupby('Liga').agg({
+    'Puntos': ['mean', 'min', 'max'],
+    'Goles_Favor': 'mean',
+    'Goles_Contra': 'mean',
+    'Presupuesto': 'mean'
+}).round(2)
+
+print("=== ANÁLISIS COMPETITIVO POR LIGA ===")
+# Mostrar resultados con interpretación
 ```
 
-### Respuesta Parte A
-
-*Completa la exploración inicial del dataset de equipos.*
-
-### Respuesta Parte B
-
-*Completa el análisis de distribuciones y estadísticas básicas.*
-
-## Ejercicio 2: Análisis Exploratorio de Jugadores (20 puntos)
-
-### Tareas de Exploración
+**Paso 4:** Identifica equipos destacados:
 
 ```python
-# Usar el dataset de jugadores estrella
+# Análisis de equipos extremos
 
-# Tu código aquí:
-# 1. Explorar la distribución de edades de los jugadores
-# 2. Analizar la distribución de posiciones
-# 3. Calcular estadísticas por posición (promedio de goles, asistencias)
-# 4. Identificar jugadores con mejor ratio goles/partido
-# 5. Encontrar correlaciones entre edad, goles y valor de mercado
-# 6. Comparar salarios promedio por liga
-# 7. Identificar outliers en valor de mercado y salarios
-# 8. Analizar qué ligas tienen jugadores más caros
+# TU CÓDIGO AQUÍ:
+# 1. Encontrar el equipo con más puntos en cada liga
+# 2. Identificar el equipo más goleador de cada liga
+# 3. Encontrar el equipo más defensivo (menos goles en contra) por liga
+# 4. Calcular la relación goles_favor/goles_contra por equipo
+# 5. Identificar equipos con mejor relación puntos/presupuesto
+# 6. Crear ranking de los 5 equipos más eficientes económicamente
+
+print("=== TOP EQUIPOS POR CATEGORÍA ===")
+# Mostrar análisis con explicaciones
 ```
 
-### Visualizaciones Básicas
+### Criterios de Evaluación
+- **Análisis estadístico por liga correcto** (15 puntos)
+- **Identificación de equipos destacados** (10 puntos)
+
+---
+
+## Parte 3: Análisis de Rendimiento y Eficiencia (25 puntos)
+
+### Objetivo
+Desarrollar métricas de rendimiento avanzadas para evaluación integral de equipos.
+
+### Instrucciones Detalladas
+
+**Paso 5:** Calcula métricas de rendimiento:
 
 ```python
-# Crear visualizaciones exploratorias
+# Creación de métricas avanzadas de rendimiento
 
-# Tu código aquí:
-# 1. Histograma de distribución de edades
-# 2. Gráfico de barras de jugadores por posición
-# 3. Boxplot de goles por posición
-# 4. Scatterplot edad vs valor de mercado
-# 5. Barplot de salario promedio por liga
-# 6. Heatmap de correlaciones entre variables numéricas
+# TU CÓDIGO AQUÍ:
+# 1. Crear columnas calculadas:
+#    - 'Diferencia_Goles': Goles_Favor - Goles_Contra
+#    - 'Puntos_Por_Partido': Puntos / (Victorias + Empates + Derrotas)
+#    - 'Efectividad_Ofensiva': Goles_Favor / (Victorias + Empates + Derrotas)
+#    - 'Solidez_Defensiva': Goles_Contra / (Victorias + Empates + Derrotas)
+#    - 'Eficiencia_Presupuesto': Puntos / (Presupuesto / 100)  # Puntos por cada 100M
+
+# 2. Crear categorías de rendimiento:
+#    - Clasificar equipos en "Elite", "Medio", "Bajo" según puntos
+#    - Elite: > 80 puntos, Medio: 60-80 puntos, Bajo: < 60 puntos
+
+# 3. Análisis de correlaciones básicas:
+#    - Correlación entre Presupuesto y Puntos
+#    - Correlación entre Goles_Favor y Victorias
+#    - Correlación entre Diferencia_Goles y Puntos
+
+df_equipos_mejorado = df_equipos.copy()
+# Implementar cálculos aquí
+
+print("=== MÉTRICAS DE RENDIMIENTO CALCULADAS ===")
 ```
 
-### Respuesta
-
-*Completa el análisis exploratorio completo de jugadores.*
-
-## Ejercicio 3: Limpieza y Preparación de Datos (20 puntos)
-
-### Detección de Problemas
+**Paso 6:** Análisis comparativo de eficiencia:
 
 ```python
-# Simular algunos problemas comunes en datos reales
-# (En un caso real, estos problemas ya estarían en los datos)
+# Análisis de eficiencia económica y deportiva
 
-# Crear una copia del dataset para practicar limpieza
-df_jugadores_sucio = df_jugadores.copy()
+# TU CÓDIGO AQUÍ:
+# 1. Identificar equipos "sobrevalorados" (alto presupuesto, bajo rendimiento)
+# 2. Encontrar equipos "chollos" (bajo presupuesto, alto rendimiento)
+# 3. Calcular el "precio por punto" para cada equipo
+# 4. Determinar qué liga ofrece mejor relación calidad-precio
+# 5. Analizar si existe correlación directa presupuesto-éxito
+# 6. Crear índice combinado de rendimiento (incluye múltiples factores)
 
-# Simular problemas típicos:
-# 1. Introducir algunos valores faltantes
-df_jugadores_sucio.loc[5, 'Goles'] = np.nan
-df_jugadores_sucio.loc[12, 'Asistencias'] = np.nan
+# Criterios para análisis:
+# - Sobrevalorado: Presupuesto > 600M y Puntos < 70
+# - Chollo: Presupuesto < 300M y Puntos > 65
+# - Eficiente: Top 5 en relación Puntos/Presupuesto
 
-# 2. Inconsistencias en nombres de posiciones
-df_jugadores_sucio.loc[2, 'Posicion'] = 'DELANTERO'  # Mayúsculas
-df_jugadores_sucio.loc[8, 'Posicion'] = 'defensa'    # Minúsculas
-
-# 3. Valores atípicos simulados
-df_jugadores_sucio.loc[1, 'Edad'] = 55  # Edad imposible
-
-# Tu código aquí:
-# 1. Identificar todos los valores faltantes
-# 2. Detectar inconsistencias en nombres de posiciones
-# 3. Encontrar valores atípicos usando estadísticas (IQR, z-score)
-# 4. Crear estrategias para manejar cada problema
-# 5. Implementar la limpieza paso a paso
-# 6. Verificar que la limpieza fue exitosa
-# 7. Comparar dataset original vs limpio
+print("=== ANÁLISIS DE EFICIENCIA ECONÓMICA ===")
 ```
 
-### Respuesta
+### Criterios de Evaluación
+- **Métricas calculadas correctamente** (15 puntos)
+- **Análisis de eficiencia completo** (10 puntos)
 
-*Completa la detección y limpieza de problemas en los datos.*
+---
 
-## Ejercicio 4: Análisis Comparativo por Liga (20 puntos)
+## Parte 4: Insights y Recomendaciones Estratégicas (25 puntos)
 
-### Análisis Multidimensional
+### Objetivo
+Generar insights accionables para la dirección deportiva del PSG basados en el análisis exploratorio.
+
+### Instrucciones Detalladas
+
+**Paso 7:** Genera conclusiones estratégicas:
 
 ```python
-# Combinar análisis de equipos y jugadores
+# Síntesis de hallazgos para la dirección deportiva
 
-# Tu código aquí:
-# 1. Calcular métricas promedio por liga usando ambos datasets
-# 2. Determinar qué liga es más competitiva (menor diferencia entre equipos)
-# 3. Analizar correlación entre presupuesto de equipos y valor de jugadores
-# 4. Identificar patrones de edad por liga
-# 5. Comparar estilos de juego (ofensivo vs defensivo) por liga
-# 6. Crear un ranking de ligas basado en múltiples criterios
+# TU CÓDIGO AQUÍ:
+# 1. Identificar la liga más competitiva para benchmarking
+# 2. Determinar patrones de éxito en equipos similares al PSG
+# 3. Analizar qué factores distinguen a equipos de elite
+# 4. Evaluar oportunidades en mercado de equipos infravalorados
+# 5. Proponer estrategia de inversión basada en datos
+# 6. Identificar amenazas competitivas emergentes
+
+# Estructura de análisis requerida:
+print("=== REPORTE EJECUTIVO PSG SCOUTING ===")
+print("\n1. LIGA MÁS COMPETITIVA:")
+# Tu análisis aquí
+
+print("\n2. EQUIPOS BENCHMARK (similar nivel al PSG):")
+# Tu análisis aquí
+
+print("\n3. FACTORES CLAVE DEL ÉXITO:")
+# Tu análisis aquí
+
+print("\n4. OPORTUNIDADES DE MERCADO:")
+# Tu análisis aquí
+
+print("\n5. RECOMENDACIONES ESTRATÉGICAS:")
+# Tu análisis aquí
 ```
 
-### Análisis de Tendencias
+**Paso 8:** Prepara visualización ejecutiva:
 
 ```python
-# Buscar patrones interesantes
+# Dashboard básico para presentación ejecutiva
 
-# Tu código aquí:
-# 1. ¿Los equipos con mayor presupuesto siempre tienen mejores resultados?
-# 2. ¿Hay relación entre la edad promedio del equipo y el rendimiento?
-# 3. ¿Qué posición marca más goles en promedio?
-# 4. ¿Los jugadores más caros son siempre los más efectivos?
-# 5. Crear un "índice de eficiencia" combinando múltiples métricas
-# 6. Identificar el mejor jugador por posición según criterios múltiples
+# TU CÓDIGO AQUÍ:
+# Crear un gráfico que combine múltiples insights:
+# 1. Scatterplot: Presupuesto vs Puntos (tamaño = Goles_Favor)
+# 2. Colorear puntos por Liga
+# 3. Destacar al PSG si está en el dataset
+# 4. Añadir línea de tendencia
+# 5. Incluir anotaciones para equipos destacados
+# 6. Títulos y etiquetas en español
+
+plt.figure(figsize=(12, 8))
+# Implementar visualización aquí
+
+plt.title("Análisis Competitivo: Rendimiento vs Inversión en Fútbol Europeo", 
+          fontsize=16, fontweight='bold')
+plt.xlabel('Presupuesto (Millones €)')
+plt.ylabel('Puntos Obtenidos')
+plt.legend(title='Liga')
+plt.grid(True, alpha=0.3)
+plt.show()
+
+print("Dashboard ejecutivo generado para la dirección deportiva")
 ```
 
-### Respuesta
+### Criterios de Evaluación
+- **Insights estratégicos relevantes** (15 puntos)
+- **Visualización ejecutiva profesional** (10 puntos)
 
-*Completa el análisis comparativo y de tendencias.*
+## Criterios de Evaluación General
 
-## Ejercicio 5: Dashboard Exploratorio (20 puntos)
+### Correctitud Técnica (40 puntos)
+- Código ejecuta sin errores
+- Uso correcto de pandas y métodos de análisis
+- Cálculos estadísticos precisos
+- Implementación adecuada de todas las tareas
 
-### Creación de Dashboard Integrado
+### Aplicación Práctica (30 puntos)
+- Análisis relevante para contexto deportivo
+- Insights útiles para toma de decisiones
+- Interpretación correcta de resultados
+- Aplicación efectiva al contexto PSG
 
-```python
-# Crear un dashboard completo con múltiples análisis
-
-# Tu código aquí:
-# Usar plt.subplots() para crear un dashboard con 6 paneles:
-
-# Panel 1: Distribución de equipos por puntos (histogram)
-# Panel 2: Top 10 jugadores por valor de mercado (barplot horizontal)
-# Panel 3: Correlación edad vs rendimiento por posición (scatterplot)
-# Panel 4: Comparación de ligas por múltiples métricas (radar chart o barplot agrupado)
-# Panel 5: Distribución de presupuestos por liga (boxplot)
-# Panel 6: Tendencia: presupuesto vs puntos obtenidos (scatterplot con línea de tendencia)
-
-# Requisitos:
-# - Títulos descriptivos en español
-# - Colores consistentes y profesionales
-# - Leyendas apropiadas
-# - Anotaciones explicativas
-# - Layout organizado y atractivo
-```
-
-### Insights y Conclusiones
-
-```python
-# Generar insights basados en tu análisis
-
-# Tu código aquí:
-# 1. Resumir los 3 hallazgos más importantes
-# 2. Identificar patrones sorprendentes
-# 3. Proponer hipótesis para investigación futura
-# 4. Recomendar acciones basadas en datos
-# 5. Evaluar limitaciones del análisis
-# 6. Sugerir datos adicionales que serían útiles
-```
-
-### Respuesta
-
-*Completa el dashboard y proporciona insights profesionales.*
-
-## Ejercicio Bonus: Análisis de Eficiencia Económica (10 puntos extra)
-
-### Análisis Avanzado
-
-**Ejercicio opcional para puntos adicionales:**
-
-```python
-# Análisis sofisticado de relación costo-beneficio
-
-# Tu código aquí:
-# 1. Crear métrica "Puntos por Euro" para equipos
-# 2. Calcular "Goles por Euro de Salario" para jugadores
-# 3. Identificar equipos y jugadores más eficientes económicamente
-# 4. Crear modelo simple de predicción de rendimiento basado en presupuesto
-# 5. Analizar si el dinero garantiza éxito en el fútbol
-# 6. Proponer estrategias de inversión basadas en datos
-
-# Usar técnicas como:
-# - Análisis de regresión simple
-# - Clustering básico de equipos/jugadores
-# - Normalización de métricas
-# - Análisis de outliers interesantes
-```
-
-### Respuesta Bonus
-
-*Ejercicio opcional: Crea análisis económico avanzado del fútbol.*
-
-## Criterios de Evaluación
-
-### Exploración de Datos (35%)
-
-- [ ] Uso correcto de métodos exploratorios de pandas (15%)
-- [ ] Identificación apropiada de patrones y anomalías (10%)
-- [ ] Análisis estadístico básico correcto (10%)
-
-### Limpieza de Datos (25%)
-
-- [ ] Detección efectiva de problemas en datos (10%)
-- [ ] Aplicación de técnicas de limpieza apropiadas (15%)
-
-### Análisis e Interpretación (40%)
-
-- [ ] Insights relevantes y bien fundamentados (20%)
-- [ ] Visualizaciones efectivas y profesionales (10%)
-- [ ] Conclusiones lógicas basadas en evidencia (10%)
+### Claridad y Documentación (30 puntos)
+- Código bien comentado en español
+- Explicaciones claras de análisis
+- Presentación profesional de resultados
+- Variables con nombres descriptivos
 
 ## Instrucciones de Entrega
 
-1. **Completa todos los ejercicios** en este notebook
-2. **Incluye interpretaciones** para cada análisis realizado
-3. **Asegúrate de que todo el código ejecute** sin errores
-4. **Guarda como:** `ejercicio-semana-6-[tu-apellido].ipynb`
+1. **Completa todas las partes** en orden secuencial
+2. **Incluye interpretaciones** para cada análisis
+3. **Verifica que el código ejecute** sin errores
+4. **Guarda como:** `[matricula]-ejercicio-semana-6.ipynb`
 5. **Entrega antes del final de Semana 6**
 
 ## Recursos de Apoyo
 
 - Notebook de la Semana 6: `introduccion-exploracion.ipynb`
-- Datasets: `equipos-europa-2023-24.csv`, `jugadores-estrellas-2024.csv`
-- Documentación pandas: <https://pandas.pydata.org/docs/user_guide/10min.html>
-- Guía de EDA: <https://pandas.pydata.org/docs/user_guide/basics.html>
+- Dataset: `equipos-europa-2023-24.csv` 
+- Documentación pandas: Métodos `.head()`, `.info()`, `.describe()`, `.groupby()`
 
 ---
 
-**¡Descubre los secretos ocultos en los datos del fútbol mundial!** ⚽🔍
+**¡Descubre los secretos del éxito en el fútbol europeo y guía al PSG hacia la excelencia!** ⚽�

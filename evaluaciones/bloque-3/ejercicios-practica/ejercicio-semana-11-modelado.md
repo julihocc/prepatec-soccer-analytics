@@ -1,141 +1,435 @@
-# Ejercicio Semanal - Semana 11: Mi Primera Predicción
+# Ejercicio Semana 11: Mi Primera Predicción Deportiva
 
-**Curso:** Introducción a Data Science con Fútbol  
+## Información General
+
 **Bloque:** 3 - Mi Primera Predicción con Datos de Fútbol  
-**Semana:** 11 - Modelado Predictivo: Introducción  
-**Tiempo estimado:** 3-4 horas  
-**Tipo:** Individual  
+**Semana:** 11  
+**Tiempo estimado:** 60 minutos  
+**Puntos totales:** 100 puntos  
+**Fecha límite:** Final de la Semana 11  
+**Archivo entrega:** `[matricula]-ejercicio-semana-11.ipynb`
 
 ## Objetivos de Aprendizaje
 
 Al completar este ejercicio, el estudiante será capaz de:
+- Comprender los conceptos básicos del machine learning aplicado al fútbol
+- Implementar su primera predicción usando scikit-learn
+- Crear modelos simples de clasificación binaria  
+- Aplicar conceptos de entrenamiento y prueba de modelos
+- Interpretar resultados básicos de predicciones deportivas
 
-1. **Comprender** los conceptos básicos del machine learning aplicado al fútbol
-2. **Implementar** su primera predicción usando scikit-learn
-3. **Crear** modelos simples de clasificación binaria
-4. **Aplicar** conceptos de entrenamiento y prueba de modelos
-5. **Interpretar** resultados de predicciones básicas
+## Prerrequisitos
 
-## Contexto del Problema
+- Ejercicios completos de los Bloques 1 y 2
+- Conocimiento sólido de análisis exploratorio y estadística
+- Familiaridad con pandas, numpy y visualización
+- Comprensión básica de conceptos de machine learning
 
-¡Bienvenido al mundo de las predicciones deportivas! Como analista de datos, tu primera misión es crear un modelo que pueda predecir si un equipo ganará jugando como local. Utilizarás datos históricos de partidos para "entrenar" a tu modelo y luego probarlo con partidos nuevos.
+## Contexto del Ejercicio
 
-**Pregunta central:** *¿Podemos predecir si un equipo ganará en casa basándonos en sus estadísticas históricas?*
+Eres el **científico de datos** del Real Madrid CF. El cuerpo técnico quiere implementar un sistema predictivo básico para:
+
+- Predecir probabilidades de victoria en partidos de local
+- Identificar factores clave que influyen en el resultado
+- Tomar decisiones tácticas basadas en datos históricos
+- Desarrollar ventajas competitivas mediante análisis predictivo
 
 ---
 
-## Ejercicio 1: Preparación de Datos para Predicción (1 hora)
+# Ejercicio Integrador: Sistema Predictivo Real Madrid CF
 
-### Contexto
-Antes de crear cualquier modelo predictivo, necesitamos preparar nuestros datos correctamente. Esto incluye crear variables que el modelo pueda "entender" y dividir los datos en conjuntos de entrenamiento y prueba.
+## Parte 1: Preparación de Datos para Predicción (25 puntos)
 
-### Tareas
+### Objetivo
+Configurar el entorno de machine learning y preparar datos históricos del Real Madrid para entrenamiento predictivo.
 
-**1.1 Carga y exploración inicial**
+### Instrucciones Detalladas
+
+**Paso 1:** Configura el laboratorio de machine learning:
+
 ```python
+# Configuración del laboratorio predictivo Real Madrid CF
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, classification_report
-import matplotlib.pyplot as plt
-import seaborn as sns
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+import warnings
+warnings.filterwarnings('ignore')
 
-# Configuración
-sns.set_theme(style="whitegrid", palette="viridis")
+# Configuración visual Real Madrid
+colores_madrid = ['#FEBE10', '#00529F', '#FFFFFF', '#212121']
+sns.set_theme(style="whitegrid", palette=colores_madrid)
+plt.rcParams['figure.figsize'] = (12, 8)
+plt.rcParams['font.size'] = 11
+
+print("=== LABORATORIO PREDICTIVO REAL MADRID CF ===")
+print("Sistema de predicción deportiva iniciado")
+print("¡Herramientas de machine learning listas!")
 ```
 
-**1.2 Crear dataset de entrenamiento**
-- Genera un dataset con al menos 500 partidos históricos
-- Incluye variables: `equipo_local`, `goles_local`, `goles_visitante`, `posesion_local`, `tiros_local`, `faltas_local`, `tarjetas_amarillas_local`, `tarjetas_rojas_local`
-- Crea variables adicionales: `diferencia_goles_historica`, `promedio_goles_casa`, `victorias_consecutivas_casa`
+**Paso 2:** Crea dataset de entrenamiento con datos históricos:
 
-**1.3 Variable objetivo (target)**
-- Crea la variable `gano_local` (1 si el equipo local ganó, 0 si no)
-- Explica por qué esta es una buena variable para predecir
+```python
+# Crear dataset histórico del Real Madrid (simulado)
 
-**1.4 División de datos**
-- Divide el dataset en 70% entrenamiento y 30% prueba
-- Explica por qué es importante esta división
+# TU CÓDIGO AQUÍ:
+# 1. Generar 300 partidos históricos del Real Madrid como local
+# 2. Crear variables predictoras realistas:
+#    - goles_favor_ultimos_5: Promedio goles últimos 5 partidos
+#    - posesion_promedio: Porcentaje de posesión histórica
+#    - tiros_por_partido: Promedio de tiros al arco
+#    - faltas_cometidas: Promedio de faltas por partido
+#    - dias_descanso: Días entre partidos
+# 3. Crear variable objetivo 'victoria_local' (1=victoria, 0=no victoria)
+# 4. Incluir variabilidad realista en los datos
+# 5. Verificar distribución balanceada de la variable objetivo
 
-### Entregables
-- Código funcional con dataset creado
-- Variable objetivo correctamente definida
-- División train/test implementada
-- Explicación de cada paso
+np.random.seed(42)  # Para reproducibilidad
+
+# Ejemplo de estructura:
+partidos_madrid = []
+for i in range(300):
+    partido = {
+        'fecha': f'2023-{(i//30)+1:02d}-{(i%30)+1:02d}',
+        'rival': f'Equipo_{i%20}',
+        'goles_favor_ultimos_5': np.random.normal(2.1, 0.6),
+        'posesion_promedio': np.random.normal(62, 8),
+        'tiros_por_partido': np.random.normal(15, 4),
+        'faltas_cometidas': np.random.normal(12, 3),
+        'dias_descanso': np.random.choice([3, 4, 7], p=[0.4, 0.3, 0.3])
+    }
+    # Calcular probabilidad de victoria basada en variables
+    # Tu implementación aquí
+    partidos_madrid.append(partido)
+
+df_madrid = pd.DataFrame(partidos_madrid)
+
+print("=== DATASET REAL MADRID GENERADO ===")
+print(f"Total partidos: {len(df_madrid)}")
+print(f"Distribución victoria_local: {df_madrid['victoria_local'].value_counts()}")
+```
+
+### Criterios de Evaluación
+- **Configuración correcta del entorno ML** (10 puntos)
+- **Dataset histórico realista y balanceado** (15 puntos)
 
 ---
 
-## Ejercicio 2: Mi Primer Modelo Predictivo (1.5 horas)
+## Parte 2: Primer Modelo de Clasificación (25 puntos)
 
-### Contexto
-Ahora crearás tu primer modelo de machine learning usando Regresión Logística, uno de los algoritmos más simples y efectivos para predicciones binarias (sí/no, ganó/perdió).
+### Objetivo
+Implementar el primer modelo predictivo del Real Madrid usando regresión logística.
 
-### Tareas
+### Instrucciones Detalladas
 
-**2.1 Preparación de variables predictoras**
-- Selecciona las mejores variables para predecir (`goles_local`, `posesion_local`, `tiros_local`, etc.)
-- Explica por qué elegiste esas variables
+**Paso 3:** Prepara datos para entrenamiento:
 
-**2.2 Entrenamiento del modelo**
 ```python
-# Tu código aquí
-modelo_logistico = LogisticRegression()
-# Entrena el modelo con los datos de entrenamiento
+# Preparación de variables para machine learning
+
+# TU CÓDIGO AQUÍ:
+# 1. Seleccionar variables predictoras (features):
+#    ['goles_favor_ultimos_5', 'posesion_promedio', 'tiros_por_partido', 'faltas_cometidas', 'dias_descanso']
+# 2. Definir variable objetivo (target): 'victoria_local'
+# 3. Dividir datos en entrenamiento (70%) y prueba (30%)
+# 4. Verificar que ambos conjuntos mantienen distribución balanceada
+# 5. Mostrar estadísticas descriptivas de variables predictoras
+
+# Preparar matrices X (predictoras) e y (objetivo)
+features = ['goles_favor_ultimos_5', 'posesion_promedio', 'tiros_por_partido', 'faltas_cometidas', 'dias_descanso']
+X = df_madrid[features]
+y = df_madrid['victoria_local']
+
+# División train/test
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.3, random_state=42, stratify=y
+)
+
+print("=== PREPARACIÓN DE DATOS COMPLETADA ===")
+print(f"Entrenamiento: {X_train.shape[0]} partidos")
+print(f"Prueba: {X_test.shape[0]} partidos")
+print(f"Variables predictoras: {len(features)}")
 ```
 
-**2.3 Primeras predicciones**
-- Usa el modelo entrenado para predecir los datos de prueba
-- Calcula la precisión (accuracy) del modelo
-- Interpreta el resultado: ¿es bueno predecir correctamente el 65% de las veces?
+**Paso 4:** Entrena tu primer modelo predictivo:
 
-**2.4 Análisis de casos específicos**
-- Elige 10 partidos de prueba y compara predicciones vs resultados reales
-- Identifica patrones: ¿cuándo el modelo acierta más y cuándo falla?
+```python
+# Entrenamiento del primer modelo: Regresión Logística
 
-### Entregables
-- Modelo de regresión logística entrenado
-- Predicciones realizadas y precisión calculada
-- Análisis de casos específicos
-- Interpretación de resultados
+# TU CÓDIGO AQUÍ:
+# 1. Crear modelo de Regresión Logística
+# 2. Entrenar (fit) el modelo con datos de entrenamiento
+# 3. Realizar predicciones en conjunto de prueba
+# 4. Calcular precisión (accuracy) del modelo
+# 5. Generar reporte de clasificación completo
+# 6. Interpretar coeficientes del modelo (cuáles variables son más importantes)
+
+# Crear y entrenar modelo
+modelo_logistico = LogisticRegression(random_state=42)
+modelo_logistico.fit(X_train, y_train)
+
+# Predicciones
+y_pred = modelo_logistico.predict(X_test)
+y_pred_proba = modelo_logistico.predict_proba(X_test)[:, 1]
+
+# Evaluación
+accuracy = accuracy_score(y_test, y_pred)
+
+print("=== PRIMER MODELO REAL MADRID ===")
+print(f"Precisión del modelo: {accuracy:.3f}")
+print("\nReporte detallado:")
+print(classification_report(y_test, y_pred))
+
+print("\nImportancia de variables:")
+for feature, coef in zip(features, modelo_logistico.coef_[0]):
+    print(f"{feature}: {coef:.3f}")
+```
+
+### Criterios de Evaluación
+- **Preparación correcta de datos** (10 puntos)
+- **Implementación exitosa del modelo** (15 puntos)
 
 ---
 
-## Ejercicio 3: Comparando Modelos - ¿Cuál es Mejor? (1 hora)
+## Parte 3: Análisis y Validación del Modelo (25 puntos)
 
-### Contexto
-En machine learning, nunca dependemos de un solo algoritmo. Es importante probar diferentes "cerebros" (modelos) para ver cuál funciona mejor con nuestros datos.
+### Objetivo
+Analizar el rendimiento del modelo y validar su utilidad práctica para el Real Madrid.
 
-### Tareas
+### Instrucciones Detalladas
 
-**3.1 Segundo modelo: Random Forest**
+**Paso 5:** Analiza el rendimiento en profundidad:
+
 ```python
-# Crear y entrenar un modelo Random Forest
-modelo_bosque = RandomForestClassifier(n_estimators=50, random_state=42)
-# Tu código aquí
+# Análisis detallado del rendimiento predictivo
+
+# TU CÓDIGO AQUÍ:
+# 1. Crear matriz de confusión y visualizarla
+# 2. Calcular métricas específicas:
+#    - Verdaderos positivos, falsos positivos
+#    - Sensibilidad (recall) y especificidad
+#    - Precisión por clase
+# 3. Analizar casos de predicciones incorrectas
+# 4. Identificar patrones en errores del modelo
+# 5. Evaluar utilidad práctica para decisiones del Real Madrid
+
+# Matriz de confusión
+cm = confusion_matrix(y_test, y_pred)
+
+plt.figure(figsize=(8, 6))
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
+            xticklabels=['No Victoria', 'Victoria'],
+            yticklabels=['No Victoria', 'Victoria'])
+plt.title('Matriz de Confusión: Predicciones Real Madrid', fontsize=14, fontweight='bold')
+plt.xlabel('Predicción')
+plt.ylabel('Realidad')
+plt.show()
+
+print("=== ANÁLISIS DE RENDIMIENTO ===")
+print(f"Verdaderos Positivos: {cm[1,1]}")
+print(f"Falsos Positivos: {cm[0,1]}")
+print(f"Verdaderos Negativos: {cm[0,0]}")
+print(f"Falsos Negativos: {cm[1,0]}")
+
+# Análisis de errores
+errores = X_test[y_test != y_pred].copy()
+errores['prediccion'] = y_pred[y_test != y_pred]
+errores['realidad'] = y_test[y_test != y_pred]
+
+print(f"\nTotal errores: {len(errores)}")
+print("Características promedio de predicciones incorrectas:")
+print(errores[features].describe())
 ```
 
-**3.2 Comparación de modelos**
-- Entrena ambos modelos con los mismos datos
-- Compara las precisiones de ambos
-- Crea una tabla comparativa
+**Paso 6:** Valida la utilidad práctica del modelo:
 
-**3.3 Análisis de importancia de variables**
-- Usa Random Forest para identificar qué variables son más importantes
-- Crea un gráfico de importancia de variables
-- Interpreta los resultados: ¿qué factores son más predictivos?
+```python
+# Validación práctica para uso del Real Madrid
 
-**3.4 Predicciones en casos extremos**
-- Crea 3 escenarios hipotéticos:
-  1. Equipo con estadísticas muy buenas
-  2. Equipo con estadísticas promedio  
-  3. Equipo con estadísticas muy malas
-- Compara las predicciones de ambos modelos
+# TU CÓDIGO AQUÍ:
+# 1. Simular predicciones para próximos 5 partidos
+# 2. Incluir intervalos de confianza en predicciones
+# 3. Crear recomendaciones tácticas basadas en probabilidades
+# 4. Evaluar cuándo el modelo es más/menos confiable
+# 5. Proponer estrategias para mejora continua
 
-### Entregables
-- Dos modelos entrenados y comparados
-- Gráfico de importancia de variables
+# Simular próximos partidos
+proximos_partidos = pd.DataFrame({
+    'goles_favor_ultimos_5': [2.2, 1.8, 2.5, 1.9, 2.1],
+    'posesion_promedio': [65, 58, 70, 62, 66],
+    'tiros_por_partido': [16, 12, 18, 14, 17],
+    'faltas_cometidas': [10, 15, 8, 12, 11],
+    'dias_descanso': [7, 3, 7, 4, 7]
+})
+
+# Predicciones
+prob_victoria = modelo_logistico.predict_proba(proximos_partidos)[:, 1]
+pred_victoria = modelo_logistico.predict(proximos_partidos)
+
+print("=== PREDICCIONES PRÓXIMOS PARTIDOS ===")
+for i, (prob, pred) in enumerate(zip(prob_victoria, pred_victoria)):
+    resultado = "VICTORIA" if pred == 1 else "NO VICTORIA"
+    confianza = "Alta" if prob > 0.7 or prob < 0.3 else "Media"
+    print(f"Partido {i+1}: {resultado} (Prob: {prob:.2f}, Confianza: {confianza})")
+```
+
+### Criterios de Evaluación
+- **Análisis detallado de rendimiento** (15 puntos)
+- **Validación práctica y recomendaciones** (10 puntos)
+
+---
+
+## Parte 4: Comparación de Modelos y Reporte Ejecutivo (25 puntos)
+
+### Objetivo
+Comparar diferentes algoritmos y generar un reporte ejecutivo para el Real Madrid.
+
+### Instrucciones Detalladas
+
+**Paso 7:** Compara múltiples algoritmos:
+
+```python
+# Comparación de diferentes modelos predictivos
+
+# TU CÓDIGO AQUÍ:
+# 1. Implementar al menos 3 modelos diferentes:
+#    - Regresión Logística (ya implementado)
+#    - Random Forest
+#    - Modelo baseline (predicción simple)
+# 2. Entrenar todos con los mismos datos
+# 3. Comparar rendimiento en conjunto de prueba
+# 4. Identificar fortalezas/debilidades de cada modelo
+# 5. Seleccionar el mejor modelo para el Real Madrid
+
+# Random Forest
+modelo_rf = RandomForestClassifier(n_estimators=100, random_state=42)
+modelo_rf.fit(X_train, y_train)
+y_pred_rf = modelo_rf.predict(X_test)
+accuracy_rf = accuracy_score(y_test, y_pred_rf)
+
+# Modelo baseline (predicción mayoritaria)
+from scipy.stats import mode
+prediccion_baseline = mode(y_train)[0][0]
+y_pred_baseline = [prediccion_baseline] * len(y_test)
+accuracy_baseline = accuracy_score(y_test, y_pred_baseline)
+
+print("=== COMPARACIÓN DE MODELOS ===")
+print(f"Regresión Logística: {accuracy:.3f}")
+print(f"Random Forest: {accuracy_rf:.3f}")
+print(f"Baseline: {accuracy_baseline:.3f}")
+
+# Importancia de variables en Random Forest
+importancias_rf = modelo_rf.feature_importances_
+print("\nImportancia variables (Random Forest):")
+for feature, imp in zip(features, importancias_rf):
+    print(f"{feature}: {imp:.3f}")
+```
+
+**Paso 8:** Genera reporte ejecutivo final:
+
+```python
+# Reporte ejecutivo para la dirección del Real Madrid
+
+# TU CÓDIGO AQUÍ:
+# 1. Resumir hallazgos principales del análisis predictivo
+# 2. Recomendar el mejor modelo para uso operativo
+# 3. Identificar variables más importantes para victorias
+# 4. Proponer estrategias basadas en insights del modelo
+# 5. Establecer plan de monitoreo y mejora continua
+# 6. Crear visualización resumen para presentación
+
+print("=" * 60)
+print("REAL MADRID CF - REPORTE SISTEMA PREDICTIVO")
+print("Análisis de Modelos de Machine Learning")
+print("=" * 60)
+
+print("\n🎯 MODELO RECOMENDADO:")
+mejor_modelo = "Random Forest" if accuracy_rf > accuracy else "Regresión Logística"
+mejor_accuracy = max(accuracy_rf, accuracy)
+print(f"• {mejor_modelo} (Precisión: {mejor_accuracy:.1%})")
+
+print("\n📊 VARIABLES MÁS IMPORTANTES:")
+if accuracy_rf > accuracy:
+    for feature, imp in sorted(zip(features, importancias_rf), key=lambda x: x[1], reverse=True)[:3]:
+        print(f"• {feature}: {imp:.1%}")
+else:
+    coefs_abs = np.abs(modelo_logistico.coef_[0])
+    for feature, coef in sorted(zip(features, coefs_abs), key=lambda x: x[1], reverse=True)[:3]:
+        print(f"• {feature}: {coef:.3f}")
+
+print("\n🏆 RECOMENDACIONES ESTRATÉGICAS:")
+print("1. Enfocar en mantener alta efectividad goleadora")
+print("2. Monitorear días de descanso entre partidos")
+print("3. Optimizar posesión de balón en partidos clave")
+
+print("\n📈 PRÓXIMOS PASOS:")
+print("1. Implementar sistema en tiempo real")
+print("2. Reentrenar modelo mensualmente")
+print("3. Integrar variables adicionales (clima, rivales)")
+
+# Visualización resumen
+plt.figure(figsize=(10, 6))
+modelos = ['Baseline', 'Regresión\nLogística', 'Random\nForest']
+accuracies = [accuracy_baseline, accuracy, accuracy_rf]
+
+bars = plt.bar(modelos, accuracies, color=['gray', '#00529F', '#FEBE10'])
+plt.title('Comparación de Modelos Predictivos - Real Madrid CF', fontsize=14, fontweight='bold')
+plt.ylabel('Precisión')
+plt.ylim(0, 1)
+
+# Añadir valores en barras
+for bar, acc in zip(bars, accuracies):
+    plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.01,
+             f'{acc:.1%}', ha='center', fontweight='bold')
+
+plt.show()
+```
+
+### Criterios de Evaluación
+- **Comparación correcta de múltiples modelos** (15 puntos)
+- **Reporte ejecutivo profesional y completo** (10 puntos)
+
+## Criterios de Evaluación General
+
+### Correctitud Técnica (40 puntos)
+- Implementación correcta de modelos de machine learning
+- Uso apropiado de train/test split y validación
+- Cálculos precisos de métricas de evaluación
+- Código ejecuta sin errores
+
+### Aplicación Práctica (30 puntos)
+- Análisis relevante para contexto Real Madrid
+- Interpretación correcta de resultados del modelo
+- Recomendaciones útiles para toma de decisiones
+- Validación práctica de utilidad del modelo
+
+### Claridad y Documentación (30 puntos)
+- Código bien comentado en español
+- Explicaciones claras de conceptos de ML
+- Presentación profesional de resultados
+- Variables y análisis con nombres descriptivos
+
+## Instrucciones de Entrega
+
+1. **Completa todos los modelos** con implementación correcta
+2. **Incluye interpretaciones** para cada resultado del modelo
+3. **Verifica funcionamiento** de todas las predicciones
+4. **Guarda como:** `[matricula]-ejercicio-semana-11.ipynb`
+5. **Entrega antes del final de Semana 11**
+
+## Recursos de Apoyo
+
+- Notebook de la Semana 11: `modelado-predictivo-introduccion.ipynb`
+- Documentación scikit-learn: `train_test_split`, `LogisticRegression`, `RandomForestClassifier`
+- Guía de métricas de evaluación en machine learning
+
+---
+
+**¡Desarrolla tu primer sistema predictivo y lleva al Real Madrid hacia el futuro del análisis deportivo!** ⚽🤖
 - Análisis de casos extremos
 - Conclusiones sobre cuál modelo es mejor
 

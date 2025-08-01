@@ -1,4 +1,34 @@
-# Ejercicios Semanales - Bloque 1: Prerrequisitos de Programación
+# Ejercicios Sem## Ejercicios Disponibles
+
+1. **Ejercicio Semana 1: Fundamentos** (`ejercicio-semana-1-fundamentos.md`)
+   - Variables, tipos de datos y operaciones básicas
+   - Configuración del entorno de desarrollo
+   - Primeros pasos con Python y datos deportivos
+   - **Estado:** ✅ Completado
+
+2. **Ejercicio Semana 2: Estructuras de Control** (`ejercicio-semana-2-estructuras.md`)
+   - Listas y diccionarios con datos deportivos
+   - Bucles for y while para análisis iterativo
+   - Condicionales para categorización
+   - **Estado:** ✅ Completado
+
+3. **Ejercicio Semana 3: Funciones y Módulos** (`ejercicio-semana-3-funciones.md`)
+   - Funciones reutilizables para análisis deportivo
+   - Parámetros y valores de retorno
+   - Organización en módulos
+   - **Estado:** ✅ Completado
+
+4. **Ejercicio Semana 4: Pandas y NumPy** (`ejercicio-semana-4-pandas-numpy.md`)
+   - Arrays NumPy con operaciones vectorizadas
+   - DataFrames de pandas para datos estructurados
+   - Filtrado, agrupación y análisis
+   - **Estado:** ✅ Completado
+
+5. **Ejercicio Semana 5: Visualización Básica** (`ejercicio-semana-5-visualizacion.md`)
+   - Gráficos básicos con matplotlib
+   - Visualizaciones estadísticas con seaborn
+   - Dashboard y análisis temporal
+   - **Estado:** ✅ Completado Prerrequisitos de Programación
 
 ## 📋 Información General
 

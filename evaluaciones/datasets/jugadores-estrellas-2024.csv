@@ -1,0 +1,26 @@
+Nombre,Edad,Posicion,Equipo,Liga,Goles,Asistencias,Partidos,Valor_Mercado,Salario_Anual
+Lionel Messi,36,Delantero,Inter Miami,MLS,12,8,25,35.0,35000000
+Cristiano Ronaldo,39,Delantero,Al-Nassr,Saudi Pro,15,3,28,15.0,200000000
+Kylian Mbappé,25,Delantero,Real Madrid,La Liga,18,6,24,180.0,25000000
+Erling Haaland,23,Delantero,Manchester City,Premier League,22,5,26,170.0,20000000
+Neymar Jr,32,Delantero,Al-Hilal,Saudi Pro,8,11,22,60.0,100000000
+Mohamed Salah,31,Delantero,Liverpool,Premier League,16,7,29,70.0,18000000
+Karim Benzema,36,Delantero,Al-Ittihad,Saudi Pro,12,4,27,25.0,100000000
+Robert Lewandowski,35,Delantero,Barcelona,La Liga,19,8,25,45.0,12000000
+Kevin De Bruyne,32,Centrocampista,Manchester City,Premier League,8,15,28,100.0,20000000
+Luka Modrić,38,Centrocampista,Real Madrid,La Liga,2,12,32,10.0,12000000
+Pedri,21,Centrocampista,Barcelona,La Liga,4,8,30,80.0,8000000
+Gavi,19,Centrocampista,Barcelona,La Liga,3,6,25,90.0,6000000
+Jude Bellingham,20,Centrocampista,Real Madrid,La Liga,14,10,28,120.0,15000000
+Bruno Fernandes,29,Centrocampista,Manchester United,Premier League,10,12,35,70.0,15000000
+N'Golo Kanté,33,Centrocampista,Al-Ittihad,Saudi Pro,3,4,25,25.0,25000000
+Virgil van Dijk,32,Defensa,Liverpool,Premier League,4,2,33,45.0,12000000
+Rúben Dias,27,Defensa,Manchester City,Premier League,2,1,30,80.0,15000000
+Antonio Rüdiger,31,Defensa,Real Madrid,La Liga,3,2,35,35.0,9000000
+Jules Koundé,25,Defensa,Barcelona,La Liga,2,3,32,60.0,8000000
+João Cancelo,30,Defensa,PSG,Ligue 1,1,8,28,50.0,10000000
+Thibaut Courtois,32,Portero,Real Madrid,La Liga,0,0,25,60.0,12000000
+Marc-André ter Stegen,32,Portero,Barcelona,La Liga,0,0,30,30.0,8000000
+Ederson,30,Portero,Manchester City,Premier League,0,1,32,40.0,10000000
+Alisson,31,Portero,Liverpool,Premier League,0,0,29,50.0,9000000
+Gianluigi Donnarumma,25,Portero,PSG,Ligue 1,0,0,30,65.0,12000000

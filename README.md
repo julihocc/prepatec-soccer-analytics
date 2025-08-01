@@ -376,6 +376,21 @@ pip install -r requirements.txt
 │   │   └── feature-engineering-optimizacion.ipynb
 │   └── semana-15/
 │       └── proyecto-final-integrador.ipynb
+├── evaluaciones/                # Sistema de Evaluaciones del Curso
+│   ├── README.md               # Información del sistema de evaluaciones
+│   ├── bloque-1/               # Evaluaciones del Bloque 1
+│   │   ├── ejercicios-semanales/
+│   │   ├── proyecto-integrador/
+│   │   └── rubricas/
+│   ├── bloque-2/               # Evaluaciones del Bloque 2
+│   │   ├── ejercicios-preparatorios/
+│   │   ├── proyecto-analisis/
+│   │   └── rubricas/
+│   ├── bloque-3/               # Evaluaciones del Bloque 3
+│   │   ├── ejercicios-practica/
+│   │   ├── proyecto-predictivo/
+│   │   └── rubricas/
+│   └── datasets/               # Datasets para evaluaciones
 ├── referencias/                 # Material de apoyo
 │   ├── bibliografia-recursos.md # Bibliografía especializada
 │   └── guia-instalacion.md     # Guías técnicas

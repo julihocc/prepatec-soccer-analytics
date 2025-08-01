@@ -47,13 +47,13 @@ for libreria in librerias_requeridas:
     try:
         __import__(libreria)
         librerias_instaladas.append(libreria)
-        print(f"✅ {libreria}: Instalada")
+        print(f" {libreria}: Instalada")
     except ImportError:
-        print(f"❌ {libreria}: NO instalada")
+        print(f" {libreria}: NO instalada")
 
 print(f"\nLibrerías instaladas: {len(librerias_instaladas)}/{len(librerias_requeridas)}")
 if len(librerias_instaladas) == len(librerias_requeridas):
-    print("🎉 ¡Entorno listo para trabajar!")
+    print(" ¡Entorno listo para trabajar!")
 else:
     print("⚠️ Algunas librerías faltan por instalar")
 ```
@@ -226,7 +226,7 @@ Un reporte final que incluya:
 4. **Comenta tu código:** Explica qué hace cada sección importante
 5. **Revisa los cálculos:** Verifica que las operaciones matemáticas sean correctas
 
-## 🔗 Recursos Adicionales
+##  Recursos Adicionales
 
 - [Documentación oficial de Python](https://docs.python.org/3/)
 - [Tutorial de variables en Python](https://www.w3schools.com/python/python_variables.asp)

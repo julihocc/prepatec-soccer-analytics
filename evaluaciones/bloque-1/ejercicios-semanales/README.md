@@ -4,47 +4,47 @@
    - Variables, tipos de datos y operaciones básicas
    - Configuración del entorno de desarrollo
    - Primeros pasos con Python y datos deportivos
-   - **Estado:** ✅ Completado
+   - **Estado:**  Completado
 
 2. **Ejercicio Semana 2: Estructuras de Control** (`ejercicio-semana-2-estructuras.md`)
    - Listas y diccionarios con datos deportivos
    - Bucles for y while para análisis iterativo
    - Condicionales para categorización
-   - **Estado:** ✅ Completado
+   - **Estado:**  Completado
 
 3. **Ejercicio Semana 3: Funciones y Módulos** (`ejercicio-semana-3-funciones.md`)
    - Funciones reutilizables para análisis deportivo
    - Parámetros y valores de retorno
    - Organización en módulos
-   - **Estado:** ✅ Completado
+   - **Estado:**  Completado
 
 4. **Ejercicio Semana 4: Pandas y NumPy** (`ejercicio-semana-4-pandas-numpy.md`)
    - Arrays NumPy con operaciones vectorizadas
    - DataFrames de pandas para datos estructurados
    - Filtrado, agrupación y análisis
-   - **Estado:** ✅ Completado
+   - **Estado:**  Completado
 
 5. **Ejercicio Semana 5: Visualización Básica** (`ejercicio-semana-5-visualizacion.md`)
    - Gráficos básicos con matplotlib
    - Visualizaciones estadísticas con seaborn
    - Dashboard y análisis temporal
-   - **Estado:** ✅ Completado Prerrequisitos de Programación
+   - **Estado:**  Completado Prerrequisitos de Programación
 
-## 📋 Información General
+##  Información General
 
 **Peso en la calificación del bloque:** 60%  
 **Modalidad:** 5 ejercicios prácticos (uno por semana)  
 **Tiempo estimado:** 1-2 horas por ejercicio  
 **Formato:** Jupyter Notebooks con código y explicaciones
 
-## 🎯 Objetivos
+##  Objetivos
 
 - Reforzar conceptos aprendidos cada semana
 - Aplicar programación Python al contexto deportivo
 - Desarrollar habilidades de resolución de problemas
 - Preparar bases sólidas para análisis de datos
 
-## 📚 Ejercicios por Semana
+##  Ejercicios por Semana
 
 ### **Semana 1: Configuración y Fundamentos**
 **Archivo:** `ejercicio-semana-1-fundamentos.ipynb`
@@ -126,7 +126,7 @@
 4. **Gráfico personalizado**: Colores, títulos, etiquetas
 5. **Dashboard básico**: Múltiples gráficos en una figura
 
-## 📊 Criterios de Evaluación
+##  Criterios de Evaluación
 
 ### **Correctitud Técnica (40%)**
 - Código ejecuta sin errores
@@ -153,7 +153,7 @@
 
 **Entrega consolidada**: Final de Semana 5 (todos los ejercicios)
 
-## 🎯 Notas Importantes
+##  Notas Importantes
 
 ### **Formato de Entrega**
 - Archivos .ipynb con código ejecutado
@@ -173,6 +173,6 @@
 
 ---
 
-**¡Estos ejercicios te prepararán sólidamente para el análisis de datos deportivos!** ⚽🐍
+**¡Estos ejercicios te prepararán sólidamente para el análisis de datos deportivos!** 
 
 *Recuerda: La práctica constante es la clave para dominar la programación.*

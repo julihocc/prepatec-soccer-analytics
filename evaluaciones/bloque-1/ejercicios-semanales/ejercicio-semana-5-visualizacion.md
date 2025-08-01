@@ -344,11 +344,11 @@ Crear una presentación visual ejecutiva que resuma los hallazgos clave para la 
 
 Antes de entregar, asegúrate de:
 
-1. **✅ Completar las 4 partes** del ejercicio de visualización
-2. **✅ Ejecutar todos los gráficos** sin errores
-3. **✅ Usar configuración estándar** con sns.set_theme()
-4. **✅ Incluir títulos y etiquetas** en español
-5. **✅ Mostrar interpretaciones** de cada visualización
+1. ** Completar las 4 partes** del ejercicio de visualización
+2. ** Ejecutar todos los gráficos** sin errores
+3. ** Usar configuración estándar** con sns.set_theme()
+4. ** Incluir títulos y etiquetas** en español
+5. ** Mostrar interpretaciones** de cada visualización
 
 ## Formato de Entrega
 

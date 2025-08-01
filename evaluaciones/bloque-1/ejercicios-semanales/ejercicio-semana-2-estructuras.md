@@ -238,11 +238,11 @@ estado_real_madrid = {
 
 Antes de entregar, asegúrate de:
 
-1. **✅ Completar las 4 partes** del ejercicio integrador
-2. **✅ Ejecutar todo el código** sin errores
-3. **✅ Incluir comentarios explicativos** en español
-4. **✅ Usar nombres de variables descriptivos** en español
-5. **✅ Mostrar resultados claramente formateados**
+1. ** Completar las 4 partes** del ejercicio integrador
+2. ** Ejecutar todo el código** sin errores
+3. ** Incluir comentarios explicativos** en español
+4. ** Usar nombres de variables descriptivos** en español
+5. ** Mostrar resultados claramente formateados**
 
 ## Formato de Entrega
 
@@ -259,4 +259,4 @@ Antes de entregar, asegúrate de:
 
 ---
 
-**¡Domina las estructuras de control y conviértete en un analista deportivo experto!** ⚽�
+**¡Domina las estructuras de control y conviértete en un analista deportivo experto!** �

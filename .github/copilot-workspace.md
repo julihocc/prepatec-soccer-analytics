@@ -1,10 +1,42 @@
-# GitHub Copilot Instructions
+# Copilot Workspace Configuration
 
-## Project Overview
+## Project Context for AI Assistance
 
-This is a **Spanish-language educational course** teaching data science applied to football/soccer analysis using Python. The repository contains 15 weeks of structured learning materials organized into 3 progressive blocks, each with 5 weekly Jupyter notebooks.
+This workspace contains a **Spanish-language educational course** teaching data science applied to football/soccer analysis using Python. The repository includes 15 weeks of structured learning materials organized into 3 progressive blocks, plus a comprehensive evaluation system.
 
-## Architecture & Structure
+### Repository Structure
+- **Course Content**: 3 blocks with 5 weekly Jupyter notebooks each (`bloque-1/`, `bloque-2/`, `bloque-3/`)
+- **Evaluation System**: Complete assessment materials (`evaluaciones/`) with exercises, projects, and rubrics
+- **References**: Installation guides and resources (`referencias/`)
+
+## AI Assistant Guidelines
+
+### Language and Context
+- **Primary Language**: All content, comments, and variables must be in **Spanish**
+- **Educational Level**: High school preparatoria students (beginner-friendly)
+- **Domain Context**: Football/soccer data analysis throughout all examples
+- **Tone**: Professional yet engaging, encouraging for learning
+
+### Code Generation Rules
+- Use Spanish variable names: `datos_futbol`, `equipos_favoritos`, `goles_por_partido`
+- Always include educational comments explaining what code does
+- Generate realistic football datasets for examples
+- Use `sns.set_theme(style="whitegrid", palette="viridis")` for visualizations
+- End notebooks with summary section: `### Lo que Aprendimos Hoy`
+
+### Content Structure for New Notebooks
+1. **Markdown title**: `# Semana X: [Descriptive Spanish Title]`
+2. **Learning objectives**: `**Lo que aprenderemos hoy:**`
+3. **Import section** with educational comments
+4. **Progressive examples** building complexity
+5. **Summary and preview**: `### Próxima Semana`
+
+### When Helping with This Project
+- Maintain the educational Spanish focus
+- Use football context for all data examples
+- Keep explanations appropriate for beginners
+- Follow the established progressive difficulty pattern
+- Generate complete notebook cells in VSCode.Cell XML format when requested
 
 ### Course Organization
 - **Block 1** (`bloque-1/`): Python programming prerequisites (weeks 1-5)

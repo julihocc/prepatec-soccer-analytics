@@ -153,9 +153,17 @@ When creating new content:
 - Provide clear learning objectives and assessment criteria
 - Test with target audience (high school level) understanding
 
+## Custom Commands
+
+This repository includes custom Claude commands in the `.claude/` directory:
+
+- **`/commit`** - Intelligent git commits with Spanish messages and educational context
+- See `.claude/commands/` for detailed command documentation
+
 ## Support Resources
 
 - Installation guide: `referencias/guia-instalacion.md`
 - Bibliography: `referencias/bibliografia-recursos.md`
 - Refactored evaluation overview: `evaluaciones/RESUMEN-EJECUTIVO-REFACTORIZACION.md`
 - Block-specific README files for detailed learning objectives
+- Custom Claude commands: `.claude/commands/`

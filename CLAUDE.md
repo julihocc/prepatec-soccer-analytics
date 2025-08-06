@@ -14,15 +14,17 @@ This is a **Spanish-language educational course** on data science applied to foo
 
 ### Main Course Blocks (3 progressive levels)
 
-1. **`bloque-1/`** - Python Programming Prerequisites (Weeks 1-5)
+Located in `contenido/` directory:
+
+1. **`contenido/bloque-1/`** - Python Programming Prerequisites (Weeks 1-5)
    - Basic Python fundamentals with sports context
    - Jupyter notebooks covering variables, control structures, functions, pandas/numpy basics, and matplotlib
 
-2. **`bloque-2/`** - Data Science Fundamentals with Football Data (Weeks 6-10)
+2. **`contenido/bloque-2/`** - Data Science Fundamentals with Football Data (Weeks 6-10)
    - Exploratory data analysis of real football datasets
    - Statistical analysis and visualization with seaborn
 
-3. **`bloque-3/`** - First Predictions with Football Data (Weeks 11-15)
+3. **`contenido/bloque-3/`** - First Predictions with Football Data (Weeks 11-15)
    - Introduction to basic machine learning concepts
    - Simple predictive models using scikit-learn
 
@@ -169,7 +171,7 @@ print("¡Este gráfico nos muestra [explanation]!")
 jupyter notebook
 
 # Navigate to specific week
-cd bloque-1/semana-1
+cd contenido/bloque-1/semana-1
 jupyter notebook configuracion-fundamentos.ipynb
 ```
 

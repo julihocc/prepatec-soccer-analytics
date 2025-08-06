@@ -32,7 +32,7 @@ Located in `contenido/` directory:
 
 **Key Feature:** Recently refactored to have **one exercise per week** with detailed instructions and precise rubrics.
 
-- Each block has its own evaluation structure: `ejercicios-semanales/`, `proyecto-integrador/`, and `rubricas/`
+- Each block has simplified evaluation structure: `ejercicios/`, `proyecto/`, and `rubricas/`
 - Unified scoring rubric: 40% technical correctness + 30% practical application + 30% documentation
 - 60-minute estimated completion time per exercise
 - All exercises use Spanish variable names and football context
@@ -42,6 +42,54 @@ Located in `contenido/` directory:
 - **`referencias/`** - Bibliography and installation guides
 - **Course-specific datasets** - Football/soccer data for practical exercises
 - **Progressive difficulty** - Each week builds on previous concepts
+
+### Complete Repository Structure
+
+```
+/
+├── contenido/                    # Main course content
+│   ├── bloque-1/                # Python Programming Prerequisites (Weeks 1-5)
+│   │   ├── README.md
+│   │   ├── semana-1/            # Configuration and fundamentals
+│   │   ├── semana-2/            # Data structures and control flow
+│   │   ├── semana-3/            # Functions and modules
+│   │   ├── semana-4/            # Pandas and NumPy introduction
+│   │   └── semana-5/            # Basic visualization
+│   ├── bloque-2/                # Data Science Fundamentals (Weeks 6-10)
+│   │   ├── README.md
+│   │   ├── semana-6/            # Data exploration
+│   │   ├── semana-7/            # Football data types
+│   │   ├── semana-8/            # Descriptive statistics
+│   │   ├── semana-9/            # Data visualization
+│   │   └── semana-10/           # Analysis and interpretation
+│   └── bloque-3/                # First Predictions (Weeks 11-15)
+│       ├── README.md
+│       ├── semana-11/           # Predictive modeling introduction
+│       ├── semana-12/           # Advanced classification models
+│       ├── semana-13/           # Advanced evaluation metrics
+│       ├── semana-14/           # Feature engineering and optimization
+│       └── semana-15/           # Final integrative project
+├── evaluaciones/                # Complete evaluation system
+│   ├── bloque-1/
+│   │   ├── ejercicios/          # Weekly exercises (simplified structure)
+│   │   ├── proyecto/            # Block project (simplified structure)
+│   │   ├── datasets/            # Block-specific datasets
+│   │   └── rubricas/            # Evaluation rubrics
+│   ├── bloque-2/
+│   │   ├── ejercicios/          # Preparatory exercises
+│   │   ├── proyecto/            # Analysis project
+│   │   ├── datasets/            # European leagues data
+│   │   └── rubricas/            # Evaluation rubrics
+│   └── bloque-3/
+│       ├── ejercicios/          # Practice exercises
+│       ├── proyecto/            # Predictive project
+│       ├── datasets/            # Advanced datasets
+│       └── rubricas/            # Evaluation rubrics
+├── referencias/                 # Supporting documentation
+│   ├── guia-instalacion.md      # Installation guide
+│   └── bibliografia-recursos.md # Bibliography and resources
+└── CLAUDE.md                    # This file - Complete guidance for AI assistants
+```
 
 ## Development Environment Setup
 

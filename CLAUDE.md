@@ -74,12 +74,19 @@ print("✅ All libraries installed correctly")
 
 ## Educational Standards and Style
 
+### Target Audience and Context
+
+This course is directed at **Tecnológico de Monterrey preparatoria students** in their final year, exploring career options in technology and data. The objective is to introduce basic programming and data analysis concepts using football context to make learning more attractive and relevant.
+
 ### Code Style Requirements
 
 - **Spanish variable names:** `goles_por_partido`, `equipos_favoritos`, `datos_futbol`
-- **Educational comments:** Explain the purpose and context of each code section
-- **Football context:** All examples use real teams (Barcelona, Real Madrid, Manchester City)
+- **Educational comments:** Explain the purpose and context of each code section in Spanish
+- **Football context:** All examples use real teams (Barcelona, Real Madrid, Manchester City, Bayern Munich)
 - **Preparatoria level:** Explanations suitable for high school students
+- **Professional tone:** Clear, concise explanations without jargon unless defined
+- **No emojis:** Maintain professional yet engaging tone
+- **Seaborn theme:** Always use `sns.set_theme(style="whitegrid", palette="viridis")`
 
 ### Content Guidelines
 
@@ -87,6 +94,71 @@ print("✅ All libraries installed correctly")
 - Progressive complexity from basic Python to machine learning
 - Consistent football theme throughout all materials
 - Interactive Jupyter notebook format for hands-on learning
+- **Incremental changes:** Make small improvements rather than large rewrites
+- **Executable code:** Ensure all code works in Jupyter notebook environment
+- **Time constraints:** Weekly exercises ≤ 60 minutes, block projects 2-3 hours
+
+### Language and Communication Patterns
+
+- **Excitement:** Use `¡` and motivational language (`¡Es como ser un analista deportivo!`)
+- **Questions:** Frame concepts as questions (`¿Es mejor jugar en casa?`)
+- **Explanations:** Always explain what code does (`¡Este gráfico nos muestra...!`)
+- **Encouragement:** End with positive reinforcement (`¡Felicitaciones!`, `¡Excelente progreso!`)
+
+### Notebook Structure Standards
+
+#### Standard Cell Structure
+1. **Markdown title:** `# Semana X: [Descriptive Spanish Title]`
+2. **Learning objectives:** `**Lo que aprenderemos hoy:**`
+3. **Import section** with educational comments
+4. **Progressive examples** building complexity
+5. **Summary:** `### Lo que Aprendimos Hoy`
+6. **Preview:** `### Próxima Semana`
+
+#### Code Cell Conventions
+```python
+# Import pattern with educational comments
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Always configure seaborn theme
+sns.set_theme(style="whitegrid", palette="viridis")
+
+print("¡Herramientas listas!")
+```
+
+#### Data Generation Pattern
+```python
+# Create realistic football datasets for every exercise
+import random
+equipos = ['Barcelona', 'Real Madrid', 'Manchester City', 'Bayern Munich']
+partidos = []
+for i in range(30):
+    equipo_local = random.choice(equipos)
+    equipo_visitante = random.choice([e for e in equipos if e != equipo_local])
+    partidos.append({
+        'Equipo_Local': equipo_local,
+        'Equipo_Visitante': equipo_visitante,
+        'Goles_Local': random.randint(0, 3),
+        'Goles_Visitante': random.randint(0, 3),
+        'Temporada': random.choice(['2023-24', '2024-25'])
+    })
+datos_futbol = pd.DataFrame(partidos)
+```
+
+#### Visualization Standards
+```python
+# Standard plotting with Spanish labels
+plt.figure(figsize=(10, 6))
+sns.countplot(data=datos, x='variable', palette='viridis')
+plt.title('¿[Question in Spanish]?', fontsize=16, fontweight='bold')
+plt.xlabel('[Spanish label]')
+plt.ylabel('[Spanish label]')
+plt.show()
+print("¡Este gráfico nos muestra [explanation]!")
+```
 
 ## Course Management Commands
 
@@ -136,7 +208,23 @@ python -c "import pandas as pd; df = pd.read_csv('champs.csv'); print(f'Dataset 
 
 ## Working with This Repository
 
-When modifying course materials:
+### Educational Methodology
+
+This course follows a specific pedagogical approach:
+
+- **Theoretical classes:** Introduction to key concepts
+- **Practical exercises:** Application of learning in sports contexts
+- **Integrative projects:** Development of final projects combining all acquired knowledge
+- **Continuous evaluations:** Weekly mini-assessments to reinforce learning
+
+### Evaluation Criteria
+
+- **Technical correctness:** Functional code and appropriate use of tools
+- **Quality of analysis:** Depth and rigor in data analysis
+- **Presentation and communication:** Clarity in visualizations and explanations
+- **Contextual application:** Relevance and pertinence of sports analysis
+
+### When Modifying Course Materials
 
 1. **Maintain Spanish language** throughout all content
 2. **Preserve football context** in examples and datasets  
@@ -144,21 +232,87 @@ When modifying course materials:
 4. **Use consistent rubric structure** for all assessments
 5. **Test notebooks interactively** before finalizing changes
 6. **Maintain 60-minute exercise completion** time target
+7. **Make incremental improvements** rather than large rewrites
+8. **Always run entire notebook** to ensure everything works
+9. **Use descriptive commit messages** reflecting changes made
 
-When creating new content:
+### When Creating New Content
 
 - Use existing notebooks as templates for structure and style
 - Source football examples from recognizable teams and players
 - Include both theoretical concepts and practical applications
 - Provide clear learning objectives and assessment criteria
 - Test with target audience (high school level) understanding
+- Ensure consistent naming conventions (preferably Spanish)
+- Include well-documented comments explaining purpose of each section
+
+### Function and Variable Naming Patterns
+
+```python
+# Functions with Spanish names and docstrings
+def quien_gano(fila):
+    """Determina el ganador de un partido"""
+    if fila['Goles_Local'] > fila['Goles_Visitante']:
+        return 'Ganó Local'
+    elif fila['Goles_Local'] < fila['Goles_Visitante']:
+        return 'Ganó Visitante'
+    else:
+        return 'Empate'
+
+# Educational print statements explaining results
+print("¡Este gráfico nos muestra qué tan seguido los equipos marcan goles!")
+print(f"Promedio de goles por partido: {promedio:.1f}")
+```
 
 ## Custom Commands
 
-This repository includes custom Claude commands in the `.claude/` directory:
+### `/commit` Command
 
-- **`/commit`** - Intelligent git commits with Spanish messages and educational context
-- See `.claude/commands/` for detailed command documentation
+Performs intelligent git commits with automatic change analysis and appropriate Spanish messages for this educational repository.
+
+#### Usage
+```
+/commit                           # Automatic commit with generated message
+/commit "mensaje personalizado"   # Commit with specific message
+```
+
+#### Workflow Process
+1. **Pre-analysis:** Run `git status`, `git diff`, and `git log --oneline -3`
+2. **Message generation:** Analyze changes considering educational context
+3. **Spanish style:** Use infinitive verbs (Agregar, Actualizar, Corregir)
+4. **Specificity:** Mention specific blocks/weeks/exercises when applicable
+
+#### Commit Message Format
+```
+[Descriptive Spanish title - max 50 characters]
+
+[Optional detailed description]
+- Specific change 1
+- Specific change 2
+- Specific change 3
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>
+```
+
+#### Repository-Specific Rules
+- **Always use Spanish** in titles and descriptions
+- **Mention sports context** when relevant
+- **Specify block/week** if changes are specific to course sections
+- **Prioritize educational clarity** over technical jargon
+
+#### Example Messages
+```bash
+# Exercise changes
+"Actualizar ejercicios Semana 3: mejorar instrucciones de funciones"
+
+# Documentation changes  
+"Mejorar documentación de instalación y configuración"
+
+# Dataset changes
+"Agregar nuevos datasets para análisis Bloque 2"
+```
 
 ## Support Resources
 
@@ -166,4 +320,3 @@ This repository includes custom Claude commands in the `.claude/` directory:
 - Bibliography: `referencias/bibliografia-recursos.md`
 - Refactored evaluation overview: `evaluaciones/RESUMEN-EJECUTIVO-REFACTORIZACION.md`
 - Block-specific README files for detailed learning objectives
-- Custom Claude commands: `.claude/commands/`

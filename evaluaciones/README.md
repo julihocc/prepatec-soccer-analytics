@@ -28,35 +28,28 @@
 
 ---
 
-## 📁 Componentes del Sistema
+## 📁 Estructura por Bloques
 
-### 🎯 [Canvas](canvas/)
-**Exámenes automatizados (40% total)**
-- **Bloque 1:** 70 preguntas sobre fundamentos Python
-- **Bloque 2:** 75 preguntas sobre exploración de datos
-- **Modalidad:** Individual, selección aleatoria, tiempo limitado
-- **Cobertura:** 100% de contenido de cada bloque
+### 🐍 [Bloque 1](bloque-1/) - Python Fundamentals (35%)
+**Semanas 1-5: Fundamentos de Programación**
+- **[Canvas](bloque-1/canvas/):** 70 preguntas sobre fundamentos Python (20%)
+- **[Caso Práctico](bloque-1/caso-practico/):** Análisis de rendimiento de club (15%)
+- **[Rúbricas](bloque-1/rubricas/):** Criterios específicos del bloque
+- **Modalidad:** Examen individual + proyecto colaborativo (3-4 estudiantes)
 
-### 🤝 [Casos Prácticos](casos-practicos/)  
-**Proyectos colaborativos (30% total)**
-- **Caso Bloque 1:** Análisis de rendimiento de club (equipos 3-4)
-- **Caso Bloque 2:** Sistema de scouting avanzado (equipos 3-4)  
-- **Modalidad:** Colaborativa, 2 semanas cada caso
-- **Enfoque:** Aplicación práctica en contextos deportivos reales
+### ⚽ [Bloque 2](bloque-2/) - Exploración de Datos (35%)  
+**Semanas 6-10: Análisis y Visualización de Datos Deportivos**
+- **[Canvas](bloque-2/canvas/):** 75 preguntas sobre exploración de datos (20%)
+- **[Caso Práctico](bloque-2/caso-practico/):** Sistema de scouting avanzado (15%)
+- **[Rúbricas](bloque-2/rubricas/):** Criterios específicos del bloque
+- **Modalidad:** Examen individual + proyecto colaborativo (3-4 estudiantes)
 
-### 📊 [Proyecto Integrador](proyecto-integrador/)
-**Sistema predictivo individual (30% total)**
-- **Modalidad:** Individual, 4 semanas de desarrollo
-- **Componentes:** Notebook ML + Dashboard + Presentación
-- **Objetivo:** Integración completa de competencias del curso
-- **Entrega:** Sistema funcional de análisis predictivo deportivo
-
-### 📋 [Rúbricas](rubricas/)
-**Sistema de evaluación por competencias**
-- **Criterios específicos:** Por cada tipo de evaluación
-- **Escalas detalladas:** Niveles de dominio claramente definidos
-- **Competencias transversales:** Colaboración, comunicación, pensamiento crítico
-- **Alineación institucional:** Estándares Tecnológico de Monterrey
+### 🚀 [Bloque 3](bloque-3/) - Proyecto Integrador (30%)
+**Semanas 11-16: Sistema Predictivo Completo**
+- **[Proyecto Final](bloque-3/proyecto-integrador/):** Sistema de análisis predictivo (20%)
+- **[Presentación](bloque-3/proyecto-integrador/):** Comunicación de resultados (10%)
+- **[Rúbricas](bloque-3/rubricas/):** Evaluación integral por competencias
+- **Modalidad:** Individual, 4 semanas de desarrollo intensivo
 
 ---
 

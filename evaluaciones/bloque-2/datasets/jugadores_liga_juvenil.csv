@@ -1,0 +1,51 @@
+jugador_id,nombre,edad,equipo,posicion,torneo,goles,asistencias,partidos_jugados,minutos_jugados,tiros_al_arco,precision_pases,recuperaciones,tarjetas_amarillas,tarjetas_rojas,valor_mercado_estimado
+1,Alejandro Martínez,17,Atlas Sub-20,Delantero,Liga MX Sub-20,12,5,18,1425,45,78.5,23,2,0,150000
+2,Sofia Hernández,16,Chivas Femenil,Mediocampo,Liga MX Femenil Sub-18,3,18,20,1650,15,89.2,78,3,0,200000
+3,Diego Ramírez,18,América Sub-20,Delantero,Liga MX Sub-20,15,3,19,1580,52,75.8,18,1,0,180000
+4,Camila Torres,17,Tigres Femenil,Defensa,Liga MX Femenil Sub-18,1,4,22,1890,8,91.5,95,4,1,120000
+5,José Luis Vega,16,Pumas Sub-20,Mediocampo,Liga MX Sub-20,6,12,17,1350,28,85.3,68,2,0,160000
+6,Isabella García,18,Monterrey Femenil,Delantero,Liga MX Femenil Sub-18,14,7,21,1740,41,82.1,31,3,0,175000
+7,Carlos Mendoza,17,Santos Sub-20,Defensa,Liga MX Sub-20,2,2,20,1620,12,88.7,89,5,0,140000
+8,Valentina López,16,Atlas Femenil,Portero,Liga MX Femenil Sub-18,0,1,18,1620,0,45.2,5,1,0,110000
+9,Ricardo Flores,18,Cruz Azul Sub-20,Mediocampo,Liga MX Sub-20,8,9,22,1800,31,87.4,72,3,1,165000
+10,Mariana Díaz,17,León Femenil,Delantero,Liga MX Femenil Sub-18,11,6,19,1520,38,79.6,25,2,0,155000
+11,Fernando Castro,16,Toluca Sub-20,Defensa,Liga MX Sub-20,3,1,21,1750,16,90.3,102,6,0,135000
+12,Sofía Morales,18,Pachuca Femenil,Mediocampo,Liga MX Femenil Sub-18,4,15,20,1680,19,92.1,81,2,0,185000
+13,Andrés Ruiz,17,Necaxa Sub-20,Delantero,Liga MX Sub-20,9,4,16,1280,34,76.9,22,1,0,145000
+14,Daniela Herrera,16,Tijuana Femenil,Defensa,Liga MX Femenil Sub-18,2,3,19,1615,11,89.8,87,3,0,125000
+15,Miguel Torres,18,León Sub-20,Portero,Liga MX Sub-20,0,0,20,1800,0,52.1,8,2,0,120000
+16,Ximena Vargas,17,Atlas Femenil,Mediocampo,Liga MX Femenil Sub-18,5,11,18,1440,23,86.7,65,4,0,170000
+17,Gabriel Sánchez,16,Puebla Sub-20,Delantero,Liga MX Sub-20,7,2,15,1200,29,74.3,19,0,0,130000
+18,Regina Jiménez,18,América Femenil,Defensa,Liga MX Femenil Sub-18,1,2,21,1785,7,93.2,98,3,0,145000
+19,Pablo Guerrero,17,Tijuana Sub-20,Mediocampo,Liga MX Sub-20,4,8,19,1520,22,83.6,59,2,0,155000
+20,Alexa Ramos,16,Santos Femenil,Delantero,Liga MX Femenil Sub-18,13,5,17,1360,43,80.4,28,1,0,165000
+21,Emilio Delgado,18,Querétaro Sub-20,Defensa,Liga MX Sub-20,1,3,22,1890,9,92.5,110,4,1,140000
+22,Lucía Peña,17,Cruz Azul Femenil,Portero,Liga MX Femenil Sub-18,0,2,19,1710,0,48.7,12,1,0,115000
+23,Sebastián Ortiz,16,Atlas Sub-20,Mediocampo,Liga MX Sub-20,5,13,18,1440,24,88.1,75,2,0,175000
+24,Paola Medina,18,Pumas Femenil,Delantero,Liga MX Femenil Sub-18,10,8,20,1600,35,81.9,32,2,0,160000
+25,Rodrigo Silva,17,Monterrey Sub-20,Defensa,Liga MX Sub-20,2,4,21,1680,13,87.3,94,5,0,145000
+26,Fernanda Cruz,16,Toluca Femenil,Mediocampo,Liga MX Femenil Sub-18,6,14,19,1520,26,90.6,69,3,0,180000
+27,Mateo Jiménez,18,Chivas Sub-20,Delantero,Liga MX Sub-20,16,6,20,1700,54,77.2,24,2,1,190000
+28,Nicole Aguilar,17,Necaxa Femenil,Defensa,Liga MX Femenil Sub-18,0,5,18,1530,5,91.7,92,4,0,130000
+29,Iker Romero,16,FC Juárez Sub-20,Portero,Liga MX Sub-20,0,1,17,1530,0,51.8,9,1,0,105000
+30,Amanda Reyes,18,Guadalajara Femenil,Mediocampo,Liga MX Femenil Sub-18,7,16,21,1785,30,93.4,77,1,0,195000
+31,Leonardo Moreno,17,Mazatlán Sub-20,Delantero,Liga MX Sub-20,11,7,19,1520,39,79.8,29,3,0,170000
+32,Génesis Campos,16,Querétaro Femenil,Defensa,Liga MX Femenil Sub-18,3,1,20,1700,14,88.9,101,5,0,135000
+33,Axel González,18,Atlético San Luis Sub-20,Mediocampo,Liga MX Sub-20,3,10,22,1800,18,84.7,66,2,0,150000
+34,Roberta Vázquez,17,Mazatlán Femenil,Delantero,Liga MX Femenil Sub-18,8,4,16,1280,32,78.3,21,1,0,140000
+35,Joaquín Herrera,16,Atlas Sub-20,Defensa,Liga MX Sub-20,1,2,18,1440,8,89.1,85,3,0,130000
+36,Estefanía Luna,18,FC Juárez Femenil,Portero,Liga MX Femenil Sub-18,0,0,20,1800,0,46.9,11,2,0,110000
+37,Gael Martín,17,Santos Sub-20,Mediocampo,Liga MX Sub-20,9,11,20,1600,33,86.5,71,4,0,175000
+38,Montserrat Núñez,16,Atlético San Luis Femenil,Delantero,Liga MX Femenil Sub-18,12,3,18,1440,41,76.7,26,2,0,155000
+39,Emiliano Ríos,18,Tigres Sub-20,Defensa,Liga MX Sub-20,4,1,21,1785,17,91.8,107,6,0,160000
+40,Karla Mendez,17,Puebla Femenil,Mediocampo,Liga MX Femenil Sub-18,2,12,19,1520,12,87.9,74,3,0,165000
+41,Maximiliano Torres,16,León Sub-20,Delantero,Liga MX Sub-20,6,1,14,1120,25,73.5,17,0,0,120000
+42,Adriana Salinas,18,Monterrey Femenil,Defensa,Liga MX Femenil Sub-18,1,6,22,1890,9,94.1,103,2,0,150000
+43,Thiago Espinoza,17,Pachuca Sub-20,Mediocampo,Liga MX Sub-20,7,7,18,1440,26,82.3,58,3,0,145000
+44,Dulce Paredes,16,Tijuana Femenil,Portero,Liga MX Femenil Sub-18,0,1,17,1530,0,49.4,8,1,0,108000
+45,Ian Cabrera,18,Puebla Sub-20,Delantero,Liga MX Sub-20,13,5,19,1520,46,78.6,31,2,0,175000
+46,Frida Castillo,17,León Femenil,Mediocampo,Liga MX Femenil Sub-18,4,9,18,1440,21,85.2,63,2,0,160000
+47,Santiago Rojas,16,Querétaro Sub-20,Defensa,Liga MX Sub-20,2,3,20,1600,12,88.7,96,4,0,135000
+48,Alma Gutiérrez,18,Santos Femenil,Delantero,Liga MX Femenil Sub-18,9,6,17,1360,31,77.9,25,1,0,145000
+49,Nicolás Fuentes,17,Toluca Sub-20,Portero,Liga MX Sub-20,0,0,19,1710,0,53.7,7,2,0,115000
+50,Renata Villanueva,16,Cruz Azul Femenil,Mediocampo,Liga MX Femenil Sub-18,8,13,20,1600,29,91.3,72,2,0,185000

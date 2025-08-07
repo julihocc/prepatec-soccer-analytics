@@ -70,7 +70,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import sklearn
-print("✅ Todas las librerías instaladas correctamente")
+print(" Todas las librerías instaladas correctamente")
 ```
 
 ## Configuración de Jupyter Notebook
@@ -209,7 +209,7 @@ import seaborn as sns
 import sklearn
 import jupyter
 
-print("✅ Verificación del Entorno")
+print(" Verificación del Entorno")
 print("="*30)
 print(f"Python version: {sys.version}")
 print(f"Pandas version: {pd.__version__}")
@@ -217,7 +217,7 @@ print(f"NumPy version: {np.__version__}")
 print(f"Matplotlib version: {plt.matplotlib.__version__}")
 print(f"Seaborn version: {sns.__version__}")
 print(f"Scikit-learn version: {sklearn.__version__}")
-print("\n🎉 ¡Entorno configurado correctamente!")
+print("\n ¡Entorno configurado correctamente!")
 ```
 
 ## Recursos de Ayuda

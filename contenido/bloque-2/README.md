@@ -92,22 +92,22 @@ Cada semana sigue una estructura consistente:
 
 ### Habilidades Desarrolladas
 
-✅ **Exploración de Datos:**
+ **Exploración de Datos:**
 - Carga y comprensión de datasets complejos
 - Identificación de variables clave
 - Detección de patrones y anomalías
 
-✅ **Análisis Estadístico:**
+ **Análisis Estadístico:**
 - Cálculo de estadísticas descriptivas
 - Comparaciones entre grupos (posiciones, ligas)
 - Interpretación de medidas de tendencia central y dispersión
 
-✅ **Visualización:**
+ **Visualización:**
 - Creación de gráficos efectivos con seaborn
 - Personalización de visualizaciones
 - Comunicación visual de hallazgos
 
-✅ **Interpretación y Comunicación:**
+ **Interpretación y Comunicación:**
 - Generación de insights deportivos
 - Redacción de conclusiones profesionales
 - Formulación de recomendaciones basadas en datos
@@ -159,16 +159,16 @@ Una vez completado exitosamente el Bloque 2, los estudiantes estarán preparados
 
 ## Notas Importantes
 
-💡 **Enfoque Práctico:** Este bloque se centra en aplicaciones reales con datos deportivos auténticos.
+ **Enfoque Práctico:** Este bloque se centra en aplicaciones reales con datos deportivos auténticos.
 
-📊 **Visualización:** Se enfatiza la creación de gráficos claros y profesionales.
+ **Visualización:** Se enfatiza la creación de gráficos claros y profesionales.
 
-⚽ **Contexto Deportivo:** Todos los ejercicios están diseñados con ejemplos futbolísticos relevantes.
+ **Contexto Deportivo:** Todos los ejercicios están diseñados con ejemplos futbolísticos relevantes.
 
-🎯 **Meta:** Al final del Bloque 2, deberías poder realizar un análisis completo de cualquier dataset deportivo y comunicar tus hallazgos de manera profesional.
+ **Meta:** Al final del Bloque 2, deberías poder realizar un análisis completo de cualquier dataset deportivo y comunicar tus hallazgos de manera profesional.
 
 ---
 
-**¡Descubre los secretos ocultos en los datos del fútbol!** 📈⚽
+**¡Descubre los secretos ocultos en los datos del fútbol!** 
 
 *Este bloque te convertirá en un analista de datos deportivos capaz de encontrar insights valiosos que pueden cambiar estrategias de equipos.*

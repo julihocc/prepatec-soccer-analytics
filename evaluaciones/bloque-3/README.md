@@ -8,23 +8,23 @@
 
 ---
 
-## 📊 Componentes de Evaluación
+## Componentes de Evaluación
 
-### 🚀 Proyecto Final (20% del curso)
+### Proyecto Final (20% del curso)
 **Ubicación:** [proyecto-integrador/README.md](proyecto-integrador/README.md)
 - **Sistema:** "Análisis Predictivo para Fútbol" completo
 - **Modalidad:** Individual, 4 semanas de desarrollo
 - **Componentes:** EDA + ML + Dashboard + Documentación
 - **Entrega:** Notebook ejecutable + modelos + interface interactiva
 
-### 🎤 Presentación Final (10% del curso)
+### Presentación Final (10% del curso)
 **Formato:** Presentación individual de 15 minutos
 - **Demo en vivo:** Funcionamiento del sistema completo
 - **Explicación técnica:** Metodología y decisiones de diseño
 - **Q&A profesional:** Manejo de preguntas técnicas y de negocio
 - **Audiencia:** Profesores + invitados de la industria (opcional)
 
-### 📋 Sistema de Evaluación Integral
+### Sistema de Evaluación Integral
 **Ubicación:** [rubricas/rubrica-completa.md](rubricas/rubrica-completa.md)
 - **Evaluación holística** de todas las competencias del curso
 - **Criterios profesionales** equiparables a la industria
@@ -33,7 +33,7 @@
 
 ---
 
-## 🎯 Objetivos de Aprendizaje Integrales
+## Objetivos de Aprendizaje Integrales
 
 ### Competencias Técnicas Avanzadas
 - **Pipeline completo ML:** Desde datos crudos hasta predicciones
@@ -61,7 +61,7 @@
 
 ---
 
-## 🏗️ Fases de Desarrollo
+## Fases de Desarrollo
 
 ### Fase 1: Análisis Exploratorio Avanzado (25% del proyecto)
 **Duración:** Semana 1 completa
@@ -93,7 +93,7 @@
 
 ---
 
-## 🏆 Criterios de Evaluación Profesional
+## Criterios de Evaluación Profesional
 
 ### Excelencia Técnica (90-100%)
 - **Código de calidad profesional:** PEP8, modular, eficiente
@@ -121,29 +121,29 @@
 
 ---
 
-## 📊 Tipos de Sistemas Predictivos
+## Tipos de Sistemas Predictivos
 
 ### Opciones de Enfoque (Elegir 1 principal + 1 secundario)
 
-#### 🎯 Predicción de Resultados
+#### Predicción de Resultados
 - **Variables:** Forma reciente, estadísticas históricas, contexto del partido
 - **Algoritmos:** Logistic Regression, Random Forest, Gradient Boosting
 - **Métricas:** Accuracy, precision, recall, log-loss
 - **Aplicación:** Casas de apuestas, análisis táctico pre-partido
 
-#### ⚽ Predicción de Goles
+#### Predicción de Goles
 - **Variables:** Estadísticas ofensivas/defensivas, jugadores titulares, historial
 - **Algoritmos:** Poisson Regression, Neural Networks, Ensemble Methods
 - **Métricas:** MAE, RMSE, distribución de errores
 - **Aplicación:** Fantasy football, estrategias de goleadores
 
-#### 🏃 Evaluación de Jugadores
+#### Evaluación de Jugadores
 - **Variables:** Métricas individuales, contexto de equipo, desarrollo temporal  
 - **Algoritmos:** Clustering + Regression, Random Forest, XGBoost
 - **Métricas:** R², feature importance, estabilidad temporal
 - **Aplicación:** Scouting, valuaciones de mercado, desarrollo de talento
 
-#### 📈 Análisis de Mercado
+#### Análisis de Mercado
 - **Variables:** Rendimiento, edad, contrato, transferencias históricas
 - **Algoritmos:** Regression ensembles, gradient boosting
 - **Métricas:** MAPE, correlación con valores reales
@@ -151,7 +151,7 @@
 
 ---
 
-## 🛠️ Stack Tecnológico Profesional
+## Stack Tecnológico Profesional
 
 ### Librerías Obligatorias
 ```python
@@ -218,7 +218,7 @@ proyecto_final/
 
 ---
 
-## 🎯 Preparación para el Éxito
+## Preparación para el Éxito
 
 ### Planificación Estratégica
 1. **Semana 0:** Selección de enfoque, exploración inicial de datos
@@ -240,7 +240,7 @@ proyecto_final/
 
 ---
 
-## 🏅 Impacto y Empleabilidad
+## Impacto y Empleabilidad
 
 ### Portfolio Profesional
 - **Proyecto completo funcional:** Demo en línea disponible

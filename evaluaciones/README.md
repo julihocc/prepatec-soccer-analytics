@@ -7,12 +7,12 @@
 
 ---
 
-## 📊 Estructura de Evaluación
+## Estructura de Evaluación
 
 ### Ponderación General (100%)
 
 ```
-🏆 EVALUACIÓN COMPLETA DEL CURSO
+ EVALUACIÓN COMPLETA DEL CURSO
 ├── 1er Parcial (35%) - Bloque 1: Python Fundamentals
 │   ├── Examen Canvas (20%) - Fundamentos de programación
 │   └── Caso Práctico Colaborativo (15%) - Análisis de club
@@ -28,23 +28,23 @@
 
 ---
 
-## 📁 Estructura por Bloques
+## Estructura por Bloques
 
-### 🐍 [Bloque 1](bloque-1/) - Python Fundamentals (35%)
+### [Bloque 1](bloque-1/) - Python Fundamentals (35%)
 **Semanas 1-5: Fundamentos de Programación**
 - **[Canvas](bloque-1/canvas/):** 70 preguntas sobre fundamentos Python (20%)
 - **[Caso Práctico](bloque-1/caso-practico/):** Análisis de rendimiento de club (15%)
 - **[Rúbricas](bloque-1/rubricas/):** Criterios específicos del bloque
 - **Modalidad:** Examen individual + proyecto colaborativo (3-4 estudiantes)
 
-### ⚽ [Bloque 2](bloque-2/) - Exploración de Datos (35%)  
+### [Bloque 2](bloque-2/) - Exploración de Datos (35%)  
 **Semanas 6-10: Análisis y Visualización de Datos Deportivos**
 - **[Canvas](bloque-2/canvas/):** 75 preguntas sobre exploración de datos (20%)
 - **[Caso Práctico](bloque-2/caso-practico/):** Sistema de scouting avanzado (15%)
 - **[Rúbricas](bloque-2/rubricas/):** Criterios específicos del bloque
 - **Modalidad:** Examen individual + proyecto colaborativo (3-4 estudiantes)
 
-### 🚀 [Bloque 3](bloque-3/) - Proyecto Integrador (30%)
+### [Bloque 3](bloque-3/) - Proyecto Integrador (30%)
 **Semanas 11-16: Sistema Predictivo Completo**
 - **[Proyecto Final](bloque-3/proyecto-integrador/):** Sistema de análisis predictivo (20%)
 - **[Presentación](bloque-3/proyecto-integrador/):** Comunicación de resultados (10%)
@@ -53,7 +53,7 @@
 
 ---
 
-## 🎓 Filosofía de Evaluación
+## Filosofía de Evaluación
 
 ### Enfoque por Competencias
 - **Técnicas:** Dominio de Python y análisis de datos
@@ -74,7 +74,7 @@
 
 ---
 
-## 📅 Cronograma de Implementación
+## Cronograma de Implementación
 
 ### Semestre Completo (16 semanas)
 
@@ -86,7 +86,7 @@
 
 ---
 
-## 🎯 Beneficios del Sistema
+## Beneficios del Sistema
 
 ### Para Estudiantes
 - **Aprendizaje significativo:** Contexto deportivo consistente
@@ -108,7 +108,7 @@
 
 ---
 
-## 🚀 Recursos para Implementación
+## Recursos para Implementación
 
 ### Configuración Técnica
 - **Canvas:** Bancos de preguntas configurables automáticamente
@@ -130,7 +130,7 @@
 
 ---
 
-## 📈 Indicadores de Éxito
+## Indicadores de Éxito
 
 ### Técnicos
 - **Dominio Python:** >85% aprueban exámenes Canvas
@@ -149,7 +149,7 @@
 
 ---
 
-## 📞 Contacto y Soporte
+## Contacto y Soporte
 
 ### Implementación
 - **Configuración Canvas:** Guías paso a paso disponibles

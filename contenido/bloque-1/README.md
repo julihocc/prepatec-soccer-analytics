@@ -136,28 +136,28 @@ bloque-1/
 
 ### Al finalizar el Bloque 1, el estudiante debe poder
 
-✅ **Programación Básica:**
+ **Programación Básica:**
 
 - Escribir código Python funcional y bien estructurado
 - Usar variables, listas, diccionarios y estructuras de control apropiadas
 - Implementar lógica con bucles y condicionales
 - Crear y utilizar funciones reutilizables
 
-✅ **Manipulación de Datos:**
+ **Manipulación de Datos:**
 
 - Cargar datos desde archivos CSV usando pandas
 - Realizar operaciones básicas con DataFrames y Series
 - Filtrar, transformar y agregar datos simples
 - Manejar valores faltantes básicos
 
-✅ **Visualización:**
+ **Visualización:**
 
 - Crear gráficos básicos con matplotlib
 - Personalizar gráficos con títulos, etiquetas y colores
 - Interpretar visualizaciones simples
 - Comunicar hallazgos básicos mediante gráficos
 
-✅ **Entorno de Trabajo:**
+ **Entorno de Trabajo:**
 
 - Usar Jupyter Notebook eficientemente para análisis interactivo
 - Instalar librerías según necesidad
@@ -192,14 +192,14 @@ Una vez completado exitosamente el Bloque 1, los estudiantes estarán preparados
 
 ## Notas Importantes
 
-⚠️ **Importante:** Este bloque proporciona las bases fundamentales de programación necesarias para el análisis de datos. Los estudiantes que no dominen estos conceptos tendrán dificultades en los bloques posteriores.
+ **Importante:** Este bloque proporciona las bases fundamentales de programación necesarias para el análisis de datos. Los estudiantes que no dominen estos conceptos tendrán dificultades en los bloques posteriores.
 
-💡 **Sugerencia:** Practica escribiendo código regularmente. La programación se aprende mejor con la práctica constante.
+ **Sugerencia:** Practica escribiendo código regularmente. La programación se aprende mejor con la práctica constante.
 
-🎯 **Meta:** Al final del Bloque 1, deberías sentirte cómodo escribiendo código Python básico y emocionado por aplicarlo al análisis de datos deportivos más avanzado.
+ **Meta:** Al final del Bloque 1, deberías sentirte cómodo escribiendo código Python básico y emocionado por aplicarlo al análisis de datos deportivos más avanzado.
 
 ---
 
-**¡Bienvenido al mundo de la programación con Python!** 🐍⚽
+**¡Bienvenido al mundo de la programación con Python!** 
 
 *Este bloque te proporcionará las bases sólidas de programación necesarias para convertirte en un analista de datos deportivos competente.*

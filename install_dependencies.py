@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 """
-Script de instalación automática para el curso de Ciencia de Datos Aplicada al Fútbol
+Script de ins    print("
+Actualizando pip...")
+    try:
+        subprocess.run([sys.executable, '-m', 'pip', 'install', '--upgrade', 'pip'], 
+                      capture_output=True, text=True, check=True)
+        print("pip actualizado correctamente")
+    except subprocess.CalledProcessError:
+        print("Advertencia: No se pudo actualizar pip")n automática para el curso de Ciencia de Datos Aplicada al Fútbol
 Tecnológico de Monterrey - Tópicos de Ciencia de Datos
 
 Este script instala automáticamente todas las dependencias necesarias
@@ -23,8 +30,8 @@ def main():
     print(f"🐍 Python {python_version.major}.{python_version.minor}.{python_version.micro}")
     
     if python_version < (3, 8):
-        print("❌ Error: Se requiere Python 3.8 o superior")
-        print("💡 Por favor actualice su versión de Python")
+        print("Error: Se requiere Python 3.8 o superior")
+        print("Por favor actualice su versión de Python")
         return False
     
     # Buscar archivo requirements.txt
@@ -32,37 +39,37 @@ def main():
     requirements_file = script_dir / 'requirements.txt'
     
     if not requirements_file.exists():
-        print(f"❌ Archivo requirements.txt no encontrado en: {requirements_file}")
+        print(f"Archivo requirements.txt no encontrado en: {requirements_file}")
         return False
     
     print(f"📋 Archivo de requerimientos: {requirements_file}")
     
     # Actualizar pip primero
-    print("\n📦 Actualizando pip...")
+    print("\nActualizando pip...")
     try:
         subprocess.run([sys.executable, '-m', 'pip', 'install', '--upgrade', 'pip'], 
                       check=True, capture_output=True)
-        print("✅ pip actualizado correctamente")
+        print("pip actualizado correctamente")
     except subprocess.CalledProcessError as e:
-        print("⚠️ Advertencia: No se pudo actualizar pip")
+        print("Advertencia: No se pudo actualizar pip")
     
     # Instalar dependencias
-    print("\n📥 Instalando dependencias del curso...")
+    print("\nInstalando dependencias del curso...")
     try:
         result = subprocess.run([
             sys.executable, '-m', 'pip', 'install', '-r', str(requirements_file)
         ], check=True, capture_output=True, text=True)
         
-        print("✅ Todas las dependencias instaladas correctamente")
+        print("Todas las dependencias instaladas correctamente")
         
     except subprocess.CalledProcessError as e:
-        print("❌ Error durante la instalación:")
+        print("Error durante la instalación:")
         print(f"Código de error: {e.returncode}")
         print(f"Error: {e.stderr}")
         return False
     
     # Verificar instalación
-    print("\n🔍 Verificando instalación...")
+    print("\nVerificando instalación...")
     packages_to_verify = [
         'pandas', 'numpy', 'matplotlib', 'seaborn', 
         'scikit-learn', 'scipy', 'jupyter'
@@ -75,20 +82,20 @@ def main():
                 __import__('sklearn')
             else:
                 __import__(package)
-            print(f"✅ {package}")
+            print(f"{package}")
         except ImportError:
-            print(f"❌ {package}")
+            print(f"{package} - NO DISPONIBLE")
             all_installed = False
     
     if all_installed:
-        print("\n🎉 ¡INSTALACIÓN COMPLETADA EXITOSAMENTE!")
-        print("🚀 Todos los paquetes necesarios están disponibles")
-        print("📚 Ya puedes ejecutar los notebooks del curso")
-        print("\n💡 Para iniciar Jupyter Notebook ejecuta:")
+        print("\n¡INSTALACIÓN COMPLETADA EXITOSAMENTE!")
+        print("Todos los paquetes necesarios están disponibles")
+        print("Ya puedes ejecutar los notebooks del curso")
+        print("\nPara iniciar Jupyter Notebook ejecuta:")
         print("   jupyter notebook")
     else:
-        print("\n❌ Algunos paquetes no se instalaron correctamente")
-        print("💡 Intenta ejecutar manualmente:")
+        print("\nAlgunos paquetes no se instalaron correctamente")
+        print("Intenta ejecutar manualmente:")
         print("   pip install -r requirements.txt")
     
     print("\n" + "=" * 70)

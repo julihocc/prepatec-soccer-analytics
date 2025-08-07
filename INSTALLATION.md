@@ -37,7 +37,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.linear_model import LinearRegression
 
-print("✅ Todas las librerías instaladas correctamente")
+print("Todas las librerías instaladas correctamente")
 ```
 
 ## Solución de Problemas

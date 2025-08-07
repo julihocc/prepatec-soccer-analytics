@@ -1,0 +1,35 @@
+partido,fecha,rival,local_visitante,goles_favor,goles_contra,resultado
+1,2023-08-15,Deportivo Atlas,Local,2,1,Victoria
+2,2023-08-22,Club América,Visitante,0,3,Derrota
+3,2023-08-29,Pumas UNAM,Local,1,1,Empate
+4,2023-09-05,Cruz Azul,Visitante,2,0,Victoria
+5,2023-09-12,Tigres UANL,Local,1,2,Derrota
+6,2023-09-19,Monterrey,Visitante,3,1,Victoria
+7,2023-09-26,Santos Laguna,Local,0,0,Empate
+8,2023-10-03,Chivas Guadalajara,Visitante,1,4,Derrota
+9,2023-10-10,León,Local,2,2,Empate
+10,2023-10-17,Pachuca,Visitante,1,0,Victoria
+11,2023-10-24,Toluca,Local,3,2,Victoria
+12,2023-10-31,Atlético San Luis,Visitante,0,1,Derrota
+13,2023-11-07,Necaxa,Local,2,0,Victoria
+14,2023-11-14,FC Juárez,Visitante,1,1,Empate
+15,2023-11-21,Mazatlán FC,Local,4,0,Victoria
+16,2023-11-28,Querétaro,Visitante,2,3,Derrota
+17,2023-12-05,Deportivo Atlas,Visitante,1,2,Derrota
+18,2023-12-12,Club América,Local,2,1,Victoria
+19,2023-12-19,Pumas UNAM,Visitante,0,2,Derrota
+20,2024-01-09,Cruz Azul,Local,3,0,Victoria
+21,2024-01-16,Tigres UANL,Visitante,1,3,Derrota
+22,2024-01-23,Monterrey,Local,2,2,Empate
+23,2024-01-30,Santos Laguna,Visitante,1,0,Victoria
+24,2024-02-06,Chivas Guadalajara,Local,3,1,Victoria
+25,2024-02-13,León,Visitante,0,1,Derrota
+26,2024-02-20,Pachuca,Local,2,1,Victoria
+27,2024-02-27,Toluca,Visitante,1,2,Derrota
+28,2024-03-05,Atlético San Luis,Local,4,1,Victoria
+29,2024-03-12,Necaxa,Visitante,2,2,Empate
+30,2024-03-19,FC Juárez,Local,1,0,Victoria
+31,2024-03-26,Mazatlán FC,Visitante,0,3,Derrota
+32,2024-04-02,Querétaro,Local,2,0,Victoria
+33,2024-04-09,Deportivo Atlas,Local,1,1,Empate
+34,2024-04-16,Club América,Visitante,2,4,Derrota

@@ -1,171 +1,95 @@
-# Rúbricas de Evaluación - Bloque 1: Prerrequisitos de Programación
+# Rúbricas de Evaluación - Bloque 1
+## Python Fundamentals
 
-## 📋 Información General
-
-Este documento contiene las rúbricas detalladas para evaluar tanto los **ejercicios semanales** como el **proyecto integrador** del Bloque 1.
-
-## 🎯 Distribución de Calificaciones
-
-- **Ejercicios Semanales**: 60% de la calificación del bloque
-- **Proyecto Integrador**: 40% de la calificación del bloque
+**Ponderación del Bloque:** 35% de la calificación final  
+**Componentes:** Examen Canvas (20%) + Caso Práctico Colaborativo (15%)
 
 ---
 
-## 📚 Rúbrica: Ejercicios Semanales (60%)
+## 🎯 Examen Canvas (20% de la calificación total)
 
-### Criterios Generales por Ejercicio
+### Configuración Automática
+- **Preguntas totales:** 70 en el banco
+- **Preguntas por examen:** 20-25 (selección aleatoria)
+- **Tiempo límite:** 45-60 minutos
+- **Intentos:** 1 único intento
+- **Calificación:** Automática, 100 puntos
 
-Cada ejercicio semanal se evalúa sobre **100 puntos** distribuidos en tres criterios:
-
-#### **1. Correctitud Técnica (40 puntos)**
-
-| Nivel | Puntos | Descripción |
-|-------|--------|-------------|
-| **Excelente** | 36-40 | Código ejecuta perfectamente sin errores. Uso correcto de sintaxis Python. Implementación precisa de todos los conceptos. |
-| **Competente** | 28-35 | Código ejecuta con errores menores. Sintaxis mayormente correcta. Implementación adecuada de conceptos principales. |
-| **En desarrollo** | 20-27 | Código ejecuta con errores significativos. Algunos errores de sintaxis. Implementación parcial de conceptos. |
-| **Insuficiente** | 0-19 | Código no ejecuta o tiene errores graves. Errores frecuentes de sintaxis. Conceptos mal implementados. |
-
-#### **2. Aplicación Práctica (30 puntos)**
-
-| Nivel | Puntos | Descripción |
-|-------|--------|-------------|
-| **Excelente** | 27-30 | Resolución completa y eficiente de problemas deportivos. Uso creativo y contextualizado de programación. |
-| **Competente** | 21-26 | Resolución adecuada de problemas. Uso apropiado de programación en contexto deportivo. |
-| **En desarrollo** | 15-20 | Resolución básica de problemas. Uso limitado del contexto deportivo. |
-| **Insuficiente** | 0-14 | Problemas no resueltos o mal resueltos. Falta de aplicación contextual. |
-
-#### **3. Claridad y Documentación (30 puntos)**
-
-| Nivel | Puntos | Descripción |
-|-------|--------|-------------|
-| **Excelente** | 27-30 | Código perfectamente comentado. Explicaciones claras y completas. Presentación profesional de resultados. |
-| **Competente** | 21-26 | Código bien comentado. Explicaciones adecuadas. Presentación clara de resultados. |
-| **En desarrollo** | 15-20 | Código parcialmente comentado. Explicaciones básicas. Presentación simple de resultados. |
-| **Insuficiente** | 0-14 | Código sin comentarios o mal comentado. Explicaciones confusas. Presentación deficiente. |
-
-### Criterios Específicos por Semana
-
-#### **Semana 1: Configuración y Fundamentos**
-- **Configuración del entorno** (15%): Verificación correcta de instalaciones
-- **Variables deportivas** (20%): Creación y uso apropiado de variables
-- **Cálculos deportivos** (25%): Operaciones aritméticas correctas
-- **Análisis del resultado** (25%): Uso de condicionales para análisis
-- **Comparación de equipos** (15%): Comparaciones lógicas y presentación
-
-#### **Semana 2: Estructuras de Datos y Control**
-- **Listas de equipos** (20%): Creación y manipulación de listas
-- **Diccionarios de jugadores** (20%): Uso de diccionarios para datos estructurados
-- **Bucles de partidos** (20%): Implementación correcta de bucles
-- **Clasificación básica** (20%): Ordenamiento usando bucles
-- **Análisis condicional** (20%): Categorización usando condicionales
+### Distribución por Temas:
+| Tema | % del Examen | Preguntas |
+|------|--------------|-----------|
+| Variables y tipos de datos | 20% | 4-5 |
+| Estructuras de control | 20% | 4-5 |
+| Funciones | 20% | 4-5 |
+| Listas y diccionarios | 20% | 4-5 |
+| Pandas y numpy básico | 20% | 4-5 |
 
 ---
 
-## 🏆 Rúbrica: Proyecto Integrador (40%)
+## 🤝 Caso Práctico Colaborativo (15% de la calificación total)
 
-### Evaluación por Módulos
+### "Análisis de Rendimiento de Club"
+**Modalidad:** Equipos de 3-4 estudiantes  
+**Duración:** 2 semanas
 
-El proyecto se evalúa sobre **100 puntos** distribuidos en cuatro módulos:
+### Criterios de Evaluación (100 puntos)
 
-#### **Módulo 1: Gestión de Datos (25 puntos)**
+#### 1. Análisis Técnico (40 puntos)
+- **Implementación de Funciones (15 pts):**
+  - calcular_puntos(): 5 pts
+  - evaluar_rendimiento(): 5 pts  
+  - analizar_jugador(): 5 pts
+- **Manipulación de Datos (15 pts):**
+  - Estructuras de control: 5 pts
+  - Listas y diccionarios: 5 pts
+  - Operaciones básicas: 5 pts
+- **Análisis de Resultados (10 pts):**
+  - Insights del equipo: 5 pts
+  - Recomendaciones: 5 pts
 
-| Criterio | Excelente (23-25) | Competente (18-22) | En desarrollo (13-17) | Insuficiente (0-12) |
-|----------|-------------------|--------------------|-----------------------|---------------------|
-| **Carga de datos** | Carga perfecta de todos los CSV. Validación completa de integridad. | Carga correcta con validación básica. | Carga con errores menores. Validación limitada. | Falla en carga o sin validación. |
-| **Funciones de utilidad** | Todas las funciones implementadas correctamente. | Funciones principales implementadas. | Funciones básicas implementadas. | Funciones faltantes o incorrectas. |
+#### 2. Trabajo Colaborativo (30 puntos)
+| Criterio | Excelente (27-30) | Bueno (24-26) | Suficiente (21-23) | Insuficiente (<21) |
+|----------|-------------------|---------------|-------------------|-------------------|
+| **Participación Equitativa** | Evidencia clara de contribución balanceada | Buena participación con pequeños desbalances | Participación básica, algunos menos activos | Participación desigual |
+| **Coordinación** | Excelente integración, flujo coherente | Buena coordinación e integración | Coordinación básica, pequeñas inconsistencias | Falta de coordinación |
 
-#### **Módulo 2: Análisis de Equipos (25 puntos)**
-
-| Criterio | Excelente (23-25) | Competente (18-22) | En desarrollo (13-17) | Insuficiente (0-12) |
-|----------|-------------------|--------------------|-----------------------|---------------------|
-| **Tabla de posiciones** | Cálculos perfectos de puntos, diferencias, etc. | Cálculos correctos con errores menores. | Cálculos básicos correctos. | Cálculos incorrectos o faltantes. |
-| **Estadísticas por equipo** | Análisis completo y detallado. | Análisis adecuado. | Análisis básico. | Análisis incompleto o incorrecto. |
-
-#### **Módulo 3: Análisis de Partidos (25 puntos)**
-
-| Criterio | Excelente (23-25) | Competente (18-22) | En desarrollo (13-17) | Insuficiente (0-12) |
-|----------|-------------------|--------------------|-----------------------|---------------------|
-| **Análisis de resultados** | Insights profundos y relevantes. | Análisis correcto con insights válidos. | Análisis básico. | Análisis superficial o incorrecto. |
-| **Ventaja local** | Análisis estadístico completo. | Análisis correcto. | Análisis simple. | Sin análisis o incorrecto. |
-
-#### **Módulo 4: Visualizaciones (25 puntos)**
-
-| Criterio | Excelente (23-25) | Competente (18-22) | En desarrollo (13-17) | Insuficiente (0-12) |
-|----------|-------------------|--------------------|-----------------------|---------------------|
-| **Gráficos requeridos** | Todos los gráficos perfectos, personalizados. | Gráficos correctos y claros. | Gráficos básicos funcionales. | Gráficos faltantes o incorrectos. |
-| **Dashboard** | Dashboard integrado y profesional. | Dashboard funcional. | Dashboard básico. | Sin dashboard o deficiente. |
-
-### Criterios Transversales
-
-#### **Calidad del Código (Aplicado a todos los módulos)**
-
-| Aspecto | Excelente | Competente | En desarrollo | Insuficiente |
-|---------|-----------|------------|---------------|--------------|
-| **Legibilidad** | Código limpio, bien estructurado | Código claro y organizado | Código básico legible | Código confuso o desorganizado |
-| **Comentarios** | Comentarios completos y útiles | Comentarios adecuados | Comentarios básicos | Sin comentarios o inadecuados |
-| **Nombres** | Variables y funciones descriptivas | Nombres apropiados | Nombres aceptables | Nombres confusos |
-
-#### **Documentación y Presentación**
-
-| Aspecto | Excelente | Competente | En desarrollo | Insuficiente |
-|---------|-----------|------------|---------------|--------------|
-| **README** | Documentación completa y profesional | Documentación clara | Documentación básica | Sin documentación o deficiente |
-| **Conclusiones** | Insights valiosos y bien fundamentados | Conclusiones válidas | Conclusiones básicas | Sin conclusiones o incorrectas |
-| **Presentación** | Resultados bien organizados | Presentación clara | Presentación simple | Presentación confusa |
+#### 3. Comunicación y Presentación (30 puntos)
+| Criterio | Excelente (27-30) | Bueno (24-26) | Suficiente (21-23) | Insuficiente (<21) |
+|----------|-------------------|---------------|-------------------|-------------------|
+| **Claridad Expositiva** | Presentación excepcional, mensaje claro | Presentación clara con buen dominio | Presentación básica pero comprensible | Presentación confusa |
+| **Participación Individual** | Todos participan activamente | Buena participación de la mayoría | Participación básica | Participación desigual |
+| **Manejo de Preguntas** | Respuestas precisas, comprensión profunda | Respuestas correctas con buen detalle | Respuestas básicas pero correctas | Respuestas incorrectas |
 
 ---
 
-## 🎯 Escalas de Calificación Final
+## 🏆 Escala de Calificación del Bloque
 
-### Conversión de Puntos a Calificación
+### Conversión Final (35% del curso):
+- **Examen Canvas:** 20% × (calificación/100)
+- **Caso Práctico:** 15% × (calificación/100)
+- **Total Bloque 1:** Suma de ambos componentes
 
-| Puntos | Calificación | Nivel |
-|--------|--------------|-------|
-| 95-100 | 10.0 | Sobresaliente |
-| 90-94 | 9.5 | Sobresaliente |
-| 85-89 | 9.0 | Competente |
-| 80-84 | 8.5 | Competente |
-| 75-79 | 8.0 | Satisfactorio |
-| 70-74 | 7.5 | Satisfactorio |
-| 65-69 | 7.0 | Satisfactorio |
-| 60-64 | 6.5 | Insuficiente |
-| 0-59 | 6.0 | Insuficiente |
-
-### Cálculo de Calificación del Bloque 1
-
-```
-Calificación_Bloque_1 = (Ejercicios_Semanales × 0.60) + (Proyecto_Integrador × 0.40)
-```
-
-**Ejemplo:**
-- Ejercicios Semanales: 85 puntos
-- Proyecto Integrador: 90 puntos
-- Calificación Final: (85 × 0.60) + (90 × 0.40) = 51 + 36 = 87 puntos → **9.0**
+### Niveles de Dominio:
+- **Excelente (90-100%):** Dominio sólido de fundamentos Python
+- **Competente (80-89%):** Comprensión adecuada con pequeñas deficiencias
+- **Suficiente (70-79%):** Nivel mínimo aceptable
+- **Insuficiente (<70%):** Requiere refuerzo antes de continuar
 
 ---
 
-## 📞 Proceso de Retroalimentación
+## ✅ Criterios de Integridad Académica
 
-### **Durante la Evaluación**
-1. **Revisión inicial**: Verificación de completitud y funcionamiento
-2. **Evaluación detallada**: Aplicación de rúbricas por criterio
-3. **Identificación de fortalezas**: Aspectos bien desarrollados
-4. **Áreas de mejora**: Aspectos que requieren desarrollo
+### Para Examen Canvas:
+- Trabajo individual estricto
+- No consulta de materiales externos
+- Una sola oportunidad de presentación
 
-### **Entrega de Resultados**
-1. **Calificación numérica**: Puntos por criterio y total
-2. **Comentarios específicos**: Retroalimentación detallada por criterio
-3. **Sugerencias de mejora**: Recomendaciones concretas para avanzar
-4. **Recursos adicionales**: Material de apoyo para reforzar áreas débiles
-
-### **Oportunidades de Mejora**
-- **Consultas**: Horarios de oficina para aclarar dudas
-- **Revisión**: Posibilidad de revisar evaluaciones en horarios designados
-- **Apoyo adicional**: Recursos extra para estudiantes que lo requieran
+### Para Caso Práctico:
+- Código original del equipo (80% mínimo)
+- Colaboración documentada y equitativa
+- Referencias citadas apropiadamente
+- Declaración de uso de IA si aplica
 
 ---
 
-**Esta rúbrica garantiza una evaluación justa, transparente y formativa que apoya el aprendizaje continuo.** ⚽🎯
-
-*La evaluación no es solo una medición, sino una oportunidad para crecer y mejorar en el dominio de la programación aplicada al análisis deportivo.*
+*Las rúbricas están diseñadas para evaluar tanto competencias técnicas como habilidades colaborativas esenciales para analistas de datos profesionales.*

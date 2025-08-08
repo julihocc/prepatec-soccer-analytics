@@ -655,62 +655,33 @@ pip install -r requirements.txt
 ## Estructura del Repositorio
 
 ```
-├── bloque-1/                    # Prerrequisitos de Programación con Python
-│   ├── README.md               # Información del bloque 1
-│   ├── semana-1/
-│   │   └── configuracion-fundamentos.ipynb
-│   ├── semana-2/
-│   │   └── estructuras-control.ipynb
-│   ├── semana-3/
-│   │   └── funciones-modulos.ipynb
-│   ├── semana-4/
-│   │   └── pandas-numpy-introduccion.ipynb
-│   └── semana-5/
-│       └── visualizacion-basica.ipynb
-├── bloque-2/                    # Fundamentos de Ciencia de Datos y Fútbol
-│   ├── README.md               # Información del bloque 2
-│   ├── semana-6/
-│   │   └── introduccion-exploracion.ipynb
-│   ├── semana-7/
-│   │   └── tipos-datos-futbol.ipynb
-│   ├── semana-8/
-│   │   └── estadistica-descriptiva.ipynb
-│   ├── semana-9/
-│   │   └── visualizacion-datos.ipynb
-│   └── semana-10/
-│       └── analisis-interpretacion.ipynb
-├── bloque-3/                    # Mi Primera Predicción con Datos de Fútbol
-│   ├── README.md               # Información del bloque 3
-│   ├── semana-11/
-│   │   └── modelado-predictivo-introduccion.ipynb
-│   ├── semana-12/
-│   │   └── modelos-avanzados-clasificacion.ipynb
-│   ├── semana-13/
-│   │   └── metricas-avanzadas-evaluacion.ipynb
-│   ├── semana-14/
-│   │   └── feature-engineering-optimizacion.ipynb
-│   └── semana-15/
-│       └── proyecto-final-integrador.ipynb
+├── contenido/                   # Main course content
+│   ├── bloque-1/                # Prerrequisitos de Programación con Python
+│   ├── bloque-2/                # Fundamentos de Ciencia de Datos y Fútbol
+│   └── bloque-3/                # Mi Primera Predicción con Datos de Fútbol
 ├── evaluaciones/                # Sistema de Evaluaciones del Curso
-│   ├── README.md               # Información del sistema de evaluaciones
 │   ├── bloque-1/               # Evaluaciones del Bloque 1
-│   │   ├── ejercicios-semanales/
-│   │   ├── proyecto-integrador/
-│   │   └── rubricas/
 │   ├── bloque-2/               # Evaluaciones del Bloque 2
-│   │   ├── ejercicios-preparatorios/
-│   │   ├── proyecto-analisis/
-│   │   └── rubricas/
-│   ├── bloque-3/               # Evaluaciones del Bloque 3
-│   │   ├── ejercicios-practica/
-│   │   ├── proyecto-predictivo/
-│   │   └── rubricas/
-│   └── datasets/               # Datasets para evaluaciones
+│   └── bloque-3/               # Evaluaciones del Bloque 3
 ├── referencias/                 # Material de apoyo
-│   ├── bibliografia-recursos.md # Bibliografía especializada
-│   └── guia-instalacion.md     # Guías técnicas
+├── AI-CONTEXT.md               # Contexto principal para asistentes de IA
+├── CLAUDE.md                   # Instrucciones específicas para Claude Code
+├── .github-copilot-instructions.md # Instrucciones para GitHub Copilot
+├── INSTALLATION.md             # Guía de instalación completa
+├── install_dependencies.py     # Script de instalación automática
+├── requirements.txt            # Dependencias del proyecto
 └── README.md                   # Este archivo
 ```
+
+### Para Desarrolladores y Asistentes de IA
+
+Este proyecto incluye archivos de contexto específicos para facilitar el trabajo con asistentes de IA:
+
+- **`AI-CONTEXT.md`** - Contexto principal y completo del proyecto
+- **`CLAUDE.md`** - Instrucciones específicas para Claude Code
+- **`.github-copilot-instructions.md`** - Instrucciones para GitHub Copilot
+
+Todos los asistentes de IA deben consultar `AI-CONTEXT.md` como fuente principal de contexto para evitar duplicación de información.
 
 ## Contribución
 

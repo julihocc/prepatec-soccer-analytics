@@ -1,14 +1,14 @@
-Instrucciones para Claude Code
-===============================
+# CLAUDE.md
 
-**Para trabajar en este proyecto necesitas leer el contexto completo en:**
+## Instrucciones para Claude Code
 
-**link:.ai/AI-CONTEXT.md[~/.ai/AI-CONTEXT.md]**
+**Claude, para trabajar en este proyecto necesitas leer el contexto completo en:**
 
-Acceso Rápido al Contexto
--------------------------
+**[.ai/AI-CONTEXT.md](./.ai/AI-CONTEXT.md)**
 
-Por favor, *antes de hacer cualquier cambio o sugerencia*, lee completamente el archivo `~/.ai/AI-CONTEXT.md` que contiene:
+## Acceso Rápido al Contexto
+
+Por favor, **antes de hacer cualquier cambio o sugerencia**, lee completamente el archivo `.ai/AI-CONTEXT.md` que contiene:
 
 * *Visión general del proyecto* - Curso educativo de ciencia de datos aplicada al fútbol
 * *Estructura del repositorio* - Organización de bloques, semanas y evaluaciones
@@ -17,38 +17,34 @@ Por favor, *antes de hacer cualquier cambio o sugerencia*, lee completamente el 
 * *Metodología educativa* - Progressión incremental, evaluaciones por competencias
 * *Comandos personalizados* - Como el comando `/commit` específico para este proyecto
 
-Comandos Específicos de Claude
-===============================
+## Comandos Específicos de Claude
 
-/commit - Commit Inteligente
-----------------------------
+### `/commit` - Commit Inteligente
 
-[source,bash]
-----
-
+```bash
 /commit                           # Commit automático con análisis de cambios
 /commit "mensaje personalizado"   # Commit con mensaje específico
-----
+```
 
 *Importante:* El comando `/commit` usa las reglas específicas del proyecto educativo (mensajes en español, contexto futbolístico, etc.)
 
-Checklist Antes de Trabajar
-============================
+## Checklist Antes de Trabajar
 
-* [ ] He leído `~/.ai/AI-CONTEXT.md` completamente
+* [ ] He leído `.ai/AI-CONTEXT.md` completamente
 * [ ] Entiendo que es un curso educativo en español para preparatoria
 * [ ] Recuerdo usar contexto futbolístico en todos los ejemplos
 * [ ] Mantengo el nivel educativo apropiado para estudiantes
 * [ ] Haré cambios incrementales, no reescrituras completas
 
-Contexto Educativo Crítico
-===========================
+## Contexto Educativo Crítico
 
-Este proyecto es *muy específico*:
+Este proyecto es **muy específico**:
 
-Audiencia:: Estudiantes de preparatoria del Tecnológico de Monterrey
-Idioma:: Todo en español (variables, comentarios, explicaciones)
-Contexto:: Análisis de datos de fútbol exclusivamente
-Metodología:: Aprendizaje progresivo con proyectos colaborativos
+* **Audiencia:** Estudiantes de preparatoria del Tecnológico de Monterrey
+* **Idioma:** Todo en español (variables, comentarios, explicaciones)
+* **Contexto:** Análisis de datos de fútbol exclusivamente
+* **Metodología:** Aprendizaje progresivo con proyectos colaborativos
 
-*Lee el contexto completo en: link:.ai/AI-CONTEXT.md[~/.ai/AI-CONTEXT.md]*
+---
+
+**Lee el contexto completo en: [.ai/AI-CONTEXT.md](./.ai/AI-CONTEXT.md)**

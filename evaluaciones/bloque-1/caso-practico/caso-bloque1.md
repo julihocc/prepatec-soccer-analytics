@@ -1,260 +1,194 @@
 # Caso Práctico Colaborativo - Bloque 1
-## Análisis del Rendimiento de un Club de Fútbol
+## Análisis Básico de un Equipo de Fútbol
 
-**Modalidad:** Colaborativa (equipos de 3-4 estudiantes)  
+**Modalidad:** Colaborativa (equipos de 2-3 estudiantes)  
 **Ponderación:** 15% del 1er Parcial  
-**Duración:** 2 semanas  
-**Entrega:** Notebook de Jupyter + presentación de 10 minutos
+**Duración:** 1 semana  
+**Entrega:** Notebook de Jupyter + presentación simple
 
 ---
 
 ## Contexto del Problema
 
-Tu equipo ha sido contratado como analistas junior por un club de fútbol local. El director técnico necesita un informe sobre el rendimiento del equipo durante la última temporada para tomar decisiones sobre fichajes y estrategias.
+Eres parte de un equipo que ayuda a analizar el rendimiento básico de un equipo de fútbol local. Necesitan entender cómo jugó el equipo la temporada pasada usando Python básico.
 
-**Situación:** El club tiene datos básicos de la temporada pasada pero necesita convertir esos números en información útil para la toma de decisiones.
+**Situación:** Tienen datos simples de partidos y jugadores, y quieren saber cosas básicas como cuántos puntos ganaron, quién marcó más goles, etc.
 
 ---
 
 ## Objetivos de Aprendizaje
 
 Al completar este caso práctico, los estudiantes serán capaces de:
-- Aplicar fundamentos de Python para resolver problemas reales
-- Trabajar colaborativamente en análisis de datos
-- Crear funciones personalizadas para cálculos deportivos
-- Manipular listas y diccionarios con datos futbolísticos
-- Presentar resultados de forma clara y profesional
+- Usar variables, listas y diccionarios básicos en Python
+- Escribir funciones simples para cálculos de fútbol
+- Usar bucles for e if para procesar datos
+- Trabajar en equipo para resolver un problema
+- Explicar sus resultados de forma clara
 
 ---
 
-## Datos Proporcionados
+## Datos Que Van a Usar
 
-### Dataset: `temporada_club.csv`
-```csv
-partido,fecha,rival,local_visitante,goles_favor,goles_contra,resultado
-1,2023-08-15,Deportivo Atlas,Local,2,1,Victoria
-2,2023-08-22,Club América,Visitante,0,3,Derrota
-3,2023-08-29,Pumas UNAM,Local,1,1,Empate
-...
+**NO usarán archivos CSV** - Todo será con listas y diccionarios simples en Python
+
+### Datos de Partidos (lista simple):
+```python
+resultados_partidos = ["Victoria", "Derrota", "Victoria", "Empate", "Victoria", 
+                      "Derrota", "Victoria", "Empate", "Victoria", "Victoria"]
+
+goles_favor = [2, 0, 3, 1, 2, 0, 1, 2, 3, 2]
+goles_contra = [1, 3, 1, 1, 0, 2, 0, 2, 1, 1]
 ```
 
-### Dataset: `jugadores_rendimiento.csv`
-```csv
-jugador,posicion,edad,partidos_jugados,goles,asistencias,tarjetas_amarillas,tarjetas_rojas
-Carlos Vela,Delantero,34,28,15,8,3,0
-Andrés Guardado,Mediocampo,37,30,2,12,5,1
-...
+### Datos de Jugadores (diccionario simple):
+```python
+jugadores = {
+    "Carlos": {"posicion": "Delantero", "goles": 8},
+    "María": {"posicion": "Mediocampo", "goles": 3},
+    "Luis": {"posicion": "Defensa", "goles": 1},
+    "Ana": {"posicion": "Delantero", "goles": 6}
+}
 ```
 
 ---
 
 ## Tareas Requeridas
 
-### Parte 1: Análisis Básico con Python (40 puntos)
+### Parte 1: Python Básico (50 puntos)
 
-#### 1.1 Configuración del Entorno (5 puntos)
-- Importar las librerías necesarias
-- Configurar el entorno de trabajo
-- Cargar los datos usando pandas
+#### 1.1 Contar Resultados con Bucles (15 puntos)
+Usar un bucle for para contar victorias, empates y derrotas:
 
-#### 1.2 Exploración de Datos (10 puntos)
-- Crear variables para almacenar estadísticas básicas
-- Usar estructuras de control para contar victorias, empates y derrotas
-- Implementar bucles para calcular totales de goles
-
-**Código requerido:**
 ```python
-# Ejemplo de lo que deben implementar
+# Definir las listas de datos (ya proporcionadas arriba)
+resultados_partidos = ["Victoria", "Derrota", "Victoria", "Empate", "Victoria", 
+                      "Derrota", "Victoria", "Empate", "Victoria", "Victoria"]
+
+# Su código aquí: contar cada tipo de resultado
 victorias = 0
-empates = 0
+empates = 0  
 derrotas = 0
 
-for resultado in lista_resultados:
-    if resultado == "Victoria":
-        victorias += 1
-    elif resultado == "Empate":
-        empates += 1
-    else:
-        derrotas += 1
+# Usar bucle for e if para contar
 ```
 
-#### 1.3 Creación de Funciones (15 puntos)
-Crear las siguientes funciones obligatorias:
+#### 1.2 Crear Funciones Simples (20 puntos)
+Escribir estas 2 funciones obligatorias:
 
 **a) Función para calcular puntos:**
 ```python
-def calcular_puntos(victorias, empates, derrotas):
-    """
-    Calcula puntos según sistema FIFA: Victoria=3, Empate=1, Derrota=0
-    """
-    # Su implementación aquí
-    return puntos_totales
+def calcular_puntos(victorias, empates):
+    """Calcula puntos: Victoria=3, Empate=1"""
+    # Su código aquí
+    return total_puntos
 ```
 
-**b) Función para evaluar rendimiento:**
+**b) Función para encontrar mejor goleador:**
 ```python
-def evaluar_rendimiento(goles_favor, goles_contra):
-    """
-    Determina si el rendimiento es: Excelente, Bueno, Regular, Deficiente
-    """
-    # Su implementación aquí
-    return categoria
+def mejor_goleador(jugadores):
+    """Encuentra quién marcó más goles"""
+    # Su código aquí
+    return nombre_mejor, goles_mejor
 ```
 
-**c) Función para análisis de jugador:**
-```python
-def analizar_jugador(goles, partidos, edad):
-    """
-    Calcula promedio de goles y determina si es prometedor
-    """
-    # Su implementación aquí
-    return promedio, es_prometedor
-```
+#### 1.3 Trabajar con Listas y Diccionarios (15 puntos)
+- Calcular total de goles a favor usando la lista `goles_favor`
+- Encontrar el partido con más goles usando funciones básicas
+- Usar el diccionario `jugadores` para encontrar información básica
 
-#### 1.4 Manipulación de Estructuras de Datos (10 puntos)
-- Crear listas con estadísticas de cada partido
-- Usar diccionarios para organizar información de jugadores
-- Implementar operaciones de slicing y indexing
+### Parte 2: Análisis Simple (30 puntos)
 
-**Ejemplo requerido:**
-```python
-# Organizar jugadores por posición
-jugadores_por_posicion = {
-    'Delanteros': [],
-    'Mediocampos': [],
-    'Defensas': [],
-    'Porteros': []
-}
-```
+#### 2.1 Estadísticas Básicas del Equipo (15 puntos)
+- Usar las funciones que crearon para calcular puntos totales
+- Calcular el promedio de goles por partido (total goles ÷ partidos)
+- Determinar si el equipo marcó más goles de los que recibió
 
-### Parte 2: Análisis de Rendimiento (35 puntos)
+#### 2.2 Análisis de Jugadores (15 puntos)  
+- Usar su función para encontrar el mejor goleador
+- Contar cuántos delanteros hay en el equipo
+- Calcular el total de goles marcados por todos los jugadores
 
-#### 2.1 Estadísticas del Equipo (15 puntos)
-- Calcular total de puntos obtenidos
-- Determinar promedio de goles por partido
-- Analizar rendimiento como local vs visitante
-- Identificar la racha más larga (victorias/derrotas consecutivas)
+### Parte 3: Presentación Simple (20 puntos)
 
-#### 2.2 Análisis Individual de Jugadores (10 puntos)
-- Identificar al goleador del equipo
-- Encontrar al jugador con más asistencias
-- Calcular la edad promedio del plantel
-- Determinar qué posición anota más goles
-
-#### 2.3 Insights y Recomendaciones (10 puntos)
-- ¿En qué posición necesita refuerzos el equipo?
-- ¿Cuál es el punto fuerte del equipo?
-- ¿Qué jugador tiene mejor rendimiento por edad?
-
-### Parte 3: Presentación y Documentación (25 puntos)
-
-#### 3.1 Notebook Limpio (15 puntos)
-- Código bien documentado con comentarios
-- Uso correcto de markdown para explicaciones
-- Estructura clara y lógica
-- Sin errores de ejecución
+#### 3.1 Notebook Limpio (10 puntos)
+- Código funciona sin errores
+- Comentarios explicando qué hace cada parte
+- Estructura clara paso a paso
 
 #### 3.2 Presentación Grupal (10 puntos)
-- 10 minutos máximo
-- Cada integrante debe participar
-- Mostrar hallazgos principales
-- Responder preguntas del profesor y compañeros
+- 5 minutos máximo por equipo
+- Mostrar sus resultados principales
+- Cada integrante explica una parte
 
 ---
 
 ## Entregables
 
 ### 1. Notebook de Jupyter (`caso_bloque1_equipo[X].ipynb`)
-- Código completo y funcional
-- Análisis paso a paso
-- Comentarios explicativos
-- Conclusiones claras
+- Código funcional con las dos funciones solicitadas
+- Análisis paso a paso con comentarios
+- Resultados de todos los cálculos
 
-### 2. Archivo de Presentación (`presentacion_equipo[X].pdf`)
-- 5-8 diapositivas máximo
-- Hallazgos principales
-- Recomendaciones concretas
-
-### 3. Reporte Ejecutivo (`reporte_equipo[X].pdf`)
-- 2 páginas máximo
-- Resumen para el director técnico
-- Lenguaje no técnico
-- Recomendaciones accionables
+### 2. Presentación Simple (`presentacion_equipo[X].pdf`)
+- 3-4 diapositivas máximo
+- Sus resultados principales
+- Explicación de qué aprendieron
 
 ---
 
 ## Criterios de Evaluación
 
-### Rúbrica de Evaluación (100 puntos total)
+### Rúbrica Simplificada (100 puntos total)
 
-| Criterio | Excelente (90-100) | Bueno (80-89) | Suficiente (70-79) | Insuficiente (<70) |
-|----------|-------------------|---------------|-------------------|-------------------|
-| **Código Python** | Funciona perfectamente, uso correcto de todos los conceptos | Funciona con errores menores | Funciona parcialmente | No funciona o tiene errores graves |
-| **Funciones** | Todas las funciones implementadas correctamente | 2-3 funciones correctas | 1-2 funciones correctas | Funciones incorrectas o faltantes |
-| **Análisis** | Insights profundos y útiles | Análisis correcto pero básico | Análisis superficial | Análisis incorrecto |
-| **Colaboración** | Participación equitativa demostrable | Buena colaboración | Colaboración básica | Falta evidencia de trabajo colaborativo |
-| **Presentación** | Excelente comunicación, dominio del tema | Buena presentación | Presentación básica | Presentación deficiente |
+| Criterio | Puntos | ¿Qué evalúo? |
+|----------|---------|--------------|
+| **Python Básico** | 50 | ¿Funcionan los bucles, if, y operaciones básicas? |
+| **Funciones** | 30 | ¿Crearon las 2 funciones solicitadas correctamente? |
+| **Presentación** | 20 | ¿Explicaron claramente sus resultados? |
 
-### Componentes de la Calificación:
-- **Análisis Técnico (40%):** Correctitud del código y funciones
-- **Aplicación de Conceptos (30%):** Uso apropiado de Python fundamentals
-- **Trabajo Colaborativo (15%):** Evidencia de trabajo en equipo
-- **Comunicación (15%):** Calidad de presentación y reportes
+### Lo que Busco en Cada Parte:
 
----
+#### Python Básico (50 puntos):
+- **Excelente (45-50):** Todo el código funciona, usan bucles e if correctamente
+- **Bueno (40-44):** Código funciona con errores pequeños
+- **Suficiente (35-39):** Código funciona pero con algunos problemas
+- **Insuficiente (<35):** Código no funciona o tiene errores graves
 
-## Cronograma de Trabajo
-
-### Semana 1:
-- **Días 1-2:** Formación de equipos y exploración de datos
-- **Días 3-4:** Implementación de funciones básicas
-- **Días 5-7:** Análisis de estadísticas del equipo
-
-### Semana 2:
-- **Días 1-3:** Análisis de jugadores y insights
-- **Días 4-5:** Preparación de presentación
-- **Días 6-7:** Presentaciones grupales
+#### Funciones (30 puntos):
+- **Excelente (27-30):** Las 2 funciones están bien hechas y funcionan
+- **Bueno (24-26):** 1 función perfecta, 1 con pequeños errores
+- **Suficiente (21-23):** Las funciones funcionan pero tienen errores
+- **Insuficiente (<21):** Las funciones no funcionan o faltan
 
 ---
 
-## Recursos de Apoyo
+## Cronograma de la Semana
 
-### Tutoriales Recomendados:
-- Repaso de funciones en Python
-- Manipulación de listas y diccionarios
-- Lectura de archivos CSV con pandas
-- Mejores prácticas de documentación
-
-### Ejemplos de Código:
-```python
-# Ejemplo de análisis básico
-def analisis_basico(datos):
-    """Función ejemplo para mostrar estructura"""
-    resultados = {}
-    
-    for columna in datos.columns:
-        if columna.startswith('goles'):
-            resultados[columna] = datos[columna].sum()
-    
-    return resultados
-```
-
-### Preguntas Guía:
-1. ¿Cómo puedo usar bucles para procesar cada partido?
-2. ¿Qué estructura de datos es mejor para organizar información de jugadores?
-3. ¿Cómo puedo hacer que mis funciones sean reutilizables?
-4. ¿Qué insights son más valiosos para un director técnico?
+| Día | ¿Qué hacer? | Tiempo |
+|-----|-------------|--------|
+| **Lunes** | Formar equipos, entender el problema | 1 hora |
+| **Miércoles** | Escribir código: bucles, funciones, cálculos | 2 horas |
+| **Viernes** | Terminar análisis y presentar resultados | 1 hora |
 
 ---
 
-## Notas Importantes
+## Consejos Útiles
 
-- **Plagio:** Cada equipo debe desarrollar su propio código
-- **Consultas:** Se permite consultar documentación oficial y tutoriales
-- **Herramientas:** Solo se permite usar conceptos vistos en Bloque 1
-- **Formato:** Todos los archivos deben seguir la convención de nombres especificada
-- **Fecha límite:** No se aceptan entregas tardías
+### Para el Código:
+- Usen variables con nombres claros: `total_victorias`, `mejor_jugador`
+- Comenten su código para explicar qué hace cada parte
+- Prueben sus funciones con ejemplos simples primero
+
+### Para el Trabajo en Equipo:
+- Una persona se encarga de los bucles
+- Otra persona se encarga de las funciones  
+- Todos participan en el análisis final
+
+### Preguntas Frecuentes:
+1. ¿Cómo cuento elementos en una lista? → Usar bucle for
+2. ¿Cómo encuentro el máximo en un diccionario? → Usar bucle para comparar valores
+3. ¿Cómo calculo promedios? → suma total ÷ cantidad
 
 ---
 
-*Este caso práctico está diseñado para aplicar todos los conceptos fundamentales de Python en un contexto deportivo real, preparando a los estudiantes para análisis más avanzados en bloques posteriores.*
+*¡Este caso práctico les ayudará a aplicar lo básico de Python (variables, bucles, funciones) con datos de fútbol!*

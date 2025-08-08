@@ -18,47 +18,47 @@
 ### Distribución por Temas:
 | Tema | % del Examen | Preguntas |
 |------|--------------|-----------|
-| Variables y tipos de datos | 20% | 4-5 |
-| Estructuras de control | 20% | 4-5 |
-| Funciones | 20% | 4-5 |
-| Listas y diccionarios | 20% | 4-5 |
-| Pandas y numpy básico | 20% | 4-5 |
+| Variables y tipos de datos | 25% | 5-6 |
+| Estructuras de control (if, for) | 25% | 5-6 |
+| Funciones básicas | 25% | 5-6 |
+| Listas y diccionarios | 25% | 5-6 |
 
 ---
 
 ## Caso Práctico Colaborativo (15% de la calificación total)
 
-### "Análisis de Rendimiento de Club"
-**Modalidad:** Equipos de 3-4 estudiantes  
-**Duración:** 2 semanas
+### "Análisis Básico de un Equipo de Fútbol"
+**Modalidad:** Equipos de 2-3 estudiantes  
+**Duración:** 1 semana
 
 ### Criterios de Evaluación (100 puntos)
 
-#### 1. Análisis Técnico (40 puntos)
-- **Implementación de Funciones (15 pts):**
-  - calcular_puntos(): 5 pts
-  - evaluar_rendimiento(): 5 pts  
-  - analizar_jugador(): 5 pts
-- **Manipulación de Datos (15 pts):**
-  - Estructuras de control: 5 pts
-  - Listas y diccionarios: 5 pts
-  - Operaciones básicas: 5 pts
-- **Análisis de Resultados (10 pts):**
-  - Insights del equipo: 5 pts
-  - Recomendaciones: 5 pts
+#### 1. Python Básico (50 puntos)
+- **Variables y Listas (15 pts):**
+  - Uso correcto de listas para datos: 8 pts
+  - Manejo de variables básicas: 7 pts
+- **Bucles y Condicionales (20 pts):**
+  - Bucle for para contar resultados: 10 pts
+  - Condicionales if/elif/else: 10 pts
+- **Funciones Simples (15 pts):**
+  - calcular_puntos(): 8 pts
+  - mejor_goleador(): 7 pts
 
-#### 2. Trabajo Colaborativo (30 puntos)
-| Criterio | Excelente (27-30) | Bueno (24-26) | Suficiente (21-23) | Insuficiente (<21) |
-|----------|-------------------|---------------|-------------------|-------------------|
-| **Participación Equitativa** | Evidencia clara de contribución balanceada | Buena participación con pequeños desbalances | Participación básica, algunos menos activos | Participación desigual |
-| **Coordinación** | Excelente integración, flujo coherente | Buena coordinación e integración | Coordinación básica, pequeñas inconsistencias | Falta de coordinación |
+#### 2. Análisis Simple (30 puntos)
+- **Estadísticas del Equipo (15 pts):**
+  - Cálculo de puntos totales: 5 pts
+  - Promedio de goles por partido: 5 pts
+  - Diferencia de goles: 5 pts
+- **Análisis de Jugadores (15 pts):**
+  - Identificación del mejor goleador: 5 pts
+  - Conteo por posiciones: 5 pts
+  - Análisis básico de rendimiento: 5 pts
 
-#### 3. Comunicación y Presentación (30 puntos)
-| Criterio | Excelente (27-30) | Bueno (24-26) | Suficiente (21-23) | Insuficiente (<21) |
+#### 3. Trabajo Colaborativo (20 puntos)
+| Criterio | Excelente (18-20) | Bueno (16-17) | Suficiente (14-15) | Insuficiente (<14) |
 |----------|-------------------|---------------|-------------------|-------------------|
-| **Claridad Expositiva** | Presentación excepcional, mensaje claro | Presentación clara con buen dominio | Presentación básica pero comprensible | Presentación confusa |
-| **Participación Individual** | Todos participan activamente | Buena participación de la mayoría | Participación básica | Participación desigual |
-| **Manejo de Preguntas** | Respuestas precisas, comprensión profunda | Respuestas correctas con buen detalle | Respuestas básicas pero correctas | Respuestas incorrectas |
+| **Participación Equitativa** | Contribución balanceada entre 2-3 miembros | Buena participación con pequeños desbalances | Participación básica, algunos menos activos | Participación desigual |
+| **Coordinación** | Integración coherente del código | Buena coordinación e integración | Coordinación básica, pequeñas inconsistencias | Falta de coordinación |
 
 ---
 
@@ -70,10 +70,10 @@
 - **Total Bloque 1:** Suma de ambos componentes
 
 ### Niveles de Dominio:
-- **Excelente (90-100%):** Dominio sólido de fundamentos Python
-- **Competente (80-89%):** Comprensión adecuada con pequeñas deficiencias
-- **Suficiente (70-79%):** Nivel mínimo aceptable
-- **Insuficiente (<70%):** Requiere refuerzo antes de continuar
+- **Excelente (90-100%):** Dominio sólido de Python básico y análisis de datos simple
+- **Competente (80-89%):** Comprensión adecuada de variables, bucles y funciones básicas
+- **Suficiente (70-79%):** Nivel mínimo aceptable para continuar con pandas
+- **Insuficiente (<70%):** Requiere refuerzo de fundamentos Python antes de continuar
 
 ---
 
@@ -85,11 +85,38 @@
 - Una sola oportunidad de presentación
 
 ### Para Caso Práctico:
-- Código original del equipo (80% mínimo)
-- Colaboración documentada y equitativa
-- Referencias citadas apropiadamente
+- Código Python básico original del equipo (80% mínimo)
+- Colaboración documentada y equitativa entre 2-3 miembros
+- Referencias citadas apropiadamente (si se consultan fuentes externas)
 - Declaración de uso de IA si aplica
 
 ---
 
-*Las rúbricas están diseñadas para evaluar tanto competencias técnicas como habilidades colaborativas esenciales para analistas de datos profesionales.*
+## ¿Qué evalúo en este bloque?
+
+**Como instructor, busco evidencia de que el estudiante puede:**
+
+✅ **Python Básico:**
+- Crear y usar variables para almacenar datos
+- Escribir bucles `for` para procesar listas
+- Usar condicionales `if/elif/else` para tomar decisiones
+- Crear funciones simples que reciban parámetros y regresen valores
+
+✅ **Estructuras de Datos:**
+- Trabajar con listas para almacenar secuencias de datos
+- Usar diccionarios para organizar información estructurada
+- Acceder a elementos usando índices y llaves
+
+✅ **Análisis Básico:**
+- Hacer cálculos simples con los datos (sumas, promedios, conteos)
+- Encontrar patrones básicos en la información
+- Sacar conclusiones simples basadas en los resultados
+
+✅ **Colaboración:**
+- Trabajar efectivamente en equipos pequeños (2-3 personas)
+- Integrar código de diferentes miembros del equipo
+- Documentar el proceso de trabajo colaborativo
+
+---
+
+*Esta rúbrica evalúa fundamentos Python esenciales que preparan a los estudiantes para trabajar con pandas y análisis más avanzados en bloques posteriores.*

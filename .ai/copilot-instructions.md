@@ -1,6 +1,6 @@
 # Instrucciones para GitHub Copilot
 
-## 🔗 Contexto Centralizado del Proyecto
+## Contexto Centralizado del Proyecto
 
 **Para información completa del proyecto, consulta: [AI-CONTEXT.md](./AI-CONTEXT.md)**
 
@@ -13,7 +13,7 @@ Este es un curso educativo de ciencia de datos aplicada al fútbol en **español
 - **Variables en español:** `goles_por_partido`, `equipos_favoritos`, `datos_futbol`
 - **Contexto futbolístico:** Usar equipos reales (Barcelona, Real Madrid, Manchester City)
 - **Nivel educativo:** Explicaciones claras para estudiantes de preparatoria
-- **Sin emojis en código:** Mantener tono profesional pero atractivo
+- **ABSOLUTAMENTE SIN EMOJIS:** Mantener tono profesional y limpio sin emojis
 
 ### Patrones de Código Preferidos
 
@@ -32,7 +32,7 @@ datos_futbol = pd.DataFrame(...)
 goles_por_equipo = datos_futbol.groupby('equipo')['goles'].sum()
 
 # Comentarios educativos
-print("¡Este análisis nos muestra los patrones de goles!")
+print("Este análisis nos muestra los patrones de goles!")
 ```
 
 ### Estructura de Notebooks

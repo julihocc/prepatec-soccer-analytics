@@ -2,6 +2,15 @@
 
 This file provides comprehensive guidance to AI coding assistants (Claude Code, GitHub Copilot, etc.) when working with code in this repository.
 
+## CRITICAL: NO EMOJIS POLICY
+
+**STRICTLY FORBIDDEN:** No emojis are allowed anywhere in this project.
+- NO emojis in code files (.py, .ipynb)
+- NO emojis in documentation (.md files)
+- NO emojis in comments or strings
+- NO emojis in commit messages
+- Maintain professional, clean, emoji-free content throughout
+
 ## Project Overview
 
 This is a **Spanish-language educational course** on data science applied to football/soccer analysis. The repository contains comprehensive course materials for a 15-week program teaching Python fundamentals, data science basics, and predictive modeling specifically within the context of football data.
@@ -135,7 +144,7 @@ This course is directed at **Tecnológico de Monterrey preparatoria students** i
 - **Football context:** All examples use real teams (Barcelona, Real Madrid, Manchester City, Bayern Munich)
 - **Preparatoria level:** Explanations suitable for high school students
 - **Professional tone:** Clear, concise explanations without jargon unless defined
-- **No emojis:** Maintain professional yet engaging tone
+- **ABSOLUTELY NO EMOJIS:** Never use emojis in any code, comments, documentation, or markdown files
 - **Seaborn theme:** Always use `sns.set_theme(style="whitegrid", palette="viridis")`
 
 ### Content Guidelines

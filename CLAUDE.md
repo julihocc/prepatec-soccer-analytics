@@ -5,7 +5,6 @@ Instrucciones para Claude Code
 
 **link:.ai/AI-CONTEXT.md[.ai/AI-CONTEXT.md]**
 
-
 Acceso Rápido al Contexto
 -------------------------
 
@@ -18,22 +17,20 @@ Por favor, *antes de hacer cualquier cambio o sugerencia*, lee completamente el 
 * *Metodología educativa* - Progressión incremental, evaluaciones por competencias
 * *Comandos personalizados* - Como el comando `/commit` específico para este proyecto
 
-
 Comandos Específicos de Claude
 ===============================
-
 
 /commit - Commit Inteligente
 ----------------------------
 
 [source,bash]
 ----
+
 /commit                           # Commit automático con análisis de cambios
 /commit "mensaje personalizado"   # Commit con mensaje específico
 ----
 
 *Importante:* El comando `/commit` usa las reglas específicas del proyecto educativo (mensajes en español, contexto futbolístico, etc.)
-
 
 Checklist Antes de Trabajar
 ============================
@@ -44,7 +41,6 @@ Checklist Antes de Trabajar
 * [ ] Mantengo el nivel educativo apropiado para estudiantes
 * [ ] Haré cambios incrementales, no reescrituras completas
 
-
 Contexto Educativo Crítico
 ===========================
 
@@ -54,6 +50,5 @@ Audiencia:: Estudiantes de preparatoria del Tecnológico de Monterrey
 Idioma:: Todo en español (variables, comentarios, explicaciones)
 Contexto:: Análisis de datos de fútbol exclusivamente
 Metodología:: Aprendizaje progresivo con proyectos colaborativos
-
 
 *Lee el contexto completo en: link:.ai/AI-CONTEXT.md[.ai/AI-CONTEXT.md]*

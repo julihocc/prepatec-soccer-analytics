@@ -3,7 +3,6 @@ AI-CONTEXT: Contexto Completo para Asistentes de IA
 
 Este archivo proporciona orientación completa a los asistentes de codificación de IA (Claude Code, GitHub Copilot, etc.) cuando trabajen con código en este repositorio.
 
-
 POLÍTICA CRÍTICA: SIN EMOJIS
 =============================
 
@@ -15,7 +14,6 @@ POLÍTICA CRÍTICA: SIN EMOJIS
 * SIN emojis en mensajes de commit
 * Mantener contenido profesional, limpio, sin emojis en todo momento
 
-
 Visión General del Proyecto
 ============================
 
@@ -25,10 +23,8 @@ Audiencia objetivo:: Estudiantes de nivel preparatoria (bachillerato)
 Idioma:: Español (todas las variables, comentarios y contenido)
 Contexto:: Análisis de datos de fútbol/soccer en todos los ejercicios
 
-
 Estructura del Repositorio
 ===========================
-
 
 Bloques Principales del Curso (3 niveles progresivos)
 ------------------------------------------------------
@@ -50,7 +46,6 @@ Ubicación: directorio `contenido/`
 * Introducción a conceptos básicos de machine learning
 * Modelos predictivos simples usando scikit-learn
 
-
 Sistema de Evaluación (`evaluaciones/`)
 ----------------------------------------
 
@@ -61,7 +56,6 @@ Sistema de Evaluación (`evaluaciones/`)
 * 60 minutos tiempo estimado de completación por ejercicio
 * Todos los ejercicios usan nombres de variables en español y contexto futbolístico
 
-
 Materiales de Apoyo
 --------------------
 
@@ -69,12 +63,12 @@ Materiales de Apoyo
 * Datasets específicos del curso - Datos de fútbol/soccer para ejercicios prácticos
 * Dificultad progresiva - Cada semana construye sobre conceptos anteriores
 
-
 Estructura Completa del Repositorio
 ====================================
 
 [source]
 ----
+
 /
 ├── contenido/                    # Contenido principal del curso
 │   ├── bloque-1/                # Prerrequisitos de Programación Python (Semanas 1-5)
@@ -120,31 +114,33 @@ Estructura Completa del Repositorio
 └── CLAUDE.md                    # Este archivo - Orientación completa para asistentes de IA
 ----
 
-
 Configuración del Entorno de Desarrollo
 ========================================
-
 
 Software Requerido
 -------------------
 
 [source,bash]
 ----
+
 # Crear entorno virtual
+
 python -m venv football-analytics
 source football-analytics/bin/activate  # Linux/Mac
+
 # football-analytics\Scripts\activate   # Windows
 
 # Instalar dependencias principales
+
 pip install pandas numpy matplotlib seaborn jupyter scikit-learn plotly
 ----
-
 
 Verificación del Entorno
 -------------------------
 
 [source,python]
 ----
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -153,24 +149,20 @@ import sklearn
 print(" Todas las bibliotecas instaladas correctamente")
 ----
 
-
 Datasets y Referencias Clave
 =============================
 
-* *Dataset principal:* https://www.kaggle.com/datasets/julihocc/champs["champs" en Kaggle]
-* *Notebook de referencia:* https://www.kaggle.com/code/julihocc/la-remontada["La Remontada" en Kaggle]
+* *Dataset principal:* <https://www.kaggle.com/datasets/julihocc/champs["champs>" en Kaggle]
+* *Notebook de referencia:* <https://www.kaggle.com/code/julihocc/la-remontada["La> Remontada" en Kaggle]
 * *Datos de ligas europeas:* `equipos-europa-2023-24.csv`, `jugadores-estrellas-2024.csv`
-
 
 Estándares Educativos y Estilo
 ===============================
-
 
 Audiencia y Contexto Objetivo
 ------------------------------
 
 Este curso está dirigido a *estudiantes de preparatoria del Tecnológico de Monterrey* en su último año, explorando opciones de carrera en tecnología y datos. El objetivo es introducir conceptos básicos de programación y análisis de datos usando contexto futbolístico para hacer el aprendizaje más atractivo y relevante.
-
 
 Requisitos de Estilo de Código
 -------------------------------
@@ -183,7 +175,6 @@ Requisitos de Estilo de Código
 * *ABSOLUTAMENTE SIN EMOJIS:* Nunca usar emojis en código, comentarios, documentación o archivos markdown
 * *Tema de seaborn:* Siempre usar `sns.set_theme(style="whitegrid", palette="viridis")`
 
-
 Directrices de Contenido
 ------------------------
 
@@ -195,7 +186,6 @@ Directrices de Contenido
 * *Código ejecutable:* Asegurar que todo el código funcione en el entorno de Jupyter notebook
 * *Restricciones de tiempo:* Ejercicios semanales ≤ 60 minutos, proyectos de bloque 2-3 horas
 
-
 Patrones de Lenguaje y Comunicación
 ------------------------------------
 
@@ -204,10 +194,8 @@ Patrones de Lenguaje y Comunicación
 * *Explicaciones:* Siempre explicar qué hace el código (`¡Este gráfico nos muestra...!`)
 * *Aliento:* Terminar con refuerzo positivo (`¡Felicitaciones!`, `¡Excelente progreso!`)
 
-
 Estándares de Estructura de Notebooks
 ======================================
-
 
 Estructura Estándar de Celdas
 ------------------------------
@@ -219,31 +207,34 @@ Estructura Estándar de Celdas
 . *Resumen:* `### Lo que Aprendimos Hoy`
 . *Vista previa:* `### Próxima Semana`
 
-
 Convenciones de Celdas de Código
 ---------------------------------
 
 [source,python]
 ----
+
 # Patrón de importación con comentarios educativos
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Siempre configurar tema de seaborn
+
 sns.set_theme(style="whitegrid", palette="viridis")
 
 print("¡Herramientas listas!")
 ----
-
 
 Patrón de Generación de Datos
 ------------------------------
 
 [source,python]
 ----
+
 # Crear datasets realistas de fútbol para cada ejercicio
+
 import random
 equipos = ['Barcelona', 'Real Madrid', 'Manchester City', 'Bayern Munich']
 partidos = []
@@ -260,13 +251,14 @@ for i in range(30):
 datos_futbol = pd.DataFrame(partidos)
 ----
 
-
 Estándares de Visualización
 ----------------------------
 
 [source,python]
 ----
+
 # Graficación estándar con etiquetas en español
+
 plt.figure(figsize=(10, 6))
 sns.countplot(data=datos, x='variable', palette='viridis')
 plt.title('¿[Pregunta en Español]?', fontsize=16, fontweight='bold')
@@ -276,42 +268,43 @@ plt.show()
 print("¡Este gráfico nos muestra [explicación]!")
 ----
 
-
 Comandos de Gestión del Curso
 ==============================
-
 
 Ejecutar Materiales del Curso
 ------------------------------
 
 [source,bash]
 ----
+
 # Iniciar entorno Jupyter
+
 jupyter notebook
 
 # Navegar a semana específica
+
 cd contenido/bloque-1/semana-1
 jupyter notebook configuracion-fundamentos.ipynb
 ----
-
 
 Operaciones de Dataset
 ----------------------
 
 [source,bash]
 ----
+
 # Descargar desde Kaggle (requiere configuración de API)
+
 pip install kaggle
 kaggle datasets download -d julihocc/champs
 
 # Verificar integridad del dataset
+
 python -c "import pandas as pd; df = pd.read_csv('champs.csv'); print(f'Dataset cargado: {df.shape}')"
 ----
 
-
 Notas de Arquitectura
 =====================
-
 
 Patrón de Diseño Educativo
 ---------------------------
@@ -321,7 +314,6 @@ Patrón de Diseño Educativo
 * *Basado en proyectos:* Culmina en proyectos integrados por bloque
 * *Dirigido por evaluación:* Rúbricas claras y evaluaciones estructuradas
 
-
 Arquitectura Técnica
 ---------------------
 
@@ -330,7 +322,6 @@ Arquitectura Técnica
 * *Pipeline de datos:* Archivos CSV → DataFrames de pandas → visualizaciones/modelos
 * *Diseño modular:* Cada semana es independiente pero conecta con la progresión general
 
-
 Arquitectura de Evaluación
 ---------------------------
 
@@ -338,10 +329,8 @@ Arquitectura de Evaluación
 * *Evaluación sumativa:* Proyectos integrados de nivel de bloque
 * *Basado en competencias:* Habilidades técnicas + aplicación práctica + comunicación
 
-
 Trabajando con Este Repositorio
 ================================
-
 
 Metodología Educativa
 ----------------------
@@ -353,7 +342,6 @@ Este curso sigue un enfoque pedagógico específico:
 * *Proyectos integrativos:* Desarrollo de proyectos finales combinando todo el conocimiento adquirido
 * *Evaluaciones continuas:* Mini-evaluaciones semanales para reforzar el aprendizaje
 
-
 Criterios de Evaluación
 ------------------------
 
@@ -361,7 +349,6 @@ Criterios de Evaluación
 * *Calidad de análisis:* Profundidad y rigor en el análisis de datos
 * *Presentación y comunicación:* Claridad en visualizaciones y explicaciones
 * *Aplicación contextual:* Relevancia y pertinencia del análisis deportivo
-
 
 Al Modificar Materiales del Curso
 ----------------------------------
@@ -376,7 +363,6 @@ Al Modificar Materiales del Curso
 . *Siempre ejecutar notebook completo* para asegurar que todo funciona
 . *Usar mensajes de commit descriptivos* reflejando cambios realizados
 
-
 Al Crear Contenido Nuevo
 -------------------------
 
@@ -388,13 +374,14 @@ Al Crear Contenido Nuevo
 * Asegurar convenciones de nombres consistentes (preferiblemente español)
 * Incluir comentarios bien documentados explicando propósito de cada sección
 
-
 Patrones de Nombrado de Funciones y Variables
 ==============================================
 
 [source,python]
 ----
+
 # Funciones con nombres en español y docstrings
+
 def quien_gano(fila):
     """Determina el ganador de un partido"""
     if fila['Goles_Local'] > fila['Goles_Visitante']:
@@ -405,14 +392,13 @@ def quien_gano(fila):
         return 'Empate'
 
 # Declaraciones print educativas explicando resultados
+
 print("¡Este gráfico nos muestra qué tan seguido los equipos marcan goles!")
 print(f"Promedio de goles por partido: {promedio:.1f}")
 ----
 
-
 Comandos Personalizados
 =======================
-
 
 Comando `/commit`
 -----------------
@@ -423,6 +409,7 @@ Realiza commits inteligentes de git con análisis automático de cambios y mensa
 
 [source]
 ----
+
 /commit                           # Commit automático con mensaje generado
 /commit "mensaje personalizado"   # Commit con mensaje específico
 ----
@@ -438,12 +425,13 @@ Realiza commits inteligentes de git con análisis automático de cambios y mensa
 
 [source]
 ----
+
 [Título descriptivo en español - máximo 50 caracteres]
 
 [Descripción detallada opcional]
-- Cambio específico 1
-- Cambio específico 2
-- Cambio específico 3
+* Cambio específico 1
+* Cambio específico 2
+* Cambio específico 3
 
  Generado con [Claude Code](https://claude.ai/code)
 
@@ -461,16 +449,19 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 [source,bash]
 ----
+
 # Cambios de ejercicios
+
 "Actualizar ejercicios Semana 3: mejorar instrucciones de funciones"
 
 # Cambios de documentación
+
 "Mejorar documentación de instalación y configuración"
 
 # Cambios de datasets
+
 "Agregar nuevos datasets para análisis Bloque 2"
 ----
-
 
 Recursos de Apoyo
 ==================

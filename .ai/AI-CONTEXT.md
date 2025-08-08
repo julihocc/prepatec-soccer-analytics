@@ -1,196 +1,249 @@
-# AI-CONTEXT.md
+AI-CONTEXT: Contexto Completo para Asistentes de IA
+====================================================
 
-This file provides comprehensive guidance to AI coding assistants (Claude Code, GitHub Copilot, etc.) when working with code in this repository.
+Este archivo proporciona orientación completa a los asistentes de codificación de IA (Claude Code, GitHub Copilot, etc.) cuando trabajen con código en este repositorio.
 
-## CRITICAL: NO EMOJIS POLICY
 
-**STRICTLY FORBIDDEN:** No emojis are allowed anywhere in this project.
-- NO emojis in code files (.py, .ipynb)
-- NO emojis in documentation (.md files)
-- NO emojis in comments or strings
-- NO emojis in commit messages
-- Maintain professional, clean, emoji-free content throughout
+POLÍTICA CRÍTICA: SIN EMOJIS
+=============================
 
-## Project Overview
+*ESTRICTAMENTE PROHIBIDO:* No se permiten emojis en ninguna parte de este proyecto.
 
-This is a **Spanish-language educational course** on data science applied to football/soccer analysis. The repository contains comprehensive course materials for a 15-week program teaching Python fundamentals, data science basics, and predictive modeling specifically within the context of football data.
+* SIN emojis en archivos de código (.py, .ipynb)
+* SIN emojis en documentación (archivos .md)
+* SIN emojis en comentarios o strings
+* SIN emojis en mensajes de commit
+* Mantener contenido profesional, limpio, sin emojis en todo momento
 
-**Target Audience:** High school level students (preparatoria)
-**Language:** Spanish (all variables, comments, and content)
-**Context:** Football/soccer data analysis throughout all exercises
 
-## Repository Structure
+Visión General del Proyecto
+============================
 
-### Main Course Blocks (3 progressive levels)
+Este es un *curso educativo en español* sobre ciencia de datos aplicada al análisis de fútbol/soccer. El repositorio contiene materiales de curso completos para un programa de 15 semanas que enseña fundamentos de Python, conceptos básicos de ciencia de datos y modelado predictivo específicamente dentro del contexto de datos de fútbol.
 
-Located in `contenido/` directory:
+Audiencia objetivo:: Estudiantes de nivel preparatoria (bachillerato)
+Idioma:: Español (todas las variables, comentarios y contenido)
+Contexto:: Análisis de datos de fútbol/soccer en todos los ejercicios
 
-1. **`contenido/bloque-1/`** - Python Programming Prerequisites (Weeks 1-5)
-   - Basic Python fundamentals with sports context
-   - Jupyter notebooks covering variables, control structures, functions, pandas/numpy basics, and matplotlib
 
-2. **`contenido/bloque-2/`** - Data Science Fundamentals with Football Data (Weeks 6-10)
-   - Exploratory data analysis of real football datasets
-   - Statistical analysis and visualization with seaborn
+Estructura del Repositorio
+===========================
 
-3. **`contenido/bloque-3/`** - First Predictions with Football Data (Weeks 11-15)
-   - Introduction to basic machine learning concepts
-   - Simple predictive models using scikit-learn
 
-### Evaluation System (`evaluaciones/`)
+Bloques Principales del Curso (3 niveles progresivos)
+------------------------------------------------------
 
-**Key Feature:** Recently refactored to have **one exercise per week** with detailed instructions and precise rubrics.
+Ubicación: directorio `contenido/`
 
-- Each block has simplified evaluation structure: `ejercicios/`, `proyecto/`, and `rubricas/`
-- Unified scoring rubric: 40% technical correctness + 30% practical application + 30% documentation
-- 60-minute estimated completion time per exercise
-- All exercises use Spanish variable names and football context
+=== Bloque 1: `contenido/bloque-1/` - Prerrequisitos de Programación Python (Semanas 1-5)
 
-### Supporting Materials
+* Fundamentos básicos de Python con contexto deportivo
+* Notebooks de Jupyter cubriendo variables, estructuras de control, funciones, conceptos básicos de pandas/numpy, y matplotlib
 
-- **`referencias/`** - Bibliography and installation guides
-- **Course-specific datasets** - Football/soccer data for practical exercises
-- **Progressive difficulty** - Each week builds on previous concepts
+=== Bloque 2: `contenido/bloque-2/` - Fundamentos de Ciencia de Datos con Datos de Fútbol (Semanas 6-10)
 
-### Complete Repository Structure
+* Análisis exploratorio de datos de datasets reales de fútbol
+* Análisis estadístico y visualización con seaborn
 
-```
+=== Bloque 3: `contenido/bloque-3/` - Primeras Predicciones con Datos de Fútbol (Semanas 11-15)
+
+* Introducción a conceptos básicos de machine learning
+* Modelos predictivos simples usando scikit-learn
+
+
+Sistema de Evaluación (`evaluaciones/`)
+----------------------------------------
+
+*Característica clave:* Recientemente refactorizado para tener *un ejercicio por semana* con instrucciones detalladas y rúbricas precisas.
+
+* Cada bloque tiene estructura de evaluación simplificada: `ejercicios/`, `proyecto/`, y `rubricas/`
+* Rúbrica de calificación unificada: 40% corrección técnica + 30% aplicación práctica + 30% documentación
+* 60 minutos tiempo estimado de completación por ejercicio
+* Todos los ejercicios usan nombres de variables en español y contexto futbolístico
+
+
+Materiales de Apoyo
+--------------------
+
+* `referencias/` - Bibliografía y guías de instalación
+* Datasets específicos del curso - Datos de fútbol/soccer para ejercicios prácticos
+* Dificultad progresiva - Cada semana construye sobre conceptos anteriores
+
+
+Estructura Completa del Repositorio
+====================================
+
+[source]
+----
 /
-├── contenido/                    # Main course content
-│   ├── bloque-1/                # Python Programming Prerequisites (Weeks 1-5)
+├── contenido/                    # Contenido principal del curso
+│   ├── bloque-1/                # Prerrequisitos de Programación Python (Semanas 1-5)
 │   │   ├── README.md
-│   │   ├── semana-1/            # Configuration and fundamentals
-│   │   ├── semana-2/            # Data structures and control flow
-│   │   ├── semana-3/            # Functions and modules
-│   │   ├── semana-4/            # Pandas and NumPy introduction
-│   │   └── semana-5/            # Basic visualization
-│   ├── bloque-2/                # Data Science Fundamentals (Weeks 6-10)
+│   │   ├── semana-1/            # Configuración y fundamentos
+│   │   ├── semana-2/            # Estructuras de datos y flujo de control
+│   │   ├── semana-3/            # Funciones y módulos
+│   │   ├── semana-4/            # Introducción a Pandas y NumPy
+│   │   └── semana-5/            # Visualización básica
+│   ├── bloque-2/                # Fundamentos de Ciencia de Datos (Semanas 6-10)
 │   │   ├── README.md
-│   │   ├── semana-6/            # Data exploration
-│   │   ├── semana-7/            # Football data types
-│   │   ├── semana-8/            # Descriptive statistics
-│   │   ├── semana-9/            # Data visualization
-│   │   └── semana-10/           # Analysis and interpretation
-│   └── bloque-3/                # First Predictions (Weeks 11-15)
+│   │   ├── semana-6/            # Exploración de datos
+│   │   ├── semana-7/            # Tipos de datos de fútbol
+│   │   ├── semana-8/            # Estadísticas descriptivas
+│   │   ├── semana-9/            # Visualización de datos
+│   │   └── semana-10/           # Análisis e interpretación
+│   └── bloque-3/                # Primeras Predicciones (Semanas 11-15)
 │       ├── README.md
-│       ├── semana-11/           # Predictive modeling introduction
-│       ├── semana-12/           # Advanced classification models
-│       ├── semana-13/           # Advanced evaluation metrics
-│       ├── semana-14/           # Feature engineering and optimization
-│       └── semana-15/           # Final integrative project
-├── evaluaciones/                # Complete evaluation system
+│       ├── semana-11/           # Introducción al modelado predictivo
+│       ├── semana-12/           # Modelos de clasificación avanzados
+│       ├── semana-13/           # Métricas de evaluación avanzadas
+│       ├── semana-14/           # Ingeniería de características y optimización
+│       └── semana-15/           # Proyecto integrativo final
+├── evaluaciones/                # Sistema completo de evaluación
 │   ├── bloque-1/
-│   │   ├── ejercicios/          # Weekly exercises (simplified structure)
-│   │   ├── proyecto/            # Block project (simplified structure)
-│   │   ├── datasets/            # Block-specific datasets
-│   │   └── rubricas/            # Evaluation rubrics
+│   │   ├── ejercicios/          # Ejercicios semanales (estructura simplificada)
+│   │   ├── proyecto/            # Proyecto de bloque (estructura simplificada)
+│   │   ├── datasets/            # Datasets específicos del bloque
+│   │   └── rubricas/            # Rúbricas de evaluación
 │   ├── bloque-2/
-│   │   ├── ejercicios/          # Preparatory exercises
-│   │   ├── proyecto/            # Analysis project
-│   │   ├── datasets/            # European leagues data
-│   │   └── rubricas/            # Evaluation rubrics
+│   │   ├── ejercicios/          # Ejercicios preparatorios
+│   │   ├── proyecto/            # Proyecto de análisis
+│   │   ├── datasets/            # Datos de ligas europeas
+│   │   └── rubricas/            # Rúbricas de evaluación
 │   └── bloque-3/
-│       ├── ejercicios/          # Practice exercises
-│       ├── proyecto/            # Predictive project
-│       ├── datasets/            # Advanced datasets
-│       └── rubricas/            # Evaluation rubrics
-├── referencias/                 # Supporting documentation
-│   ├── guia-instalacion.md      # Installation guide
-│   └── bibliografia-recursos.md # Bibliography and resources
-└── CLAUDE.md                    # This file - Complete guidance for AI assistants
-```
+│       ├── ejercicios/          # Ejercicios de práctica
+│       ├── proyecto/            # Proyecto predictivo
+│       ├── datasets/            # Datasets avanzados
+│       └── rubricas/            # Rúbricas de evaluación
+├── referencias/                 # Documentación de apoyo
+│   ├── guia-instalacion.md      # Guía de instalación
+│   └── bibliografia-recursos.md # Bibliografía y recursos
+└── CLAUDE.md                    # Este archivo - Orientación completa para asistentes de IA
+----
 
-## Development Environment Setup
 
-### Required Software
+Configuración del Entorno de Desarrollo
+========================================
 
-```bash
-# Create virtual environment
+
+Software Requerido
+-------------------
+
+[source,bash]
+----
+# Crear entorno virtual
 python -m venv football-analytics
 source football-analytics/bin/activate  # Linux/Mac
 # football-analytics\Scripts\activate   # Windows
 
-# Install core dependencies
+# Instalar dependencias principales
 pip install pandas numpy matplotlib seaborn jupyter scikit-learn plotly
-```
+----
 
-### Environment Verification
 
-```python
+Verificación del Entorno
+-------------------------
+
+[source,python]
+----
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import sklearn
-print(" All libraries installed correctly")
-```
+print(" Todas las bibliotecas instaladas correctamente")
+----
 
-## Key Datasets and References
 
-- **Main Dataset:** ["champs" on Kaggle](https://www.kaggle.com/datasets/julihocc/champs)
-- **Reference Notebook:** ["La Remontada" on Kaggle](https://www.kaggle.com/code/julihocc/la-remontada)
-- **European leagues data:** `equipos-europa-2023-24.csv`, `jugadores-estrellas-2024.csv`
+Datasets y Referencias Clave
+=============================
 
-## Educational Standards and Style
+* *Dataset principal:* https://www.kaggle.com/datasets/julihocc/champs["champs" en Kaggle]
+* *Notebook de referencia:* https://www.kaggle.com/code/julihocc/la-remontada["La Remontada" en Kaggle]
+* *Datos de ligas europeas:* `equipos-europa-2023-24.csv`, `jugadores-estrellas-2024.csv`
 
-### Target Audience and Context
 
-This course is directed at **Tecnológico de Monterrey preparatoria students** in their final year, exploring career options in technology and data. The objective is to introduce basic programming and data analysis concepts using football context to make learning more attractive and relevant.
+Estándares Educativos y Estilo
+===============================
 
-### Code Style Requirements
 
-- **Spanish variable names:** `goles_por_partido`, `equipos_favoritos`, `datos_futbol`
-- **Educational comments:** Explain the purpose and context of each code section in Spanish
-- **Football context:** All examples use real teams (Barcelona, Real Madrid, Manchester City, Bayern Munich)
-- **Preparatoria level:** Explanations suitable for high school students
-- **Professional tone:** Clear, concise explanations without jargon unless defined
-- **ABSOLUTELY NO EMOJIS:** Never use emojis in any code, comments, documentation, or markdown files
-- **Seaborn theme:** Always use `sns.set_theme(style="whitegrid", palette="viridis")`
+Audiencia y Contexto Objetivo
+------------------------------
 
-### Content Guidelines
+Este curso está dirigido a *estudiantes de preparatoria del Tecnológico de Monterrey* en su último año, explorando opciones de carrera en tecnología y datos. El objetivo es introducir conceptos básicos de programación y análisis de datos usando contexto futbolístico para hacer el aprendizaje más atractivo y relevante.
 
-- Each notebook combines theory + practice + laboratory exercises
-- Progressive complexity from basic Python to machine learning
-- Consistent football theme throughout all materials
-- Interactive Jupyter notebook format for hands-on learning
-- **Incremental changes:** Make small improvements rather than large rewrites
-- **Executable code:** Ensure all code works in Jupyter notebook environment
-- **Time constraints:** Weekly exercises ≤ 60 minutes, block projects 2-3 hours
 
-### Language and Communication Patterns
+Requisitos de Estilo de Código
+-------------------------------
 
-- **Excitement:** Use `¡` and motivational language (`¡Es como ser un analista deportivo!`)
-- **Questions:** Frame concepts as questions (`¿Es mejor jugar en casa?`)
-- **Explanations:** Always explain what code does (`¡Este gráfico nos muestra...!`)
-- **Encouragement:** End with positive reinforcement (`¡Felicitaciones!`, `¡Excelente progreso!`)
+* *Nombres de variables en español:* `goles_por_partido`, `equipos_favoritos`, `datos_futbol`
+* *Comentarios educativos:* Explicar el propósito y contexto de cada sección de código en español
+* *Contexto futbolístico:* Todos los ejemplos usan equipos reales (Barcelona, Real Madrid, Manchester City, Bayern Munich)
+* *Nivel preparatoria:* Explicaciones apropiadas para estudiantes de bachillerato
+* *Tono profesional:* Explicaciones claras y concisas sin jerga a menos que se defina
+* *ABSOLUTAMENTE SIN EMOJIS:* Nunca usar emojis en código, comentarios, documentación o archivos markdown
+* *Tema de seaborn:* Siempre usar `sns.set_theme(style="whitegrid", palette="viridis")`
 
-### Notebook Structure Standards
 
-#### Standard Cell Structure
-1. **Markdown title:** `# Semana X: [Descriptive Spanish Title]`
-2. **Learning objectives:** `**Lo que aprenderemos hoy:**`
-3. **Import section** with educational comments
-4. **Progressive examples** building complexity
-5. **Summary:** `### Lo que Aprendimos Hoy`
-6. **Preview:** `### Próxima Semana`
+Directrices de Contenido
+------------------------
 
-#### Code Cell Conventions
-```python
-# Import pattern with educational comments
+* Cada notebook combina teoría + práctica + ejercicios de laboratorio
+* Complejidad progresiva desde Python básico hasta machine learning
+* Tema futbolístico consistente a lo largo de todos los materiales
+* Formato interactivo de Jupyter notebook para aprendizaje práctico
+* *Cambios incrementales:* Hacer pequeñas mejoras en lugar de reescrituras grandes
+* *Código ejecutable:* Asegurar que todo el código funcione en el entorno de Jupyter notebook
+* *Restricciones de tiempo:* Ejercicios semanales ≤ 60 minutos, proyectos de bloque 2-3 horas
+
+
+Patrones de Lenguaje y Comunicación
+------------------------------------
+
+* *Entusiasmo:* Usar `¡` y lenguaje motivacional (`¡Es como ser un analista deportivo!`)
+* *Preguntas:* Enmarcar conceptos como preguntas (`¿Es mejor jugar en casa?`)
+* *Explicaciones:* Siempre explicar qué hace el código (`¡Este gráfico nos muestra...!`)
+* *Aliento:* Terminar con refuerzo positivo (`¡Felicitaciones!`, `¡Excelente progreso!`)
+
+
+Estándares de Estructura de Notebooks
+======================================
+
+
+Estructura Estándar de Celdas
+------------------------------
+
+. *Título en markdown:* `# Semana X: [Título Descriptivo en Español]`
+. *Objetivos de aprendizaje:* `**Lo que aprenderemos hoy:**`
+. *Sección de importaciones* con comentarios educativos
+. *Ejemplos progresivos* construyendo complejidad
+. *Resumen:* `### Lo que Aprendimos Hoy`
+. *Vista previa:* `### Próxima Semana`
+
+
+Convenciones de Celdas de Código
+---------------------------------
+
+[source,python]
+----
+# Patrón de importación con comentarios educativos
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Always configure seaborn theme
+# Siempre configurar tema de seaborn
 sns.set_theme(style="whitegrid", palette="viridis")
 
 print("¡Herramientas listas!")
-```
+----
 
-#### Data Generation Pattern
-```python
-# Create realistic football datasets for every exercise
+
+Patrón de Generación de Datos
+------------------------------
+
+[source,python]
+----
+# Crear datasets realistas de fútbol para cada ejercicio
 import random
 equipos = ['Barcelona', 'Real Madrid', 'Manchester City', 'Bayern Munich']
 partidos = []
@@ -205,110 +258,143 @@ for i in range(30):
         'Temporada': random.choice(['2023-24', '2024-25'])
     })
 datos_futbol = pd.DataFrame(partidos)
-```
+----
 
-#### Visualization Standards
-```python
-# Standard plotting with Spanish labels
+
+Estándares de Visualización
+----------------------------
+
+[source,python]
+----
+# Graficación estándar con etiquetas en español
 plt.figure(figsize=(10, 6))
 sns.countplot(data=datos, x='variable', palette='viridis')
-plt.title('¿[Question in Spanish]?', fontsize=16, fontweight='bold')
-plt.xlabel('[Spanish label]')
-plt.ylabel('[Spanish label]')
+plt.title('¿[Pregunta en Español]?', fontsize=16, fontweight='bold')
+plt.xlabel('[Etiqueta en español]')
+plt.ylabel('[Etiqueta en español]')
 plt.show()
-print("¡Este gráfico nos muestra [explanation]!")
-```
+print("¡Este gráfico nos muestra [explicación]!")
+----
 
-## Course Management Commands
 
-### Running Course Materials
+Comandos de Gestión del Curso
+==============================
 
-```bash
-# Start Jupyter environment
+
+Ejecutar Materiales del Curso
+------------------------------
+
+[source,bash]
+----
+# Iniciar entorno Jupyter
 jupyter notebook
 
-# Navigate to specific week
+# Navegar a semana específica
 cd contenido/bloque-1/semana-1
 jupyter notebook configuracion-fundamentos.ipynb
-```
+----
 
-### Dataset Operations
 
-```bash
-# Download from Kaggle (requires API setup)
+Operaciones de Dataset
+----------------------
+
+[source,bash]
+----
+# Descargar desde Kaggle (requiere configuración de API)
 pip install kaggle
 kaggle datasets download -d julihocc/champs
 
-# Verify dataset integrity
-python -c "import pandas as pd; df = pd.read_csv('champs.csv'); print(f'Dataset loaded: {df.shape}')"
-```
+# Verificar integridad del dataset
+python -c "import pandas as pd; df = pd.read_csv('champs.csv'); print(f'Dataset cargado: {df.shape}')"
+----
 
-## Architecture Notes
 
-### Educational Design Pattern
+Notas de Arquitectura
+=====================
 
-- **Scaffolded Learning:** Each week builds on previous concepts
-- **Contextual Learning:** All programming concepts taught through football examples  
-- **Project-Based:** Culminates in integrated projects per block
-- **Assessment-Driven:** Clear rubrics and structured evaluations
 
-### Technical Architecture
+Patrón de Diseño Educativo
+---------------------------
 
-- **Jupyter-Centric:** All course content delivered via interactive notebooks
-- **Library Progression:** matplotlib → seaborn → scikit-learn as complexity increases
-- **Data Pipeline:** CSV files → pandas DataFrames → visualizations/models
-- **Modular Design:** Each week stands alone but connects to overall progression
+* *Aprendizaje andamiado:* Cada semana construye sobre conceptos anteriores
+* *Aprendizaje contextual:* Todos los conceptos de programación enseñados a través de ejemplos de fútbol
+* *Basado en proyectos:* Culmina en proyectos integrados por bloque
+* *Dirigido por evaluación:* Rúbricas claras y evaluaciones estructuradas
 
-### Evaluation Architecture
 
-- **Formative Assessment:** Weekly exercises with immediate feedback
-- **Summative Assessment:** Block-level integrated projects
-- **Competency-Based:** Technical skills + practical application + communication
+Arquitectura Técnica
+---------------------
 
-## Working with This Repository
+* *Centrado en Jupyter:* Todo el contenido del curso entregado vía notebooks interactivos
+* *Progresión de bibliotecas:* matplotlib → seaborn → scikit-learn a medida que aumenta la complejidad
+* *Pipeline de datos:* Archivos CSV → DataFrames de pandas → visualizaciones/modelos
+* *Diseño modular:* Cada semana es independiente pero conecta con la progresión general
 
-### Educational Methodology
 
-This course follows a specific pedagogical approach:
+Arquitectura de Evaluación
+---------------------------
 
-- **Theoretical classes:** Introduction to key concepts
-- **Practical exercises:** Application of learning in sports contexts
-- **Integrative projects:** Development of final projects combining all acquired knowledge
-- **Continuous evaluations:** Weekly mini-assessments to reinforce learning
+* *Evaluación formativa:* Ejercicios semanales con retroalimentación inmediata
+* *Evaluación sumativa:* Proyectos integrados de nivel de bloque
+* *Basado en competencias:* Habilidades técnicas + aplicación práctica + comunicación
 
-### Evaluation Criteria
 
-- **Technical correctness:** Functional code and appropriate use of tools
-- **Quality of analysis:** Depth and rigor in data analysis
-- **Presentation and communication:** Clarity in visualizations and explanations
-- **Contextual application:** Relevance and pertinence of sports analysis
+Trabajando con Este Repositorio
+================================
 
-### When Modifying Course Materials
 
-1. **Maintain Spanish language** throughout all content
-2. **Preserve football context** in examples and datasets  
-3. **Follow educational progression** from basic to advanced
-4. **Use consistent rubric structure** for all assessments
-5. **Test notebooks interactively** before finalizing changes
-6. **Maintain 60-minute exercise completion** time target
-7. **Make incremental improvements** rather than large rewrites
-8. **Always run entire notebook** to ensure everything works
-9. **Use descriptive commit messages** reflecting changes made
+Metodología Educativa
+----------------------
 
-### When Creating New Content
+Este curso sigue un enfoque pedagógico específico:
 
-- Use existing notebooks as templates for structure and style
-- Source football examples from recognizable teams and players
-- Include both theoretical concepts and practical applications
-- Provide clear learning objectives and assessment criteria
-- Test with target audience (high school level) understanding
-- Ensure consistent naming conventions (preferably Spanish)
-- Include well-documented comments explaining purpose of each section
+* *Clases teóricas:* Introducción a conceptos clave
+* *Ejercicios prácticos:* Aplicación del aprendizaje en contextos deportivos
+* *Proyectos integrativos:* Desarrollo de proyectos finales combinando todo el conocimiento adquirido
+* *Evaluaciones continuas:* Mini-evaluaciones semanales para reforzar el aprendizaje
 
-### Function and Variable Naming Patterns
 
-```python
-# Functions with Spanish names and docstrings
+Criterios de Evaluación
+------------------------
+
+* *Corrección técnica:* Código funcional y uso apropiado de herramientas
+* *Calidad de análisis:* Profundidad y rigor en el análisis de datos
+* *Presentación y comunicación:* Claridad en visualizaciones y explicaciones
+* *Aplicación contextual:* Relevancia y pertinencia del análisis deportivo
+
+
+Al Modificar Materiales del Curso
+----------------------------------
+
+. *Mantener idioma español* en todo el contenido
+. *Preservar contexto futbolístico* en ejemplos y datasets
+. *Seguir progresión educativa* de básico a avanzado
+. *Usar estructura de rúbrica consistente* para todas las evaluaciones
+. *Probar notebooks interactivamente* antes de finalizar cambios
+. *Mantener objetivo de 60 minutos de completación* para ejercicios
+. *Hacer mejoras incrementales* en lugar de reescrituras grandes
+. *Siempre ejecutar notebook completo* para asegurar que todo funciona
+. *Usar mensajes de commit descriptivos* reflejando cambios realizados
+
+
+Al Crear Contenido Nuevo
+-------------------------
+
+* Usar notebooks existentes como plantillas para estructura y estilo
+* Obtener ejemplos futbolísticos de equipos y jugadores reconocibles
+* Incluir tanto conceptos teóricos como aplicaciones prácticas
+* Proporcionar objetivos de aprendizaje claros y criterios de evaluación
+* Probar con comprensión de audiencia objetivo (nivel bachillerato)
+* Asegurar convenciones de nombres consistentes (preferiblemente español)
+* Incluir comentarios bien documentados explicando propósito de cada sección
+
+
+Patrones de Nombrado de Funciones y Variables
+==============================================
+
+[source,python]
+----
+# Funciones con nombres en español y docstrings
 def quien_gano(fila):
     """Determina el ganador de un partido"""
     if fila['Goles_Local'] > fila['Goles_Visitante']:
@@ -318,64 +404,78 @@ def quien_gano(fila):
     else:
         return 'Empate'
 
-# Educational print statements explaining results
+# Declaraciones print educativas explicando resultados
 print("¡Este gráfico nos muestra qué tan seguido los equipos marcan goles!")
 print(f"Promedio de goles por partido: {promedio:.1f}")
-```
+----
 
-## Custom Commands
 
-### `/commit` Command
+Comandos Personalizados
+=======================
 
-Performs intelligent git commits with automatic change analysis and appropriate Spanish messages for this educational repository.
 
-#### Usage
-```
-/commit                           # Automatic commit with generated message
-/commit "mensaje personalizado"   # Commit with specific message
-```
+Comando `/commit`
+-----------------
 
-#### Workflow Process
-1. **Pre-analysis:** Run `git status`, `git diff`, and `git log --oneline -3`
-2. **Message generation:** Analyze changes considering educational context
-3. **Spanish style:** Use infinitive verbs (Agregar, Actualizar, Corregir)
-4. **Specificity:** Mention specific blocks/weeks/exercises when applicable
+Realiza commits inteligentes de git con análisis automático de cambios y mensajes apropiados en español para este repositorio educativo.
 
-#### Commit Message Format
-```
-[Descriptive Spanish title - max 50 characters]
+=== Uso
 
-[Optional detailed description]
-- Specific change 1
-- Specific change 2
-- Specific change 3
+[source]
+----
+/commit                           # Commit automático con mensaje generado
+/commit "mensaje personalizado"   # Commit con mensaje específico
+----
 
- Generated with [Claude Code](https://claude.ai/code)
+=== Proceso de Flujo de Trabajo
+
+. *Pre-análisis:* Ejecutar `git status`, `git diff`, y `git log --oneline -3`
+. *Generación de mensaje:* Analizar cambios considerando contexto educativo
+. *Estilo español:* Usar verbos infinitivos (Agregar, Actualizar, Corregir)
+. *Especificidad:* Mencionar bloques/semanas/ejercicios específicos cuando aplique
+
+=== Formato de Mensaje de Commit
+
+[source]
+----
+[Título descriptivo en español - máximo 50 caracteres]
+
+[Descripción detallada opcional]
+- Cambio específico 1
+- Cambio específico 2
+- Cambio específico 3
+
+ Generado con [Claude Code](https://claude.ai/code)
 
 Co-Authored-By: Claude <noreply@anthropic.com>
-```
+----
 
-#### Repository-Specific Rules
-- **Always use Spanish** in titles and descriptions
-- **Mention sports context** when relevant
-- **Specify block/week** if changes are specific to course sections
-- **Prioritize educational clarity** over technical jargon
+=== Reglas Específicas del Repositorio
 
-#### Example Messages
-```bash
-# Exercise changes
+* *Siempre usar español* en títulos y descripciones
+* *Mencionar contexto deportivo* cuando sea relevante
+* *Especificar bloque/semana* si los cambios son específicos a secciones del curso
+* *Priorizar claridad educativa* sobre jerga técnica
+
+=== Mensajes de Ejemplo
+
+[source,bash]
+----
+# Cambios de ejercicios
 "Actualizar ejercicios Semana 3: mejorar instrucciones de funciones"
 
-# Documentation changes  
+# Cambios de documentación
 "Mejorar documentación de instalación y configuración"
 
-# Dataset changes
+# Cambios de datasets
 "Agregar nuevos datasets para análisis Bloque 2"
-```
+----
 
-## Support Resources
 
-- Installation guide: `referencias/guia-instalacion.md`
-- Bibliography: `referencias/bibliografia-recursos.md`
-- Refactored evaluation overview: `evaluaciones/RESUMEN-EJECUTIVO-REFACTORIZACION.md`
-- Block-specific README files for detailed learning objectives
+Recursos de Apoyo
+==================
+
+* Guía de instalación: `referencias/guia-instalacion.md`
+* Bibliografía: `referencias/bibliografia-recursos.md`
+* Resumen de refactorización de evaluación: `evaluaciones/RESUMEN-EJECUTIVO-REFACTORIZACION.md`
+* Archivos README específicos de bloque para objetivos de aprendizaje detallados

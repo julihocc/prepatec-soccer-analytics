@@ -27,46 +27,49 @@
 
 ## Caso Práctico Colaborativo (15% de la calificación total)
 
-### "Sistema de Scouting y Análisis Táctico"
-**Modalidad:** Equipos de 3-4 estudiantes  
-**Duración:** 2 semanas
+### "Análisis Básico de Jugadores de Fútbol"
+**Modalidad:** Equipos de 2-3 estudiantes  
+**Duración:** 1 semana
 
-### Criterios de Evaluación (100 puntos)
+### Criterios de Evaluación Simplificada (100 puntos)
 
-#### 1. Exploración de Datos (30 puntos)
-- **Limpieza de datos (10 pts):**
-  - Manejo de valores faltantes: 4 pts
-  - Detección de outliers: 3 pts
-  - Validación de consistencia: 3 pts
-- **Análisis exploratorio (12 pts):**
-  - Distribuciones por posición: 4 pts
-  - Patrones temporales: 4 pts
-  - Correlaciones básicas: 4 pts
-- **Ingeniería de features (8 pts):**
-  - Variables derivadas: 4 pts
-  - Métricas compuestas: 4 pts
+#### 1. Exploración Básica de Datos (40 puntos)
+- **Carga de datos (10 pts):**
+  - Importa pandas, seaborn, matplotlib correctamente: 5 pts
+  - Carga el dataset sin errores: 5 pts
+- **Exploración inicial (15 pts):**
+  - Usa `.head()` para ver primeras filas: 3 pts
+  - Usa `.info()` o `.describe()` para información básica: 4 pts
+  - Cuenta jugadores por posición con `.value_counts()`: 4 pts
+  - Calcula estadísticas básicas (promedio, máximo, mínimo): 4 pts
+- **Identificación de patrones básicos (15 pts):**
+  - Identifica quién marcó más goles: 5 pts
+  - Encuentra diferencias entre posiciones: 5 pts
+  - Responde preguntas básicas sobre los datos: 5 pts
 
-#### 2. Análisis Estadístico y Visualización (40 puntos)
-- **Estadística descriptiva (15 pts):**
-  - Por posición: 5 pts
-  - Por equipo: 5 pts
-  - Métricas de rendimiento: 5 pts
-- **Visualizaciones (25 pts):**
-  - Gráficos exploratorios: 10 pts
-  - Dashboard interactivo: 10 pts
-  - Calidad visual: 5 pts
+#### 2. Análisis por Posición (30 puntos)
+- **Uso de .groupby() (15 pts):**
+  - Agrupa datos por posición correctamente: 8 pts
+  - Calcula promedios de goles y asistencias: 7 pts
+- **Identificación de mejores jugadores (15 pts):**
+  - Encuentra el mejor jugador por posición: 10 pts
+  - Interpreta correctamente los resultados: 5 pts
 
-#### 3. Trabajo Colaborativo (15 puntos)
-| Criterio | Excelente (14-15) | Bueno (12-13) | Suficiente (11) | Insuficiente (<11) |
-|----------|-------------------|---------------|-----------------|-------------------|
-| **Coordinación Técnica** | Integración perfecta de análisis individuales | Buena coordinación con pequeñas inconsistencias | Coordinación básica funcional | Falta de coordinación evidente |
-| **División de Trabajo** | Especialización equilibrada y documentada | Buena división con algunos desbalances | División básica pero efectiva | División desigual o confusa |
+#### 3. Visualizaciones Básicas (20 puntos)
+- **Gráficos obligatorios (15 pts):**
+  - Gráfico de barras: jugadores por posición: 5 pts
+  - Gráfico de cajas: goles por posición: 5 pts
+  - Gráfico de dispersión: goles vs asistencias: 5 pts
+- **Calidad de gráficos (5 pts):**
+  - Títulos descriptivos en español: 2 pts
+  - Etiquetas de ejes claras: 2 pts
+  - Uso correcto de la paleta viridis: 1 pt
 
-#### 4. Comunicación de Insights (15 puntos)
-| Criterio | Excelente (14-15) | Bueno (12-13) | Suficiente (11) | Insuficiente (<11) |
-|----------|-------------------|---------------|-----------------|-------------------|
-| **Insights de Scouting** | Recomendaciones profundas y accionables | Buenos insights con justificación sólida | Insights básicos pero válidos | Insights superficiales o incorrectos |
-| **Presentación de Hallazgos** | Narrativa clara y convincente | Presentación bien estructurada | Comunicación básica pero efectiva | Presentación confusa o desorganizada |
+#### 4. Presentación Final (10 puntos)
+- **Presentación simple (10 pts):**
+  - 3-4 diapositivas con gráficos principales: 4 pts
+  - Responde preguntas básicas del análisis: 3 pts
+  - Cada integrante explica lo que aprendió: 3 pts
 
 ---
 
@@ -77,50 +80,47 @@
 - **Caso Práctico:** 15% × (calificación/100)
 - **Total Bloque 2:** Suma de ambos componentes
 
-### Niveles de Dominio:
-- **Excelente (90-100%):** Dominio avanzado de exploración y visualización
-- **Competente (80-89%):** Habilidades sólidas con interpretación adecuada
-- **Suficiente (70-79%):** Competencias básicas para análisis descriptivo
-- **Insuficiente (<70%):** Requiere refuerzo en análisis de datos
+### Niveles de Dominio Simplificados:
+- **Excelente (90-100%):** Completa todas las tareas correctamente
+- **Competente (80-89%):** Realiza la mayoría de las tareas con pequeños errores
+- **Suficiente (70-79%):** Cumple con los requerimientos básicos
+- **Insuficiente (<70%):** No logra completar las tareas principales
 
 ---
 
 ## Criterios Específicos de Evaluación
 
-### Calidad de Análisis Exploratorio:
-- **Exhaustividad:** Cobertura completa de variables relevantes
-- **Profundidad:** Insights más allá de estadísticas básicas
-- **Contexto deportivo:** Interpretación relevante para scouting
-- **Metodología:** Uso apropiado de técnicas estadísticas
+### ¿Qué Busco en el Código?
+- **Funciona sin errores:** El código se ejecuta completamente
+- **Usa las funciones correctas:** `.head()`, `.groupby()`, `.value_counts()` 
+- **Variables en español:** `datos_jugadores`, `goleadores_top`
+- **Comentarios explicativos:** Explican qué hace cada parte
 
-### Calidad de Visualizaciones:
-- **Efectividad comunicativa:** Gráficos que revelan patrones
-- **Calidad técnica:** Implementación correcta con seaborn
-- **Interactividad:** Dashboard funcional y útil
-- **Estética profesional:** Presentación pulida y coherente
+### ¿Qué Busco en los Gráficos?
+- **Gráficos obligatorios:** Los 3 tipos solicitados (barras, cajas, dispersión)
+- **Títulos descriptivos:** "¿Qué posición marca más goles?" en lugar de "Graph"
+- **Etiquetas claras:** Nombres de ejes en español
+- **Paleta correcta:** Usa `palette="viridis"` como se enseñó
 
-### Dashboard Interactivo Requerido:
-- **Filtros funcionales:** Por equipo, posición, edad, etc.
-- **Comparaciones dinámicas:** Múltiples jugadores simultáneamente
-- **Métricas actualizables:** Indicadores que respondan a filtros
-- **Usabilidad intuitiva:** Interface clara para scouts no técnicos
+### ¿Qué Busco en el Trabajo en Equipo?
+- **Participación equitativa:** Todos los integrantes contribuyen
+- **División clara:** Cada persona tiene responsabilidades definidas
+- **Coordinación:** El trabajo final está integrado
 
 ---
 
 ## Entregables Específicos
 
 ### Caso Práctico Bloque 2:
-1. **scouting_analysis_equipo[X].ipynb** - Análisis completo
-2. **dashboard_equipo[X].ipynb** - Interface interactiva
-3. **presentacion_scouting_equipo[X].pdf** - 10-12 diapositivas
-4. **reporte_scouting_equipo[X].pdf** - Formato profesional
+1. **analisis_jugadores_equipo[X].ipynb** - Notebook principal
+2. **presentacion_equipo[X].pdf** - Presentación simple de 3-4 diapositivas
 
-### Criterios de Calidad:
-- **Reproducibilidad:** Código ejecutable sin errores
-- **Documentación:** Explicaciones claras en markdown
-- **Profesionalismo:** Formato apropiado para scouts reales
-- **Innovación:** Enfoques creativos dentro de los requisitos
+### Lo que Debe Funcionar:
+- **Código ejecutable:** Todo el notebook se ejecuta sin errores
+- **Análisis completo:** Incluye exploración, análisis por posición y gráficos
+- **Presentación clara:** Comunica los hallazgos principales
+- **Trabajo colaborativo:** Evidencia de que todos participaron
 
 ---
 
-*Este bloque evalúa la capacidad de transformar datos crudos en insights accionables para la toma de decisiones deportivas profesionales.*
+*Este bloque evalúa la capacidad de explorar datos básicos y crear visualizaciones simples usando pandas y seaborn en contextos deportivos.*

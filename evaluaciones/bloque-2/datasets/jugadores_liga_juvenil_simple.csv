@@ -1,0 +1,51 @@
+jugador_id,nombre,edad,equipo,posicion,torneo,goles,asistencias,partidos_jugados
+1,Alejandro Martínez,17,Atlas Sub-20,Delantero,Liga MX Sub-20,12,5,18
+2,Sofia Hernández,16,Chivas Femenil,Mediocampo,Liga MX Femenil Sub-18,3,18,20
+3,Diego Ramírez,18,América Sub-20,Delantero,Liga MX Sub-20,15,3,19
+4,Camila Torres,17,Tigres Femenil,Defensa,Liga MX Femenil Sub-18,1,4,22
+5,José Luis Vega,16,Pumas Sub-20,Mediocampo,Liga MX Sub-20,6,12,17
+6,Isabella García,18,Monterrey Femenil,Delantero,Liga MX Femenil Sub-18,14,7,21
+7,Carlos Mendoza,17,Santos Sub-20,Defensa,Liga MX Sub-20,2,2,20
+8,Valentina López,16,Atlas Femenil,Portero,Liga MX Femenil Sub-18,0,1,18
+9,Ricardo Flores,18,Cruz Azul Sub-20,Mediocampo,Liga MX Sub-20,8,9,22
+10,Mariana Díaz,17,León Femenil,Delantero,Liga MX Femenil Sub-18,11,6,19
+11,Fernando Castro,16,Toluca Sub-20,Defensa,Liga MX Sub-20,3,1,21
+12,Sofía Morales,18,Pachuca Femenil,Mediocampo,Liga MX Femenil Sub-18,4,15,20
+13,Andrés Ruiz,17,Necaxa Sub-20,Delantero,Liga MX Sub-20,9,4,16
+14,Daniela Herrera,16,Tijuana Femenil,Defensa,Liga MX Femenil Sub-18,2,3,19
+15,Miguel Torres,18,León Sub-20,Portero,Liga MX Sub-20,0,0,20
+16,Ximena Vargas,17,Atlas Femenil,Mediocampo,Liga MX Femenil Sub-18,5,11,18
+17,Gabriel Sánchez,16,Puebla Sub-20,Delantero,Liga MX Sub-20,7,2,15
+18,Regina Jiménez,18,América Femenil,Defensa,Liga MX Femenil Sub-18,1,2,21
+19,Pablo Guerrero,17,Tijuana Sub-20,Mediocampo,Liga MX Sub-20,4,8,19
+20,Alexa Ramos,16,Santos Femenil,Delantero,Liga MX Femenil Sub-18,13,5,17
+21,Emilio Delgado,18,Querétaro Sub-20,Defensa,Liga MX Sub-20,1,3,22
+22,Lucía Peña,17,Cruz Azul Femenil,Portero,Liga MX Femenil Sub-18,0,2,19
+23,Sebastián Ortiz,16,Atlas Sub-20,Mediocampo,Liga MX Sub-20,5,13,18
+24,Paola Medina,18,Pumas Femenil,Delantero,Liga MX Femenil Sub-18,10,8,20
+25,Rodrigo Silva,17,Monterrey Sub-20,Defensa,Liga MX Sub-20,2,4,21
+26,Fernanda Cruz,16,Toluca Femenil,Mediocampo,Liga MX Femenil Sub-18,6,14,19
+27,Mateo Jiménez,18,Chivas Sub-20,Delantero,Liga MX Sub-20,16,6,20
+28,Nicole Aguilar,17,Necaxa Femenil,Defensa,Liga MX Femenil Sub-18,0,5,18
+29,Iker Romero,16,FC Juárez Sub-20,Portero,Liga MX Sub-20,0,1,17
+30,Amanda Reyes,18,Guadalajara Femenil,Mediocampo,Liga MX Femenil Sub-18,7,16,21
+31,Leonardo Moreno,17,Mazatlán Sub-20,Delantero,Liga MX Sub-20,11,7,19
+32,Génesis Campos,16,Querétaro Femenil,Defensa,Liga MX Femenil Sub-18,3,1,20
+33,Axel González,18,Atlético San Luis Sub-20,Mediocampo,Liga MX Sub-20,3,10,22
+34,Roberta Vázquez,17,Mazatlán Femenil,Delantero,Liga MX Femenil Sub-18,8,4,16
+35,Joaquín Herrera,16,Atlas Sub-20,Defensa,Liga MX Sub-20,1,2,18
+36,Estefanía Luna,18,FC Juárez Femenil,Portero,Liga MX Femenil Sub-18,0,0,20
+37,Gael Martín,17,Santos Sub-20,Mediocampo,Liga MX Sub-20,9,11,20
+38,Montserrat Núñez,16,Atlético San Luis Femenil,Delantero,Liga MX Femenil Sub-18,12,3,18
+39,Emiliano Ríos,18,Tigres Sub-20,Defensa,Liga MX Sub-20,4,1,21
+40,Karla Mendez,17,Puebla Femenil,Mediocampo,Liga MX Femenil Sub-18,2,12,19
+41,Maximiliano Torres,16,León Sub-20,Delantero,Liga MX Sub-20,6,1,14
+42,Adriana Salinas,18,Monterrey Femenil,Defensa,Liga MX Femenil Sub-18,1,6,22
+43,Thiago Espinoza,17,Pachuca Sub-20,Mediocampo,Liga MX Sub-20,7,7,18
+44,Dulce Paredes,16,Tijuana Femenil,Portero,Liga MX Femenil Sub-18,0,1,17
+45,Ian Cabrera,18,Puebla Sub-20,Delantero,Liga MX Sub-20,13,5,19
+46,Frida Castillo,17,León Femenil,Mediocampo,Liga MX Femenil Sub-18,4,9,18
+47,Santiago Rojas,16,Querétaro Sub-20,Defensa,Liga MX Sub-20,2,3,20
+48,Alma Gutiérrez,18,Santos Femenil,Delantero,Liga MX Femenil Sub-18,9,6,17
+49,Nicolás Fuentes,17,Toluca Sub-20,Portero,Liga MX Sub-20,0,0,19
+50,Renata Villanueva,16,Cruz Azul Femenil,Mediocampo,Liga MX Femenil Sub-18,8,13,20

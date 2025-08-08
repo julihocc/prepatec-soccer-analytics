@@ -2,7 +2,7 @@
 
 ## Contexto Centralizado del Proyecto
 
-**Para información completa del proyecto, consulta: [AI-CONTEXT.md](./AI-CONTEXT.md)**
+**Para información completa del proyecto, consulta: [AI-CONTEXT.md](~/.ai/AI-CONTEXT.md)**
 
 ## Instrucciones Específicas para GitHub Copilot
 
@@ -48,4 +48,4 @@ print("Este análisis nos muestra los patrones de goles!")
 
 ---
 
-**Contexto completo en:** [AI-CONTEXT.md](./AI-CONTEXT.md)
+**Contexto completo en:** [AI-CONTEXT.md](~/.ai/AI-CONTEXT.md)

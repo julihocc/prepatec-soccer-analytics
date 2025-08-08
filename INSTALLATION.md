@@ -3,16 +3,19 @@
 ## Métodos de Instalación
 
 ### Método 1: Script Automático (Recomendado)
+
 ```bash
 python install_dependencies.py
 ```
 
 ### Método 2: Instalación Manual
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ### Método 3: Desde Notebook
+
 Si estás ejecutando un notebook, la primera celda instalará automáticamente todas las dependencias necesarias.
 
 ## Paquetes Incluidos

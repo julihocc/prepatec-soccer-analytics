@@ -3,10 +3,8 @@
 
 Esta carpeta contiene todos los archivos de contexto e instrucciones para asistentes de IA trabajando en este proyecto.
 
-
 Archivos en esta carpeta
 =========================
-
 
 AI-CONTEXT.md
 -------------
@@ -19,7 +17,6 @@ AI-CONTEXT.md
 * Metodología educativa
 * Patrones y convenciones
 
-
 copilot-instructions.md
 -----------------------
 
@@ -30,17 +27,14 @@ copilot-instructions.md
 * Estructura de notebooks
 * Referencias al contexto principal
 
-
 Uso
 ===
-
 
 Para Claude Code
 ----------------
 
 * Lee `CLAUDE.md` en la raíz del proyecto
 * Será redirigido automáticamente a `AI-CONTEXT.md`
-
 
 Para GitHub Copilot
 --------------------
@@ -49,19 +43,18 @@ Para GitHub Copilot
 * Apunta a `copilot-instructions.md` en esta carpeta
 * GitHub Copilot lo detecta automáticamente
 
-
 Para otros asistentes de IA
 ----------------------------
 
 * Consulta directamente `AI-CONTEXT.md` para contexto completo
 * Usa `copilot-instructions.md` como referencia para patrones de código
 
-
 Arquitectura
 ============
 
 [source]
 ----
+
 .ai/
 ├── AI-CONTEXT.md           # Contexto principal (fuente única)
 ├── copilot-instructions.md # Instrucciones específicas para Copilot
@@ -72,7 +65,6 @@ Arquitectura
 └── .github-copilot-instructions.md # Enlace simbólico a .ai/copilot-instructions.md
 ----
 
-
 Beneficios de esta organización
 ================================
 
@@ -81,6 +73,5 @@ Beneficios de esta organización
 * *Funcionalidad preservada* - Enlaces simbólicos mantienen compatibilidad
 * *Escalabilidad* - Fácil agregar nuevos asistentes
 * *Mantenimiento* - Solo actualizar AI-CONTEXT.md
-
 
 *Archivo principal:* link:./AI-CONTEXT.md[AI-CONTEXT.md]

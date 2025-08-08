@@ -664,9 +664,11 @@ pip install -r requirements.txt
 │   ├── bloque-2/               # Evaluaciones del Bloque 2
 │   └── bloque-3/               # Evaluaciones del Bloque 3
 ├── referencias/                 # Material de apoyo
-├── AI-CONTEXT.md               # Contexto principal para asistentes de IA
+├── .ai/                        # Contexto para asistentes de IA
+│   ├── AI-CONTEXT.md           # Contexto principal y completo
+│   └── copilot-instructions.md # Instrucciones específicas para GitHub Copilot
 ├── CLAUDE.md                   # Instrucciones específicas para Claude Code
-├── .github-copilot-instructions.md # Instrucciones para GitHub Copilot
+├── .github-copilot-instructions.md # Enlace simbólico a .ai/copilot-instructions.md
 ├── INSTALLATION.md             # Guía de instalación completa
 ├── install_dependencies.py     # Script de instalación automática
 ├── requirements.txt            # Dependencias del proyecto
@@ -675,13 +677,14 @@ pip install -r requirements.txt
 
 ### Para Desarrolladores y Asistentes de IA
 
-Este proyecto incluye archivos de contexto específicos para facilitar el trabajo con asistentes de IA:
+Este proyecto incluye archivos de contexto organizados para facilitar el trabajo con asistentes de IA:
 
-- **`AI-CONTEXT.md`** - Contexto principal y completo del proyecto
-- **`CLAUDE.md`** - Instrucciones específicas para Claude Code
-- **`.github-copilot-instructions.md`** - Instrucciones para GitHub Copilot
+- **`.ai/AI-CONTEXT.md`** - Contexto principal y completo del proyecto
+- **`CLAUDE.md`** - Instrucciones específicas para Claude Code (redirige a `.ai/AI-CONTEXT.md`)
+- **`.ai/copilot-instructions.md`** - Instrucciones para GitHub Copilot
+- **`.github-copilot-instructions.md`** - Enlace simbólico para compatibilidad con Copilot
 
-Todos los asistentes de IA deben consultar `AI-CONTEXT.md` como fuente principal de contexto para evitar duplicación de información.
+Todos los asistentes de IA deben consultar `.ai/AI-CONTEXT.md` como fuente principal de contexto para evitar duplicación de información.
 
 ## Contribución
 

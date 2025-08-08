@@ -4,11 +4,11 @@
 
 **Claude, para trabajar en este proyecto necesitas leer el contexto completo en:**
 
-👉 **[AI-CONTEXT.md](./AI-CONTEXT.md)** 👈
+👉 **[.ai/AI-CONTEXT.md](./.ai/AI-CONTEXT.md)** 👈
 
 ## ⚡ Acceso Rápido al Contexto
 
-Por favor, **antes de hacer cualquier cambio o sugerencia**, lee completamente el archivo `AI-CONTEXT.md` que contiene:
+Por favor, **antes de hacer cualquier cambio o sugerencia**, lee completamente el archivo `.ai/AI-CONTEXT.md` que contiene:
 
 - 📚 **Visión general del proyecto** - Curso educativo de ciencia de datos aplicada al fútbol
 - 🏗️ **Estructura del repositorio** - Organización de bloques, semanas y evaluaciones
@@ -29,7 +29,7 @@ Por favor, **antes de hacer cualquier cambio o sugerencia**, lee completamente e
 
 ## 📋 Checklist Antes de Trabajar
 
-- [ ] ✅ He leído `AI-CONTEXT.md` completamente
+- [ ] ✅ He leído `.ai/AI-CONTEXT.md` completamente
 - [ ] 🎯 Entiendo que es un curso educativo en español para preparatoria
 - [ ] ⚽ Recuerdo usar contexto futbolístico en todos los ejemplos
 - [ ] 📚 Mantengo el nivel educativo apropiado para estudiantes
@@ -45,4 +45,4 @@ Este proyecto es **muy específico**:
 
 ---
 
-**📖 Lee el contexto completo en: [AI-CONTEXT.md](./AI-CONTEXT.md)**
+**📖 Lee el contexto completo en: [.ai/AI-CONTEXT.md](./.ai/AI-CONTEXT.md)**

@@ -29,7 +29,7 @@ Al completar este caso práctico, los estudiantes serán capaces de:
 
 ## Dataset Proporcionado
 
-### Dataset Principal: `jugadores_liga_juvenil_simple.csv`
+### Dataset Principal: `jugadores_liga_juvenil.csv`
 **Versión simplificada con solo las columnas esenciales**
 ```csv
 jugador_id,nombre,edad,equipo,posicion,torneo,goles,asistencias,partidos_jugados
@@ -68,7 +68,7 @@ import seaborn as sns
 sns.set_theme(style="whitegrid", palette="viridis")
 
 # Cargar el dataset simplificado
-datos_jugadores = pd.read_csv('jugadores_liga_juvenil_simple.csv')
+datos_jugadores = pd.read_csv('jugadores_liga_juvenil.csv')
 print("¡Datos cargados correctamente!")
 ```
 

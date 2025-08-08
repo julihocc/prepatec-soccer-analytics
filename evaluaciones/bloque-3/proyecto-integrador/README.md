@@ -1,68 +1,75 @@
-# Proyecto Integrador Final
+Proyecto Integrador Final
+========================
+Sistema de Análisis Predictivo para Fútbol
 
-## Sistema de Análisis Predictivo para Fútbol
 
-**Modalidad:** Individual  
-**Ponderación:** 30% de la calificación final  
-**Duración:** 2 semanas (Semana 14-15)  
-**Entrega:** Jupyter Notebook único con 3 secciones
+Información Básica
+------------------
 
----
+Modalidad:: Individual
+Ponderación:: 30% de la calificación final
+Duración:: 2 semanas (Semana 14-15)
+Entrega:: Jupyter Notebook único con 3 secciones
 
-## Descripción General
+
+Descripción General
+-------------------
 
 Este proyecto integrador constituye la evaluación final del curso, donde los estudiantes demostrarán los conocimientos básicos de Python para análisis de datos deportivos adquiridos durante las 15 semanas. Cada estudiante desarrollará un análisis completo de datos de fútbol que combine conceptos fundamentales de programación, análisis de datos y predicciones básicas.
 
----
 
-## Contexto del Proyecto
+Contexto del Proyecto
+---------------------
 
 Eres un analista junior de fútbol y tu primera tarea es crear un reporte completo sobre la Liga de Campeones usando Python. Tu análisis debe demostrar que puedes:
 
-1. **Explorar y limpiar datos** de partidos de fútbol
-2. **Crear visualizaciones** que muestren patrones interesantes
-3. **Hacer predicciones básicas** sobre resultados de partidos
-4. **Comunicar hallazgos** de forma clara y profesional
+. Explorar y limpiar datos de partidos de fútbol
+. Crear visualizaciones que muestren patrones interesantes
+. Hacer predicciones básicas sobre resultados de partidos
+. Comunicar hallazgos de forma clara y profesional
 
----
 
-## Objetivos de Aprendizaje
+Objetivos de Aprendizaje
+------------------------
 
 Al completar este proyecto, el estudiante será capaz de:
 
-- Usar pandas para cargar, limpiar y manipular datos de fútbol
-- Aplicar matplotlib y seaborn para crear gráficos informativos
-- Calcular estadísticas básicas y encontrar patrones en los datos
-- Crear un modelo de predicción simple usando scikit-learn
-- Organizar su análisis en un notebook de Jupyter bien estructurado
-- Explicar sus hallazgos usando lenguaje claro y apropiado
+* Usar pandas para cargar, limpiar y manipular datos de fútbol
+* Aplicar matplotlib y seaborn para crear gráficos informativos
+* Calcular estadísticas básicas y encontrar patrones en los datos
+* Crear un modelo de predicción simple usando scikit-learn
+* Organizar su análisis en un notebook de Jupyter bien estructurado
+* Explicar sus hallazgos usando lenguaje claro y apropiado
 
----
 
-## Estructura del Proyecto
+Estructura del Proyecto
+========================
 
-### Sección 1: Exploración de Datos (40%)
 
-**Tiempo estimado:** 3-4 horas
+Sección 1: Exploración de Datos (40%)
+--------------------------------------
 
-#### Objetivos
+Tiempo estimado:: 3-4 horas
 
-- Cargar y explorar el dataset de Champions League
-- Limpiar datos básicos (valores faltantes, duplicados)
-- Calcular estadísticas descriptivas simples
+=== Objetivos
 
-#### Entregables en el notebook
+* Cargar y explorar el dataset de Champions League
+* Limpiar datos básicos (valores faltantes, duplicados)
+* Calcular estadísticas descriptivas simples
 
-- Carga de datos con pandas
-- Exploración básica (shape, info, describe)
-- Limpieza de datos sencilla
-- 3-5 gráficos descriptivos con matplotlib/seaborn
+=== Entregables en el notebook
 
-#### Tareas específicas
+* Carga de datos con pandas
+* Exploración básica (shape, info, describe)
+* Limpieza de datos sencilla
+* 3-5 gráficos descriptivos con matplotlib/seaborn
 
-**1.1 Carga de Datos**
+=== Tareas específicas
 
-```python
+==== 1.1 Carga de Datos
+
+[source,python]
+----
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -78,44 +85,47 @@ datos_champions = pd.read_csv('champions_league_matches.csv')
 print(f"El dataset tiene {datos_champions.shape[0]} filas y {datos_champions.shape[1]} columnas")
 print("\nPrimeras 5 filas:")
 print(datos_champions.head())
-```
+----
 
-**1.2 Análisis Básico de Datos**
+==== 1.2 Análisis Básico de Datos
 
-- Ver información general del dataset (`.info()`, `.describe()`)
-- Identificar valores faltantes simples
-- Contar equipos únicos y temporadas
-- Calcular estadísticas básicas de goles
+* Ver información general del dataset (`.info()`, `.describe()`)
+* Identificar valores faltantes simples
+* Contar equipos únicos y temporadas
+* Calcular estadísticas básicas de goles
 
-**1.3 Limpieza Simple de Datos**
+==== 1.3 Limpieza Simple de Datos
 
-- Eliminar filas duplicadas si las hay
-- Rellenar valores faltantes básicos
-- Crear una nueva columna simple como:
+* Eliminar filas duplicadas si las hay
+* Rellenar valores faltantes básicos
+* Crear una nueva columna simple como:
   - `total_goles`: suma de goles local + visitante
   - `resultado`: 'Local', 'Visitante', 'Empate'
 
-### Sección 2: Visualización y Análisis (35%)
 
-**Tiempo estimado:** 2-3 horas
+Sección 2: Visualización y Análisis (35%)
+------------------------------------------
 
-#### Objetivos
+Tiempo estimado:: 2-3 horas
 
-- Crear gráficos que muestren patrones en los datos
-- Responder preguntas básicas sobre el fútbol
-- Usar matplotlib y seaborn efectivamente
+=== Objetivos
 
-#### Entregables en el notebook
+* Crear gráficos que muestren patrones en los datos
+* Responder preguntas básicas sobre el fútbol
+* Usar matplotlib y seaborn efectivamente
 
-- 5-7 visualizaciones diferentes (barras, histogramas, boxplots)
-- Análisis escrito de cada gráfico
-- Al menos 3 conclusiones interesantes sobre Champions League
+=== Entregables en el notebook
 
-#### Tareas específicas
+* 5-7 visualizaciones diferentes (barras, histogramas, boxplots)
+* Análisis escrito de cada gráfico
+* Al menos 3 conclusiones interesantes sobre Champions League
 
-**2.1 Gráficos Requeridos (ejemplos)**
+=== Tareas específicas
 
-```python
+==== 2.1 Gráficos Requeridos (ejemplos)
+
+[source,python]
+----
 # 1. Gráfico de barras - Equipos con más goles
 plt.figure(figsize=(10, 6))
 goles_por_equipo = datos_champions.groupby('equipo_local')['goles_local'].sum()
@@ -131,43 +141,46 @@ plt.title('¿Cuántos goles se marcan normalmente en Champions?')
 plt.xlabel('Goles por Partido')
 plt.ylabel('Frecuencia')
 plt.show()
-```
+----
 
-**2.2 Análisis Descriptivo Simple**
+==== 2.2 Análisis Descriptivo Simple
 
-- Comparar goles como local vs visitante
-- Identificar los equipos más exitosos
-- Analizar patrones por temporada
-- Describir tendencias básicas observadas
+* Comparar goles como local vs visitante
+* Identificar los equipos más exitosos
+* Analizar patrones por temporada
+* Describir tendencias básicas observadas
 
-**2.3 Estadísticas Básicas**
+==== 2.3 Estadísticas Básicas
 
-- Promedio de goles por partido
-- Equipo con mejor record como local
-- Temporada con más/menos goles
-- Porcentaje de empates, victorias locales y visitantes
+* Promedio de goles por partido
+* Equipo con mejor record como local
+* Temporada con más/menos goles
+* Porcentaje de empates, victorias locales y visitantes
 
-### Sección 3: Predicción Simple (25%)
 
-**Tiempo estimado:** 2-3 horas
+Sección 3: Predicción Simple (25%)
+-----------------------------------
 
-#### Objetivos
+Tiempo estimado:: 2-3 horas
 
-- Crear un modelo básico de predicción
-- Usar scikit-learn para clasificación simple
-- Evaluar qué tan bien funciona el modelo
+=== Objetivos
 
-#### Entregables en el notebook
+* Crear un modelo básico de predicción
+* Usar scikit-learn para clasificación simple
+* Evaluar qué tan bien funciona el modelo
 
-- Un modelo de clasificación simple (como decidir si ganará local o visitante)
-- Evaluación básica del modelo (precisión)
-- Explicación en español de los resultados
+=== Entregables en el notebook
 
-#### Tareas específicas
+* Un modelo de clasificación simple (como decidir si ganará local o visitante)
+* Evaluación básica del modelo (precisión)
+* Explicación en español de los resultados
 
-**3.1 Preparar Datos para Predicción**
+=== Tareas específicas
 
-```python
+==== 3.1 Preparar Datos para Predicción
+
+[source,python]
+----
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
@@ -179,42 +192,45 @@ y = datos_champions['resultado']  # 'Local', 'Visitante', 'Empate'
 
 # Dividir datos en entrenamiento y prueba
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-```
+----
 
-**3.2 Crear Modelo Simple**
+==== 3.2 Crear Modelo Simple
 
-- Usar RandomForestClassifier (más fácil que regresión logística para principiantes)
-- Entrenar con datos históricos
-- Hacer predicciones en datos de prueba
-- Calcular precisión del modelo
+* Usar RandomForestClassifier (más fácil que regresión logística para principiantes)
+* Entrenar con datos históricos
+* Hacer predicciones en datos de prueba
+* Calcular precisión del modelo
 
-**3.3 Interpretar Resultados**
+==== 3.3 Interpretar Resultados
 
-- ¿Qué tan bien predice el modelo?
-- ¿Qué variables son más importantes?
-- ¿Es mejor que adivinar al azar?
-- Escribir conclusiones en español sencillo
+* ¿Qué tan bien predice el modelo?
+* ¿Qué variables son más importantes?
+* ¿Es mejor que adivinar al azar?
+* Escribir conclusiones en español sencillo
 
----
 
-## Dataset Proporcionado
+Dataset Proporcionado
+======================
 
-### Dataset Principal: Champions League Matches
 
-**Fuente:** [Kaggle - Champions League Matches](https://www.kaggle.com/datasets/julihocc/champs)
+Dataset Principal: Champions League Matches
+--------------------------------------------
+
+Fuente:: https://www.kaggle.com/datasets/julihocc/champs[Kaggle - Champions League Matches]
 
 Este dataset contiene información detallada sobre partidos de la Liga de Campeones de la UEFA, proporcionando una excelente base para análisis predictivo y estadístico de fútbol de élite europea.
 
-#### Características del Dataset
+=== Características del Dataset
 
-- **Competición:** UEFA Champions League
-- **Formato:** Archivo comprimido (ZIP)
-- **Tipo de datos:** Estadísticas de partidos de fútbol profesional
-- **Alcance:** Partidos de la competición más prestigiosa de clubes europeos
+Competición:: UEFA Champions League
+Formato:: Archivo comprimido (ZIP)
+Tipo de datos:: Estadísticas de partidos de fútbol profesional
+Alcance:: Partidos de la competición más prestigiosa de clubes europeos
 
-#### Datos Disponibles (estructura típica esperada)
+=== Datos Disponibles (estructura típica esperada)
 
-```python
+[source,python]
+----
 # Estructura estimada basada en competiciones de Champions League
 columnas_esperadas = [
     'match_id', 'fecha', 'equipo_local', 'equipo_visitante', 
@@ -227,22 +243,25 @@ columnas_esperadas = [
     'tarjetas_rojas_local', 'tarjetas_rojas_visitante',
     'arbitro', 'asistencia'
 ]
-```
+----
 
-#### Ventajas para el Análisis
+=== Ventajas para el Análisis
 
-- **Nivel competitivo:** Equipos de máxima calidad europea
-- **Contexto táctico:** Partidos de alta intensidad y planificación
-- **Relevancia temporal:** Datos de competiciones recientes
-- **Variedad de fases:** Desde fase de grupos hasta final
+* *Nivel competitivo:* Equipos de máxima calidad europea
+* *Contexto táctico:* Partidos de alta intensidad y planificación
+* *Relevancia temporal:* Datos de competiciones recientes
+* *Variedad de fases:* Desde fase de grupos hasta final
 
----
 
-## Requisitos Técnicos
+Requisitos Técnicos
+====================
 
-### Bibliotecas Requeridas
 
-```python
+Bibliotecas Requeridas
+-----------------------
+
+[source,python]
+----
 # Análisis de datos (visto en Bloque 1 y 2)
 import pandas as pd
 import numpy as np
@@ -262,17 +281,17 @@ from sklearn.metrics import accuracy_score
 # Utilidades básicas
 import warnings
 warnings.filterwarnings('ignore')
-```
+----
 
-### Archivo Único Requerido
 
-```
-proyecto_champions_final.ipynb
-```
+Archivo Único Requerido
+------------------------
 
-**Estructura del Notebook:**
+Nombre del archivo:: `proyecto_champions_final.ipynb`
 
-```markdown
+=== Estructura del Notebook
+
+----
 # Proyecto Final: Análisis de Champions League
 
 ## Sección 1: Exploración de Datos (40%)
@@ -294,217 +313,185 @@ proyecto_champions_final.ipynb
 - ¿Qué aprendiste sobre Champions League?
 - ¿Cómo te ayudó Python en el análisis?
 - ¿Qué más te gustaría investigar?
-```
+----
 
----
 
-## Criterios de Evaluación
+Criterios de Evaluación
+========================
 
-### Rúbrica Detallada (100 puntos)
 
-| Componente | Peso | Excelente (90-100%) | Bueno (80-89%) | Suficiente (70-79%) | Insuficiente (<70%) |
-|------------|------|-------------------|----------------|-------------------|-------------------|
-| **Análisis Exploratorio** | 25% | Análisis exhaustivo, insights profundos | Análisis completo, interpretación correcta | Análisis básico pero correcto | Análisis superficial o errores |
-| **Modelado ML** | 35% | Modelos bien implementados, validación rigurosa | Modelos correctos, evaluación adecuada | Modelos básicos funcionales | Errores en implementación o validación |
-| **Dashboard** | 25% | Interactividad avanzada, UX excelente | Funcionalidad completa, diseño claro | Funcionalidad básica | Dashboard no funcional |
-| **Presentación** | 15% | Comunicación excepcional, dominio total | Presentación clara, buen dominio | Presentación básica | Comunicación deficiente |
+Rúbrica Detallada (100 puntos)
+-------------------------------
 
-### Criterios Específicos por Fase
+[cols="2,1,2,2,2,2"]
+|===
+|Componente |Peso |Excelente (90-100%) |Bueno (80-89%) |Suficiente (70-79%) |Insuficiente (<70%)
 
-#### Análisis Exploratorio (25 puntos)
+|*Exploración de Datos* 
+|40% 
+|Análisis completo, insights claros, código bien documentado
+|Análisis correcto, interpretación adecuada, código funcional
+|Análisis básico pero correcto, código simple
+|Análisis superficial o errores importantes
 
-- **Calidad de EDA (10 pts):** Exhaustividad, insights, visualizaciones
-- **Limpieza de datos (8 pts):** Manejo de faltantes, outliers, inconsistencias
-- **Ingeniería de features (7 pts):** Creatividad, relevancia, implementación
+|*Visualización y Análisis*
+|35% 
+|Gráficos informativos, análisis profundo, conclusiones sólidas
+|Gráficos correctos, análisis apropiado, buenas conclusiones
+|Gráficos básicos funcionales, análisis simple
+|Gráficos deficientes o análisis incorrecto
 
-#### Modelado Predictivo (35 puntos)
+|*Predicción Simple*
+|25%
+|Modelo bien implementado, evaluación correcta, interpretación clara
+|Modelo correcto, evaluación adecuada, interpretación básica
+|Modelo funcional básico, evaluación simple
+|Errores en implementación o evaluación
+|===
 
-- **Implementación técnica (15 pts):** Código correcto, buenas prácticas
-- **Evaluación de modelos (10 pts):** Métricas apropiadas, validación cruzada
-- **Interpretación (10 pts):** Análisis de resultados, importancia de variables
 
-#### Dashboard Interactivo (25 puntos)
+Criterios Específicos por Sección
+----------------------------------
 
-- **Funcionalidad (12 pts):** Filtros, predicciones, comparaciones
-- **Diseño UX (8 pts):** Intuitividad, estética, navegación
-- **Integración técnica (5 pts):** Conexión con modelos, rendimiento
+=== Exploración de Datos (40 puntos)
 
-#### Presentación (15 puntos)
+* *Carga y exploración (15 pts):* Código correcto, exploración completa
+* *Limpieza de datos (15 pts):* Manejo apropiado de datos faltantes y duplicados
+* *Estadísticas descriptivas (10 pts):* Cálculos correctos, interpretación básica
 
-- **Claridad comunicativa (8 pts):** Estructura, lenguaje, tiempo
-- **Dominio técnico (4 pts):** Respuesta a preguntas, explicaciones
-- **Propuestas futuras (3 pts):** Mejoras, extensiones, aplicaciones
+=== Visualización y Análisis (35 puntos)
 
----
+* *Gráficos (20 pts):* 5-7 visualizaciones claras y apropiadas
+* *Análisis (10 pts):* Interpretación correcta de los gráficos
+* *Conclusiones (5 pts):* Al menos 3 conclusiones válidas sobre Champions League
 
-## Hitos y Entregables
+=== Predicción Simple (25 puntos)
 
-### Semana 1: Análisis Exploratorio
+* *Preparación de datos (10 pts):* División correcta train/test, variables apropiadas
+* *Implementación del modelo (10 pts):* Código correcto, uso apropiado de RandomForest
+* *Evaluación e interpretación (5 pts):* Cálculo de precisión, interpretación en español
 
-**Fecha límite:** Viernes de la primera semana
 
-- **Entregable:** Notebook de EDA completo
-- **Revisión:** Feedback inmediato sobre calidad de análisis
-- **Peso:** 25% de la calificación final
+Hitos y Entregables
+====================
 
-### Semana 2-3: Modelado Predictivo
 
-**Fecha límite:** Viernes de la tercera semana
+Semana 14: Exploración y Visualización
+---------------------------------------
 
-- **Entregable:** Notebook de ML + modelos guardados
-- **Revisión:** Evaluación técnica de implementación
-- **Peso:** 35% de la calificación final
+Fecha límite:: Viernes de la semana 14
 
-### Semana 4: Dashboard y Presentación
+Entregables::
+* Sección 1 completa (Exploración de Datos)
+* Sección 2 completa (Visualización y Análisis)
+* Notebook parcial con las primeras dos secciones
 
-**Fecha límite:** Último día de clases
+Revisión:: Feedback sobre calidad de análisis y visualizaciones
 
-- **Entregable:** Dashboard + presentación + documentación
-- **Presentación:** 15 minutos por estudiante
-- **Peso:** 40% de la calificación final
 
----
+Semana 15: Predicción y Entrega Final
+--------------------------------------
 
-## Preguntas de Investigación Sugeridas
+Fecha límite:: Último día de clases
 
-Los estudiantes pueden elegir enfocar su proyecto en una o más de estas preguntas:
+Entregables::
+* Sección 3 completa (Predicción Simple)
+* Conclusiones finales
+* Notebook completo y bien documentado
 
-### Predicción y Rendimiento
+Evaluación:: Calificación final basada en rúbrica completa
 
-1. ¿Qué factores determinan el resultado de un partido?
-2. ¿Cómo predecir el rendimiento futuro de un jugador?
-3. ¿Cuáles son los indicadores tempranos de declive en rendimiento?
 
-### Análisis Táctico
+Preguntas de Investigación Sugeridas
+=====================================
 
-1. ¿Cómo influye la táctica en los resultados?
-2. ¿Qué patrones de juego son más efectivos?
-3. ¿Cómo adaptar la estrategia según el rival?
+Los estudiantes pueden enfocar su análisis en estas preguntas:
 
-### Análisis de Mercado
+Análisis Básico
+---------------
 
-1. ¿Qué determina el valor de mercado de un jugador?
-2. ¿Cuándo es el mejor momento para fichar/vender?
-3. ¿Qué jugadores están sub/sobrevalorados?
+. ¿Qué equipos marcan más goles en Champions League?
+. ¿Es ventajoso jugar como local en esta competición?
+. ¿En qué temporada hubo más goles?
+. ¿Cuál es el resultado más común?
 
-### Análisis Temporal
+Análisis de Patrones
+--------------------
 
-1. ¿Cómo varía el rendimiento durante la temporada?
-2. ¿Existen patrones estacionales en el fútbol?
-3. ¿Cómo predecir rachas de buenos/malos resultados?
+. ¿Hay diferencias entre las fases del torneo?
+. ¿Qué países tienen equipos más exitosos?
+. ¿Cómo ha cambiado el estilo de juego a través de los años?
+. ¿Existen patrones en los resultados por temporada?
 
----
 
-## Recursos y Soporte
+Recursos y Soporte
+===================
 
-### Documentación Técnica
 
-- [Guía completa de Scikit-learn](https://scikit-learn.org/stable/)
-- [Plotly para dashboards interactivos](https://plotly.com/python/)
-- [Mejores prácticas de ML](https://developers.google.com/machine-learning/guides/rules-of-ml)
+Documentación Técnica
+----------------------
 
-### Sesiones de Consulta
+* https://pandas.pydata.org/docs/[Pandas Documentation]
+* https://matplotlib.org/stable/contents.html[Matplotlib Guide]
+* https://seaborn.pydata.org/tutorial.html[Seaborn Tutorial]
+* https://scikit-learn.org/stable/user_guide.html[Scikit-learn User Guide]
 
-- **Martes y jueves:** 2:00-3:00 PM (Presencial)
-- **Miércoles:** 6:00-7:00 PM (Virtual)
-- **Por cita:** Disponible bajo solicitud
 
-### Recursos Adicionales
+Sesiones de Consulta
+---------------------
 
-- Datasets complementarios disponibles en Moodle
-- Templates de código en el repositorio del curso
-- Ejemplos de proyectos exitosos (años anteriores)
-- Canal de Slack para dudas técnicas
+Presencial::
+* Martes y jueves: 2:00-3:00 PM
 
----
+Virtual::
+* Miércoles: 6:00-7:00 PM
 
-## Criterios de Originalidad
+Por cita:: Disponible bajo solicitud
 
-### Se Fomenta
 
-- Enfoques creativos e innovadores
-- Análisis únicos o poco convencionales
-- Implementaciones técnicas avanzadas
-- Visualizaciones originales
+Recursos Adicionales
+---------------------
 
-### Se Penaliza
+* Datasets complementarios disponibles en Moodle
+* Templates de código en el repositorio del curso
+* Ejemplos de análisis básicos (notebooks de referencia)
+* Canal de Slack para dudas técnicas
 
-- Copia directa de código sin atribución
-- Proyectos idénticos entre estudiantes
-- Uso de herramientas no autorizadas (AutoML completo)
-- Datasets externos sin aprobación previa
 
-### Política de Integridad Académica
+Criterios de Originalidad
+==========================
 
-- Todo código debe ser original o debidamente citado
-- Se permite consultar documentación oficial
-- Se fomenta la discusión conceptual entre estudiantes
-- Se prohíbe compartir código completo
 
----
+Se Fomenta
+----------
 
-## Cronograma Detallado
+* Análisis creativos dentro del nivel del curso
+* Preguntas interesantes sobre el fútbol
+* Visualizaciones claras y bien diseñadas
+* Interpretaciones personales de los datos
 
-### Semana 1: Inmersión en Datos
 
-| Día | Actividades | Recursos |
-|-----|-------------|----------|
-| L | Introducción al proyecto, formación de workspace | Configuración de entorno |
-| M | Carga y exploración inicial de datos | Notebooks template |
-| X | Análisis estadístico descriptivo | Consulta técnica |
-| J | Limpieza de datos y detección de outliers | Tutorial de limpieza |
-| V | **Entrega EDA** + Feedback inmediato | Revisión y comentarios |
+Se Penaliza
+-----------
 
-### Semana 2: Construcción de Modelos
+* Copia directa de código sin comprensión
+* Proyectos idénticos entre estudiantes
+* Uso de técnicas no vistas en clase sin explicación
+* Datos externos sin autorización previa
 
-| Día | Actividades | Recursos |
-|-----|-------------|----------|
-| L | Preparación de datos para ML | Scikit-learn tutorial |
-| M | Implementación de modelo baseline | Template de modelado |
-| X | Modelos avanzados y tuning | Consulta especializada |
-| J | Validación cruzada y métricas | Guía de evaluación |
-| V | Interpretación y análisis de errores | Herramientas de interpretación |
 
-### Semana 3: Refinamiento y Dashboard
+Política de Integridad Académica
+---------------------------------
 
-| Día | Actividades | Recursos |
-|-----|-------------|----------|
-| L | Optimización final de modelos | Técnicas avanzadas |
-| M | Inicio de dashboard interactivo | Plotly workshop |
-| X | Desarrollo de funcionalidades | Widgets tutorial |
-| J | Integración modelos-dashboard | Consulta técnica |
-| V | **Entrega Modelos** + Testing de dashboard | Evaluación intermedia |
+* Todo código debe ser comprendido por el estudiante
+* Se permite consultar documentación oficial
+* Se fomenta la discusión de conceptos entre estudiantes
+* Se prohíbe compartir código completo de soluciones
 
-### Semana 4: Presentación y Finalización
 
-| Día | Actividades | Recursos |
-|-----|-------------|----------|
-| L | Finalización de dashboard | Pulido final |
-| M | Preparación de presentación | Templates de presentación |
-| X | Documentación técnica | Guías de documentación |
-| J | Ensayos de presentación | Feedback de compañeros |
-| V | **Presentaciones finales** | Evaluación completa |
+Notas Finales
+=============
 
----
+Este proyecto integrador representa la culminación del aprendizaje en el curso, donde los estudiantes demuestran su capacidad para aplicar Python de manera efectiva en el análisis básico de datos deportivos. El enfoque está en la comprensión y aplicación correcta de los conceptos fundamentales aprendidos durante las 15 semanas del curso.
 
-## Ejemplos de Excelencia
-
-### Proyecto Destacado Anterior
-
-**"PredicTOR: Sistema de Predicción para Liga MX"**
-
-- Precisión del 78% en predicción de resultados
-- Dashboard con 15+ visualizaciones interactivas
-- Análisis de 50,000+ eventos de juego
-- Recomendaciones implementadas por equipo real
-
-### Características que lo Hicieron Sobresalir
-
-1. **Innovación técnica:** Uso de redes neuronales simples
-2. **Relevancia práctica:** Partnerships con clubes locales
-3. **Calidad visual:** Interface profesional y intuitiva
-4. **Impacto medible:** Mejora documentada en decisiones
-
----
-
-*Este proyecto integrador representa la culminación del aprendizaje en el curso, donde los estudiantes demuestran su capacidad para aplicar Python de manera profesional en el análisis de datos deportivos.*
+¡Buena suerte con tu análisis de la Champions League!

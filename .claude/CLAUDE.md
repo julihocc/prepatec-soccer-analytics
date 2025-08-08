@@ -3,12 +3,12 @@ Instrucciones para Claude Code
 
 **Para trabajar en este proyecto necesitas leer el contexto completo en:**
 
-**link:.ai/AI-CONTEXT.md[.ai/AI-CONTEXT.md]**
+**link:.ai/AI-CONTEXT.md[~/.ai/AI-CONTEXT.md]**
 
 Acceso Rápido al Contexto
 -------------------------
 
-Por favor, *antes de hacer cualquier cambio o sugerencia*, lee completamente el archivo `.ai/AI-CONTEXT.md` que contiene:
+Por favor, *antes de hacer cualquier cambio o sugerencia*, lee completamente el archivo `~/.ai/AI-CONTEXT.md` que contiene:
 
 * *Visión general del proyecto* - Curso educativo de ciencia de datos aplicada al fútbol
 * *Estructura del repositorio* - Organización de bloques, semanas y evaluaciones
@@ -35,7 +35,7 @@ Comandos Específicos de Claude
 Checklist Antes de Trabajar
 ============================
 
-* [ ] He leído `.ai/AI-CONTEXT.md` completamente
+* [ ] He leído `~/.ai/AI-CONTEXT.md` completamente
 * [ ] Entiendo que es un curso educativo en español para preparatoria
 * [ ] Recuerdo usar contexto futbolístico en todos los ejemplos
 * [ ] Mantengo el nivel educativo apropiado para estudiantes
@@ -51,4 +51,4 @@ Idioma:: Todo en español (variables, comentarios, explicaciones)
 Contexto:: Análisis de datos de fútbol exclusivamente
 Metodología:: Aprendizaje progresivo con proyectos colaborativos
 
-*Lee el contexto completo en: link:.ai/AI-CONTEXT.md[.ai/AI-CONTEXT.md]*
+*Lee el contexto completo en: link:.ai/AI-CONTEXT.md[~/.ai/AI-CONTEXT.md]*

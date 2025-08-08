@@ -54,7 +54,7 @@ Al completar este proyecto, el estudiante será capaz de:
 
 #### Tareas específicas:
 
-**1.1 Carga y Validación de Datos**
+**1.1 Carga y Validación de Datos Champions League**
 ```python
 import pandas as pd
 import numpy as np
@@ -65,10 +65,17 @@ from sklearn.model_selection import train_test_split
 import warnings
 warnings.filterwarnings('ignore')
 
-def cargar_y_validar_datos():
+def cargar_datos_champions():
     """
-    Función principal de carga con validaciones exhaustivas
+    Función para cargar y validar datos de Champions League
     """
+    # Cargar dataset de Champions League desde Kaggle
+    url_dataset = "https://www.kaggle.com/datasets/julihocc/champs"
+    
+    # Validaciones específicas para Champions League:
+    # - Verificar fases de competición (Grupos, 1/8, 1/4, 1/2, Final)
+    # - Validar equipos participantes por temporada
+    # - Confirmar integridad de resultados
     # Tu implementación aquí
     pass
 ```
@@ -79,11 +86,22 @@ def cargar_y_validar_datos():
 - Detección de outliers avanzada
 - Tests de normalidad y homogeneidad
 
-**1.3 Ingeniería de Features**
-- Crear variables derivadas inteligentes
-- Métricas de rendimiento compuestas
-- Variables de contexto temporal
-- Indicadores de forma actual
+**1.3 Ingeniería de Features para Champions League**
+- Crear variables derivadas específicas:
+  - `diferencia_ranking_uefa`: Diferencia entre rankings de equipos
+  - `experiencia_champions`: Número de participaciones previas
+  - `racha_actual`: Victorias/derrotas consecutivas en la competición
+  - `rendimiento_fase`: Estadísticas por fase de competición
+- Métricas de rendimiento compuestas:
+  - `indice_dominio_local`: Combinación de posesión, tiros y córners
+  - `eficiencia_ofensiva`: Goles por tiro a puerta
+  - `solidez_defensiva`: Goles concedidos vs tiros recibidos
+- Variables de contexto temporal:
+  - `dias_descanso`: Tiempo entre partidos
+  - `momento_temporada`: Posición en calendario UEFA
+- Indicadores históricos:
+  - `historial_enfrentamientos`: Record directo entre equipos
+  - `rendimiento_estadio`: Estadísticas como local/visitante
 
 ### Fase 2: Modelado Predictivo (35%)
 **Duración:** Semana 2-3
@@ -100,30 +118,54 @@ def cargar_y_validar_datos():
 
 #### Tareas específicas:
 
-**2.1 Preparación para Machine Learning**
+**2.1 Preparación para Machine Learning - Champions League**
 ```python
-def preparar_datos_ml(df):
+def preparar_datos_ml_champions(df):
     """
-    Preparar datos para algoritmos de ML
+    Preparar datos específicos de Champions League para ML
     """
-    # Codificación de variables categóricas
+    # Codificación específica para Champions:
+    # - One-hot encoding para fases de competición
+    # - Label encoding para equipos (mantener jerarquía histórica)
+    # - Encoding cíclico para fechas (seasonality effects)
+    
     # Escalado de variables numéricas
-    # División train/test estratificada
-    # Manejo de desbalance de clases
+    # División train/test estratificada por temporada
+    # Manejo de desbalance: Champions vs eliminación
+    
+    # Variables objetivo específicas:
+    # - clasificacion_resultado: Victoria/Empate/Derrota
+    # - avanza_fase: Clasificación a siguiente ronda
+    # - goles_prediccion: Número de goles esperados
+    
     return X_train, X_test, y_train, y_test
 ```
 
-**2.2 Implementación de Modelos**
-- **Regresión logística** para predicción de resultados
-- **Random Forest** para importancia de variables
-- **Gradient Boosting** para máximo rendimiento
-- **Ensemble methods** para robustez
+**2.2 Implementación de Modelos para Champions League**
+- **Regresión logística** para predicción de clasificación a siguiente fase
+- **Random Forest** para identificar factores clave en victorias
+- **Gradient Boosting** para predicción precisa de goles
+- **Ensemble methods** para robustez en diferentes fases del torneo
+- **Modelos específicos por fase:**
+  - Modelo para fase de grupos (6 partidos por equipo)
+  - Modelo para eliminatorias directas (ida y vuelta)
+  - Modelo especializado para final (partido único)
 
-**2.3 Evaluación y Validación**
-- Cross-validation estratificada
-- Métricas apropiadas (precisión, recall, F1)
-- Matrices de confusión detalladas
-- Análisis de errores
+**2.3 Evaluación y Validación Champions League**
+- Cross-validation estratificada por temporadas
+- Métricas específicas del fútbol:
+  - Precisión en predicción de resultados exactos
+  - Recall para identificar favoritos y sorpresas
+  - F1-score balanceado para clasificación de equipos
+  - ROC-AUC para probabilidad de avance de fase
+- Matrices de confusión por tipo de partido:
+  - Fase de grupos vs eliminatorias
+  - Partidos de ida vs vuelta
+  - Local vs visitante
+- Análisis de errores contextual:
+  - Factores no capturados por el modelo
+  - Eventos inesperados (lesiones, expulsiones)
+  - Sesgos por temporada o equipos específicos
 
 ### Fase 3: Dashboard Interactivo (25%)
 **Duración:** Semana 3-4
@@ -140,7 +182,7 @@ def preparar_datos_ml(df):
 
 #### Tareas específicas:
 
-**3.1 Componentes del Dashboard**
+**3.1 Componentes del Dashboard Champions League**
 ```python
 import plotly.express as px
 import plotly.graph_objects as go
@@ -148,23 +190,49 @@ from plotly.subplots import make_subplots
 import ipywidgets as widgets
 from IPython.display import display
 
-def crear_dashboard_principal():
+def crear_dashboard_champions():
     """
-    Dashboard interactivo completo
+    Dashboard interactivo específico para Champions League
     """
-    # Panel de control con filtros
-    # Visualizaciones dinámicas
-    # Predicciones en tiempo real
-    # Comparativas interactivas
+    # Panel de control con filtros Champions:
+    # - Selector de temporada (2018-2024)
+    # - Filtro por fase (Grupos, 1/8, 1/4, 1/2, Final)
+    # - Selector de equipos participantes
+    # - Filtro por país de origen
+    
+    # Visualizaciones específicas:
+    # - Mapa interactivo de Europa con equipos
+    # - Timeline de fases del torneo
+    # - Árbol eliminatorio interactivo
+    # - Comparador de rendimiento por fases
+    
+    # Predicciones en tiempo real:
+    # - Simulador de eliminatorias
+    # - Calculadora de probabilidades de avance
+    # - Predictor de campeón
     pass
 ```
 
-**3.2 Funcionalidades Requeridas:**
-- **Filtros interactivos:** Equipo, temporada, posición, etc.
-- **Predictor en vivo:** Entrada de datos → predicción inmediata
-- **Comparador de jugadores:** Visualización lado a lado
-- **Timeline interactiva:** Evolución temporal de métricas
-- **Mapa de calor:** Rendimiento por posición en campo
+**3.2 Funcionalidades Específicas Champions League:**
+- **Filtros interactivos Champions:**
+  - Selector de temporada y fase del torneo
+  - Filtro por equipos, países y confederaciones
+  - Selector de tipo de análisis (histórico vs predictivo)
+- **Simulador de Eliminatorias:** 
+  - Entrada de equipos → predicción de resultados completos
+  - Simulador de cuadro completo desde octavos hasta final
+- **Comparador de Equipos Élite:** 
+  - Visualización lado a lado de gigantes europeos
+  - Análisis histórico de enfrentamientos directos
+- **Timeline Champions:** 
+  - Evolución de equipos a través de temporadas
+  - Progresión de rendimiento por fases del torneo
+- **Mapa Táctico Europeo:** 
+  - Distribución geográfica de equipos participantes
+  - Análisis de rendimiento por liga de origen
+- **Predictor de Campeón:**
+  - Probabilidades dinámicas basadas en rendimiento actual
+  - Simulador Monte Carlo para múltiples escenarios
 
 ### Fase 4: Presentación y Documentación (15%)
 **Duración:** Semana 4
@@ -182,34 +250,40 @@ def crear_dashboard_principal():
 
 ---
 
-## Datasets Proporcionados
+## Dataset Proporcionado
 
-### Dataset Principal: `liga_completa_2020_2024.csv`
-Contiene 5000+ registros de partidos con:
-```
-match_id, date, home_team, away_team, home_goals, away_goals, 
-competition, season, home_possession, away_possession,
-home_shots, away_shots, home_corners, away_corners,
-home_fouls, away_fouls, home_cards, away_cards,
-referee, attendance, weather_condition
+### Dataset Principal: Champions League Matches
+**Fuente:** [Kaggle - Champions League Matches](https://www.kaggle.com/datasets/julihocc/champs)
+
+Este dataset contiene información detallada sobre partidos de la Liga de Campeones de la UEFA, proporcionando una excelente base para análisis predictivo y estadístico de fútbol de élite europea.
+
+#### Características del Dataset:
+- **Competición:** UEFA Champions League
+- **Formato:** Archivo comprimido (ZIP)
+- **Tipo de datos:** Estadísticas de partidos de fútbol profesional
+- **Alcance:** Partidos de la competición más prestigiosa de clubes europeos
+
+#### Datos Disponibles (estructura típica esperada):
+```python
+# Estructura estimada basada en competiciones de Champions League
+columnas_esperadas = [
+    'match_id', 'fecha', 'equipo_local', 'equipo_visitante', 
+    'goles_local', 'goles_visitante', 'resultado_final',
+    'fase_competicion', 'temporada', 'estadio',
+    'posesion_local', 'posesion_visitante',
+    'tiros_local', 'tiros_visitante', 'tiros_arco_local', 'tiros_arco_visitante',
+    'corners_local', 'corners_visitante', 'faltas_local', 'faltas_visitante',
+    'tarjetas_amarillas_local', 'tarjetas_amarillas_visitante',
+    'tarjetas_rojas_local', 'tarjetas_rojas_visitante',
+    'arbitro', 'asistencia'
+]
 ```
 
-### Dataset de Jugadores: `jugadores_stats_completo.csv`
-Contiene 1000+ jugadores con:
-```
-player_id, name, age, position, team, nationality,
-goals, assists, matches_played, minutes_played,
-shots_per_game, passes_per_game, pass_accuracy,
-tackles_per_game, interceptions_per_game,
-market_value, contract_expires, injury_history
-```
-
-### Dataset de Eventos: `eventos_detallados.csv`
-Contiene 50,000+ eventos con:
-```
-event_id, match_id, minute, player_id, event_type,
-team, position_x, position_y, outcome, assist_player_id
-```
+#### Ventajas para el Análisis:
+- **Nivel competitivo:** Equipos de máxima calidad europea
+- **Contexto táctico:** Partidos de alta intensidad y planificación
+- **Relevancia temporal:** Datos de competiciones recientes
+- **Variedad de fases:** Desde fase de grupos hasta final
 
 ---
 
@@ -244,32 +318,40 @@ import pickle
 from datetime import datetime
 ```
 
-### Estructura de Archivos:
+### Estructura de Archivos Champions League:
 ```
-proyecto_final/
+proyecto_champions/
 ├── notebooks/
-│   ├── 01_analisis_exploratorio.ipynb
-│   ├── 02_modelos_predictivos.ipynb
-│   └── 03_dashboard_interactivo.ipynb
+│   ├── 01_analisis_exploratorio_champions.ipynb
+│   ├── 02_modelos_predictivos_champions.ipynb
+│   └── 03_dashboard_champions.ipynb
 ├── data/
-│   ├── raw/                    # Datos originales
-│   ├── processed/              # Datos limpios
-│   └── external/               # Datos adicionales
+│   ├── raw/
+│   │   └── champions_league_matches.csv    # Dataset de Kaggle
+│   ├── processed/
+│   │   ├── datos_limpios_champions.csv
+│   │   ├── features_ingenieria.csv
+│   │   └── estadisticas_por_fase.csv
+│   └── external/
+│       ├── rankings_uefa.csv              # Rankings históricos
+│       └── info_equipos_europa.csv        # Datos adicionales
 ├── models/
-│   ├── modelo_resultados.pkl
-│   ├── modelo_goles.pkl
-│   └── metricas_evaluacion.json
+│   ├── modelo_clasificacion_fase.pkl      # Predicción avance fase
+│   ├── modelo_resultados_champions.pkl    # Predicción resultados
+│   ├── modelo_goles_champions.pkl         # Predicción goles
+│   └── metricas_evaluacion_champions.json
 ├── utils/
-│   ├── data_processing.py
-│   ├── visualization.py
-│   └── model_utils.py
+│   ├── champions_data_processing.py       # Procesamiento específico
+│   ├── champions_visualization.py         # Visualizaciones temáticas
+│   ├── eliminatorias_simulator.py        # Simulador de cuadros
+│   └── model_utils_champions.py
 ├── docs/
 │   ├── README.md
-│   ├── manual_dashboard.md
-│   └── documentacion_tecnica.md
+│   ├── manual_dashboard_champions.md
+│   └── documentacion_tecnica_champions.md
 └── presentation/
-    ├── presentacion_final.pdf
-    └── demo_dashboard.mp4
+    ├── presentacion_final_champions.pdf
+    └── demo_dashboard_champions.mp4
 ```
 
 ---

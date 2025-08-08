@@ -6,7 +6,7 @@
 
 ---
 
-## 🎯 Examen Canvas (20% de la calificación total)
+## Examen Canvas (20% de la calificación total)
 
 ### Configuración Automática
 - **Preguntas totales:** 75 en el banco
@@ -25,7 +25,7 @@
 
 ---
 
-## 🤝 Caso Práctico Colaborativo (15% de la calificación total)
+## Caso Práctico Colaborativo (15% de la calificación total)
 
 ### "Sistema de Scouting y Análisis Táctico"
 **Modalidad:** Equipos de 3-4 estudiantes  
@@ -70,7 +70,7 @@
 
 ---
 
-## 🏆 Escala de Calificación del Bloque
+## Escala de Calificación del Bloque
 
 ### Conversión Final (35% del curso):
 - **Examen Canvas:** 20% × (calificación/100)
@@ -85,7 +85,7 @@
 
 ---
 
-## 📊 Criterios Específicos de Evaluación
+## Criterios Específicos de Evaluación
 
 ### Calidad de Análisis Exploratorio:
 - **Exhaustividad:** Cobertura completa de variables relevantes
@@ -107,7 +107,7 @@
 
 ---
 
-## ✅ Entregables Específicos
+## Entregables Específicos
 
 ### Caso Práctico Bloque 2:
 1. **scouting_analysis_equipo[X].ipynb** - Análisis completo

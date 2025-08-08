@@ -7,9 +7,9 @@
 
 ---
 
-## 📊 Componentes de Evaluación
+## Componentes de Evaluación
 
-### 🎯 Examen Canvas (20% del curso)
+### Examen Canvas (20% del curso)
 **Ubicación:** [canvas/banco-preguntas-bloque2.md](canvas/banco-preguntas-bloque2.md)
 - **Banco:** 75 preguntas especializadas
 - **Formato:** 70% opción múltiple + 30% respuesta numérica  
@@ -17,7 +17,7 @@
 - **Tiempo:** 45-60 minutos
 - **Cobertura:** Exploración, tipos de datos deportivos, estadística descriptiva, seaborn
 
-### 🤝 Caso Práctico Colaborativo (15% del curso)
+### Caso Práctico Colaborativo (15% del curso)
 **Ubicación:** [caso-practico/caso-bloque2.md](caso-practico/caso-bloque2.md)
 - **Proyecto:** "Sistema de Scouting y Análisis Táctico"
 - **Equipos:** 3-4 estudiantes
@@ -25,7 +25,7 @@
 - **Entregables:** Análisis completo + Dashboard interactivo + Presentación
 - **Enfoque:** Aplicación profesional de técnicas de exploración de datos
 
-### 📋 Sistema de Evaluación
+### Sistema de Evaluación
 **Ubicación:** [rubricas/README.md](rubricas/README.md)
 - **Criterios especializados** para análisis de datos
 - **Evaluación de visualizaciones** y dashboards
@@ -34,7 +34,7 @@
 
 ---
 
-## 🎯 Objetivos de Aprendizaje
+## Objetivos de Aprendizaje
 
 ### Competencias de Exploración
 - **Carga de datos:** CSV, Excel, múltiples formatos deportivos
@@ -62,7 +62,7 @@
 
 ---
 
-## 📅 Cronograma de Evaluación
+## Cronograma de Evaluación
 
 ### Semana 12: Preparación Intensiva
 - **Canvas disponible:** Banco completo liberado para estudio avanzado
@@ -86,7 +86,7 @@
 
 ---
 
-## 🏆 Criterios de Éxito Avanzados
+## Criterios de Éxito Avanzados
 
 ### Nivel Suficiente (70-79%)
 - **Exploración correcta** con manejo básico de datos faltantes
@@ -108,7 +108,7 @@
 
 ---
 
-## 📊 Tipos de Análisis Requeridos
+## Tipos de Análisis Requeridos
 
 ### Análisis de Rendimiento Individual
 - **Métricas por posición:** Especialización de KPIs según rol
@@ -130,7 +130,7 @@
 
 ---
 
-## 🛠️ Herramientas y Tecnologías
+## Herramientas y Tecnologías
 
 ### Stack Técnico Requerido
 - **Pandas avanzado:** GroupBy, merge, pivot tables
@@ -152,7 +152,7 @@
 
 ---
 
-## 🎯 Preparación Estratégica
+## Preparación Estratégica
 
 ### Para Examen Canvas Avanzado:
 1. **Dominar seaborn completamente:** Todos los tipos de gráfico principales
@@ -174,7 +174,7 @@
 
 ---
 
-## 🏅 Conexión con la Industria
+## Conexión con la Industria
 
 ### Contexto Profesional Real
 - **Herramientas similares:** Wyscout, InStat, StatsBomb

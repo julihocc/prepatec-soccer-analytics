@@ -6,7 +6,7 @@
 
 ---
 
-## 🎯 Examen Canvas (20% de la calificación total)
+## Examen Canvas (20% de la calificación total)
 
 ### Configuración Automática
 - **Preguntas totales:** 70 en el banco
@@ -26,7 +26,7 @@
 
 ---
 
-## 🤝 Caso Práctico Colaborativo (15% de la calificación total)
+## Caso Práctico Colaborativo (15% de la calificación total)
 
 ### "Análisis de Rendimiento de Club"
 **Modalidad:** Equipos de 3-4 estudiantes  
@@ -62,7 +62,7 @@
 
 ---
 
-## 🏆 Escala de Calificación del Bloque
+## Escala de Calificación del Bloque
 
 ### Conversión Final (35% del curso):
 - **Examen Canvas:** 20% × (calificación/100)
@@ -77,7 +77,7 @@
 
 ---
 
-## ✅ Criterios de Integridad Académica
+## Criterios de Integridad Académica
 
 ### Para Examen Canvas:
 - Trabajo individual estricto

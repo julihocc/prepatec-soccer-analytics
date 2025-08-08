@@ -1,6 +1,6 @@
 # Ciencia de Datos Aplicada al Análisis de Resultados en Fútbol
 
-## 📋 Información del Curso
+## Información del Curso
 
 **Duración:** 14 semanas  
 **Modalidad:** 3 horas semanales  
@@ -8,13 +8,13 @@
 **Dataset principal:** [Champs - Kaggle](https://www.kaggle.com/datasets/julihocc/champs)  
 **Notebook de referencia:** [La Remontada](https://www.kaggle.com/code/julihocc/la-remontada)
 
-## 🎯 Objetivos del Curso
+## Objetivos del Curso
 
 Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de datos aplicada al fútbol, proporcionando las herramientas necesarias para analizar, interpretar y predecir resultados deportivos utilizando Python y técnicas modernas de análisis de datos.
 
-## 📚 Estructura del Curso
+## Estructura del Curso
 
-### 🐍 Bloque 1: Prerrequisitos de Programación con Python
+### Bloque 1: Prerrequisitos de Programación con Python
 **Semanas 1-5**
 
 #### Semana 1: Configuración del Entorno y Fundamentos
@@ -49,7 +49,7 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 
 ---
 
-### ⚽ Bloque 2: Fundamentos de Ciencia de Datos y Fútbol con Python
+### Bloque 2: Fundamentos de Ciencia de Datos y Fútbol con Python
 **Semanas 6-10**
 
 #### Semana 6: Introducción y Exploración de Datos Deportivos
@@ -84,7 +84,7 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 
 ---
 
-### 🚀 Bloque 3: Mi Primera Predicción con Datos de Fútbol
+### Bloque 3: Mi Primera Predicción con Datos de Fútbol
 **Semanas 11-15**
 
 #### Semana 11: Mi Primera Predicción
@@ -119,7 +119,7 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 
 ---
 
-## 🛠️ Herramientas y Tecnologías
+## Herramientas y Tecnologías
 
 ### Lenguajes y Entornos
 - **Python 3.8+**
@@ -137,7 +137,7 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 - **Dataset "champs"** - [Kaggle](https://www.kaggle.com/datasets/julihocc/champs)
 - **Notebook "La Remontada"** - [Kaggle](https://www.kaggle.com/code/julihocc/la-remontada)
 
-## 📖 Bibliografía Recomendada
+## Bibliografía Recomendada
 
 ### Libros Especializados
 - **Memmert, D.** (2021). *Data Analytics in Football: Positional Data Collection and Analysis*. Routledge.
@@ -149,40 +149,40 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 - Tutoriales de scikit-learn
 - Kaggle Learn (cursos gratuitos)
 
-## 📊 Estado del Desarrollo
+## Estado del Desarrollo
 
-### ✅ Completado
+### Completado
 
 #### **Bloque 1: Prerrequisitos de Programación con Python** (100% completo)
-- **Semana 1**: `configuracion-fundamentos.ipynb` - Configuración y fundamentos ✅
-- **Semana 2**: `estructuras-control.ipynb` - Estructuras de datos y control ✅
-- **Semana 3**: `funciones-modulos.ipynb` - Funciones y módulos ✅
-- **Semana 4**: `pandas-numpy-introduccion.ipynb` - Pandas y NumPy ✅
-- **Semana 5**: `visualizacion-basica.ipynb` - Visualización básica ✅
+- **Semana 1**: `configuracion-fundamentos.ipynb` - Configuración y fundamentos 
+- **Semana 2**: `estructuras-control.ipynb` - Estructuras de datos y control 
+- **Semana 3**: `funciones-modulos.ipynb` - Funciones y módulos 
+- **Semana 4**: `pandas-numpy-introduccion.ipynb` - Pandas y NumPy 
+- **Semana 5**: `visualizacion-basica.ipynb` - Visualización básica 
 
 #### **Bloque 2: Fundamentos de Ciencia de Datos y Fútbol** (100% completo)
-- **Semana 6**: `introduccion-exploracion.ipynb` - Exploración de datos deportivos ✅
-- **Semana 7**: `tipos-datos-futbol.ipynb` - Tipos de datos en fútbol ✅  
-- **Semana 8**: `estadistica-descriptiva.ipynb` - Estadística descriptiva ✅
-- **Semana 9**: `visualizacion-datos.ipynb` - Visualización de datos ✅
-- **Semana 10**: `analisis-interpretacion.ipynb` - Análisis e interpretación ✅
+- **Semana 6**: `introduccion-exploracion.ipynb` - Exploración de datos deportivos 
+- **Semana 7**: `tipos-datos-futbol.ipynb` - Tipos de datos en fútbol   
+- **Semana 8**: `estadistica-descriptiva.ipynb` - Estadística descriptiva 
+- **Semana 9**: `visualizacion-datos.ipynb` - Visualización de datos 
+- **Semana 10**: `analisis-interpretacion.ipynb` - Análisis e interpretación 
 
 #### **Material de Apoyo Completo**
-- **README principal** con información completa del curso ✅
-- **README por bloque** con objetivos y metodología ✅
-- **Referencias y bibliografía** especializada ✅
-- **Guías de instalación** y configuración ✅
+- **README principal** con información completa del curso 
+- **README por bloque** con objetivos y metodología 
+- **Referencias y bibliografía** especializada 
+- **Guías de instalación** y configuración 
 
-### 🔄 Completo
+### Completo
 
 #### **Bloque 3: Mi Primera Predicción con Datos de Fútbol** (100% completo)
-- **Semana 11**: `modelado-predictivo-introduccion.ipynb` - Mi primera predicción ✅
-- **Semana 12**: `modelos-avanzados-clasificacion.ipynb` - Modelos más inteligentes ✅
-- **Semana 13**: `metricas-avanzadas-evaluacion.ipynb` - Evaluación de predicciones ✅
-- **Semana 14**: `feature-engineering-optimizacion.ipynb` - Mejorando predicciones ✅
-- **Semana 15**: `proyecto-final-integrador.ipynb` - Cierre del curso ✅
+- **Semana 11**: `modelado-predictivo-introduccion.ipynb` - Mi primera predicción 
+- **Semana 12**: `modelos-avanzados-clasificacion.ipynb` - Modelos más inteligentes 
+- **Semana 13**: `metricas-avanzadas-evaluacion.ipynb` - Evaluación de predicciones 
+- **Semana 14**: `feature-engineering-optimizacion.ipynb` - Mejorando predicciones 
+- **Semana 15**: `proyecto-final-integrador.ipynb` - Cierre del curso 
 
-### 🎯 Características del Material Actual
+### Características del Material Actual
 
 #### **Enfoque Pedagógico**
 - **Progresión gradual**: De conceptos básicos a aplicaciones prácticas
@@ -203,7 +203,7 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 - **Referencias al dataset "champs"** de Kaggle
 - **Conexión con notebook "La Remontada"**
 
-## 🎯 Guía de Uso del Material
+## Guía de Uso del Material
 
 ### Para Instructores:
 1. **Revisa la estructura completa** del curso en este README
@@ -225,7 +225,7 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 - **Evaluación continua**: Cada bloque tiene su evaluación específica
 - **Construcción progresiva**: Los conocimientos se construyen incrementalmente
 
-## 📋 Evaluación
+## Evaluación
 
 ### Distribución de Calificaciones
 - **Bloque 1 (Prerrequisitos):** 35% - Fundamentos de programación Python
@@ -257,7 +257,7 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 - **Presentación y comunicación** (25%): Claridad en visualizaciones y explicaciones
 - **Aplicación contextual** (20%): Relevancia y pertinencia deportiva del análisis
 
-## 🚀 Cómo Empezar
+## Cómo Empezar
 
 ### 1. **Inicia con el Bloque 1: Prerrequisitos**
    - Configura tu entorno de desarrollo Python
@@ -306,7 +306,7 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
    - **Semanas 6-10**: Aplica conocimientos a datos deportivos
    - **Semanas 11-15**: Aprende a hacer predicciones básicas con machine learning
 
-## 🛠️ Configuración del Entorno
+## Configuración del Entorno
 
 ### Requisitos Técnicos:
 - **Python 3.8+**
@@ -337,7 +337,7 @@ pip install -r requirements.txt
 - **Contenido**: Resultados, estadísticas, equipos, temporadas
 - **Notebook guía**: ["La Remontada"](https://www.kaggle.com/code/julihocc/la-remontada)
 
-## 📁 Estructura del Repositorio
+## Estructura del Repositorio
 
 ```
 ├── bloque-1/                    # Prerrequisitos de Programación con Python
@@ -397,7 +397,7 @@ pip install -r requirements.txt
 └── README.md                   # Este archivo
 ```
 
-## 🤝 Contribución
+## Contribución
 
 Si encuentras errores o tienes sugerencias para mejorar el material, siéntete libre de:
 
@@ -420,12 +420,12 @@ Si encuentras errores o tienes sugerencias para mejorar el material, siéntete l
 - **Optimización de código**
 - **Traducción** de contenido
 
-## 📞 Contacto
+## Contacto
 
 Para dudas sobre el curso o el material didáctico, contacta al equipo docente.
 
 ---
 
-**¡Bienvenido al apasionante mundo de la ciencia de datos aplicada al fútbol!** ⚽📊
+**¡Bienvenido al apasionante mundo de la ciencia de datos aplicada al fútbol!** 
 
 *Este curso te proporcionará las herramientas necesarias para convertir datos en insights valiosos que pueden transformar la forma en que entendemos el fútbol.*

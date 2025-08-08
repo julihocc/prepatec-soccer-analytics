@@ -113,7 +113,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import sklearn
-print("✅ All libraries installed correctly")
+print(" All libraries installed correctly")
 ```
 
 ## Key Datasets and References
@@ -341,7 +341,7 @@ Performs intelligent git commits with automatic change analysis and appropriate 
 - Specific change 2
 - Specific change 3
 
-🤖 Generated with [Claude Code](https://claude.ai/code)
+ Generated with [Claude Code](https://claude.ai/code)
 
 Co-Authored-By: Claude <noreply@anthropic.com>
 ```

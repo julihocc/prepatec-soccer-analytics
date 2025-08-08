@@ -12,7 +12,7 @@
 ### Distribución General (100%)
 
 ```
-📊 EVALUACIÓN COMPLETA DEL CURSO
+ EVALUACIÓN COMPLETA DEL CURSO
 ├── 1er Parcial (35%) - Bloque 1: Python Fundamentals
 │   ├── Examen Canvas (20%) - Fundamentos de programación
 │   └── Caso Práctico Colaborativo (15%) - Análisis básico de club
@@ -140,7 +140,7 @@
 ### Semestre Completo (16 semanas)
 
 ```
-📅 CRONOGRAMA DETALLADO
+ CRONOGRAMA DETALLADO
 
 🟦 BLOQUE 1: PYTHON FUNDAMENTALS (Semanas 1-5)
 ├── Semana 1: Variables y tipos de datos
@@ -148,7 +148,7 @@
 ├── Semana 3: Funciones
 ├── Semana 4: Listas y diccionarios  
 ├── Semana 5: Pandas y numpy básico
-└── 📋 Evaluación Bloque 1:
+└──  Evaluación Bloque 1:
     ├── Examen Canvas B1 (Semana 6)
     └── Caso Práctico B1 (Semanas 6-7)
 
@@ -158,14 +158,14 @@
 ├── Semana 10: Estadística descriptiva
 ├── Semana 11: Visualización datos
 ├── Semana 12: Análisis e interpretación
-└── 📋 Evaluación Bloque 2:
+└──  Evaluación Bloque 2:
     ├── Examen Canvas B2 (Semana 13)  
     └── Caso Práctico B2 (Semanas 13-14)
 
 🟨 BLOQUE 3: PROYECTO INTEGRADOR (Semanas 15-16)
 ├── Semana 15: Desarrollo proyecto
 ├── Semana 16: Presentaciones finales
-└── 📋 Evaluación Final (30%)
+└──  Evaluación Final (30%)
 ```
 
 ---
@@ -176,7 +176,7 @@
 
 #### Para Profesores:
 ```
-📁 evaluaciones/canvas/
+ evaluaciones/canvas/
 ├── banco-preguntas-bloque1.md (70 preguntas)
 │   ├── Variables y tipos (10 preguntas)
 │   ├── Estructuras control (10 preguntas)
@@ -202,7 +202,7 @@
 ### 4.2 Casos Prácticos Documentados
 
 ```
-📁 evaluaciones/casos-practicos/
+ evaluaciones/casos-practicos/
 ├── caso-bloque1.md
 │   ├── Contexto del problema
 │   ├── Datasets proporcionados
@@ -222,7 +222,7 @@
 ### 4.3 Proyecto Integrador Estructurado
 
 ```
-📁 evaluaciones/proyecto-integrador/
+ evaluaciones/proyecto-integrador/
 └── README.md
     ├── 4 fases de desarrollo
     ├── Criterios técnicos específicos
@@ -235,7 +235,7 @@
 ### 4.4 Rúbricas Completas
 
 ```
-📁 evaluaciones/rubricas/
+ evaluaciones/rubricas/
 └── rubrica-completa.md
     ├── Criterios por componente
     ├── Escalas de calificación

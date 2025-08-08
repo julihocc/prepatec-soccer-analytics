@@ -7,9 +7,9 @@
 
 ---
 
-## 📊 Componentes de Evaluación
+## Componentes de Evaluación
 
-### 🎯 Examen Canvas (20% del curso)
+### Examen Canvas (20% del curso)
 **Ubicación:** [canvas/banco-preguntas-bloque1.md](canvas/banco-preguntas-bloque1.md)
 - **Banco:** 70 preguntas comprensivas
 - **Formato:** 70% opción múltiple + 30% respuesta numérica
@@ -17,7 +17,7 @@
 - **Tiempo:** 45-60 minutos
 - **Cobertura:** Variables, control, funciones, estructuras de datos, pandas/numpy básico
 
-### 🤝 Caso Práctico Colaborativo (15% del curso)
+### Caso Práctico Colaborativo (15% del curso)
 **Ubicación:** [caso-practico/caso-bloque1.md](caso-practico/caso-bloque1.md)
 - **Proyecto:** "Análisis de Rendimiento de un Club de Fútbol"
 - **Equipos:** 3-4 estudiantes
@@ -25,7 +25,7 @@
 - **Entregables:** Notebook + Presentación + Reporte ejecutivo
 - **Enfoque:** Aplicación de fundamentos Python a problemas deportivos reales
 
-### 📋 Sistema de Evaluación
+### Sistema de Evaluación
 **Ubicación:** [rubricas/README.md](rubricas/README.md)
 - **Criterios específicos** por componente
 - **Escalas detalladas** de evaluación
@@ -34,7 +34,7 @@
 
 ---
 
-## 🎯 Objetivos de Aprendizaje
+## Objetivos de Aprendizaje
 
 ### Competencias Técnicas
 - **Sintaxis Python:** Variables, tipos de datos, operadores fundamentales
@@ -57,7 +57,7 @@
 
 ---
 
-## 📅 Cronograma de Evaluación
+## Cronograma de Evaluación
 
 ### Semana 5: Preparación
 - **Canvas disponible:** Banco completo de preguntas liberado para estudio
@@ -76,7 +76,7 @@
 
 ---
 
-## 🏆 Criterios de Éxito
+## Criterios de Éxito
 
 ### Nivel Satisfactorio (70-79%)
 - **Código funcional** con errores menores corregibles
@@ -98,7 +98,7 @@
 
 ---
 
-## 📚 Recursos de Apoyo
+## Recursos de Apoyo
 
 ### Materiales de Estudio
 - **Notebooks de práctica:** Ejercicios adicionales por tema
@@ -120,7 +120,7 @@
 
 ---
 
-## ✅ Preparación para Éxito
+## Preparación para Éxito
 
 ### Para Examen Canvas:
 1. **Revisar todo el código** de notebooks de clase

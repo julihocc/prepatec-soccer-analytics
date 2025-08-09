@@ -1,7 +1,7 @@
 {
   "instructions": [
-    ".github/copilot-instructions.md",
-    ".ai/AI-CONTEXT.md"
+    "copilot-instructions.md",
+    "../.ai/AI-CONTEXT.md"
   ],
   "context": {
     "language": "es",

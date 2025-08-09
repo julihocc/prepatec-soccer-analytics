@@ -1,7 +1,7 @@
 # Este archivo especifica qué archivos GitHub Copilot debería ignorar
 # Pero necesitamos que LEA las instrucciones, así que NO ignoramos:
-# .github/copilot-instructions.md
-# .ai/AI-CONTEXT.md
+# copilot-instructions.md
+# ../.ai/AI-CONTEXT.md
 
 # Ignorar archivos temporales
 *.tmp

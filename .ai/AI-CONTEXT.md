@@ -284,6 +284,29 @@ Estructura Estándar de Celdas
 . *Resumen socrático:* `### ¿Qué hemos descubierto juntos?`
 . *Vista previa reflexiva:* `### ¿Qué preguntas queremos responder?`
 
+Estructura Obligatoria por Semana (Crítica)
+--------------------------------------------
+
+**ESTRUCTURA OBLIGATORIA:** Cada semana debe organizarse en **3 sesiones de 50 minutos cada una**:
+
+### Sesión 1: Introducción y Conceptos Fundamentales
+* **Duración:** 50 minutos exactos
+* **Enfoque:** Introducir conceptos teóricos con preguntas socráticas
+* **Actividades:** Reflexión, exploración conceptual, ejemplos básicos
+* **Formato:** Markdown con preguntas → código simple → conclusiones
+
+### Sesión 2: Práctica y Desarrollo de Habilidades  
+* **Duración:** 50 minutos exactos
+* **Enfoque:** Aplicación práctica de conceptos con ejercicios guiados
+* **Actividades:** Programación, resolución de problemas, práctica supervisada
+* **Formato:** Código intermedio → ejercicios guiados → retroalimentación
+
+### Sesión 3: Aplicación Práctica con Datos Reales de Fútbol
+* **Duración:** 50 minutos exactos
+* **Enfoque:** Integración y aplicación con datasets deportivos reales
+* **Actividades:** Análisis completo, interpretación, síntesis de aprendizajes
+* **Formato:** Análisis real → interpretación → preparación próxima semana
+
 Estructura Socrática por Sección
 ---------------------------------
 
@@ -298,7 +321,26 @@ Cada sección conceptual debe seguir este patrón:
 Convenciones de Celdas de Código
 ---------------------------------
 
+Patrones de Código Preferidos para GitHub Copilot
+-------------------------------------------------
+
 [source,python]
+----
+# Patrón de importación estándar
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Configuración de seaborn (SIEMPRE usar este tema)
+sns.set_theme(style="whitegrid", palette="viridis")
+
+# Variables descriptivas en español
+datos_futbol = pd.DataFrame(...)
+goles_por_equipo = datos_futbol.groupby('equipo')['goles'].sum()
+
+# Comentarios educativos en español
+print("Este análisis nos muestra los patrones de goles!")
 ----
 
 Patrones Socráticos en Código

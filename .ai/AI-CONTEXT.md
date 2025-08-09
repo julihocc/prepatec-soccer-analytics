@@ -56,6 +56,22 @@ Sistema de Evaluación (`evaluaciones/`)
 * 60 minutos tiempo estimado de completación por ejercicio
 * Todos los ejercicios usan nombres de variables en español y contexto futbolístico
 
+Estructura de Clases (Información Crítica)
+------------------------------------------
+
+*NUEVA CONFIGURACIÓN:* Cada semana debe estructurarse para **3 sesiones de 50 minutos cada una**.
+
+* **Sesión 1**: Introducción y conceptos fundamentales
+* **Sesión 2**: Práctica y desarrollo de habilidades
+* **Sesión 3**: Aplicación práctica con datos reales de fútbol
+
+**Requisitos de Estructura por Sesión:**
+* Cada sesión debe ser completable en exactamente 50 minutos
+* Contenido apropiado para nivel preparatoria
+* Progresión clara entre sesiones dentro de cada semana
+* Actividades prácticas con contexto futbolístico
+* Sin emojis en todo el contenido
+
 Materiales de Apoyo
 --------------------
 
@@ -185,6 +201,8 @@ Directrices de Contenido
 * *Cambios incrementales:* Hacer pequeñas mejoras en lugar de reescrituras grandes
 * *Código ejecutable:* Asegurar que todo el código funcione en el entorno de Jupyter notebook
 * *Restricciones de tiempo:* Ejercicios semanales ≤ 60 minutos, proyectos de bloque 2-3 horas
+* *Estructura de sesiones:* Cada semana DEBE dividirse en exactamente 3 sesiones de 50 minutos cada una
+* *Progresión por sesión:* Sesión 1 (conceptos), Sesión 2 (práctica), Sesión 3 (aplicación real)
 
 Metodología Socrática
 ---------------------

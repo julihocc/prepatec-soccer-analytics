@@ -186,13 +186,70 @@ Directrices de Contenido
 * *Código ejecutable:* Asegurar que todo el código funcione en el entorno de Jupyter notebook
 * *Restricciones de tiempo:* Ejercicios semanales ≤ 60 minutos, proyectos de bloque 2-3 horas
 
+Metodología Socrática
+---------------------
+
+*IMPORTANTE:* Este curso sigue el método socrático de enseñanza, guiando a los estudiantes a descubrir conceptos a través de preguntas reflexivas.
+
+### Principios del Método Socrático en el Curso
+
+* *Preguntas guía:* Usar preguntas para introducir conceptos antes de explicarlos
+* *Reflexión activa:* Promover que los estudiantes piensen antes de mostrar respuestas
+* *Conexiones prácticas:* Relacionar conceptos abstractos con situaciones deportivas familiares
+* *Descubrimiento guiado:* Permitir que los estudiantes "descubran" las respuestas
+* *Pensamiento crítico:* Fomentar el análisis y la evaluación de información
+
+### Estructura de Preguntas Socráticas
+
+* *Preguntas de apertura:* `"¿Alguna vez te has preguntado...?"`, `"¿Qué pasaría si...?"`
+* *Preguntas reflexivas:* `"¿Por qué crees que...?"`, `"¿Cómo podrías...?"`
+* *Preguntas de conexión:* `"¿Ves la relación entre...?"`, `"¿Cómo se compara esto con...?"`
+* *Preguntas de aplicación:* `"¿Dónde usarías esto en...?"`, `"¿Qué otros ejemplos puedes pensar?"`
+* *Preguntas de síntesis:* `"¿Qué hemos descubierto?"`, `"¿Cómo conecta esto con...?"`
+
+### Implementación en Notebooks
+
+* Comenzar secciones con preguntas antes de explicaciones
+* Usar analogías deportivas para conceptos abstractos
+* Incluir "Pregunta de reflexión", "Desafío de pensamiento", "Pregunta guía"
+* Promover autoevaluación: `"¿Cuál te resultó más difícil?"`
+* Conectar con experiencias previas: `"¿Has visto esto en...?"`
+
+### Tipos de Preguntas Socráticas por Propósito
+
+**Generar Curiosidad:**
+* `"¿Alguna vez te has preguntado cómo...?"`
+* `"¿Qué pasaría si...?"`
+* `"¿Has notado que...?"`
+
+**Explorar Conceptos:**
+* `"¿Por qué crees que esto sucede?"`
+* `"¿Cómo explicarías...?"`
+* `"¿Qué diferencias observas entre...?"`
+
+**Conectar Ideas:**
+* `"¿Cómo se relaciona esto con...?"`
+* `"¿Ves algún patrón en...?"`
+* `"¿En qué se parece esto a...?"`
+
+**Aplicar Conocimiento:**
+* `"¿Dónde más podrías usar esto?"`
+* `"¿Cómo aplicarías esto para...?"`
+* `"¿Qué problemas podrías resolver con...?"`
+
+**Evaluar y Sintetizar:**
+* `"¿Qué hemos descubierto hasta ahora?"`
+* `"¿Cuál fue tu mayor sorpresa?"`
+* `"¿Cómo ha cambiado tu perspectiva sobre...?"`
+
 Patrones de Lenguaje y Comunicación
 ------------------------------------
 
 * *Entusiasmo:* Usar `¡` y lenguaje motivacional (`¡Es como ser un analista deportivo!`)
-* *Preguntas:* Enmarcar conceptos como preguntas (`¿Es mejor jugar en casa?`)
-* *Explicaciones:* Siempre explicar qué hace el código (`¡Este gráfico nos muestra...!`)
+* *Preguntas socráticas:* Introducir conceptos con preguntas reflexivas (`¿Por qué crees que...?`)
+* *Explicaciones guiadas:* Explicar después de generar curiosidad (`¡Este gráfico nos muestra...!`)
 * *Aliento:* Terminar con refuerzo positivo (`¡Felicitaciones!`, `¡Excelente progreso!`)
+* *Reflexión:* Incluir preguntas de autoevaluación y síntesis
 
 Estándares de Estructura de Notebooks
 ======================================
@@ -202,10 +259,23 @@ Estructura Estándar de Celdas
 
 . *Título en markdown:* `# Semana X: [Título Descriptivo en Español]`
 . *Objetivos de aprendizaje:* `**Lo que aprenderemos hoy:**`
+. *Preguntas socráticas de apertura:* Introducir el tema con preguntas reflexivas
 . *Sección de importaciones* con comentarios educativos
-. *Ejemplos progresivos* construyendo complejidad
-. *Resumen:* `### Lo que Aprendimos Hoy`
-. *Vista previa:* `### Próxima Semana`
+. *Ejemplos progresivos* construyendo complejidad con preguntas guía
+. *Reflexiones intermedias:* Preguntas que conecten conceptos
+. *Resumen socrático:* `### ¿Qué hemos descubierto juntos?`
+. *Vista previa reflexiva:* `### ¿Qué preguntas queremos responder?`
+
+Estructura Socrática por Sección
+---------------------------------
+
+Cada sección conceptual debe seguir este patrón:
+
+1. *Pregunta de apertura:* Generar curiosidad sobre el tema
+2. *Exploración guiada:* Preguntas que lleven al concepto
+3. *Ejemplos prácticos:* Aplicación con contexto deportivo
+4. *Preguntas de conexión:* Relacionar con conocimientos previos
+5. *Síntesis reflexiva:* Consolidar aprendizaje con preguntas
 
 Convenciones de Celdas de Código
 ---------------------------------
@@ -213,18 +283,44 @@ Convenciones de Celdas de Código
 [source,python]
 ----
 
-# Patrón de importación con comentarios educativos
+Patrones Socráticos en Código
+-----------------------------
+
+[source,python]
+----
+# Patrón de introducción socrática
+print("¿Te has preguntado alguna vez cómo un entrenador decide su alineación?")
+print("¡Vamos a descubrirlo usando datos!")
+
+# Generar curiosidad antes de mostrar resultados
+equipos = ['Barcelona', 'Real Madrid', 'Manchester City', 'Bayern Munich']
+print(f"¿Cuántos equipos tenemos? Descubrámoslo: {len(equipos)}")
+
+# Preguntas reflexivas después de código
+print("¿Qué patrones observas en estos datos?")
+print("¿Cómo podrías usar esta información para predecir resultados?")
+----
+
+Convenciones de Celdas de Código
+---------------------------------
+
+[source,python]
+----
+# Patrón de importación con comentarios educativos y preguntas
 
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Siempre configurar tema de seaborn
+# ¿Por qué necesitamos estas herramientas?
+# Cada una tiene un propósito específico en nuestro análisis
 
+# Siempre configurar tema de seaborn
 sns.set_theme(style="whitegrid", palette="viridis")
 
-print("¡Herramientas listas!")
+print("¡Herramientas listas! ¿Estás preparado para descubrir patrones?")
+----
 ----
 
 Patrón de Generación de Datos
@@ -335,12 +431,27 @@ Trabajando con Este Repositorio
 Metodología Educativa
 ----------------------
 
-Este curso sigue un enfoque pedagógico específico:
+Este curso sigue un enfoque pedagógico específico basado en el *método socrático*:
 
-* *Clases teóricas:* Introducción a conceptos clave
-* *Ejercicios prácticos:* Aplicación del aprendizaje en contextos deportivos
-* *Proyectos integrativos:* Desarrollo de proyectos finales combinando todo el conocimiento adquirido
-* *Evaluaciones continuas:* Mini-evaluaciones semanales para reforzar el aprendizaje
+* *Aprendizaje por descubrimiento:* Los estudiantes descubren conceptos a través de preguntas guiadas
+* *Pensamiento crítico:* Preguntas que fomentan análisis y reflexión profunda
+* *Conexión experiencial:* Relacionar conceptos con experiencias deportivas familiares
+* *Construcción progresiva:* Cada pregunta construye sobre conocimientos previos
+* *Autoevaluación:* Promover reflexión sobre el propio aprendizaje
+
+### Indicadores de Método Socrático Efectivo
+
+**En el contenido:**
+* Proporción alta de preguntas vs. declaraciones directas
+* Preguntas que generan curiosidad antes de explicaciones
+* Conexiones explícitas entre conceptos nuevos y conocidos
+* Espacios para reflexión personal del estudiante
+
+**En la progresión:**
+* Conceptos complejos desglosados en preguntas simples
+* Andamiaje desde experiencias familiares hacia conceptos abstractos
+* Síntesis reflexiva al final de cada sección
+* Preparación para el próximo nivel de preguntas
 
 Criterios de Evaluación
 ------------------------

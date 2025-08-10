@@ -304,26 +304,60 @@ Formato sugerido de presentación (3–4 diapositivas):
 
 ---
 
-## Criterios de Evaluación
+## Criterios de Evaluación (Rúbrica Completa Integrada)
 
-### Nueva Rúbrica (100 puntos total) Alineada 40 / 30 / 30
+Esta sección integra la rúbrica que antes residía en `rubricas/README.md` para centralizar criterios (archivo eliminado tras fusión). Modelo estándar 40/30/30.
 
-| Área | Puntos | Subcomponentes | Evidencia Clave |
-|------|--------|----------------|-----------------|
-| Exploración y Calidad | 40 | Carga (5) + Exploración básica (10) + Calidad/Tipos (10) + Estadística descriptiva (15) | Uso correcto de `.head()`, `.info()`, rangos validados, media/mediana/std interpretadas |
-| Análisis y Métricas | 30 | Groupby posiciones (12) + Métricas derivadas (10) + Outliers (8) | Métricas calculadas y justificadas, top 3 razonado, decisión sobre outliers explicada |
-| Visualización e Interpretación | 30 | Gráficos base (10) + Profundización (10) + Síntesis/Presentación (10) | Gráficos legibles, etiquetas, interpretaciones escritas vinculadas a decisiones |
+### 1. Examen Canvas (Referencia Bloque 2)
+- Banco: 105 preguntas (75 Núcleo + 30 Extended con [S]).
+- Preguntas por examen: 22 (estratificado objetivo: [R] 7-8, [C] 7-8, [A] 5-6, [S] 1-2).
+- Formato: ~70% opción múltiple / ~30% numéricas.
+- Tiempo: 50 minutos. Intento único.
+- Temas 20% c/u: Exploración/calidad, estadística descriptiva, métricas derivadas, agrupaciones+outliers, visualización/interpretación.
 
-Niveles de desempeño (aplican dentro de cada área):
-- Excelente: Completo, sin errores, justificaciones claras vinculadas a preguntas socráticas.
-- Bueno: Funciona, 1–2 omisiones menores, interpretaciones aceptables.
-- Suficiente: Funciona parcialmente, faltan justificaciones clave o 1 métrica derivada.
-- Insuficiente: Errores que impiden análisis o ausencia de interpretación.
+### 2. Rúbrica Caso 40 / 30 / 30 (100 puntos)
+| Área | Puntos | Subcomponentes | Indicadores clave |
+|------|--------|----------------|-------------------|
+| Exploración y Calidad | 40 | Carga (5) + Exploración head/info (10) + Calidad/Tipos/NA (10) + Estadística descriptiva (15) | `.head()`, `.info()`, rangos validados, interpretación media vs mediana |
+| Análisis y Métricas | 30 | Groupby posiciones (12) + Métricas derivadas (10) + Outliers simples (8) | `goles_por_partido`, `contribucion_ofensiva`, criterio outliers documentado |
+| Visualización e Interpretación | 30 | Gráficos base (10) + Profundización (10) + Síntesis/Presentación (10) | Gráficos limpios, respuestas socráticas, recomendaciones futbolísticas |
 
-Indicadores adicionales:
-- Comentarios en código explicando pasos críticos (requerido para nivel Excelente en cualquier área).
-- Uso consistente de nombres en español (`goles_por_partido`, no abreviaturas crípticas).
-- Preguntas socráticas respondidas en texto o celdas markdown.
+### 3. Niveles de Desempeño
+- Excelente: Completo, decisiones justificadas con métricas y reflexión.
+- Bueno: 1–2 omisiones menores; interpretación razonable.
+- Suficiente: Falta una métrica derivada u outliers; interpretación superficial.
+- Insuficiente: Errores que impiden análisis o falta de justificación.
+
+### 4. Requisitos para Nivel Excelente (Transversales)
+- Variables en español descriptivas.
+- Comentarios justifican pasos críticos (no redundantes).
+- Preguntas socráticas respondidas tras cada bloque.
+- Notebook ejecuta limpio desde reinicio.
+
+### 5. Autoevaluación Rápida (OK / Revisar)
+- [ ] Carga y exploración básica completa
+- [ ] Calidad (NA, tipos, rangos) revisada
+- [ ] Métricas derivadas creadas y explicadas
+- [ ] Outliers identificados y decisión documentada
+- [ ] Gráficos base implementados + interpretaciones
+- [ ] Gráficos de profundización implementados + interpretaciones
+- [ ] Síntesis final con recomendaciones
+- [ ] Presentación preparada (3–4 diapositivas)
+
+### 6. Integridad Académica
+| Aspecto | Criterio |
+|---------|---------|
+| Autoría | Trabajo colaborativo (≥80% código original del equipo) |
+| Fuentes | Citar si se usa código externo o adaptado |
+| IA Asistiva | Declarar uso y describir apoyo (no reemplaza comprensión) |
+| Reproducibilidad | Notebook ejecutable sin celdas huérfanas |
+
+### 7. Conversión Ponderada del Bloque
+- Examen Canvas: 20% × (puntaje/100)
+- Caso práctico: 15% × (puntaje/100)
+- Total Bloque 2 = 35% del curso
+
+---
 
 ---
 

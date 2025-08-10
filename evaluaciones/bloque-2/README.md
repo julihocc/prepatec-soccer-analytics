@@ -29,11 +29,7 @@
 - **Enfoque:** Profundizar en limpieza simple, estadística descriptiva e interpretación de métricas de eficiencia sin herramientas avanzadas.
 
 ### Sistema de Evaluación
-**Ubicación:** [rubricas/README.md](rubricas/README.md)
-- **Rúbrica caso 40/30/30** (Exploración-Calidad / Análisis-Métricas / Visualización-Interpretación).
-- **Distribución cognitiva examen** documentada con metas por etiqueta.
-- **Competencias transversales** (interpretación y comunicación) integradas.
-- **Progresión pedagógica** coherente con Bloque 1 y puente hacia fundamentos de modelado (Bloque 3 Semana 11).
+La rúbrica completa del caso y criterios del examen están integrados en `caso-practico/caso-bloque2.md` (archivo separado eliminado) manteniendo modelo 40/30/30 y distribución cognitiva objetivo.
 
 ---
 
@@ -163,4 +159,5 @@ Este bloque crea las bases prácticas (limpieza ligera, métricas descriptivas e
 
 ## Actualizaciones Recientes
 
-2025-08-10: Ampliado banco Canvas de 75 a 105 preguntas (añadidas 30 Extended con 8 ítems [S]; ajuste de distribución cognitiva y documentación asociada).*** End Patch
+2025-08-10: Ampliado banco Canvas de 75 a 105 preguntas (añadidas 30 Extended con 8 ítems [S]; ajuste de distribución cognitiva y documentación asociada).
+2025-08-10: Fusión de rúbrica en `caso-practico/caso-bloque2.md` y eliminación de `rubricas/README.md` para reducir duplicación.

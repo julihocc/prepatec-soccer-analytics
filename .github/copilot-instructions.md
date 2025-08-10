@@ -1,53 +1,133 @@
-Instrucciones para GitHub Copilot
-=================================
+# Instrucciones para GitHub Copilot
 
-// @copilot:include always
-// CRITICAL: Estas instrucciones DEBEN aplicarse en todo momento
-// Nivel: Preparatoria (High School)
-// Idioma: Español
-// Contexto: Ciencia de datos aplicada al fútbol
-// Estructura: 3 sesiones de 50 minutos por semana
-// PROHIBIDO: Emojis en cualquier contenido
+**Proyecto**: Curso de Ciencia de Datos aplicada al Fútbol (Preparatoria/Bachillerato)  
+**Idioma**: Español completo (código, comentarios, documentación)  
+**Contexto**: Análisis deportivo con datos reales de fútbol  
+**Metodología**: Socrática + 3 sesiones de 50 minutos por semana  
 
+## Contexto Central del Proyecto
 
-Contexto Centralizado del Proyecto
-===================================
+**LEER PRIMERO**: [`.ai/AI-CONTEXT.md`](../.ai/AI-CONTEXT.md) - Contiene toda la documentación detallada, metodología socrática, patrones de código y estándares educativos.
 
-*Para información completa del proyecto, consulta:* link:../.ai/AI-CONTEXT.md[AI-CONTEXT.md]
+## Arquitectura del Proyecto
 
+### Estructura de Contenido
+```
+contenido/
+├── bloque-1/ (Semanas 1-5: Fundamentos Python)
+├── bloque-2/ (Semanas 6-10: Ciencia de Datos + Fútbol)  
+└── bloque-3/ (Semanas 11-15: Predicciones ML)
+```
 
-Instrucciones Específicas para GitHub Copilot
-==============================================
+### Sistema de Evaluación
+```
+evaluaciones/
+├── canvas/ (Bancos de preguntas automáticas)
+├── casos-practicos/ (Proyectos colaborativos 3-4 estudiantes)
+└── rubricas/ (40% técnico + 30% aplicación + 30% comunicación)
+```
 
+## Convenciones Críticas
 
-Directriz Principal
--------------------
+### Metodología Socrática Obligatoria
+```python
+# PATRÓN: Pregunta → Reflexión → Descubrimiento → Código
+print("¿Te has preguntado alguna vez cómo un entrenador decide su alineación?")
+print("¡Vamos a descubrirlo usando datos!")
 
-**LEER OBLIGATORIAMENTE:** Todas las instrucciones detalladas, contexto, metodología y patrones están en:
+# Generar curiosidad ANTES de mostrar resultados
+equipos = ['Barcelona', 'Real Madrid', 'Manchester City']
+print(f"¿Cuántos equipos tenemos? Descubrámoslo: {len(equipos)}")
 
-**`.ai/AI-CONTEXT.md`**
+# Preguntas reflexivas DESPUÉS del código
+print("¿Qué patrones observas en estos datos?")
+```
 
-Este archivo contiene:
-- Política crítica sin emojis
-- Estructura de 3 sesiones de 50 minutos por semana
-- Metodología socrática
-- Patrones de código en español
-- Contexto futbolístico
-- Estándares educativos para preparatoria
-- Ejemplos y convenciones completas
+### Estructura de Notebook (OBLIGATORIA)
+```python
+# 1. Título con pregunta socrática
+# Semana X: ¿[Pregunta que genera curiosidad]?
 
+# 2. Sesión 1: Conceptos (50 min) - Preguntas guía + teoría
+# 3. Sesión 2: Práctica (50 min) - Ejercicios + aplicación  
+# 4. Sesión 3: Aplicación real (50 min) - Datos deportivos reales
 
-Aplicación Inmediata
---------------------
+# 5. SIEMPRE: Reflexiones finales socráticas
+print("¿Qué hemos descubierto juntos?")
+```
 
-Cuando trabajes en este proyecto:
+### Código Estándar
+```python
+# Variables descriptivas en español
+datos_futbol = pd.DataFrame(...)
+goles_por_equipo = datos_futbol.groupby('equipo')['goles'].sum()
 
-1. **LEE** primero `.ai/AI-CONTEXT.md`
-2. **APLICA** todas las directrices contenidas
-3. **NUNCA** uses emojis
-4. **SIEMPRE** estructura en 3 sesiones de 50 minutos
-5. **MANTÉN** variables en español
-6. **USA** contexto futbolístico
+# Configuración visual SIEMPRE
+sns.set_theme(style="whitegrid", palette="viridis")
 
+# Comentarios educativos y preguntas
+# ¿Por qué usamos esta función específica?
+print("Este análisis nos muestra los patrones de goles!")
+```
 
-*Contexto completo obligatorio en:* **`.ai/AI-CONTEXT.md`**
+## Flujos de Trabajo Específicos
+
+### Creación de Contenido Semanal
+1. **Comenzar con pregunta socrática** ("¿Alguna vez te has preguntado...?")
+2. **Estructurar en 3 sesiones exactas** de 50 minutos
+3. **Usar datos futbolísticos reales** (Barcelona, Real Madrid, equipos europeos)
+4. **Incluir reflexiones intermedias** ("¿Qué patrones observas?")
+5. **Terminar con síntesis** ("¿Qué hemos descubierto?")
+
+### Evaluación y Testing
+```python
+# Probar notebooks COMPLETOS antes de finalizar
+jupyter nbconvert --execute notebook.ipynb
+
+# Usar equipos reconocibles en ejemplos
+equipos = ['Barcelona', 'Real Madrid', 'Manchester City', 'Bayern Munich']
+
+# Verificar que ejercicios tomen ~60 minutos máximo
+```
+
+## Patterns Específicos del Proyecto
+
+### Datos Deportivos Simulados
+```python
+# Generación de datasets realistas para aprendizaje
+partidos = []
+for i in range(30):
+    equipo_local = random.choice(equipos)
+    equipo_visitante = random.choice([e for e in equipos if e != equipo_local])
+    partidos.append({
+        'Equipo_Local': equipo_local,
+        'Goles_Local': random.randint(0, 3),
+        'Temporada': random.choice(['2023-24', '2024-25'])
+    })
+```
+
+### Integración Canvas
+- **Formato**: 70% opción múltiple + 30% numérica
+- **Bancos**: 70-75 preguntas por bloque con selección aleatoria
+- **Importación**: Directa desde archivos markdown estructurados
+
+## Comandos del Proyecto
+
+```bash
+# Verificar entorno de desarrollo
+python -c "import pandas as pd; print('Pandas ready!')"
+
+# Ejecutar notebook completo para testing
+jupyter nbconvert --execute --to notebook contenido/bloque-1/semana-1/configuracion-fundamentos.ipynb
+
+# Commit con estándares del proyecto (mensajes en español)
+git commit -m "Actualizar Semana X: mejorar metodología socrática"
+```
+
+## Referencias Clave
+
+- **Dataset principal**: [Champs - Kaggle](https://www.kaggle.com/datasets/julihocc/champs)
+- **Notebook referencia**: [La Remontada](https://www.kaggle.com/code/julihocc/la-remontada)
+- **Documentación completa**: `.ai/AI-CONTEXT.md`
+
+**CRÍTICO**: Nunca usar emojis - mantener contenido profesional para preparatoria.

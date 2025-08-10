@@ -333,3 +333,88 @@ Si cualquier respuesta es NO, el concepto es demasiado avanzado.
 - **Semana 13**: Evaluación básica, conceptos de calidad
 - **Semana 14**: Mejoras simples, variables nuevas
 - **Semana 15**: Integración y proyecto final acotado
+
+## PATRONES PARA DISEÑO DE BANCOS DE PREGUNTAS (Canvas/Moodle)
+
+Esta sección estandariza la construcción de bancos evaluativos alineados con la metodología socrática y el nivel preparatoria. Aplicar en los tres bloques.
+
+### Objetivos del Banco
+- Medir comprensión real, no memorización literal.
+- Reforzar transferencia: del concepto aislado al contexto futbolístico.
+- Mantener progresión cognitiva visible para curación y análisis.
+
+### Tamaño y Segmentación
+- Tamaño recomendado por bloque: 70–120 preguntas totales.
+- Dividir explícitamente en:
+    - Núcleo (Core): 60–75 preguntas esenciales (cobertura mínima necesaria para evaluaciones regulares).
+    - Ampliación (Extended): Resto para variabilidad y reforzamiento.
+- No renumerar al agregar Ampliación: preservar estabilidad para LMS.
+
+### Etiquetas Cognitivas (OBLIGATORIAS)
+- [R] Recuerdo básico (definición, sintaxis mínima, función directa).
+- [C] Comprensión/Concepto (interpretar ejemplo, explicar diferencia, clasificar caso).
+- [A] Aplicación (resolver mini‑situación con datos simples o ajuste de código mental).
+- [S] (Opcional sugerido) Socrática/Interpretativa: justificar decisión, inferir implicación de salida, explicar causa futbolística de patrón observado.
+
+Distribución sugerida en Núcleo: ~35–40% [R], ~35–40% [C], ~20–25% [A], opcional 5–10% [S] conforme avance el curso. En semanas iniciales priorizar [R]/[C]; introducir [A] y luego [S] gradualmente.
+
+### Formatos de Pregunta
+- 70% opción múltiple (3–4 distractores claros, 1 correcta).
+- 30% numéricas (respuesta corta calculable; definir tolerancia si aplica).
+- Evitar preguntas Sí/No (baja discriminación) salvo transición entre conceptos.
+
+### Plantilla Recomendada
+1. Micro‑escenario futbolístico (1 frase): "En una tabla con goles de Barcelona y Real Madrid..."
+2. Enfoque cognitivo: "¿Cuál.../¿Por qué.../¿Qué pasaría si...?"
+3. Opciones: ordenadas lógicamente (no alfabético arbitrario) o rango numérico.
+4. (Si [S]) Sub‑prompt de justificación: "¿Qué te indica esto sobre..." (si la plataforma permite campo abierto adicional).
+
+### Patrones de Calidad
+- Evitar duplicados literales: reescribir cambiando dimensión (de sintaxis a interpretación / de estructura a salida esperada).
+- Introducir progresión suave: secuencia interna de filtros simples → múltiples condiciones → agregaciones.
+- Contextualizar con dominios constantes (equipos conocidos, métricas de goles, edad, minutos jugados) para reducir carga extrínseca.
+- Balancear verbos: detectar exceso de "¿Cuál es...?" e inyectar "¿Por qué...?", "¿Qué implica...?", "¿Qué cambiaría si...?".
+- Limitar carga numérica: operaciones aritméticas ≤ 2 pasos mentales.
+
+### Proceso Iterativo Estandarizado
+1. Borrador inicial (sin etiquetas) basado en temario semanal.
+2. Etiquetado cognitivo y clasificación Core vs candidata a Ampliación.
+3. Detección y reescritura de redundancias (mantener número; agregar nota *Reescrita* si se ajusta tras uso inicial).
+4. Inyección de contexto futbolístico en preguntas abstractas (>10% del banco si faltan escenarios).
+5. Revisión de distribución (tabla rápida: conteo por etiqueta y formato) y ajuste final.
+
+### Checklist de Publicación
+- [ ] Cobertura de TODOS los conceptos mínimos declarados en semanas del bloque.
+- [ ] Distribución formatos: 65–75% opción múltiple, 25–35% numérica.
+- [ ] Distribución cognitiva dentro de rangos sugeridos.
+- [ ] ≥80% de preguntas Core con contexto o aplicabilidad clara.
+- [ ] Sin emojis, sin jerga avanzada no explicada.
+- [ ] Numeración continua sin saltos ni renumeraciones tras revisiones.
+- [ ] Cada pregunta evaluable independientemente (no dependencias encadenadas).
+- [ ] Distractores plausibles (evitar respuestas obviamente absurdas que reduzcan discriminación).
+
+### Reglas de Mantenimiento
+- Nunca renumerar preguntas ya referenciadas en LMS; agregar nuevas al final.
+- Marcar ajustes significativos con anotación *(Actualizada vX.Y)* si cambia respuesta correcta o nivel cognitivo.
+- Mantener changelog por bloque (sección en README de evaluaciones) con: fecha, tipo de cambio (alta, corrección, reescritura), impacto.
+
+### Métricas Futuras (Opcional)
+Cuando existan datos de uso (resultados de estudiantes):
+- Calcular tasa de acierto por pregunta (<35% o >90% revisar redacción/dificultad).
+- Reclasificar etiqueta si desempeño contradice nivel esperado.
+- Retirar o ajustar preguntas con discriminación pobre (todos aciertan o todos fallan).
+
+### Ejemplos de Transformaciones de Calidad
+- Duplicado potencial "¿Qué hace len(lista)?" → Transformar a [C]: "Si una lista de 18 jugadores pasa a 16 tras eliminar porteros suplentes, ¿qué indica la diferencia en len()?"
+- Sintaxis seca de filtrado → Escenario [A]: "Tienes un DataFrame de tiros; ¿qué condición seleccionarías para quedarte con tiros a puerta del Barcelona en 2024?"
+
+### Errores Comunes a Evitar
+- Sobrecargar con código no visto aún (rompe progresión).
+- Mezclar dos conceptos nuevos en una sola pregunta inicial.
+- Colocar respuestas numéricas con unidades inconsistentes (estandarizar: sin 'goles' en la caja de respuesta, unidad en el enunciado).
+- Distractores con diferencias microscópicas (aumenta frustración sin valor pedagógico).
+
+### Integración con Rúbricas y Casos
+Las etiquetas [A]/[S] sirven para enlazar con rúbricas de razonamiento: priorizar su muestreo en evaluaciones formativas antes de casos prácticos.
+
+---

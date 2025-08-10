@@ -1,0 +1,156 @@
+Clave:                         Materia: Ciencia de Datos Aplicada al Fútbol (Preparatoria)                               Frecuencia: 3 sesiones por semana (50 min c/u)
+Nombre de docente:            (Por definir)                                                          E-mail: (institucional)
+Grupo:                        Salón:                             Hora: (Horario oficial)             Periodo: Agosto - Diciembre (202513)
+
+NOTIFICACIÓN IMPORTANTE:
+Con base en el artículo 5.13 del Reglamento Académico para los alumnos de Preparatoria, se notifica que esta materia NO PUEDE SER APROBADA POR MEDIO DEL EXAMEN DE ÚLTIMA MATERIA.
+
+DESCRIPCIÓN DEL CURSO
+Curso introductorio práctico donde el estudiante aprende fundamentos de programación en Python, análisis de datos y modelado predictivo básico usando contextos reales de fútbol (equipos como Barcelona, Real Madrid, Manchester City y Bayern Munich). Se emplea metodología socrática: cada sesión inicia con preguntas que despiertan curiosidad y guía al estudiante a descubrir conceptos mediante ejemplos deportivos.
+
+OBJETIVO GENERAL DE LA MATERIA
+Desarrollar en el estudiante competencias básicas de pensamiento computacional y análisis de datos para interpretar, comunicar y generar conclusiones sobre información futbolística real, aplicando una metodología estructurada y ética.
+
+OBJETIVOS ESPECÍFICOS (Al finalizar el curso el estudiante será capaz de):
+1. Explicar con sus propias palabras conceptos fundamentales de Python (variables, estructuras de control, listas, diccionarios y funciones) aplicados a datos de fútbol.
+2. Organizar y explorar datasets futbolísticos simples usando pandas y visualizar hallazgos con gráficos básicos (barras, líneas y dispersión) interpretando patrones deportivos.
+3. Calcular y explicar métricas descriptivas (promedio, mediana, moda, rango) vinculándolas a desempeño de jugadores y equipos.
+4. Formular preguntas investigables sobre rendimiento y responderlas con análisis reproducibles en notebooks.
+5. Construir y evaluar un modelo predictivo sencillo (regresión lineal o logística o Random Forest básico) explicando su interpretación mediante analogías futbolísticas (entrenador, práctica, pronóstico).
+6. Comunicar hallazgos de manera clara, ética y estructurada incorporando reflexión metacognitiva sobre el proceso de análisis.
+7. Aplicar principios de integridad académica y uso responsable de herramientas de IA (declaración y citación de apoyo recibido).
+
+COMPETENCIAS QUE SE FORTALECEN
+- Pensamiento Computacional Básico
+- Análisis y Visualización de Datos
+- Razonamiento Estadístico Descriptivo
+- Comunicación de Resultados
+- Ética e Integridad Académica
+- Colaboración en pequeños equipos (Casos Bloques 1 y 2)
+
+METODOLOGÍA
+- Enfoque Socrático: preguntas guía antes de cada concepto.
+- Sesiones de 50 minutos: 15 teoría guiada + 25 práctica aplicada + 10 síntesis/reflexión (Semana 1-13). Para el proyecto final (Semanas 15-16) se enfoca en integración y documentación.
+- Notebooks autoexplicativos con analogías deportivas.
+- Evaluaciones formativas mediante preguntas de reflexión intermedia.
+
+DISTRIBUCIÓN TEMPORAL Y TEMARIO (Bloques y Semanas)
+BLOQUE 1 (Semanas 1-5) Fundamentos de Python con Fútbol
+  Semana 1: Introducción, variables, tipos de datos, contexto deportivo
+  Semana 2: Estructuras de control (if, for) aplicadas a estadísticas de partidos
+  Semana 3: Listas y diccionarios (plantillas, alineaciones, registros de goles)
+  Semana 4: Funciones y módulos simples (cálculos de rendimiento)
+  Semana 5: Introducción a pandas y numpy básico con dataset de partidos
+
+BLOQUE 2 (Semanas 6-10) Exploración y Análisis Descriptivo
+  Semana 6: Lectura, limpieza y selección de columnas (datos de jugadores)
+  Semana 7: Tipos de datos deportivos, conversión y consistencia (minutos, goles, posiciones)
+  Semana 8: Estadística descriptiva aplicada (promedio, mediana, moda, rango intercuartil)
+  Semana 9: Visualización básica con seaborn (barras, líneas, scatter) interpretando patrones
+  Semana 10: Análisis e interpretación integrada (mini‑caso exploratorio)
+
+Semana 11-12 (Ajuste / Recuperación / Profundización ligera*)
+  *Espacio para consolidar contenido, reforzar dudas y preparar transición a ML sin introducir complejidad adicional.
+
+BLOQUE 3 (Semanas 13-16) Introducción al Modelado Predictivo
+  Semana 13: Conceptos de modelo, entrenamiento vs prueba, overfitting (analogías futbolísticas)
+  Semana 14: Regresión lineal y logística básica (predicciones sencillas interpretables)
+  Semana 15: Desarrollo del caso predictivo (EDA final + primera versión de modelo + visualizaciones)
+  Semana 16: Iteración, refinamiento simple (Random Forest básico opcional), documentación y cierre
+
+Fechas Importantes (estimadas)
+Inicio de curso: 11-ago-2025
+Cierre Bloque 1 (Examen + Caso): Semana 6 (inicio de Septiembre)
+Cierre Bloque 2 (Examen + Caso): Semana 13 (final de Octubre)
+Quiz ML (Bloque 3): Semana 15 (mediados de Noviembre)
+Entrega Caso Final: Semana 16
+Fin de curso: 26-nov-2025
+
+EVALUACIÓN (Distribución 100%)
+Actividad 1: Examen Canvas Bloque 1 (15%)
+Actividad 2: Caso Práctico Bloque 1 (15%)
+Actividad 3: Examen Canvas Bloque 2 (15%)
+Actividad 4: Caso Práctico Bloque 2 (15%)
+Actividad 5: Quiz / Canvas ML Básico Bloque 3 (15%)
+Actividad 6: Caso Práctico Bloque 3 (25%)
+Total: 100%
+
+Desglose Caso Práctico Bloque 3 (25%):
+  - EDA (25% del caso = 6.25% curso)
+  - Modelado ML básico (35% = 8.75% curso)
+  - Visualización / Dashboard (25% = 6.25% curso)
+  - Documentación y Narrativa (15% = 3.75% curso)
+
+CRITERIOS GENERALES DE EVALUACIÓN
+- Claridad y corrección técnica del código (legible, comentado, reproducible)
+- Interpretación de resultados vinculada a contexto futbolístico
+- Justificación de decisiones (preguntas socráticas respondidas)
+- Ética e integridad (uso citado de IA y fuentes)
+- Calidad de visualizaciones (etiquetas claras, lectura inmediata)
+
+POLÍTICAS ACADÉMICAS PRINCIPALES
+Asistencia y Puntualidad:
+- Sesiones de 50 minutos, se toma lista al inicio. Ver reglamentos institucionales para umbrales de asistencia.
+- Llegadas tardías reiteradas afectan comprensión y participación.
+
+Entregas y Retrasos:
+- Hora límite estándar: 22:00 local, después de esa hora hasta 23:59 se califica máximo sobre 90 (si se permite excepcionalmente). A partir de 00:00 no se recibe salvo justificación reglamentaria.
+- Asegurar integridad y apertura de archivos entregados (notebooks ejecutables, sin celdas rotas).
+
+Integridad Académica y Uso de IA:
+- Citar explícitamente cualquier apoyo de herramientas de IA (indicar prompts si se solicita).
+- Prohibido delegar interpretación, análisis y argumentación a IA.
+- Código copiado sin comprensión demostrable se considera falta.
+
+Metodología Socrática:
+- Preguntas motivadoras se registran al inicio de cada notebook.
+- Estudiante debe responder reflexiones intermedias antes de continuar.
+
+Revisión de Calificaciones:
+- Feedback formativo en avances de casos (checkpoints). Retroalimentación sumativa tras cada actividad.
+- Solicitudes de revisión deben ajustarse a lineamientos institucionales dentro del plazo oficial.
+
+Trabajo Colaborativo (Bloques 1 y 2):
+- Equipos 3-4 estudiantes. Roles rotativos (coordinación, documentación, validación de código).
+- Conflictos deben reportarse mínimo 8 días hábiles antes de entrega para mediación.
+
+Uso de Datos:
+- Datasets proporcionados o simulados con estructura realista. No exponer datos sensibles.
+- Transformaciones deben documentarse (diccionario de datos breve cuando aplique).
+
+Rúbrica Simplificada Exámenes Canvas:
+- Recordar/Comprender: ~70% ítems iniciales
+- Aplicación/Interpretación: ~30% (incremento gradual en Bloques)
+
+Rúbrica Casos Bloques 1 y 2 (resumen):
+- Análisis Técnico (40%)
+- Trabajo Colaborativo (30%)
+- Comunicación (30%)
+
+Rúbrica Caso Bloque 3: ver desglose porcentual arriba.
+
+POLÍTICA SOBRE RETROALIMENTACIÓN
+- Comentarios cualitativos en Canvas para exámenes (segmentados por tema).
+- Observaciones en celdas clave del notebook (pull requests internos o anotaciones).
+- Lista de mejoras recomendadas para iteración final (Semana 15).
+
+POLÍTICA SOBRE HERRAMIENTAS
+- Herramientas base: Python, Jupyter, pandas, numpy, seaborn, scikit-learn.
+- No se permite introducir frameworks avanzados (deep learning, big data) fuera de alcance.
+
+CONSIDERACIONES DE RIESGO Y AJUSTE
+- Si un tema excede el límite temporal (50 min) se recorta contenido, no se acelera ritmo.
+- Sesiones de reforzamiento disponibles (asesorías) según agenda docente.
+
+CRITERIOS DE APROBACIÓN
+- Calificación mínima final: 70.
+- Entrega de todas las actividades obligatorias (6). Ausencia de alguna actividad crítica (caso final) impide acreditación.
+
+DECLARACIÓN DE ALINEACIÓN CON EL PLAN
+Este temario refleja la estructura modular (30% + 30% + 40%) y la progresión gradual de complejidad establecida para estudiantes sin experiencia previa en programación.
+
+Firmas de Conformidad (si aplica)
+Docente: _________________________        Fecha: ____________
+Coordinación Académica: ___________       Fecha: ____________
+
+Departamento Académico de Tecnología, Arte y Diseño

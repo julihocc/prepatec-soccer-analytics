@@ -1,5 +1,5 @@
 # Rúbricas de Evaluación - Bloque 1
-## Python Fundamentals
+## Fundamentos de Python, Introducción a Datos y Visualización
 
 **Ponderación del Bloque:** 35% de la calificación final  
 **Componentes:** Examen Canvas (20%) + Caso Práctico Colaborativo (15%)
@@ -8,57 +8,57 @@
 
 ## Examen Canvas (20% de la calificación total)
 
-### Configuración Automática
-- **Preguntas totales:** 70 en el banco
-- **Preguntas por examen:** 20-25 (selección aleatoria)
-- **Tiempo límite:** 45-60 minutos
-- **Intentos:** 1 único intento
-- **Calificación:** Automática, 100 puntos
+### Configuración Automática (Actualizada v2)
+- **Banco total:** 120 preguntas (Core 1–75, Extended 76–120)
+- **Preguntas por examen:** 22 fijas (muestreo estratificado)
+- **Tiempo límite:** 50 minutos
+- **Intentos:** 1 intento
+- **Calificación:** Automática (100 puntos)
 
-### Distribución por Temas:
+### Distribución Cognitiva Objetivo por Examen
+- [R] 7-8 (recordar sintaxis y conceptos básicos)
+- [C] 7-8 (interpretar fragmentos, distinguir opciones correctas)
+- [A] 5-6 (aplicar lógica/resultado esperado en mini escenarios futbolísticos)
+- [S] 1-2 (pregunta interpretativa/razonamiento; activas desde Extended)
+
+### Distribución por Temas (alineada a semanas 1–5):
 | Tema | % del Examen | Preguntas |
 |------|--------------|-----------|
-| Variables y tipos de datos | 25% | 5-6 |
-| Estructuras de control (if, for) | 25% | 5-6 |
-| Funciones básicas | 25% | 5-6 |
-| Listas y diccionarios | 25% | 5-6 |
+| Variables y tipos de datos | 20% | 4-5 |
+| Estructuras de control (if, for, while básico) | 20% | 4-5 |
+| Funciones y modularidad simple | 20% | 4-5 |
+| Introducción a pandas (lectura, head, selección simple) | 20% | 4-5 |
+| Visualización básica (gráficos simples, etiquetas) | 20% | 4-5 |
+
+Nota: Preguntas Extended incorporan más interpretación (por ejemplo leer salidas de groupby o detectar error lógico simple) sin añadir complejidad fuera del alcance del bloque.
 
 ---
 
 ## Caso Práctico Colaborativo (15% de la calificación total)
 
-### "Análisis Básico de un Equipo de Fútbol"
+### "Análisis Básico de un Equipo de Fútbol" (Rúbrica Actualizada 40/30/30)
 **Modalidad:** Equipos de 2-3 estudiantes  
 **Duración:** 1 semana
 
-### Criterios de Evaluación (100 puntos)
+### Nueva Rúbrica 40 / 30 / 30 (100 puntos)
 
-#### 1. Python Básico (50 puntos)
-- **Variables y Listas (15 pts):**
-  - Uso correcto de listas para datos: 8 pts
-  - Manejo de variables básicas: 7 pts
-- **Bucles y Condicionales (20 pts):**
-  - Bucle for para contar resultados: 10 pts
-  - Condicionales if/elif/else: 10 pts
-- **Funciones Simples (15 pts):**
-  - calcular_puntos(): 8 pts
-  - mejor_goleador(): 7 pts
+| Área | Puntos | Subcomponentes | Evidencia clave |
+|------|--------|----------------|-----------------|
+| Fundamentos de Código | 40 | Variables y estructuras (15) + Bucles y condicionales (15) + Funciones simples (10) | Código limpio, nombres descriptivos, lógica correcta |
+| Análisis Básico | 30 | Cálculos (puntos, promedios, diferencia goles) (15) + Análisis jugadores (mejor goleador, conteos) (10) + Primera mini visualización o tabla formateada (5) | Resultados correctos y explicados |
+| Comunicación y Colaboración | 30 | Comentarios y claridad (10) + Explicaciones / reflexión (10) + Equipo y división de roles (10) | Justificaciones, roles visibles, coherencia estilo |
 
-#### 2. Análisis Simple (30 puntos)
-- **Estadísticas del Equipo (15 pts):**
-  - Cálculo de puntos totales: 5 pts
-  - Promedio de goles por partido: 5 pts
-  - Diferencia de goles: 5 pts
-- **Análisis de Jugadores (15 pts):**
-  - Identificación del mejor goleador: 5 pts
-  - Conteo por posiciones: 5 pts
-  - Análisis básico de rendimiento: 5 pts
+Niveles de desempeño (por área):
+- Excelente: Completo y justificado (explica el porqué de decisiones).
+- Bueno: Funciona con 1-2 omisiones menores de comentario/claridad.
+- Suficiente: Funciona pero carece de explicaciones o nombres claros.
+- Insuficiente: Errores lógicos o ausencia de partes centrales.
 
-#### 3. Trabajo Colaborativo (20 puntos)
-| Criterio | Excelente (18-20) | Bueno (16-17) | Suficiente (14-15) | Insuficiente (<14) |
-|----------|-------------------|---------------|-------------------|-------------------|
-| **Participación Equitativa** | Contribución balanceada entre 2-3 miembros | Buena participación con pequeños desbalances | Participación básica, algunos menos activos | Participación desigual |
-| **Coordinación** | Integración coherente del código | Buena coordinación e integración | Coordinación básica, pequeñas inconsistencias | Falta de coordinación |
+Requisitos transversales para nivel Excelente:
+- Variables en español y descriptivas.
+- Preguntas socráticas del caso respondidas (si están presentes en notebook).
+- Comentarios explican intención (no repiten literal el código).
+- Notebook ejecuta de inicio a fin sin errores.
 
 ---
 
@@ -70,10 +70,10 @@
 - **Total Bloque 1:** Suma de ambos componentes
 
 ### Niveles de Dominio:
-- **Excelente (90-100%):** Dominio sólido de Python básico y análisis de datos simple
-- **Competente (80-89%):** Comprensión adecuada de variables, bucles y funciones básicas
-- **Suficiente (70-79%):** Nivel mínimo aceptable para continuar con pandas
-- **Insuficiente (<70%):** Requiere refuerzo de fundamentos Python antes de continuar
+- Excelente (90-100%): Domina fundamentos, analiza y explica decisiones.
+- Competente (80-89%): Lógica correcta con explicaciones parciales.
+- Suficiente (70-79%): Cumple mínimos; poca reflexión.
+- Insuficiente (<70%): Faltan componentes clave o errores bloqueantes.
 
 ---
 
@@ -81,14 +81,14 @@
 
 ### Para Examen Canvas:
 - Trabajo individual estricto
-- No consulta de materiales externos
-- Una sola oportunidad de presentación
+- Sin consulta de materiales externos no autorizados
+- Un solo intento
 
 ### Para Caso Práctico:
-- Código Python básico original del equipo (80% mínimo)
-- Colaboración documentada y equitativa entre 2-3 miembros
-- Referencias citadas apropiadamente (si se consultan fuentes externas)
-- Declaración de uso de IA si aplica
+- Código original del equipo (≥80%)
+- División de roles visible y anotada
+- Referencias citadas si se usan
+- Declaración breve de apoyo IA (si existió) describiendo qué parte ayudó (no sustituye autoría)
 
 ---
 
@@ -96,27 +96,14 @@
 
 **Como instructor, busco evidencia de que el estudiante puede:**
 
-✅ **Python Básico:**
-- Crear y usar variables para almacenar datos
-- Escribir bucles `for` para procesar listas
-- Usar condicionales `if/elif/else` para tomar decisiones
-- Crear funciones simples que reciban parámetros y regresen valores
+✅ **Python Básico:** crear y usar variables, bucles `for`, condicionales `if/elif/else`, funciones simples.
 
-✅ **Estructuras de Datos:**
-- Trabajar con listas para almacenar secuencias de datos
-- Usar diccionarios para organizar información estructurada
-- Acceder a elementos usando índices y llaves
+✅ **Estructuras de Datos:** listas, diccionarios, acceso por índice/llave.
 
-✅ **Análisis Básico:**
-- Hacer cálculos simples con los datos (sumas, promedios, conteos)
-- Encontrar patrones básicos en la información
-- Sacar conclusiones simples basadas en los resultados
+✅ **Análisis Básico:** cálculos simples (sumas, promedios), patrones básicos, conclusiones iniciales.
 
-✅ **Colaboración:**
-- Trabajar efectivamente en equipos pequeños (2-3 personas)
-- Integrar código de diferentes miembros del equipo
-- Documentar el proceso de trabajo colaborativo
+✅ **Colaboración y Comunicación:** roles claros, integración de código, comentarios explicativos y reflexión breve.
 
 ---
 
-*Esta rúbrica evalúa fundamentos Python esenciales que preparan a los estudiantes para trabajar con pandas y análisis más avanzados en bloques posteriores.*
+*Esta rúbrica actualizada estandariza criterios (40/30/30) y prepara a los estudiantes para Bloque 2 integrando fundamentos, primeras nociones de análisis y comunicación clara.*

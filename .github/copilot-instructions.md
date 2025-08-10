@@ -418,3 +418,56 @@ Cuando existan datos de uso (resultados de estudiantes):
 Las etiquetas [A]/[S] sirven para enlazar con rúbricas de razonamiento: priorizar su muestreo en evaluaciones formativas antes de casos prácticos.
 
 ---
+
+## POLÍTICA OBLIGATORIA DE DOCUMENTACIÓN DE CAMBIOS
+
+Toda modificación que afecte contenido educativo, bancos de preguntas, casos prácticos, rúbricas, cronogramas o lineamientos metodológicos debe reflejarse inmediatamente en la documentación correspondiente. No se permite introducir cambios silentes.
+
+### Alcance de la Política
+- **Nivel Carpeta (Local):** Si el cambio ocurre dentro de `contenido/bloque-X`, `evaluaciones/bloque-X` o cualquier subcarpeta específica, actualizar el `README.md` de esa carpeta en el mismo commit.
+- **Nivel Global (Repositorio):** Si el cambio altera:
+    - Estructura de bancos (tamaño, segmentación Core/Extended, distribución cognitiva)
+    - Formato o pesos de rúbricas (40/30/30 u otro)
+    - Cronogramas semanales o de evaluación
+    - Límites de complejidad o alcance de bloques
+    - Procedimientos de muestreo (examen Canvas: número de ítems, tiempos, proporciones por etiqueta)
+    Entonces también actualizar el `README.md` principal del repositorio añadiendo un ítem en "Actualizaciones Recientes".
+- **Nivel Instruccional (Este archivo):** Si el cambio introduce o modifica un proceso estándar (ej. nueva verificación previa a commit, ajuste en política de segmentación), añadir o editar la sección pertinente en este documento.
+
+### Formato de Commits (Convenciones)
+- Prefijo sugerido: `docs(...)` para cambios puramente de documentación; `feat(...)` si el contenido pedagógico nuevo añade capacidad evaluativa o instruccional; `refactor(...)` si reorganiza sin cambiar alcance.
+- Ejemplos:
+    - `docs(banco-bloque2): añadir 10 ítems Extended con etiquetas [S]`
+    - `feat(rubrica-bloque3): incorporar métrica de precisión simplificada`
+
+### Checklist Pre-Commit (Marcar mentalmente antes de confirmar)
+1. ¿El cambio altera cómo un estudiante será evaluado? → Actualizar rúbrica y README(s).
+2. ¿Afecta conteo, distribución o segmentación de preguntas? → Actualizar README del bloque y nota global si es política nueva.
+3. ¿Modifica tiempos, duración de examen o número de ítems? → Actualizar README global y bloque implicado.
+4. ¿Introduce una métrica, variable o término nuevo recurrente? → Añadir a estándares / glosario local si aplica.
+5. ¿Se agregó contenido que impacta la progresión semanal? → Ajustar cronograma del bloque.
+6. ¿Se tocaron notebooks que cambian alcance (más de 45 min)? → Recortar o documentar justificación y volver a validar tiempo.
+7. ¿Se respetó prohibición de emojis y uso de español? → Verificación final.
+
+### Criterios de Bloqueo (No Comitear si):
+- Falta actualización de README donde el cambio es visible para docentes/estudiantes.
+- Se modifica una rúbrica sin reflejar nuevos pesos en documentación del bloque.
+- Se cambia distribución cognitiva sin tabla o nota explicativa.
+- Se amplía banco sin añadir conteo actualizado o sin registrar si es Core o Extended.
+
+### Registro de Cambios Sugerido
+En cada README de bloque mantener sección "Actualizaciones Recientes" con entradas concisas:
+```
+AAAA-MM-DD: Cambio resumido (ej. Añadidas preguntas 76-90 Extended [S] interpretación de boxplots)
+```
+
+### Ejemplo de Flujo Correcto
+1. Añadir 10 preguntas Extended [S] al banco Bloque 2.
+2. Actualizar `evaluaciones/bloque-2/README.md` (nuevo total, distribución, nota de interpretación añadida).
+3. Si se ajusta política general (ej. pasar de 22 a 24 ítems en examen), actualizar README principal + este archivo (sección de bancos) + bloque involucrado.
+4. Commit único integrando banco + documentación: mensaje `feat(banco-bloque2): extender a 85 preguntas con primera capa [S] interpretación`.
+
+### Principio Rector
+"Ningún cambio evaluativo o metodológico es válido hasta que su documentación visible esté sincronizada en el mismo commit." 
+
+---

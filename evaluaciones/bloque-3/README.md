@@ -10,12 +10,12 @@
 
 ## Componentes de Evaluación
 
-### Proyecto Final (20% del curso)
-**Ubicación:** [proyecto-integrador/README.md](proyecto-integrador/README.md)
-- **Sistema:** "Análisis Predictivo para Fútbol" completo
+### Caso Práctico Bloque 3 (Notebook) (20% del curso)
+**Ubicación:** [caso-practico/README.md](caso-practico/README.md)
+- **Descripción:** "Caso Práctico Bloque 3: Sistema Básico de Análisis Predictivo"
 - **Modalidad:** Individual, 4 semanas de desarrollo
-- **Componentes:** EDA + ML + Dashboard + Documentación
-- **Entrega:** Notebook ejecutable + modelos + interface interactiva
+- **Componentes:** EDA + Predicción simple + Visualización + Documentación
+- **Entrega:** Notebook ejecutable (sin confundir con proyecto integrador de semana 15 en contenido)
 
 ### Presentación Final (10% del curso)
 **Formato:** Presentación individual de 15 minutos
@@ -25,9 +25,9 @@
 - **Audiencia:** Profesores + invitados de la industria (opcional)
 
 ### Sistema de Evaluación Integral
-**Rúbrica Integrada:** (contenido completo fusionado, ya no se requiere archivo externo)
-- **Evaluación holística** de todas las competencias del curso
-- **Criterios profesionales** equiparables a la industria
+**Rúbrica Integrada:** (contenido completo fusionado, ya no se requiere archivo externo; este caso práctico es la evidencia evaluable del Bloque 3, distinto del proyecto aplicado de aprendizaje en contenido/semanas)
+- **Evaluación holística** de competencias del curso
+- **Criterios profesionales** al nivel esperado preparatoria avanzada
 - **Portfolio de evidencias** para empleabilidad
 - **Certificación de competencias** técnicas y blandas
 

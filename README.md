@@ -903,3 +903,4 @@ Para dudas sobre el curso o el material didáctico, contacta al equipo docente.
 
 2025-08-10: Ampliado banco Canvas Bloque 2 de 75 a 105 preguntas (incorporación de 30 ítems Extended con etiqueta [S]; ajuste distribución cognitiva global documentado en evaluaciones/bloque-2/README.md).
 2025-08-10: Fusión de rúbrica completa de Bloque 3 en evaluaciones/bloque-3/README.md y eliminación de rubricas/rubrica-completa.md para consolidar criterios en punto único.
+2025-08-10: Renombrado componente evaluativo de Bloque 3 a "Caso Práctico" para evitar confusión con proyecto de aprendizaje de semana 15; creado `evaluaciones/bloque-3/caso-practico/README.md` y actualizadas referencias.

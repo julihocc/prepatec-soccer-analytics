@@ -21,8 +21,8 @@
 │   ├── Examen Canvas (20%) - Análisis y visualización
 │   └── Caso Práctico Colaborativo (15%) - Sistema de scouting
 │
-└── Final (30%) - Bloque 3: Proyecto Integrador
-    ├── Notebook Jupyter (20%) - Sistema predictivo
+└── Final (30%) - Bloque 3: Caso Práctico Predictivo
+    ├── Notebook Jupyter (20%) - Caso práctico Bloque 3
     └── Presentación (10%) - Comunicación de resultados
 ```
 
@@ -44,11 +44,11 @@
 - **[Rúbricas](bloque-2/rubricas/):** Criterios específicos del bloque
 - **Modalidad:** Examen individual + proyecto colaborativo (3-4 estudiantes)
 
-### [Bloque 3](bloque-3/) - Proyecto Integrador (30%)
-**Semanas 11-16: Sistema Predictivo Completo**
-- **[Proyecto Final](bloque-3/proyecto-integrador/):** Sistema de análisis predictivo (20%)
-- **[Presentación](bloque-3/proyecto-integrador/):** Comunicación de resultados (10%)
-- **[Rúbricas](bloque-3/rubricas/):** Evaluación integral por competencias
+### [Bloque 3](bloque-3/) - Caso Práctico Predictivo (30%)
+**Semanas 11-16: Integración de Competencias**
+- **[Caso Práctico](bloque-3/caso-practico/):** Notebook evaluado (20%)
+- **[Presentación](bloque-3/caso-practico/):** Comunicación de resultados (10%)
+- **Rúbrica integrada:** En `bloque-3/README.md` (archivo único consolidado)
 - **Modalidad:** Individual, 4 semanas de desarrollo intensivo
 
 ---

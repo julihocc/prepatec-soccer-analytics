@@ -22,7 +22,14 @@
 - **Progresión gradual**: Conceptos simples antes que complejos
 - **Analogías constantes**: Usar deportes y vida cotidiana
 - **Motivación continua**: Mostrar aplicaciones inmediatas y relevantes
-- **Paciencia pedagógica**: Repetir conceptos clave múltiples veces  
+- **Paciencia pedagógica**: Repetir conceptos clave múltiples veces
+
+### RESTRICCIÓN TEMPORAL CRÍTICA:
+- **Duración máxima por sesión**: 50 minutos reales de contenido
+- **Incluye**: Teoría + práctica + reflexiones + ejercicios
+- **Planificación**: 15 min teoría + 25 min práctica + 10 min síntesis
+- **Prueba obligatoria**: Cada notebook debe ejecutarse completamente en máximo 45 minutos
+- **Principio rector**: "Si no cabe en 50 minutos, es demasiado para una sesión"  
 
 ## REGLA CRÍTICA: PROHIBIDOS LOS EMOJIS
 
@@ -101,22 +108,34 @@ print("¿Qué patrones observas en estos datos?")
 
 ## SESIÓN 1: ¿[Pregunta específica]? (50 min)
 **Pregunta guía**: ¿Cómo...?
-- Conceptos fundamentales
-- Teoría con analogías deportivas
-- Preguntas reflexivas intermedias
+**Contenido máximo**: 15 min teoría + 25 min práctica + 10 min reflexión
+- Conceptos fundamentales (máximo 2-3 conceptos por sesión)
+- Teoría con analogías deportivas (explicaciones breves y claras)
+- Preguntas reflexivas intermedias (máximo 3-4 preguntas)
+- Práctica inmediata (ejercicios que tomen máximo 20 minutos)
 
 ## SESIÓN 2: ¿[Pregunta práctica]? (50 min)  
 **Pregunta guía**: ¿Por qué...?
-- Ejercicios aplicados
-- Práctica con datos
-- Conexiones con fútbol real
+**Contenido máximo**: 10 min repaso + 30 min práctica + 10 min conexiones
+- Ejercicios aplicados (progresión lógica desde sesión anterior)
+- Práctica con datos (datasets pequeños y manejables)
+- Conexiones con fútbol real (ejemplos concretos y familiares)
+- Validación de comprensión (preguntas de verificación)
 
 ## SESIÓN 3: ¿[Pregunta de aplicación]? (50 min)
 **Pregunta guía**: ¿Cómo podríamos...?
-- Aplicación a datos deportivos reales
-- Integración de conceptos
-- Síntesis reflexiva final
+**Contenido máximo**: 5 min repaso + 35 min aplicación + 10 min síntesis
+- Aplicación a datos deportivos reales (problema completo pero acotado)
+- Integración de conceptos (máximo 3 conceptos de sesiones anteriores)
+- Síntesis reflexiva final (consolidación y conexión con próxima semana)
+- Autoevaluación del aprendizaje (reflexión metacognitiva)
 ```
+
+### REGLAS DE TEMPORIZACIÓN:
+- **Total por semana**: 150 minutos distribuidos en 3 sesiones de 50 minutos exactos
+- **Margen de seguridad**: Planificar contenido para 45 minutos, reservar 5 para preguntas
+- **Prueba obligatoria**: Ejecutar notebook completo en tiempo real antes de finalizar
+- **Principio de edición**: Si excede tiempo, ELIMINAR contenido, no comprimir explicaciones
 
 ### Código Estándar
 ```python
@@ -140,6 +159,17 @@ print("Este análisis nos muestra los patrones de goles!")
 3. **Usar datos futbolísticos reales** (Barcelona, Real Madrid, equipos europeos)
 4. **Incluir reflexiones intermedias** ("¿Qué patrones observas?")
 5. **Terminar con síntesis** ("¿Qué hemos descubierto?")
+6. **VALIDAR TEMPORIZACIÓN**: Probar cada sesión completa en tiempo real
+7. **RECORTAR SI EXCEDE**: Eliminar contenido extra, mantener lo esencial
+
+### METODOLOGÍA DE VALIDACIÓN TEMPORAL:
+```python
+# Antes de finalizar cualquier notebook:
+# 1. Ejecutar sesión completa con cronómetro
+# 2. Incluir tiempo para preguntas de estudiantes
+# 3. Si excede 45 minutos, ELIMINAR contenido
+# 4. Priorizar comprensión sobre cantidad de temas
+```
 
 ### Evaluación y Testing
 ```python
@@ -149,8 +179,15 @@ jupyter nbconvert --execute notebook.ipynb
 # Usar equipos reconocibles en ejemplos
 equipos = ['Barcelona', 'Real Madrid', 'Manchester City', 'Bayern Munich']
 
-# Verificar que ejercicios tomen ~60 minutos máximo
+# CRÍTICO: Verificar que cada sesión tome máximo 50 minutos
+# Cronometrar ejecución completa incluyendo explicaciones
 ```
+
+### VALIDACIÓN TEMPORAL OBLIGATORIA:
+- **Sesión 1**: Máximo 50 minutos (15 teoría + 25 práctica + 10 reflexión)
+- **Sesión 2**: Máximo 50 minutos (10 repaso + 30 práctica + 10 conexiones)  
+- **Sesión 3**: Máximo 50 minutos (5 repaso + 35 aplicación + 10 síntesis)
+- **Margen de error**: Planificar para 45 minutos, reservar 5 para preguntas
 
 #### Principios de Evaluación Socrática:
 1. **Preguntas abiertas**: "¿Por qué crees que...?" en lugar de "¿Cuál es...?"
@@ -242,13 +279,57 @@ print("¿Qué nos dice este promedio sobre la experiencia del equipo?")
 - **Predicciones simples**: regresión lineal básica con interpretación clara
 
 ### LO QUE NO incluir (demasiado avanzado):
-- **Algoritmos complejos**: clustering, redes neuronales, SVM
+- **Algoritmos complejos**: clustering, redes neuronales, SVM avanzado
 - **Estadística avanzada**: inferencia estadística, pruebas de hipótesis complejas
 - **Programación avanzada**: clases, herencias, decoradores, manejo de errores complejo
 - **Matemáticas universitarias**: cálculo, álgebra lineal, estadística bayesiana
 - **Big Data**: Spark, bases de datos complejas, APIs avanzadas
 
+### LÍMITES ESPECÍFICOS PARA BLOQUE 3 (Machine Learning):
+- **Algoritmos permitidos**: Regresión lineal, regresión logística, Random Forest básico
+- **Conceptos ML básicos**: train/test split, accuracy, overfitting (explicado con analogías)
+- **Vocabulario simplificado**: "modelo" en lugar de "algoritmo", "predicción" en lugar de "inferencia"
+- **Validación simple**: accuracy, confusion matrix básica (sin métricas avanzadas como F1, AUC)
+- **Feature engineering básico**: crear variables simples (suma, promedio), NO transformaciones complejas
+
 ### Principio Rector:
 "Si un estudiante de preparatoria no puede entender el concepto en 10 minutos con analogías deportivas, es demasiado complejo para este curso"
 
+### REGLA DE VERIFICACIÓN:
+Antes de incluir cualquier concepto de ML, preguntarse:
+1. ¿Puede explicarse con analogía deportiva en 5 minutos?
+2. ¿Requiere matemáticas más allá de álgebra básica?
+3. ¿Puede implementarse en menos de 10 líneas de código?
+4. ¿Genera valor práctico inmediato para análisis deportivo?
+
+Si cualquier respuesta es NO, el concepto es demasiado avanzado.
+
 **CRÍTICO**: Nunca usar emojis - mantener contenido profesional para preparatoria.
+
+## ESTÁNDARES ESPECÍFICOS PARA BLOQUE 3 (MACHINE LEARNING)
+
+### VOCABULARIO OBLIGATORIO SIMPLIFICADO:
+- **"Modelo"** en lugar de "algoritmo"
+- **"Predicción"** en lugar de "inferencia" 
+- **"Entrenamiento"** en lugar de "fitting"
+- **"Precisión"** en lugar de "accuracy score"
+- **"Datos de prueba"** en lugar de "test set"
+
+### ANALOGÍAS DEPORTIVAS OBLIGATORIAS:
+- **Modelo = Entrenador**: "El modelo aprende patrones como un entrenador aprende tácticas"
+- **Entrenamiento = Temporada de práctica**: "Entrenamos el modelo con datos del pasado"
+- **Predicción = Pronóstico**: "Como pronosticar quién ganará el próximo partido"
+- **Overfitting = Memorizar jugadas**: "Cuando el modelo memoriza en lugar de entender"
+
+### LÍMITES TÉCNICOS ESTRICTOS:
+- **Máximo 3 algoritmos**: Regresión lineal, regresión logística, Random Forest
+- **Métricas básicas únicamente**: Accuracy, matriz de confusión simple
+- **Sin matemáticas complejas**: Solo conceptos explicables con aritmética básica
+- **Código máximo por sesión**: 20-25 líneas efectivas de programación
+
+### PROGRESIÓN TEMPORAL OBLIGATORIA:
+- **Semana 11**: Solo conceptos, sin código complejo (fundamentos ML)
+- **Semana 12**: Un algoritmo a la vez, comparación simple
+- **Semana 13**: Evaluación básica, conceptos de calidad
+- **Semana 14**: Mejoras simples, variables nuevas
+- **Semana 15**: Integración y proyecto final acotado

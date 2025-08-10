@@ -24,6 +24,7 @@ y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 ### Mejorado
 - Claridad documental del caso práctico Bloque 3 (preguntas socráticas, tareas con puntaje, checklist homogéneo).
 - Changelog global actualizado para reflejar limpieza y unificación evaluativa.
+ - Sistema de ponderaciones redefinido: 5 actividades de 15% + caso final 25% (reemplaza esquema previo 35/35/30 con presentación separada).
 
 ## [4.0.1] - 2025-08-10
 

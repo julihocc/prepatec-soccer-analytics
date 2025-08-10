@@ -329,18 +329,13 @@ pip install -r requirements.txt
 ### Distribución General (100%)
 
 ```
- EVALUACIÓN COMPLETA DEL CURSO
-├── 1er Parcial (35%) - Bloque 1: Python Fundamentals
-│   ├── Examen Canvas (20%) - Fundamentos de programación
-│   └── Caso Práctico Colaborativo (15%) - Análisis básico de club
-│
-├── 2do Parcial (35%) - Bloque 2: Exploración de Datos  
-│   ├── Examen Canvas (20%) - Análisis y visualización
-│   └── Caso Práctico Colaborativo (15%) - Sistema de scouting
-│
-└── Final (30%) - Bloque 3: Proyecto Integrador
-    ├── Notebook Jupyter (20%) - Sistema predictivo completo
-    └── Presentación (10%) - Comunicación de resultados
+ EVALUACIÓN COMPLETA DEL CURSO (Nueva Distribución)
+├── Actividad 1: Examen Canvas Bloque 1 (15%)
+├── Actividad 2: Caso Práctico Bloque 1 (15%)
+├── Actividad 3: Examen Canvas Bloque 2 (15%)
+├── Actividad 4: Caso Práctico Bloque 2 (15%)
+├── Actividad 5: Quiz / Canvas ML Básico Bloque 3 (15%)
+└── Actividad 6: Caso Práctico Bloque 3 (25%)
 ```
 
 ### Equivalencias con Syllabus Tec

@@ -2,7 +2,7 @@
 ## Predicción Simple con Datos de Champions League
 
 **Modalidad:** Individual  
-**Ponderación:** 20% del Bloque Final (30% del curso)  
+**Ponderación:** 25% de la calificación total del curso  
 **Duración:** 1 semana focal (aplica tras semanas de práctica)  
 **Entrega:** Notebook de Jupyter (`caso_bloque3.ipynb`)
 
@@ -118,7 +118,7 @@ print('Precisión:', accuracy_score(y_test, preds))
 
 ## Rúbrica (Resumen)
 Ver rúbrica completa integrada en `evaluaciones/bloque-3/README.md`.
-- Ponderación Notebook (20% curso):
+- Ponderación Caso (25% curso):
   - Exploración y Limpieza (25%)
   - Modelado Básico (35%)
   - Visualización e Interpretación (25%)
@@ -131,7 +131,7 @@ Ver rúbrica completa integrada en `evaluaciones/bloque-3/README.md`.
 | Aspecto | Caso Práctico (evaluaciones) | Proyecto Semana 15 (contenido) |
 |---------|------------------------------|--------------------------------|
 | Rol | Evidencia evaluativa formal | Actividad de aprendizaje aplicada |
-| Estructura | Rúbrica oficial (20% curso) | Guía pedagógica de cierre |
+| Estructura | Rúbrica oficial (25% curso) | Guía pedagógica de cierre |
 | Alcance ML | Modelo simple | Integración narrativa + práctica guiada |
 | Enfoque | Cumplimiento de criterios | Exploración formativa |
 

@@ -10,18 +10,14 @@
 
 ## Componentes de Evaluación
 
-### Caso Práctico Bloque 3 (20% del curso)
+### Caso Práctico Bloque 3 (25% del curso)
 **Ubicación:** `caso-practico/caso-bloque3.md`
 - **Modalidad:** Individual
 - **Componentes:** EDA + Predicción simple + Visualización + Documentación
 - **Entrega:** Notebook ejecutable
 
-### Presentación Final (10% del curso)
-**Formato:** Presentación individual de 15 minutos
-- **Demo en vivo:** Funcionamiento del sistema completo
-- **Explicación técnica:** Metodología y decisiones de diseño
-- **Q&A profesional:** Manejo de preguntas técnicas y de negocio
-- **Audiencia:** Profesores + invitados de la industria (opcional)
+### Presentación (integrada en el caso)
+La comunicación de resultados se evalúa ahora dentro del 25% total del caso práctico (subcomponentes de Documentación / Comunicación) sin ponderación separada.
 
 ### Sistema de Evaluación Integral
 **Rúbrica Integrada:** (contenido completo fusionado; este caso práctico es la evidencia evaluable del Bloque 3)
@@ -42,16 +38,13 @@
 
 ### Estructura General de Evaluación
 
-#### Distribución de Calificaciones (Resumen Global del Curso)
-- **1er Parcial (35%)**: Bloque 1 - Fundamentos Python
-    - Examen Canvas (20%)
-    - Caso Práctico Colaborativo (15%)
-- **2do Parcial (35%)**: Bloque 2 - Exploración de Datos
-    - Examen Canvas (20%)
-    - Caso Práctico Colaborativo (15%)
-- **Final (30%)**: Bloque 3 - Proyecto Integrador
-    - Notebook Jupyter (20%)
-    - Presentación (10%)
+#### Distribución de Calificaciones (Nueva)
+- Actividad 1: Examen Canvas Bloque 1 (15%)
+- Actividad 2: Caso Práctico Bloque 1 (15%)
+- Actividad 3: Examen Canvas Bloque 2 (15%)
+- Actividad 4: Caso Práctico Bloque 2 (15%)
+- Actividad 5: Quiz / Canvas ML Básico Bloque 3 (15%)
+- Actividad 6: Caso Práctico Bloque 3 (25%)
 
 ---
 
@@ -77,9 +70,9 @@ Cada sub‑criterio presenta niveles: Excelente / Bueno / Suficiente / Insuficie
 ---
 
 ### 3. Rúbrica Proyecto Integrador Final (Bloque 3)
-La siguiente rúbrica se aplica directamente a este bloque (30% del curso). Ponderación interna: Notebook (20% del curso) + Presentación (10% del curso).
+La siguiente rúbrica se aplica al Caso Práctico (25% del curso). Comunicación y presentación quedan integradas.
 
-#### 3.1 Notebook de Jupyter (20% del curso)
+#### 3.1 Caso Práctico (25% del curso)
 Subcomponentes y pesos relativos dentro del notebook (entre paréntesis el equivalente sobre la calificación total del curso):
 - Análisis Exploratorio de Datos (25% del notebook = 5% total)
 - Modelado de Machine Learning (35% del notebook = 7% total)
@@ -88,13 +81,8 @@ Subcomponentes y pesos relativos dentro del notebook (entre paréntesis el equiv
 
 Cada subcomponente se evalúa en cuatro dimensiones: Exhaustividad/Implementación, Calidad de Insights / Selección de Modelos / Funcionalidad / Calidad del Código, Limpieza de Datos / Evaluación de Modelos / UX / Documentación, e Interpretación / Integración / Reproducibilidad según corresponda.
 
-#### 3.2 Presentación Final (10% del curso)
-- Introducción y Contexto (20%)
-- Metodología y Desarrollo (30%)
-- Resultados y Demo (30%)
-- Conclusiones y Q&A (20%)
-
-Niveles: Excelente, Bueno, Suficiente, Insuficiente con énfasis en dominio técnico, claridad, tiempo y manejo de preguntas.
+#### 3.2 Comunicación Integrada
+La presentación en vivo se evalúa mediante evidencia en el notebook y exposición breve (dentro del mismo 25%). Criterios de narrativa y claridad se integran en Documentación y Código.
 
 ---
 

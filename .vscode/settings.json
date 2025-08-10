@@ -12,5 +12,14 @@
     "github.copilot.chat.codesearch.enabled": true,
     "github.copilot.chat.agent.thinkingTool": true,
     "github.copilot.chat.editor.temporalContext.enabled": true,
-    "github.copilot.chat.edits.temporalContext.enabled": true
+    "github.copilot.chat.edits.temporalContext.enabled": true,
+    "github.copilot.chat.enableRetryAfterFilteredResponse": true,
+    "github.copilot.chat.generateTests.codeLens": true,
+    "github.copilot.chat.languageContext.fix.typescript.enabled": true,
+    "github.copilot.chat.languageContext.inline.typescript.enabled": true,
+    "github.copilot.chat.languageContext.typescript.enabled": true,
+    "github.copilot.chat.notebook.followCellExecution.enabled": true,
+    "intellicodeCompletions.runAlongsideCopilot": true,
+    "notebook.defaultFormatter": "ms-python.black-formatter",
+    "python.analysis.addHoverSummaries": true
 }

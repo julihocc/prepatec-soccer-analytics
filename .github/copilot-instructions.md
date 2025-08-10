@@ -5,9 +5,18 @@
 **Contexto**: Análisis deportivo con datos reales de fútbol  
 **Metodología**: Socrática + 3 sesiones de 50 minutos por semana  
 
+## REGLA CRÍTICA: PROHIBIDOS LOS EMOJIS
+
+**ESTRICTAMENTE PROHIBIDO**: No se permiten emojis en ninguna parte de este proyecto.
+- SIN emojis en archivos de código (.py, .ipynb)
+- SIN emojis en documentación (archivos .md)
+- SIN emojis en comentarios o strings
+- SIN emojis en mensajes de commit
+- Mantener contenido profesional, limpio, sin emojis en todo momento
+
 ## Contexto Central del Proyecto
 
-**LEER PRIMERO**: [`.ai/AI-CONTEXT.md`](../.ai/AI-CONTEXT.md) - Contiene toda la documentación detallada, metodología socrática, patrones de código y estándares educativos.
+Este archivo contiene TODA la documentación necesaria para trabajar en este proyecto educativo.
 
 ## Arquitectura del Proyecto
 
@@ -44,16 +53,26 @@ print("¿Qué patrones observas en estos datos?")
 ```
 
 ### Estructura de Notebook (OBLIGATORIA)
-```python
-# 1. Título con pregunta socrática
+```markdown
 # Semana X: ¿[Pregunta que genera curiosidad]?
 
-# 2. Sesión 1: Conceptos (50 min) - Preguntas guía + teoría
-# 3. Sesión 2: Práctica (50 min) - Ejercicios + aplicación  
-# 4. Sesión 3: Aplicación real (50 min) - Datos deportivos reales
+## SESIÓN 1: ¿[Pregunta específica]? (50 min)
+**Pregunta guía**: ¿Cómo...?
+- Conceptos fundamentales
+- Teoría con analogías deportivas
+- Preguntas reflexivas intermedias
 
-# 5. SIEMPRE: Reflexiones finales socráticas
-print("¿Qué hemos descubierto juntos?")
+## SESIÓN 2: ¿[Pregunta práctica]? (50 min)  
+**Pregunta guía**: ¿Por qué...?
+- Ejercicios aplicados
+- Práctica con datos
+- Conexiones con fútbol real
+
+## SESIÓN 3: ¿[Pregunta de aplicación]? (50 min)
+**Pregunta guía**: ¿Cómo podríamos...?
+- Aplicación a datos deportivos reales
+- Integración de conceptos
+- Síntesis reflexiva final
 ```
 
 ### Código Estándar
@@ -128,6 +147,39 @@ git commit -m "Actualizar Semana X: mejorar metodología socrática"
 
 - **Dataset principal**: [Champs - Kaggle](https://www.kaggle.com/datasets/julihocc/champs)
 - **Notebook referencia**: [La Remontada](https://www.kaggle.com/code/julihocc/la-remontada)
-- **Documentación completa**: `.ai/AI-CONTEXT.md`
+
+## Estándares de Desarrollo
+
+### Variables y Nomenclatura
+- **Nombres en español**: `datos_futbol`, `equipos_europeos`, `promedio_goles`
+- **Descriptivos y claros**: `goles_por_equipo` no `gpe`
+- **Consistencia**: snake_case para variables, PascalCase para clases
+
+### Contexto Deportivo Obligatorio
+- **Equipos reales**: Barcelona, Real Madrid, Manchester City, Bayern Munich
+- **Situaciones familiares**: Análisis de rendimiento, fichajes, alineaciones
+- **Datos realistas**: Rangos de goles (0-4), edades (17-40), etc.
+
+### Patrones de Código Educativo
+```python
+# Siempre incluir contexto deportivo
+jugadores = ['Messi', 'Cristiano', 'Mbappé', 'Haaland']
+
+# Preguntas antes de mostrar código
+print("¿Cómo calcularíamos el promedio de edad del equipo?")
+promedio_edad = sum(edades) / len(edades)
+print(f"Promedio: {promedio_edad} años")
+
+# Reflexión después del resultado
+print("¿Qué nos dice este promedio sobre la experiencia del equipo?")
+```
+
+### Flujo de Trabajo de Contenido
+1. **Pregunta motivadora inicial** (genera curiosidad)
+2. **Analogía deportiva** (conecta con experiencia previa)
+3. **Código progresivo** (construir paso a paso)
+4. **Reflexiones intermedias** (conectar conceptos)
+5. **Aplicación práctica** (problema deportivo real)
+6. **Síntesis final** (¿qué descubrimos?)
 
 **CRÍTICO**: Nunca usar emojis - mantener contenido profesional para preparatoria.

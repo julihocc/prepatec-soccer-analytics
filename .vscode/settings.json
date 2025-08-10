@@ -21,5 +21,8 @@
     "github.copilot.chat.notebook.followCellExecution.enabled": true,
     "intellicodeCompletions.runAlongsideCopilot": true,
     "notebook.defaultFormatter": "ms-python.black-formatter",
-    "python.analysis.addHoverSummaries": true
+    "python.analysis.addHoverSummaries": true,
+    "python.analysis.supportAllPythonDocuments": true,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "python.languageServer": "Pylance"
 }

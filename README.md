@@ -896,3 +896,9 @@ Para dudas sobre el curso o el material didáctico, contacta al equipo docente.
 *Este curso te transformará de estudiante curioso en analista capaz de descubrir insights que podrían cambiar estrategias deportivas. Cada línea de código que escribas te acercará más a entender cómo la tecnología está revolucionando el mundo del fútbol.*
 
 **¿Estás listo para empezar tu jornada hacia convertirte en el próximo analista que ayude a ganar un Clásico?**
+
+---
+
+## Actualizaciones Recientes
+
+2025-08-10: Ampliado banco Canvas Bloque 2 de 75 a 105 preguntas (incorporación de 30 ítems Extended con etiqueta [S]; ajuste distribución cognitiva global documentado en evaluaciones/bloque-2/README.md).

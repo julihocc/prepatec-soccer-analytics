@@ -11,13 +11,13 @@
 
 ### Examen Canvas (20% del curso)
 **Ubicación:** [canvas/banco-preguntas-bloque2.md](canvas/banco-preguntas-bloque2.md)
-- **Banco actual:** 75 preguntas (Núcleo). Próxima ampliación: Extended con ítems [S].
+- **Banco actual:** 105 preguntas (75 Núcleo + 30 Extended con etiqueta [S]).
 - **Formato:** ~70% opción múltiple / ~30% numéricas (tolerancia 5%).
 - **Selección fija:** 22 preguntas (muestreo estratificado cognitivo).
-- **Distribución cognitiva objetivo:** [R] 7-8, [C] 7-8, [A] 5-6, [S] 1-2 (hasta ampliar banco: 0-1 placeholder [S]).
+- **Distribución cognitiva objetivo (tras expansión):** [R] 7-8, [C] 7-8, [A] 5-6, [S] 1-2 (banco total aprox: R 37, C 37, A 23, S 8).
 - **Tiempo:** 50 minutos.
-- **Cobertura temática (20% c/u):** Exploración estructural y calidad, estadística descriptiva, métricas derivadas (goles_por_partido, contribucion_ofensiva), agrupaciones + outliers simples, visualización e interpretación básica.
-- **Segmentación futura:** Añadir Extended (interpretación y decisiones tácticas) sin renumerar Núcleo.
+- **Cobertura temática:** Exploración y calidad, estadística descriptiva, métricas derivadas, agrupaciones + outliers simples, visualización e interpretación básica, escenarios interpretativos.
+- **Segmentación:** Núcleo para evaluaciones formales (≥85% ítems); Extended para refuerzo y profundidad interpretativa gradual.
 - **Control de calidad:** Verificar conteo de etiquetas antes de publicar evaluación.
 
 ### Caso Práctico Colaborativo (15% del curso)
@@ -158,3 +158,9 @@ Este bloque crea las bases prácticas (limpieza ligera, métricas descriptivas e
 ---
 
 *Este bloque consolida la transición de fundamentos Python (Bloque 1) a análisis estructurado de datos, preparando al estudiante para el modelado introductorio del Bloque 3 sin sobrecargar con herramientas avanzadas prematuras.*
+
+---
+
+## Actualizaciones Recientes
+
+2025-08-10: Ampliado banco Canvas de 75 a 105 preguntas (añadidas 30 Extended con 8 ítems [S]; ajuste de distribución cognitiva y documentación asociada).*** End Patch

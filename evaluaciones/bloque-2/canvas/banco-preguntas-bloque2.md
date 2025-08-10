@@ -12,27 +12,28 @@
 
 ## Selección Núcleo (Core) y Plan de Expansión
 
-Actualmente el banco contiene 75 preguntas. Todas forman parte del Núcleo provisional (cobertura mínima). La fase de expansión añadirá 30–45 ítems adicionales (Extended) para llegar a 105–120, incorporando más preguntas de interpretación ([S]) y escenarios.
+El banco contiene 105 preguntas (75 Core + 30 Extended). Las preguntas 1–75 constituyen el Núcleo (cobertura mínima) y las 76–105 conforman la primera expansión Extended con introducción de etiqueta [S] (Socrática/Interpretativa).
 
 ### Núcleo (75 preguntas)
-Preguntas 1–75.
+Preguntas 1–75 (sin cambios).
 
-### Banco Extendido (Pendiente)
-Se agregarán preguntas 76+ manteniendo numeración continua (sin renumerar Núcleo) con foco en:
-- Interpretación de salidas de pandas y visualizaciones
-- Razonamiento sobre calidad de datos
-- Mini escenarios deportivos multi‑métrica
+### Banco Extendido (30 preguntas)
+Preguntas 76–105 (interpretación, refuerzo de recall y escenarios):
+- Interpretación de salidas de pandas y visualizaciones (boxplots, dispersión, conteos)
+- Razonamiento sobre calidad de datos y efecto de outliers
+- Mini escenarios deportivos multi‑métrica y relevancia práctica de diferencias pequeñas
 
 ### Uso Sugerido
 - Evaluaciones formales: muestrear mayormente Núcleo (≥85%).
 - Práctica/Refuerzo: incorporar gradualmente Extended al publicarse.
 
-### Distribución Cognitiva Actual (aprox)
-- [R] Recuerdo: ~18
-- [C] Concepto: ~36
-- [A] Aplicación (incluye Numéricas): ~21
+### Distribución Cognitiva (aprox tras expansión)
+- [R] Recuerdo: 37
+- [C] Concepto: 37
+- [A] Aplicación (incluye Numéricas): 23
+- [S] Socrática/Interpretativa: 8
 
-Meta tras expansión: equilibrar hacia 35–40% [R], 35–40% [C], 20–25% [A] y 5–10% [S].
+La expansión elevó [R] (déficit previo) e introdujo [S] dentro del rango objetivo (≈7.6%). Ajustes futuros menores podrán refinar equilibrio.
 
 ---
 
@@ -574,14 +575,15 @@ D) Solo números sin contexto
 ## Instrucciones Técnicas para Canvas
 
 ### Configuración de Preguntas:
-- **Opción múltiple**: Preguntas 1-75 (excepto numéricas)
+- **Opción múltiple**: Preguntas 1-105 (excepto numéricas)
 - **Respuesta numérica**: Preguntas marcadas como (Numérica)
-- **Selección aleatoria**: 20-25 preguntas por examen
+- **Selección aleatoria**: 20-25 preguntas por examen (evaluación formal: 22 fijas estratificadas)
 - **Categorías para balance**:
-  - Exploración básica (25%): Preguntas 1-20
-  - Tipos de datos (25%): Preguntas 21-40
-  - Visualización (25%): Preguntas 41-55
-  - Análisis avanzado (25%): Preguntas 56-75
+  - Exploración básica (25%): 1-20
+  - Tipos de datos (25%): 21-40
+  - Visualización (20%): 41-55
+  - Análisis avanzado (15%): 56-75
+  - Interpretación / Escenarios (15% uso gradual): 76-105
 
 ### Ponderación Sugerida:
 - Cada pregunta: 4-5 puntos
@@ -589,9 +591,226 @@ D) Solo números sin contexto
 - Tiempo: 45-60 minutos
 - Intentos permitidos: 1
 - Mostrar respuestas correctas: Después del cierre
+- Recomendación: ≥85% de ítems de Núcleo en evaluaciones formales; Extended para refuerzo interpretativo.
 
 ### Enfoque Pedagógico:
 - Énfasis en aplicación práctica en contexto deportivo
 - Combinación de conceptos técnicos con interpretación
-- Preguntas que evalúan tanto conocimiento como comprensión
+- Preguntas que evalúan conocimiento, comprensión, aplicación y juicio interpretativo
 - Integración de herramientas (pandas, seaborn, matplotlib)
+
+---
+
+## BANCO EXTENDIDO (Preguntas 76–105)
+
+### Interpretación, Escenarios y Refuerzo de Fundamentos
+
+**76. [R]** ¿Qué función de pandas muestra estadísticas básicas (media, std, min, max) de columnas numéricas?
+A) `df.stats()`
+B) `df.describe()`
+C) `df.profile()`
+D) `df.summary()`
+**Respuesta: B**
+
+**77. [R]** ¿Qué método cuenta frecuencias de valores en una serie (por ejemplo, posiciones de jugadores)?
+A) `serie.count_values()`
+B) `serie.value_counts()`
+C) `serie.values_count()`
+D) `serie.counts()`
+**Respuesta: B**
+
+**78. [R]** ¿Qué instrucción convierte una columna `edad` a entero?
+A) `df['edad'] = df['edad'].astype(int)`
+B) `df['edad'] = int(df['edad'])`
+C) `df.astype('edad', int)`
+D) `df.to_int('edad')`
+**Respuesta: A**
+
+**79. [R]** ¿Qué función genera un boxplot sencillo con seaborn para la columna `goles`?
+A) `sns.lineplot(data=df, x='goles')`
+B) `sns.boxplot(data=df, y='goles')`
+C) `sns.scatterplot(data=df, y='goles')`
+D) `sns.histplot(data=df, y='goles')`
+**Respuesta: B**
+
+**80. [R]** ¿Qué devuelve `df.shape`?
+A) Número de columnas solamente
+B) Una tupla (filas, columnas)
+C) Solo número de filas
+D) El tamaño en bytes
+**Respuesta: B**
+
+**81. [R]** ¿Qué hace `df.isna().sum()`?
+A) Elimina valores faltantes
+B) Cuenta valores faltantes por columna
+C) Reemplaza valores faltantes con cero
+D) Ignora valores faltantes
+**Respuesta: B**
+
+**82. [R]** ¿Qué método ordena un DataFrame por la columna `goles` descendente?
+A) `df.order('goles')`
+B) `df.sort_values('goles', ascending=False)`
+C) `df.sort('goles', desc=True)`
+D) `df.order_values('goles', reverse=True)`
+**Respuesta: B**
+
+**83. [R]** ¿Qué instrucción muestra las primeras 3 filas?
+A) `df.head(3)`
+B) `df.top(3)`
+C) `df.first(3)`
+D) `df.head3()`
+**Respuesta: A**
+
+**84. [R]** ¿Qué función restablece el índice tras un groupby?
+A) `df.flatten_index()`
+B) `df.reset_index()`
+C) `df.new_index()`
+D) `df.index_reset()`
+**Respuesta: B**
+
+**85. [R]** ¿Cuál es la regla simple usada en el curso para marcar un outlier alto?
+A) media + 2*desviación estándar
+B) mediana + 3
+C) máximo + 1
+D) media - 2*desviación estándar
+**Respuesta: A**
+
+**86. [R]** ¿Qué librería usamos para fijar un tema visual uniforme?
+A) `matplotlib`
+B) `pandas`
+C) `seaborn`
+D) `numpy`
+**Respuesta: C**
+
+**87. [R]** ¿Cuál es el rango realista típico de goles por partido en datos simulados básicos del curso?
+A) 0-10
+B) 0-7
+C) 0-4
+D) 0-1
+**Respuesta: C**
+
+**88. [R]** ¿Qué etiqueta describe mejor una variable como `posicion` (Portero, Defensa, Delantero)?
+A) Numérica continua
+B) Categórica
+C) Binaria
+D) Temporal
+**Respuesta: B**
+
+**89. [R]** ¿Qué diferencia principal hay entre `mean` y `median`? 
+A) Son siempre iguales
+B) La media se afecta más por valores extremos
+C) La mediana se afecta más por outliers
+D) Ninguna, son idénticas siempre
+**Respuesta: B**
+
+**90. [R]** ¿Qué función aplica un cálculo por grupos (ej. promedio de goles por posición)?
+A) `df.groupby('posicion').mean()`
+B) `df.group('posicion').avg()`
+C) `df.by('posicion').mean()`
+D) `df.split('posicion').mean()`
+**Respuesta: A**
+
+**91. [R]** ¿Cuál es la convención de nombres de variables adoptada en el curso?
+A) camelCase en todo
+B) snake_case descriptivo
+C) PascalCase para variables
+D) Nombres de una letra siempre
+**Respuesta: B**
+
+**92. [R]** ¿Qué instrucción rota etiquetas del eje x 45 grados (matplotlib)?
+A) `plt.rotate(45)`
+B) `plt.xticks(rotation=45)`
+C) `plt.xlabel(rotate=45)`
+D) `plt.xlabels(45)`
+**Respuesta: B**
+
+**93. [R]** ¿Cuál es la diferencia básica entre `countplot` y `barplot` en seaborn (uso típico en este curso)?
+A) `countplot` cuenta ocurrencias categóricas automáticamente
+B) `barplot` siempre apila barras
+C) `countplot` requiere datos agregados previos
+D) No hay diferencia funcional
+**Respuesta: A**
+
+**94. [C]** ¿Por qué puede ser preferible la mediana a la media al comparar goles por partido en presencia de un jugador extremadamente prolífico?
+A) Porque es más rápida de calcular
+B) Porque ignora valores faltantes automáticamente
+C) Porque reduce la influencia de un valor extremo y representa mejor el grupo
+D) Porque siempre da un número mayor
+**Respuesta: C**
+
+**95. [A] (Numérica)** Si un jugador tiene 12 goles y 6 asistencias en 18 partidos, ¿cuál es su `contribucion_ofensiva` (goles + asistencias por partido)?
+**Respuesta: 1.0**
+
+**96. [A]** Un equipo tiene promedio de 1.8 goles, pero al remover un outlier (partido de 7 goles) baja a 1.6. ¿Qué conclusión es más adecuada?
+A) El outlier inflaba la media, la producción típica es menor
+B) El equipo dejó de ser bueno
+C) No cambia nada interpretativamente
+D) La mediana se vuelve un outlier
+**Respuesta: A**
+
+**97. [S]** Observas un boxplot de goles por delantero con un bigote superior muy largo. ¿Qué pregunta crítica debes plantearte antes de concluir que los delanteros son volátiles?
+A) ¿Cuántos defensas hay?
+B) ¿Cuántos puntos extremos reales hay y cuántas observaciones totales?
+C) ¿Qué color tiene el gráfico?
+D) ¿Cuál es el nombre del archivo?
+**Respuesta: B**
+
+**98. [S]** Falta la edad de 5 porteros (NA) en un dataset pequeño. ¿Qué acción es más razonable y por qué?
+A) Eliminar toda la columna edad
+B) Rellenar con la media general para no perder comparabilidad básica
+C) Reemplazar con 0
+D) Ignorar porque no afecta nada
+**Respuesta: B**
+
+**99. [S]** Dos posiciones tienen mismo promedio de goles pero una muestra mayor desviación estándar. ¿Qué interpretación es correcta?
+A) La posición con mayor dispersión es menos consistente
+B) Ambas son igualmente consistentes
+C) La mayor dispersión significa mejores jugadores siempre
+D) No se puede interpretar nada
+**Respuesta: A**
+
+**100. [S]** En un gráfico, un delantero con 15 goles sobre 10 partidos y los demás entre 0-5. ¿Qué deberías comunicar al entrenador?
+A) Que todos son igual de efectivos
+B) Que la media está sesgada por un jugador excepcional
+C) Que la mediana también es muy alta
+D) Que no se pueden usar métricas
+**Respuesta: B**
+
+**101. [S]** Observas que la media de goles por partido sube de 1.6 a 1.7 tras limpiar NA (remover filas vacías). ¿Qué interpretación es más prudente?
+A) El equipo mejoró realmente
+B) El cambio puede ser efecto de eliminar filas con menos goles
+C) No tiene explicación
+D) Significa que hubo manipulación
+**Respuesta: B**
+
+**102. [S]** Diferencia de eficiencia: 0.05 goles/partido entre dos delanteros (1.10 vs 1.05). ¿Cómo comunicarlo?
+A) Como una diferencia enorme definitiva
+B) Como una diferencia pequeña que puede no ser decisiva sin más contexto
+C) Como que el segundo es inservible
+D) Como que ambos son outliers
+**Respuesta: B**
+
+**103. [S]** Un scatter muestra relación ligera entre edad y asistencias (nube dispersa sin clara pendiente). ¿Qué dices?
+A) Hay correlación fuerte
+B) No se observa relación clara; otras variables podrían explicar asistencias
+C) La edad causa asistencias directamente
+D) Debemos usar modelos avanzados inmediatamente
+**Respuesta: B**
+
+**104. [S]** Tras agrupar por posición, ves que delanteros tienen media alta y mediana similar, mientras mediocampistas tienen media > mediana. ¿Qué implica para mediocampistas?
+A) Distribución posiblemente sesgada por algunos valores altos
+B) Total homogeneidad
+C) No hay outliers
+D) La mediana es inválida
+**Respuesta: A**
+
+**105. [S]** Si al añadir una métrica derivada (`contribucion_ofensiva`) las conclusiones sobre top 3 jugadores cambian respecto a sólo goles, ¿qué recomendación haces?
+A) Ignorar la métrica nueva
+B) Incorporar la métrica derivada porque ofrece visión más completa
+C) Eliminar jugadores nuevos
+D) Volver a datos en bruto únicamente
+**Respuesta: B**
+
+---
+
+Fin de preguntas Extended.

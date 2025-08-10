@@ -2,6 +2,7 @@
 
 ## Información del Curso
 
+**Versión:** 4.0.1  
 **Nivel:** Preparatoria/Bachillerato (15-18 años)  
 **Duración:** 15 semanas (3 bloques de 5 semanas cada uno)  
 **Modalidad:** 3 sesiones de 50 minutos por semana  

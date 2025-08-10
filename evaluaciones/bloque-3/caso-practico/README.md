@@ -17,6 +17,38 @@ Notebook único: `caso_bloque3.ipynb` con las secciones:
 4. Visualizaciones de apoyo (3-5 gráficas)
 5. Conclusiones y reflexiones (incluye: limitaciones y próximos pasos)
 
+### Estructura Recomendada (Plantilla)
+```
+# Caso Práctico Bloque 3: Análisis Predictivo Básico
+
+## 1. Exploración de Datos (40%)
+### 1.1 Carga de Datos
+### 1.2 Análisis Básico
+### 1.3 Limpieza Simple
+
+## 2. Visualización y Análisis (35%)
+### 2.1 Gráficos Descriptivos
+### 2.2 Análisis de Patrones
+### 2.3 Estadísticas Básicas
+
+## 3. Predicción Simple (25%)
+### 3.1 Preparar Datos
+### 3.2 Modelo
+### 3.3 Interpretación
+
+## 4. Conclusiones Finales
+```
+
+### Ejemplo de Código Inicial
+```python
+import pandas as pd, matplotlib.pyplot as plt, seaborn as sns
+sns.set_theme(style="whitegrid", palette="viridis")
+datos = pd.read_csv('champions_league_matches.csv')
+print(datos.head())
+print(datos.info())
+datos['total_goles'] = datos['goles_local'] + datos['goles_visitante']
+```
+
 ## Rúbrica (Resumen)
 Ver rúbrica integrada completa en `evaluaciones/bloque-3/README.md`.
 - Notebook (20% del curso total) subdividido en:
@@ -39,6 +71,10 @@ Ver rúbrica integrada completa en `evaluaciones/bloque-3/README.md`.
 - Evitar hiperparametrización avanzada
 - Variables creadas deben ser explicables en < 2 oraciones
 - Código en español, sin emojis, preguntas socráticas donde aporte reflexión
+
+## Dataset Proporcionado
+Archivo: `champions_league_matches.csv` (colocar en la misma carpeta del notebook).  
+Incluir breve inspección: número de filas/columnas, variables clave, rango temporal.
 
 ## Integridad Académica
 - Código debe ser entendible por el autor

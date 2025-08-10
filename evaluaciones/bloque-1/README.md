@@ -11,30 +11,31 @@
 
 ### Examen Canvas (20% del curso)
 **Ubicación:** [canvas/banco-preguntas-bloque1.md](canvas/banco-preguntas-bloque1.md)
-- **Banco:** 120 preguntas totales (75 Núcleo + 45 Extendido) etiquetadas [R] Recuerdo, [C] Concepto, [A] Aplicación (reservado [S] Socrática futuro).
-- **Formato:** ~70% opción múltiple y ~30% numéricas (tolerancia 5%).
-- **Selección:** 20-25 preguntas aleatorias (recomendado ≥80% tomadas del Núcleo, ≤20% del Extendido).
-- **Tiempo:** 45-60 minutos.
-- **Cobertura:** Variables, estructuras de control, funciones, listas/diccionarios, pandas básico (lectura, filtrado, groupby simple), numpy inicial, visualización básica y aplicación en fútbol.
-- **Segmentación:** Núcleo asegura cobertura mínima estable; Extendido ofrece variabilidad y refuerzo sin renumeraciones.
-- **Implementación LMS sugerida:** Categorías separadas "Bloque1 Núcleo" y "Bloque1 Extendido" para control de muestreo.
+- **Banco:** 120 preguntas (Core 1–75 + Extended 76–120) etiquetadas [R] Recuerdo, [C] Concepto, [A] Aplicación, [S] Socrática (activas principalmente en Extended).
+- **Formato:** ~70% opción múltiple / ~30% numéricas (tolerancia 5%).
+- **Selección fija:** 22 preguntas por intento con muestreo estratificado: [R] 7-8, [C] 7-8, [A] 5-6, [S] 1-2 (si banco Extended habilitado; de lo contrario 1 opcional convertida a [C]).
+- **Tiempo:** 50 minutos (alineado con carga cognitiva y número de ítems).
+- **Cobertura temática (20% c/u):** Variables y tipos, estructuras de control, funciones y modularidad simple, introducción a pandas, visualización básica.
+- **Segmentación:** Core = estabilidad y cobertura mínima; Extended = variabilidad, refuerzo interpretativo y primeras [S].
+- **Implementación LMS sugerida:** Categorías separadas "Bloque1 Core" y "Bloque1 Extended" + regla de extracción (≥80% Core, ≤20% Extended) hasta que se active plenamente la capa [S].
+- **Control de calidad:** Revisar distribución cognitiva post-publicación (exportar intento y verificar conteo de etiquetas).
 
 ### Caso Práctico Colaborativo (15% del curso)
 **Ubicación:** [caso-practico/caso-bloque1.md](caso-practico/caso-bloque1.md)
-- **Proyecto:** "Análisis de Rendimiento de un Club de Fútbol" (fundamentos integrados).
-- **Equipos:** 2-3 estudiantes (participación activa garantizada).
-- **Duración:** 1 semana efectiva (compactado respecto a diseño previo de 2 semanas).
+- **Proyecto:** "Análisis de Rendimiento de un Club de Fútbol".
+- **Equipos:** 2-3 estudiantes.
+- **Duración:** 1 semana efectiva.
 - **Entregables:** Notebook + Presentación breve + Reflexión final (3 preguntas socráticas).
-- **Enfoque:** Fundamentos Python + mini introducción a pandas (DataFrame simple) + visualización comparativa (barras) + razonamiento.
-- **Rúbrica interna:** 40 (Fundamentos y funciones) / 30 (Análisis y visualización) / 30 (Comunicación y razonamiento).
-- **Elementos clave añadidos:** Pruebas mínimas de funciones (`assert`), preguntas de reflexión por subtarea, sección de reflexión final estructurada.
+- **Enfoque:** Fundamentos Python, mini pandas inicial, visualización básica y justificación de decisiones.
+- **Rúbrica actualizada (40/30/30):** 40 Fundamentos de Código (variables, bucles, condicionales, funciones) / 30 Análisis Básico (cálculos, jugadores, primera visualización) / 30 Comunicación y Colaboración (claridad, reflexión, roles, presentación).
+- **Elementos clave:** Pruebas mínimas (`assert`), comentarios intencionales (no redundantes), respuestas a preguntas socráticas en cada sección.
 
 ### Sistema de Evaluación
 **Ubicación:** [rubricas/README.md](rubricas/README.md)
-- **Criterios específicos** por componente
-- **Escalas detalladas** de evaluación
-- **Competencias transversales** (colaboración, comunicación)
-- **Alineación institucional** con estándares Tec
+- **Criterios específicos** por componente (examen y caso) bajo formato 40/30/30.
+- **Distribución cognitiva** documentada ([R][C][A][S]) y pautas de muestreo.
+- **Competencias transversales** (colaboración, comunicación) operacionalizadas en niveles de desempeño.
+- **Alineación institucional** consistente con Bloques 2 y 3.
 
 ---
 
@@ -64,20 +65,20 @@
 ## Cronograma de Evaluación (Ajustado)
 
 ### Semana 5: Preparación
-- **Canvas disponible:** Publicar inicialmente solo Núcleo para práctica dirigida.
+- **Canvas disponible:** Publicar solo Core para práctica dirigida; ocultar Extended hasta cierre de dudas fundamentales.
 - **Formación de equipos:** Asignación para caso práctico.
 - **Recursos de apoyo:** Tutoriales y ejemplos adicionales.
 
 ### Semana 6: Evaluaciones
-- **Examen Canvas:** Ventana recomendada Lunes-Miércoles.
-- **Inicio caso práctico:** Jueves (explicación + conformación final de roles) y avance inicial.
-- **Checkpoint:** Viernes (funciones implementadas y conteos básicos listos).
+- **Examen Canvas:** Ventana Lunes-Miércoles (verificar distribución cognitiva antes de apertura).
+- **Inicio caso práctico:** Jueves (explicación + roles) y avance inicial.
+- **Checkpoint:** Viernes (funciones + cálculos básicos verificados con asserts).
 
 ### Semana 7: Finalización
-- **Lunes:** Integración pandas + visualización.
-- **Martes:** Redacción reflexión final y pulido del notebook.
+- **Lunes:** Integración pandas + visualización básica.
+- **Martes:** Reflexión final y pulido del notebook.
 - **Miércoles:** Entrega final.
-- **Jueves-Viernes:** Presentaciones (5 min por equipo + preguntas). (Si el calendario obliga compactar, reubicar dentro de Semana 6 manteniendo checkpoint intermedio.)
+- **Jueves-Viernes:** Presentaciones (5 min por equipo + preguntas). (Si se compacta, preservar checkpoint y reflexión.)
 
 ---
 
@@ -150,9 +151,10 @@
 
 ## Actualizaciones Recientes
 
-- Banco Canvas ampliado 70 → 120 preguntas con segmentación Núcleo/Extensión y etiquetado cognitivo.
-- Caso práctico reformulado: integración mínima de pandas y visualización, duración reducida a 1 semana efectiva.
-- Rúbrica caso ajustada a 40/30/30 equilibrando técnica, análisis y comunicación.
-- Inclusión sistemática de preguntas socráticas en subtareas y reflexión final.
+- Banco Canvas ampliado 70 → 120 (Core/Extended) con distribución cognitiva objetivo por intento (7-8 [R], 7-8 [C], 5-6 [A], 1-2 [S]).
+- Examen ahora fija 22 preguntas en 50 minutos para consistencia y control de dificultad.
+- Rúbrica del caso actualizada al modelo estándar 40/30/30 (alineada con Bloques 2 y 3).
+- Caso práctico reforzado con asserts y reflexión socrática integrada.
+- Documentación de sistema de muestreo estratificado y activación progresiva de [S].
 
-*Este bloque establece las bases sólidas de programación necesarias para el análisis de datos deportivos profesional. El enfoque colaborativo, aplicado y socrático prepara a los estudiantes para desafíos más complejos en bloques posteriores.*
+*Este bloque establece bases sólidas de programación y pensamiento analítico para progresar a manipulación de datos (Bloque 2) y modelado introductorio (Bloque 3), manteniendo coherencia cognitiva y socrática.*

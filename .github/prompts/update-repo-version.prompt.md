@@ -21,8 +21,13 @@ Tu tarea es actualizar la versión del repositorio siguiendo las mejores prácti
     - Lista breve y clara de cambios realizados
 5. **Realiza un commit** con un mensaje descriptivo en español, por ejemplo:  
     `Actualizar versión a 1.3.0: mejoras en visualización de datos`
-6. **Verifica que la documentación y los archivos de configuración** reflejen la nueva versión.
-7. **No incluyas emojis** en ningún mensaje, archivo o comentario.
+6. **Crea una etiqueta (tag) en el repositorio** con el número de versión actualizado y una descripción breve de los cambios realizados.
+7. **Verifica que la documentación y los archivos de configuración** reflejen la nueva versión.
+8. **No incluyas emojis** en ningún mensaje, archivo o comentario.
 
 ## Ejemplo de commit
 Actualizar versión a 2.0.0: incorporación de análisis de predicción de goles y mejoras en la estructura de datos
+
+## Ejemplo de etiqueta (tag)
+Nombre de la etiqueta: v2.0.0  
+Descripción: Incorporación de análisis de predicción de goles y mejoras en la estructura de datos

@@ -1,162 +1,208 @@
-# Ciencia de Datos Aplicada al Análisis de Resultados en Fútbol
+# Ciencia de Datos Aplicada al Fútbol - Curso de Preparatoria
 
 ## Información del Curso
 
-**Duración:** 14 semanas  
-**Modalidad:** 3 horas semanales  
-**Lenguaje:** Python  
+**Nivel:** Preparatoria/Bachillerato (15-18 años)  
+**Duración:** 15 semanas (3 bloques de 5 semanas cada uno)  
+**Modalidad:** 3 sesiones de 50 minutos por semana  
+**Lenguaje:** Python (variables y comentarios en español)  
+**Metodología:** Socrática con analogías deportivas  
+**Enfoque:** Sin emojis, profesional pero accesible  
 **Dataset principal:** [Champs - Kaggle](https://www.kaggle.com/datasets/julihocc/champs)  
 **Notebook de referencia:** [La Remontada](https://www.kaggle.com/code/julihocc/la-remontada)
 
-## Objetivos del Curso
+## ¿De qué se trata este curso?
 
-Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de datos aplicada al fútbol, proporcionando las herramientas necesarias para analizar, interpretar y predecir resultados deportivos utilizando Python y técnicas modernas de análisis de datos.
+**Pregunta central**: ¿Alguna vez te has preguntado cómo los equipos como Manchester City y Barcelona usan datos para tomar decisiones que valen millones de euros?
 
-## Estructura del Curso
+Este curso te introduce al fascinante mundo de la ciencia de datos aplicada al fútbol, usando Python y metodología socrática. Aprenderás a pensar como un analista deportivo profesional, desde programación básica hasta crear tus primeras predicciones.
 
-### Bloque 1: Prerrequisitos de Programación con Python
+## Tu jornada de aprendizaje (15 semanas)
 
-**Semanas 1-5**
+### Bloque 1: Fundamentos de Programación con Python (Semanas 1-5)
 
-#### Semana 1: Configuración del Entorno y Fundamentos
+**Pregunta del bloque:** ¿Cómo hablan las computadoras el idioma de los números?
 
-- **Teoría:** Introducción a Python y su ecosistema para ciencia de datos
-- **Práctica:** Instalación de Python, pip, y Jupyter Notebook
-- **Laboratorio:** Variables, tipos de datos, operadores y estructuras básicas
-- **Archivo:** `bloque-1/semana-1/configuracion-fundamentos.ipynb`
+#### Semana 1: ¿Cómo hablan las computadoras el idioma de los números?
 
-#### Semana 2: Estructuras de Datos y Control de Flujo
+- **Notebook:** `configuracion-fundamentos.ipynb`
+- **Pregunta motivadora:** ¿Cómo le enseñarías a una computadora a calcular el promedio de goles de Cristiano Ronaldo?
+- **Sesión 1 (50 min):** ¿Qué es realmente programar? - Analogías entre recetas de cocina y programación
+- **Sesión 2 (50 min):** ¿Cómo calculamos como lo haría un entrenador? - Operaciones matemáticas en contexto deportivo
+- **Sesión 3 (50 min):** ¿Cómo organizamos datos como un club profesional? - Estructuras de datos básicas
+- **Aplicación:** Comprensión de cómo Python es usado en clubes como FC Barcelona y Liverpool
 
-- **Teoría:** Listas, diccionarios, tuplas y conjuntos aplicados al deporte
-- **Práctica:** Bucles (for, while) y condicionales (if, elif, else)
-- **Laboratorio:** Manipulación de datos deportivos con estructuras nativas de Python
-- **Archivo:** `bloque-1/semana-2/estructuras-control.ipynb`
+#### Semana 2: ¿Cómo automatizamos decisiones repetitivas como un entrenador profesional?
 
-#### Semana 3: Funciones y Módulos
+- **Notebook:** `estructuras-control.ipynb`
+- **Pregunta motivadora:** Si programaras un asistente técnico para tomar decisiones automáticas durante 90 minutos, ¿qué instrucciones le darías?
+- **Sesión 1 (50 min):** ¿Cómo repetimos tareas como un entrenamiento sistemático? - Bucles y repetición controlada
+- **Sesión 2 (50 min):** ¿Cómo tomamos decisiones complejas bajo presión? - Condicionales y lógica múltiple
+- **Sesión 3 (50 min):** ¿Cómo organizamos estrategias complejas de manera elegante? - Estructuras de control avanzadas
+- **Aplicación:** Procesamiento automático de listas de jugadores y plantillas de equipos
 
-- **Teoría:** Definición de funciones, parámetros, valores de retorno
-- **Práctica:** Importación y uso de módulos especializados
-- **Laboratorio:** Creación de funciones reutilizables para análisis deportivo
-- **Archivo:** `bloque-1/semana-3/funciones-modulos.ipynb`
+#### Semana 3: ¿Cómo creamos herramientas reutilizables como un cuerpo técnico exitoso?
 
-#### Semana 4: Introducción a Pandas y NumPy
+- **Notebook:** `funciones-modulos.ipynb`
+- **Pregunta motivadora:** ¿Qué tienen en común las jugadas ensayadas del Real Madrid y las funciones en Python?
+- **Sesión 1 (50 min):** ¿Por qué los equipos exitosos sistematizan sus estrategias? - Definición y uso de funciones
+- **Sesión 2 (50 min):** ¿Cómo optimizan los entrenadores la comunicación de instrucciones? - Parámetros y return
+- **Sesión 3 (50 min):** ¿Cómo comparten conocimiento los mejores cuerpos técnicos? - Módulos e importación
+- **Aplicación:** Desarrollo de calculadora de métricas de rendimiento deportivo
 
-- **Teoría:** Conceptos fundamentales de NumPy (arrays) y Pandas (Series, DataFrames)
-- **Práctica:** Operaciones básicas con arrays y lectura de archivos CSV
-- **Laboratorio:** Análisis básico de datos deportivos con pandas y numpy
-- **Archivo:** `bloque-1/semana-4/pandas-numpy-introduccion.ipynb`
+#### Semana 4: ¿Cómo manejan datos masivos los clubes de fútbol profesional?
 
-#### Semana 5: Visualización Básica
+- **Notebook:** `pandas-numpy-introduccion.ipynb`
+- **Pregunta motivadora:** ¿Cómo gestiona Manchester City información de 25 jugadores en 38 partidos de liga?
+- **Sesión 1 (50 min):** ¿Qué son las hojas de cálculo inteligentes? - Introducción a pandas y DataFrames
+- **Sesión 2 (50 min):** ¿Cómo calculamos estadísticas como los profesionales? - Operaciones básicas con datos
+- **Sesión 3 (50 min):** ¿Cómo filtramos información relevante eficientemente? - Consultas y selecciones de datos
+- **Aplicación:** Análisis de plantilla completa usando herramientas profesionales
 
-- **Teoría:** Matplotlib básico para gráficos deportivos
-- **Práctica:** Creación de gráficos de barras, líneas y dispersión
-- **Laboratorio:** Primeros gráficos con datos de fútbol
-- **Archivo:** `bloque-1/semana-5/visualizacion-basica.ipynb`
+#### Semana 5: ¿Cómo comunicamos insights con el poder de la visualización?
 
----
-
-### Bloque 2: Fundamentos de Ciencia de Datos y Fútbol con Python
-
-**Semanas 6-10**
-
-#### Semana 6: Introducción y Exploración de Datos Deportivos
-
-- **Teoría:** Presentación del curso y ciencia de datos en el deporte
-- **Práctica:** Exploración básica de datos de fútbol con seaborn
-- **Laboratorio:** Primeros gráficos y análisis con datos reales
-- **Archivo:** `bloque-2/semana-6/introduccion-exploracion.ipynb`
-
-#### Semana 7: Tipos de Datos en Fútbol
-
-- **Teoría:** Tipos de datos: resultados, eventos, posiciones y jugadores
-- **Práctica:** Lectura de archivos CSV y consultas básicas con pandas
-- **Laboratorio:** Ejercicios de conteo y filtrado por liga/temporada
-- **Archivo:** `bloque-2/semana-7/tipos-datos-futbol.ipynb`
-
-#### Semana 8: Estadística Descriptiva Básica
-
-- **Teoría:** Estadística descriptiva (media, máximo, mínimo) aplicada al fútbol
-- **Práctica:** Cálculo de estadísticas básicas de goles usando seaborn
-- **Laboratorio:** Visualización con histogramas y boxplots
-- **Archivo:** `bloque-2/semana-8/estadistica-descriptiva.ipynb`
-
-#### Semana 9: Visualización de Datos Deportivos
-
-- **Teoría:** Principios de visualización efectiva para datos deportivos
-- **Práctica:** Gráficas comparativas: equipos locales vs. visitantes
-- **Laboratorio:** Creación de gráficos informativos con seaborn
-- **Archivo:** `bloque-2/semana-9/visualizacion-datos.ipynb`
-
-#### Semana 10: Análisis e Interpretación de Resultados
-
-- **Teoría:** Interpretación de resultados descriptivos y patrones básicos
-- **Práctica:** Análisis descriptivo de temporadas específicas
-- **Laboratorio:** Síntesis de hallazgos y comunicación de resultados
-- **Archivo:** `bloque-2/semana-10/analisis-interpretacion.ipynb`
+- **Notebook:** `visualizacion-basica.ipynb`
+- **Pregunta motivadora:** ¿Cómo convencerías a un entrenador escéptico usando solo gráficos?
+- **Sesión 1 (50 min):** ¿Por qué una imagen vale más que mil estadísticas? - Principios de visualización efectiva
+- **Sesión 2 (50 min):** ¿Cómo crear gráficos que comuniquen insights claros? - Matplotlib para análisis deportivo
+- **Sesión 3 (50 min):** ¿Cómo integrar código y visualización profesionalmente? - Proyecto integrador de fundamentos
+- **Aplicación:** Dashboard básico de rendimiento deportivo
 
 ---
 
-### Bloque 3: Mi Primera Predicción con Datos de Fútbol
+### Bloque 2: Explorando Datos Deportivos con Python (Semanas 6-10)
 
-**Semanas 11-15**
+**Pregunta del bloque:** ¿Qué secretos esconden los datos del fútbol?
 
-#### Semana 11: Mi Primera Predicción
+#### Semana 6: ¿Qué secretos esconden los datos del fútbol?
 
-- **Teoría:** ¿Qué es predecir con datos? Conceptos básicos de machine learning
-- **Práctica:** Primera predicción simple usando scikit-learn
-- **Laboratorio:** Predecir resultados de partidos con datos históricos
-- **Archivo:** `bloque-3/semana-11/modelado-predictivo-introduccion.ipynb`
+- **Notebook:** `introduccion-exploracion.ipynb`
+- **Pregunta motivadora:** Si fueras analista del FC Barcelona, ¿qué le preguntarías a los datos de los últimos 200 partidos para descubrir patrones ocultos?
+- **Sesión 1 (50 min):** ¿Cómo interrogamos a los datos? - Preparación del laboratorio de análisis y primeras exploraciones
+- **Sesión 2 (50 min):** ¿Qué patrones emergen visualmente? - Visualización de distribuciones y correlaciones
+- **Sesión 3 (50 min):** ¿Cómo validamos nuestros descubrimientos? - Verificación de la ventaja de casa y detección de sesgos
+- **Aplicación:** Análisis inicial de datos futbolísticos reales con herramientas profesionales
 
-#### Semana 12: Modelos Más Inteligentes
+#### Semana 7: ¿Todos los datos del fútbol hablan el mismo idioma?
 
-- **Teoría:** Diferentes tipos de "cerebros" para predecir (algoritmos)
-- **Práctica:** Comparar múltiples modelos de predicción
-- **Laboratorio:** Usar Random Forest y otros algoritmos básicos
-- **Archivo:** `bloque-3/semana-12/modelos-avanzados-clasificacion.ipynb`
+- **Notebook:** `tipos-datos-futbol.ipynb`
+- **Pregunta motivadora:** Si fueras analista del Real Madrid, ¿tratarías igual la información "Manchester City anotó 3 goles" que "el partido fue en enero"?
+- **Sesión 1 (50 min):** ¿Por qué importan los tipos de datos? - Distinción entre diferentes "idiomas" de información deportiva
+- **Sesión 2 (50 min):** ¿Qué revela cada tipo de dato? - Patrones específicos de datos numéricos, categóricos y temporales
+- **Sesión 3 (50 min):** ¿Cómo combinar diferentes tipos sabiamente? - Integración inteligente de múltiples fuentes de información
+- **Aplicación:** Manejo experto de datasets complejos con múltiples tipos de variables
 
-#### Semana 13: ¿Qué Tan Buena es Mi Predicción?
+#### Semana 8: ¿Cómo descubren los entrenadores elite las tendencias invisibles?
 
-- **Teoría:** Cómo medir si mis predicciones son correctas
-- **Práctica:** Calcular porcentajes de aciertos y errores
-- **Laboratorio:** Interpretar matrices de confusión simples
-- **Archivo:** `bloque-3/semana-13/metricas-avanzadas-evaluacion.ipynb`
+- **Notebook:** `estadistica-descriptiva.ipynb`
+- **Pregunta motivadora:** ¿Qué herramientas estadísticas usa Pep Guardiola para tomar decisiones que parecen "mágicas"?
+- **Sesión 1 (50 min):** ¿Qué revelan los promedios en el fútbol profesional? - Medidas de tendencia central en contexto deportivo
+- **Sesión 2 (50 min):** ¿Cómo medir la consistencia vs la impredecibilidad? - Medidas de dispersión y variabilidad
+- **Sesión 3 (50 min):** ¿Qué comparaciones son realmente válidas? - Análisis comparativo entre equipos, posiciones y temporadas
+- **Aplicación:** Evaluación estadística comprehensiva del rendimiento deportivo
 
-#### Semana 14: Mejorando Mis Predicciones
+#### Semana 9: ¿Cómo hacer que los números cuenten historias convincentes?
 
-- **Teoría:** ¿Qué datos son más importantes? Feature engineering básico
-- **Práctica:** Crear nuevas variables útiles para predecir
-- **Laboratorio:** Optimizar modelos para mejores resultados
-- **Archivo:** `bloque-3/semana-14/feature-engineering-optimizacion.ipynb`
+- **Notebook:** `visualizacion-datos.ipynb`
+- **Pregunta motivadora:** ¿Cómo crear visualizaciones que convenzan a Florentino Pérez de invertir 100 millones en un fichaje?
+- **Sesión 1 (50 min):** ¿Cuál es la gramática visual del análisis deportivo? - Principios de diseño para comunicación técnica
+- **Sesión 2 (50 min):** ¿Cómo dominar seaborn para análisis profesional? - Visualización avanzada de datos deportivos
+- **Sesión 3 (50 min):** ¿Cómo crear dashboards que impacten decisiones? - Integración de múltiples visualizaciones
+- **Aplicación:** Dashboard profesional de análisis comparativo
 
-#### Semana 15: Cierre del Curso
+#### Semana 10: ¿Cómo transformamos datos en recomendaciones que cambien estrategias?
 
-- **Teoría:** Repaso de todo lo aprendido en el curso
-- **Práctica:** Proyecto final integrador con análisis completo
-- **Laboratorio:** Consolidación de habilidades adquiridas
-- **Archivo:** `bloque-3/semana-15/proyecto-final-integrador.ipynb`
+- **Notebook:** `analisis-interpretacion.ipynb`
+- **Pregunta motivadora:** ¿Cómo presentarías un análisis a Xavi que lo convenza de cambiar su táctica habitual?
+- **Sesión 1 (50 min):** ¿Cómo interpretar correlaciones sin caer en trampas lógicas? - Análisis crítico de relaciones entre variables
+- **Sesión 2 (50 min):** ¿Cómo construir narrativas convincentes basadas en datos? - Síntesis de hallazgos múltiples
+- **Sesión 3 (50 min):** ¿Cómo comunicar limitaciones y sesgos responsablemente? - Proyecto integrador del bloque
+- **Aplicación:** Reporte de análisis completo con recomendaciones estratégicas
 
 ---
+
+### Bloque 3: ¿Podemos predecir el futuro del fútbol con datos? (Semanas 11-15)
+
+**Pregunta del bloque:** ¿Alguna vez has soñado con ser el analista que le dice a Xavi quién debe jugar el próximo Clásico?
+
+#### Semana 11: ¿Cómo crear "entrenadores digitales" que aprendan patrones?
+
+- **Notebook:** `modelado-predictivo-introduccion.ipynb`
+- **Pregunta motivadora:** Si pudieras crear un entrenador digital que aprenda de miles de partidos para predecir resultados, ¿cómo lo harías?
+- **Sesión 1 (50 min):** ¿Qué es un modelo que aprende? - Conceptos básicos con ejemplos del fútbol
+- **Sesión 2 (50 min):** ¿Cómo entrenamos nuestro primer modelo? - Práctica con datos reales sencillos
+- **Sesión 3 (50 min):** ¿Qué tan bueno es nuestro modelo? - Primeras métricas de evaluación
+- **Aplicación:** Predecir si gana el Barcelona o el Real Madrid basándose en datos simples
+
+#### Semana 12: ¿Por qué los mejores equipos tienen especialistas?
+
+- **Notebook:** `modelos-avanzados-clasificacion.ipynb`
+- **Pregunta motivadora:** ¿Por qué el Barcelona tiene entrenador de porteros, de física y de táctica? ¿Podemos hacer lo mismo con modelos?
+- **Sesión 1 (50 min):** ¿Qué hace cada especialista? - Diferentes tipos de modelos explicados fácilmente
+- **Sesión 2 (50 min):** ¿Cómo comparamos especialistas? - Random Forest vs otros modelos básicos
+- **Sesión 3 (50 min):** ¿Pueden trabajar en equipo? - Combinación simple de predicciones
+- **Aplicación:** Equipo de modelos prediciendo quién debe ser titular
+
+#### Semana 13: ¿Cómo saber si podemos confiar en nuestras predicciones?
+
+- **Notebook:** `metricas-avanzadas-evaluacion.ipynb`
+- **Pregunta motivadora:** Si le dices a Xavi que tu modelo predice 85% de precisión, ¿cómo lo convences de que es verdad?
+- **Sesión 1 (50 min):** ¿Qué significa "85% de precisión"? - Métricas básicas explicadas claramente
+- **Sesión 2 (50 min):** ¿Cuándo nuestro modelo está "memorizando"? - Detectar cuando algo no funciona bien
+- **Sesión 3 (50 min):** ¿Cómo comunicar resultados honestamente? - Explicar limitaciones y confianza
+- **Aplicación:** Evaluar modelos como lo haría un analista profesional
+
+#### Semana 14: ¿Cómo crear "estadísticas inteligentes" que nadie más tiene?
+
+- **Notebook:** `feature-engineering-optimizacion.ipynb`
+- **Pregunta motivadora:** ¿Qué información importante sobre Messi no aparece directamente en goles y asistencias?
+- **Sesión 1 (50 min):** ¿Cómo inventar estadísticas útiles? - Crear variables que realmente importen
+- **Sesión 2 (50 min):** ¿Qué pasa si combinamos datos diferentes? - Mezclar información para descubrir patrones
+- **Sesión 3 (50 min):** ¿Cómo optimizar nuestro modelo final? - Mejorar predicciones paso a paso
+- **Aplicación:** Desarrollar métricas originales para análisis profesional
+
+#### Semana 15: ¿Puedes analizar el Barcelona como un analista profesional?
+
+- **Notebook:** `proyecto-final-integrador.ipynb`
+- **Pregunta motivadora:** Si Xavi te pidiera un análisis completo del equipo para decidir la alineación del próximo Clásico, ¿podrías hacerlo?
+- **Sesión 1 (50 min):** ¿Cómo planear un análisis profesional? - Diseño del proyecto final
+- **Sesión 2 (50 min):** ¿Cómo ejecutar análisis como los profesionales? - Aplicar todas las técnicas aprendidas
+- **Sesión 3 (50 min):** ¿Cómo presentar resultados que impresionen? - Comunicar hallazgos de forma convincente
+- **Aplicación:** Proyecto completo simulando trabajo real para un club profesional
 
 ## Herramientas y Tecnologías
 
-### Lenguajes y Entornos
+### Tu kit de herramientas profesional
 
-- **Python 3.8+**
-- **Jupyter Notebook**
-- **Git** (control de versiones)
+- **Python 3.8+** - El mismo lenguaje que usan analistas de Manchester City y Real Madrid
+- **Jupyter Notebook** - Tu laboratorio interactivo de análisis
+- **Git** - Control de versiones como los profesionales
 
-### Librerías Principales
+### Librerías que dominarás
 
-- **pandas** - Manipulación y análisis de datos
-- **numpy** - Computación numérica
-- **matplotlib** - Visualización básica
-- **seaborn** - Visualización estadística
-- **scikit-learn** - Machine learning
+```python
+# Para manipular datos como un profesional
+import pandas as pd
+import numpy as np
 
-### Recursos de Datos
+# Para crear visualizaciones impresionantes
+import matplotlib.pyplot as plt
+import seaborn as sns
 
-- **Dataset "champs"** - [Kaggle](https://www.kaggle.com/datasets/julihocc/champs)
-- **Notebook "La Remontada"** - [Kaggle](https://www.kaggle.com/code/julihocc/la-remontada)
+# Para hacer predicciones como analista de élite
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+
+print("¡Tu entorno de análisis deportivo está listo!")
+```
+
+### Recursos de datos reales
+
+- **Dataset "champs"** - [Kaggle](https://www.kaggle.com/datasets/julihocc/champs) con datos históricos de Champions League
+- **Notebook "La Remontada"** - [Kaggle](https://www.kaggle.com/code/julihocc/la-remontada) como referencia profesional
+- **Datos del Barcelona** - Información real de jugadores y rendimiento para el proyecto final
 
 ## Bibliografía Recomendada
 
@@ -172,91 +218,149 @@ Este curso introduce a los estudiantes en el fascinante mundo de la ciencia de d
 - Tutoriales de scikit-learn
 - Kaggle Learn (cursos gratuitos)
 
-## Estado del Desarrollo
+## Estado del Desarrollo y Características del Material
 
-### Completado
+### Completado (100% del contenido)
 
-#### **Bloque 1: Prerrequisitos de Programación con Python** (100% completo)
+#### **Bloque 1: Fundamentos de Programación con Python** ✅
 
-- **Semana 1**: `configuracion-fundamentos.ipynb` - Configuración y fundamentos
-- **Semana 2**: `estructuras-control.ipynb` - Estructuras de datos y control
-- **Semana 3**: `funciones-modulos.ipynb` - Funciones y módulos
-- **Semana 4**: `pandas-numpy-introduccion.ipynb` - Pandas y NumPy
-- **Semana 5**: `visualizacion-basica.ipynb` - Visualización básica
+- **Semana 1**: `configuracion-fundamentos.ipynb` - Variables, tipos de datos y estructuras básicas con analogías futbolísticas
+- **Semana 2**: `estructuras-control.ipynb` - Bucles y condicionales aplicados a gestión de equipos
+- **Semana 3**: `funciones-modulos.ipynb` - Herramientas reutilizables para análisis deportivo
+- **Semana 4**: `pandas-numpy-introduccion.ipynb` - Manejo de datos masivos como clubes profesionales
+- **Semana 5**: `visualizacion-basica.ipynb` - Comunicación visual de insights deportivos
 
-#### **Bloque 2: Fundamentos de Ciencia de Datos y Fútbol** (100% completo)
+#### **Bloque 2: Explorando Datos Deportivos con Python** ✅
 
-- **Semana 6**: `introduccion-exploracion.ipynb` - Exploración de datos deportivos
-- **Semana 7**: `tipos-datos-futbol.ipynb` - Tipos de datos en fútbol
-- **Semana 8**: `estadistica-descriptiva.ipynb` - Estadística descriptiva
-- **Semana 9**: `visualizacion-datos.ipynb` - Visualización de datos
-- **Semana 10**: `analisis-interpretacion.ipynb` - Análisis e interpretación
+- **Semana 6**: `introduccion-exploracion.ipynb` - Investigación detectivesca de patrones futbolísticos
+- **Semana 7**: `tipos-datos-futbol.ipynb` - Comprensión de diferentes "idiomas" de datos deportivos
+- **Semana 8**: `estadistica-descriptiva.ipynb` - Herramientas estadísticas para decisiones como Pep Guardiola
+- **Semana 9**: `visualizacion-datos.ipynb` - Narrativas visuales que convencen a directivos
+- **Semana 10**: `analisis-interpretacion.ipynb` - Transformación de datos en recomendaciones estratégicas
 
-#### **Material de Apoyo Completo**
+#### **Bloque 3: ¿Podemos predecir el futuro del fútbol con datos?** ✅
 
-- **README principal** con información completa del curso
-- **README por bloque** con objetivos y metodología
-- **Referencias y bibliografía** especializada
-- **Guías de instalación** y configuración
+- **Semana 11**: `modelado-predictivo-introduccion.ipynb` - Creación de "entrenadores digitales"
+- **Semana 12**: `modelos-avanzados-clasificacion.ipynb` - Equipos de especialistas trabajando juntos
+- **Semana 13**: `metricas-avanzadas-evaluacion.ipynb` - Medición de confianza en predicciones
+- **Semana 14**: `feature-engineering-optimizacion.ipynb` - Creación de "estadísticas inteligentes"
+- **Semana 15**: `proyecto-final-integrador.ipynb` - Análisis profesional completo del Barcelona
 
-### Completo
+### Características Pedagógicas Únicas
 
-#### **Bloque 3: Mi Primera Predicción con Datos de Fútbol** (100% completo)
+#### **Metodología Socrática Integral**
+- **Preguntas motivadoras** que despiertan curiosidad antes de cada concepto
+- **Reflexiones continuas** durante el proceso de aprendizaje
+- **Descubrimiento guiado** en lugar de instrucción directa
+- **Conexiones conceptuales** entre diferentes temas
 
-- **Semana 11**: `modelado-predictivo-introduccion.ipynb` - Mi primera predicción
-- **Semana 12**: `modelos-avanzados-clasificacion.ipynb` - Modelos más inteligentes
-- **Semana 13**: `metricas-avanzadas-evaluacion.ipynb` - Evaluación de predicciones
-- **Semana 14**: `feature-engineering-optimizacion.ipynb` - Mejorando predicciones
-- **Semana 15**: `proyecto-final-integrador.ipynb` - Cierre del curso
+#### **Enfoque de Preparatoria Profesional**
+- **Vocabulario accesible** pero técnicamente correcto
+- **Analogías deportivas familiares** para conceptos complejos
+- **Progresión gradual** desde fundamentos hasta aplicaciones avanzadas
+- **Sin emojis** manteniendo seriedad profesional
 
-### Características del Material Actual
+#### **Restricciones Temporales Realistas**
+- **Sesiones de 50 minutos exactos** (15 min teoría + 25 min práctica + 10 min reflexión)
+- **Contenido validado** ejecutándose completamente en tiempo real
+- **Margen de seguridad** para preguntas y discusión
+- **Ritmo apropiado** para estudiantes de 15-18 años
 
-#### **Enfoque Pedagógico**
+#### **Datos y Ejemplos Auténticos**
+- **Equipos reconocibles** (Barcelona, Real Madrid, Manchester City)
+- **Situaciones deportivas reales** que conectan con experiencias previas
+- **Herramientas profesionales** (scikit-learn, pandas, seaborn)
+- **Proyecto final realista** con análisis del Barcelona
 
-- **Progresión gradual**: De conceptos básicos a aplicaciones prácticas
-- **Contexto deportivo**: Todos los ejemplos están aplicados al fútbol
-- **Notebooks interactivos**: Material didáctico hands-on
-- **Evaluación continua**: Cada bloque construye sobre el anterior
+## Cómo Empezar
 
-#### **Herramientas Utilizadas**
+### 1. **Inicia con el Bloque 1: Prerrequisitos**
 
-- **Python 3.8+** como lenguaje principal
-- **Jupyter Notebooks** para material interactivo
-- **Pandas & NumPy** para manipulación de datos
-- **Seaborn & Matplotlib** para visualización
-- **Git** para control de versiones
+- Configura tu entorno de desarrollo Python
+- Completa `semana-1/configuracion-fundamentos.ipynb`
+- Aprende estructuras de datos con `semana-2/estructuras-control.ipynb`
+- Domina funciones con `semana-3/funciones-modulos.ipynb`
+- Familiarízate con pandas/numpy en `semana-4/pandas-numpy-introduccion.ipynb`
+- Crea tus primeros gráficos con `semana-5/visualizacion-basica.ipynb`
 
-#### **Recursos de Datos**
+### 2. **Continúa con el Bloque 2: Análisis de Datos Deportivos**
 
-- **Datos sintéticos** para aprendizaje progresivo
-- **Ejemplos futbolísticos** contextualizados
-- **Referencias al dataset "champs"** de Kaggle
-- **Conexión con notebook "La Remontada"**
+- Explora datos de fútbol con `semana-6/introduccion-exploracion.ipynb`
+- Comprende tipos de datos con `semana-7/tipos-datos-futbol.ipynb`
+- Aprende estadística básica con `semana-8/estadistica-descriptiva.ipynb`
+- Crea visualizaciones con `semana-9/visualizacion-datos.ipynb`
+- Interpreta resultados con `semana-10/analisis-interpretacion.ipynb`
 
-## Guía de Uso del Material
+### 3. **Termina con el Bloque 3: Mi Primera Predicción**
 
-### Para Instructores
+- Aprende conceptos básicos con `semana-11/modelado-predictivo-introduccion.ipynb`
+- Compara modelos con `semana-12/modelos-avanzados-clasificacion.ipynb`
+- Evalúa predicciones con `semana-13/metricas-avanzadas-evaluacion.ipynb`
+- Mejora tus modelos con `semana-14/feature-engineering-optimizacion.ipynb`
+- Consolida conocimientos con `semana-15/proyecto-final-integrador.ipynb`
 
-1. **Revisa la estructura completa** del curso en este README
-2. **Adapta el contenido** según el nivel del grupo
-3. **Utiliza los notebooks** como base para las clases
-4. **Personaliza ejemplos** con datos locales si es posible
-5. **Sigue la progresión** de prerrequisitos a análisis avanzado
+### 4. **Configura tu entorno técnico:**
 
-### Para Estudiantes
+   ```bash
+   # Crear entorno virtual
+   python -m venv .venv
+   source .venv/bin/activate  # Linux/Mac
+   # .venv\Scripts\activate   # Windows
+   
+   # Instalar dependencias
+   pip install pandas numpy matplotlib seaborn jupyter
+   
+   # Iniciar Jupyter
+   jupyter notebook
+   ```
 
-1. **Comienza con el Bloque 0** - Es fundamental dominar la programación básica
-2. **Sigue la secuencia** de bloques en orden
-3. **Completa las actividades prácticas** antes de continuar
-4. **Experimenta** con los códigos y parámetros
-5. **Utiliza los recursos** de referencia cuando sea necesario
+### 5. **Navega por el material:**
 
-### Metodología de Aprendizaje
+- Cada notebook está diseñado para completarse secuencialmente
+- Lee el README de cada bloque para contexto adicional
+- Ejecuta las celdas paso a paso para aprendizaje interactivo
+- Experimenta modificando parámetros y código
 
-- **Teoría + Práctica**: Cada semana combina conceptos teóricos con ejercicios prácticos
-- **Proyección deportiva**: Todos los ejemplos están contextualizados en análisis de fútbol
-- **Evaluación continua**: Cada bloque tiene su evaluación específica
-- **Construcción progresiva**: Los conocimientos se construyen incrementalmente
+### 6. **Progresión recomendada:**
+
+- **Semanas 1-5**: Domina fundamentos de Python
+- **Semanas 6-10**: Aplica conocimientos a datos deportivos
+- **Semanas 11-15**: Aprende a hacer predicciones básicas con machine learning
+
+## Configuración del Entorno
+
+### Requisitos Técnicos
+
+- **Python 3.8+**
+- **Jupyter Notebook/Lab**
+- **Git** (control de versiones)
+- **Editor de código** (VS Code recomendado)
+
+### Librerías Esenciales
+
+```python
+# Análisis de datos
+pandas, numpy, matplotlib, seaborn
+
+# Machine Learning
+scikit-learn
+
+# Utilidades
+jupyter, ipywidgets
+```
+
+### Instalación Completa
+
+```bash
+pip install -r requirements.txt
+```
+
+### Dataset Principal
+
+- **Fuente**: [Champs - Kaggle](https://www.kaggle.com/datasets/julihocc/champs)
+- **Formato**: CSV con datos de partidos de fútbol
+- **Contenido**: Resultados, estadísticas, equipos, temporadas
+- **Notebook guía**: ["La Remontada"](https://www.kaggle.com/code/julihocc/la-remontada)
 
 ## Sistema de Evaluación
 
@@ -786,6 +890,8 @@ Para dudas sobre el curso o el material didáctico, contacta al equipo docente.
 
 ---
 
-**¡Bienvenido al apasionante mundo de la ciencia de datos aplicada al fútbol!**
+**¡Bienvenido al futuro del análisis deportivo!**
 
-*Este curso te proporcionará las herramientas necesarias para convertir datos en insights valiosos que pueden transformar la forma en que entendemos el fútbol.*
+*Este curso te transformará de estudiante curioso en analista capaz de descubrir insights que podrían cambiar estrategias deportivas. Cada línea de código que escribas te acercará más a entender cómo la tecnología está revolucionando el mundo del fútbol.*
+
+**¿Estás listo para empezar tu jornada hacia convertirte en el próximo analista que ayude a ganar un Clásico?**

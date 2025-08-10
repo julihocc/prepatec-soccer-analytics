@@ -77,72 +77,23 @@ Este curso te introduce al fascinante mundo de la ciencia de datos aplicada al f
 
 #### Semana 6: ¿Qué secretos esconden los datos del fútbol?
 
-- **Notebook:** `introduccion-exploracion.ipynb`
-- **Pregunta motivadora:** Si fueras analista del FC Barcelona, ¿qué le preguntarías a los datos de los últimos 200 partidos para descubrir patrones ocultos?
-- **Sesión 1 (50 min):** ¿Cómo interrogamos a los datos? - Preparación del laboratorio de análisis y primeras exploraciones
-- **Sesión 2 (50 min):** ¿Qué patrones emergen visualmente? - Visualización de distribuciones y correlaciones
-- **Sesión 3 (50 min):** ¿Cómo validamos nuestros descubrimientos? - Verificación de la ventaja de casa y detección de sesgos
-- **Aplicación:** Análisis inicial de datos futbolísticos reales con herramientas profesionales
 
 #### Semana 7: ¿Todos los datos del fútbol hablan el mismo idioma?
 
-- **Notebook:** `tipos-datos-futbol.ipynb`
-- **Pregunta motivadora:** Si fueras analista del Real Madrid, ¿tratarías igual la información "Manchester City anotó 3 goles" que "el partido fue en enero"?
-- **Sesión 1 (50 min):** ¿Por qué importan los tipos de datos? - Distinción entre diferentes "idiomas" de información deportiva
-- **Sesión 2 (50 min):** ¿Qué revela cada tipo de dato? - Patrones específicos de datos numéricos, categóricos y temporales
-- **Sesión 3 (50 min):** ¿Cómo combinar diferentes tipos sabiamente? - Integración inteligente de múltiples fuentes de información
-- **Aplicación:** Manejo experto de datasets complejos con múltiples tipos de variables
 
 #### Semana 8: ¿Cómo descubren los entrenadores elite las tendencias invisibles?
 
-- **Notebook:** `estadistica-descriptiva.ipynb`
-- **Pregunta motivadora:** ¿Qué herramientas estadísticas usa Pep Guardiola para tomar decisiones que parecen "mágicas"?
-- **Sesión 1 (50 min):** ¿Qué revelan los promedios en el fútbol profesional? - Medidas de tendencia central en contexto deportivo
-- **Sesión 2 (50 min):** ¿Cómo medir la consistencia vs la impredecibilidad? - Medidas de dispersión y variabilidad
-- **Sesión 3 (50 min):** ¿Qué comparaciones son realmente válidas? - Análisis comparativo entre equipos, posiciones y temporadas
-- **Aplicación:** Evaluación estadística comprehensiva del rendimiento deportivo
 
 #### Semana 9: ¿Cómo hacer que los números cuenten historias convincentes?
 
-- **Notebook:** `visualizacion-datos.ipynb`
-- **Pregunta motivadora:** ¿Cómo crear visualizaciones que convenzan a Florentino Pérez de invertir 100 millones en un fichaje?
-- **Sesión 1 (50 min):** ¿Cuál es la gramática visual del análisis deportivo? - Principios de diseño para comunicación técnica
-- **Sesión 2 (50 min):** ¿Cómo dominar seaborn para análisis profesional? - Visualización avanzada de datos deportivos
-- **Sesión 3 (50 min):** ¿Cómo crear dashboards que impacten decisiones? - Integración de múltiples visualizaciones
-- **Aplicación:** Dashboard profesional de análisis comparativo
 
 #### Semana 10: ¿Cómo transformamos datos en recomendaciones que cambien estrategias?
 
-- **Notebook:** `analisis-interpretacion.ipynb`
-- **Pregunta motivadora:** ¿Cómo presentarías un análisis a Xavi que lo convenza de cambiar su táctica habitual?
-- **Sesión 1 (50 min):** ¿Cómo interpretar correlaciones sin caer en trampas lógicas? - Análisis crítico de relaciones entre variables
-- **Sesión 2 (50 min):** ¿Cómo construir narrativas convincentes basadas en datos? - Síntesis de hallazgos múltiples
-- **Sesión 3 (50 min):** ¿Cómo comunicar limitaciones y sesgos responsablemente? - Proyecto integrador del bloque
-- **Aplicación:** Reporte de análisis completo con recomendaciones estratégicas
 
 ---
 
 ### Bloque 3: ¿Podemos predecir el futuro del fútbol con datos? (Semanas 11-15)
-
-**Pregunta del bloque:** ¿Alguna vez has soñado con ser el analista que le dice a Xavi quién debe jugar el próximo Clásico?
-
-#### Semana 11: ¿Cómo crear "entrenadores digitales" que aprendan patrones?
-
-- **Notebook:** `modelado-predictivo-introduccion.ipynb`
-- **Pregunta motivadora:** Si pudieras crear un entrenador digital que aprenda de miles de partidos para predecir resultados, ¿cómo lo harías?
-- **Sesión 1 (50 min):** ¿Qué es un modelo que aprende? - Conceptos básicos con ejemplos del fútbol
-- **Sesión 2 (50 min):** ¿Cómo entrenamos nuestro primer modelo? - Práctica con datos reales sencillos
-- **Sesión 3 (50 min):** ¿Qué tan bueno es nuestro modelo? - Primeras métricas de evaluación
-- **Aplicación:** Predecir si gana el Barcelona o el Real Madrid basándose en datos simples
-
-#### Semana 12: ¿Por qué los mejores equipos tienen especialistas?
-
-- **Notebook:** `modelos-avanzados-clasificacion.ipynb`
-- **Pregunta motivadora:** ¿Por qué el Barcelona tiene entrenador de porteros, de física y de táctica? ¿Podemos hacer lo mismo con modelos?
-- **Sesión 1 (50 min):** ¿Qué hace cada especialista? - Diferentes tipos de modelos explicados fácilmente
-- **Sesión 2 (50 min):** ¿Cómo comparamos especialistas? - Random Forest vs otros modelos básicos
-- **Sesión 3 (50 min):** ¿Pueden trabajar en equipo? - Combinación simple de predicciones
-- **Aplicación:** Equipo de modelos prediciendo quién debe ser titular
+... (estructura semanal existente más abajo en el documento) ...
 
 #### Semana 13: ¿Cómo saber si podemos confiar en nuestras predicciones?
 

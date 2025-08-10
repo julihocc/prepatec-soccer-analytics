@@ -7,6 +7,24 @@ y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 
 ## [Sin publicar]
 
+## [4.1.0] - 2025-08-10
+
+### Agregado
+- Expansión del banco Canvas Bloque 2 (75 → 105) con ítems Extended [S] y etiquetado cognitivo completo.
+- Fusión de rúbricas en archivos centrales eliminando duplicados (casos prácticos y README Bloque 3).
+
+### Cambiado
+- Renombrado y homologado el componente evaluativo del Bloque 3 a "Caso Práctico" siguiendo el patrón de Bloques 1 y 2.
+- Reestructurada carpeta `evaluaciones/bloque-3/` (carpetas estándar: caso-practico/, datasets/, solucion-caso-practico/).
+
+### Eliminado
+- Directorio legacy `proyecto-integrador/` y archivos redundantes asociados (datasets y soluciones duplicadas).
+- README redundante en `caso-practico/` Bloque 3 tras fusión de contenido.
+
+### Mejorado
+- Claridad documental del caso práctico Bloque 3 (preguntas socráticas, tareas con puntaje, checklist homogéneo).
+- Changelog global actualizado para reflejar limpieza y unificación evaluativa.
+
 ## [4.0.1] - 2025-08-10
 
 ### Mejorado

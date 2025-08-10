@@ -54,9 +54,11 @@ jugadores = {
 
 ## Tareas Requeridas
 
-### Parte 1: Python Básico (50 puntos)
+> NOTA SOCRÁTICA: Cada subtarea incluye (a) Acción técnica y (b) Pregunta de reflexión breve. Responde siempre antes de seguir al siguiente bloque.
 
-#### 1.1 Contar Resultados con Bucles (15 puntos)
+### Parte 1: Fundamentos y Funciones (40 puntos)
+
+#### 1.1 Contar Resultados con Bucles (10 puntos)
 Usar un bucle for para contar victorias, empates y derrotas:
 
 ```python
@@ -71,6 +73,8 @@ derrotas = 0
 
 # Usar bucle for e if para contar
 ```
+
+Pregunta de reflexión: ¿Qué patrón observas entre victorias y empates? ¿Qué podría significar sobre la consistencia del equipo?
 
 #### 1.2 Crear Funciones Simples (20 puntos)
 Escribir estas 2 funciones obligatorias:
@@ -91,31 +95,75 @@ def mejor_goleador(jugadores):
     return nombre_mejor, goles_mejor
 ```
 
-#### 1.3 Trabajar con Listas y Diccionarios (15 puntos)
+Añade al final de cada función una prueba mínima (asegura funcionamiento):
+```python
+assert calcular_puntos(5, 2) == 17  # 5*3 + 2*1
+```
+
+Pregunta de reflexión: ¿Por qué es útil probar una función con un caso simple antes de usarla en todo el análisis?
+
+#### 1.3 Trabajar con Listas y Diccionarios (10 puntos)
 - Calcular total de goles a favor usando la lista `goles_favor`
 - Encontrar el partido con más goles usando funciones básicas
 - Usar el diccionario `jugadores` para encontrar información básica
 
-### Parte 2: Análisis Simple (30 puntos)
+Pregunta de reflexión: ¿Qué limitación notas al manejar varias listas separadas para analizar partidos?
 
-#### 2.1 Estadísticas Básicas del Equipo (15 puntos)
+### Parte 2: Análisis y Visualización (30 puntos)
+
+#### 2.1 Estadísticas Básicas del Equipo (10 puntos)
 - Usar las funciones que crearon para calcular puntos totales
 - Calcular el promedio de goles por partido (total goles ÷ partidos)
 - Determinar si el equipo marcó más goles de los que recibió
 
-#### 2.2 Análisis de Jugadores (15 puntos)  
+Pregunta de reflexión: ¿El promedio de goles refleja toda la historia del rendimiento ofensivo? ¿Qué NO te dice?
+
+#### 2.2 Análisis de Jugadores (10 puntos)  
 - Usar su función para encontrar el mejor goleador
 - Contar cuántos delanteros hay en el equipo
 - Calcular el total de goles marcados por todos los jugadores
 
-### Parte 3: Presentación Simple (20 puntos)
+Pregunta de reflexión: ¿Ser el máximo goleador implica automáticamente mayor impacto para el equipo? ¿Qué otro dato considerarías?
 
-#### 3.1 Notebook Limpio (10 puntos)
+#### 2.3 Mini Introducción a pandas (5 puntos)
+Construyan un DataFrame simple para unificar los datos y comparar ventajas respecto a listas:
+```python
+import pandas as pd
+datos_partidos = pd.DataFrame({
+    'partido': range(1, len(goles_favor)+1),
+    'resultado': resultados_partidos,
+    'goles_favor': goles_favor,
+    'goles_contra': goles_contra
+})
+
+promedio_goles_df = datos_partidos['goles_favor'].mean()
+print("Promedio goles (DataFrame):", promedio_goles_df)
+```
+Pregunta de reflexión: ¿Qué ventaja concreta te da el DataFrame frente a manejar tres listas independientes?
+
+#### 2.4 Visualización Básica (5 puntos)
+Crear un gráfico de barras comparando goles a favor y en contra por partido:
+```python
+import matplotlib.pyplot as plt
+partidos = range(1, len(goles_favor)+1)
+plt.bar(partidos, goles_favor, label='Goles a favor')
+plt.bar(partidos, goles_contra, label='Goles en contra', alpha=0.7)
+plt.xlabel('Partido')
+plt.ylabel('Goles')
+plt.title('Rendimiento ofensivo y defensivo')
+plt.legend()
+plt.show()
+```
+Pregunta de reflexión: ¿En qué partidos la diferencia fue mayor? ¿Qué hipótesis podrías proponer?
+
+### Parte 3: Comunicación y Razonamiento (30 puntos)
+
+#### 3.1 Notebook Limpio y Explicado (15 puntos)
 - Código funciona sin errores
 - Comentarios explicando qué hace cada parte
 - Estructura clara paso a paso
 
-#### 3.2 Presentación Grupal (10 puntos)
+#### 3.2 Presentación y Reflexión Grupal (15 puntos)
 - 5 minutos máximo por equipo
 - Mostrar sus resultados principales
 - Cada integrante explica una parte
@@ -138,27 +186,33 @@ def mejor_goleador(jugadores):
 
 ## Criterios de Evaluación
 
-### Rúbrica Simplificada (100 puntos total)
+### Rúbrica Simplificada (100 puntos total) – Alineada 40/30/30
 
-| Criterio | Puntos | ¿Qué evalúo? |
-|----------|---------|--------------|
-| **Python Básico** | 50 | ¿Funcionan los bucles, if, y operaciones básicas? |
-| **Funciones** | 30 | ¿Crearon las 2 funciones solicitadas correctamente? |
-| **Presentación** | 20 | ¿Explicaron claramente sus resultados? |
+| Componente | Puntos | ¿Qué evalúo? |
+|------------|--------|--------------|
+| **Fundamentos y Funciones** | 40 | Bucles, condicionales, listas/diccionarios, funciones con docstring y pruebas mínimas |
+| **Análisis y Visualización** | 30 | Estadísticas básicas, uso inicial de pandas, gráfico y lectura crítica |
+| **Comunicación y Razonamiento** | 30 | Claridad del notebook, explicación oral, respuestas socráticas y conclusiones |
 
-### Lo que Busco en Cada Parte:
+### Criterios de Desempeño
 
-#### Python Básico (50 puntos):
-- **Excelente (45-50):** Todo el código funciona, usan bucles e if correctamente
-- **Bueno (40-44):** Código funciona con errores pequeños
-- **Suficiente (35-39):** Código funciona pero con algunos problemas
-- **Insuficiente (<35):** Código no funciona o tiene errores graves
+#### Fundamentos y Funciones (40)
+- Excelente (36–40): Código limpio, sin errores, funciones probadas con assert, nombres descriptivos.
+- Bueno (32–35): Funciona, detalles menores (nombres o comentarios escasos).
+- Suficiente (28–31): Funciona con algunos errores lógicos corregibles.
+- Insuficiente (<28): Errores graves, funciones incompletas o sin pruebas.
 
-#### Funciones (30 puntos):
-- **Excelente (27-30):** Las 2 funciones están bien hechas y funcionan
-- **Bueno (24-26):** 1 función perfecta, 1 con pequeños errores
-- **Suficiente (21-23):** Las funciones funcionan pero tienen errores
-- **Insuficiente (<21):** Las funciones no funcionan o faltan
+#### Análisis y Visualización (30)
+- Excelente (27–30): Estadísticas correctas, DataFrame claro, gráfico legible y breve interpretación.
+- Bueno (24–26): Cálculos correctos, interpretación superficial.
+- Suficiente (21–23): Cálculos parcialmente correctos, visualización sin explicación.
+- Insuficiente (<21): Cálculos erróneos o falta DataFrame/gráfico.
+
+#### Comunicación y Razonamiento (30)
+- Excelente (27–30): Presentación clara, responde preguntas socráticas con justificación y expone 2 conclusiones + 1 limitación.
+- Bueno (24–26): Presentación clara, reflexión breve sin profundidad.
+- Suficiente (21–23): Presentación básica, reflexión incompleta.
+- Insuficiente (<21): Sin reflexión o incoherente.
 
 ---
 
@@ -191,4 +245,12 @@ def mejor_goleador(jugadores):
 
 ---
 
-*¡Este caso práctico les ayudará a aplicar lo básico de Python (variables, bucles, funciones) con datos de fútbol!*
+### 3. Reflexión Final (en el notebook)
+Responder brevemente (2–4 líneas cada una) a TRES preguntas:
+1. ¿Qué métrica adicional incluirías para evaluar solidez defensiva y por qué?
+2. ¿Qué limitación tiene usar solo 10 partidos para conclusiones?
+3. ¿Qué beneficio te dio el DataFrame frente a listas separadas?
+4. ¿Qué mostrarías a un entrenador para convencerlo de mejorar el ataque?
+5. ¿Cuál sería tu siguiente paso de análisis en el Bloque 2?
+
+*Este caso práctico ahora integra fundamentos, primeras nociones de pandas, visualización básica y razonamiento reflexivo para cerrar el Bloque 1 de forma completa.*

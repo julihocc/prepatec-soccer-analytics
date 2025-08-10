@@ -91,3 +91,4 @@ Incluir breve inspección: número de filas/columnas, variables clave, rango tem
 
 ## Registro de Cambio
 2025-08-10: Creación inicial para renombrar y clarificar el caso práctico del Bloque 3.
+2025-08-10: Migrados dataset y notebook de solución desde antigua carpeta `proyecto-integrador/`; se conserva `README_legacy_proyecto_integrador.md` solo como referencia histórica (no usar para evaluación).

@@ -1,0 +1,51 @@
+match_id,fecha,equipo_local,equipo_visitante,goles_local,goles_visitante,resultado_final,fase_competicion,temporada,estadio,posesion_local,posesion_visitante,tiros_local,tiros_visitante,tiros_arco_local,tiros_arco_visitante,corners_local,corners_visitante,faltas_local,faltas_visitante,tarjetas_amarillas_local,tarjetas_amarillas_visitante,tarjetas_rojas_local,tarjetas_rojas_visitante,arbitro,asistencia
+1,2023-09-19,Real Madrid,Union Berlin,1,0,Local,Fase de Grupos,2023-24,Santiago Bernabeu,58,42,12,6,5,2,7,3,11,14,2,3,0,0,Antonio Mateu,78500
+2,2023-09-19,Barcelona,PSG,2,1,Local,Fase de Grupos,2023-24,Camp Nou,52,48,15,11,7,4,6,5,9,12,1,2,0,0,Clement Turpin,85000
+3,2023-09-20,Manchester City,Bayern Munich,3,1,Local,Fase de Grupos,2023-24,Etihad Stadium,61,39,18,9,8,3,8,4,8,10,3,1,0,0,Daniele Orsato,54000
+4,2023-09-20,Liverpool,AC Milan,1,1,Empate,Fase de Grupos,2023-24,Anfield,55,45,14,13,6,6,9,7,7,11,2,2,0,1,Bjorn Kuipers,52000
+5,2023-09-21,Juventus,Chelsea,0,2,Visitante,Fase de Grupos,2023-24,Allianz Stadium,45,55,8,16,3,7,4,9,12,8,3,1,1,0,Felix Brych,40000
+6,2023-10-03,Union Berlin,Real Madrid,0,3,Visitante,Fase de Grupos,2023-24,Stadion An der Alten Forsterei,35,65,6,19,2,9,2,11,16,7,4,1,0,0,Stephanie Frappart,22000
+7,2023-10-03,PSG,Barcelona,1,2,Visitante,Fase de Grupos,2023-24,Parc des Princes,47,53,13,17,5,8,7,6,13,9,2,3,0,0,Michael Oliver,47000
+8,2023-10-04,Bayern Munich,Manchester City,2,1,Local,Fase de Grupos,2023-24,Allianz Arena,43,57,11,20,6,9,5,12,14,6,3,2,0,0,Szymon Marciniak,75000
+9,2023-10-04,AC Milan,Liverpool,2,0,Local,Fase de Grupos,2023-24,San Siro,41,59,9,16,4,7,3,8,15,10,4,2,1,0,Danny Makkelie,75000
+10,2023-10-05,Chelsea,Juventus,3,0,Local,Fase de Grupos,2023-24,Stamford Bridge,59,41,17,8,9,3,10,4,6,13,1,3,0,0,Cesar Soto Grado,39000
+11,2023-10-24,Real Madrid,Barcelona,2,1,Local,Fase de Grupos,2023-24,Santiago Bernabeu,54,46,16,12,7,5,8,6,12,11,3,2,0,0,Antonio Mateu,78500
+12,2023-10-24,Manchester City,Liverpool,1,1,Empate,Fase de Grupos,2023-24,Etihad Stadium,58,42,19,14,8,6,11,7,9,8,2,3,0,0,Clement Turpin,54000
+13,2023-10-25,Bayern Munich,AC Milan,4,1,Local,Fase de Grupos,2023-24,Allianz Arena,62,38,21,9,11,4,9,3,7,12,1,4,0,0,Daniele Orsato,75000
+14,2023-10-25,PSG,Chelsea,2,2,Empate,Fase de Grupos,2023-24,Parc des Princes,49,51,15,16,6,7,8,9,10,9,2,2,0,0,Bjorn Kuipers,47000
+15,2023-10-26,Juventus,Union Berlin,3,0,Local,Fase de Grupos,2023-24,Allianz Stadium,63,37,18,6,9,2,7,2,8,14,1,3,0,0,Felix Brych,40000
+16,2023-11-07,Barcelona,Real Madrid,0,2,Visitante,Fase de Grupos,2023-24,Camp Nou,48,52,11,17,4,8,5,9,13,10,2,1,0,0,Michael Oliver,85000
+17,2023-11-07,Liverpool,Manchester City,2,0,Local,Fase de Grupos,2023-24,Anfield,44,56,12,21,5,10,4,13,11,7,3,1,1,0,Szymon Marciniak,52000
+18,2023-11-08,AC Milan,Bayern Munich,1,3,Visitante,Fase de Grupos,2023-24,San Siro,39,61,8,18,3,9,3,10,14,8,4,2,0,0,Danny Makkelie,75000
+19,2023-11-08,Chelsea,PSG,1,1,Empate,Fase de Grupos,2023-24,Stamford Bridge,52,48,14,13,6,5,9,8,8,11,2,3,0,0,Cesar Soto Grado,39000
+20,2023-11-09,Union Berlin,Juventus,1,2,Visitante,Fase de Grupos,2023-24,Stadion An der Alten Forsterei,37,63,7,16,3,7,3,8,15,9,3,2,0,0,Stephanie Frappart,22000
+21,2023-11-28,Real Madrid,PSG,3,1,Local,Octavos de Final,2023-24,Santiago Bernabeu,56,44,17,10,8,4,9,5,10,12,2,3,0,0,Antonio Mateu,78500
+22,2023-11-29,Barcelona,Manchester City,1,2,Visitante,Octavos de Final,2023-24,Camp Nou,47,53,12,18,5,9,6,11,11,8,3,1,0,0,Clement Turpin,85000
+23,2023-11-29,Bayern Munich,Liverpool,2,0,Local,Octavos de Final,2023-24,Allianz Arena,59,41,16,11,7,4,8,6,9,13,2,4,0,0,Daniele Orsato,75000
+24,2023-11-30,AC Milan,Chelsea,1,0,Local,Octavos de Final,2023-24,San Siro,45,55,9,15,4,6,4,9,12,10,3,2,0,0,Bjorn Kuipers,75000
+25,2023-12-12,PSG,Real Madrid,0,1,Visitante,Octavos de Final,2023-24,Parc des Princes,51,49,14,16,6,7,10,8,9,11,2,2,0,0,Felix Brych,47000
+26,2023-12-13,Manchester City,Barcelona,2,1,Local,Octavos de Final,2023-24,Etihad Stadium,62,38,20,9,9,3,12,4,7,14,1,3,0,0,Michael Oliver,54000
+27,2023-12-13,Liverpool,Bayern Munich,1,1,Empate,Octavos de Final,2023-24,Anfield,43,57,11,19,5,8,5,12,13,8,4,2,0,0,Szymon Marciniak,52000
+28,2023-12-14,Chelsea,AC Milan,2,1,Local,Octavos de Final,2023-24,Stamford Bridge,57,43,16,12,8,5,9,6,8,11,2,3,0,0,Danny Makkelie,39000
+29,2024-02-20,Real Madrid,Manchester City,1,0,Local,Cuartos de Final,2023-24,Santiago Bernabeu,48,52,13,17,6,8,7,11,12,9,3,2,0,0,Cesar Soto Grado,78500
+30,2024-02-21,Bayern Munich,Chelsea,3,1,Local,Cuartos de Final,2023-24,Allianz Arena,61,39,19,11,10,5,10,5,8,12,1,4,0,0,Stephanie Frappart,75000
+31,2024-03-05,Manchester City,Real Madrid,2,1,Local,Cuartos de Final,2023-24,Etihad Stadium,64,36,22,8,11,3,13,3,6,15,2,3,0,0,Antonio Mateu,54000
+32,2024-03-06,Chelsea,Bayern Munich,0,2,Visitante,Cuartos de Final,2023-24,Stamford Bridge,44,56,10,18,4,9,5,12,14,7,3,1,1,0,Clement Turpin,39000
+33,2024-04-09,Real Madrid,Bayern Munich,2,1,Local,Semifinales,2023-24,Santiago Bernabeu,52,48,15,14,7,6,8,7,11,10,2,3,0,0,Daniele Orsato,78500
+34,2024-04-24,Bayern Munich,Real Madrid,1,2,Visitante,Semifinales,2023-24,Allianz Arena,58,42,18,13,8,6,9,6,9,12,3,2,0,0,Bjorn Kuipers,75000
+35,2024-06-01,Real Madrid,Borussia Dortmund,2,0,Local,Final,2023-24,Wembley,55,45,16,11,8,4,9,5,10,13,2,4,0,0,Felix Brych,90000
+36,2022-09-14,Liverpool,Ajax,2,1,Local,Fase de Grupos,2022-23,Anfield,58,42,17,9,8,3,11,4,7,12,1,3,0,0,Antonio Mateu,52000
+37,2022-09-14,Barcelona,Bayern Munich,0,3,Visitante,Fase de Grupos,2022-23,Camp Nou,43,57,8,19,2,10,3,12,15,8,4,2,1,0,Clement Turpin,85000
+38,2022-09-15,Real Madrid,RB Leipzig,3,2,Local,Fase de Grupos,2022-23,Santiago Bernabeu,54,46,16,13,7,6,8,7,12,11,2,3,0,0,Daniele Orsato,78500
+39,2022-09-15,Manchester City,Sevilla,4,0,Local,Fase de Grupos,2022-23,Etihad Stadium,68,32,21,6,12,2,10,2,6,14,1,4,0,0,Bjorn Kuipers,54000
+40,2022-09-16,Chelsea,AC Milan,3,0,Local,Fase de Grupos,2022-23,Stamford Bridge,60,40,18,8,9,3,9,4,8,13,2,2,0,0,Felix Brych,39000
+41,2022-09-28,Ajax,Liverpool,0,2,Visitante,Fase de Grupos,2022-23,Johan Cruyff Arena,41,59,9,18,3,9,4,11,14,9,3,1,0,0,Michael Oliver,54000
+42,2022-09-29,Bayern Munich,Barcelona,2,0,Local,Fase de Grupos,2022-23,Allianz Arena,57,43,16,12,8,4,9,6,10,12,2,3,0,0,Szymon Marciniak,75000
+43,2022-09-29,RB Leipzig,Real Madrid,1,2,Visitante,Fase de Grupos,2022-23,Red Bull Arena,45,55,11,17,5,8,5,10,13,8,4,2,0,0,Danny Makkelie,47000
+44,2022-09-30,Sevilla,Manchester City,0,4,Visitante,Fase de Grupos,2022-23,Ramon Sanchez Pizjuan,38,62,7,20,2,11,3,13,16,7,5,1,1,0,Cesar Soto Grado,42000
+45,2022-10-12,Liverpool,Rangers,2,0,Local,Fase de Grupos,2022-23,Anfield,61,39,19,7,9,3,12,3,8,15,1,4,0,0,Stephanie Frappart,52000
+46,2022-10-12,Inter Milan,Barcelona,1,0,Local,Fase de Grupos,2022-23,San Siro,44,56,10,16,4,7,5,9,13,10,3,2,0,0,Antonio Mateu,75000
+47,2022-10-13,Real Madrid,Shakhtar Donetsk,2,1,Local,Fase de Grupos,2022-23,Santiago Bernabeu,59,41,17,10,8,4,10,5,9,12,2,3,0,0,Clement Turpin,78500
+48,2022-10-13,Manchester City,Copenhagen,5,0,Local,Fase de Grupos,2022-23,Etihad Stadium,72,28,24,4,13,1,11,1,5,16,0,5,0,0,Daniele Orsato,54000
+49,2022-10-14,Chelsea,AC Milan,0,2,Visitante,Fase de Grupos,2022-23,Stamford Bridge,48,52,12,15,5,8,7,8,11,9,3,2,0,0,Bjorn Kuipers,39000
+50,2022-10-26,Rangers,Liverpool,1,7,Visitante,Fase de Grupos,2022-23,Ibrox Stadium,32,68,6,25,3,14,2,15,18,6,6,0,2,0,Felix Brych,50000

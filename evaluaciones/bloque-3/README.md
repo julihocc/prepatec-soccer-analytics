@@ -367,3 +367,4 @@ proyecto_final/
 
 2025-08-10: Fusión de contenido de rúbrica (rubricas/rubrica-completa.md) directamente en este README; eliminación del archivo externo para reducir redundancia documental.
 2025-08-10: En proceso de consolidación: carpeta `proyecto-integrador/` será absorbida como recursos del `caso-practico/` para alinear estructura a bloques 1 y 2.
+2025-08-10: Consolidación completada: recursos (dataset, notebook solución) movidos a `caso-practico/` y carpeta antigua eliminada.

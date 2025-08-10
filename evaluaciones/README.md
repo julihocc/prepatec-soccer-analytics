@@ -45,11 +45,11 @@
 - **Modalidad:** Examen individual + proyecto colaborativo (3-4 estudiantes)
 
 ### [Bloque 3](bloque-3/) - Caso Práctico Predictivo (30%)
-**Semanas 11-16: Integración de Competencias**
-- **[Caso Práctico](bloque-3/caso-practico/):** Notebook evaluado (20%)
-- **[Presentación](bloque-3/caso-practico/):** Comunicación de resultados (10%)
-- **Rúbrica integrada:** En `bloque-3/README.md` (archivo único consolidado)
-- **Modalidad:** Individual, 4 semanas de desarrollo intensivo
+**Semanas 11-15: Integración de Competencias**
+- **Caso Práctico:** `bloque-3/caso-practico/caso-bloque3.md` (20%)
+- **Presentación:** Comunicación de resultados (10%)
+- **Rúbrica:** Integrada en `bloque-3/README.md`
+- **Modalidad:** Individual
 
 ---
 

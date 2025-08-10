@@ -10,12 +10,11 @@
 
 ## Componentes de Evaluación
 
-### Caso Práctico Bloque 3 (Notebook) (20% del curso)
-**Ubicación:** [caso-practico/README.md](caso-practico/README.md)
-- **Descripción:** "Caso Práctico Bloque 3: Sistema Básico de Análisis Predictivo"
-- **Modalidad:** Individual, 4 semanas de desarrollo
+### Caso Práctico Bloque 3 (20% del curso)
+**Ubicación:** `caso-practico/caso-bloque3.md`
+- **Modalidad:** Individual
 - **Componentes:** EDA + Predicción simple + Visualización + Documentación
-- **Entrega:** Notebook ejecutable (sin confundir con proyecto integrador de semana 15 en contenido)
+- **Entrega:** Notebook ejecutable
 
 ### Presentación Final (10% del curso)
 **Formato:** Presentación individual de 15 minutos
@@ -25,7 +24,7 @@
 - **Audiencia:** Profesores + invitados de la industria (opcional)
 
 ### Sistema de Evaluación Integral
-**Rúbrica Integrada:** (contenido completo fusionado, ya no se requiere archivo externo; este caso práctico es la evidencia evaluable del Bloque 3, distinto del proyecto aplicado de aprendizaje en contenido/semanas)
+**Rúbrica Integrada:** (contenido completo fusionado; este caso práctico es la evidencia evaluable del Bloque 3)
 - **Evaluación holística** de competencias del curso
 - **Criterios profesionales** al nivel esperado preparatoria avanzada
 - **Portfolio de evidencias** para empleabilidad
@@ -367,4 +366,4 @@ proyecto_final/
 
 2025-08-10: Fusión de contenido de rúbrica (rubricas/rubrica-completa.md) directamente en este README; eliminación del archivo externo para reducir redundancia documental.
 2025-08-10: En proceso de consolidación: carpeta `proyecto-integrador/` será absorbida como recursos del `caso-practico/` para alinear estructura a bloques 1 y 2.
-2025-08-10: Consolidación completada: recursos (dataset, notebook solución) movidos a `caso-practico/` y carpeta antigua eliminada.
+2025-08-10: Consolidación ajustada: estructura homologada a bloques 1 y 2 (directorios: caso-practico/, datasets/, solucion-caso-practico/).

@@ -1,8 +1,8 @@
 # Bloque 3: Proyecto Integrador Final
 ## Evaluación Integral de Competencias
 
-**Duración:** Semanas 13-16  
-**Ponderación:** 30% de la calificación final  
+**Duración:** Semanas 15-16  
+**Ponderación Total Bloque 3:** 40% del curso (Quiz ML 15% + Caso Práctico 25%)  
 **Modalidad:** Individual intensivo  
 **Enfoque:** Integración completa de competencias en sistema predictivo profesional
 
@@ -10,26 +10,118 @@
 
 ## Componentes de Evaluación
 
-### Proyecto Final (20% del curso)
-**Ubicación:** [proyecto-integrador/README.md](proyecto-integrador/README.md)
-- **Sistema:** "Análisis Predictivo para Fútbol" completo
-- **Modalidad:** Individual, 4 semanas de desarrollo
-- **Componentes:** EDA + ML + Dashboard + Documentación
-- **Entrega:** Notebook ejecutable + modelos + interface interactiva
+### Quiz / Canvas ML Básico (15% del curso)
+**Propósito:** Comprobar comprensión conceptual mínima (modelo, entrenamiento, predicción, overfitting) antes del desarrollo del caso.
+**Formato:** 12-18 ítems (70% opción múltiple / 30% numéricas simples) seleccionados de banco etiquetado.
+**Duración objetivo:** 25-30 minutos.
+**Criterios de éxito:** ≥70% respuestas correctas para evidenciar preparación.
 
-### Presentación Final (10% del curso)
-**Formato:** Presentación individual de 15 minutos
-- **Demo en vivo:** Funcionamiento del sistema completo
-- **Explicación técnica:** Metodología y decisiones de diseño
-- **Q&A profesional:** Manejo de preguntas técnicas y de negocio
-- **Audiencia:** Profesores + invitados de la industria (opcional)
+### Caso Práctico Bloque 3 (25% del curso)
+**Ubicación:** `caso-practico/caso-bloque3.md`
+- **Modalidad:** Individual
+- **Componentes:** EDA + Predicción simple + Visualización + Documentación
+- **Entrega:** Notebook ejecutable
+
+### Presentación (integrada en el caso)
+La comunicación de resultados se evalúa ahora dentro del 25% total del caso práctico (subcomponentes de Documentación / Comunicación) sin ponderación separada.
 
 ### Sistema de Evaluación Integral
-**Ubicación:** [rubricas/rubrica-completa.md](rubricas/rubrica-completa.md)
-- **Evaluación holística** de todas las competencias del curso
-- **Criterios profesionales** equiparables a la industria
+**Rúbrica Integrada:** (el caso práctico + quiz constituyen la evidencia evaluable del Bloque 3)
+- **Evaluación holística** de competencias del curso
+- **Criterios profesionales** al nivel esperado preparatoria avanzada
 - **Portfolio de evidencias** para empleabilidad
 - **Certificación de competencias** técnicas y blandas
+
+---
+
+## Rúbricas de Evaluación Completas (Integradas)
+### Sistema de Evaluación por Competencias
+
+**Curso:** Análisis de Datos de Fútbol con Python  
+**Modalidad:** Competencias y proyectos colaborativos
+
+---
+
+### Estructura General de Evaluación
+
+#### Distribución de Calificaciones Global (Vigente)
+- Actividad 1: Examen Canvas Bloque 1 (15%)
+- Actividad 2: Caso Práctico Bloque 1 (15%)
+- Actividad 3: Examen Canvas Bloque 2 (15%)
+- Actividad 4: Caso Práctico Bloque 2 (15%)
+- Actividad 5: Quiz / Canvas ML Básico Bloque 3 (15%)
+- Actividad 6: Caso Práctico Bloque 3 (25%)
+
+---
+
+### 1. Rúbrica Exámenes Canvas (Bloques 1 y 2)
+Se mantienen aquí solo con fines de referencia transversal; la evaluación final del bloque 3 no incluye examen Canvas.
+
+**Configuración:** 70% opción múltiple, 30% numéricas, duración 45-60 min, un intento. Selección aleatoria desde bancos etiquetados con niveles cognitivos [R][C][A][S].
+
+**Distribución cognitiva objetivo:** Conocimiento (40%) + Comprensión (35%) + Aplicación (25%) y progresiva inclusión de interpretación [S].
+
+---
+
+### 2. Rúbrica Casos Prácticos Colaborativos (Bloques 1 y 2)
+Referenciada para consistencia de criterios (no aplicable directamente al proyecto individual final).
+
+**Componentes:**
+1. Análisis Técnico (40%)  
+2. Trabajo Colaborativo (30%)  
+3. Comunicación y Presentación (30%)
+
+Cada sub‑criterio presenta niveles: Excelente / Bueno / Suficiente / Insuficiente.
+
+---
+
+### 3. Rúbrica Proyecto Integrador Final (Bloque 3)
+La siguiente rúbrica se aplica al Caso Práctico (25% del curso). Comunicación y presentación quedan integradas.
+
+#### 3.1 Caso Práctico (25% del curso)
+Subcomponentes y pesos relativos dentro del notebook (entre paréntesis el equivalente sobre la calificación total del curso):
+- Análisis Exploratorio de Datos (25% del notebook = 5% total)
+- Modelado de Machine Learning (35% del notebook = 7% total)
+- Dashboard Interactivo (25% del notebook = 5% total)
+- Documentación y Código (15% del notebook = 3% total)
+
+Cada subcomponente se evalúa en cuatro dimensiones: Exhaustividad/Implementación, Calidad de Insights / Selección de Modelos / Funcionalidad / Calidad del Código, Limpieza de Datos / Evaluación de Modelos / UX / Documentación, e Interpretación / Integración / Reproducibilidad según corresponda.
+
+#### 3.2 Comunicación Integrada
+La presentación en vivo se evalúa mediante evidencia en el notebook y exposición breve (dentro del mismo 25%). Criterios de narrativa y claridad se integran en Documentación y Código.
+
+---
+
+### 4. Criterios Transversales
+- Integridad Académica: originalidad del código, citación de fuentes, uso declarado de herramientas de IA.
+- Pensamiento Computacional: descomposición, patrones, abstracción, algoritmos.
+- Comunicación Técnica: adaptación a audiencia técnica/no técnica, visualizaciones efectivas, narrativa.
+- Responsabilidad Ética: transparencia de limitaciones y supuestos.
+
+### 5. Feedback y Mejora Continua
+- Feedback inmediato (Canvas) automatizado por tema.
+- Feedback formativo (checkpoints) en avance del notebook durante semanas 14-15.
+- Feedback sumativo posterior a la presentación: fortalezas + áreas de mejora + recomendaciones de aprendizaje futuro.
+
+### 6. Escala de Calificación Institucional (Referencia)
+| % | Interpretación |  
+|---|----------------|  
+| 95-100 | Dominio excepcional |  
+| 90-94 | Dominio sólido |  
+| 85-89 | Competencia buena |  
+| 80-84 | Satisfactorio |  
+| 75-79 | Suficiente mínimo |  
+| 70-74 | Bajo estándar |  
+| <70 | No acreditado |  
+
+### 7. Uso de la Rúbrica Durante el Desarrollo
+Recomendado auto‑chequeo al cierre de cada fase:  
+1. Cierra EDA (Semana 14 mitad) → Verifica criterios de Exploración.  
+2. Cierra primera versión de modelo (Semana 14 fin) → Verifica Implementación y Evaluación.  
+3. Cierra iteración de dashboard (Semana 15 mitad) → Verifica Funcionalidad y UX.  
+4. Cierra documentación (48h antes de entrega) → Verifica Reproducibilidad y Claridad.
+
+---
 
 ---
 
@@ -263,3 +355,9 @@ proyecto_final/
 ---
 
 *Este proyecto integrador representa la culminación del aprendizaje, donde los estudiantes demuestran su capacidad para trabajar como científicos de datos profesionales en el ámbito deportivo.*
+
+## Actualizaciones Recientes
+
+2025-08-10: Fusión de contenido de rúbrica (rubricas/rubrica-completa.md) directamente en este README; eliminación del archivo externo para reducir redundancia documental.
+2025-08-10: En proceso de consolidación: carpeta `proyecto-integrador/` será absorbida como recursos del `caso-practico/` para alinear estructura a bloques 1 y 2.
+2025-08-10: Consolidación ajustada: estructura homologada a bloques 1 y 2 (directorios: caso-practico/, datasets/, solucion-caso-practico/).

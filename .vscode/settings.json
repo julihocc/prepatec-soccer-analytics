@@ -24,5 +24,6 @@
     "python.analysis.addHoverSummaries": true,
     "python.analysis.supportAllPythonDocuments": true,
     "editor.defaultFormatter": "ms-python.black-formatter",
-    "python.languageServer": "Pylance"
+    "python.languageServer": "Pylance",
+    "terminal.integrated.shellIntegration.enabled": true
 }

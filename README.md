@@ -2,7 +2,7 @@
 
 ## Información del Curso
 
-**Versión:** 4.0.1  
+**Versión:** 4.0.2  
 **Nivel:** Preparatoria/Bachillerato (15-18 años)  
 **Duración:** 15 semanas (3 bloques de 5 semanas cada uno)  
 **Modalidad:** 3 sesiones de 50 minutos por semana  
@@ -77,72 +77,23 @@ Este curso te introduce al fascinante mundo de la ciencia de datos aplicada al f
 
 #### Semana 6: ¿Qué secretos esconden los datos del fútbol?
 
-- **Notebook:** `introduccion-exploracion.ipynb`
-- **Pregunta motivadora:** Si fueras analista del FC Barcelona, ¿qué le preguntarías a los datos de los últimos 200 partidos para descubrir patrones ocultos?
-- **Sesión 1 (50 min):** ¿Cómo interrogamos a los datos? - Preparación del laboratorio de análisis y primeras exploraciones
-- **Sesión 2 (50 min):** ¿Qué patrones emergen visualmente? - Visualización de distribuciones y correlaciones
-- **Sesión 3 (50 min):** ¿Cómo validamos nuestros descubrimientos? - Verificación de la ventaja de casa y detección de sesgos
-- **Aplicación:** Análisis inicial de datos futbolísticos reales con herramientas profesionales
 
 #### Semana 7: ¿Todos los datos del fútbol hablan el mismo idioma?
 
-- **Notebook:** `tipos-datos-futbol.ipynb`
-- **Pregunta motivadora:** Si fueras analista del Real Madrid, ¿tratarías igual la información "Manchester City anotó 3 goles" que "el partido fue en enero"?
-- **Sesión 1 (50 min):** ¿Por qué importan los tipos de datos? - Distinción entre diferentes "idiomas" de información deportiva
-- **Sesión 2 (50 min):** ¿Qué revela cada tipo de dato? - Patrones específicos de datos numéricos, categóricos y temporales
-- **Sesión 3 (50 min):** ¿Cómo combinar diferentes tipos sabiamente? - Integración inteligente de múltiples fuentes de información
-- **Aplicación:** Manejo experto de datasets complejos con múltiples tipos de variables
 
 #### Semana 8: ¿Cómo descubren los entrenadores elite las tendencias invisibles?
 
-- **Notebook:** `estadistica-descriptiva.ipynb`
-- **Pregunta motivadora:** ¿Qué herramientas estadísticas usa Pep Guardiola para tomar decisiones que parecen "mágicas"?
-- **Sesión 1 (50 min):** ¿Qué revelan los promedios en el fútbol profesional? - Medidas de tendencia central en contexto deportivo
-- **Sesión 2 (50 min):** ¿Cómo medir la consistencia vs la impredecibilidad? - Medidas de dispersión y variabilidad
-- **Sesión 3 (50 min):** ¿Qué comparaciones son realmente válidas? - Análisis comparativo entre equipos, posiciones y temporadas
-- **Aplicación:** Evaluación estadística comprehensiva del rendimiento deportivo
 
 #### Semana 9: ¿Cómo hacer que los números cuenten historias convincentes?
 
-- **Notebook:** `visualizacion-datos.ipynb`
-- **Pregunta motivadora:** ¿Cómo crear visualizaciones que convenzan a Florentino Pérez de invertir 100 millones en un fichaje?
-- **Sesión 1 (50 min):** ¿Cuál es la gramática visual del análisis deportivo? - Principios de diseño para comunicación técnica
-- **Sesión 2 (50 min):** ¿Cómo dominar seaborn para análisis profesional? - Visualización avanzada de datos deportivos
-- **Sesión 3 (50 min):** ¿Cómo crear dashboards que impacten decisiones? - Integración de múltiples visualizaciones
-- **Aplicación:** Dashboard profesional de análisis comparativo
 
 #### Semana 10: ¿Cómo transformamos datos en recomendaciones que cambien estrategias?
 
-- **Notebook:** `analisis-interpretacion.ipynb`
-- **Pregunta motivadora:** ¿Cómo presentarías un análisis a Xavi que lo convenza de cambiar su táctica habitual?
-- **Sesión 1 (50 min):** ¿Cómo interpretar correlaciones sin caer en trampas lógicas? - Análisis crítico de relaciones entre variables
-- **Sesión 2 (50 min):** ¿Cómo construir narrativas convincentes basadas en datos? - Síntesis de hallazgos múltiples
-- **Sesión 3 (50 min):** ¿Cómo comunicar limitaciones y sesgos responsablemente? - Proyecto integrador del bloque
-- **Aplicación:** Reporte de análisis completo con recomendaciones estratégicas
 
 ---
 
 ### Bloque 3: ¿Podemos predecir el futuro del fútbol con datos? (Semanas 11-15)
-
-**Pregunta del bloque:** ¿Alguna vez has soñado con ser el analista que le dice a Xavi quién debe jugar el próximo Clásico?
-
-#### Semana 11: ¿Cómo crear "entrenadores digitales" que aprendan patrones?
-
-- **Notebook:** `modelado-predictivo-introduccion.ipynb`
-- **Pregunta motivadora:** Si pudieras crear un entrenador digital que aprenda de miles de partidos para predecir resultados, ¿cómo lo harías?
-- **Sesión 1 (50 min):** ¿Qué es un modelo que aprende? - Conceptos básicos con ejemplos del fútbol
-- **Sesión 2 (50 min):** ¿Cómo entrenamos nuestro primer modelo? - Práctica con datos reales sencillos
-- **Sesión 3 (50 min):** ¿Qué tan bueno es nuestro modelo? - Primeras métricas de evaluación
-- **Aplicación:** Predecir si gana el Barcelona o el Real Madrid basándose en datos simples
-
-#### Semana 12: ¿Por qué los mejores equipos tienen especialistas?
-
-- **Notebook:** `modelos-avanzados-clasificacion.ipynb`
-- **Pregunta motivadora:** ¿Por qué el Barcelona tiene entrenador de porteros, de física y de táctica? ¿Podemos hacer lo mismo con modelos?
-- **Sesión 1 (50 min):** ¿Qué hace cada especialista? - Diferentes tipos de modelos explicados fácilmente
-- **Sesión 2 (50 min):** ¿Cómo comparamos especialistas? - Random Forest vs otros modelos básicos
-- **Sesión 3 (50 min):** ¿Pueden trabajar en equipo? - Combinación simple de predicciones
-- **Aplicación:** Equipo de modelos prediciendo quién debe ser titular
+... (estructura semanal existente más abajo en el documento) ...
 
 #### Semana 13: ¿Cómo saber si podemos confiar en nuestras predicciones?
 
@@ -378,32 +329,27 @@ pip install -r requirements.txt
 ### Distribución General (100%)
 
 ```
- EVALUACIÓN COMPLETA DEL CURSO
-├── 1er Parcial (35%) - Bloque 1: Python Fundamentals
-│   ├── Examen Canvas (20%) - Fundamentos de programación
-│   └── Caso Práctico Colaborativo (15%) - Análisis básico de club
-│
-├── 2do Parcial (35%) - Bloque 2: Exploración de Datos  
-│   ├── Examen Canvas (20%) - Análisis y visualización
-│   └── Caso Práctico Colaborativo (15%) - Sistema de scouting
-│
-└── Final (30%) - Bloque 3: Proyecto Integrador
-    ├── Notebook Jupyter (20%) - Sistema predictivo completo
-    └── Presentación (10%) - Comunicación de resultados
+ EVALUACIÓN COMPLETA DEL CURSO (Nueva Distribución)
+├── Actividad 1: Examen Canvas Bloque 1 (15%)
+├── Actividad 2: Caso Práctico Bloque 1 (15%)
+├── Actividad 3: Examen Canvas Bloque 2 (15%)
+├── Actividad 4: Caso Práctico Bloque 2 (15%)
+├── Actividad 5: Quiz / Canvas ML Básico Bloque 3 (15%)
+└── Actividad 6: Caso Práctico Bloque 3 (25%)
 ```
 
-### Equivalencias con Syllabus Tec
+### Equivalencias con Syllabus Tec (Actualizadas)
 
-- **1er Parcial = Bloque 1** (35%)
-- **2do Parcial = Bloque 2** (35%)
-- **Final = Bloque 3** (30%)
-- **Sin actividades separadas** - Integradas en casos prácticos
+- **1er Parcial = Bloque 1** (30%: Canvas 15% + Caso 15%)
+- **2do Parcial = Bloque 2** (30%: Canvas 15% + Caso 15%)
+- **Final = Bloque 3** (40%: Quiz ML 15% + Caso Práctico 25%)
+- **Integración de presentación final** dentro del Caso Práctico Bloque 3 (no ponderación separada)
 
 ---
 
 ## 2. COMPONENTES DE EVALUACIÓN DETALLADOS
 
-### 2.1 Exámenes Canvas (40% total: 20% + 20%)
+### 2.1 Exámenes Canvas (30% total: 15% + 15%)
 
 #### Características
 
@@ -413,7 +359,7 @@ pip install -r requirements.txt
 - **Banco:** 70-75 preguntas por bloque
 - **Selección:** 20-25 preguntas aleatorias por examen
 
-#### Bloque 1 - Canvas (20%)
+#### Bloque 1 - Canvas (15%)
 
 ```python
 # Temas evaluados:
@@ -424,7 +370,7 @@ pip install -r requirements.txt
 - Pandas y numpy básico (20%)
 ```
 
-#### Bloque 2 - Canvas (20%)
+#### Bloque 2 - Canvas (15%)
 
 ```python
 # Temas evaluados:
@@ -485,26 +431,34 @@ pip install -r requirements.txt
 - Comunicación (10%)
 ```
 
-### 2.3 Proyecto Integrador Final (30%)
+### 2.3 Quiz / Canvas ML Básico (15%)
 
-#### Estructura del Proyecto
+#### Propósito
+- Verificar comprensión conceptual básica de machine learning antes del desarrollo del caso final.
+- Mantener carga cognitiva acotada: vocabulario simplificado y analogías deportivas.
+
+#### Alcance de Contenidos
+- Concepto de modelo (entrenador) y entrenamiento (práctica).
+- Diferencia predicción vs. resultado real.
+- Regresión lineal y logística (idea cualitativa, sin matemáticas avanzadas).
+- Overfitting (memorización de jugadas) y generalización.
+
+### 2.4 Caso Práctico Bloque 3 (25%)
+
+#### Estructura del Caso (Presentación integrada)
 
 ```markdown
 ## "Sistema de Análisis Predictivo para Fútbol"
 ### Modalidad: Individual
-### Duración: 4 semanas
+### Ventana de desarrollo: Semanas 15-16
 
-## Componentes:
-1. Notebook Jupyter (20% de la calificación total)
-   - Análisis Exploratorio (25% del notebook)
-   - Modelado ML (35% del notebook)
-   - Dashboard Interactivo (25% del notebook)
-   - Documentación (15% del notebook)
+## Componentes (sub‑pesos internos del 25%):
+- Análisis Exploratorio (25% del notebook = 6.25% curso)
+- Modelado ML Básico (35% del notebook = 8.75% curso)
+- Dashboard / Visualización (25% del notebook = 6.25% curso)
+- Documentación + Narrativa (15% del notebook = 3.75% curso)
 
-2. Presentación Final (10% de la calificación total)
-   - 15 minutos individuales
-   - Demo interactiva
-   - Q&A técnico
+La presentación y comunicación se evalúan dentro de Documentación + Narrativa; no existe ponderación separada.
 ```
 
 ---
@@ -536,10 +490,10 @@ pip install -r requirements.txt
     ├── Examen Canvas B2 (Semana 13)  
     └── Caso Práctico B2 (Semanas 13-14)
 
-🟨 BLOQUE 3: PROYECTO INTEGRADOR (Semanas 15-16)
-├── Semana 15: Desarrollo proyecto
-├── Semana 16: Presentaciones finales
-└──  Evaluación Final (30%)
+🟨 BLOQUE 3: MODELADO PREDICTIVO (Semanas 15-16)
+├── Semana 15: Desarrollo caso predictivo
+├── Semana 16: Iteración final y comunicación integrada
+└──  Evaluaciones: Quiz ML (15%) + Caso Práctico (25%)
 ```
 
 ---
@@ -896,3 +850,14 @@ Para dudas sobre el curso o el material didáctico, contacta al equipo docente.
 *Este curso te transformará de estudiante curioso en analista capaz de descubrir insights que podrían cambiar estrategias deportivas. Cada línea de código que escribas te acercará más a entender cómo la tecnología está revolucionando el mundo del fútbol.*
 
 **¿Estás listo para empezar tu jornada hacia convertirte en el próximo analista que ayude a ganar un Clásico?**
+
+---
+
+## Actualizaciones Recientes
+
+2025-08-10: Ampliado banco Canvas Bloque 2 de 75 a 105 preguntas (incorporación de 30 ítems Extended con etiqueta [S]; ajuste distribución cognitiva global documentado en evaluaciones/bloque-2/README.md).
+2025-08-10: Fusión de rúbrica completa de Bloque 3 en evaluaciones/bloque-3/README.md y eliminación de rubricas/rubrica-completa.md para consolidar criterios en punto único.
+2025-08-10: Renombrado componente evaluativo de Bloque 3 a "Caso Práctico"; posteriormente fusionado contenido y eliminado `evaluaciones/bloque-3/caso-practico/README.md` para homologar con Bloques 1 y 2.
+2025-08-10: Consolidación final Bloque 3: eliminado directorio `evaluaciones/bloque-3/proyecto-integrador/` (contenido migrado a caso-practico/datasets y solucion-caso-practico).
+2025-08-10: Homologada estructura de `evaluaciones/bloque-3/` a formato de Bloques 1 y 2 (carpetas: caso-practico/, datasets/, solucion-caso-practico/; archivo de caso renombrado a caso-bloque3.md).
+2025-08-10: Limpieza final Bloque 3: eliminación de archivos legacy y duplicados (README residual, carpeta proyecto-integrador y assets obsoletos) asegurando fuente única del caso práctico.

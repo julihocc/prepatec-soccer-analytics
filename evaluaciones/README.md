@@ -9,47 +9,42 @@
 
 ## Estructura de Evaluación
 
-### Ponderación General (100%)
+### Ponderación General (100%) NUEVA DISTRIBUCIÓN
 
 ```
  EVALUACIÓN COMPLETA DEL CURSO
-├── 1er Parcial (35%) - Bloque 1: Python Fundamentals
-│   ├── Examen Canvas (20%) - Fundamentos de programación
-│   └── Caso Práctico Colaborativo (15%) - Análisis de club
-│
-├── 2do Parcial (35%) - Bloque 2: Exploración de Datos  
-│   ├── Examen Canvas (20%) - Análisis y visualización
-│   └── Caso Práctico Colaborativo (15%) - Sistema de scouting
-│
-└── Final (30%) - Bloque 3: Proyecto Integrador
-    ├── Notebook Jupyter (20%) - Sistema predictivo
-    └── Presentación (10%) - Comunicación de resultados
+├── Actividad 1 (15%) - Examen Canvas Bloque 1
+├── Actividad 2 (15%) - Caso Práctico Bloque 1
+├── Actividad 3 (15%) - Examen Canvas Bloque 2
+├── Actividad 4 (15%) - Caso Práctico Bloque 2
+├── Actividad 5 (15%) - Examen / Quiz Bloque 3 (Canvas / evaluación teórica ML básico)
+├── Actividad 6 (25%) - Caso Práctico Bloque 3 (proyecto predictivo individual)
 ```
 
 ---
 
 ## Estructura por Bloques
 
-### [Bloque 1](bloque-1/) - Python Fundamentals (35%)
+### [Bloque 1](bloque-1/) - Python Fundamentals (30%)
 **Semanas 1-5: Fundamentos de Programación**
-- **[Canvas](bloque-1/canvas/):** 70 preguntas sobre fundamentos Python (20%)
+- **[Canvas](bloque-1/canvas/):** 70 preguntas sobre fundamentos Python (15%)
 - **[Caso Práctico](bloque-1/caso-practico/):** Análisis de rendimiento de club (15%)
 - **[Rúbricas](bloque-1/rubricas/):** Criterios específicos del bloque
 - **Modalidad:** Examen individual + proyecto colaborativo (3-4 estudiantes)
 
-### [Bloque 2](bloque-2/) - Exploración de Datos (35%)  
+### [Bloque 2](bloque-2/) - Exploración de Datos (30%)  
 **Semanas 6-10: Análisis y Visualización de Datos Deportivos**
-- **[Canvas](bloque-2/canvas/):** 75 preguntas sobre exploración de datos (20%)
+- **[Canvas](bloque-2/canvas/):** 75 preguntas sobre exploración de datos (15%)
 - **[Caso Práctico](bloque-2/caso-practico/):** Sistema de scouting avanzado (15%)
 - **[Rúbricas](bloque-2/rubricas/):** Criterios específicos del bloque
 - **Modalidad:** Examen individual + proyecto colaborativo (3-4 estudiantes)
 
-### [Bloque 3](bloque-3/) - Proyecto Integrador (30%)
-**Semanas 11-16: Sistema Predictivo Completo**
-- **[Proyecto Final](bloque-3/proyecto-integrador/):** Sistema de análisis predictivo (20%)
-- **[Presentación](bloque-3/proyecto-integrador/):** Comunicación de resultados (10%)
-- **[Rúbricas](bloque-3/rubricas/):** Evaluación integral por competencias
-- **Modalidad:** Individual, 4 semanas de desarrollo intensivo
+### [Bloque 3](bloque-3/) - Modelado Predictivo (40%)
+**Semanas 15-16: Integración de Competencias**
+- **Quiz ML Básico:** 15%
+- **Caso Práctico:** `bloque-3/caso-practico/caso-bloque3.md` (25%)
+- **Rúbrica:** Integrada en `bloque-3/README.md`
+- **Modalidad:** Individual
 
 ---
 

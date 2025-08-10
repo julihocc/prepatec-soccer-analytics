@@ -50,14 +50,22 @@ contenido/
 ### Sistema de Evaluación
 ```
 evaluaciones/
-├── canvas/ (Bancos de preguntas automáticas)
-├── casos-practicos/ (Proyectos colaborativos 3-4 estudiantes)
-└── rubricas/ (40% técnico + 30% aplicación + 30% comunicación)
+├── canvas/ (Bancos de preguntas automáticas CON MÉTODO SOCRÁTICO)
+├── casos-practicos/ (Proyectos colaborativos 3-4 estudiantes CON REFLEXIÓN GUIADA)
+└── rubricas/ (40% técnico + 30% aplicación + 30% comunicación/RAZONAMIENTO)
 ```
+
+#### Enfoque Socrático en Evaluaciones:
+- **Canvas**: Preguntas que evalúan comprensión conceptual, no memorización
+- **Casos prácticos**: Situaciones deportivas complejas que requieren análisis paso a paso
+- **Rúbricas**: Valorar proceso de razonamiento y justificación de decisiones
+- **Reflexión**: Incluir preguntas metacognitivas sobre el aprendizaje propio
 
 ## Convenciones Críticas
 
 ### Metodología Socrática Obligatoria
+**APLICAR EN TODO EL PROYECTO**: Contenido educativo Y evaluaciones deben usar método socrático.
+
 ```python
 # PATRÓN: Pregunta → Reflexión → Descubrimiento → Código
 print("¿Te has preguntado alguna vez cómo un entrenador decide su alineación?")
@@ -70,6 +78,18 @@ print(f"¿Cuántos equipos tenemos? Descubrámoslo: {len(equipos)}")
 # Preguntas reflexivas DESPUÉS del código
 print("¿Qué patrones observas en estos datos?")
 ```
+
+#### Aplicación en Contenido:
+- Comenzar cada concepto con pregunta motivadora
+- Usar analogías deportivas antes de explicaciones técnicas
+- Incluir reflexiones intermedias durante el código
+- Terminar con síntesis que conecte aprendizajes
+
+#### Aplicación en Evaluaciones:
+- Preguntas que requieren razonamiento, no memorización
+- Escenarios deportivos que demanden análisis crítico
+- Casos prácticos que integren múltiples conceptos
+- Evaluación del proceso de pensamiento, no solo resultados
 
 ### Estructura de Notebook (OBLIGATORIA)
 ```markdown
@@ -127,6 +147,13 @@ equipos = ['Barcelona', 'Real Madrid', 'Manchester City', 'Bayern Munich']
 
 # Verificar que ejercicios tomen ~60 minutos máximo
 ```
+
+#### Principios de Evaluación Socrática:
+1. **Preguntas abiertas**: "¿Por qué crees que...?" en lugar de "¿Cuál es...?"
+2. **Análisis de casos**: Presentar situaciones deportivas para analizar
+3. **Justificación obligatoria**: Estudiantes deben explicar su razonamiento
+4. **Conexión conceptual**: Evaluar capacidad de relacionar conceptos
+5. **Aplicación práctica**: Resolver problemas deportivos reales con datos
 
 ## Patterns Específicos del Proyecto
 

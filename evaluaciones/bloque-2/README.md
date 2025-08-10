@@ -1,9 +1,9 @@
-# Bloque 2: Exploración de Datos Deportivos
-## Evaluación de Análisis y Visualización
+# Bloque 2: Exploración y Análisis Descriptivo de Datos Deportivos
+## Evaluación de Exploración, Calidad, Estadística y Visualización
 
-**Duración:** Semanas 8-12  
+**Duración:** Semanas 6-10  
 **Ponderación:** 35% de la calificación final  
-**Enfoque:** Dominio de exploración, análisis estadístico y visualización de datos deportivos
+**Enfoque:** Exploración estructural, calidad de datos, estadística descriptiva, métricas de eficiencia y visualización interpretativa básica
 
 ---
 
@@ -11,183 +11,150 @@
 
 ### Examen Canvas (20% del curso)
 **Ubicación:** [canvas/banco-preguntas-bloque2.md](canvas/banco-preguntas-bloque2.md)
-- **Banco:** 75 preguntas especializadas
-- **Formato:** 70% opción múltiple + 30% respuesta numérica  
-- **Selección:** 20-25 preguntas aleatorias por examen
-- **Tiempo:** 45-60 minutos
-- **Cobertura:** Exploración, tipos de datos deportivos, estadística descriptiva, seaborn
+- **Banco actual:** 75 preguntas (Núcleo). Próxima ampliación: Extended con ítems [S].
+- **Formato:** ~70% opción múltiple / ~30% numéricas (tolerancia 5%).
+- **Selección fija:** 22 preguntas (muestreo estratificado cognitivo).
+- **Distribución cognitiva objetivo:** [R] 7-8, [C] 7-8, [A] 5-6, [S] 1-2 (hasta ampliar banco: 0-1 placeholder [S]).
+- **Tiempo:** 50 minutos.
+- **Cobertura temática (20% c/u):** Exploración estructural y calidad, estadística descriptiva, métricas derivadas (goles_por_partido, contribucion_ofensiva), agrupaciones + outliers simples, visualización e interpretación básica.
+- **Segmentación futura:** Añadir Extended (interpretación y decisiones tácticas) sin renumerar Núcleo.
+- **Control de calidad:** Verificar conteo de etiquetas antes de publicar evaluación.
 
 ### Caso Práctico Colaborativo (15% del curso)
 **Ubicación:** [caso-practico/caso-bloque2.md](caso-practico/caso-bloque2.md)
-- **Proyecto:** "Sistema de Scouting y Análisis Táctico"
-- **Equipos:** 3-4 estudiantes
-- **Duración:** 2 semanas  
-- **Entregables:** Análisis completo + Dashboard interactivo + Presentación
-- **Enfoque:** Aplicación profesional de técnicas de exploración de datos
+- **Proyecto:** "Análisis Básico, Calidad y Eficiencia de Jugadores" (Actualizado v2).
+- **Equipos:** 2-3 estudiantes.
+- **Duración:** 1 semana.
+- **Entregables:** Notebook (exploración, calidad, métricas, outliers, visualizaciones, síntesis) + Presentación breve (3-4 diapositivas).
+- **Enfoque:** Profundizar en limpieza simple, estadística descriptiva e interpretación de métricas de eficiencia sin herramientas avanzadas.
 
 ### Sistema de Evaluación
 **Ubicación:** [rubricas/README.md](rubricas/README.md)
-- **Criterios especializados** para análisis de datos
-- **Evaluación de visualizaciones** y dashboards
-- **Competencias analíticas** específicas
-- **Estándares profesionales** de la industria
+- **Rúbrica caso 40/30/30** (Exploración-Calidad / Análisis-Métricas / Visualización-Interpretación).
+- **Distribución cognitiva examen** documentada con metas por etiqueta.
+- **Competencias transversales** (interpretación y comunicación) integradas.
+- **Progresión pedagógica** coherente con Bloque 1 y puente hacia fundamentos de modelado (Bloque 3 Semana 11).
 
 ---
 
 ## Objetivos de Aprendizaje
 
 ### Competencias de Exploración
-- **Carga de datos:** CSV, Excel, múltiples formatos deportivos
-- **Limpieza de datos:** Valores faltantes, outliers, inconsistencias
-- **Validación:** Verificación de integridad y calidad de datos
-- **Ingeniería de features:** Creación de métricas deportivas derivadas
+- **Carga de datos CSV:** Lectura, inspección inicial (`head`, `info`).
+- **Calidad básica:** Tipos, valores faltantes, rangos simples.
+- **Validación mínima:** Detección de inconsistencias sencillas (edades fuera de rango, valores negativos imposibles).
+- **Métricas derivadas básicas:** `goles_por_partido`, `contribucion_ofensiva`.
 
 ### Competencias Estadísticas  
-- **Estadística descriptiva:** Media, mediana, desviación, percentiles
-- **Análisis de distribuciones:** Histogramas, boxplots, normalidad
-- **Correlaciones:** Relaciones entre variables deportivas
-- **Segmentación:** Análisis por posición, equipo, temporada
+- **Descriptiva esencial:** Media, mediana, desviación estándar, conteos.
+- **Distribuciones simples:** Histogramas y boxplots básicos.
+- **Segmentación:** Agrupaciones por posición (groupby) y comparación de promedios.
+- **Variabilidad:** Observación de dispersión sin pruebas formales.
 
 ### Competencias de Visualización
-- **Seaborn avanzado:** Gráficos estadísticos especializados
-- **Dashboard interactivo:** Widgets y controles dinámicos
-- **Storytelling visual:** Narrativas basadas en datos
-- **Presentación profesional:** Gráficos para audiencias deportivas
+- **Seaborn básico:** Barras, caja, dispersión, histograma.
+- **Configuración estética uniforme:** Paleta `viridis`, títulos y ejes claros.
+- **Comparación visual:** Patrones entre posiciones y métricas derivadas.
+- **Interpretación breve:** Texto inmediato tras cada gráfico.
 
 ### Competencias Analíticas
-- **Interpretación de datos:** Insights más allá de estadísticas básicas
-- **Contexto deportivo:** Aplicación a scouting y análisis táctico  
-- **Pensamiento crítico:** Validación de conclusiones con evidencia
-- **Comunicación de hallazgos:** Recomendaciones accionables
+- **Interpretación focalizada:** Explicar qué indica una diferencia de promedio.
+- **Contexto futbolístico básico:** Relevancia de métricas para roles (delantero vs defensa).
+- **Pensamiento crítico inicial:** Evaluar impacto de un outlier.
+- **Comunicación clara:** Síntesis en 3-5 conclusiones accionables sencillas.
 
 ---
 
-## Cronograma de Evaluación
+## Cronograma de Evaluación (Propuesto)
 
-### Semana 12: Preparación Intensiva
-- **Canvas disponible:** Banco completo liberado para estudio avanzado
-- **Formación estratégica de equipos:** Balanceando habilidades técnicas
-- **Datasets complejos:** Acceso a datos multi-dimensionales de scouting
+### Semana 9: Preparación
+- **Canvas:** Habilitar práctica con banco Núcleo (restringir Extended hasta ampliación).
+- **Formación de equipos:** Confirmar 2-3 integrantes.
+- **Repaso:** Sesión guiada de estadística descriptiva.
 
-### Semana 13: Evaluaciones Iniciales  
-- **Lunes-Miércoles:** Ventana para examen Canvas
-- **Jueves:** Lanzamiento del caso práctico de scouting
-- **Viernes:** Workshop de herramientas avanzadas (plotly, widgets)
-
-### Semana 14: Desarrollo Intensivo
-- **Lunes-Martes:** Análisis exploratorio profundo
-- **Miércoles-Jueves:** Desarrollo del dashboard interactivo
-- **Viernes:** Checkpoint de integración y feedback
-
-### Semana 15: Finalización y Presentaciones
-- **Lunes-Miércoles:** Refinamiento final de análisis y dashboard
-- **Jueves:** Entrega de todos los entregables
-- **Viernes:** Presentaciones profesionales (15 min por equipo)
+### Semana 10: Evaluaciones
+- **Examen Canvas:** Ventana Lunes-Martes (22 ítems, 50 min).
+- **Lanzamiento caso práctico:** Martes posterior al examen.
+- **Checkpoint interno:** Jueves (exploración + métricas derivadas listas).
+- **Entrega:** Viernes (notebook y presentación). Presentaciones breves mismo día.
 
 ---
 
-## Criterios de Éxito Avanzados
+## Criterios de Éxito (Alineados a Rúbrica 40/30/30)
 
-### Nivel Suficiente (70-79%)
-- **Exploración correcta** con manejo básico de datos faltantes
-- **Visualizaciones funcionales** con seaborn estándar
-- **Dashboard básico** con funcionalidad mínima
-- **Insights válidos** aunque superficiales
+### Suficiente (70-79%)
+- Exploración estructural y estadísticas básicas correctas.
+- Visualizaciones mínimas presentes con títulos simples.
+- Interpretaciones breves pero correctas.
 
-### Nivel Competente (80-89%)
-- **Limpieza de datos exhaustiva** con validaciones apropiadas
-- **Análisis estadístico profundo** con interpretación correcta
-- **Visualizaciones informativas** con calidad profesional
-- **Dashboard interactivo** con múltiples funcionalidades
+### Competente (80-89%)
+- Calidad revisada (rangos, NA) y métricas derivadas correctas.
+- Visualizaciones claras y ordenadas; respuestas a preguntas socráticas.
+- Conclusiones conectan métricas con roles de posición.
 
-### Nivel Sobresaliente (90-100%)
-- **Ingeniería de features innovadora** creando métricas únicas
-- **Análisis multidimensional** con insights no obvios
-- **Dashboard de nivel profesional** comparable a herramientas comerciales
-- **Recomendaciones estratégicas** implementables por scouts reales
+### Sobresaliente (90-100%)
+- Outliers evaluados con criterio y justificación.
+- Métricas derivadas usadas para recomendaciones concretas.
+- Síntesis final clara: priorización y recomendación para entrenador.
 
 ---
 
-## Tipos de Análisis Requeridos
+## Alcance de Análisis Requerido (Ajustado al Nivel)
 
-### Análisis de Rendimiento Individual
-- **Métricas por posición:** Especialización de KPIs según rol
-- **Evolución temporal:** Tendencias de rendimiento por jugador
-- **Comparaciones peer:** Benchmarking contra jugadores similares
-- **Análisis de forma:** Patrones de consistencia y rachas
+### Rendimiento de Jugadores
+- Promedios por posición (goles, asistencias, partidos jugados).
+- Métricas derivadas simples (goles_por_partido, contribucion_ofensiva).
+- Identificación de top 3 por contribución.
 
-### Análisis Táctico de Equipos
-- **Patrones de juego:** Estilos ofensivos y defensivos identificables
-- **Rendimiento contextual:** Local vs visitante, competición, rival
-- **Análisis de eventos:** Distribución espacial y temporal de acciones
-- **Factores de éxito:** Variables que correlacionan con victorias
+### Calidad y Dispersión
+- Revisión de tipos y NA.
+- Detección sencilla de outliers (media + 2*std) y reflexión.
 
-### Dashboard Interactivo Profesional
-- **Filtros múltiples:** Posición, edad, equipo, competición, fecha
-- **Comparaciones dinámicas:** Hasta 4 jugadores simultáneamente  
-- **Visualizaciones actualizables:** Gráficos que responden a filtros
-- **Exportación de reportes:** PDF generados automáticamente
+### Visualización
+- Barras, caja, dispersión, histograma.
+- Comparación clara entre posiciones.
 
 ---
 
-## Herramientas y Tecnologías
+## Herramientas y Tecnologías (Limitadas al Alcance)
 
-### Stack Técnico Requerido
-- **Pandas avanzado:** GroupBy, merge, pivot tables
-- **Seaborn especializado:** FacetGrid, pair plots, heat maps
-- **Plotly básico:** Gráficos interactivos opcionales
-- **Widgets de Jupyter:** ipywidgets para interactividad
+### Stack Necesario
+- pandas (agrupaciones, agregaciones básicas).
+- seaborn (barras, boxplot, scatter, histograma).
+- matplotlib (ajustes menores de etiquetas).
 
-### Datasets Profesionales
-- **Múltiples ligas:** Premier League, La Liga, Serie A, Bundesliga
-- **Datos históricos:** 3+ temporadas para análisis temporal
-- **Granularidad detallada:** Eventos por partido con coordenadas
-- **Métricas avanzadas:** xG, posesión, duelos, etc.
+### Datasets
+- CSV único con jugadores juveniles (columnas: goles, asistencias, partidos, edad, posición).
+- Tamaño pequeño para ejecución rápida en clase.
 
-### Infraestructura de Desarrollo
-- **Jupyter Lab:** Entorno de desarrollo recomendado
-- **GitHub Classroom:** Para colaboración (opcional)
-- **Datasets compartidos:** Almacenamiento en cloud para el equipo
-- **Templates avanzados:** Estructuras base para análisis complejo
+### Entorno
+- Jupyter Notebook estándar.
+- Sin dashboards ni interactividad avanzada en este bloque.
 
 ---
 
-## Preparación Estratégica
+## Preparación Focalizada
 
-### Para Examen Canvas Avanzado:
-1. **Dominar seaborn completamente:** Todos los tipos de gráfico principales
-2. **Estadística aplicada:** Interpretación de correlaciones, distribuciones
-3. **Casos de uso deportivos:** Cuándo usar cada tipo de análisis
-4. **Manejo de datos complejos:** Limpieza, transformación, validación
+### Para Examen Canvas
+1. Practicar exploración: `head`, `info`, dtypes, NA.
+2. Repasar fórmulas de media, mediana, desviación (interpretación simple).
+3. Ejercitar groupby para promedios por posición.
+4. Comprender cuándo usar cada visualización básica.
+5. Interpretar un outlier y su efecto en el promedio.
 
-### Para Caso Práctico de Scouting:
-1. **Dividir especialidades:** EDA, visualización, dashboard, presentación
-2. **Datasets de práctica:** Familiarizarse con estructura antes del proyecto
-3. **Benchmarking profesional:** Revisar herramientas reales de scouting
-4. **Narrativa convincente:** Preparar storyline para scouts profesionales
-
-### Recursos Críticos Específicos:
-- **Análisis por posición:** Métricas relevantes para cada rol
-- **Mapas de calor:** Visualización de eventos en campo
-- **Correlaciones múltiples:** Identificación de relaciones complejas
-- **Dashboard UX:** Principios de diseño para usuarios no técnicos
+### Para Caso Práctico
+1. Dividir tareas: exploración/calidad, métricas/outliers, visualizaciones/síntesis.
+2. Preparar plantilla de conclusiones (5 preguntas clave del caso).
+3. Ensayar explicación de una métrica derivada en <30 segundos.
+4. Verificar ejecución completa antes de preparar presentación.
+5. Documentar decisiones (por qué se mantiene o no un outlier).
 
 ---
 
-## Conexión con la Industria
+## Conexión Progresiva
 
-### Contexto Profesional Real
-- **Herramientas similares:** Wyscout, InStat, StatsBomb
-- **Metodología actual:** Cómo trabajan scouts profesionales
-- **Métricas emergentes:** xG, PPDA, progressive passes
-- **Casos de éxito:** Transfers basados en análisis de datos
-
-### Preparación para Empleabilidad
-- **Portfolio deportivo:** Casos que demuestran competencias
-- **Lenguaje profesional:** Terminología de scouting y análisis
-- **Herramientas estándar:** Familiaridad con stack tecnológico actual
-- **Presentación ejecutiva:** Habilidades de comunicación con directivos
+Este bloque crea las bases prácticas (limpieza ligera, métricas descriptivas e interpretación) necesarias antes de introducir modelos predictivos simples en Bloque 3. Se evita deliberadamente complejidad (dashboards, métricas avanzadas) para asegurar comprensión sólida.
 
 ---
 
-*Este bloque transforma estudiantes de programadores básicos a analistas de datos deportivos competentes, con habilidades directamente aplicables en la industria del fútbol profesional.*
+*Este bloque consolida la transición de fundamentos Python (Bloque 1) a análisis estructurado de datos, preparando al estudiante para el modelado introductorio del Bloque 3 sin sobrecargar con herramientas avanzadas prematuras.*

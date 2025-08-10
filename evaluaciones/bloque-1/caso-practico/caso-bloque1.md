@@ -184,35 +184,81 @@ Pregunta de reflexión: ¿En qué partidos la diferencia fue mayor? ¿Qué hipó
 
 ---
 
-## Criterios de Evaluación
+## Criterios de Evaluación (Rúbrica Completa Integrada)
 
-### Rúbrica Simplificada (100 puntos total) – Alineada 40/30/30
+Esta sección fusiona la rúbrica completa del Bloque 1 dentro del caso práctico (el archivo independiente ha sido retirado para simplificar la consulta). Mantiene el modelo estándar 40/30/30 y añade configuraciones del Examen Canvas para referencia global del bloque.
 
-| Componente | Puntos | ¿Qué evalúo? |
-|------------|--------|--------------|
-| **Fundamentos y Funciones** | 40 | Bucles, condicionales, listas/diccionarios, funciones con docstring y pruebas mínimas |
-| **Análisis y Visualización** | 30 | Estadísticas básicas, uso inicial de pandas, gráfico y lectura crítica |
-| **Comunicación y Razonamiento** | 30 | Claridad del notebook, explicación oral, respuestas socráticas y conclusiones |
+### 1. Examen Canvas (Referencia del Bloque)
+- Banco total: 120 preguntas (Core 1–75, Extended 76–120).
+- Preguntas por examen: 22 (muestreo estratificado objetivo: [R] 7-8, [C] 7-8, [A] 5-6, [S] 1-2).
+- Formato: ~70% opción múltiple / ~30% numéricas (tolerancia 5%).
+- Tiempo límite: 50 minutos. Intento único.
+- Segmentación: Uso principal Core (≥80%) + Extended para variabilidad e interpretación ([S]).
+- Temas 20% c/u: Variables y tipos, estructuras de control, funciones/modularidad, introducción pandas, visualización básica.
 
-### Criterios de Desempeño
+### 2. Caso Práctico Colaborativo (Este Documento)
+Ponderación: 15% del curso. Equipos de 2–3 estudiantes. Semana de desarrollo.
 
-#### Fundamentos y Funciones (40)
-- Excelente (36–40): Código limpio, sin errores, funciones probadas con assert, nombres descriptivos.
-- Bueno (32–35): Funciona, detalles menores (nombres o comentarios escasos).
-- Suficiente (28–31): Funciona con algunos errores lógicos corregibles.
-- Insuficiente (<28): Errores graves, funciones incompletas o sin pruebas.
+### 3. Rúbrica 40 / 30 / 30 (100 puntos totales)
+| Área | Puntos | Subcomponentes | Evidencia clave |
+|------|--------|----------------|-----------------|
+| Fundamentos de Código | 40 | Variables y estructuras (15) + Bucles y condicionales (15) + Funciones simples (10) | Código limpio, nombres descriptivos, lógica correcta, asserts |
+| Análisis Básico | 30 | Cálculos (puntos, promedios, diferencia goles) (15) + Análisis jugadores (10) + Primera visualización / DataFrame (5) | Resultados correctos explicados |
+| Comunicación y Colaboración | 30 | Comentarios y claridad (10) + Reflexiones socráticas (10) + Roles y presentación (10) | Justificaciones, roles visibles, coherencia estilo |
 
-#### Análisis y Visualización (30)
-- Excelente (27–30): Estadísticas correctas, DataFrame claro, gráfico legible y breve interpretación.
+### 4. Criterios de Desempeño Detallados
+#### 4.1 Fundamentos y Funciones (40)
+- Excelente (36–40): Código sin errores, funciones probadas con `assert`, nombres descriptivos y comentarios intencionales.
+- Bueno (32–35): Funciona; mínimos detalles de claridad.
+- Suficiente (28–31): Funciona con errores lógicos menores o ausencia de alguna prueba.
+- Insuficiente (<28): Errores graves o funciones incompletas.
+
+#### 4.2 Análisis y Visualización (30)
+- Excelente (27–30): Estadísticas correctas, DataFrame claro, gráfico legible + interpretación breve.
 - Bueno (24–26): Cálculos correctos, interpretación superficial.
-- Suficiente (21–23): Cálculos parcialmente correctos, visualización sin explicación.
-- Insuficiente (<21): Cálculos erróneos o falta DataFrame/gráfico.
+- Suficiente (21–23): Cálculos parcialmente correctos o visualización sin explicación.
+- Insuficiente (<21): Cálculos erróneos o falta de evidencia visual.
 
-#### Comunicación y Razonamiento (30)
-- Excelente (27–30): Presentación clara, responde preguntas socráticas con justificación y expone 2 conclusiones + 1 limitación.
-- Bueno (24–26): Presentación clara, reflexión breve sin profundidad.
+#### 4.3 Comunicación y Razonamiento (30)
+- Excelente (27–30): Presentación clara, responde preguntas socráticas con justificación, 2 conclusiones + 1 limitación explícita.
+- Bueno (24–26): Presentación clara, reflexión breve.
 - Suficiente (21–23): Presentación básica, reflexión incompleta.
-- Insuficiente (<21): Sin reflexión o incoherente.
+- Insuficiente (<21): Falta reflexión o incoherente.
+
+### 5. Requisitos Transversales para Nivel Excelente
+- Variables en español y descriptivas.
+- Preguntas socráticas respondidas en cada parte.
+- Comentarios explican intención (no repiten el código literal).
+- Notebook ejecuta de inicio a fin sin errores.
+
+### 6. Integridad Académica (Aplicada a Examen y Caso)
+| Componente | Examen Canvas | Caso Práctico |
+|------------|---------------|---------------|
+| Autoría | Individual | Colaborativa (80% código original del equipo) |
+| Material externo | Limitado según instrucciones | Referencias citadas si se usan |
+| IA Asistiva | Declarar si se usó (breve nota) | Declarar rol de la IA (no sustituye autoría) |
+| Intentos | 1 | Iterativo con checkpoint interno |
+
+### 7. Autoevaluación Rápida (Marcar OK / Revisar)
+- [ ] Conté victorias, empates y derrotas correctamente
+- [ ] Implementé y probé `calcular_puntos`
+- [ ] Implementé y probé `mejor_goleador`
+- [ ] Calculé promedios y diferencia de goles
+- [ ] Creé DataFrame y expliqué ventaja sobre listas
+- [ ] Generé gráfico barras goles a favor vs contra
+- [ ] Respondí 3 preguntas de reflexión final
+- [ ] Comentarios claros e intencionales
+- [ ] Roles de equipo visibles
+
+### 8. Conversión de Calificaciones (Bloque 1)
+- Examen Canvas: 20% × (puntaje/100)
+- Caso práctico: 15% × (puntaje/100)
+- Total Bloque 1 = suma ponderada (35% del curso)
+
+### 9. Notas de Alcance
+- No se exige manejo avanzado de errores o programación orientada a objetos.
+- No añadir librerías fuera del stack básico (pandas, matplotlib opcional, numpy implícito).
+- Mantener tiempos: Caso debe poder repasarse en <15 min por equipo al presentar.
 
 ---
 

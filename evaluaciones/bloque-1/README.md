@@ -31,11 +31,7 @@
 - **Elementos clave:** Pruebas mínimas (`assert`), comentarios intencionales (no redundantes), respuestas a preguntas socráticas en cada sección.
 
 ### Sistema de Evaluación
-**Ubicación:** [rubricas/README.md](rubricas/README.md)
-- **Criterios específicos** por componente (examen y caso) bajo formato 40/30/30.
-- **Distribución cognitiva** documentada ([R][C][A][S]) y pautas de muestreo.
-- **Competencias transversales** (colaboración, comunicación) operacionalizadas en niveles de desempeño.
-- **Alineación institucional** consistente con Bloques 2 y 3.
+La rúbrica completa del caso y criterios del examen están ahora integrados directamente en `caso-practico/caso-bloque1.md` tras fusión (se eliminó archivo separado de rúbricas para simplificar acceso).
 
 ---
 
@@ -156,5 +152,6 @@
 - Rúbrica del caso actualizada al modelo estándar 40/30/30 (alineada con Bloques 2 y 3).
 - Caso práctico reforzado con asserts y reflexión socrática integrada.
 - Documentación de sistema de muestreo estratificado y activación progresiva de [S].
+- Fusión de rúbrica separada dentro del caso práctico (eliminado `rubricas/README.md`).
 
 *Este bloque establece bases sólidas de programación y pensamiento analítico para progresar a manipulación de datos (Bloque 2) y modelado introductorio (Bloque 3), manteniendo coherencia cognitiva y socrática.*

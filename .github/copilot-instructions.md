@@ -30,8 +30,12 @@
 - SIN emojis en archivos de código (.py, .ipynb)
 - SIN emojis en documentación (archivos .md)
 - SIN emojis en comentarios o strings
+- SIN emojis en print statements
 - SIN emojis en mensajes de commit
+- SIN emojis en outputs de código
+- SIN emojis en markdown headers
 - Mantener contenido profesional, limpio, sin emojis en todo momento
+- ELIMINAR inmediatamente cualquier emoji encontrado durante revisiones
 
 ## Contexto Central del Proyecto
 

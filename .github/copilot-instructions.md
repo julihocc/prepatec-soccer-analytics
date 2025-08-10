@@ -3,7 +3,26 @@
 **Proyecto**: Curso de Ciencia de Datos aplicada al Fútbol (Preparatoria/Bachillerato)  
 **Idioma**: Español completo (código, comentarios, documentación)  
 **Contexto**: Análisis deportivo con datos reales de fútbol  
-**Metodología**: Socrática + 3 sesiones de 50 minutos por semana  
+**Metodología**: Socrática + 3 sesiones de 50 minutos por semana
+
+## CONTEXTO EDUCATIVO CRÍTICO
+
+**CURSO INTRODUCTORIO PARA PREPARATORIA**: Este es un curso de NIVEL BÁSICO para estudiantes de 15-18 años SIN experiencia previa en programación.
+
+### Características del Estudiante Objetivo:
+- **Edad**: 15-18 años (preparatoria/bachillerato)
+- **Experiencia previa**: CERO programación, CERO ciencia de datos
+- **Nivel matemático**: Álgebra básica de preparatoria
+- **Contexto cultural**: México, familiarizados con fútbol
+- **Motivación**: Conectar tecnología con deportes
+
+### Implicaciones Pedagógicas Obligatorias:
+- **Explicar TODO desde cero**: No asumir conocimientos previos
+- **Vocabulario accesible**: Profesional pero comprensible para la edad
+- **Progresión gradual**: Conceptos simples antes que complejos
+- **Analogías constantes**: Usar deportes y vida cotidiana
+- **Motivación continua**: Mostrar aplicaciones inmediatas y relevantes
+- **Paciencia pedagógica**: Repetir conceptos clave múltiples veces  
 
 ## REGLA CRÍTICA: PROHIBIDOS LOS EMOJIS
 
@@ -181,5 +200,24 @@ print("¿Qué nos dice este promedio sobre la experiencia del equipo?")
 4. **Reflexiones intermedias** (conectar conceptos)
 5. **Aplicación práctica** (problema deportivo real)
 6. **Síntesis final** (¿qué descubrimos?)
+
+## LÍMITES DE COMPLEJIDAD PARA PREPARATORIA
+
+### LO QUE SÍ incluir (apropiado para nivel introductorio):
+- **Python básico**: variables, operadores, listas, diccionarios, if/else, bucles simples
+- **Pandas básico**: leer datos, filtrar, agrupar, promedios simples
+- **Visualización simple**: gráficos de barras, líneas, dispersión básicos
+- **Estadística descriptiva**: promedio, moda, mediana, rangos
+- **Predicciones simples**: regresión lineal básica con interpretación clara
+
+### LO QUE NO incluir (demasiado avanzado):
+- **Algoritmos complejos**: clustering, redes neuronales, SVM
+- **Estadística avanzada**: inferencia estadística, pruebas de hipótesis complejas
+- **Programación avanzada**: clases, herencias, decoradores, manejo de errores complejo
+- **Matemáticas universitarias**: cálculo, álgebra lineal, estadística bayesiana
+- **Big Data**: Spark, bases de datos complejas, APIs avanzadas
+
+### Principio Rector:
+"Si un estudiante de preparatoria no puede entender el concepto en 10 minutos con analogías deportivas, es demasiado complejo para este curso"
 
 **CRÍTICO**: Nunca usar emojis - mantener contenido profesional para preparatoria.

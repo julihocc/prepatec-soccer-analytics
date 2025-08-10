@@ -25,11 +25,110 @@
 - **Audiencia:** Profesores + invitados de la industria (opcional)
 
 ### Sistema de Evaluación Integral
-**Ubicación:** [rubricas/rubrica-completa.md](rubricas/rubrica-completa.md)
+**Rúbrica Integrada:** (contenido completo fusionado, ya no se requiere archivo externo)
 - **Evaluación holística** de todas las competencias del curso
 - **Criterios profesionales** equiparables a la industria
 - **Portfolio de evidencias** para empleabilidad
 - **Certificación de competencias** técnicas y blandas
+
+---
+
+## Rúbricas de Evaluación Completas (Integradas)
+### Sistema de Evaluación por Competencias
+
+**Curso:** Análisis de Datos de Fútbol con Python  
+**Modalidad:** Competencias y proyectos colaborativos
+
+---
+
+### Estructura General de Evaluación
+
+#### Distribución de Calificaciones (Resumen Global del Curso)
+- **1er Parcial (35%)**: Bloque 1 - Fundamentos Python
+    - Examen Canvas (20%)
+    - Caso Práctico Colaborativo (15%)
+- **2do Parcial (35%)**: Bloque 2 - Exploración de Datos
+    - Examen Canvas (20%)
+    - Caso Práctico Colaborativo (15%)
+- **Final (30%)**: Bloque 3 - Proyecto Integrador
+    - Notebook Jupyter (20%)
+    - Presentación (10%)
+
+---
+
+### 1. Rúbrica Exámenes Canvas (Bloques 1 y 2)
+Se mantienen aquí solo con fines de referencia transversal; la evaluación final del bloque 3 no incluye examen Canvas.
+
+**Configuración:** 70% opción múltiple, 30% numéricas, duración 45-60 min, un intento. Selección aleatoria desde bancos etiquetados con niveles cognitivos [R][C][A][S].
+
+**Distribución cognitiva objetivo:** Conocimiento (40%) + Comprensión (35%) + Aplicación (25%) y progresiva inclusión de interpretación [S].
+
+---
+
+### 2. Rúbrica Casos Prácticos Colaborativos (Bloques 1 y 2)
+Referenciada para consistencia de criterios (no aplicable directamente al proyecto individual final).
+
+**Componentes:**
+1. Análisis Técnico (40%)  
+2. Trabajo Colaborativo (30%)  
+3. Comunicación y Presentación (30%)
+
+Cada sub‑criterio presenta niveles: Excelente / Bueno / Suficiente / Insuficiente.
+
+---
+
+### 3. Rúbrica Proyecto Integrador Final (Bloque 3)
+La siguiente rúbrica se aplica directamente a este bloque (30% del curso). Ponderación interna: Notebook (20% del curso) + Presentación (10% del curso).
+
+#### 3.1 Notebook de Jupyter (20% del curso)
+Subcomponentes y pesos relativos dentro del notebook (entre paréntesis el equivalente sobre la calificación total del curso):
+- Análisis Exploratorio de Datos (25% del notebook = 5% total)
+- Modelado de Machine Learning (35% del notebook = 7% total)
+- Dashboard Interactivo (25% del notebook = 5% total)
+- Documentación y Código (15% del notebook = 3% total)
+
+Cada subcomponente se evalúa en cuatro dimensiones: Exhaustividad/Implementación, Calidad de Insights / Selección de Modelos / Funcionalidad / Calidad del Código, Limpieza de Datos / Evaluación de Modelos / UX / Documentación, e Interpretación / Integración / Reproducibilidad según corresponda.
+
+#### 3.2 Presentación Final (10% del curso)
+- Introducción y Contexto (20%)
+- Metodología y Desarrollo (30%)
+- Resultados y Demo (30%)
+- Conclusiones y Q&A (20%)
+
+Niveles: Excelente, Bueno, Suficiente, Insuficiente con énfasis en dominio técnico, claridad, tiempo y manejo de preguntas.
+
+---
+
+### 4. Criterios Transversales
+- Integridad Académica: originalidad del código, citación de fuentes, uso declarado de herramientas de IA.
+- Pensamiento Computacional: descomposición, patrones, abstracción, algoritmos.
+- Comunicación Técnica: adaptación a audiencia técnica/no técnica, visualizaciones efectivas, narrativa.
+- Responsabilidad Ética: transparencia de limitaciones y supuestos.
+
+### 5. Feedback y Mejora Continua
+- Feedback inmediato (Canvas) automatizado por tema.
+- Feedback formativo (checkpoints) en avance del notebook durante semanas 14-15.
+- Feedback sumativo posterior a la presentación: fortalezas + áreas de mejora + recomendaciones de aprendizaje futuro.
+
+### 6. Escala de Calificación Institucional (Referencia)
+| % | Interpretación |  
+|---|----------------|  
+| 95-100 | Dominio excepcional |  
+| 90-94 | Dominio sólido |  
+| 85-89 | Competencia buena |  
+| 80-84 | Satisfactorio |  
+| 75-79 | Suficiente mínimo |  
+| 70-74 | Bajo estándar |  
+| <70 | No acreditado |  
+
+### 7. Uso de la Rúbrica Durante el Desarrollo
+Recomendado auto‑chequeo al cierre de cada fase:  
+1. Cierra EDA (Semana 14 mitad) → Verifica criterios de Exploración.  
+2. Cierra primera versión de modelo (Semana 14 fin) → Verifica Implementación y Evaluación.  
+3. Cierra iteración de dashboard (Semana 15 mitad) → Verifica Funcionalidad y UX.  
+4. Cierra documentación (48h antes de entrega) → Verifica Reproducibilidad y Claridad.
+
+---
 
 ---
 
@@ -263,3 +362,7 @@ proyecto_final/
 ---
 
 *Este proyecto integrador representa la culminación del aprendizaje, donde los estudiantes demuestran su capacidad para trabajar como científicos de datos profesionales en el ámbito deportivo.*
+
+## Actualizaciones Recientes
+
+2025-08-10: Fusión de contenido de rúbrica (rubricas/rubrica-completa.md) directamente en este README; eliminación del archivo externo para reducir redundancia documental.

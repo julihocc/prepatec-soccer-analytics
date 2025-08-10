@@ -2,7 +2,7 @@
 
 ## Información del Curso
 
-**Versión:** 4.0.1  
+**Versión:** 4.0.2  
 **Nivel:** Preparatoria/Bachillerato (15-18 años)  
 **Duración:** 15 semanas (3 bloques de 5 semanas cada uno)  
 **Modalidad:** 3 sesiones de 50 minutos por semana  
@@ -902,3 +902,4 @@ Para dudas sobre el curso o el material didáctico, contacta al equipo docente.
 ## Actualizaciones Recientes
 
 2025-08-10: Ampliado banco Canvas Bloque 2 de 75 a 105 preguntas (incorporación de 30 ítems Extended con etiqueta [S]; ajuste distribución cognitiva global documentado en evaluaciones/bloque-2/README.md).
+2025-08-10: Fusión de rúbrica completa de Bloque 3 en evaluaciones/bloque-3/README.md y eliminación de rubricas/rubrica-completa.md para consolidar criterios en punto único.

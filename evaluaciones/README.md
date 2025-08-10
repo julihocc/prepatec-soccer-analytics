@@ -40,8 +40,8 @@
 - **Modalidad:** Examen individual + proyecto colaborativo (3-4 estudiantes)
 
 ### [Bloque 3](bloque-3/) - Modelado Predictivo (40%)
-**Semanas 11-15: Integración de Competencias**
-- **Canvas / Quiz ML Básico:** 15%
+**Semanas 15-16: Integración de Competencias**
+- **Quiz ML Básico:** 15%
 - **Caso Práctico:** `bloque-3/caso-practico/caso-bloque3.md` (25%)
 - **Rúbrica:** Integrada en `bloque-3/README.md`
 - **Modalidad:** Individual

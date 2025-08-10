@@ -338,18 +338,18 @@ pip install -r requirements.txt
 └── Actividad 6: Caso Práctico Bloque 3 (25%)
 ```
 
-### Equivalencias con Syllabus Tec
+### Equivalencias con Syllabus Tec (Actualizadas)
 
-- **1er Parcial = Bloque 1** (35%)
-- **2do Parcial = Bloque 2** (35%)
-- **Final = Bloque 3** (30%)
-- **Sin actividades separadas** - Integradas en casos prácticos
+- **1er Parcial = Bloque 1** (30%: Canvas 15% + Caso 15%)
+- **2do Parcial = Bloque 2** (30%: Canvas 15% + Caso 15%)
+- **Final = Bloque 3** (40%: Quiz ML 15% + Caso Práctico 25%)
+- **Integración de presentación final** dentro del Caso Práctico Bloque 3 (no ponderación separada)
 
 ---
 
 ## 2. COMPONENTES DE EVALUACIÓN DETALLADOS
 
-### 2.1 Exámenes Canvas (40% total: 20% + 20%)
+### 2.1 Exámenes Canvas (30% total: 15% + 15%)
 
 #### Características
 
@@ -359,7 +359,7 @@ pip install -r requirements.txt
 - **Banco:** 70-75 preguntas por bloque
 - **Selección:** 20-25 preguntas aleatorias por examen
 
-#### Bloque 1 - Canvas (20%)
+#### Bloque 1 - Canvas (15%)
 
 ```python
 # Temas evaluados:
@@ -370,7 +370,7 @@ pip install -r requirements.txt
 - Pandas y numpy básico (20%)
 ```
 
-#### Bloque 2 - Canvas (20%)
+#### Bloque 2 - Canvas (15%)
 
 ```python
 # Temas evaluados:
@@ -431,26 +431,34 @@ pip install -r requirements.txt
 - Comunicación (10%)
 ```
 
-### 2.3 Proyecto Integrador Final (30%)
+### 2.3 Quiz / Canvas ML Básico (15%)
 
-#### Estructura del Proyecto
+#### Propósito
+- Verificar comprensión conceptual básica de machine learning antes del desarrollo del caso final.
+- Mantener carga cognitiva acotada: vocabulario simplificado y analogías deportivas.
+
+#### Alcance de Contenidos
+- Concepto de modelo (entrenador) y entrenamiento (práctica).
+- Diferencia predicción vs. resultado real.
+- Regresión lineal y logística (idea cualitativa, sin matemáticas avanzadas).
+- Overfitting (memorización de jugadas) y generalización.
+
+### 2.4 Caso Práctico Bloque 3 (25%)
+
+#### Estructura del Caso (Presentación integrada)
 
 ```markdown
 ## "Sistema de Análisis Predictivo para Fútbol"
 ### Modalidad: Individual
-### Duración: 4 semanas
+### Ventana de desarrollo: Semanas 15-16
 
-## Componentes:
-1. Notebook Jupyter (20% de la calificación total)
-   - Análisis Exploratorio (25% del notebook)
-   - Modelado ML (35% del notebook)
-   - Dashboard Interactivo (25% del notebook)
-   - Documentación (15% del notebook)
+## Componentes (sub‑pesos internos del 25%):
+- Análisis Exploratorio (25% del notebook = 6.25% curso)
+- Modelado ML Básico (35% del notebook = 8.75% curso)
+- Dashboard / Visualización (25% del notebook = 6.25% curso)
+- Documentación + Narrativa (15% del notebook = 3.75% curso)
 
-2. Presentación Final (10% de la calificación total)
-   - 15 minutos individuales
-   - Demo interactiva
-   - Q&A técnico
+La presentación y comunicación se evalúan dentro de Documentación + Narrativa; no existe ponderación separada.
 ```
 
 ---
@@ -482,10 +490,10 @@ pip install -r requirements.txt
     ├── Examen Canvas B2 (Semana 13)  
     └── Caso Práctico B2 (Semanas 13-14)
 
-🟨 BLOQUE 3: PROYECTO INTEGRADOR (Semanas 15-16)
-├── Semana 15: Desarrollo proyecto
-├── Semana 16: Presentaciones finales
-└──  Evaluación Final (30%)
+🟨 BLOQUE 3: MODELADO PREDICTIVO (Semanas 15-16)
+├── Semana 15: Desarrollo caso predictivo
+├── Semana 16: Iteración final y comunicación integrada
+└──  Evaluaciones: Quiz ML (15%) + Caso Práctico (25%)
 ```
 
 ---

@@ -1,14 +1,20 @@
 # Bloque 3: Proyecto Integrador Final
 ## Evaluación Integral de Competencias
 
-**Duración:** Semanas 13-16  
-**Ponderación:** 30% de la calificación final  
+**Duración:** Semanas 15-16  
+**Ponderación Total Bloque 3:** 40% del curso (Quiz ML 15% + Caso Práctico 25%)  
 **Modalidad:** Individual intensivo  
 **Enfoque:** Integración completa de competencias en sistema predictivo profesional
 
 ---
 
 ## Componentes de Evaluación
+
+### Quiz / Canvas ML Básico (15% del curso)
+**Propósito:** Comprobar comprensión conceptual mínima (modelo, entrenamiento, predicción, overfitting) antes del desarrollo del caso.
+**Formato:** 12-18 ítems (70% opción múltiple / 30% numéricas simples) seleccionados de banco etiquetado.
+**Duración objetivo:** 25-30 minutos.
+**Criterios de éxito:** ≥70% respuestas correctas para evidenciar preparación.
 
 ### Caso Práctico Bloque 3 (25% del curso)
 **Ubicación:** `caso-practico/caso-bloque3.md`
@@ -20,7 +26,7 @@
 La comunicación de resultados se evalúa ahora dentro del 25% total del caso práctico (subcomponentes de Documentación / Comunicación) sin ponderación separada.
 
 ### Sistema de Evaluación Integral
-**Rúbrica Integrada:** (contenido completo fusionado; este caso práctico es la evidencia evaluable del Bloque 3)
+**Rúbrica Integrada:** (el caso práctico + quiz constituyen la evidencia evaluable del Bloque 3)
 - **Evaluación holística** de competencias del curso
 - **Criterios profesionales** al nivel esperado preparatoria avanzada
 - **Portfolio de evidencias** para empleabilidad
@@ -38,7 +44,7 @@ La comunicación de resultados se evalúa ahora dentro del 25% total del caso pr
 
 ### Estructura General de Evaluación
 
-#### Distribución de Calificaciones (Nueva)
+#### Distribución de Calificaciones Global (Vigente)
 - Actividad 1: Examen Canvas Bloque 1 (15%)
 - Actividad 2: Caso Práctico Bloque 1 (15%)
 - Actividad 3: Examen Canvas Bloque 2 (15%)

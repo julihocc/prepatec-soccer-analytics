@@ -7,6 +7,19 @@ y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 
 ## [Sin publicar]
 
+## [4.2.0] - 2025-08-10
+
+### Cambiado
+- Documentación alineada con nueva equivalencia de parciales (Bloque 1: 30%, Bloque 2: 30%, Bloque 3: 40%).
+- Desglose explícito de actividades: 5 de 15% + caso final 25% (presentación integrada en el caso, sin ponderación separada).
+- Incorporación formal del Quiz / Canvas ML Básico (15%) como verificación previa al caso final.
+
+### Mejorado
+- Claridad en sub‑pesos internos del Caso Práctico Bloque 3 indicando impacto porcentual sobre el total del curso.
+
+### Razonamiento de incremento menor
+- Cambio estructural documental sin alterar bancos de preguntas existentes ni lógica de código: bump menor (4.1.x → 4.2.0).
+
 ## [4.1.0] - 2025-08-10
 
 ### Agregado

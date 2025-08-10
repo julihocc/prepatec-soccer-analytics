@@ -857,3 +857,4 @@ Para dudas sobre el curso o el material didáctico, contacta al equipo docente.
 2025-08-10: Renombrado componente evaluativo de Bloque 3 a "Caso Práctico"; posteriormente fusionado contenido y eliminado `evaluaciones/bloque-3/caso-practico/README.md` para homologar con Bloques 1 y 2.
 2025-08-10: Consolidación final Bloque 3: eliminado directorio `evaluaciones/bloque-3/proyecto-integrador/` (contenido migrado a caso-practico/datasets y solucion-caso-practico).
 2025-08-10: Homologada estructura de `evaluaciones/bloque-3/` a formato de Bloques 1 y 2 (carpetas: caso-practico/, datasets/, solucion-caso-practico/; archivo de caso renombrado a caso-bloque3.md).
+2025-08-10: Limpieza final Bloque 3: eliminación de archivos legacy y duplicados (README residual, carpeta proyecto-integrador y assets obsoletos) asegurando fuente única del caso práctico.

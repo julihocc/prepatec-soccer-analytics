@@ -58,12 +58,12 @@ Al finalizar este bloque, los estudiantes serán capaces de:
 ### Semana 5: ¿Cómo cuentan historias los números en el fútbol moderno?
 
 - **Notebook:** `visualizacion-basica.ipynb`
-- **Pregunta motivadora:** ¿Por qué una imagen vale más que mil estadísticas en el análisis deportivo?
-- **Metodología:** Creación progresiva de visualizaciones deportivas profesionales
-- **Sesión 1:** ¿Cómo comunican tendencias los analistas deportivos? - Gráficos básicos con matplotlib
-- **Sesión 2:** ¿Qué secretos revelan las comparaciones visuales? - Gráficos comparativos y de dispersión
-- **Sesión 3:** ¿Cómo crear un dashboard básico de estadísticas? - Personalización y presentación profesional
-- **Aplicación deportiva:** Dashboard de estadísticas de equipo estilo ESPN o UEFA
+- **Pregunta motivadora:** ¿Por qué una imagen acelera la comprensión de un análisis deportivo?
+- **Metodología:** Progresión de gráficos básicos a integración simple (sin dashboards avanzados)
+- **Sesión 1:** Fundamentos visuales - Barras, líneas y dispersión para comunicar comparaciones, evolución y relaciones
+- **Sesión 2:** Organización básica - Subplots 2x2 y personalización mínima (títulos claros, rotación de etiquetas)
+- **Sesión 3:** Integración básica - Elegir 2–3 gráficos adecuados para responder una pregunta simple
+- **Aplicación deportiva:** Mini conjunto de gráficos que responde una pregunta concreta (ej: evolución y comparación de rendimiento)
 
 ## Materiales Incluidos
 
@@ -263,3 +263,9 @@ Una vez completado exitosamente el Bloque 1, los estudiantes estarán preparados
 **¡Bienvenido al mundo de la programación aplicada al fútbol!** 
 
 *Este bloque te dará las herramientas fundamentales para convertir tu pasión por el fútbol en análisis de datos profesional. Cada línea de código que escribas te acercará más a entender el deporte desde una perspectiva completamente nueva.*
+
+---
+
+### Actualizaciones Recientes
+
+- 2025-08-10: Semana 5 simplificada. Se eliminaron referencias a "dashboard" y visualizaciones avanzadas. En su lugar se enfatiza integración básica (2–3 gráficos) acorde a nivel introductorio. Notebook y README sincronizados según política de documentación.

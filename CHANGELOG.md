@@ -1,3 +1,9 @@
+# 4.4.0 (2025-08-11)
+
+- Agregados archivos .py para las presentaciones semanales de los bloques 1, 2 y 3.
+- Facilitan la reutilización y edición de contenido de presentaciones en flujos automatizados o materiales complementarios.
+- No afecta la estructura principal de notebooks ni sesiones, pero mejora el mantenimiento de recursos pedagógicos.
+
 # 4.3.0 (2025-08-11)
 
 - Entrega de presentaciones semanales en formato Marp/Markdown para semanas 4 a 15, alineadas con metodología socrática y estructura de sesiones de 50 minutos.

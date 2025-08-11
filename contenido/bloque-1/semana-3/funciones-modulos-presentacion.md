@@ -7,7 +7,7 @@ class: lead
 
 # Semana 3: Sistemas elegantes y reutilizables en análisis de fútbol
 
-**Curso de Ciencia de Datos aplicada al Fútbol (Preparatoria)**
+**Programación Básica 1 – Prepa Tec**
 
 ---
 

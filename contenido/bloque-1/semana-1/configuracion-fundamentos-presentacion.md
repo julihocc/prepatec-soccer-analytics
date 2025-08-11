@@ -9,7 +9,7 @@ class: lead
 
 # Semana 1: ¿Cómo empieza el análisis de datos en el fútbol?
 
-**Curso de Ciencia de Datos aplicada al Fútbol (Preparatoria)**
+**Programación Básica 1 – Prepa Tec**
 
 ---
 

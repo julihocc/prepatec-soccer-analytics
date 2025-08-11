@@ -8,7 +8,7 @@ class: lead
 
 # Semana 2: Automatización de Decisiones en Fútbol con Python
 
-**Curso de Ciencia de Datos aplicada al Fútbol (Preparatoria)**
+**Programación Básica 1 – Prepa Tec**
 
 ---
 

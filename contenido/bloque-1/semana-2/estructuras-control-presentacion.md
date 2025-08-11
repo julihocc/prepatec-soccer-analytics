@@ -5,36 +5,46 @@ paginate: true
 class: lead
 ---
 
+
 # Semana 2: Automatización de Decisiones en Fútbol con Python
 
 **Curso de Ciencia de Datos aplicada al Fútbol (Preparatoria)**
 
 ---
 
-# ¿Cómo automatizamos decisiones como un entrenador profesional?
-
-- ¿Qué patrones de decisión observas en el fútbol moderno?
-- ¿Cómo podrías programar un asistente técnico que tome decisiones automáticas?
+# SESIÓN 1: ¿Cómo repetimos tareas como un entrenamiento sistemático? (50 min)
 
 ---
 
-# Ruta de la sesión (120 minutos)
+## Pregunta guía
 
-1. Repetición sistemática: bucles for y while
-2. Decisiones complejas: condicionales y operadores lógicos
-3. Organización elegante: funciones, listas, diccionarios, tuplas y conjuntos
-4. Síntesis y reflexión
+¿Qué hace un equipo cuando practica jugadas una y otra vez?
 
 ---
 
-# 1. Repetición sistemática: ¿Por qué la repetición genera maestría?
-
-- ¿Cómo automatizan los clubes profesionales las repeticiones en entrenamiento?
-- ¿Qué tienen en común un ejercicio de pases y un bucle en programación?
+- ¿Cómo automatizamos acciones repetitivas en Python?
+- ¿Por qué la repetición controlada mejora el rendimiento?
+- ¿Cuándo sabemos que hemos practicado lo suficiente?
 
 ---
 
-# Ejemplo: Procesamiento automático de plantilla
+## Teoría: Bucles y repetición en fútbol y código
+
+Imagina que eres el preparador físico del Real Madrid. Necesitas que cada jugador complete exactamente 20 sprints de 30 metros.
+
+---
+
+¿Cómo te asegurarías de que TODOS cumplan sin excepción?
+
+---
+
+## Pregunta reflexiva
+
+¿Preferirías decirle a cada jugador individualmente "corre 30 metros" 20 veces, o crear un sistema que automáticamente supervise las 20 repeticiones?
+
+---
+
+## Práctica: Procesamiento automático de plantilla
 
 ```python
 plantilla_barcelona = [
@@ -45,13 +55,21 @@ for numero_jugador, nombre_jugador in enumerate(plantilla_barcelona, 1):
     print(f"{numero_jugador:2d}. {nombre_jugador}")
 ```
 
-- ¿Qué pasaría si tuvieras 25 jugadores en vez de 8?
+---
+
+¿Qué pasaría si tuvieras 25 jugadores en vez de 8?
 
 ---
 
-# ¿Cuándo usamos while en vez de for?
+## Práctica: ¿Cuándo usamos while en vez de for?
 
-- ¿Cómo simularías una práctica de penales hasta lograr 5 goles consecutivos?
+Imagina que eres Xavi y quieres que tus jugadores practiquen penales HASTA que cada uno anote 5 consecutivos.
+
+---
+
+¿Sabes de antemano cuántos intentos necesitará cada jugador?
+
+---
 
 ```python
 penales_consecutivos = 0
@@ -63,18 +81,41 @@ while penales_consecutivos < objetivo:
     pass
 ```
 
-- ¿Por qué while es útil cuando no sabemos cuántas repeticiones necesitaremos?
+---
+
+¿Por qué while es útil cuando no sabemos cuántas repeticiones necesitaremos?
 
 ---
 
-# 2. Decisiones complejas: ¿Cómo piensa un entrenador?
+## Síntesis de la sesión 1
 
-- ¿Qué variables considera un DT antes de hacer un cambio?
-- ¿Cómo combinamos condiciones múltiples en Python?
+- ¿Cómo automatizamos el procesamiento de listas completas de jugadores?
+- ¿Cuándo usamos 'for' (repeticiones conocidas) vs 'while' (hasta lograr objetivo)?
+- ¿Por qué la automatización es crucial en análisis deportivo masivo?
 
 ---
 
-# Condicionales: if, elif, else
+# SESIÓN 2: ¿Cómo tomamos decisiones complejas bajo presión? (50 min)
+
+---
+
+## Pregunta guía
+
+¿Qué proceso mental sigue un capitán antes de cada jugada?
+
+---
+
+- ¿Cómo combinamos múltiples condiciones como un estratega?
+- ¿Por qué algunos equipos son más predecibles que otros?
+- ¿Cómo optimizamos la toma de decisiones rápida?
+
+---
+
+## Teoría: Condicionales y operadores lógicos
+
+¿Qué variables considera un DT antes de hacer un cambio?
+
+---
 
 ```python
 if energia_equipo >= 6 and minuto_actual >= 70:
@@ -85,18 +126,13 @@ else:
     print("Mantener esquema actual")
 ```
 
-- ¿Por qué es importante el orden de las condiciones?
+---
+
+¿Por qué es importante el orden de las condiciones?
 
 ---
 
-# Operadores lógicos: and, or, not
-
-- ¿Cuándo necesitas que se cumplan varias condiciones a la vez?
-- ¿En qué situaciones deportivas usarías or o not?
-
----
-
-# Decisiones jerárquicas: condicionales anidados
+## Práctica: Decisiones jerárquicas y condicionales anidados
 
 ```python
 if lesion_previa:
@@ -109,18 +145,41 @@ else:
             decision = "Mantener en campo"
 ```
 
-- ¿Por qué evaluamos primero el riesgo de lesión?
+---
+
+¿Por qué evaluamos primero el riesgo de lesión?
 
 ---
 
-# 3. Organización elegante: funciones y estructuras
+## Síntesis de la sesión 2
 
-- ¿Cómo reutilizarías una evaluación para todos los jugadores?
+- ¿Cómo combinamos múltiples condiciones con operadores lógicos (and, or, not)?
+- ¿Por qué las decisiones jerárquicas (condicionales anidados) reflejan el pensamiento real?
+- ¿Cómo la lógica de programación imita los procesos mentales de un entrenador?
+
+---
+
+# SESIÓN 3: ¿Cómo organizamos estrategias complejas de manera elegante? (50 min)
+
+---
+
+## Pregunta guía
+
+¿Cómo simplifica Messi las jugadas más complicadas?
+
+---
+
 - ¿Qué ventajas tiene dividir problemas grandes en partes pequeñas?
+- ¿Cómo reutilizamos tácticas exitosas en diferentes situaciones?
+- ¿Por qué la organización determina la efectividad del análisis?
 
 ---
 
-# Funciones: jugadas tácticas reutilizables
+## Teoría: Funciones, listas, diccionarios, tuplas y conjuntos
+
+¿Cómo reutilizarías una evaluación para todos los jugadores?
+
+---
 
 ```python
 def evaluar_jugador(nombre, goles, asistencias, edad, lesionado):
@@ -135,14 +194,15 @@ def evaluar_jugador(nombre, goles, asistencias, edad, lesionado):
         return "NO CONVOCADO"
 ```
 
-- ¿En qué se parece una función a una jugada ensayada?
+---
+
+Listas: para secuencias (alineaciones)
 
 ---
 
-# Listas y diccionarios: organización eficiente
+Diccionarios: para fichas completas de jugadores
 
-- Listas: para secuencias (alineaciones)
-- Diccionarios: para fichas completas de jugadores
+---
 
 ```python
 ficha_messi = {
@@ -155,10 +215,13 @@ ficha_messi = {
 
 ---
 
-# Tuplas y conjuntos: datos inmutables y únicos
+Tuplas: resultados históricos, posiciones en campo
 
-- Tuplas: resultados históricos, posiciones en campo
-- Conjuntos: equipos únicos en una liga
+---
+
+Conjuntos: equipos únicos en una liga
+
+---
 
 ```python
 resultado_final = ("Barcelona", 3, "Real Madrid", 1)
@@ -167,12 +230,11 @@ equipos = {"Barcelona", "Real Madrid", "Atletico Madrid"}
 
 ---
 
-# Síntesis y reflexión
+## Síntesis de la sesión 3
 
-- ¿Cómo automatizamos el procesamiento de listas completas de jugadores?
-- ¿Cuándo usar for vs while?
-- ¿Por qué la lógica de programación imita el pensamiento de un entrenador?
 - ¿Qué ventajas tiene organizar el código en funciones y estructuras?
+- ¿Cómo reutilizarías tus análisis para diferentes equipos?
+- ¿En qué otras áreas podrías usar esta lógica sistemática?
 
 ---
 

@@ -799,6 +799,766 @@
       ],
       "correct_answer": "B",
       "topic": "Visualización Avanzada"
+    },
+    {
+      "id": 61,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "¿Qué tipo de gráfico uso para mostrar la distribución de edades de jugadores?",
+      "options": [
+        {"id": "A", "text": "Gráfico de barras"},
+        {"id": "B", "text": "Gráfico de líneas"},
+        {"id": "C", "text": "Histograma"},
+        {"id": "D", "text": "Gráfico circular"}
+      ],
+      "correct_answer": "C",
+      "topic": "Visualización Avanzada"
+    },
+    {
+      "id": 62,
+      "category": "R",
+      "type": "numeric",
+      "question": "Si quiero crear un gráfico con subplots de 2 filas y 3 columnas, ¿cuántos gráficos individuales puedo hacer?",
+      "correct_answer": 6,
+      "tolerance": 0,
+      "topic": "Visualización Avanzada"
+    },
+    {
+      "id": 63,
+      "category": "A",
+      "type": "multiple_choice",
+      "question": "Para analizar el rendimiento de un equipo durante una temporada, ¿qué estructura de datos es más apropiada?",
+      "options": [
+        {"id": "A", "text": "Lista de listas"},
+        {"id": "B", "text": "Diccionario simple"},
+        {"id": "C", "text": "DataFrame con filas por partido"},
+        {"id": "D", "text": "Variables individuales"}
+      ],
+      "correct_answer": "C",
+      "topic": "Proyectos Prácticos"
+    },
+    {
+      "id": 64,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "¿Cuál es la secuencia correcta para crear un análisis básico de datos deportivos?",
+      "options": [
+        {"id": "A", "text": "Código → Datos → Análisis → Presentación"},
+        {"id": "B", "text": "Datos → Limpieza → Análisis → Visualización"},
+        {"id": "C", "text": "Visualización → Datos → Código → Resultados"},
+        {"id": "D", "text": "Análisis → Datos → Código → Gráficos"}
+      ],
+      "correct_answer": "B",
+      "topic": "Proyectos Prácticos"
+    },
+    {
+      "id": 65,
+      "category": "A",
+      "type": "numeric",
+      "question": "Un reporte pide la eficiencia (goles/tiros) de un delantero: 12 goles, 40 tiros totales. ¿Qué valor entregas (formato decimal)?",
+      "correct_answer": 0.3,
+      "tolerance": 0.01,
+      "topic": "Proyectos Prácticos"
+    },
+    {
+      "id": 66,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "Para presentar datos de múltiples equipos en una temporada, ¿cuál es la mejor práctica?",
+      "options": [
+        {"id": "A", "text": "Un gráfico por equipo"},
+        {"id": "B", "text": "Todos los equipos en un solo gráfico comparativo"},
+        {"id": "C", "text": "Solo mostrar números"},
+        {"id": "D", "text": "Usar colores aleatorios"}
+      ],
+      "correct_answer": "B",
+      "topic": "Proyectos Prácticos"
+    },
+    {
+      "id": 67,
+      "category": "A",
+      "type": "multiple_choice",
+      "question": "Un entrenador quiere identificar a los jugadores con mejor rendimiento. ¿Qué análisis es más útil?",
+      "options": [
+        {"id": "A", "text": "Solo mirar goles totales"},
+        {"id": "B", "text": "Combinar múltiples métricas (goles, asistencias, partidos jugados)"},
+        {"id": "C", "text": "Solo ver la edad"},
+        {"id": "D", "text": "Solo ver el equipo"}
+      ],
+      "correct_answer": "B",
+      "topic": "Casos de Uso Real"
+    },
+    {
+      "id": 68,
+      "category": "R",
+      "type": "numeric",
+      "question": "Si un DataFrame de partidos tiene columnas ['equipo_local', 'equipo_visitante', 'goles_local', 'goles_visitante'], ¿cuántas columnas necesito para calcular el total de goles por partido?",
+      "correct_answer": 2,
+      "tolerance": 0,
+      "topic": "Casos de Uso Real"
+    },
+    {
+      "id": 69,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "Para detectar patrones estacionales en el rendimiento de un equipo, ¿qué necesito incluir en mis datos?",
+      "options": [
+        {"id": "A", "text": "Solo goles"},
+        {"id": "B", "text": "Solo fechas"},
+        {"id": "C", "text": "Fechas y métricas de rendimiento"},
+        {"id": "D", "text": "Solo nombres de jugadores"}
+      ],
+      "correct_answer": "C",
+      "topic": "Casos de Uso Real"
+    },
+    {
+      "id": 70,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "¿Cuál es la mejor práctica al compartir un análisis de datos deportivos?",
+      "options": [
+        {"id": "A", "text": "Mostrar solo los códigos"},
+        {"id": "B", "text": "Incluir contexto, métodos y conclusiones claras"},
+        {"id": "C", "text": "Solo mostrar gráficos sin explicación"},
+        {"id": "D", "text": "Usar términos técnicos complejos"}
+      ],
+      "correct_answer": "B",
+      "topic": "Casos de Uso Real"
+    },
+    {
+      "id": 71,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "¿Qué función en Python te permite obtener a la vez el índice y el valor al recorrer una lista de jugadores?",
+      "options": [
+        {"id": "A", "text": "range()"},
+        {"id": "B", "text": "enumerate()"},
+        {"id": "C", "text": "index()"},
+        {"id": "D", "text": "position()"}
+      ],
+      "correct_answer": "B",
+      "topic": "Funciones Avanzadas"
+    },
+    {
+      "id": 72,
+      "category": "R",
+      "type": "multiple_choice",
+      "question": "¿Cuál es la forma correcta de crear un DataFrame a partir de un diccionario llamado `datos_jugadores`?",
+      "options": [
+        {"id": "A", "text": "pd.DataFrame = datos_jugadores"},
+        {"id": "B", "text": "DataFrame(datos_jugadores)"},
+        {"id": "C", "text": "pd.DataFrame(datos_jugadores)"},
+        {"id": "D", "text": "pd.read_dict(datos_jugadores)"}
+      ],
+      "correct_answer": "C",
+      "topic": "Operaciones Pandas Avanzadas"
+    },
+    {
+      "id": 73,
+      "category": "A",
+      "type": "multiple_choice",
+      "question": "¿Cómo agregas una nueva columna 'eficiencia' (goles/tiros) a un DataFrame `df` existente?",
+      "options": [
+        {"id": "A", "text": "add df['eficiencia'] = goles/tiros"},
+        {"id": "B", "text": "df.eficiencia(goles/tiros)"},
+        {"id": "C", "text": "df['eficiencia'] = df['goles'] / df['tiros']"},
+        {"id": "D", "text": "df.column('eficiencia', goles/tiros)"}
+      ],
+      "correct_answer": "C",
+      "topic": "Operaciones Pandas Avanzadas"
+    },
+    {
+      "id": 74,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "¿Qué produce `df.groupby('posicion').agg({'goles':'mean'})` sobre un DataFrame de jugadores?",
+      "options": [
+        {"id": "A", "text": "Elimina la columna 'posicion'"},
+        {"id": "B", "text": "Calcula el promedio de goles por cada posición"},
+        {"id": "C", "text": "Devuelve solo las filas con mayor número de goles"},
+        {"id": "D", "text": "Ordena el DataFrame por goles"}
+      ],
+      "correct_answer": "B",
+      "topic": "Operaciones Pandas Avanzadas"
+    },
+    {
+      "id": 75,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "¿Cuál es la diferencia principal entre una Serie (Series) y un DataFrame en pandas?",
+      "options": [
+        {"id": "A", "text": "Una Serie puede tener múltiples columnas y un DataFrame no"},
+        {"id": "B", "text": "No hay diferencia"},
+        {"id": "C", "text": "Una Serie es una columna unidimensional; un DataFrame es una tabla bidimensional"},
+        {"id": "D", "text": "Un DataFrame solo almacena números y una Serie solo texto"}
+      ],
+      "correct_answer": "C",
+      "topic": "Estructuras de Datos Pandas"
+    },
+    {
+      "id": 76,
+      "category": "A",
+      "type": "multiple_choice",
+      "question": "¿Qué instrucción devuelve solo las filas donde goles > 10 y asistencias > 5?",
+      "options": [
+        {"id": "A", "text": "df[df['goles'] > 10 and df['asistencias'] > 5]"},
+        {"id": "B", "text": "df[(df['goles'] > 10) & (df['asistencias'] > 5)]"},
+        {"id": "C", "text": "df.where(goles > 10 && asistencias > 5)"},
+        {"id": "D", "text": "df.filter(goles > 10 & asistencias > 5)"}
+      ],
+      "correct_answer": "B",
+      "topic": "Filtrado Pandas"
+    },
+    {
+      "id": 77,
+      "category": "R",
+      "type": "multiple_choice",
+      "question": "¿Qué método usas para mostrar una leyenda con las etiquetas de varias líneas en un gráfico de matplotlib?",
+      "options": [
+        {"id": "A", "text": "plt.labels()"},
+        {"id": "B", "text": "plt.showlegend()"},
+        {"id": "C", "text": "plt.legend()"},
+        {"id": "D", "text": "plt.keys()"}
+      ],
+      "correct_answer": "C",
+      "topic": "Matplotlib Avanzado"
+    },
+    {
+      "id": 78,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "¿Cuál es la diferencia entre `df.head()` y `df.info()`?",
+      "options": [
+        {"id": "A", "text": "head() muestra tipos y info() primeras filas"},
+        {"id": "B", "text": "head() muestra primeras filas; info() muestra tipos y resumen estructural"},
+        {"id": "C", "text": "Ambas hacen lo mismo"},
+        {"id": "D", "text": "info() calcula estadísticas numéricas descriptivas"}
+      ],
+      "correct_answer": "B",
+      "topic": "Exploración de Datos"
+    },
+    {
+      "id": 79,
+      "category": "R",
+      "type": "numeric",
+      "question": "Para generar identificadores de jornadas usas `np.arange(1, 11)`. ¿Cuántas jornadas produce ese array (usa `len(...)`)?",
+      "correct_answer": 10,
+      "tolerance": 0,
+      "topic": "NumPy Avanzado"
+    },
+    {
+      "id": 80,
+      "category": "A",
+      "type": "numeric",
+      "question": "Dada una lista de diccionarios `jugadores = [{'goles':10}, {'goles':12}, {'goles':18}, {'goles':15}]`, ¿cuál es el promedio de goles? (Suma / número de jugadores)",
+      "correct_answer": 13.75,
+      "tolerance": 0.1,
+      "topic": "Cálculos con Estructuras"
+    },
+    {
+      "id": 81,
+      "category": "R",
+      "type": "multiple_choice",
+      "question": "¿Qué tipo de dato devuelve la expresión `3 > 2`?",
+      "options": [
+        {"id": "A", "text": "int"},
+        {"id": "B", "text": "bool"},
+        {"id": "C", "text": "float"},
+        {"id": "D", "text": "str"}
+      ],
+      "correct_answer": "B",
+      "topic": "Operadores Lógicos"
+    },
+    {
+      "id": 82,
+      "category": "R",
+      "type": "multiple_choice",
+      "question": "¿Qué operador lógico devuelve True solo si ambas condiciones son True?",
+      "options": [
+        {"id": "A", "text": "or"},
+        {"id": "B", "text": "not"},
+        {"id": "C", "text": "and"},
+        {"id": "D", "text": "xor"}
+      ],
+      "correct_answer": "C",
+      "topic": "Operadores Lógicos"
+    },
+    {
+      "id": 83,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "Si `goles = 8` y `asistencias = 5`, ¿qué evalúa `goles > 10 or asistencias >= 5`?",
+      "options": [
+        {"id": "A", "text": "True"},
+        {"id": "B", "text": "False"},
+        {"id": "C", "text": "None"},
+        {"id": "D", "text": "Error"}
+      ],
+      "correct_answer": "A",
+      "topic": "Operadores Lógicos"
+    },
+    {
+      "id": 84,
+      "category": "R",
+      "type": "numeric",
+      "question": "¿Qué valor imprime este código?\n```python\ncontador = 0\nfor i in range(1,6,2):\n    contador += 1\nprint(contador)\n```",
+      "correct_answer": 3,
+      "tolerance": 0,
+      "topic": "Bucles con Paso"
+    },
+    {
+      "id": 85,
+      "category": "R",
+      "type": "multiple_choice",
+      "question": "¿Qué hace `range(2, 10, 2)`?",
+      "options": [
+        {"id": "A", "text": "Genera 2,4,6,8"},
+        {"id": "B", "text": "Genera 2,4,6,8,10"},
+        {"id": "C", "text": "Genera 2,3,4,5,6,7,8,9"},
+        {"id": "D", "text": "Genera 2,10"}
+      ],
+      "correct_answer": "A",
+      "topic": "Rangos con Paso"
+    },
+    {
+      "id": 86,
+      "category": "R",
+      "type": "multiple_choice",
+      "question": "¿Qué imprime este código?\n```python\njugadores = ['Messi','Pedri','Gavi','Lewandowski']\nprint(jugadores[1:3])\n```",
+      "options": [
+        {"id": "A", "text": "['Messi','Pedri','Gavi']"},
+        {"id": "B", "text": "['Pedri','Gavi']"},
+        {"id": "C", "text": "['Gavi','Lewandowski']"},
+        {"id": "D", "text": "['Pedri','Gavi','Lewandowski']"}
+      ],
+      "correct_answer": "B",
+      "topic": "Slicing de Listas"
+    },
+    {
+      "id": 87,
+      "category": "R",
+      "type": "numeric",
+      "question": "Dado `valores = [5,2,9,1]`, ¿cuál es el resultado de `min(valores) + max(valores)`?",
+      "correct_answer": 10,
+      "tolerance": 0,
+      "topic": "Funciones de Agregación"
+    },
+    {
+      "id": 88,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "¿Qué diferencia hay entre `lista2 = lista1` y `lista2 = lista1.copy()`?",
+      "options": [
+        {"id": "A", "text": "Ninguna, ambas crean copia independiente"},
+        {"id": "B", "text": "La primera referencia la misma lista; la segunda crea copia nueva"},
+        {"id": "C", "text": "La segunda referencia la misma lista; la primera crea copia nueva"},
+        {"id": "D", "text": "Ambas borran la lista original"}
+      ],
+      "correct_answer": "B",
+      "topic": "Referencias y Copias"
+    },
+    {
+      "id": 89,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "¿Qué hace `if 'Messi' in jugadores:`?",
+      "options": [
+        {"id": "A", "text": "Recorre toda la lista"},
+        {"id": "B", "text": "Comprueba si 'Messi' está en la lista"},
+        {"id": "C", "text": "Ordena la lista"},
+        {"id": "D", "text": "Elimina 'Messi'"}
+      ],
+      "correct_answer": "B",
+      "topic": "Operador in"
+    },
+    {
+      "id": 90,
+      "category": "R",
+      "type": "numeric",
+      "question": "¿Cuál es la suma de la lista `[2,3,5]` usando `sum()`?",
+      "correct_answer": 10,
+      "tolerance": 0,
+      "topic": "Funciones de Agregación"
+    },
+    {
+      "id": 91,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "¿Qué hace `diccionario['goles'] = 15` si la clave ya existía?",
+      "options": [
+        {"id": "A", "text": "Lanza error"},
+        {"id": "B", "text": "Agrega una clave duplicada"},
+        {"id": "C", "text": "Actualiza el valor a 15"},
+        {"id": "D", "text": "Elimina la clave"}
+      ],
+      "correct_answer": "C",
+      "topic": "Modificación de Diccionarios"
+    },
+    {
+      "id": 92,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "¿Para qué sirve `diccionario.get('edad', 0)`?",
+      "options": [
+        {"id": "A", "text": "Siempre devuelve 0"},
+        {"id": "B", "text": "Devuelve 'edad' o 0 si no existe"},
+        {"id": "C", "text": "Elimina 'edad'"},
+        {"id": "D", "text": "Cambia el valor a 0"}
+      ],
+      "correct_answer": "B",
+      "topic": "Métodos de Diccionarios"
+    },
+    {
+      "id": 93,
+      "category": "A",
+      "type": "numeric",
+      "question": "¿Resultado de este bloque?\n```python\nvalores = [1,2,3,4]\nacum = 0\nfor v in valores:\n    acum += v\nprint(acum)\n```",
+      "correct_answer": 10,
+      "tolerance": 0,
+      "topic": "Acumuladores"
+    },
+    {
+      "id": 94,
+      "category": "R",
+      "type": "multiple_choice",
+      "question": "¿Qué error produce esta línea: `3 + '2'`?",
+      "options": [
+        {"id": "A", "text": "ValueError"},
+        {"id": "B", "text": "TypeError"},
+        {"id": "C", "text": "NameError"},
+        {"id": "D", "text": "IndexError"}
+      ],
+      "correct_answer": "B",
+      "topic": "Errores de Tipo"
+    },
+    {
+      "id": 95,
+      "category": "R",
+      "type": "multiple_choice",
+      "question": "¿Qué hace `int('7')`?",
+      "options": [
+        {"id": "A", "text": "Convierte texto '7' a entero 7"},
+        {"id": "B", "text": "Convierte 7 a texto"},
+        {"id": "C", "text": "Da error"},
+        {"id": "D", "text": "Devuelve float 7.0"}
+      ],
+      "correct_answer": "A",
+      "topic": "Conversión de Tipos"
+    },
+    {
+      "id": 96,
+      "category": "R",
+      "type": "multiple_choice",
+      "question": "¿Qué devuelve `df.shape`?",
+      "options": [
+        {"id": "A", "text": "Número de columnas"},
+        {"id": "B", "text": "Número de filas"},
+        {"id": "C", "text": "Tupla (filas, columnas)"},
+        {"id": "D", "text": "Lista de nombres de columnas"}
+      ],
+      "correct_answer": "C",
+      "topic": "Información DataFrame"
+    },
+    {
+      "id": 97,
+      "category": "A",
+      "type": "multiple_choice",
+      "question": "¿Cómo ordenas un DataFrame `df` por la columna 'goles' de mayor a menor?",
+      "options": [
+        {"id": "A", "text": "df.sort('goles')"},
+        {"id": "B", "text": "df.sort_values('goles', ascending=False)"},
+        {"id": "C", "text": "df.order('goles', desc=True)"},
+        {"id": "D", "text": "df.desc('goles')"}
+      ],
+      "correct_answer": "B",
+      "topic": "Ordenamiento DataFrame"
+    },
+    {
+      "id": 98,
+      "category": "R",
+      "type": "numeric",
+      "question": "Si `df['goles'] = [2,4,4,0]`, ¿cuál es `df['goles'].mean()`?",
+      "correct_answer": 2.5,
+      "tolerance": 0.1,
+      "topic": "Estadísticas de Columnas"
+    },
+    {
+      "id": 99,
+      "category": "A",
+      "type": "multiple_choice",
+      "question": "¿Qué hace `df['ratio'] = df['goles'] / df['partidos']`?",
+      "options": [
+        {"id": "A", "text": "Elimina columnas"},
+        {"id": "B", "text": "Crea o reemplaza la columna 'ratio'"},
+        {"id": "C", "text": "Renombra el DataFrame"},
+        {"id": "D", "text": "Filtra filas"}
+      ],
+      "correct_answer": "B",
+      "topic": "Creación de Columnas"
+    },
+    {
+      "id": 100,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "¿Cómo cuentas valores faltantes por columna?",
+      "options": [
+        {"id": "A", "text": "df.countna()"},
+        {"id": "B", "text": "df.isnull().sum()"},
+        {"id": "C", "text": "df.na().count()"},
+        {"id": "D", "text": "df.sum().isnull()"}
+      ],
+      "correct_answer": "B",
+      "topic": "Valores Faltantes"
+    },
+    {
+      "id": 101,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "¿Cuál es la diferencia entre `loc` e `iloc` en pandas?",
+      "options": [
+        {"id": "A", "text": "loc usa posiciones numéricas; iloc etiquetas"},
+        {"id": "B", "text": "loc usa etiquetas; iloc índices numéricos"},
+        {"id": "C", "text": "No hay diferencia"},
+        {"id": "D", "text": "iloc solo funciona con columnas"}
+      ],
+      "correct_answer": "B",
+      "topic": "Indexación Pandas"
+    },
+    {
+      "id": 102,
+      "category": "A",
+      "type": "numeric",
+      "question": "Dado `np.array([1,2,3]) + np.array([4,5,6])`, ¿qué elemento medio (índice 1) resulta?",
+      "correct_answer": 7,
+      "tolerance": 0,
+      "topic": "Operaciones NumPy"
+    },
+    {
+      "id": 103,
+      "category": "R",
+      "type": "multiple_choice",
+      "question": "¿Qué hace `np.array([1,2,3]).dtype` normalmente?",
+      "options": [
+        {"id": "A", "text": "Muestra el tipo de datos del array"},
+        {"id": "B", "text": "Convierte a texto"},
+        {"id": "C", "text": "Calcula la media"},
+        {"id": "D", "text": "Crea un DataFrame"}
+      ],
+      "correct_answer": "A",
+      "topic": "Propiedades NumPy"
+    },
+    {
+      "id": 104,
+      "category": "R",
+      "type": "multiple_choice",
+      "question": "¿Cómo etiquetas el eje X en matplotlib?",
+      "options": [
+        {"id": "A", "text": "plt.axisx('Texto')"},
+        {"id": "B", "text": "plt.xlabel('Texto')"},
+        {"id": "C", "text": "plt.xtitle('Texto')"},
+        {"id": "D", "text": "plt.titlex('Texto')"}
+      ],
+      "correct_answer": "B",
+      "topic": "Etiquetas Matplotlib"
+    },
+    {
+      "id": 105,
+      "category": "A",
+      "type": "multiple_choice",
+      "question": "¿Cómo cambias el tamaño de una figura antes de graficar?",
+      "options": [
+        {"id": "A", "text": "plt.size(10,5)"},
+        {"id": "B", "text": "plt.figure(figsize=(10,5))"},
+        {"id": "C", "text": "plt.dimensions(10,5)"},
+        {"id": "D", "text": "plt.scale(10,5)"}
+      ],
+      "correct_answer": "B",
+      "topic": "Configuración Matplotlib"
+    },
+    {
+      "id": 106,
+      "category": "R",
+      "type": "numeric",
+      "question": "Si `edades = [18,19,20,21]`, ¿cuál es el promedio usando `sum(edades)/len(edades)`?",
+      "correct_answer": 19.5,
+      "tolerance": 0.1,
+      "topic": "Cálculos Básicos"
+    },
+    {
+      "id": 107,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "¿Qué gráfico elegirías para mostrar la proporción de nacionalidades en un plantel pequeño?",
+      "options": [
+        {"id": "A", "text": "Gráfico de líneas"},
+        {"id": "B", "text": "Gráfico circular simple"},
+        {"id": "C", "text": "Histograma"},
+        {"id": "D", "text": "Gráfico de dispersión"}
+      ],
+      "correct_answer": "B",
+      "topic": "Selección de Gráficos"
+    },
+    {
+      "id": 108,
+      "category": "R",
+      "type": "multiple_choice",
+      "question": "¿Qué hace `sorted([3,1,2])`?",
+      "options": [
+        {"id": "A", "text": "Modifica la lista original"},
+        {"id": "B", "text": "Devuelve nueva lista [1,2,3]"},
+        {"id": "C", "text": "Devuelve [3,1,2]"},
+        {"id": "D", "text": "Elimina duplicados"}
+      ],
+      "correct_answer": "B",
+      "topic": "Ordenamiento"
+    },
+    {
+      "id": 109,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "¿Qué diferencia hay entre `.append()` y `.extend()` en listas?",
+      "options": [
+        {"id": "A", "text": "Ninguna"},
+        {"id": "B", "text": "append agrega un elemento; extend agrega todos los de otra colección"},
+        {"id": "C", "text": "extend agrega un elemento; append agrega varios"},
+        {"id": "D", "text": "append ordena; extend filtra"}
+      ],
+      "correct_answer": "B",
+      "topic": "Métodos de Listas"
+    },
+    {
+      "id": 110,
+      "category": "R",
+      "type": "numeric",
+      "question": "Si `plantilla = ['A','B','C']` y ejecuto `plantilla.append('D')`, ¿cuántos elementos hay ahora?",
+      "correct_answer": 4,
+      "tolerance": 0,
+      "topic": "Modificación de Listas"
+    },
+    {
+      "id": 111,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "¿Qué hace este código?\n```python\ndef promedio(a,b=2):\n    return (a+b)/2\n```",
+      "options": [
+        {"id": "A", "text": "Error por parámetro por defecto"},
+        {"id": "B", "text": "Crea una función con un parámetro opcional"},
+        {"id": "C", "text": "Crea dos funciones"},
+        {"id": "D", "text": "No devuelve nada"}
+      ],
+      "correct_answer": "B",
+      "topic": "Parámetros por Defecto"
+    },
+    {
+      "id": 112,
+      "category": "A",
+      "type": "multiple_choice",
+      "question": "¿Qué imprime?\n```python\nx = 5\ndef f():\n    y = 3\n    return x + y\nprint(f())\n```",
+      "options": [
+        {"id": "A", "text": "3"},
+        {"id": "B", "text": "5"},
+        {"id": "C", "text": "8"},
+        {"id": "D", "text": "Error de variable"}
+      ],
+      "correct_answer": "C",
+      "topic": "Alcance de Variables"
+    },
+    {
+      "id": 113,
+      "category": "R",
+      "type": "multiple_choice",
+      "question": "¿Qué error describe mejor un bloque mal indentado?",
+      "options": [
+        {"id": "A", "text": "SyntaxError"},
+        {"id": "B", "text": "IndentationError"},
+        {"id": "C", "text": "TypeError"},
+        {"id": "D", "text": "NameError"}
+      ],
+      "correct_answer": "B",
+      "topic": "Errores de Sintaxis"
+    },
+    {
+      "id": 114,
+      "category": "R",
+      "type": "numeric",
+      "question": "Resultado de `float(7) + int(2.5)`",
+      "correct_answer": 9.0,
+      "tolerance": 0.1,
+      "topic": "Conversiones Numéricas"
+    },
+    {
+      "id": 115,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "¿Qué hace `value_counts()` sobre una columna categórica?",
+      "options": [
+        {"id": "A", "text": "Calcula promedio"},
+        {"id": "B", "text": "Cuenta ocurrencias de cada categoría"},
+        {"id": "C", "text": "Ordena alfabéticamente"},
+        {"id": "D", "text": "Elimina duplicados"}
+      ],
+      "correct_answer": "B",
+      "topic": "Análisis Categórico"
+    },
+    {
+      "id": 116,
+      "category": "A",
+      "type": "multiple_choice",
+      "question": "¿Cómo renombrar columnas en pandas?",
+      "options": [
+        {"id": "A", "text": "df.rename(columns={'vieja':'nueva'})"},
+        {"id": "B", "text": "df.columns.rename('vieja','nueva')"},
+        {"id": "C", "text": "df.col_rename({'vieja':'nueva'})"},
+        {"id": "D", "text": "df.rename_cols(vieja='nueva')"}
+      ],
+      "correct_answer": "A",
+      "topic": "Gestión de Columnas"
+    },
+    {
+      "id": 117,
+      "category": "R",
+      "type": "numeric",
+      "question": "Si `goles = [0,1,1,2,2,2]`, ¿cuál es la moda (valor más frecuente)?",
+      "correct_answer": 2,
+      "tolerance": 0,
+      "topic": "Estadística Descriptiva"
+    },
+    {
+      "id": 118,
+      "category": "C",
+      "type": "multiple_choice",
+      "question": "¿Qué significa documentación clara en un análisis?",
+      "options": [
+        {"id": "A", "text": "Explicar pasos, supuestos y conclusiones"},
+        {"id": "B", "text": "Solo mostrar gráficos bonitos"},
+        {"id": "C", "text": "Pegar código sin comentarios"},
+        {"id": "D", "text": "Ocultar limitaciones"}
+      ],
+      "correct_answer": "A",
+      "topic": "Buenas Prácticas"
+    },
+    {
+      "id": 119,
+      "category": "A",
+      "type": "multiple_choice",
+      "question": "¿Qué instrucción filtra filas donde goles > 10 O asistencias > 7?",
+      "options": [
+        {"id": "A", "text": "df[(df['goles'] > 10) | (df['asistencias'] > 7)]"},
+        {"id": "B", "text": "df[df['goles'] > 10 or df['asistencias'] > 7]"},
+        {"id": "C", "text": "df.where(goles > 10 || asistencias > 7)"},
+        {"id": "D", "text": "df.filter(goles > 10 | asistencias > 7)"}
+      ],
+      "correct_answer": "A",
+      "topic": "Filtrado Complejo"
+    },
+    {
+      "id": 120,
+      "category": "A",
+      "type": "numeric",
+      "question": "Si un jugador hizo 9 goles en 30 partidos, ¿cuál es su promedio de goles por partido? (2 decimales)",
+      "correct_answer": 0.30,
+      "tolerance": 0.01,
+      "topic": "Ratios Deportivos"
     }
   ]
 }

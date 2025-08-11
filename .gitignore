@@ -1,2 +1,11 @@
 .history/
 .venv/
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.xml
+*.zip

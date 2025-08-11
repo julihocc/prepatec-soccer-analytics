@@ -153,6 +153,35 @@ print("Este análisis nos muestra los patrones de goles!")
 
 ## Flujos de Trabajo Específicos
 
+### Política de Unicidad de Notebooks por Carpeta (NUEVA)
+**Regla específica**: Cada carpeta de semana (por ejemplo: `contenido/bloque-1/semana-1/`) debe contener **solo un (1) notebook principal `.ipynb`** en el nivel raíz de esa carpeta.
+
+**Motivación pedagógica y operativa**:
+- Evita que el docente/estudiante se confunda sobre cuál es “el flujo oficial” de la semana.
+- Facilita la validación estricta de tiempo (cronómetro sobre un único notebook).
+- Simplifica control de versiones y seguimiento de cambios (changelog más claro).
+- Reduce riesgo de duplicación parcial de contenido que rompa la progresión gradual.
+
+**Si se requiere material adicional** (apoyo opcional, soluciones extendidas, datasets exploratorios, borradores):
+1. Crear un subfolder dentro de la misma semana, por ejemplo: `material-apoyo/`, `exploraciones/` o `soluciones/`.
+2. Colocar ahí archivos alternativos (`.ipynb`, `.md`, `.py`).
+3. Referenciar explícitamente ese subfolder desde una sección “Recursos opcionales” del notebook principal (sin obligar su apertura para el flujo básico de 50 minutos).
+4. Documentar en el `README.md` del bloque la existencia de esos recursos (fecha + propósito). 
+
+**Alternativas recomendadas antes de crear un segundo notebook**:
+- Convertir contenido extendido a `.md` (lectura) o `.py` (script demostrativo) si no precisa ejecución interactiva paso a paso.
+- Integrar fragmentos como sección opcional al final (marcada claramente como “Extensión (no obligatoria)”), siempre validando que su exclusión mantiene la duración comprometida.
+
+**Checklist previo a añadir un segundo `.ipynb` (debería normalmente evitarse)**:
+- [ ] ¿El contenido extra es indispensable para los objetivos mínimos? (Si NO, mover a subfolder opcional.)
+- [ ] ¿Rompe la regla de tiempo (sumado al principal excede 50 min)? (Si SÍ, descartar o resumir.)
+- [ ] ¿Se actualizó README del bloque con nota de recurso adicional? (Obligatorio.)
+- [ ] ¿Se explicó en la sección de “Recursos opcionales” por qué existe y su uso sugerido? (Claridad.)
+
+**Criterio de bloqueo**: Un commit que agrega un segundo notebook en el nivel raíz de una carpeta de semana sin crear subfolder y sin documentación asociada debe ser rechazado hasta corregir la estructura.
+
+> Nota: Esta política sustituye cualquier interpretación previa ambigua sobre “no múltiples archivos”; la restricción aplica únicamente a múltiples notebooks `.ipynb` en el mismo nivel raíz de una carpeta de semana.
+
 ### Creación de Contenido Semanal
 1. **Comenzar con pregunta socrática** ("¿Alguna vez te has preguntado...?")
 2. **Estructurar en 3 sesiones exactas** de 50 minutos

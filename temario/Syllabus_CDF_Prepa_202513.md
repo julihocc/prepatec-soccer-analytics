@@ -1,16 +1,17 @@
-# Syllabus
-## Ciencia de Datos Aplicada al Fútbol (Preparatoria)
+# Syllabus | Programación Básica 1
+## Tópico: Ciencia de Datos Aplicada al Fútbol
 
 **Periodo:** Agosto - Diciembre 2025 (202513)  
 **Frecuencia:** 3 sesiones por semana (50 minutos cada una)  
 **Modalidad:** Presencial / Híbrida con soporte en Canvas  
-**Docente:** (Por definir)  
-**Correo institucional:** (Por definir)
+**Docente:** Juliho David Castillo Colmenares  
+**Correo institucional:** julihocc@tec.mx
 
 > Nota institucional: De acuerdo con el artículo 5.13 del Reglamento Académico de Preparatoria, esta materia NO puede acreditarse mediante examen de última materia.
 
 ---
 ## 1. Descripción General
+
 Curso introductorio práctico que combina fundamentos de programación en Python, análisis exploratorio y modelado predictivo básico usando datos reales y simulados de fútbol (equipos: Barcelona, Real Madrid, Manchester City, Bayern Munich). Se emplea metodología socrática: cada sesión inicia con una pregunta detonadora; el avance conceptual ocurre mediante descubrimiento guiado y reflexión.
 
 ---

@@ -1,3 +1,13 @@
+# 4.3.0 (2025-08-11)
+- Entrega de presentaciones semanales en formato Marp/Markdown para semanas 4 a 15, alineadas con metodología socrática y estructura de sesiones de 50 minutos.
+- Creación y documentación del prompt de transformación Jupyter→Marp en `.github/prompts/jupyter-to-marp-presentacion.prompt.md`.
+- Proceso de commits y versionado siguiendo los prompts estandarizados del repositorio.
+# 4.3.0 (2025-08-11)
+
+- Entrega de presentaciones semanales en formato Marp/Markdown para semanas 4 a 15, alineadas con metodología socrática y estructura de sesiones de 50 minutos.
+- Creación y documentación del prompt de transformación Jupyter→Marp en `.github/prompts/jupyter-to-marp-presentacion.prompt.md`.
+- Proceso de commits y versionado siguiendo los prompts estandarizados del repositorio.
+
 # Historial de Cambios
 
 Todos los cambios notables de este proyecto serán documentados en este archivo.
@@ -86,19 +96,32 @@ y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 - Documentación de instrucciones para GitHub Copilot
 - Configuración de entorno de desarrollo optimizada
 
-## [3.0.0] - 2025-08-09
 
-### Agregado
-- Sistema completo de evaluación con Canvas, casos prácticos y proyectos
-- Banco de preguntas automáticas con metodología socrática
-- Casos prácticos colaborativos para equipos de 3-4 estudiantes
-- Rúbricas detalladas con criterios específicos
-- Proyecto integrador final con análisis predictivo
+## [4.2.0] - 2025-08-10
+
+## [4.2.1] - 2025-08-10
 
 ### Cambiado
-- Estructura de evaluación alineada con estándares del Tecnológico de Monterrey
-- Distribución de calificaciones: 35% + 35% + 30%
-- Enfoque en competencias y proyectos colaborativos
+
+- Renombrados archivos de syllabus para usar sufijo de periodo 202513.
+
+### Tipo de versión
+
+- Actualización de documentación sin impacto funcional (patch).
+
+### Cambiado
+
+- Documentación alineada con nueva equivalencia de parciales (Bloque 1: 30%, Bloque 2: 30%, Bloque 3: 40%).
+
+### Mejorado
+
+- Claridad en sub‑pesos internos del Caso Práctico Bloque 3 indicando impacto porcentual sobre el total del curso.
+
+### Razonamiento de incremento menor
+
+- Cambio estructural documental sin alterar bancos de preguntas existentes ni lógica de código: bump menor (4.1.x → 4.2.0).
+- Expansión del banco Canvas Bloque 2 (75 → 105) con ítems Extended [S] y etiquetado cognitivo completo.
+
 
 ## [2.1.0] - 2025-08-08
 

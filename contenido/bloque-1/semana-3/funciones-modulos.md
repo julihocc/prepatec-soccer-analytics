@@ -7,7 +7,7 @@ jupyter:
       format_version: '1.3'
       jupytext_version: 1.17.2
   kernelspec:
-    display_name: .venv
+    display_name: .venv (3.10.12)
     language: python
     name: python3
 ---
@@ -1421,6 +1421,172 @@ print()
 
 ```python
 # ===============================
+# FASE 3: MÓDULO DE SIMULACIÓN Y ANÁLISIS COMPARATIVO (10 minutos)
+# ===============================
+
+def simular_enfrentamiento_elite(equipo1_data, equipo2_data):
+    """
+    SIMULADOR DE ENFRENTAMIENTOS ÉLITE: Predicción avanzada de partidos
+    
+    ¿Cómo predicen los departamentos de análisis los resultados de partidos importantes?
+    Usando modelos probabilísticos basados en múltiples variables.
+    
+    Entrada:
+    - equipo1_data: diccionario con análisis completo del primer equipo
+    - equipo2_data: diccionario con análisis completo del segundo equipo
+    
+    Salida:
+    - predicción detallada del enfrentamiento con probabilidades y análisis
+    """
+    # EXTRACCIÓN DE MÉTRICAS CLAVE
+    calidad_equipo1 = equipo1_data['resumen_ejecutivo']['promedio_calidad']
+    calidad_equipo2 = equipo2_data['resumen_ejecutivo']['promedio_calidad']
+    forma_equipo1 = equipo1_data['analisis_forma']['puntos_obtenidos']
+    forma_equipo2 = equipo2_data['analisis_forma']['puntos_obtenidos']
+    
+    # CÁLCULO DE FUERZA RELATIVA (como los modelos Elo de FIFA)
+    # Peso: 70% calidad plantilla, 30% forma reciente
+    fuerza_equipo1 = (calidad_equipo1 * 0.7) + (forma_equipo1 * 0.3 * 6)  # Escalar forma a escala 0-90
+    fuerza_equipo2 = (calidad_equipo2 * 0.7) + (forma_equipo2 * 0.3 * 6)
+    
+    # FACTOR ALEATORIO (impredecibilidad del fútbol)
+    factor_impredecible = random.uniform(0.85, 1.15)
+    
+    # PROBABILIDADES BÁSICAS
+    diferencia_fuerza = (fuerza_equipo1 - fuerza_equipo2) * factor_impredecible
+    probabilidad_equipo1 = 50 + (diferencia_fuerza * 0.4)
+    
+    # LIMITAR PROBABILIDADES (máximo realismo: entre 15% y 85%)
+    probabilidad_equipo1 = max(15, min(85, probabilidad_equipo1))
+    probabilidad_empate = 25 - abs(diferencia_fuerza) * 0.2  # Menos empates si hay gran diferencia
+    probabilidad_empate = max(10, min(30, probabilidad_empate))
+    probabilidad_equipo2 = 100 - probabilidad_equipo1 - probabilidad_empate
+    
+    # SIMULACIÓN DEL RESULTADO
+    resultado_aleatorio = random.uniform(0, 100)
+    
+    if resultado_aleatorio < probabilidad_equipo1:
+        # Victoria equipo 1
+        goles_e1 = random.randint(1, 4)
+        goles_e2 = random.randint(0, min(goles_e1-1, 2))
+        resultado_texto = f"Victoria {equipo1_data['club']}"
+        ganador = equipo1_data['club']
+    elif resultado_aleatorio < probabilidad_equipo1 + probabilidad_empate:
+        # Empate
+        goles_empate = random.randint(0, 3)
+        goles_e1 = goles_e2 = goles_empate
+        resultado_texto = "Empate"
+        ganador = "Empate"
+    else:
+        # Victoria equipo 2
+        goles_e2 = random.randint(1, 4)
+        goles_e1 = random.randint(0, min(goles_e2-1, 2))
+        resultado_texto = f"Victoria {equipo2_data['club']}"
+        ganador = equipo2_data['club']
+    
+    # ANÁLISIS TÁCTICO AUTOMÁTICO
+    if abs(calidad_equipo1 - calidad_equipo2) < 3:
+        analisis_tactico = "Partido muy igualado - Los detalles marcarán la diferencia"
+    elif calidad_equipo1 > calidad_equipo2 + 5:
+        analisis_tactico = f"{equipo1_data['club']} parte como favorito claro por su superior plantilla"
+    elif calidad_equipo2 > calidad_equipo1 + 5:
+        analisis_tactico = f"{equipo2_data['club']} tiene ventaja significativa en calidad individual"
+    else:
+        analisis_tactico = "Duelo equilibrado donde la forma del momento puede ser decisiva"
+    
+    # FACTORES CLAVE PARA EL ANÁLISIS
+    factores_clave = []
+    if forma_equipo1 > forma_equipo2 + 3:
+        factores_clave.append(f"Momentum de {equipo1_data['club']} puede ser decisivo")
+    elif forma_equipo2 > forma_equipo1 + 3:
+        factores_clave.append(f"Racha de {equipo2_data['club']} genera confianza extra")
+    
+    if equipo1_data['metricas_globales']['productividad_ofensiva'] > equipo2_data['metricas_globales']['productividad_ofensiva'] + 10:
+        factores_clave.append(f"Superioridad ofensiva de {equipo1_data['club']}")
+    elif equipo2_data['metricas_globales']['productividad_ofensiva'] > equipo1_data['metricas_globales']['productividad_ofensiva'] + 10:
+        factores_clave.append(f"Mayor potencial goleador de {equipo2_data['club']}")
+    
+    return {
+        "enfrentamiento": f"{equipo1_data['club']} vs {equipo2_data['club']}",
+        "prediccion": {
+            "marcador_simulado": f"{goles_e1} - {goles_e2}",
+            "resultado": resultado_texto,
+            "ganador_predicho": ganador
+        },
+        "probabilidades": {
+            f"victoria_{equipo1_data['club'].lower().replace(' ', '_')}": round(probabilidad_equipo1, 1),
+            "empate": round(probabilidad_empate, 1),
+            f"victoria_{equipo2_data['club'].lower().replace(' ', '_')}": round(probabilidad_equipo2, 1)
+        },
+        "analisis_previo": {
+            "fuerza_relativa": {
+                equipo1_data['club']: round(fuerza_equipo1, 1),
+                equipo2_data['club']: round(fuerza_equipo2, 1)
+            },
+            "analisis_tactico": analisis_tactico,
+            "factores_clave": factores_clave if factores_clave else ["Partido equilibrado sin factores decisivos claros"]
+        }
+    }
+
+def generar_reporte_comparativo(equipos_data):
+    """
+    GENERADOR DE REPORTES COMPARATIVOS: Análisis multi-equipo
+    
+    Para comparar múltiples equipos como hacen en las presentaciones 
+    de jefes de scouting antes de mercados de fichajes.
+    
+    Entrada:
+    - equipos_data: lista con análisis completos de múltiples equipos
+    
+    Salida:
+    - ranking y análisis comparativo professional
+    """
+    print("=" * 80)
+    print("                    REPORTE COMPARATIVO DE ÉLITE")
+    print("=" * 80)
+    
+    # ORDENAR POR CALIDAD DE PLANTILLA
+    equipos_ordenados = sorted(equipos_data, 
+                              key=lambda x: x['resumen_ejecutivo']['promedio_calidad'], 
+                              reverse=True)
+    
+    print("RANKING DE CALIDAD DE PLANTILLA:")
+    for i, equipo in enumerate(equipos_ordenados, 1):
+        calidad = equipo['resumen_ejecutivo']['promedio_calidad']
+        nivel = equipo['resumen_ejecutivo']['nivel_plantilla']
+        momento = equipo['resumen_ejecutivo']['momento_deportivo']
+        print(f"{i}. {equipo['club']}: {calidad}/100 ({nivel}) - {momento}")
+    
+    print("\n" + "=" * 80)
+    print("MÉTRICAS COMPARATIVAS:")
+    
+    # Equipo más goleador
+    mas_goleador = max(equipos_data, key=lambda x: x['metricas_globales']['goles_totales_plantilla'])
+    print(f"Mayor potencia ofensiva: {mas_goleador['club']} ({mas_goleador['metricas_globales']['goles_totales_plantilla']} goles)")
+    
+    # Equipo en mejor forma
+    mejor_forma = max(equipos_data, key=lambda x: x['analisis_forma']['puntos_obtenidos'])
+    print(f"Mejor momento: {mejor_forma['club']} ({mejor_forma['analisis_forma']['puntos_obtenidos']}/15 puntos)")
+    
+    # Equipo más equilibrado (mayor número de jugadores con buena evaluación)
+    for equipo in equipos_data:
+        jugadores_elite = sum(1 for jugador in equipo['evaluaciones_individuales'] 
+                            if jugador['evaluacion']['puntuacion'] >= 85)
+        equipo['jugadores_elite'] = jugadores_elite
+    
+    mas_equilibrado = max(equipos_data, key=lambda x: x['jugadores_elite'])
+    print(f"Plantilla más equilibrada: {mas_equilibrado['club']} ({mas_equilibrado['jugadores_elite']} jugadores de élite)")
+    
+    print("\n" + "=" * 80)
+    return equipos_ordenados
+
+print("Módulo de simulación y análisis comparativo completado")
+print("Sistema integrado listo para análisis profesional")
+print()
+```
+
+```python
+# ===============================
 # FASE 4: DEMOSTRACIÓN PROFESIONAL CON DATOS REALES (5 minutos)
 # ===============================
 
@@ -1598,172 +1764,6 @@ print("lógica compleja y presentación profesional en una sola herramienta?")
 print()
 print("¡Esto es exactamente lo que hacen los analistas de datos")
 print("en los mejores clubes del mundo!")
-```
-
-```python
-# ===============================
-# FASE 3: MÓDULO DE SIMULACIÓN Y ANÁLISIS COMPARATIVO (10 minutos)
-# ===============================
-
-def simular_enfrentamiento_elite(equipo1_data, equipo2_data):
-    """
-    SIMULADOR DE ENFRENTAMIENTOS ÉLITE: Predicción avanzada de partidos
-    
-    ¿Cómo predicen los departamentos de análisis los resultados de partidos importantes?
-    Usando modelos probabilísticos basados en múltiples variables.
-    
-    Entrada:
-    - equipo1_data: diccionario con análisis completo del primer equipo
-    - equipo2_data: diccionario con análisis completo del segundo equipo
-    
-    Salida:
-    - predicción detallada del enfrentamiento con probabilidades y análisis
-    """
-    # EXTRACCIÓN DE MÉTRICAS CLAVE
-    calidad_equipo1 = equipo1_data['resumen_ejecutivo']['promedio_calidad']
-    calidad_equipo2 = equipo2_data['resumen_ejecutivo']['promedio_calidad']
-    forma_equipo1 = equipo1_data['analisis_forma']['puntos_obtenidos']
-    forma_equipo2 = equipo2_data['analisis_forma']['puntos_obtenidos']
-    
-    # CÁLCULO DE FUERZA RELATIVA (como los modelos Elo de FIFA)
-    # Peso: 70% calidad plantilla, 30% forma reciente
-    fuerza_equipo1 = (calidad_equipo1 * 0.7) + (forma_equipo1 * 0.3 * 6)  # Escalar forma a escala 0-90
-    fuerza_equipo2 = (calidad_equipo2 * 0.7) + (forma_equipo2 * 0.3 * 6)
-    
-    # FACTOR ALEATORIO (impredecibilidad del fútbol)
-    factor_impredecible = random.uniform(0.85, 1.15)
-    
-    # PROBABILIDADES BÁSICAS
-    diferencia_fuerza = (fuerza_equipo1 - fuerza_equipo2) * factor_impredecible
-    probabilidad_equipo1 = 50 + (diferencia_fuerza * 0.4)
-    
-    # LIMITAR PROBABILIDADES (máximo realismo: entre 15% y 85%)
-    probabilidad_equipo1 = max(15, min(85, probabilidad_equipo1))
-    probabilidad_empate = 25 - abs(diferencia_fuerza) * 0.2  # Menos empates si hay gran diferencia
-    probabilidad_empate = max(10, min(30, probabilidad_empate))
-    probabilidad_equipo2 = 100 - probabilidad_equipo1 - probabilidad_empate
-    
-    # SIMULACIÓN DEL RESULTADO
-    resultado_aleatorio = random.uniform(0, 100)
-    
-    if resultado_aleatorio < probabilidad_equipo1:
-        # Victoria equipo 1
-        goles_e1 = random.randint(1, 4)
-        goles_e2 = random.randint(0, min(goles_e1-1, 2))
-        resultado_texto = f"Victoria {equipo1_data['club']}"
-        ganador = equipo1_data['club']
-    elif resultado_aleatorio < probabilidad_equipo1 + probabilidad_empate:
-        # Empate
-        goles_empate = random.randint(0, 3)
-        goles_e1 = goles_e2 = goles_empate
-        resultado_texto = "Empate"
-        ganador = "Empate"
-    else:
-        # Victoria equipo 2
-        goles_e2 = random.randint(1, 4)
-        goles_e1 = random.randint(0, min(goles_e2-1, 2))
-        resultado_texto = f"Victoria {equipo2_data['club']}"
-        ganador = equipo2_data['club']
-    
-    # ANÁLISIS TÁCTICO AUTOMÁTICO
-    if abs(calidad_equipo1 - calidad_equipo2) < 3:
-        analisis_tactico = "Partido muy igualado - Los detalles marcarán la diferencia"
-    elif calidad_equipo1 > calidad_equipo2 + 5:
-        analisis_tactico = f"{equipo1_data['club']} parte como favorito claro por su superior plantilla"
-    elif calidad_equipo2 > calidad_equipo1 + 5:
-        analisis_tactico = f"{equipo2_data['club']} tiene ventaja significativa en calidad individual"
-    else:
-        analisis_tactico = "Duelo equilibrado donde la forma del momento puede ser decisiva"
-    
-    # FACTORES CLAVE PARA EL ANÁLISIS
-    factores_clave = []
-    if forma_equipo1 > forma_equipo2 + 3:
-        factores_clave.append(f"Momentum de {equipo1_data['club']} puede ser decisivo")
-    elif forma_equipo2 > forma_equipo1 + 3:
-        factores_clave.append(f"Racha de {equipo2_data['club']} genera confianza extra")
-    
-    if equipo1_data['metricas_globales']['productividad_ofensiva'] > equipo2_data['metricas_globales']['productividad_ofensiva'] + 10:
-        factores_clave.append(f"Superioridad ofensiva de {equipo1_data['club']}")
-    elif equipo2_data['metricas_globales']['productividad_ofensiva'] > equipo1_data['metricas_globales']['productividad_ofensiva'] + 10:
-        factores_clave.append(f"Mayor potencial goleador de {equipo2_data['club']}")
-    
-    return {
-        "enfrentamiento": f"{equipo1_data['club']} vs {equipo2_data['club']}",
-        "prediccion": {
-            "marcador_simulado": f"{goles_e1} - {goles_e2}",
-            "resultado": resultado_texto,
-            "ganador_predicho": ganador
-        },
-        "probabilidades": {
-            f"victoria_{equipo1_data['club'].lower().replace(' ', '_')}": round(probabilidad_equipo1, 1),
-            "empate": round(probabilidad_empate, 1),
-            f"victoria_{equipo2_data['club'].lower().replace(' ', '_')}": round(probabilidad_equipo2, 1)
-        },
-        "analisis_previo": {
-            "fuerza_relativa": {
-                equipo1_data['club']: round(fuerza_equipo1, 1),
-                equipo2_data['club']: round(fuerza_equipo2, 1)
-            },
-            "analisis_tactico": analisis_tactico,
-            "factores_clave": factores_clave if factores_clave else ["Partido equilibrado sin factores decisivos claros"]
-        }
-    }
-
-def generar_reporte_comparativo(equipos_data):
-    """
-    GENERADOR DE REPORTES COMPARATIVOS: Análisis multi-equipo
-    
-    Para comparar múltiples equipos como hacen en las presentaciones 
-    de jefes de scouting antes de mercados de fichajes.
-    
-    Entrada:
-    - equipos_data: lista con análisis completos de múltiples equipos
-    
-    Salida:
-    - ranking y análisis comparativo professional
-    """
-    print("=" * 80)
-    print("                    REPORTE COMPARATIVO DE ÉLITE")
-    print("=" * 80)
-    
-    # ORDENAR POR CALIDAD DE PLANTILLA
-    equipos_ordenados = sorted(equipos_data, 
-                              key=lambda x: x['resumen_ejecutivo']['promedio_calidad'], 
-                              reverse=True)
-    
-    print("RANKING DE CALIDAD DE PLANTILLA:")
-    for i, equipo in enumerate(equipos_ordenados, 1):
-        calidad = equipo['resumen_ejecutivo']['promedio_calidad']
-        nivel = equipo['resumen_ejecutivo']['nivel_plantilla']
-        momento = equipo['resumen_ejecutivo']['momento_deportivo']
-        print(f"{i}. {equipo['club']}: {calidad}/100 ({nivel}) - {momento}")
-    
-    print("\n" + "=" * 80)
-    print("MÉTRICAS COMPARATIVAS:")
-    
-    # Equipo más goleador
-    mas_goleador = max(equipos_data, key=lambda x: x['metricas_globales']['goles_totales_plantilla'])
-    print(f"Mayor potencia ofensiva: {mas_goleador['club']} ({mas_goleador['metricas_globales']['goles_totales_plantilla']} goles)")
-    
-    # Equipo en mejor forma
-    mejor_forma = max(equipos_data, key=lambda x: x['analisis_forma']['puntos_obtenidos'])
-    print(f"Mejor momento: {mejor_forma['club']} ({mejor_forma['analisis_forma']['puntos_obtenidos']}/15 puntos)")
-    
-    # Equipo más equilibrado (mayor número de jugadores con buena evaluación)
-    for equipo in equipos_data:
-        jugadores_elite = sum(1 for jugador in equipo['evaluaciones_individuales'] 
-                            if jugador['evaluacion']['puntuacion'] >= 85)
-        equipo['jugadores_elite'] = jugadores_elite
-    
-    mas_equilibrado = max(equipos_data, key=lambda x: x['jugadores_elite'])
-    print(f"Plantilla más equilibrada: {mas_equilibrado['club']} ({mas_equilibrado['jugadores_elite']} jugadores de élite)")
-    
-    print("\n" + "=" * 80)
-    return equipos_ordenados
-
-print("Módulo de simulación y análisis comparativo completado")
-print("Sistema integrado listo para análisis profesional")
-print()
 ```
 
 <!-- #region -->

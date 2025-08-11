@@ -7,7 +7,7 @@ jupyter:
       format_version: '1.3'
       jupytext_version: 1.17.2
   kernelspec:
-    display_name: .venv
+    display_name: .venv (3.10.12)
     language: python
     name: python3
 ---

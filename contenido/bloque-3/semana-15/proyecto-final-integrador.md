@@ -16,7 +16,7 @@ jupyter:
 
 ## PROYECTO FINAL INTEGRADOR (150 min distribuidos en 3 sesiones)
 
-### ¡El gran desafío final!
+### ¡El gran desafío final
 
 **Misión**: Crear un sistema completo de análisis que ayude al FC Barcelona a tomar mejores decisiones sobre sus jugadores.
 
@@ -25,6 +25,7 @@ jupyter:
 ### Tu rol: Analista Junior del Barcelona
 
 **Situación**: El cuerpo técnico del Barcelona te ha encargado crear un sistema que les ayude a:
+
 1. **Evaluar el rendimiento** de los jugadores actuales
 2. **Predecir qué jugadores** deberían ser titulares  
 3. **Comparar diferentes estrategias** de análisis
@@ -32,8 +33,8 @@ jupyter:
 
 **Pregunta motivadora**: ¿Estás listo para demostrar todo lo que has aprendido sobre ciencia de datos aplicada al fútbol?
 
-
 ## SESIÓN 1: ¿Cómo empezaríamos nuestro análisis profesional? (50 min)
+
 **Pregunta guía**: ¿Qué pasos seguiría un analista profesional para evaluar un equipo completo?
 
 ### El proceso de un analista de datos deportivos
@@ -117,6 +118,7 @@ print(barcelona_df.head(10))
 **Pregunta de análisis**: ¿Qué información básica necesitamos entender sobre nuestro equipo?
 
 Como analista profesional, siempre empezamos preguntándonos:
+
 - ¿Cuántos jugadores tenemos por posición?
 - ¿Cuál es la distribución de edades?
 - ¿Quiénes son los jugadores más utilizados?
@@ -167,6 +169,7 @@ print("¿Qué patrones iniciales observas en estos datos del Barcelona?")
 ```
 
 ## SESIÓN 2: ¿Cómo creamos estadísticas avanzadas para el análisis? (50 min)
+
 **Pregunta guía**: ¿Qué estadísticas personalizadas necesitamos para evaluar mejor a nuestros jugadores?
 
 ### Aplicando lo aprendido: Creación de métricas inteligentes
@@ -174,6 +177,7 @@ print("¿Qué patrones iniciales observas en estos datos del Barcelona?")
 Recordando la **Semana 14**, aprendimos que las estadísticas básicas no siempre cuentan toda la historia. Como analista del Barcelona, necesitas crear métricas más sofisticadas.
 
 **Tu desafío**: Crear estadísticas que respondan preguntas específicas:
+
 - ¿Quién es más eficiente por minuto jugado?
 - ¿Qué jugadores tienen mejor balance entre goles y asistencias?
 - ¿Quién tiene mejor disciplina (menos tarjetas)?
@@ -248,6 +252,7 @@ print(top_rendimiento.round(3))
 **Como analista profesional**, necesitas crear visualizaciones que comuniquen insights claramente al cuerpo técnico.
 
 **Tu objetivo**: Crear gráficos que respondan:
+
 - ¿Cuáles son los patrones de rendimiento por posición?
 - ¿Hay correlación entre edad y eficiencia?
 - ¿Los titulares habituales realmente tienen mejores métricas?
@@ -321,6 +326,7 @@ print("💡 ¿Qué recomendaciones harías basándote en estas visualizaciones?"
 ```
 
 ## SESIÓN 3: ¿Podemos predecir quién debería jugar el Clásico? (50 min)
+
 **Pregunta guía**: ¿Cómo usamos machine learning para ayudar a Xavi a decidir su alineación?
 
 ### El gran desafío: Modelado predictivo para el Clásico
@@ -328,6 +334,7 @@ print("💡 ¿Qué recomendaciones harías basándote en estas visualizaciones?"
 **Situación crítica**: Es jueves, dos días antes del Clásico contra el Real Madrid. Xavi te pide que uses todos tus conocimientos de machine learning para recomendar quién debería ser titular.
 
 **Tu misión final**: Crear y evaluar modelos predictivos que determinen quién debería jugar basándose en:
+
 - Las métricas avanzadas que creaste
 - Los patrones de rendimiento descubiertos
 - La importancia del partido (Clásico = máxima exigencia)
@@ -337,6 +344,7 @@ print("💡 ¿Qué recomendaciones harías basándote en estas visualizaciones?"
 ### Paso 3: Aplicando machine learning profesional
 
 Vamos a usar todo lo aprendido en las semanas 11-14:
+
 - **Múltiples modelos** (Semana 12)
 - **Evaluación rigurosa** (Semana 13)  
 - **Características optimizadas** (Semana 14)
@@ -418,6 +426,7 @@ print(f"\n📋 El modelo combinado es nuestro 'cuerpo técnico digital'")
 **El momento de la verdad**: Basándote en todo tu análisis, ¿qué le dirías a Xavi sobre la alineación para el Clásico?
 
 **Tu análisis debe incluir:**
+
 1. **Alineación recomendada** por tu modelo combinado
 2. **Justificación** basada en métricas
 3. **Jugadores sorpresa** que el modelo recomienda
@@ -485,7 +494,7 @@ print(f"   • La química del equipo y tácticas específicas son igualmente im
 print(f"   • Este análisis debe complementar, no reemplazar, el criterio técnico")
 ```
 
-### 🎓 SÍNTESIS FINAL: ¡Tu jornada como analista de datos deportivos!
+### 🎓 SÍNTESIS FINAL: ¡Tu jornada como analista de datos deportivos
 
 **¡Felicidades!** Has completado un proyecto real de análisis deportivo aplicando ciencia de datos profesional.
 
@@ -501,6 +510,7 @@ print(f"   • Este análisis debe complementar, no reemplazar, el criterio téc
 ### ¿Qué has aprendido en todo el curso? (15 semanas)
 
 **BLOQUE 1 (Semanas 1-5): Fundamentos de Programación**
+
 - Python desde cero hasta análisis básico
 - Estructuras de datos y control de flujo
 - Funciones, módulos y buenas prácticas
@@ -508,6 +518,7 @@ print(f"   • Este análisis debe complementar, no reemplazar, el criterio téc
 - Visualización básica con matplotlib
 
 **BLOQUE 2 (Semanas 6-10): Ciencia de Datos + Fútbol**
+
 - Exploración y limpieza de datos deportivos
 - Tipos de datos específicos del fútbol
 - Estadística descriptiva aplicada al deporte
@@ -515,6 +526,7 @@ print(f"   • Este análisis debe complementar, no reemplazar, el criterio téc
 - Interpretación y comunicación de resultados
 
 **BLOQUE 3 (Semanas 11-15): Machine Learning Aplicado**
+
 - Conceptos fundamentales de predicción
 - Combinación de múltiples modelos
 - Evaluación y métricas de calidad
@@ -524,6 +536,7 @@ print(f"   • Este análisis debe complementar, no reemplazar, el criterio téc
 ### ¿Estás preparado para el siguiente nivel?
 
 **Como analista junior**, ahora podrías:
+
 - Trabajar con datasets deportivos reales
 - Crear dashboards para equipos profesionales
 - Colaborar en proyectos de scouting digital

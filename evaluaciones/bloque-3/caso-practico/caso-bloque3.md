@@ -1,4 +1,5 @@
 # Caso Práctico Individual - Bloque 3
+
 ## Predicción Simple con Datos de Champions League
 
 **Modalidad:** Individual  
@@ -17,7 +18,9 @@ Eres analista junior y necesitas entregar un informe breve que combine exploraci
 ---
 
 ## Propósito
+
 Evaluar de forma individual la integración de:
+
 - Exploración de datos (EDA)
 - Preparación simple de variables
 - Modelo de predicción básico (clasificación) dentro de los límites del curso
@@ -28,6 +31,7 @@ Evaluar de forma individual la integración de:
 ## Objetivos de Aprendizaje
 
 Al finalizar el caso práctico podrás:
+
 - Explorar y limpiar un dataset tabular sencillo
 - Generar visualizaciones básicas interpretables
 - Crear variables derivadas simples (total de goles, indicador binario, etc.)
@@ -42,6 +46,7 @@ Al finalizar el caso práctico podrás:
 **Archivo principal:** `champions_league_matches.csv` (ubicado en `evaluaciones/bloque-3/datasets/`). Copiar al lado del notebook o ajustar la ruta.
 
 Columnas típicas esperadas (pueden variar ligeramente):
+
 ```
 equipo_local, equipo_visitante, goles_local, goles_visitante, temporada, fase_competicion,
 tiros_local, tiros_visitante, tiros_arco_local, tiros_arco_visitante
@@ -54,6 +59,7 @@ tiros_local, tiros_visitante, tiros_arco_local, tiros_arco_visitante
 ## Tareas Requeridas
 
 ### Parte 1: Exploración y Limpieza (40 puntos)
+
 1.1 Carga y vista rápida (`head()`, forma, tipos).  
 1.2 Comprobar valores faltantes y describir su impacto.  
 1.3 Crear columna `total_goles` (suma local + visitante).  
@@ -61,6 +67,7 @@ tiros_local, tiros_visitante, tiros_arco_local, tiros_arco_visitante
 1.5 Pregunta socrática: ¿Qué sesgo introduce usar solo partidos históricos sin variables de contexto (lesiones, clima)?
 
 ### Parte 2: Visualización e Interpretación (35 puntos)
+
 2.1 Gráfico de barras: Top 10 equipos con más goles como local.  
 2.2 Histograma: Distribución de `total_goles`.  
 2.3 Boxplot (opcional si el tiempo lo permite): Goles locales por fase_competicion.  
@@ -68,6 +75,7 @@ tiros_local, tiros_visitante, tiros_arco_local, tiros_arco_visitante
 2.5 Pregunta socrática: ¿La ventaja de jugar en casa es evidente? ¿Qué indicador lo sostiene?
 
 ### Parte 3: Predicción Simple (25 puntos)
+
 3.1 Seleccionar variables numéricas básicas (ej. goles_local promedio histórico del equipo, tiros_local si existe, total_goles).  
 3.2 Dividir datos train/test (80/20, random_state=42).  
 3.3 Entrenar RandomForestClassifier con parámetros por defecto mínimos.  
@@ -75,6 +83,7 @@ tiros_local, tiros_visitante, tiros_arco_local, tiros_arco_visitante
 3.5 Pregunta socrática: ¿El modelo está realmente aprendiendo patrones o solo replicando una frecuencia base?
 
 ### Parte 4: Conclusiones y Reflexión (Integrado)
+
 4.1 Resumir 2-3 hallazgos clave del EDA.  
 4.2 Explicar en lenguaje sencillo qué significa la precisión obtenida.  
 4.3 Identificar una limitación clara del modelo.  
@@ -84,6 +93,7 @@ tiros_local, tiros_visitante, tiros_arco_local, tiros_arco_visitante
 ---
 
 ## Guía de Código Inicial
+
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -117,7 +127,9 @@ print('Precisión:', accuracy_score(y_test, preds))
 ---
 
 ## Rúbrica (Resumen)
+
 Ver rúbrica completa integrada en `evaluaciones/bloque-3/README.md`.
+
 - Ponderación Caso (25% curso):
   - Exploración y Limpieza (25%)
   - Modelado Básico (35%)
@@ -128,6 +140,7 @@ Ver rúbrica completa integrada en `evaluaciones/bloque-3/README.md`.
 ---
 
 ## Diferencias con el Proyecto de Contenido Semana 15
+
 | Aspecto | Caso Práctico (evaluaciones) | Proyecto Semana 15 (contenido) |
 |---------|------------------------------|--------------------------------|
 | Rol | Evidencia evaluativa formal | Actividad de aprendizaje aplicada |
@@ -138,6 +151,7 @@ Ver rúbrica completa integrada en `evaluaciones/bloque-3/README.md`.
 ---
 
 ## Lineamientos Técnicos y Pedagógicos
+
 - Limitar complejidad (RandomForestClassifier por defecto o Regresión Logística opcional).
 - No hacer tuning exhaustivo (grid search u optimizaciones complejas excluidas).
 - Variables derivadas simples y explicables en < 2 oraciones.
@@ -147,6 +161,7 @@ Ver rúbrica completa integrada en `evaluaciones/bloque-3/README.md`.
 ---
 
 ## Integridad Académica
+
 - Código debe ser 100% entendible por el autor.  
 - Declarar uso de herramientas de IA si se emplearon para generación de fragmentos.  
 - Evitar copiar soluciones completas; justificar decisiones clave (features, métrica).
@@ -154,6 +169,7 @@ Ver rúbrica completa integrada en `evaluaciones/bloque-3/README.md`.
 ---
 
 ## Autoevaluación (Checklist Rápido)
+
 - [ ] Cargué y exploré la estructura del dataset
 - [ ] Creé columnas `total_goles` y `gana_local`
 - [ ] Generé al menos 3 visualizaciones interpretadas
@@ -165,6 +181,7 @@ Ver rúbrica completa integrada en `evaluaciones/bloque-3/README.md`.
 ---
 
 ## Registro de Cambios
+
 2025-08-10: Creación inicial para renombrar y clarificar el caso práctico del Bloque 3.  
 2025-08-10: Migrados dataset y notebook de solución desde antigua carpeta `proyecto-integrador/` (eliminada).  
 2025-08-10: Estructura alineada al formato estándar (Bloques 1 y 2).  

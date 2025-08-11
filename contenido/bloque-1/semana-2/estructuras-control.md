@@ -18,7 +18,8 @@ jupyter:
 
 **Reflexión inicial**: Cuando ves a Pep Guardiola dirigir un partido, ¿has notado que toma ciertos tipos de decisiones de manera sistemática? "SI el rival presiona alto, ENTONCES jugamos por las bandas", "MIENTRAS tengamos posesión, CONTINUAR con pases cortos".
 
-### Pregunta motivadora para la semana:
+### Pregunta motivadora para la semana
+
 Si tuvieras que programar un asistente técnico que tome decisiones automáticas durante 90 minutos de partido, ¿qué instrucciones le darías?
 
 ---
@@ -26,19 +27,25 @@ Si tuvieras que programar un asistente técnico que tome decisiones automáticas
 ## ESTRUCTURA SEMANAL: 3 Sesiones de Descubrimiento
 
 ### SESIÓN 1: ¿Cómo repetimos tareas como un entrenamiento sistemático? (50 min)
+
 **Pregunta guía**: ¿Qué hace un equipo cuando practica jugadas una y otra vez?
+
 - ¿Cómo automatizamos acciones repetitivas en Python?
 - ¿Por qué la repetición controlada mejora el rendimiento?
 - ¿Cuándo sabemos que hemos practicado lo suficiente?
 
 ### SESIÓN 2: ¿Cómo tomamos decisiones complejas bajo presión? (50 min)  
+
 **Pregunta guía**: ¿Qué proceso mental sigue un capitán antes de cada jugada?
+
 - ¿Cómo combinamos múltiples condiciones como un estratega?
 - ¿Por qué algunos equipos son más predecibles que otros?
 - ¿Cómo optimizamos la toma de decisiones rápida?
 
 ### SESIÓN 3: ¿Cómo organizamos estrategias complejas de manera elegante? (50 min)
+
 **Pregunta guía**: ¿Cómo simplifica Messi las jugadas más complicadas?
+
 - ¿Qué ventajas tiene dividir problemas grandes en partes pequeñas?
 - ¿Cómo reutilizamos tácticas exitosas en diferentes situaciones?
 - ¿Por qué la organización determina la efectividad del análisis?
@@ -49,7 +56,8 @@ Si tuvieras que programar un asistente técnico que tome decisiones automáticas
 
 **Pregunta reflexiva**: ¿Sabías que los equipos de élite procesan más de 200 decisiones tácticas diferentes durante un partido promedio?
 
-### La evolución del pensamiento táctico:
+### La evolución del pensamiento táctico
+
 - **¿Te imaginas que...?** Cada sustitución sigue algoritmos de decisión complejos
 - **¿Sabías que...?** Los análisis post-partido procesan miles de datos automáticamente
 - **¿Has considerado que...?** Las estrategias ganadoras se basan en patrones repetibles
@@ -57,7 +65,6 @@ Si tuvieras que programar un asistente técnico que tome decisiones automáticas
 **Tu misión esta semana**: Aprender a crear sistemas de decisión automática que piensen como un entrenador profesional.
 
 ¿Estás listo para descubrir cómo la repetición inteligente genera excelencia deportiva?
-
 
 # SESIÓN 1: ¿Cómo repetimos tareas como un entrenamiento sistemático? (50 minutos)
 
@@ -77,15 +84,13 @@ Imagina que eres el preparador físico del Real Madrid. Necesitas que cada jugad
 
 **Piensa en esto**: Los mejores entrenadores nunca dejan nada al azar. Cada ejercicio tiene un número específico de repeticiones, cada práctica sigue un patrón. ¿Cómo podríamos darle esa misma precisión a nuestro código?
 
-
 ## ¿Cómo procesamos listas de jugadores de manera automática?
 
 **Pregunta crucial**: Si tuvieras que calcular las estadísticas de 25 jugadores de un equipo, ¿escribirías 25 líneas de código iguales o buscarías una forma más inteligente?
 
 **Analogía táctica**: Es como un corner ensayado. En lugar de explicar la jugada 11 veces (una a cada jugador), el entrenador da una instrucción que TODOS ejecutan automáticamente.
 
-### ¡Vamos a ver cómo Python maneja las repeticiones automáticas!
-
+### ¡Vamos a ver cómo Python maneja las repeticiones automáticas
 
 ### Creando tu primera alineación
 
@@ -144,7 +149,6 @@ print("pasa lista antes del entrenamiento?")
 
 **Analogía deportiva**: Es como la diferencia entre "corre 10 vueltas" (sabemos el número) y "corre hasta que tu ritmo cardíaco baje a 120" (depende de una condición).
 
-
 ### Actividad Práctica: Tu Equipo Ideal
 
 Pregunta clave: **¿Cómo organizarías tu equipo ideal?**
@@ -152,6 +156,7 @@ Pregunta clave: **¿Cómo organizarías tu equipo ideal?**
 **Tiempo estimado: 8 minutos**
 
 Reflexiona mientras creamos tu lista:
+
 - ¿Qué jugadores incluirías en tu equipo favorito?
 - ¿En qué orden los colocarías según su importancia?
 - ¿Cómo accederías rápidamente a información específica de cada jugador?
@@ -218,6 +223,7 @@ print("4. ¿Cuál es la diferencia clave entre 'for' y 'while'?")
 ## SÍNTESIS DE LA SESIÓN 1: ¿Qué patrones de repetición dominamos?
 
 **Reflexión de 50 minutos**:
+
 - ¿Cómo automatizamos el procesamiento de listas completas de jugadores?
 - ¿Cuándo usamos 'for' (repeticiones conocidas) vs 'while' (hasta lograr objetivo)?
 - ¿Por qué la automatización es crucial en análisis deportivo masivo?
@@ -240,12 +246,12 @@ print("4. ¿Cuál es la diferencia clave entre 'for' y 'while'?")
 
 **Momento de complejidad estratégica**: Los entrenadores de élite nunca toman decisiones basándose en un solo factor. ¿Cómo enseñamos a Python a pensar con esa misma sofisticación?
 
-
 ## Diccionarios: Fichas Completas de Jugadores
 
 Las listas nos permiten organizar nombres, pero **¿qué pasa cuando necesitamos más información de cada jugador?**
 
 En el fútbol, cada jugador tiene múltiples características:
+
 - Nombre
 - Posición
 - Edad
@@ -279,12 +285,14 @@ print("Goles esta temporada:", ficha_messi["goles_temporada"])
 
 **¿Qué hemos aprendido sobre organización de datos futbolísticos?**
 
-### Conceptos Clave:
+### Conceptos Clave
+
 - **Listas**: Para organizar secuencias de elementos (alineaciones, equipos)
 - **Diccionarios**: Para almacenar información completa y estructurada
 - **Acceso a datos**: Usando índices y claves para obtener información específica
 
-### Aplicación Futbolística:
+### Aplicación Futbolística
+
 - Creación de alineaciones usando listas
 - Fichas completas de jugadores con diccionarios
 - Organización eficiente de datos deportivos
@@ -295,17 +303,20 @@ print("Goles esta temporada:", ficha_messi["goles_temporada"])
 
 **Próxima sesión**: Aprenderemos a tomar decisiones automáticas basadas en estos datos usando estructuras de control.
 
-
 # Sesión 2: Estructuras de Control y Decisiones Futbolísticas
+
 **(50 minutos)**
 
 ## Objetivo de la Sesión
+
 Aprender a crear programas que tomen decisiones automáticas basadas en datos futbolísticos.
 
 ### Pregunta Central
+
 **¿Cómo puede un programa tomar decisiones como un entrenador?**
 
 En el fútbol, los entrenadores constantemente toman decisiones:
+
 - ¿Este jugador está en forma para jugar?
 - ¿Debemos cambiar la formación según el marcador?
 - ¿Qué jugador debería tomar el penalty?
@@ -314,12 +325,12 @@ Hoy aprenderemos a programar estas decisiones usando **estructuras de control**.
 
 ---
 
-
 ## Estructuras Condicionales: If, Elif, Else
 
 **Pregunta reflexiva**: ¿Cómo decides si un jugador debe ser titular o suplente?
 
 Los entrenadores evalúan múltiples condiciones:
+
 - Si el jugador está lesionado → No juega
 - Si tiene tarjetas amarillas → Evaluar riesgo  
 - Si está en buena forma → Es titular
@@ -489,6 +500,7 @@ print("4. ¿Qué otros criterios agregarías a esta evaluación?")
 ## SÍNTESIS DE LA SESIÓN 2: ¿Qué decisiones complejas dominamos?
 
 **Reflexión de 50 minutos**:
+
 - ¿Cómo combinamos múltiples condiciones con operadores lógicos (and, or, not)?
 - ¿Por qué las decisiones jerárquicas (condicionales anidados) reflejan el pensamiento real?
 - ¿Cómo la lógica de programación imita los procesos mentales de un entrenador?
@@ -510,7 +522,6 @@ print("4. ¿Qué otros criterios agregarías a esta evaluación?")
 ## ¿Cómo creamos "jugadas tácticas" reutilizables en código?
 
 **Momento de elegancia**: Los mejores entrenadores convierten estrategias complejas en sistemas simples. ¿Cómo aplicamos esa misma filosofía a nuestro código?
-
 
 ### 2.2 Diccionarios - ¿Cómo organizamos información con etiquetas?
 
@@ -682,21 +693,27 @@ print("4. ¿Por qué es mejor tener funciones especializadas vs una función gig
 ## Reflexión de las 3 sesiones (150 minutos totales)
 
 ### SESIÓN 1: ¿Cómo repetimos tareas como un entrenamiento sistemático?
+
 **Lo que dominamos ahora**:
+
 - Procesar automáticamente listas completas de jugadores con bucles for
 - Implementar lógica de "repetir hasta lograr objetivo" con bucles while
 - Distinguir cuándo usar cada tipo de repetición según la situación
 - Aplicar la mentalidad de "automatización de entrenamientos" al código
 
 ### SESIÓN 2: ¿Cómo tomamos decisiones complejas bajo presión?
+
 **Lo que revelamos**:
+
 - Combinar múltiples condiciones usando operadores lógicos (and, or, not)
 - Crear jerarquías de decisión con condicionales anidados
 - Imitar el proceso mental de un entrenador profesional en situaciones críticas
 - Estructurar evaluaciones complejas de manera lógica y sistemática
 
 ### SESIÓN 3: ¿Cómo organizamos estrategias complejas de manera elegante?
+
 **Lo que construimos**:
+
 - Crear "jugadas tácticas" reutilizables mediante funciones
 - Diseñar sistemas de análisis que devuelven resultados útiles
 - Organizar código complejo en componentes especializados y mantenibles
@@ -704,22 +721,25 @@ print("4. ¿Por qué es mejor tener funciones especializadas vs una función gig
 
 ---
 
-## Pregunta de transformación estratégica:
+## Pregunta de transformación estratégica
 
 **¿Te has dado cuenta de que ya programas con la mentalidad de un director técnico profesional?**
 
 ### ¿Qué cambió en tu forma de abordar problemas complejos?
 
-**Reflexión personal**: 
+**Reflexión personal**:
+
 - ¿Cuál fue tu momento de mayor comprensión sobre la automatización?
 - ¿Qué aspecto de las estructuras de control te resultó más natural?
 - ¿Cómo aplicarías estos patrones de pensamiento fuera de la programación?
 - ¿En qué otras áreas de tu vida podrías usar esta lógica sistemática?
 
-### Vista previa de la próxima semana:
+### Vista previa de la próxima semana
+
 **¿Sabías que los sistemas de análisis deportivo procesan millones de datos usando exactamente los mismos principios que acabas de aprender?**
 
 La próxima semana exploraremos:
+
 - Funciones avanzadas para análisis estadístico automático
 - Módulos para organizar sistemas complejos de análisis deportivo
 - Manejo de errores como un entrenador que anticipa problemas
@@ -730,7 +750,6 @@ La próxima semana exploraremos:
 **Tu evolución**: Esta semana aprendiste a estructurar el pensamiento lógico como un estratega. La próxima semana aprenderás a escalar esos sistemas para manejar la complejidad del análisis deportivo profesional.
 
 ¿Estás listo para pensar a la escala de los grandes clubes europeos?
-
 
 ## 3. Control de Flujo: ¿Cómo automatizamos decisiones y repeticiones?
 
@@ -1059,12 +1078,14 @@ print(f"Total jugadores únicos en Champions: {len(goleadores_champions)}")
 ### ¿Qué herramientas hemos añadido a nuestro kit de análisis?
 
 **Estructuras de datos que ahora dominas**:
+
 - **Listas**: ¿Cuándo las usarías? ¿Qué las hace especiales?
 - **Diccionarios**: ¿En qué situaciones son superiores a las listas?
 - **Tuplas**: ¿Por qué es importante tener datos inmutables?
 - **Conjuntos**: ¿Qué problemas resuelven que otras estructuras no pueden?
 
 **Control de flujo que ahora entiendes**:
+
 - **Bucles FOR**: ¿Cómo han cambiado tu capacidad de procesar datos?
 - **Bucles WHILE**: ¿En qué escenarios son más apropiados que FOR?
 - **Condicionales complejos**: ¿Cómo automatizas decisiones sofisticadas?
@@ -1074,6 +1095,7 @@ print(f"Total jugadores únicos en Champions: {len(goleadores_champions)}")
 **Pregunta de síntesis**: ¿Podrías combinar diferentes estructuras? Por ejemplo, ¿una lista de diccionarios o un diccionario de conjuntos?
 
 **Aplicaciones que podrías crear**:
+
 - ¿Cómo gestionarías una liga completa con equipos, jugadores y resultados?
 - ¿Qué análisis estadísticos podrías automatizar?
 - ¿Cómo crearías reportes dinámicos?

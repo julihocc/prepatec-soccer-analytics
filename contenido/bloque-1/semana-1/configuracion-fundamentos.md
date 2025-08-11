@@ -15,7 +15,9 @@ jupyter:
 # Semana 1: Primer paso en el análisis de datos de fútbol
 
 ## Apertura del curso (mirada global)
+
 **Conversación inicial** (antes de hablar de código):
+
 - ¿Qué decisiones futbolísticas te gustaría respaldar con datos (alineaciones, fichajes, cambios, detectar talento)?
 - ¿Qué te intriga más: describir lo que pasó, explicar por qué pasó o predecir qué podría pasar?
 - ¿Dónde ves hoy que se usan números en el fútbol (transmisiones, videojuegos, scouting, redes sociales)?
@@ -24,19 +26,24 @@ jupyter:
 **Meta del curso completo (visión sencilla)**: Pasar de describir datos básicos (Bloque 1) → analizarlos y visualizarlos para encontrar patrones (Bloque 2) → construir modelos simples que hagan predicciones claras y explicables (Bloque 3).
 
 ---
+
 ## Enfoque específico de la Semana 1
+
 Esta primera semana construimos el ABC del "idioma" que usaremos todo el curso: cómo representar información básica del fútbol dentro de la computadora.
 
 **Objetivo central**: Aprender a guardar y manipular datos simples (nombres, edades, goles) para que la computadora pueda empezar a "razonar" sobre ellos.
 
 **Preguntas guía claras de la semana**:
+
 1. ¿Cómo le digo a la computadora que un jugador se llama X y tiene Y goles?
 2. ¿Qué diferencia hay entre un número, un texto y un dato Verdadero/Falso en un contexto deportivo?
 3. ¿Cómo realizar operaciones simples (sumar goles, calcular promedios básicos)?
 4. ¿Por qué organizar bien la información desde el inicio facilita todo el análisis posterior?
 
 ---
+
 ## Ruta de aprendizaje de la semana (3 sesiones)
+
 - **Sesión 1**: Representar información (variables y tipos de datos) usando ejemplos de jugadores.
 - **Sesión 2**: Comparar y decidir (operadores y condicionales) como un entrenador que evalúa rendimiento.
 - **Sesión 3**: Agrupar y estructurar (listas y diccionarios) para manejar planteles completos.
@@ -44,18 +51,20 @@ Esta primera semana construimos el ABC del "idioma" que usaremos todo el curso: 
 Al final de la semana tendrás un mini sistema muy simple que ya clasifica y resume información básica de jugadores.
 
 ---
+
 ## Puente motivador
+
 Antes de que existan gráficos bonitos o modelos que predicen resultados, siempre empieza igual: datos crudos bien representados. Esta semana es ese cimiento.
 
 **Piensa**: Si te equivocas representando los datos (ej. confundes texto con número), ¿qué tan confiable sería cualquier análisis posterior?
 
 ---
+
 ## Primera chispa de curiosidad
+
 Si quisieras calcular rápidamente: "¿Qué porcentaje de los goles del equipo hizo un solo jugador?" ¿Qué piezas mínimas de información necesitas guardar primero?
 
 Empecemos respondiendo esa clase de preguntas paso a paso.
-
-
 
 # SESIÓN 1: ¿Qué es realmente programar? (50 minutos)
 
@@ -75,19 +84,18 @@ Imagina que eres Pep Guardiola y quieres explicarle a un jugador nuevo exactamen
 
 **Piensa en esto**: De todos los lenguajes de programación que existen (más de 100), ¿por qué Python es el favorito de los analistas deportivos del mundo?
 
-
 ## ¿Cómo "recordamos" información sobre jugadores y equipos?
 
 **Pregunta crucial**: Si quisieras que la computadora recuerde que Messi tiene 37 años, que juega para el Inter Miami, y que ha anotado 10 goles esta temporada, ¿cómo se lo dirías?
 
 **Analogía deportiva**: Es como cuando un comentarista deportivo tiene fichas con información de cada jugador. ¿Cómo organizarías esas fichas?
 
-### ¡Vamos a crear nuestro primer "archivo" de jugador!
-
+### ¡Vamos a crear nuestro primer "archivo" de jugador
 
 ## Prueba de Verificación: ¿Funciona Python?
 
-### ¡Nuestro primer código! 
+### ¡Nuestro primer código
+
 Ejecuta esta celda para verificar que Python funciona correctamente:
 
 ```python
@@ -125,18 +133,19 @@ print("\n¿Por qué crees que es importante esta diferencia?")
 
 **Pregunta de conexión**: Cuando ves las estadísticas en ESPN o FIFA, ¿qué operaciones matemáticas crees que hay detrás de esos números?
 
-### ¡Vamos a pedirle a Python que "piense" como un analista deportivo!
-
+### ¡Vamos a pedirle a Python que "piense" como un analista deportivo
 
 ## ¿Qué son las Variables?
 
 **Una variable es como una caja donde guardamos información.**
 
-### Ejemplo de la vida real:
+### Ejemplo de la vida real
+
 - En tu cuarto, tienes cajas con etiquetas: "videojuegos", "ropa", "libros"
 - En Python, las variables son cajas con nombres: `jugador`, `goles`, `equipo`
 
-### Ejemplo futbolístico:
+### Ejemplo futbolístico
+
 - Jugador: "Lionel Messi"
 - Goles: 15
 - Equipo: "Inter Miami"
@@ -191,6 +200,7 @@ print("3. ¿Qué otros cálculos te gustaría hacer con estos datos?")
 ## SÍNTESIS DE LA SESIÓN 1: ¿Qué hemos descubierto?
 
 **Reflexión de 50 minutos**:
+
 - ¿Cómo "guardamos" información en la memoria de la computadora?
 - ¿Qué tipos de datos deportivos requieren diferentes formatos?
 - ¿Cómo realiza Python operaciones matemáticas básicas?
@@ -213,16 +223,16 @@ print("3. ¿Qué otros cálculos te gustaría hacer con estos datos?")
 
 **Momento de curiosidad**: Al igual que un entrenador compara estadísticas para tomar decisiones, ¿podemos enseñar a la computadora a hacer comparaciones automáticas?
 
-
 ### Variables de Números
 
 **Los números en Python NO van entre comillas**
 
-#### Hay dos tipos:
+#### Hay dos tipos
+
 1. **Enteros** (sin decimal): 10, 25, 100
 2. **Decimales** (con punto): 1.85, 24.5, 89.7
 
-### Estadísticas numéricas:
+### Estadísticas numéricas
 
 ```python
 # ¿CÓMO COMPARA PYTHON COMO LO HARÍA UN ENTRENADOR?
@@ -281,8 +291,7 @@ print(f"Titular: {es_titular} - {'Jugador clave' if es_titular else 'Necesita m�
 
 **Analogía práctica**: Es como un semáforo - SI está en verde, ENTONCES avanza. ¿Cómo le dirías a Python que siga reglas similares?
 
-### ¡Vamos a crear nuestro primer "asistente técnico" automático!
-
+### ¡Vamos a crear nuestro primer "asistente técnico" automático
 
 ### Variables de Verdadero o Falso (Booleanos)
 
@@ -364,6 +373,7 @@ print("4. ¿En qué se parece esto a como piensa un entrenador real?")
 ## SÍNTESIS DE LA SESIÓN 2: ¿Qué decisiones puede tomar Python?
 
 **Reflexión de 50 minutos**:
+
 - ¿Cómo Python compara valores usando operadores matemáticos?
 - ¿Por qué las comparaciones devuelven True o False?
 - ¿Cómo las estructuras if/elif/else imitan el pensamiento de un entrenador?
@@ -472,13 +482,15 @@ print("3. ¿Qué información adicional incluirías en la ficha del jugador?")
 
 ## Resumen de la Sesión 2
 
-### Lo que aprendimos hoy:
+### Lo que aprendimos hoy
+
 1. **Variables de texto**: guardamos nombres (entre comillas)
 2. **Variables de números**: enteros y decimales (sin comillas)
 3. **Variables booleanas**: True o False para respuestas sí/no
 4. **Operaciones matemáticas**: +, -, *, / para calcular estadísticas
 
-### Ahora puedes:
+### Ahora puedes
+
 - Crear variables para datos de fútbol
 - Hacer cálculos básicos con estadísticas
 - Entender diferentes tipos de información
@@ -486,11 +498,12 @@ print("3. ¿Qué información adicional incluirías en la ficha del jugador?")
 ---
 
 # SESIÓN 3: Mi Primer Análisis de Datos de Fútbol
+
 **Tiempo:** 50 minutos | **Nivel:** Preparatoria
 
 ---
 
-## ¡Hora de analizar datos reales!
+## ¡Hora de analizar datos reales
 
 Ahora que conoces variables y operaciones, vamos a trabajar con **datos reales de fútbol** como un analista deportivo profesional.
 
@@ -610,21 +623,27 @@ print("procesan estadísticas de cientos de jugadores automáticamente?")
 ## Reflexión de las 3 sesiones (150 minutos totales)
 
 ### SESIÓN 1: ¿Qué es realmente programar?
+
 **Lo que dominamos ahora**:
+
 - Entender cómo las computadoras "recuerdan" información deportiva
 - Distinguir entre diferentes tipos de datos (texto, números, verdadero/falso)
 - Realizar operaciones matemáticas básicas como lo haría un analista
 - Comprender por qué Python es el lenguaje del análisis deportivo moderno
 
 ### SESIÓN 2: ¿Cómo calculamos como lo haría un entrenador?
+
 **Lo que revelamos**:
+
 - Comparar valores usando operadores matemáticos
 - Crear sistemas automáticos de evaluación de jugadores
 - Implementar lógica condicional (if/elif/else) para decisiones
 - Imitar el proceso de pensamiento de un entrenador profesional
 
 ### SESIÓN 3: ¿Cómo organizamos datos como un club profesional?
+
 **Lo que construimos**:
+
 - Organizar múltiples jugadores usando listas eficientemente
 - Estructurar información compleja con diccionarios
 - Procesar datos masivamente usando bucles
@@ -632,22 +651,25 @@ print("procesan estadísticas de cientos de jugadores automáticamente?")
 
 ---
 
-## Pregunta de transformación personal:
+## Pregunta de transformación personal
 
 **¿Te has dado cuenta de que ya piensas como un analista de datos deportivos?**
 
 ### ¿Qué cambió en tu forma de ver la tecnología?
 
-**Reflexión personal**: 
+**Reflexión personal**:
+
 - ¿Cuál fue tu momento "¡ahá!" más importante de la semana?
 - ¿Qué aspecto de la programación te resultó más natural?
 - ¿Cómo cambió tu perspectiva sobre el uso de datos en deportes?
 - ¿En qué otras áreas de tu vida podrías aplicar este pensamiento lógico?
 
-### Vista previa de la próxima semana:
+### Vista previa de la próxima semana
+
 **¿Sabías que las decisiones técnicas más complejas requieren estructuras de control más sofisticadas?**
 
 La próxima semana exploraremos:
+
 - Bucles para procesar estadísticas de temporadas completas
 - Funciones para automatizar análisis repetitivos
 - Algoritmos para encontrar patrones ocultos en datos
@@ -659,10 +681,10 @@ La próxima semana exploraremos:
 
 ¿Estás listo para el siguiente nivel de sofisticación analítica?
 
-
 ## ¡Felicidades! Completaste tu Primera Semana
 
-### Resumen de la Sesión 3:
+### Resumen de la Sesión 3
+
 - Analizaste datos reales de equipos de fútbol
 - Calculaste estadísticas como porcentajes y diferencias
 - Comparaste el rendimiento de dos equipos
@@ -673,16 +695,19 @@ La próxima semana exploraremos:
 ## Lo que Lograste Esta Semana
 
 ### **Sesión 1**: Instalación y Primer Contacto
+
 - Instalaste Python y Jupyter Notebook
 - Ejecutaste tu primer código
 - Entendiste qué es la programación
 
 ### **Sesión 2**: Variables y Operaciones
+
 - Creaste variables de texto, números y booleanos
 - Aprendiste operaciones matemáticas básicas
 - Trabajaste con datos deportivos
 
 ### **Sesión 3**: Primer Análisis Real
+
 - Analizaste estadísticas de equipos reales
 - Calculaste porcentajes y comparaciones
 - Creaste tu primer "reporte" de análisis
@@ -691,20 +716,23 @@ La próxima semana exploraremos:
 
 ## Próxima Semana: Estructuras de Control
 
-### Te esperan nuevos desafíos:
+### Te esperan nuevos desafíos
+
 - **Decisiones**: ¿Cómo hacer que Python tome decisiones?
 - **Repeticiones**: ¿Cómo analizar muchos partidos automáticamente?
 - **Listas**: ¿Cómo manejar información de múltiples jugadores?
 
-### Tarea para Pensar:
+### Tarea para Pensar
+
 ¿Qué otros datos de fútbol te gustaría analizar? Piensa en:
+
 - Estadísticas de jugadores individuales
 - Comparaciones entre ligas
 - Análisis de rendimiento por temporada
 
 ---
 
-## ¡Reflexión Final!
+## ¡Reflexión Final
 
 **¿Qué te pareció más interesante de esta semana?**
 **¿Qué aplicación le darías a lo que aprendiste?**

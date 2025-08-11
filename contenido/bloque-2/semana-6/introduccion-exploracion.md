@@ -4,7 +4,8 @@
 
 **Reflexión inicial**: Cada partido de fútbol genera cientos de datos. ¿Crees que estos números contienen información que no podemos ver solo mirando el partido?
 
-### Pregunta motivadora para la semana:
+### Pregunta motivadora para la semana
+
 Si fueras analista del FC Barcelona, ¿qué le preguntarías a los datos de los últimos 200 partidos para descubrir patrones ocultos?
 
 ---
@@ -12,19 +13,25 @@ Si fueras analista del FC Barcelona, ¿qué le preguntarías a los datos de los 
 ## ESTRUCTURA SEMANAL: 3 Sesiones de Descubrimiento
 
 ### SESIÓN 1: ¿Cómo interrogamos a los datos? (50 min)
+
 **Pregunta guía**: ¿Qué preguntas pueden responder los números que no vemos a simple vista?
+
 - ¿Cómo preparamos nuestro "laboratorio" de análisis?
 - ¿Qué revela la primera inspección de datos futbolísticos?
 - ¿Cómo calculamos las estadísticas que importan?
 
 ### SESIÓN 2: ¿Qué patrones emergen visualmente? (50 min)  
+
 **Pregunta guía**: ¿Cómo hacer que los datos "hablen" a través de gráficos?
+
 - ¿Qué revelan las distribuciones de goles?
 - ¿Cómo identificamos relaciones entre variables?
 - ¿Qué correlaciones sorprendentes podemos descubrir?
 
 ### SESIÓN 3: ¿Cómo validamos nuestros descubrimientos? (50 min)
+
 **Pregunta guía**: ¿Cuándo podemos confiar en lo que nos dicen los datos?
+
 - ¿Existe realmente la ventaja de jugar en casa?
 - ¿Qué sesgos pueden engañarnos en nuestro análisis?
 - ¿Cómo comunicamos hallazgos de manera convincente?
@@ -35,7 +42,8 @@ Si fueras analista del FC Barcelona, ¿qué le preguntarías a los datos de los 
 
 **Pregunta reflexiva**: ¿Has notado que algunos entrenadores parecen tomar decisiones "mágicas" que resultan exitosas? ¿Será intuición o habrá datos detrás?
 
-### La revolución silenciosa del fútbol moderno:
+### La revolución silenciosa del fútbol moderno
+
 - **¿Sabías que...?** El FC Barcelona usa más de 40 métricas diferentes para evaluar cada jugador
 - **¿Te imaginas que...?** Los equipos pueden predecir lesiones analizando patrones de movimiento
 - **¿Has considerado que...?** Las decisiones de fichajes millonarios se basan en análisis de datos
@@ -43,7 +51,6 @@ Si fueras analista del FC Barcelona, ¿qué le preguntarías a los datos de los 
 **Tu misión esta semana**: Convertirte en detective deportivo usando Python como tu lupa de investigación.
 
 ¿Estás listo para descubrir qué secretos esconden realmente los datos del fútbol?
-
 
 # SESIÓN 1: ¿Cómo interrogamos a los datos? (50 minutos)
 
@@ -55,7 +62,7 @@ Si fueras analista del FC Barcelona, ¿qué le preguntarías a los datos de los 
 
 ## Momento de curiosidad: ¿Por dónde empezamos nuestra investigación?
 
-Imagina que acabas de ser contratado como analista del Real Madrid. Tu primera misión: **analizar el rendimiento del equipo en los últimos partidos**. 
+Imagina que acabas de ser contratado como analista del Real Madrid. Tu primera misión: **analizar el rendimiento del equipo en los últimos partidos**.
 
 **Pregunta reflexiva**: ¿Cuáles serían tus primeras 3 preguntas para los datos?
 
@@ -95,7 +102,7 @@ print("Pregunta de reflexión: ¿Por qué crees que elegimos estas bibliotecas e
 
 **Pregunta clave**: Si tuvieras que inventar los resultados de 30 partidos entre equipos europeos, ¿qué información incluirías para que fuera realista?
 
-### ¡Vamos a ser "directores técnicos" de nuestro propio dataset!
+### ¡Vamos a ser "directores técnicos" de nuestro propio dataset
 
 ```python
 # ¿Qué equipos europeos reconoces inmediatamente?
@@ -163,12 +170,12 @@ print("\nPregunta de curiosidad: ¿Qué patrones crees que podremos descubrir en
 **Pregunta detective**: Cuando llegas a la escena de un crimen, ¿qué haces primero? ¡Exacto! Observas todo el panorama general.
 
 **En análisis de datos hacemos lo mismo**. Antes de buscar patrones específicos, necesitamos conocer:
+
 - ¿Qué tipo de información tenemos?
 - ¿Cuántos registros hay?
 - ¿Existen datos faltantes o extraños?
 
 **Pregunta reflexiva**: Si fueras entrenador y recibieras un reporte de 30 partidos, ¿qué querrías saber primero sobre esos datos?
-
 
 ## Creación de Dataset Futbolístico de Prueba
 
@@ -178,19 +185,22 @@ Para aprender exploración de datos, comenzaremos con un dataset simulado que re
 
 En el análisis futbolístico, los datos típicamente incluyen:
 
-#### Variables Básicas:
+#### Variables Básicas
+
 - **Equipos**: Local y visitante
 - **Resultados**: Goles marcados por cada equipo
 - **Contexto temporal**: Temporada, jornada, fecha
 - **Ubicación**: Estadio, ciudad, país
 
-#### Variables Derivadas:
+#### Variables Derivadas
+
 - **Resultado final**: Victoria, empate, derrota
 - **Total de goles**: Suma de goles de ambos equipos
 - **Diferencia de goles**: Margen de victoria
 - **Productividad**: Goles por tiempo de juego
 
-#### Métricas Avanzadas (futuras sesiones):
+#### Métricas Avanzadas (futuras sesiones)
+
 - **Posesión de balón**: Porcentaje de control
 - **Ocasiones de gol**: Tiros a puerta, corners
 - **Aspectos disciplinarios**: Tarjetas, faltas
@@ -199,6 +209,7 @@ En el análisis futbolístico, los datos típicamente incluyen:
 ### Importancia de Datos Simulados
 
 Los datos simulados permiten:
+
 1. **Control total**: Conocemos la estructura exacta
 2. **Aprendizaje sin limitaciones**: Sin restricciones de privacidad
 3. **Experimentación**: Podemos modificar parámetros
@@ -264,6 +275,7 @@ print("\n¿Por qué es crucial verificar la calidad de los datos antes de analiz
 ## SÍNTESIS DE LA SESIÓN 1: ¿Qué hemos descubierto juntos?
 
 **Reflexión final de 50 minutos**:
+
 - ¿Qué herramientas de análisis dominamos ahora?
 - ¿Cómo construimos un dataset realista desde cero?
 - ¿Qué pasos seguimos para inspeccionar datos nuevos?
@@ -286,30 +298,33 @@ print("\n¿Por qué es crucial verificar la calidad de los datos antes de analiz
 
 **Momento de curiosidad**: Cada gol, cada partido, cada temporada genera patrones matemáticos. ¿Será posible descubrir tendencias que ni los entrenadores han notado?
 
-
 ## Estadísticas Descriptivas: Primeros Insights
 
 Las **estadísticas descriptivas** proporcionan un resumen cuantitativo de las características principales del dataset, revelando patrones iniciales y aspectos destacables.
 
-### Métricas Fundamentales:
+### Métricas Fundamentales
 
-#### Tendencia Central:
+#### Tendencia Central
+
 - **Media**: Valor promedio, sensible a valores extremos
 - **Mediana**: Valor central, robusto ante outliers
 - **Moda**: Valor más frecuente, útil para datos categóricos
 
-#### Variabilidad:
+#### Variabilidad
+
 - **Desviación estándar**: Dispersión promedio respecto a la media
 - **Rango**: Diferencia entre máximo y mínimo
 - **Percentiles**: División de datos en proporciones específicas
 
-#### Distribución:
+#### Distribución
+
 - **Asimetría**: Tendencia hacia valores altos o bajos
 - **Curtosis**: Concentración de datos en el centro o extremos
 
-### Aplicación en Fútbol:
+### Aplicación en Fútbol
 
 En análisis deportivo, estas métricas revelan:
+
 - **Tendencias ofensivas**: Promedio de goles por equipo
 - **Variabilidad de rendimiento**: Consistencia de resultados
 - **Patrones estacionales**: Diferencias entre temporadas
@@ -549,21 +564,25 @@ print(f"   • La distribución está {sesgo}")
 
 El análisis de **relaciones bivariadas** revela cómo diferentes variables se influencian mutuamente, proporcionando insights sobre patrones subyacentes en el comportamiento futbolístico.
 
-### Tipos de Relaciones:
+### Tipos de Relaciones
 
-#### Correlación Positiva:
+#### Correlación Positiva
+
 - A mayor valor de X, mayor valor de Y
 - Ejemplo: Goles a favor vs Puntos obtenidos
 
-#### Correlación Negativa:
+#### Correlación Negativa
+
 - A mayor valor de X, menor valor de Y  
 - Ejemplo: Goles en contra vs Puntos obtenidos
 
-#### Sin Correlación:
+#### Sin Correlación
+
 - No hay relación sistemática entre variables
 - Ejemplo: Número de jornada vs Goles totales
 
-### Métricas de Correlación:
+### Métricas de Correlación
+
 - **Coeficiente de Pearson**: Relaciones lineales (-1 a +1)
 - **Coeficiente de Spearman**: Relaciones monotónicas
 - **Matriz de correlación**: Relaciones múltiples simultáneas
@@ -676,6 +695,7 @@ print("5. ¿Qué significa que la correlación sea positiva/negativa/cero?")
 ## SÍNTESIS DE LA SESIÓN 2: ¿Qué patrones hemos revelado?
 
 **Reflexión de 50 minutos**:
+
 - ¿Cómo las estadísticas descriptivas nos ayudan a entender el fútbol?
 - ¿Qué diferencias importantes descubrimos entre equipos locales y visitantes?
 - ¿Cómo los gráficos hacen obvios patrones que los números ocultan?
@@ -797,36 +817,42 @@ print(f"Evidencia de resultados: {porcentaje_victorias_local:.1f}% de victorias 
 
 El **pensamiento crítico** en análisis de datos requiere reconocer las limitaciones inherentes de nuestro estudio y los posibles sesgos que pueden influir en las conclusiones.
 
-### Tipos de Sesgos en Datos Deportivos:
+### Tipos de Sesgos en Datos Deportivos
 
-#### Sesgos de Muestreo:
+#### Sesgos de Muestreo
+
 - **Representatividad**: ¿Nuestra muestra representa toda la población?
 - **Temporalidad**: ¿Los datos abarcan períodos suficientemente largos?
 - **Selección**: ¿Hay equipos o situaciones sobrerrepresentados?
 
-#### Sesgos de Medición:
+#### Sesgos de Medición
+
 - **Precisión**: ¿Los datos capturan lo que realmente queremos medir?
 - **Completitud**: ¿Faltan variables importantes para el análisis?
 - **Consistencia**: ¿Los criterios de medición son uniformes?
 
-#### Sesgos de Interpretación:
+#### Sesgos de Interpretación
+
 - **Confirmación**: ¿Buscamos solo evidencia que confirme nuestras ideas?
 - **Causalidad**: ¿Confundimos correlación con causación?
 - **Generalización**: ¿Extrapolamos más allá de lo que permiten los datos?
 
-### Limitaciones de Nuestro Estudio:
+### Limitaciones de Nuestro Estudio
 
-#### Datos Simulados:
+#### Datos Simulados
+
 - **Ventaja**: Control total sobre la estructura
 - **Limitación**: Pueden no reflejar complejidades reales
 - **Impacto**: Resultados válidos para aprendizaje, no para decisiones profesionales
 
-#### Tamaño de Muestra:
+#### Tamaño de Muestra
+
 - **Actual**: 200 partidos
 - **Ideal para conclusiones generales**: 1000+ partidos
 - **Consecuencia**: Menor poder estadístico para detectar efectos pequeños
 
-#### Variables Ausentes:
+#### Variables Ausentes
+
 - **Calidad de equipos**: Presupuesto, ranking, historial
 - **Contexto situacional**: Importancia del partido, clima, lesiones
 - **Métricas avanzadas**: Posesión, tiros, corners, faltas
@@ -953,19 +979,23 @@ print("5. APLICAR técnicas de machine learning para patrones complejos")
 #### Pregunta de investigación: ¿Cuál equipo tiene mejor rendimiento ofensivo?
 
 **Paso 1: ¿Qué significa "mejor rendimiento ofensivo"?**
+
 - Reflexiona: ¿Es mejor el equipo que anota más goles en total o el que tiene mejor promedio?
 - ¿Por qué podría ser importante considerar cuántos partidos ha jugado cada equipo?
 
 **Paso 2: Analicemos los datos**
+
 - Calculemos goles totales por equipo
 - Calculemos promedio de goles por partido
 - Comparemos los resultados
 
 **Paso 3: ¿Qué descubrimos?**
+
 - ¿El equipo con más goles totales es el mismo que tiene mejor promedio?
 - ¿Qué equipo elegirías para tu equipo fantástico?
 
 #### Reflexión final
+
 - ¿Qué fue lo más sorprendente que descubriste?
 - ¿Qué otras preguntas te surgieron?
 - ¿Cómo podrías mejorar este análisis?
@@ -1068,21 +1098,27 @@ print("(Ejemplos: calidad de rivales, importancia del partido, lesiones, clima..
 ## Reflexión de las 3 sesiones (150 minutos totales)
 
 ### SESIÓN 1: ¿Cómo interrogamos a los datos?
+
 **Lo que dominamos ahora**:
+
 - Configurar nuestro "laboratorio" de análisis deportivo
 - Crear datasets realistas desde cero
 - Realizar inspecciones técnicas de calidad de datos
 - Identificar tipos de variables y estructuras de información
 
 ### SESIÓN 2: ¿Qué patrones emergen visualmente?
+
 **Lo que revelamos**:
+
 - Calcular estadísticas descriptivas significativas
 - Descubrir la posible "ventaja de casa" en datos
 - Crear visualizaciones que hacen obvios los patrones ocultos
 - Interpretar correlaciones entre variables deportivas
 
 ### SESIÓN 3: ¿Cómo validamos nuestros descubrimientos?
+
 **Lo que investigamos**:
+
 - Analizar rendimiento individualizado por equipo
 - Comparar métricas diferentes (totales vs promedios)
 - Evaluar limitaciones y sesgos en nuestros análisis
@@ -1090,21 +1126,24 @@ print("(Ejemplos: calidad de rivales, importancia del partido, lesiones, clima..
 
 ---
 
-## Pregunta de preparación para la próxima semana:
+## Pregunta de preparación para la próxima semana
 
 **¿Te has dado cuenta de que acabas de hacer el mismo trabajo que los analistas profesionales del FC Barcelona o Manchester City?**
 
 ### ¿Qué nuevas preguntas quieres responder ahora?
 
-**Reflexión personal**: 
+**Reflexión personal**:
+
 - ¿Cuál fue tu descubrimiento más sorprendente?
 - ¿Qué aspecto del análisis te resultó más desafiante?
 - ¿Cómo cambió tu perspectiva sobre el uso de datos en deportes?
 
-### Vista previa de la próxima semana:
+### Vista previa de la próxima semana
+
 **¿Sabías que existen diferentes tipos de datos deportivos más allá de goles y resultados?**
 
 La próxima semana exploraremos:
+
 - Datos de rendimiento individual de jugadores
 - Métricas de tiempo y ubicación en el campo
 - Estadísticas físicas como distancia recorrida y velocidad

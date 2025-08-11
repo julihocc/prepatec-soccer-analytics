@@ -81,18 +81,21 @@ Al completar este bloque, podrás:
 ## ¿Qué necesitas saber antes de empezar?
 
 **Haber completado Bloques 1 y 2 (muy importante):**
+
 - **Programación con Python:** Saber usar pandas, numpy y crear gráficos básicos sin ayuda constante
 - **Análisis de datos:** Entender promedios, correlaciones y cómo interpretar gráficos deportivos
 - **Pensamiento crítico:** Poder formular preguntas interesantes sobre datos y buscar respuestas
 - **Método socrático:** Estar cómodo descubriendo conceptos a través de preguntas y reflexiones
 
 **Matemáticas de preparatoria:**
+
 - **Álgebra básica:** Ecuaciones simples, variables y funciones (lo que ya sabes de matemáticas de prepa)
 - **Probabilidad simple:** Entender porcentajes, probabilidades básicas ("¿qué tan probable es que...?")
 - **Estadística introductoria:** Conceptos de promedio, moda, mediana que ya viste en bloques anteriores
 - **Lógica básica:** Poder seguir razonamientos tipo "si esto, entonces aquello"
 
 **Mentalidad de aprendizaje:**
+
 - **Curiosidad por patrones:** Disfrutar buscar regularidades en datos deportivos
 - **Pensamiento futuro:** Interés en pasar de "¿qué pasó?" a "¿qué podría pasar?"
 - **Aceptar incertidumbre:** Entender que las predicciones no son 100% seguras
@@ -101,6 +104,7 @@ Al completar este bloque, podrás:
 ## Herramientas que aprenderás a usar (como un profesional)
 
 ### Tu kit de herramientas de machine learning
+
 ```python
 # Las mismas herramientas que usan en clubes profesionales
 import pandas as pd
@@ -123,6 +127,7 @@ print("Mismas herramientas que usan analistas en equipos de élite")
 ```
 
 ### Técnicas que dominarás
+
 - **Entrenamiento de modelos:** Cómo enseñar a las computadoras a reconocer patrones
 - **Validación de resultados:** Métodos para comprobar si tus predicciones son confiables
 - **Combinación de modelos:** Técnicas para que diferentes algoritmos trabajen en equipo
@@ -130,6 +135,7 @@ print("Mismas herramientas que usan analistas en equipos de élite")
 - **Interpretación de resultados:** Explicar qué significa cada predicción y cuándo confiar en ella
 
 ### Datos con los que trabajarás
+
 - **Análisis del Barcelona:** Datos reales de jugadores, posiciones, minutos jugados y rendimiento
 - **Comparaciones históricas:** Información de múltiples temporadas para encontrar patrones temporales
 - **Métricas avanzadas:** Variables que van más allá de goles y asistencias tradicionales
@@ -138,11 +144,13 @@ print("Mismas herramientas que usan analistas en equipos de élite")
 ## ¿Cómo serás evaluado? (siguiendo el método socrático)
 
 ### Distribución de tu calificación
+
 - **Participación reflexiva:** 25% (hacer preguntas inteligentes, reflexionar sobre resultados, conectar conceptos)
 - **Proyectos semanales:** 35% (aplicar lo aprendido en problemas reales de análisis deportivo)
 - **Proyecto final:** 40% (análisis completo del Barcelona que demuestre todo tu aprendizaje)
 
 ### Lo que se evalúa en cada proyecto
+
 - **Comprensión conceptual:** ¿Entiendes realmente cómo funcionan los modelos o solo copias código?
 - **Aplicación práctica:** ¿Puedes usar las herramientas para resolver problemas deportivos reales?
 - **Pensamiento crítico:** ¿Cuestionas resultados, identificas limitaciones y propones mejoras?
@@ -153,6 +161,7 @@ print("Mismas herramientas que usan analistas en equipos de élite")
 **Desafío**: Crear un análisis que convencería a Xavi de cambiar su alineación habitual
 
 **Componentes del proyecto:**
+
 1. **Análisis de datos:** Explorar 20 jugadores del Barcelona con múltiples variables de rendimiento
 2. **Modelos predictivos:** Combinar 3 algoritmos diferentes para predecir titulares ideales
 3. **Evaluación rigurosa:** Medir precisión y explicar limitaciones de las predicciones
@@ -160,6 +169,7 @@ print("Mismas herramientas que usan analistas en equipos de élite")
 5. **Reflexión crítica:** Discutir qué funciona, qué no, y qué mejorarías
 
 **Criterios de excelencia:**
+
 - ¿El análisis es técnicamente correcto pero explicado de forma accesible?
 - ¿Las recomendaciones están bien justificadas con datos?
 - ¿Se reconocen honestamente las limitaciones del análisis?
@@ -167,19 +177,22 @@ print("Mismas herramientas que usan analistas en equipos de élite")
 
 ## ¿Qué podrás hacer después de este curso?
 
-### Preparación para estudios universitarios:
+### Preparación para estudios universitarios
+
 - **Carreras de Ingeniería:** Base sólida en programación y matemáticas aplicadas
 - **Ciencias de Datos:** Experiencia práctica con análisis estadístico y machine learning básico
 - **Administración Deportiva:** Comprensión profunda de analytics deportivos modernos
 - **Sistemas Computacionales:** Competencia en programación y resolución de problemas
 
-### Oportunidades inmediatas:
+### Oportunidades inmediatas
+
 - **Proyectos de preparatoria:** Usar datos para proyectos de feria de ciencias o investigación
 - **Análisis deportivo local:** Ayudar a equipos escolares o locales con análisis básicos
 - **Comprensión del deporte moderno:** Entender cómo funcionan los análisis que ves en televisión
 - **Base para aprendizaje continuo:** Fundamentos sólidos para seguir aprendiendo por tu cuenta
 
-### Habilidades transferibles:
+### Habilidades transferibles
+
 - **Pensamiento analítico:** Aproximación sistemática a problemas complejos
 - **Manejo de datos:** Competencia en herramientas usadas en múltiples industrias
 - **Comunicación técnica:** Habilidad para explicar conceptos complejos de forma simple
@@ -201,6 +214,6 @@ print("Mismas herramientas que usan analistas en equipos de élite")
 
 ---
 
-**¡Prepárate para descubrir el futuro del análisis deportivo!** 
+**¡Prepárate para descubrir el futuro del análisis deportivo!**
 
 *En este bloque final pasarás de ser un estudiante de preparatoria curioso sobre datos a convertirte en alguien capaz de crear sistemas predictivos que podrían influir en decisiones deportivas reales. Cada modelo que construyas te acercará más a entender cómo la tecnología está transformando el mundo del deporte.*

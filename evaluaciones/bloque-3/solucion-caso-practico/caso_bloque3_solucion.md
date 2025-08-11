@@ -13,6 +13,7 @@ jupyter:
 ---
 
 # Proyecto Final: Análisis de Champions League - SOLUCIÓN
+
 ## Sistema de Análisis Predictivo para Fútbol
 
 **Estudiante:** [Nombre del estudiante]  
@@ -27,17 +28,17 @@ jupyter:
 En este proyecto final integraremos todos los conocimientos adquiridos durante el curso para realizar un análisis completo de la Liga de Campeones de la UEFA. Utilizaremos Python para explorar datos, crear visualizaciones y desarrollar un modelo predictivo básico.
 
 **Objetivos del proyecto:**
+
 - Demostrar dominio de pandas para análisis de datos
 - Crear visualizaciones informativas con matplotlib y seaborn
 - Aplicar técnicas básicas de machine learning con scikit-learn
 - Comunicar hallazgos de manera clara y profesional
 
-
 ---
+
 # Sección 1: Exploración de Datos (40%)
 
 En esta sección cargaremos, exploraremos y limpiaremos los datos de Champions League para preparar nuestro análisis.
-
 
 ## 1.1 Carga de Datos
 
@@ -222,10 +223,10 @@ datos_champions[['equipo_local', 'equipo_visitante', 'goles_local', 'goles_visit
 ```
 
 ---
+
 # Sección 2: Visualización y Análisis (35%)
 
 En esta sección crearemos visualizaciones informativas para entender mejor los patrones en los datos de Champions League.
-
 
 ## 2.1 Gráficos Descriptivos
 
@@ -485,10 +486,10 @@ for i, (equipo, victorias) in enumerate(victorias_totales.head(10).items(), 1):
 ```
 
 ---
+
 # Sección 3: Predicción Simple (25%)
 
 En esta sección crearemos un modelo básico para predecir el resultado de partidos de Champions League.
-
 
 ## 3.1 Preparar Datos para Predicción
 
@@ -762,6 +763,7 @@ print(f"   • Precisión en ejemplos: {correctas/len(indices_ejemplo):.1%}")
 ```
 
 ---
+
 # Conclusiones Finales
 
 ## ¿Qué aprendimos sobre Champions League?

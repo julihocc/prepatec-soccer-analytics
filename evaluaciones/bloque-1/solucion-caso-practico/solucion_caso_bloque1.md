@@ -13,6 +13,7 @@ jupyter:
 ---
 
 # Caso Práctico Bloque 1 - SOLUCIÓN
+
 ## Análisis Básico de un Equipo de Fútbol
 
 **Equipo:** Analistas Junior  
@@ -21,14 +22,15 @@ jupyter:
 
 ---
 
-## Lo que vamos a hacer:
+## Lo que vamos a hacer
+
 - Usar Python básico para analizar un equipo de fútbol
 - Crear funciones simples para cálculos
 - Trabajar con listas y diccionarios
 - Encontrar patrones en los datos
 
-
 ---
+
 # PARTE 1: PYTHON BÁSICO (50 puntos)
 
 ## 1.1 Definir los Datos
@@ -168,6 +170,7 @@ print(f"Jugador más joven: {jugador_mas_joven} ({edad_menor} años)")
 ```
 
 ---
+
 # PARTE 2: ANÁLISIS SIMPLE (30 puntos)
 
 ## 2.1 Estadísticas Básicas del Equipo (15 puntos)
@@ -251,6 +254,7 @@ print(f"Porcentaje de goles por delanteros: {(goles_por_delanteros/total_goles_e
 ```
 
 ---
+
 # PARTE 3: RESULTADOS Y CONCLUSIONES
 
 ## Resumen de Nuestros Hallazgos
@@ -282,26 +286,31 @@ print(f"✨ Evaluación: {evaluacion}")
 ¡Felicitaciones! En este caso práctico aplicamos exitosamente:
 
 ### ✅ **Python Básico:**
+
 - Variables para almacenar datos
 - Bucles `for` para procesar listas
 - Condicionales `if/elif/else` para tomar decisiones
 - Operaciones matemáticas básicas
 
 ### ✅ **Funciones:**
+
 - `calcular_puntos()`: Automatizó el cálculo de puntos
 - `mejor_goleador()`: Encontró al mejor jugador
 
 ### ✅ **Estructuras de Datos:**
+
 - Listas para almacenar resultados y goles
 - Diccionarios para organizar información de jugadores
 - Acceso a datos usando llaves y índices
 
 ### ✅ **Análisis de Datos:**
+
 - Calculamos estadísticas importantes del equipo
 - Comparamos jugadores y posiciones
 - Sacamos conclusiones basadas en los datos
 
 ### 🚀 **Próximos Pasos:**
+
 En el Bloque 2 aprenderemos a usar pandas para manejar datos más grandes y crear gráficos con seaborn.
 
 ¡Excelente trabajo aplicando Python básico al análisis deportivo!

@@ -21,6 +21,7 @@ jupyter:
 ### ¿Por qué los grandes entrenadores son tan efectivos?
 
 **Descubrimiento sorprendente**: Los entrenadores de élite no solo conocen muchas jugadas... tienen **sistemas organizados** que pueden:
+
 - Adaptarse a cualquier oponente
 - Reutilizarse en diferentes situaciones  
 - Combinarse para crear estrategias complejas
@@ -33,19 +34,25 @@ jupyter:
 ## Estructura del descubrimiento (3 sesiones × 50 minutos)
 
 ### SESIÓN 1: ¿Cómo crear "jugadas programadas" reutilizables? (50 min)
+
 **Pregunta guía**: ¿Por qué repetir código es como improvisar la misma jugada una y otra vez?
+
 - Funciones básicas: tus primeras "jugadas maestras"
 - Parámetros: adaptando jugadas a diferentes situaciones
 - Valores de retorno: obtener resultados útiles de tus estrategias
 
 ### SESIÓN 2: ¿Cómo organizan los técnicos de élite sus sistemas? (50 min)  
+
 **Pregunta guía**: ¿Cómo pasamos de jugadas individuales a manuales completos de estrategias?
+
 - Módulos: crear tu biblioteca personal de herramientas
 - Importaciones: acceder a sistemas creados por otros expertos
 - Organización de código: estructura como los grandes clubes
 
 ### SESIÓN 3: ¿Podrías crear un sistema de análisis como los usan los equipos profesionales? (50 min)
+
 **Pregunta guía**: ¿Cómo integramos todo en un sistema coherente y poderoso?
+
 - Proyecto integrador: Sistema completo de análisis de equipos
 - Integración de conceptos: desde variables hasta sistemas complejos
 - Reflexión sobre la evolución de tu pensamiento estratégico
@@ -55,13 +62,13 @@ jupyter:
 ### ¿Qué descubriremos esta semana?
 
 Al final de estos 150 minutos, habrás desarrollado la mentalidad de un **arquitecto de sistemas**, capaz de:
+
 - Diseñar soluciones elegantes y reutilizables como un entrenador de élite
 - Organizar código complejo de manera profesional y mantenible
 - Crear herramientas que otros puedan usar y entender
 - Construir sistemas integrados para análisis deportivo real
 
 **Pregunta motivadora**: ¿Estás listo para pensar como los grandes estrategas del fútbol moderno?
-
 
 # SESIÓN 1: ¿Cómo crear "jugadas programadas" reutilizables? (50 minutos)
 
@@ -74,13 +81,14 @@ Al final de estos 150 minutos, habrás desarrollado la mentalidad de un **arquit
 ### ¿Qué hace especiales a las "jugadas maestras"?
 
 **Reflexiona antes de continuar**:
+
 - ¿Por qué los tiros libres de Messi siempre parecen tan precisos?
 - ¿Cómo logra el Barcelona que sus jugadas de corner sean tan efectivas?
 - ¿Qué permite que un equipo ejecute la misma estrategia contra diferentes oponentes?
 
 **Descubrimiento fundamental**: Las mejores jugadas tienen algo en común...
 
-### Características de las jugadas de élite:
+### Características de las jugadas de élite
 
 1. **Reproducibles**: Se pueden ejecutar múltiples veces con el mismo resultado
 2. **Adaptables**: Funcionan contra diferentes oponentes modificando pequeños detalles
@@ -98,7 +106,7 @@ Al final de estos 150 minutos, habrás desarrollado la mentalidad de un **arquit
 
 **Pregunta de conexión**: Cuando Guardiola grita "¡Jugada 7!" desde la banda, ¿qué está pasando realmente?
 
-### Anatomía de una jugada maestra vs. una función:
+### Anatomía de una jugada maestra vs. una función
 
 | Jugada de Fútbol | Función de Programación |
 |------------------|-------------------------|
@@ -119,7 +127,7 @@ Al final de estos 150 minutos, habrás desarrollado la mentalidad de un **arquit
 
 **Pregunta guía**: Si fueras a crear el manual táctico del Barcelona, ¿qué información incluirías para cada jugada?
 
-### Piénsalo paso a paso:
+### Piénsalo paso a paso
 
 1. **¿Qué nombre le darías a la jugada?** (Debe ser claro y descriptivo)
 2. **¿Qué información necesita el equipo antes de ejecutarla?** (Posiciones, timing, etc.)
@@ -130,7 +138,7 @@ Al final de estos 150 minutos, habrás desarrollado la mentalidad de un **arquit
 
 ---
 
-### Estructura de una "jugada programada":
+### Estructura de una "jugada programada"
 
 ```python
 def nombre_de_la_jugada(informacion_necesaria):
@@ -142,29 +150,39 @@ def nombre_de_la_jugada(informacion_necesaria):
 
 **Desglose de cada elemento**:
 
-#### 1. `def nombre_de_la_jugada`:
+#### 1. `def nombre_de_la_jugada`
+
 **Analogía**: Como nombrar "Tiki-taka", "Contra-ataque rápido", "Presión alta"
+
 - Debe ser descriptivo y claro
 - En español para nuestro proyecto
 - Sin espacios (usa guiones bajos: `calcular_promedio_goles`)
 
-#### 2. `(informacion_necesaria)`:
+#### 2. `(informacion_necesaria)`
+
 **Analogía**: Los datos que necesita el entrenador antes de dar la orden
+
 - ¿Cuántos jugadores? ¿En qué posición? ¿Qué minuto es?
 - En programación: ¿qué datos necesitamos para hacer el cálculo?
 
-#### 3. `"""Documentación"""`:
+#### 3. `"""Documentación"""`
+
 **Analogía**: Las instrucciones en el manual táctico
+
 - Explica cuándo y cómo usar la jugada
 - Fundamental para que otros entiendan tu estrategia
 
-#### 4. `# Código de ejecución`:
+#### 4. `# Código de ejecución`
+
 **Analogía**: Los movimientos específicos que hacen los jugadores
+
 - Las operaciones matemáticas y lógicas
 - El "trabajo interno" de la jugada
 
-#### 5. `return resultado_obtenido`:
+#### 5. `return resultado_obtenido`
+
 **Analogía**: Lo que logra la jugada (gol, posesión, ventaja)
+
 - El valor útil que devuelve la función
 - Lo que podremos usar después en otras partes del análisis
 
@@ -250,16 +268,17 @@ print("¿Qué patrones observas en estos datos?")
 print("¿Qué nos dice esto sobre la consistencia vs. el volumen total?")
 ```
 
-### ¡Tu turno de crear una jugada maestra!
+### ¡Tu turno de crear una jugada maestra
 
 **Momento de aplicación práctica**: Acabas de ver cómo analizamos delanteros, pero ¿qué pasa con los porteros?
 
 **Escenario desafío**: Eres el nuevo director deportivo del Real Madrid y necesitas decidir entre tres porteros para la próxima temporada. Los delanteros se evalúan por goles, pero **¿cómo evaluamos objetivamente a un portero?**
 
-#### Pregunta de reflexión crítica:
+#### Pregunta de reflexión crítica
+
 ¿Qué es más importante: un portero que recibe pocos tiros pero falla algunos, o uno que recibe muchos tiros pero para la mayoría?
 
-### Desafío de diseño estratégico:
+### Desafío de diseño estratégico
 
 **Tu misión**: Crear una "jugada maestra" que calcule la efectividad de cualquier portero.
 
@@ -377,11 +396,12 @@ print("- Profesional: resultados consistentes y comparables")
 
 **Momento de reflexión estratégica**: Hasta ahora hemos creado jugadas simples con pocos datos. Pero en el fútbol real, ¿las decisiones importantes se toman con solo una o dos variables?
 
-### Escenario de complejidad real:
+### Escenario de complejidad real
 
 Imagínate que eres Pep Guardiola y debes evaluar si Kevin De Bruyne tuvo una buena temporada. **¿Con qué criterios lo evaluarías?**
 
 **Pregunta de reflexión**: ¿Sería suficiente mirar solo los goles? ¿O necesitarías considerar...?
+
 - Goles anotados
 - Asistencias realizadas  
 - Partidos jugados
@@ -397,6 +417,7 @@ Imagínate que eres Pep Guardiola y debes evaluar si Kevin De Bruyne tuvo una bu
 ## Funciones con "información compleja": El análisis multidimensional
 
 **Analogía futbolística**: Cuando Ancelotti evalúa a un jugador, no mira una sola estadística. Combina datos de:
+
 - Rendimiento ofensivo (goles + asistencias)
 - Consistencia (partidos jugados)
 - Contexto posicional (delantero vs. mediocampista)
@@ -404,7 +425,7 @@ Imagínate que eres Pep Guardiola y debes evaluar si Kevin De Bruyne tuvo una bu
 
 **En programación**: Las funciones pueden recibir **múltiples parámetros** para hacer análisis tan sofisticados como los de los cuerpos técnicos profesionales.
 
-### Estructura de una "evaluación integral":
+### Estructura de una "evaluación integral"
 
 ```python
 def analizar_jugador_completo(parametro1, parametro2, parametro3, parametro4):
@@ -568,12 +589,14 @@ print("¿Cómo usarías esta información si fueras director deportivo?")
 **Pregunta de autoevaluación**: Antes de avanzar, ¿podrías explicar a un compañero qué es una función usando solo analogías futbolísticas?
 
 #### ¿Qué dominamos ahora?
+
 - **Funciones básicas**: Crear "jugadas programadas" reutilizables como calcular_promedio_goles()
 - **Múltiples parámetros**: Análisis complejos que consideran varios factores simultáneamente  
 - **Análisis contextual**: Evaluar jugadores según su posición específica (delanteros vs. mediocampistas)
 - **Sistemas profesionales**: Crear evaluaciones tan sofisticadas como las de clubes de élite
 
 #### ¿Qué patrones descubrimos?
+
 1. **Reutilización inteligente**: Una función bien diseñada funciona con cualquier jugador
 2. **Prevención de errores**: Validar datos como prevenir división por cero  
 3. **Contextualización**: Diferentes criterios según la posición y rol
@@ -581,13 +604,13 @@ print("¿Cómo usarías esta información si fueras director deportivo?")
 
 **Pregunta de conexión**: ¿Te das cuenta de que ya programas con la mentalidad de un analista deportivo profesional?
 
-### Vista previa de Sesión 2:
+### Vista previa de Sesión 2
+
 **¿Sabías que existe todo un universo de "jugadas maestras" creadas por otros programadores que puedes usar directamente?**
 
 **Pregunta motivadora**: ¿Por qué crear desde cero un sistema de análisis estadístico cuando expertos mundiales ya han resuelto esos problemas?
 
 ¿Estás listo para acceder a las herramientas que usan los departamentos de análisis del Barcelona, Real Madrid y Manchester City?
-
 
 # SESIÓN 2: ¿Cómo acceden los técnicos de élite a la sabiduría colectiva? (50 minutos)
 
@@ -604,6 +627,7 @@ print("¿Cómo usarías esta información si fueras director deportivo?")
 **Descubrimiento sorprendente**: Los mejores entrenadores no reinventan todo. Son maestros en **aprovechar la sabiduría acumulada** de toda la comunidad futbolística mundial.
 
 #### ¿Cómo lo hacen?
+
 - **Estudian tácticas** de entrenadores históricos y contemporáneos
 - **Adaptan métodos** de entrenamiento probados en diferentes culturas
 - **Combinan estrategias** que han funcionado en otros contextos
@@ -616,7 +640,7 @@ print("¿Cómo usarías esta información si fueras director deportivo?")
 
 ## Módulos y librerías: Tu acceso al conocimiento mundial
 
-**Analogía futbolística perfecta**: 
+**Analogía futbolística perfecta**:
 
 | En el fútbol profesional | En programación |
 |-------------------------|------------------|
@@ -632,6 +656,7 @@ print("¿Cómo usarías esta información si fueras director deportivo?")
 **Reflexión estratégica**: Si tuvieras que organizar el manual táctico del Real Madrid, ¿cómo lo estructurarías?
 
 **Tu respuesta mental probablemente incluye**:
+
 - Capítulo 1: Tácticas defensivas
 - Capítulo 2: Estrategias ofensivas  
 - Capítulo 3: Jugadas de pelota parada
@@ -776,8 +801,9 @@ print("- ¡Y mucho más que descubriremos en próximas sesiones!")
 **Pregunta de reflexión futbolística**: En tu equipo, ¿cómo te refieres a los jugadores según el contexto?
 
 **Piénsalo**:
+
 - En formal: "Lionel Andrés Messi Cuccittini"
-- En confianza: "Leo" 
+- En confianza: "Leo"
 - En táctica: "El 10"
 - En urgencia: "¡Pásala al argentino!"
 
@@ -786,6 +812,7 @@ print("- ¡Y mucho más que descubriremos en próximas sesiones!")
 ### ¿Por qué necesitamos diferentes formas de importar?
 
 **Situaciones reales**:
+
 1. **Análisis completo**: Necesitas muchas funciones matemáticas → Importas todo el módulo
 2. **Código frecuente**: Usas las mismas funciones muchas veces → Les das alias cortos  
 3. **Función específica**: Solo necesitas una herramienta → Importas únicamente esa
@@ -895,7 +922,7 @@ print("¡Como un buen entrenador: claridad y organización siempre!")
 
 ---
 
-## ¡Tu turno de ser el arquitecto del conocimiento!
+## ¡Tu turno de ser el arquitecto del conocimiento
 
 **Momento de aplicación práctica**: Acabas de aprender a usar herramientas creadas por otros expertos. Pero **¿qué pasa cuando necesitas crear tu propia especialización?**
 
@@ -905,9 +932,10 @@ print("¡Como un buen entrenador: claridad y organización siempre!")
 
 **Pregunta estratégica**: Si tuvieras que crear tu propio "manual de análisis futbolístico", ¿qué herramientas especializadas incluirías?
 
-#### Reflexión previa (3 minutos):
+#### Reflexión previa (3 minutos)
 
 **Piensa como un experto en análisis deportivo**:
+
 1. **¿Qué cálculos haces repetidamente?** (puntos, forma, comparaciones...)
 2. **¿Qué análisis son únicos de tu metodología?** (criterios específicos del club)
 3. **¿Cómo organizarías las herramientas por especialidad?** (ofensiva, defensiva, física...)
@@ -1081,12 +1109,14 @@ print("¡Acabas de crear herramientas tan profesionales como las de La Liga!")
 **Pregunta de autoevaluación**: ¿Podrías explicar a un entrenador profesional cómo los módulos son como tener acceso a todos los departamentos especializados del mundo?
 
 #### ¿Qué dominamos ahora?
+
 - **Módulos básicos**: Acceso a herramientas matemáticas profesionales (math, random)
 - **Importaciones estratégicas**: Diferentes formas de convocar especialistas según la necesidad
 - **Simulaciones avanzadas**: Modelos probabilísticos como los que usan en análisis deportivo
 - **Módulos propios**: Crear departamentos especializados con nuestras herramientas
 
 #### ¿Qué patrones descubrimos?
+
 1. **Reutilización de conocimiento experto**: No reinventar lo que ya está perfeccionado
 2. **Organización por especialidades**: Funciones agrupadas por área de conocimiento
 3. **Flexibilidad en la convocatoria**: Adaptar el acceso según las necesidades específicas
@@ -1094,14 +1124,17 @@ print("¡Acabas de crear herramientas tan profesionales como las de La Liga!")
 
 **Descubrimiento clave**: Ya programas con acceso a las mismas herramientas que usan los departamentos de análisis de los grandes clubes europeos.
 
-### Conexión reveladora:
+### Conexión reveladora
+
 **¿Te das cuenta de que puedes crear análisis tan sofisticados como los de:**
+
 - Departamento de datos del Manchester City
 - Sistema de scouting del Real Madrid  
 - Análisis táctico del FC Barcelona
 - Modelos predictivos del Bayern Munich
 
-### Vista previa de Sesión 3:
+### Vista previa de Sesión 3
+
 **¿Estás listo para el desafío final?** Vamos a integrar funciones + módulos + toda tu creatividad para crear un **Sistema Completo de Análisis Futbolístico**.
 
 **Pregunta motivadora**: ¿Podrías crear una herramienta tan completa que un entrenador real la usaría para tomar decisiones importantes?
@@ -1109,7 +1142,6 @@ print("¡Acabas de crear herramientas tan profesionales como las de La Liga!")
 **Adelanto del proyecto**: Sistema integrado que evalúa jugadores individuales, analiza equipos completos, compara rivales y hasta predice resultados.
 
 ¿Estás listo para tu examen final como analista deportivo profesional?
-
 
 # SESIÓN 3: ¿Podrías crear un sistema como los que usan los técnicos de élite? (50 minutos)
 
@@ -1140,9 +1172,10 @@ print("¡Acabas de crear herramientas tan profesionales como las de La Liga!")
 
 **Objetivo del proyecto**: Combinar funciones, módulos y lógica para crear una herramienta que simule los sistemas profesionales de análisis deportivo.
 
-### Especificaciones del sistema:
+### Especificaciones del sistema
 
 **El sistema debe poder**:
+
 - Evaluar automáticamente a cualquier jugador según criterios posicionales
 - Generar reportes completos de rendimiento de equipos
 - Comparar múltiples equipos con análisis contextual
@@ -1151,10 +1184,10 @@ print("¡Acabas de crear herramientas tan profesionales como las de La Liga!")
 
 **Pregunta motivadora**: ¿Estás listo para demostrar que puedes crear análisis tan sofisticados como los de los grandes clubes?
 
-### Estructura del desarrollo:
+### Estructura del desarrollo
 
 **Fase 1** (15 min): Construcción del módulo de análisis individual avanzado
-**Fase 2** (20 min): Desarrollo del sistema de análisis colectivo 
+**Fase 2** (20 min): Desarrollo del sistema de análisis colectivo
 **Fase 3** (10 min): Integración y pruebas con datos reales
 **Fase 4** (5 min): Reflexión y proyección profesional
 
@@ -1769,15 +1802,15 @@ print("en los mejores clubes del mundo!")
 <!-- #region -->
 ---
 
-## ¡Tu turno de brillar como analista profesional!
+## ¡Tu turno de brillar como analista profesional
 
 **Momento de maestría personal**: Has visto el sistema funcionando con el Real Madrid y Barcelona. Ahora **¿podrías aplicar estas herramientas a tu equipo favorito?**
 
-### Desafío de personalización (10 minutos):
+### Desafío de personalización (10 minutos)
 
 **Tu misión**: Adaptar el sistema integrado para analizar tu equipo favorito o crear una comparación entre equipos que te interesen.
 
-#### Opciones de proyecto personal:
+#### Opciones de proyecto personal
 
 1. **Analizar tu equipo local**: ¿Cómo evaluarías a los jugadores de tu equipo de la ciudad?
 
@@ -1787,7 +1820,7 @@ print("en los mejores clubes del mundo!")
 
 4. **Crear tu equipo ideal**: ¿Combinar jugadores de diferentes equipos para tu "Dream Team"?
 
-#### Reflexión estratégica:
+#### Reflexión estratégica
 
 **Pregunta de diseño**: ¿Qué modificaciones harías al sistema para que se adapte mejor a tu análisis específico?
 
@@ -1796,7 +1829,7 @@ print("en los mejores clubes del mundo!")
 - ¿Incluirías factores como la edad o el valor de mercado?
 - ¿Cómo personalizarías el reporte final?
 
-#### Código base para tu personalización:
+#### Código base para tu personalización
 
 ```python
 # Plantilla para tu análisis personalizado
@@ -2286,21 +2319,27 @@ print(reporte)
 ## Reflexión sobre las 3 sesiones (150 minutos totales)
 
 ### SESIÓN 1: ¿Cómo crear "jugadas programadas" reutilizables?
+
 **Lo que dominamos ahora**:
+
 - Diseñar funciones como "jugadas maestras" que se ejecutan perfectamente cada vez
 - Crear análisis multidimensionales que consideran posición, forma y contexto
 - Construir evaluaciones automáticas tan sofisticadas como las de clubes profesionales
 - Aplicar la mentalidad de "elegancia reutilizable" en lugar de código repetitivo
 
 ### SESIÓN 2: ¿Cómo acceder a la sabiduría colectiva mundial?
+
 **Lo que revelamos**:
+
 - Aprovechar herramientas matemáticas y estadísticas de nivel profesional
 - Importar conocimiento especializado creado por expertos mundiales
 - Combinar módulos externos con nuestras funciones personalizadas
 - Crear nuestros propios "departamentos especializados" organizados por función
 
 ### SESIÓN 3: ¿Cómo integrar todo en sistemas de élite mundial?
+
 **Lo que construimos**:
+
 - Sistema completo de análisis individual, colectivo y comparativo
 - Simulador avanzado de enfrentamientos con múltiples variables
 - Reportes ejecutivos dignos de juntas directivas profesionales
@@ -2323,24 +2362,28 @@ print(reporte)
 **Antes**: "Necesito escribir código desde cero cada vez"
 **Ahora**: "¿Qué herramientas existentes puedo combinar con mis creaciones?"
 
-### Habilidades de élite que ahora posees:
+### Habilidades de élite que ahora posees
 
 #### **Arquitecto de Sistemas**
+
 - Diseñas funciones especializadas para cada aspecto del análisis
 - Organizas código en módulos coherentes y mantenibles
 - Integras múltiples componentes en sistemas unificados
 
 #### **Estratega de Reutilización**
+
 - Creas herramientas que funcionan con cualquier conjunto de datos
 - Evitas repetir trabajo mediante funciones elegantes
 - Construyes sobre el conocimiento de expertos mundiales
 
 #### **Analista de Datos Profesional**  
+
 - Produces reportes ejecutivos con métricas sofisticadas
 - Simulas escenarios complejos con modelos probabilísticos
 - Presentas insights de manera clara y accionable
 
 #### **Integrador de Conocimiento**
+
 - Combinas herramientas especializadas con creatividad personal
 - Adaptas soluciones existentes a problemas específicos
 - Colaboras efectivamente con sistemas creados por otros
@@ -2351,13 +2394,15 @@ print(reporte)
 
 **Reflexión de capacidades**:
 
-### Análisis que antes tomaban horas, ahora toman segundos:
+### Análisis que antes tomaban horas, ahora toman segundos
+
 - Evaluación completa de plantillas de 25+ jugadores
 - Comparación automática entre múltiples equipos
 - Simulación de temporadas completas con miles de partidos
 - Generación de reportes ejecutivos profesionales
 
-### Sistemas que antes requerían equipos especializados:
+### Sistemas que antes requerían equipos especializados
+
 - Departamento de scouting automatizado
 - Centro de análisis táctico personalizado  
 - Simulador de mercado de fichajes
@@ -2370,12 +2415,14 @@ print(reporte)
 ## Vista previa del próximo nivel: ¿Estás listo para manejar Big Data?
 
 **Pregunta de escalabilidad**: Tu sistema actual funciona perfectamente con datos que puedes escribir manualmente. **¿Pero qué pasaría si quisieras analizar:**
+
 - 50,000 partidos de los últimos 5 años
 - Estadísticas en tiempo real de 500 jugadores
 - Datos de transferencias de toda Europa
 - Métricas avanzadas como xG, heatmaps, distancias recorridas?
 
-### Lo que descubriremos en Semana 4:
+### Lo que descubriremos en Semana 4
+
 **Pandas y NumPy**: Las herramientas que usan los departamentos de Big Data de los clubes más grandes del mundo.
 
 - **DataFrames**: Manejar millones de datos como hojas de cálculo superinteligentes
@@ -2392,7 +2439,8 @@ print(reporte)
 
 **Momento de visión personal**: Si tuvieras acceso a todos los datos del fútbol mundial, **¿qué sistema crearías que nadie más ha construido?**
 
-**Tu evolución**: 
+**Tu evolución**:
+
 - **Semana 1**: Aprendiste el lenguaje básico
 - **Semana 2**: Dominaste la lógica y automatización
 - **Semana 3**: Te convertiste en arquitecto de sistemas

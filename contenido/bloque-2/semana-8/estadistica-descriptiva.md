@@ -18,7 +18,8 @@ jupyter:
 
 **Reflexión inicial**: Cuando ves las estadísticas de la Liga MX, observas miles de números. ¿Pero cómo distinguir lo importante de lo irrelevante? ¿Cómo saber si un promedio de 2.1 goles es excepcional o normal?
 
-### Pregunta motivadora para la semana:
+### Pregunta motivadora para la semana
+
 Si fueras analista del Toluca y tuvieras datos de 500 jugadores para reforzar el equipo, ¿cómo resumirías toda esa información para tomar la decisión correcta?
 
 ---
@@ -26,19 +27,25 @@ Si fueras analista del Toluca y tuvieras datos de 500 jugadores para reforzar el
 ## ESTRUCTURA SEMANAL: 3 Sesiones de Descubrimiento
 
 ### SESIÓN 1: ¿Qué secretos revelan los resúmenes estadísticos? (50 min)
+
 **Pregunta guía**: ¿Cómo condensar miles de números en insights útiles?
+
 - ¿Qué diferencia hay entre datos crudos y conocimiento deportivo?
 - ¿Por qué algunos promedios engañan y otros iluminan?
 - ¿Cómo detectar patrones ocultos en el rendimiento?
 
 ### SESIÓN 2: ¿Cómo visualizar la esencia de los datos? (50 min)  
+
 **Pregunta guía**: ¿Qué revelan los gráficos que los números solos no pueden?
+
 - ¿Cómo las distribuciones muestran la "personalidad" de un equipo?
 - ¿Qué patrones emergen cuando comparas grupos visualmente?
 - ¿Por qué la variabilidad es tan importante como el promedio?
 
 ### SESIÓN 3: ¿Cómo aplicar estadística descriptiva profesionalmente? (50 min)
+
 **Pregunta guía**: ¿Cómo tomar decisiones deportivas basadas en evidencia?
+
 - ¿Qué métricas son más confiables para evaluar rendimiento?
 - ¿Cómo detectar sesgos y limitaciones en tus análisis?
 - ¿Qué insights estadísticos buscan los equipos profesionales?
@@ -49,7 +56,8 @@ Si fueras analista del Toluca y tuvieras datos de 500 jugadores para reforzar el
 
 **Pregunta reflexiva**: ¿Has notado que los mejores analistas deportivos no solo presentan números, sino que cuentan historias convincentes? ¿Será porque dominan el arte de hacer "hablar" a los datos?
 
-### La revolución del análisis estadístico en el deporte:
+### La revolución del análisis estadístico en el deporte
+
 - **¿Sabías que...?** Los equipos top invierten millones en departamentos de análisis estadístico
 - **¿Te imaginas que...?** Una sola métrica mal interpretada puede costar transferencias de 50 millones de euros
 - **¿Has considerado que...?** Los entrenadores modernos toman decisiones tácticas basadas en patrones estadísticos en tiempo real
@@ -57,7 +65,6 @@ Si fueras analista del Toluca y tuvieras datos de 500 jugadores para reforzar el
 **Tu misión esta semana**: Convertirte en un "traductor" experto que convierte números fríos en insights estratégicos.
 
 ¿Estás listo para descubrir cómo hacer que los datos deportivos cuenten sus historias más reveladoras?
-
 
 # SESIÓN 1: ¿Qué secretos revelan los resúmenes estadísticos? (50 minutos)
 
@@ -78,13 +85,14 @@ Imagina que tienes que evaluar 100 jugadores para el equipo de tu escuela. Cada 
 Antes de analizar datos deportivos, necesitamos entender que existe una diferencia fundamental entre tener información y tener conocimiento. ¿Has notado que los comentaristas deportivos siempre mencionan promedios, máximos y mínimos? ¿Por qué será?
 
 <VSCode.Cell id="#VSC-fa0e8320" language="markdown">
+
 ## ¿Cómo exploramos el arte de "resumir" grandes cantidades de información?
 
 **Momento de reflexión**: En el mundo real, los equipos manejan datos de cientos de jugadores, miles de partidos, y millones de estadísticas. ¿Pero cómo extraen lo esencial sin perderse en el ruido?
 
 **Pregunta clave**: Si fueras director técnico y tuvieras 30 segundos para evaluar a un jugador, ¿qué 3 números te dirían todo lo que necesitas saber?
 
-### ¡Vamos a ser "destiladores" de información deportiva!
+### ¡Vamos a ser "destiladores" de información deportiva
 
 Antes de generar estadísticas complejas, necesitamos entender qué tipos de "resúmenes" son más útiles para tomar decisiones. ¿Has notado que algunos promedios son más informativos que otros?
 
@@ -131,7 +139,7 @@ print("Pregunta de reflexión: ¿Cómo crees que estas herramientas cambiarán t
 
 **Pregunta clave**: Si tuvieras que crear datos sintéticos que capturen la esencia del rendimiento futbolístico, ¿qué variables incluirías y por qué?
 
-### ¡Vamos a ser "arquitectos" de datos deportivos realistas!
+### ¡Vamos a ser "arquitectos" de datos deportivos realistas
 
 Antes de calcular estadísticas, necesitamos generar un conjunto de datos que refleje la variabilidad real del fútbol profesional. ¿Has notado que no todos los jugadores rinden igual, ni todas las posiciones tienen las mismas expectativas?
 
@@ -140,6 +148,7 @@ Antes de calcular estadísticas, necesitamos generar un conjunto de datos que re
 **Pregunta de diseño**: Para que nuestras estadísticas sean significativas, ¿qué aspectos del fútbol profesional deberíamos modelar?
 
 **Dimensiones esenciales**:
+
 - **Rendimiento ofensivo**: ¿Los goles como medida de efectividad?
 - **Experiencia competitiva**: ¿Los partidos jugados como indicador de madurez?
 - **Especialización táctica**: ¿La posición como determinante de función?
@@ -204,7 +213,8 @@ print("¿Qué patrones estadísticos crees que emergerán de este dataset?")
 
 **Pregunta clave**: Si un periodista deportivo te preguntara "¿cómo rinde ofensivamente este equipo?" en 10 segundos, ¿qué números le dirías y por qué?
 
-#### Las tres dimensiones fundamentales del rendimiento:
+#### Las tres dimensiones fundamentales del rendimiento
+
 - **¿Qué es típico?** → El centro de gravedad del rendimiento
 - **¿Cuáles son los límites?** → Los extremos de lo posible  
 - **¿Qué tan variable es?** → La consistencia vs impredecibilidad
@@ -277,6 +287,7 @@ print("¿El promedio general representa bien a todas las posiciones?")
 ## SÍNTESIS DE LA SESIÓN 1: ¿Qué hemos descubierto sobre resúmenes estadísticos?
 
 **Reflexión de 50 minutos**:
+
 - ¿Cómo tres números simples (promedio, máximo, mínimo) pueden capturar la esencia de un grupo?
 - ¿Por qué el análisis por subgrupos (posiciones) revela patrones ocultos?
 - ¿Cuándo los resúmenes numéricos son más útiles que ver todos los datos individuales?
@@ -371,6 +382,7 @@ print("¿Qué patrones visuales no capturaste con las estadísticas numéricas?"
 ## SÍNTESIS DE LA SESIÓN 2: ¿Qué hemos revelado con visualizaciones?
 
 **Reflexión de 50 minutos**:
+
 - ¿Cómo las distribuciones visuales muestran patrones que los promedios ocultan?
 - ¿Qué ventajas tienen los gráficos de dispersión para detectar relaciones?
 - ¿Por qué combinar diferentes tipos de visualización enriquece el análisis?
@@ -475,6 +487,7 @@ print("¿Qué decisiones tomarías basándote en esta evidencia estadística?")
 ### ¿Qué limitaciones tienen nuestros análisis?
 
 **Reflexión crítica**:
+
 - ¿Los datos sintéticos capturan toda la complejidad del fútbol real?
 - ¿Qué factores importantes no estamos considerando?
 - ¿Cómo podrían cambiar nuestras conclusiones con más variables?
@@ -482,6 +495,7 @@ print("¿Qué decisiones tomarías basándote en esta evidencia estadística?")
 ### Conexión con el análisis profesional moderno
 
 **¿Sabías que...?**
+
 - Los equipos top usan más de 200 métricas diferentes
 - Las decisiones de fichaje involucran análisis predictivo, no solo descriptivo
 - Los contextos (liga, sistema táctico, adversarios) influyen enormemente en las estadísticas
@@ -559,21 +573,27 @@ print("\nReflexión final: ¿Cómo balanceas evidencia estadística con intuici�
 ## Reflexión de las 3 sesiones (150 minutos totales)
 
 ### SESIÓN 1: ¿Qué secretos revelan los resúmenes estadísticos?
+
 **Lo que dominamos ahora**:
+
 - Extraer la "esencia" de grupos de datos usando medidas de tendencia central
 - Interpretar promedios, máximos y mínimos en contexto deportivo
 - Analizar diferencias entre subgrupos (posiciones, edades, etc.)
 - Distinguir entre "tener números" y "generar conocimiento"
 
 ### SESIÓN 2: ¿Cómo visualizar la esencia de los datos?
+
 **Lo que revelamos**:
+
 - Cómo las distribuciones visuales muestran patrones ocultos en los promedios
 - Ventajas de histogramas, gráficos de dispersión y visualizaciones comparativas
 - Por qué los ojos pueden detectar patrones que escapan a los cálculos
 - Cuándo usar cada tipo de visualización para máximo impacto
 
 ### SESIÓN 3: ¿Cómo aplicar estadística descriptiva profesionalmente?
+
 **Lo que integramos**:
+
 - Análisis multidimensionales que combinan múltiples métricas
 - Pensamiento crítico sobre limitaciones y sesgos en los datos
 - Aplicación práctica en decisiones deportivas reales
@@ -581,21 +601,24 @@ print("\nReflexión final: ¿Cómo balanceas evidencia estadística con intuici�
 
 ---
 
-## Pregunta de preparación para la próxima semana:
+## Pregunta de preparación para la próxima semana
 
 **¿Te has dado cuenta de que ahora puedes "leer" historias completas en conjuntos de datos deportivos?**
 
 ### ¿Qué nuevos insights quieres descubrir?
 
-**Reflexión personal**: 
+**Reflexión personal**:
+
 - ¿Cuál técnica te resultó más reveladora?
 - ¿Qué análisis te gustaría hacer con datos reales de la Liga MX?
 - ¿Cómo cambió tu comprensión sobre la toma de decisiones basada en datos?
 
-### Vista previa de la próxima semana:
+### Vista previa de la próxima semana
+
 **¿Sabías que las visualizaciones pueden transformar completamente cómo entendemos el fútbol?**
 
 La próxima semana exploraremos:
+
 - Técnicas avanzadas de visualización deportiva
 - Cómo crear gráficos que cuenten historias convincentes
 - Visualizaciones interactivas y dashboards profesionales

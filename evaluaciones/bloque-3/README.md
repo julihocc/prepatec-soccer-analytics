@@ -1,4 +1,5 @@
 # Bloque 3: Proyecto Integrador Final
+
 ## Evaluación Integral de Competencias
 
 **Duración:** Semanas 15-16  
@@ -11,22 +12,28 @@
 ## Componentes de Evaluación
 
 ### Quiz / Canvas ML Básico (15% del curso)
+
 **Propósito:** Comprobar comprensión conceptual mínima (modelo, entrenamiento, predicción, overfitting) antes del desarrollo del caso.
 **Formato:** 12-18 ítems (70% opción múltiple / 30% numéricas simples) seleccionados de banco etiquetado.
 **Duración objetivo:** 25-30 minutos.
 **Criterios de éxito:** ≥70% respuestas correctas para evidenciar preparación.
 
 ### Caso Práctico Bloque 3 (25% del curso)
+
 **Ubicación:** `caso-practico/caso-bloque3.md`
+
 - **Modalidad:** Individual
 - **Componentes:** EDA + Predicción simple + Visualización + Documentación
 - **Entrega:** Notebook ejecutable
 
 ### Presentación (integrada en el caso)
+
 La comunicación de resultados se evalúa ahora dentro del 25% total del caso práctico (subcomponentes de Documentación / Comunicación) sin ponderación separada.
 
 ### Sistema de Evaluación Integral
+
 **Rúbrica Integrada:** (el caso práctico + quiz constituyen la evidencia evaluable del Bloque 3)
+
 - **Evaluación holística** de competencias del curso
 - **Criterios profesionales** al nivel esperado preparatoria avanzada
 - **Portfolio de evidencias** para empleabilidad
@@ -35,6 +42,7 @@ La comunicación de resultados se evalúa ahora dentro del 25% total del caso pr
 ---
 
 ## Rúbricas de Evaluación Completas (Integradas)
+
 ### Sistema de Evaluación por Competencias
 
 **Curso:** Análisis de Datos de Fútbol con Python  
@@ -45,6 +53,7 @@ La comunicación de resultados se evalúa ahora dentro del 25% total del caso pr
 ### Estructura General de Evaluación
 
 #### Distribución de Calificaciones Global (Vigente)
+
 - Actividad 1: Examen Canvas Bloque 1 (15%)
 - Actividad 2: Caso Práctico Bloque 1 (15%)
 - Actividad 3: Examen Canvas Bloque 2 (15%)
@@ -55,6 +64,7 @@ La comunicación de resultados se evalúa ahora dentro del 25% total del caso pr
 ---
 
 ### 1. Rúbrica Exámenes Canvas (Bloques 1 y 2)
+
 Se mantienen aquí solo con fines de referencia transversal; la evaluación final del bloque 3 no incluye examen Canvas.
 
 **Configuración:** 70% opción múltiple, 30% numéricas, duración 45-60 min, un intento. Selección aleatoria desde bancos etiquetados con niveles cognitivos [R][C][A][S].
@@ -64,9 +74,11 @@ Se mantienen aquí solo con fines de referencia transversal; la evaluación fina
 ---
 
 ### 2. Rúbrica Casos Prácticos Colaborativos (Bloques 1 y 2)
+
 Referenciada para consistencia de criterios (no aplicable directamente al proyecto individual final).
 
 **Componentes:**
+
 1. Análisis Técnico (40%)  
 2. Trabajo Colaborativo (30%)  
 3. Comunicación y Presentación (30%)
@@ -76,10 +88,13 @@ Cada sub‑criterio presenta niveles: Excelente / Bueno / Suficiente / Insuficie
 ---
 
 ### 3. Rúbrica Proyecto Integrador Final (Bloque 3)
+
 La siguiente rúbrica se aplica al Caso Práctico (25% del curso). Comunicación y presentación quedan integradas.
 
 #### 3.1 Caso Práctico (25% del curso)
+
 Subcomponentes y pesos relativos dentro del notebook (entre paréntesis el equivalente sobre la calificación total del curso):
+
 - Análisis Exploratorio de Datos (25% del notebook = 5% total)
 - Modelado de Machine Learning (35% del notebook = 7% total)
 - Dashboard Interactivo (25% del notebook = 5% total)
@@ -88,22 +103,26 @@ Subcomponentes y pesos relativos dentro del notebook (entre paréntesis el equiv
 Cada subcomponente se evalúa en cuatro dimensiones: Exhaustividad/Implementación, Calidad de Insights / Selección de Modelos / Funcionalidad / Calidad del Código, Limpieza de Datos / Evaluación de Modelos / UX / Documentación, e Interpretación / Integración / Reproducibilidad según corresponda.
 
 #### 3.2 Comunicación Integrada
+
 La presentación en vivo se evalúa mediante evidencia en el notebook y exposición breve (dentro del mismo 25%). Criterios de narrativa y claridad se integran en Documentación y Código.
 
 ---
 
 ### 4. Criterios Transversales
+
 - Integridad Académica: originalidad del código, citación de fuentes, uso declarado de herramientas de IA.
 - Pensamiento Computacional: descomposición, patrones, abstracción, algoritmos.
 - Comunicación Técnica: adaptación a audiencia técnica/no técnica, visualizaciones efectivas, narrativa.
 - Responsabilidad Ética: transparencia de limitaciones y supuestos.
 
 ### 5. Feedback y Mejora Continua
+
 - Feedback inmediato (Canvas) automatizado por tema.
 - Feedback formativo (checkpoints) en avance del notebook durante semanas 14-15.
 - Feedback sumativo posterior a la presentación: fortalezas + áreas de mejora + recomendaciones de aprendizaje futuro.
 
 ### 6. Escala de Calificación Institucional (Referencia)
+
 | % | Interpretación |  
 |---|----------------|  
 | 95-100 | Dominio excepcional |  
@@ -115,7 +134,9 @@ La presentación en vivo se evalúa mediante evidencia en el notebook y exposici
 | <70 | No acreditado |  
 
 ### 7. Uso de la Rúbrica Durante el Desarrollo
+
 Recomendado auto‑chequeo al cierre de cada fase:  
+
 1. Cierra EDA (Semana 14 mitad) → Verifica criterios de Exploración.  
 2. Cierra primera versión de modelo (Semana 14 fin) → Verifica Implementación y Evaluación.  
 3. Cierra iteración de dashboard (Semana 15 mitad) → Verifica Funcionalidad y UX.  
@@ -128,24 +149,28 @@ Recomendado auto‑chequeo al cierre de cada fase:
 ## Objetivos de Aprendizaje Integrales
 
 ### Competencias Técnicas Avanzadas
+
 - **Pipeline completo ML:** Desde datos crudos hasta predicciones
 - **Modelos múltiples:** Regresión, clasificación, ensemble methods
 - **Evaluación rigurosa:** Cross-validation, métricas apropiadas
 - **Productización:** Código limpio, modular, documentado, reproducible
 
 ### Competencias de Ciencia de Datos
+
 - **Feature engineering:** Creación de variables predictivas sofisticadas  
 - **Selección de modelos:** Comparación sistemática de algoritmos
 - **Interpretabilidad:** Explicación de predicciones para stakeholders
 - **Validación temporal:** Técnicas apropiadas para datos deportivos
 
 ### Competencias de Desarrollo
+
 - **Arquitectura modular:** Separación clara de funcionalidades
 - **Interface de usuario:** Dashboard intuitivo para usuarios finales
 - **Documentación técnica:** Código autoexplicativo y bien comentado
 - **Testing básico:** Validación de funciones críticas
 
 ### Competencias Profesionales
+
 - **Gestión de proyectos:** Planificación y ejecución autónoma
 - **Comunicación ejecutiva:** Presentación a audiencias diversas
 - **Pensamiento estratégico:** Recomendaciones basadas en análisis
@@ -156,28 +181,36 @@ Recomendado auto‑chequeo al cierre de cada fase:
 ## Fases de Desarrollo
 
 ### Fase 1: Análisis Exploratorio Avanzado (25% del proyecto)
+
 **Duración:** Semana 1 completa
+
 - **Carga y validación:** Múltiples datasets, verificación de integridad
 - **EDA profundo:** Patrones complejos, análisis multivariado
 - **Feature engineering:** Variables derivadas para predicción
 - **Insights previos:** Hipótesis para el modelado
 
 ### Fase 2: Modelado Predictivo (35% del proyecto)  
+
 **Duración:** Semanas 2-3 intensivas
+
 - **Baseline models:** Implementación de algoritmos básicos
 - **Modelos avanzados:** Random Forest, Gradient Boosting, ensemble
 - **Optimización:** Hyperparameter tuning, cross-validation
 - **Evaluación comparativa:** Métricas múltiples, análisis de errores
 
 ### Fase 3: Dashboard Interactivo (25% del proyecto)
+
 **Duración:** Semana 3-4 parciales
+
 - **Interface de usuario:** Controles intuitivos, filtros dinámicos
 - **Visualizaciones en tiempo real:** Gráficos que responden a inputs
 - **Sistema de predicción:** Interface para nuevos datos
 - **Exportación de reportes:** Generación automática de insights
 
 ### Fase 4: Documentación y Presentación (15% del proyecto)
+
 **Duración:** Semana 4 intensiva
+
 - **Documentación técnica:** README completo, comentarios de código
 - **Manual de usuario:** Guía para stakeholders no técnicos
 - **Presentación ejecutiva:** 15 diapositivas máximo, demo funcional
@@ -188,24 +221,28 @@ Recomendado auto‑chequeo al cierre de cada fase:
 ## Criterios de Evaluación Profesional
 
 ### Excelencia Técnica (90-100%)
+
 - **Código de calidad profesional:** PEP8, modular, eficiente
 - **Modelos de alta performance:** Métricas competitivas  
 - **Dashboard nivel comercial:** UX comparable a herramientas profesionales
 - **Documentación completa:** Nivel de proyecto open-source
 
 ### Competencia Sólida (80-89%)
+
 - **Implementación correcta:** Todas las funcionalidades requeridas
 - **Modelos bien evaluados:** Metodología rigurosa, resultados válidos
 - **Interface funcional:** Dashboard completo aunque no pulido
 - **Comunicación clara:** Presentación estructurada, dominio del tema
 
 ### Nivel Básico (70-79%)
+
 - **Funcionalidad mínima:** Cumple requisitos básicos del proyecto
 - **Modelos implementados:** Algoritmos funcionan aunque sin optimizar
 - **Dashboard básico:** Funcionalidad limitada pero operativa
 - **Presentación suficiente:** Explica el trabajo realizado
 
 ### Insuficiente (<70%)
+
 - **Proyecto incompleto:** Falta implementación de componentes clave
 - **Modelos no funcionales:** Errores técnicos o metodológicos graves
 - **Interface deficiente:** Dashboard no operativo o muy limitado
@@ -218,24 +255,28 @@ Recomendado auto‑chequeo al cierre de cada fase:
 ### Opciones de Enfoque (Elegir 1 principal + 1 secundario)
 
 #### Predicción de Resultados
+
 - **Variables:** Forma reciente, estadísticas históricas, contexto del partido
 - **Algoritmos:** Logistic Regression, Random Forest, Gradient Boosting
 - **Métricas:** Accuracy, precision, recall, log-loss
 - **Aplicación:** Casas de apuestas, análisis táctico pre-partido
 
 #### Predicción de Goles
+
 - **Variables:** Estadísticas ofensivas/defensivas, jugadores titulares, historial
 - **Algoritmos:** Poisson Regression, Neural Networks, Ensemble Methods
 - **Métricas:** MAE, RMSE, distribución de errores
 - **Aplicación:** Fantasy football, estrategias de goleadores
 
 #### Evaluación de Jugadores
+
 - **Variables:** Métricas individuales, contexto de equipo, desarrollo temporal  
 - **Algoritmos:** Clustering + Regression, Random Forest, XGBoost
 - **Métricas:** R², feature importance, estabilidad temporal
 - **Aplicación:** Scouting, valuaciones de mercado, desarrollo de talento
 
 #### Análisis de Mercado
+
 - **Variables:** Rendimiento, edad, contrato, transferencias históricas
 - **Algoritmos:** Regression ensembles, gradient boosting
 - **Métricas:** MAPE, correlación con valores reales
@@ -246,6 +287,7 @@ Recomendado auto‑chequeo al cierre de cada fase:
 ## Stack Tecnológico Profesional
 
 ### Librerías Obligatorias
+
 ```python
 # Análisis de datos
 import pandas as pd
@@ -273,6 +315,7 @@ import json
 ```
 
 ### Librerías Opcionales Avanzadas
+
 ```python
 # ML avanzado (opcional)
 import xgboost as xgb
@@ -288,6 +331,7 @@ from sklearn.pipeline import Pipeline
 ```
 
 ### Infraestructura de Proyecto
+
 ```
 proyecto_final/
 ├── notebooks/
@@ -313,6 +357,7 @@ proyecto_final/
 ## Preparación para el Éxito
 
 ### Planificación Estratégica
+
 1. **Semana 0:** Selección de enfoque, exploración inicial de datos
 2. **Semana 1:** EDA exhaustivo, feature engineering estratégico
 3. **Semana 2:** Implementación y comparación de modelos
@@ -320,11 +365,13 @@ proyecto_final/
 5. **Semana 4:** Finalización de dashboard, documentación, presentación
 
 ### Gestión de Tiempo Crítica
+
 - **60% tiempo:** Análisis y modelado (fases 1-2)
 - **25% tiempo:** Dashboard y interface (fase 3)
 - **15% tiempo:** Documentación y presentación (fase 4)
 
 ### Recursos de Apoyo Intensivo
+
 - **Consultas diarias:** Horarios extendidos durante el proyecto
 - **Datasets especializados:** Acceso a datos premium para el proyecto
 - **Templates avanzados:** Estructuras base para acelerar desarrollo
@@ -335,18 +382,21 @@ proyecto_final/
 ## Impacto y Empleabilidad
 
 ### Portfolio Profesional
+
 - **Proyecto completo funcional:** Demo en línea disponible
 - **Código en GitHub:** Repositorio público bien documentado
 - **Caso de estudio:** Metodología replicable por empleadores
 - **Métricas de performance:** Resultados cuantificables
 
 ### Competencias Certificables
+
 - **Full-stack data science:** Desde datos hasta deployment
 - **Comunicación técnica:** Capacidad de presentar a ejecutivos
 - **Gestión de proyectos:** Entrega autónoma de soluciones complejas
 - **Herramientas profesionales:** Stack tecnológico actual de la industria
 
 ### Conexión con la Industria
+
 - **Casos reales:** Problemas similares a los que enfrentan clubes profesionales
 - **Metodología actual:** Técnicas usadas en departamentos de análisis
 - **Networking:** Presentaciones ante profesionales invitados

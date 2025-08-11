@@ -11,6 +11,7 @@ jupyter:
 # Semana 9: Análisis Básico de Jugadores de Fútbol
 
 **Lo que aprenderemos hoy:**
+
 - Explorar estadísticas básicas de jugadores
 - Crear gráficos simples para comparar rendimiento
 - Identificar patrones en los datos
@@ -21,7 +22,8 @@ jupyter:
 
 ---
 
-## Objetivos de Aprendizaje:
+## Objetivos de Aprendizaje
+
 - Cargar y explorar datos de jugadores
 - Calcular estadísticas básicas por posición
 - Crear visualizaciones simples con pandas y seaborn
@@ -116,12 +118,14 @@ print("¡Como era de esperarse, los delanteros marcan más goles que las otras p
 ```
 
 # Calcular estadísticas básicas por posición
+
 print("=== ESTADÍSTICAS POR POSICIÓN ===")
 
 # Promedios por posición
+
 estadisticas_por_posicion = datos_jugadores.groupby('posicion').agg({
     'goles': 'mean',
-    'asistencias': 'mean', 
+    'asistencias': 'mean',
     'partidos_jugados': 'mean'
 }).round(1)
 
@@ -129,6 +133,7 @@ print("Promedios por posición:")
 print(estadisticas_por_posicion)
 
 # ¿Quién es el mejor de cada posición?
+
 print("\n¿Quién es el mejor jugador de cada posición? (por goles)")
 for posicion in datos_jugadores['posicion'].unique():
     jugadores_posicion = datos_jugadores[datos_jugadores['posicion'] == posicion]
@@ -165,6 +170,7 @@ for i, (idx, jugador) in enumerate(top_asistentes.iterrows(), 1):
 ```
 
 # Gráfico final: Los mejores goleadores
+
 plt.figure(figsize=(12, 6))
 sns.barplot(data=top_goleadores, x='goles', y='nombre', hue='nombre', palette='viridis', legend=False)
 plt.title('Los 5 jugadores que más goles han marcado', fontsize=14, fontweight='bold')
@@ -203,6 +209,7 @@ else:
 ### Lo que Aprendimos Hoy
 
 ¡Felicitaciones! Hoy aprendiste a:
+
 - Cargar datos de jugadores de fútbol con pandas
 - Explorar información básica usando `.head()`, `.value_counts()` y estadísticas simples  
 - Crear gráficos con seaborn para visualizar patrones
@@ -210,4 +217,5 @@ else:
 - Identificar a los mejores jugadores
 
 ### Próxima Semana
+
 En la próxima clase aprenderemos a crear análisis más avanzados y combinar diferentes tipos de datos deportivos.

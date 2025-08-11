@@ -18,7 +18,8 @@ jupyter:
 
 **Reflexión inicial**: Cuando ves las gráficas de rendimiento durante un partido de la Liga MX, tu cerebro procesa la información instantáneamente. ¿Pero qué pasaría si esos mismos datos fueran solo números en una tabla?
 
-### Pregunta motivadora para la semana:
+### Pregunta motivadora para la semana
+
 Si fueras analista del América y tuvieras que convencer a la directiva de fichar a un jugador específico, ¿usarías tablas llenas de números o gráficos que cuenten una historia visual?
 
 ---
@@ -26,19 +27,25 @@ Si fueras analista del América y tuvieras que convencer a la directiva de ficha
 ## ESTRUCTURA SEMANAL: 3 Sesiones de Descubrimiento
 
 ### SESIÓN 1: ¿Por qué nuestro cerebro prefiere ver que leer? (50 min)
+
 **Pregunta guía**: ¿Cómo los gráficos transforman nuestra capacidad de entender datos?
+
 - ¿Qué ventajas evolutivas tiene el procesamiento visual sobre el numérico?
 - ¿Por qué ciertos tipos de gráficos revelan patrones específicos?
 - ¿Cómo elegir la visualización correcta para cada tipo de insight?
 
 ### SESIÓN 2: ¿Qué técnicas crean visualizaciones irresistibles? (50 min)  
+
 **Pregunta guía**: ¿Cómo diseñar gráficos que no solo informen sino que persuadan?
+
 - ¿Qué elementos visuales capturan y mantienen la atención?
 - ¿Cómo el color y el diseño amplifican el mensaje de los datos?
 - ¿Cuándo la estética mejora vs distrae del contenido?
 
 ### SESIÓN 3: ¿Cómo crear dashboards que cambien decisiones? (50 min)
+
 **Pregunta guía**: ¿Qué diferencia un gráfico informativo de uno transformador?
+
 - ¿Cómo combinar múltiples visualizaciones en narrativas coherentes?
 - ¿Qué estrategias usan los equipos profesionales para comunicar insights?
 - ¿Cómo adaptar visualizaciones para diferentes audiencias?
@@ -49,7 +56,8 @@ Si fueras analista del América y tuvieras que convencer a la directiva de ficha
 
 **Pregunta reflexiva**: ¿Has notado que los equipos más exitosos no solo generan datos, sino que los transforman en herramientas de decisión visual? ¿Será porque los humanos tomamos decisiones con los ojos, no con calculadoras?
 
-### La revolución visual en el deporte moderno:
+### La revolución visual en el deporte moderno
+
 - **¿Sabías que...?** Los entrenadores modernos toman decisiones tácticas en tiempo real basándose en visualizaciones dinámicas
 - **¿Te imaginas que...?** Una visualización mal diseñada puede costarte la comprensión de un patrón crucial de rendimiento
 - **¿Has considerado que...?** Los análisis visuales más efectivos combinan ciencia de datos con principios de comunicación visual
@@ -57,7 +65,6 @@ Si fueras analista del América y tuvieras que convencer a la directiva de ficha
 **Tu misión esta semana**: Convertirte en un "narrador visual" que transforma datos complejos en historias irresistibles.
 
 ¿Estás listo para descubrir cómo hacer que los datos deportivos cobren vida a través de visualizaciones extraordinarias?
-
 
 # SESIÓN 1: ¿Por qué nuestro cerebro prefiere ver que leer? (50 minutos)
 
@@ -83,7 +90,7 @@ Antes de crear gráficos, necesitamos entender que existe una diferencia fundame
 
 **Pregunta clave**: Si quisieras mostrar la evolución del rendimiento de un jugador a lo largo de una temporada, ¿qué tipo de visualización elegiría tu intuición?
 
-### ¡Vamos a ser "traductores" visuales de datos deportivos!
+### ¡Vamos a ser "traductores" visuales de datos deportivos
 
 Antes de crear visualizaciones complejas, necesitamos dominar el arte de elegir el tipo correcto de gráfico para cada historia que queremos contar. ¿Has notado que algunos datos "piden" ciertos tipos de visualización?
 
@@ -91,16 +98,16 @@ Antes de crear visualizaciones complejas, necesitamos dominar el arte de elegir 
 
 **Pregunta instrumental**: Para crear visualizaciones que compitan con ESPN y Fox Sports, ¿qué capacidades técnicas serían esenciales?
 
-
 ## ¿Cómo configuramos nuestro "estudio de diseño" visual deportivo?
 
 **Momento de reflexión**: Para crear visualizaciones que rivalen con las que ves en ESPN, necesitas las herramientas correctas. ¿Pero qué diferencia hay entre herramientas y maestría en su uso?
 
 **Pregunta clave**: Si tuvieras que elegir entre control total sobre cada detalle visual o resultados profesionales rápidos, ¿qué elegiría un analista bajo presión?
 
-### ¡Vamos a ser "directores artísticos" de datos deportivos!
+### ¡Vamos a ser "directores artísticos" de datos deportivos
 
 **Tu arsenal creativo profesional**:
+
 - **Pandas**: ¿Tu organizador de información compleja?
 - **Seaborn**: ¿Tu director artístico con inteligencia estadística?
 - **Matplotlib**: ¿Tu lienzo infinito para creatividad visual?
@@ -111,6 +118,7 @@ Antes de crear visualizaciones complejas, necesitamos dominar el arte de elegir 
 **Pregunta de eficiencia**: ¿Qué valorarías más como analista deportivo profesional: pasar horas perfeccionando detalles visuales o generar insights rápidamente con estética automática de nivel profesional?
 
 **Ventajas estratégicas**:
+
 - **Estética instantánea**: ¿Gráficos de calidad televisiva sin ser diseñador gráfico?
 - **Integración inteligente**: ¿Visualizaciones que "entienden" la naturaleza de tus datos?
 - **Escalabilidad creativa**: ¿De prototipos rápidos a presentaciones ejecutivas?
@@ -156,7 +164,7 @@ print("Pregunta de reflexión: ¿Cómo crees que estas herramientas cambiarán t
 
 **Pregunta clave**: Si tuvieras que crear datos sintéticos que capturen la emoción y complejidad de una temporada futbolística, ¿qué variables incluirías para que las visualizaciones sean realmente reveladoras?
 
-### ¡Vamos a ser "productores" de datos deportivos cinematográficos!
+### ¡Vamos a ser "productores" de datos deportivos cinematográficos
 
 Antes de crear visualizaciones, necesitamos generar un dataset que tenga la diversidad y los patrones interesantes que hacen que los gráficos cobren vida. ¿Has notado que los mejores gráficos deportivos siempre tienen datos con historias intrínsecas?
 
@@ -165,6 +173,7 @@ Antes de crear visualizaciones, necesitamos generar un dataset que tenga la dive
 **Pregunta de diseño**: Para que nuestras visualizaciones sean realmente instructivas, ¿qué aspectos del fútbol profesional deberíamos modelar?
 
 **Dimensiones narrativas**:
+
 - **Equipos icónicos**: ¿Nombres que generen engagement emocional?
 - **Variabilidad realista**: ¿Resultados que reflejen la impredecibilidad del deporte?
 - **Métricas multidimensionales**: ¿Variables que permitan análisis visuales complejos?
@@ -250,7 +259,8 @@ print("¿Qué patrones visuales crees que emergerán de este dataset?")
 
 **Pregunta clave**: Si quisieras investigar si realmente existe "ventaja local" en el fútbol, ¿qué tipo de visualización sería más convincente: barras, líneas, o gráficos circulares?
 
-#### Los cuatro poderes básicos de la visualización:
+#### Los cuatro poderes básicos de la visualización
+
 - **Comparación**: ¿Quién es mejor entre múltiples opciones?
 - **Distribución**: ¿Cómo se esparcen los valores?
 - **Relación**: ¿Dos variables están conectadas?
@@ -428,6 +438,7 @@ print("\n¡Remontada histórica! De 0-3 a 4-3")
 ## SÍNTESIS DE LA SESIÓN 2: ¿Qué hemos revelado sobre técnicas avanzadas?
 
 **Reflexión de 50 minutos**:
+
 - ¿Cómo los gráficos multidimensionales revelan relaciones que análisis unidimensionales ocultan?
 - ¿Qué ventajas tienen las visualizaciones compuestas sobre gráficos individuales?
 - ¿Por qué combinar diferentes técnicas visuales enriquece la narrativa de los datos?
@@ -789,6 +800,7 @@ print("¿Qué elementos visuales aumentan la credibilidad de la presentación?")
 ## SÍNTESIS DE LA SESIÓN 3: ¿Qué hemos dominado sobre comunicación visual ejecutiva?
 
 **Reflexión final de 50 minutos**:
+
 - ¿Cómo los dashboards integrados superan presentaciones de gráficos individuales?
 - ¿Qué rol juega la narrativa visual en la toma de decisiones deportivas?
 - ¿Por qué la presentación profesional amplifica el impacto de tus análisis?
@@ -801,19 +813,22 @@ print("¿Qué elementos visuales aumentan la credibilidad de la presentación?")
 
 **Pregunta de cierre**: ¿Qué diferencia percibes entre tu capacidad inicial de "leer gráficos" y tu nueva habilidad de "crear narrativas visuales convincentes"?
 
-### Tu arsenal profesional desarrollado:
+### Tu arsenal profesional desarrollado
 
 #### Nivel 1: Fundamentos visuales dominados
+
 - **Seaborn como acelerador**: ¿Comprendes cómo esta herramienta transforma datos complejos en comunicación clara?
 - **Tipología de gráficos**: ¿Puedes seleccionar el formato visual óptimo según el mensaje que deseas transmitir?
 - **Estética profesional**: ¿Aprecias cómo la presentación visual afecta la credibilidad de tus análisis?
 
 #### Nivel 2: Técnicas avanzadas integradas
+
 - **Visualizaciones multidimensionales**: ¿Puedes combinar múltiples perspectivas en análisis integrados?
 - **Correlaciones reveladas**: ¿Dominas técnicas para hacer visibles relaciones ocultas en los datos?
 - **Narrativa temporal**: ¿Puedes mostrar evoluciones y tendencias de manera convincente?
 
 #### Nivel 3: Comunicación ejecutiva masterizada
+
 - **Dashboards estratégicos**: ¿Puedes crear presentaciones que influencien decisiones importantes?
 - **Narrativa visual progresiva**: ¿Estructuras tus análisis como historias que construyen convicción?
 - **Herramientas profesionales**: ¿Utilizas configuraciones y estándares de nivel corporativo?
@@ -842,7 +857,6 @@ print("¿Qué elementos visuales aumentan la credibilidad de la presentación?")
 
 *"La diferencia entre información y comunicación es la diferencia entre datos aislados y historias que transforman decisiones."*
 
-
 ## 7. Resumen de lo que Aprendimos
 
 ### 7.1 ¿Qué Aprendimos Hoy?
@@ -861,7 +875,7 @@ print("¿Qué elementos visuales aumentan la credibilidad de la presentación?")
 **sns.histplot()** - Para ver distribuciones  
 **sns.boxplot()** - Para comparar grupos  
 
-### 7.3 ¡Lo Más Importante!
+### 7.3 ¡Lo Más Importante
 
 **Seaborn hace todo más fácil** - Un comando, un gráfico bonito  
 **Los gráficos cuentan historias** - Mejor que solo números  
@@ -938,7 +952,8 @@ print("\n¡Ahora ya sabes hacer gráficos profesionales con seaborn!")
 
 **Tu experiencia**: ¿Qué fue más revelador: crear los gráficos o interpretar lo que revelan?
 
-#### Insights sobre herramientas y técnicas:
+#### Insights sobre herramientas y técnicas
+
 - **Seaborn**: ¿Tu acelerador de productividad visual?
 - **Múltiples perspectivas**: ¿El valor de examinar datos desde diferentes ángulos gráficos?
 - **Estética profesional**: ¿Cómo la presentación visual afecta la credibilidad de tus análisis?

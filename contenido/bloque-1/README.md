@@ -91,6 +91,7 @@ Al finalizar este bloque, los estudiantes serán capaces de:
 ## Herramientas Necesarias
 
 ### Software Principal
+
 - **Python 3.9+** (recomendado 3.10 o superior)
 - **Jupyter Notebook** o **JupyterLab** (entorno interactivo principal)
 - **Anaconda** (distribución recomendada para principiantes - incluye todo lo necesario)
@@ -98,6 +99,7 @@ Al finalizar este bloque, los estudiantes serán capaces de:
 - **Git** (control de versiones - se enseña gradualmente durante el curso)
 
 ### Librerías Esenciales
+
 ```python
 # Instalación completa (viene incluida con Anaconda)
 pip install pandas numpy matplotlib jupyter seaborn
@@ -110,6 +112,7 @@ print("¡Entorno listo para análisis deportivo!")
 ```
 
 ### Configuración del Entorno
+
 - **Anaconda Individual Edition** (opción más fácil para estudiantes de preparatoria)
 - **Miniconda** (alternativa más ligera para usuarios con más experiencia)
 - **Google Colab** (alternativa en la nube para equipos con limitaciones técnicas)
@@ -118,11 +121,13 @@ print("¡Entorno listo para análisis deportivo!")
 ## Evaluación con Metodología Socrática
 
 ### Distribución de Calificaciones
+
 - **Participación reflexiva:** 30% (preguntas socráticas, discusiones en clase, reflexiones escritas)
 - **Ejercicios semanales:** 30% (aplicación práctica de conceptos con justificación del razonamiento)
 - **Proyecto final integrador:** 40% (demostración de pensamiento computacional aplicado)
 
 ### Criterios de Evaluación Socrática
+
 - **Comprensión conceptual:** ¿Puede explicar POR QUÉ funciona, no solo CÓMO funciona?
 - **Conexión de ideas:** ¿Relaciona conceptos de programación con situaciones deportivas?
 - **Razonamiento crítico:** ¿Justifica sus decisiones de programación de manera lógica?
@@ -133,13 +138,15 @@ print("¡Entorno listo para análisis deportivo!")
 **Pregunta motivadora del proyecto:** ¿Cómo analizarías el rendimiento de tu equipo favorito usando las herramientas que has aprendido?
 
 **Componentes del proyecto:**
+
 1. **Exploración guiada por preguntas:** Formulación de 3 preguntas deportivas específicas sobre un dataset
 2. **Análisis reflexivo:** Aplicación de técnicas de Python con justificación de cada decisión
 3. **Interpretación narrativa:** Explicación de resultados en lenguaje accesible para entrenadores
 4. **Visualización comunicativa:** Creación de gráficos que cuenten una historia deportiva clara
 5. **Reflexión metacognitiva:** Documentación del proceso de aprendizaje y desafíos superados
 
-**Datasets disponibles:** 
+**Datasets disponibles:**
+
 - Estadísticas básicas de Liga MX
 - Resultados de Champions League (temporadas recientes)
 - Datos de rendimiento de jugadores de La Liga
@@ -167,30 +174,35 @@ bloque-1/
 ### Al finalizar el Bloque 1, el estudiante debe poder
 
 **Pensamiento Computacional:**
+
 - Descomponer problemas deportivos complejos en pasos lógicos y manejables
 - Reconocer patrones en datos deportivos y traducirlos a soluciones de código
 - Explicar el razonamiento detrás de cada decisión de programación usando analogías deportivas
 - Conectar conceptos de programación con situaciones reales del fútbol profesional
 
 **Programación Aplicada:**
+
 - Escribir código Python claro, comentado y funcional para resolver problemas deportivos específicos
 - Utilizar variables, listas y estructuras de control con nombres descriptivos en español
 - Implementar bucles y condicionales para automatizar análisis repetitivos
 - Crear funciones reutilizables que resuelvan problemas de análisis deportivo
 
 **Análisis de Datos Deportivos:**
+
 - Cargar y explorar datasets deportivos usando pandas con confianza
 - Realizar cálculos estadísticos básicos (promedios, totales, porcentajes) relevantes para deportes
 - Filtrar y agrupar datos para responder preguntas específicas sobre equipos y jugadores
 - Identificar y manejar problemas básicos en datasets deportivos
 
 **Comunicación de Resultados:**
+
 - Crear visualizaciones deportivas claras y profesionales usando matplotlib
 - Interpretar gráficos y extraer insights relevantes para decisiones deportivas
 - Explicar hallazgos técnicos en lenguaje accesible para entrenadores y aficionados
 - Documentar análisis de manera que otros estudiantes puedan replicarlo
 
 **Herramientas Profesionales:**
+
 - Usar Jupyter Notebook de manera eficiente para análisis interactivo y presentación
 - Instalar y gestionar librerías de Python según las necesidades del proyecto
 - Organizar código y datos de manera profesional siguiendo mejores prácticas
@@ -199,23 +211,27 @@ bloque-1/
 ## Recursos Adicionales
 
 ### Documentación Oficial
+
 - [Tutorial oficial de Python](https://docs.python.org/3/tutorial/) - Español disponible
 - [Documentación de Pandas](https://pandas.pydata.org/docs/) - Con ejemplos prácticos
 - [Tutoriales de Matplotlib](https://matplotlib.org/stable/tutorials/index.html) - Visualización de datos
 
 ### Cursos Online Complementarios (En Español)
+
 - **Platzi:** Python básico y ciencia de datos
 - **Coursera:** Python para principiantes (Universidad de Michigan)
 - **edX:** Introducción a Python (Instituto Tecnológico de Massachusetts)
 - **DataCamp:** Python básico con enfoque en datos
 
 ### Libros Recomendados para Preparatoria
+
 - **"Python Para Dummies"** - Stef Maruch y Aahz Maruch (nivel muy básico)
 - **"Aprende Python en un fin de semana"** - Alfredo Moreno (español, práctico)
 - **"Python Crash Course"** - Eric Matthes (inglés, muy didáctico)
 - **"Automate the Boring Stuff with Python"** - Al Sweigart (gratuito online)
 
 ### Recursos Deportivos Específicos
+
 - **Kaggle Learn:** Cursos gratuitos de Python y pandas
 - **FiveThirtyEight:** Análisis deportivo con código abierto
 - **Sports Reference:** APIs y datasets deportivos
@@ -225,20 +241,23 @@ bloque-1/
 
 Una vez completado exitosamente el Bloque 1, los estudiantes estarán preparados para:
 
-### Habilidades Adquiridas que Permiten Avanzar:
+### Habilidades Adquiridas que Permiten Avanzar
+
 - **Confianza en programación:** Capacidad de escribir código Python funcional sin intimidación
 - **Pensamiento sistemático:** Habilidad para descomponer problemas complejos en pasos manejables
 - **Dominio de herramientas básicas:** Uso fluido de Jupyter, pandas y matplotlib
 - **Vocabulario técnico:** Comprensión de terminología básica de programación y análisis de datos
 
 ### Preparación para Bloque 2: "Análisis Exploratorio de Datos Deportivos"
+
 - **Datasets más complejos:** Trabajar con datos deportivos reales y completos (múltiples temporadas, ligas)
 - **Estadística descriptiva avanzada:** Medidas de tendencia central, dispersión y correlación aplicadas al deporte
 - **Visualizaciones sofisticadas:** Gráficos multi-variable con seaborn, mapas de calor, boxplots
 - **Análisis comparativo:** Estudios entre equipos, temporadas y competiciones diferentes
 - **Introducción a machine learning:** Primeros pasos en predicción deportiva
 
-### Proyectos que Podrán Abordar:
+### Proyectos que Podrán Abordar
+
 - **Análisis de rendimiento por temporada:** Comparar evolución de equipos a lo largo del tiempo
 - **Scouting automatizado:** Identificar patrones en jugadores prometedores
 - **Análisis táctico básico:** Estudiar formaciones y estrategias mediante datos
@@ -260,7 +279,7 @@ Una vez completado exitosamente el Bloque 1, los estudiantes estarán preparados
 
 ---
 
-**¡Bienvenido al mundo de la programación aplicada al fútbol!** 
+**¡Bienvenido al mundo de la programación aplicada al fútbol!**
 
 *Este bloque te dará las herramientas fundamentales para convertir tu pasión por el fútbol en análisis de datos profesional. Cada línea de código que escribas te acercará más a entender el deporte desde una perspectiva completamente nueva.*
 

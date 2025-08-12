@@ -1,361 +1,366 @@
-# Banco de Preguntas Canvas - Bloque 1 (10 preguntas por semana, opción múltiple)
+# Banco de Preguntas Bloque 1
 
-## Semana 1: Configuración y Fundamentos de Python
+SEMANA: 1
+TITULO: Configuracion y Fundamentos de Python
 
-**1.** ¿Cuál es el resultado de ejecutar `type(42)` en Python?
-A) `<class 'float'>`
-B) `<class 'int'>`
-C) `<class 'str'>`
-D) `<class 'number'>`
-**Respuesta: B**
+Q1: Cual es el resultado de ejecutar type(42) en Python?
+A) <class 'float'>
+B) <class 'int'>
+C) <class 'str'>
+D) <class 'number'>
+RESPUESTA: B
 
-**2.** Si ejecuto `nombre = "Barcelona"` y luego `print(len(nombre))`, ¿qué se imprime?
+Q2: Si ejecuto nombre = "Barcelona" y luego print(len(nombre)), que se imprime?
 A) 8
 B) 9
 C) 10
 D) Error
-**Respuesta: B**
+RESPUESTA: B
 
-**3.** ¿Cuál de estos nombres de variable cumple las reglas de Python y es legible?
-A) `2equipo`
-B) `equipo-favorito`
-C) `equipo_favorito`
-D) `equipo.favorito`
-**Respuesta: C**
+Q3: Cual de estos nombres de variable cumple las reglas de Python y es legible?
+A) 2equipo
+B) equipo-favorito
+C) equipo_favorito
+D) equipo.favorito
+RESPUESTA: C
 
-**4.** Si `goles = 25` y `partidos = 10`, ¿cuál es el resultado de `goles/partidos`?
+Q4: Si goles = 25 y partidos = 10, cual es el resultado de goles/partidos?
 A) 2.0
 B) 2.5
 C) 3.0
 D) 2
-**Respuesta: B**
+RESPUESTA: B
 
-**5.** ¿Qué tipo de dato es el resultado de `"Messi" + " " + "Barcelona"`?
+Q5: Que tipo de dato es el resultado de "Messi" + " " + "Barcelona"?
 A) int
 B) float
 C) str
 D) list
-**Respuesta: C**
+RESPUESTA: C
 
-**6.** ¿Cuál es la diferencia principal entre `//` y `/` en Python?
+Q6: Cual es la diferencia principal entre // y / en Python?
 A) No hay diferencia
-B) `//` es división entera, `/` es división decimal
-C) `//` es más rápido que `/`
-D) `//` solo funciona con números positivos
-**Respuesta: B**
+B) // es division entera, / es division decimal
+C) // es mas rapido que /
+D) // solo funciona con numeros positivos
+RESPUESTA: B
 
-**7.** Si `altura = 1.75`, ¿qué tipo de dato es?
+Q7: Si altura = 1.75, que tipo de dato es?
 A) int
 B) str
 C) float
 D) bool
-**Respuesta: C**
+RESPUESTA: C
 
-**8.** ¿Qué valor tiene la variable `es_activo` después de ejecutar `es_activo = True`?
+Q8: Que valor tiene la variable es_activo despues de ejecutar es_activo = True?
 A) "True"
 B) 1
 C) True
 D) verdadero
-**Respuesta: C**
+RESPUESTA: C
 
-**9.** ¿Cuál es el resultado de `5 * 3 + 2`?
+Q9: Cual es el resultado de 5 * 3 + 2?
 A) 25
 B) 17
 C) 21
 D) 15
-**Respuesta: B**
+RESPUESTA: B
 
-**10.** ¿Qué símbolo se usa para comentarios en Python?
+Q10: Que simbolo se usa para comentarios en Python?
 A) //
 B) /* */
 C) #
 D) --
-**Respuesta: C**
+RESPUESTA: C
 
-## Semana 2: Estructuras de Control
+SEMANA: 2
+TITULO: Estructuras de Control
 
-**11.** ¿Cuál es la sintaxis correcta para una estructura condicional en Python?
-A) `if (condición) then:`
-B) `if condición:`
-C) `if [condición]:`
-D) `if condición then:`
-**Respuesta: B**
+Q11: Cual es la sintaxis correcta para una estructura condicional en Python?
+A) if (condicion) then:
+B) if condicion:
+C) if [condicion]:
+D) if condicion then:
+RESPUESTA: B
 
-**12.** En el código `if goles > 20: print("Goleador")`, ¿cuándo se ejecuta el print?
+Q12: En el codigo if goles > 20: print("Goleador"), cuando se ejecuta el print?
 A) Siempre
 B) Cuando goles es exactamente 20
 C) Cuando goles es mayor que 20
 D) Cuando goles es menor que 20
-**Respuesta: C**
+RESPUESTA: C
 
-**13.** ¿Cuál es la diferencia entre `for` y `while`?
+Q13: Cual es la diferencia entre for y while?
 A) No hay diferencia
-B) `for` para repeticiones conocidas, `while` para condiciones
-C) `while` es más rápido que `for`
-D) `for` solo funciona con números
-**Respuesta: B**
+B) for para repeticiones conocidas, while para condiciones
+C) while es mas rapido que for
+D) for solo funciona con numeros
+RESPUESTA: B
 
-**14.** ¿Qué hace `range(5)` en Python?
-A) Genera números del 1 al 5
-B) Genera números del 0 al 5
-C) Genera números del 0 al 4
-D) Genera el número 5
-**Respuesta: C**
+Q14: Que hace range(5) en Python?
+A) Genera numeros del 1 al 5
+B) Genera numeros del 0 al 5
+C) Genera numeros del 0 al 4
+D) Genera el numero 5
+RESPUESTA: C
 
-**15.** En el bucle `for jugador in ['Messi', 'Ronaldo', 'Neymar']:`, ¿cuántas iteraciones habrá?
+Q15: En el bucle for jugador in ['Messi', 'Ronaldo', 'Neymar']:, cuantas iteraciones habra?
 A) 2
 B) 3
 C) 4
 D) Infinitas
-**Respuesta: B**
+RESPUESTA: B
 
-**16.** ¿Qué operador lógico devuelve True solo si ambas condiciones son True?
+Q16: Que operador logico devuelve True solo si ambas condiciones son True?
 A) or
 B) not
 C) and
 D) xor
-**Respuesta: C**
+RESPUESTA: C
 
-**17.** Si `edad = 25`, ¿qué evalúa `edad >= 18 and edad < 30`?
+Q17: Si edad = 25, que evalua edad >= 18 and edad < 30?
 A) True
 B) False
 C) None
 D) Error
-**Respuesta: A**
+RESPUESTA: A
 
-**18.** ¿Cuál es la estructura correcta de un bucle while?
-A) `while (condición) do:`
-B) `while condición:`
-C) `while [condición]:`
-D) `repeat while condición:`
-**Respuesta: B**
+Q18: Cual es la estructura correcta de un bucle while?
+A) while (condicion) do:
+B) while condicion:
+C) while [condicion]:
+D) repeat while condicion:
+RESPUESTA: B
 
-**19.** ¿Qué hace `enumerate()` cuando se usa con una lista?
+Q19: Que hace enumerate() cuando se usa con una lista?
 A) Ordena la lista
 B) Cuenta los elementos
-C) Devuelve índice y valor de cada elemento
+C) Devuelve indice y valor de cada elemento
 D) Elimina duplicados
-**Respuesta: C**
+RESPUESTA: C
 
-**20.** En Python, ¿qué significa la indentación (espacios al inicio)?
+Q20: En Python, que significa la indentacion (espacios al inicio)?
 A) Es solo estilo, no afecta la funcionalidad
-B) Define qué código pertenece a cada bloque
-C) Hace el código más lento
+B) Define que codigo pertenece a cada bloque
+C) Hace el codigo mas lento
 D) Es obligatoria solo en funciones
-**Respuesta: B**
+RESPUESTA: B
 
-## Semana 3: Funciones y Módulos
+SEMANA: 3
+TITULO: Funciones y Modulos
 
-**21.** ¿Cómo se define una función en Python que calcula el promedio de goles?
-A) `function promedio_goles():`
-B) `def promedio_goles():`
-C) `promedio_goles() def:`
-D) `create promedio_goles():`
-**Respuesta: B**
+Q21: Como se define una funcion en Python que calcula el promedio de goles?
+A) function promedio_goles():
+B) def promedio_goles():
+C) promedio_goles() def:
+D) create promedio_goles():
+RESPUESTA: B
 
-**22.** ¿Qué hace la palabra clave `return` en una función?
+Q22: Que hace la palabra clave return en una funcion?
 A) Imprime un valor
-B) Devuelve un valor al código que llamó la función
+B) Devuelve un valor al codigo que llamo la funcion
 C) Termina el programa
 D) Define una variable
-**Respuesta: B**
+RESPUESTA: B
 
-**23.** En la función `def calcular_puntos(victorias, empates):`, ¿cuántos parámetros recibe?
+Q23: En la funcion def calcular_puntos(victorias, empates):, cuantos parametros recibe?
 A) 1
 B) 2
 C) 3
 D) 0
-**Respuesta: B**
+RESPUESTA: B
 
-**24.** ¿Cuál es la diferencia entre parámetros y argumentos en funciones?
+Q24: Cual es la diferencia entre parametros y argumentos en funciones?
 A) Son lo mismo
-B) Parámetros son en la definición, argumentos al llamar la función
-C) Argumentos son en la definición, parámetros al llamar la función
-D) Los parámetros son opcionales
-**Respuesta: B**
+B) Parametros son en la definicion, argumentos al llamar la funcion
+C) Argumentos son en la definicion, parametros al llamar la funcion
+D) Los parametros son opcionales
+RESPUESTA: B
 
-**25.** ¿Cómo se importa un módulo llamado `math` en Python?
-A) `include math`
-B) `import math`
-C) `using math`
-D) `require math`
-**Respuesta: B**
+Q25: Como se importa un modulo llamado math en Python?
+A) include math
+B) import math
+C) using math
+D) require math
+RESPUESTA: B
 
-**26.** ¿Qué ventaja principal tienen las funciones en programación?
-A) Hacen el código más largo
-B) Permiten reutilizar código y organizarlo mejor
-C) Solo sirven para cálculos matemáticos
-D) Son más lentas que escribir código directo
-**Respuesta: B**
+Q26: Que ventaja principal tienen las funciones en programacion?
+A) Hacen el codigo mas largo
+B) Permiten reutilizar codigo y organizarlo mejor
+C) Solo sirven para calculos matematicos
+D) Son mas lentas que escribir codigo directo
+RESPUESTA: B
 
-**27.** Si una función no tiene `return`, ¿qué devuelve?
+Q27: Si una funcion no tiene return, que devuelve?
 A) 0
 B) Error
 C) None
-D) El último valor calculado
-**Respuesta: C**
+D) El ultimo valor calculado
+RESPUESTA: C
 
-**28.** ¿Cómo se llama a una función llamada `calcular_edad()`?
-A) `call calcular_edad()`
-B) `execute calcular_edad()`
-C) `calcular_edad()`
-D) `run calcular_edad()`
-**Respuesta: C**
+Q28: Como se llama a una funcion llamada calcular_edad()?
+A) call calcular_edad()
+B) execute calcular_edad()
+C) calcular_edad()
+D) run calcular_edad()
+RESPUESTA: C
 
-**29.** ¿Qué son los parámetros por defecto en una función?
-A) Parámetros que se calculan automáticamente
+Q29: Que son los parametros por defecto en una funcion?
+A) Parametros que se calculan automaticamente
 B) Valores que se usan si no se proporciona un argumento
-C) Parámetros que no se pueden cambiar
-D) El primer parámetro de la función
-**Respuesta: B**
+C) Parametros que no se pueden cambiar
+D) El primer parametro de la funcion
+RESPUESTA: B
 
-**30.** ¿Para qué sirve la documentación (docstring) en una función?
-A) Para hacer la función más lenta
-B) Para explicar qué hace la función y cómo usarla
-C) Para crear variables automáticamente
-D) Solo para funciones matemáticas
-**Respuesta: B**
+Q30: Para que sirve la documentacion (docstring) en una funcion?
+A) Para hacer la funcion mas lenta
+B) Para explicar que hace la funcion y como usarla
+C) Para crear variables automaticamente
+D) Solo para funciones matematicas
+RESPUESTA: B
 
-## Semana 4: Pandas y NumPy Introducción
+SEMANA: 4
+TITULO: Pandas y NumPy Introduccion
 
-**31.** ¿Qué instrucción necesitas para usar pandas en tu código?
-A) `import pandas`
-B) `import pandas as pd`
-C) `from pandas import pd`
-D) `using pandas`
-**Respuesta: B**
+Q31: Que instruccion necesitas para usar pandas en tu codigo?
+A) import pandas
+B) import pandas as pd
+C) from pandas import pd
+D) using pandas
+RESPUESTA: B
 
-**32.** ¿Cómo se llama la estructura principal de datos en pandas?
+Q32: Como se llama la estructura principal de datos en pandas?
 A) Array
 B) List
 C) DataFrame
 D) Table
-**Respuesta: C**
+RESPUESTA: C
 
-**33.** ¿Qué función usas para leer un archivo CSV en pandas?
-A) `pd.open_csv()`
-B) `pd.load_csv()`
-C) `pd.read_csv()`
-D) `pd.import_csv()`
-**Respuesta: C**
+Q33: Que funcion usas para leer un archivo CSV en pandas?
+A) pd.open_csv()
+B) pd.load_csv()
+C) pd.read_csv()
+D) pd.import_csv()
+RESPUESTA: C
 
-**34.** Si tienes un DataFrame `df`, ¿cómo ves las primeras 5 filas?
-A) `df.first(5)`
-B) `df.top(5)`
-C) `df.head(5)`
-D) `df.show(5)`
-**Respuesta: C**
+Q34: Si tienes un DataFrame df, como ves las primeras 5 filas?
+A) df.first(5)
+B) df.top(5)
+C) df.head(5)
+D) df.show(5)
+RESPUESTA: C
 
-**35.** ¿Qué comando usas para ver información sobre tipos de datos y valores nulos en un DataFrame?
-A) `df.info()`
-B) `df.types()`
-C) `df.describe()`
-D) `df.summary()`
-**Respuesta: A**
+Q35: Que comando usas para ver informacion sobre tipos de datos y valores nulos en un DataFrame?
+A) df.info()
+B) df.types()
+C) df.describe()
+D) df.summary()
+RESPUESTA: A
 
-**36.** ¿Cuáles son las formas correctas de acceder a una columna llamada 'goles' en un DataFrame?
-A) Solo `df.goles`
-B) Solo `df['goles']`
-C) Ambas `df.goles` y `df['goles']`
-D) `df.get('goles')`
-**Respuesta: C**
+Q36: Cuales son las formas correctas de acceder a una columna llamada 'goles' en un DataFrame?
+A) Solo df.goles
+B) Solo df['goles']
+C) Ambas df.goles y df['goles']
+D) df.get('goles')
+RESPUESTA: C
 
-**37.** Si un DataFrame tiene 50 filas y 4 columnas, ¿qué devuelve `len(df)`?
+Q37: Si un DataFrame tiene 50 filas y 4 columnas, que devuelve len(df)?
 A) 4
 B) 50
 C) 54
 D) 200
-**Respuesta: B**
+RESPUESTA: B
 
-**38.** ¿Qué hace `df.describe()` en un DataFrame?
+Q38: Que hace df.describe() en un DataFrame?
 A) Muestra tipos de datos
-B) Muestra estadísticas descriptivas de columnas numéricas
+B) Muestra estadisticas descriptivas de columnas numericas
 C) Muestra las primeras filas
-D) Cuenta valores únicos
-**Respuesta: B**
+D) Cuenta valores unicos
+RESPUESTA: B
 
-**39.** ¿Cómo filtras un DataFrame `df` para mostrar solo jugadores con más de 10 goles?
-A) `df[df['goles'] > 10]`
-B) `df.filter(goles > 10)`
-C) `df.where(goles > 10)`
-D) `df.select(goles > 10)`
-**Respuesta: A**
+Q39: Como filtras un DataFrame df para mostrar solo jugadores con mas de 10 goles?
+A) df[df['goles'] > 10]
+B) df.filter(goles > 10)
+C) df.where(goles > 10)
+D) df.select(goles > 10)
+RESPUESTA: A
 
-**40.** ¿Cuál es el comando correcto para importar numpy?
-A) `import numpy`
-B) `import numpy as np`
-C) `from numpy import np`
-D) `using numpy`
-**Respuesta: B**
+Q40: Cual es el comando correcto para importar numpy?
+A) import numpy
+B) import numpy as np
+C) from numpy import np
+D) using numpy
+RESPUESTA: B
 
-## Semana 5: Visualización Básica
+SEMANA: 5
+TITULO: Visualizacion Basica
 
-**41.** ¿Cuál es la forma común de importar matplotlib para crear gráficos?
-A) `import matplotlib as plt`
-B) `import matplotlib.pyplot as plt`
-C) `import pyplot as plt`
-D) `from matplotlib import plt`
-**Respuesta: B**
+Q41: Cual es la forma comun de importar matplotlib para crear graficos?
+A) import matplotlib as plt
+B) import matplotlib.pyplot as plt
+C) import pyplot as plt
+D) from matplotlib import plt
+RESPUESTA: B
 
-**42.** ¿Qué función usas para mostrar un gráfico en matplotlib?
-A) `plt.display()`
-B) `plt.show()`
-C) `plt.plot()`
-D) `plt.draw()`
-**Respuesta: B**
+Q42: Que funcion usas para mostrar un grafico en matplotlib?
+A) plt.display()
+B) plt.show()
+C) plt.plot()
+D) plt.draw()
+RESPUESTA: B
 
-**43.** ¿Cómo agregas un título a un gráfico en matplotlib?
-A) `plt.name('título')`
-B) `plt.title('título')`
-C) `plt.header('título')`
-D) `plt.label('título')`
-**Respuesta: B**
+Q43: Como agregas un titulo a un grafico en matplotlib?
+A) plt.name('titulo')
+B) plt.title('titulo')
+C) plt.header('titulo')
+D) plt.label('titulo')
+RESPUESTA: B
 
-**44.** ¿Qué tipo de gráfico es mejor para mostrar la evolución de goles por mes?
-A) Gráfico de barras
-B) Gráfico de líneas
-C) Gráfico circular
+Q44: Que tipo de grafico es mejor para mostrar la evolucion de goles por mes?
+A) Grafico de barras
+B) Grafico de lineas
+C) Grafico circular
 D) Histograma
-**Respuesta: B**
+RESPUESTA: B
 
-**45.** ¿Qué tipo de gráfico usarías para comparar el total de goles de diferentes equipos?
-A) Gráfico de líneas
-B) Gráfico de barras
-C) Gráfico de dispersión
+Q45: Que tipo de grafico usarias para comparar el total de goles de diferentes equipos?
+A) Grafico de lineas
+B) Grafico de barras
+C) Grafico de dispersion
 D) Histograma
-**Respuesta: B**
+RESPUESTA: B
 
-**46.** ¿Qué función usas para crear un gráfico de barras en matplotlib?
-A) `plt.line()`
-B) `plt.bar()`
-C) `plt.scatter()`
-D) `plt.hist()`
-**Respuesta: B**
+Q46: Que funcion usas para crear un grafico de barras en matplotlib?
+A) plt.line()
+B) plt.bar()
+C) plt.scatter()
+D) plt.hist()
+RESPUESTA: B
 
-**47.** ¿Cómo etiquetas el eje X en un gráfico de matplotlib?
-A) `plt.axisx('etiqueta')`
-B) `plt.xlabel('etiqueta')`
-C) `plt.xtitle('etiqueta')`
-D) `plt.labelx('etiqueta')`
-**Respuesta: B**
+Q47: Como etiquetas el eje X en un grafico de matplotlib?
+A) plt.axisx('etiqueta')
+B) plt.xlabel('etiqueta')
+C) plt.xtitle('etiqueta')
+D) plt.labelx('etiqueta')
+RESPUESTA: B
 
-**48.** ¿Qué tipo de gráfico usarías para mostrar la relación entre goles anotados y puntos obtenidos?
-A) Gráfico de barras
-B) Gráfico de líneas
-C) Gráfico de dispersión
-D) Gráfico circular
-**Respuesta: C**
+Q48: Que tipo de grafico usarias para mostrar la relacion entre goles anotados y puntos obtenidos?
+A) Grafico de barras
+B) Grafico de lineas
+C) Grafico de dispersion
+D) Grafico circular
+RESPUESTA: C
 
-**49.** ¿Cómo cambias el tamaño de una figura antes de crear el gráfico?
-A) `plt.size(10,6)`
-B) `plt.figure(figsize=(10,6))`
-C) `plt.dimensions(10,6)`
-D) `plt.resize(10,6)`
-**Respuesta: B**
+Q49: Como cambias el tamano de una figura antes de crear el grafico?
+A) plt.size(10,6)
+B) plt.figure(figsize=(10,6))
+C) plt.dimensions(10,6)
+D) plt.resize(10,6)
+RESPUESTA: B
 
-**50.** ¿Para qué sirve `plt.legend()` en un gráfico?
-A) Para cambiar el título
+Q50: Para que sirve plt.legend() en un grafico?
+A) Para cambiar el titulo
 B) Para mostrar las etiquetas de las series de datos
 C) Para cambiar los colores
-D) Para guardar el gráfico
-**Respuesta: B**
+D) Para guardar el grafico
+RESPUESTA: B

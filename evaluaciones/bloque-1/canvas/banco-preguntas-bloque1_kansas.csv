@@ -1,0 +1,50 @@
+MC,,1.0,Cual es el resultado de ejecutar type(42) en Python?,2,<class 'float'>,<class 'int'>,<class 'str'>,<class 'number'>
+MC,,1.0,"Si ejecuto nombre = ""Barcelona"" y luego print(len(nombre)), que se imprime?",2,8,9,10,Error
+MC,,1.0,Cual de estos nombres de variable cumple las reglas de Python y es legible?,3,2equipo,equipo-favorito,equipo_favorito,equipo.favorito
+MC,,1.0,"Si goles = 25 y partidos = 10, cual es el resultado de goles/partidos?",2,2.0,2.5,3.0,2
+MC,,1.0,"Que tipo de dato es el resultado de ""Messi"" + "" "" + ""Barcelona""?",3,int,float,str,list
+MC,,1.0,Cual es la diferencia principal entre // y / en Python?,2,No hay diferencia,"// es division entera, / es division decimal",// es mas rapido que /,// solo funciona con numeros positivos
+MC,,1.0,"Si altura = 1.75, que tipo de dato es?",3,int,str,float,bool
+MC,,1.0,Que valor tiene la variable es_activo despues de ejecutar es_activo = True?,3,"""True""",1,True,verdadero
+MC,,1.0,Cual es el resultado de 5 * 3 + 2?,2,25,17,21,15
+MC,,1.0,Que simbolo se usa para comentarios en Python?,3,//,/* */,#,--
+MC,,1.0,Cual es la sintaxis correcta para una estructura condicional en Python?,2,if (condicion) then:,if condicion:,if [condicion]:,if condicion then:
+MC,,1.0,"En el codigo if goles > 20: print(""Goleador""), cuando se ejecuta el print?",3,Siempre,Cuando goles es exactamente 20,Cuando goles es mayor que 20,Cuando goles es menor que 20
+MC,,1.0,Cual es la diferencia entre for y while?,2,No hay diferencia,"for para repeticiones conocidas, while para condiciones",while es mas rapido que for,for solo funciona con numeros
+MC,,1.0,Que hace range(5) en Python?,3,Genera numeros del 1 al 5,Genera numeros del 0 al 5,Genera numeros del 0 al 4,Genera el numero 5
+MC,,1.0,"En el bucle for jugador in ['Messi', 'Ronaldo', 'Neymar']:, cuantas iteraciones habra?",2,2,3,4,Infinitas
+MC,,1.0,Que operador logico devuelve True solo si ambas condiciones son True?,3,or,not,and,xor
+MC,,1.0,"Si edad = 25, que evalua edad >= 18 and edad < 30?",1,True,False,None,Error
+MC,,1.0,Cual es la estructura correcta de un bucle while?,2,while (condicion) do:,while condicion:,while [condicion]:,repeat while condicion:
+MC,,1.0,Que hace enumerate() cuando se usa con una lista?,3,Ordena la lista,Cuenta los elementos,Devuelve indice y valor de cada elemento,Elimina duplicados
+MC,,1.0,"En Python, que significa la indentacion (espacios al inicio)?",2,"Es solo estilo, no afecta la funcionalidad",Define que codigo pertenece a cada bloque,Hace el codigo mas lento,Es obligatoria solo en funciones
+MC,,1.0,Como se define una funcion en Python que calcula el promedio de goles?,2,function promedio_goles():,def promedio_goles():,promedio_goles() def:,create promedio_goles():
+MC,,1.0,Que hace la palabra clave return en una funcion?,2,Imprime un valor,Devuelve un valor al codigo que llamo la funcion,Termina el programa,Define una variable
+MC,,1.0,"En la funcion def calcular_puntos(victorias, empates):, cuantos parametros recibe?",2,1,2,3,0
+MC,,1.0,Cual es la diferencia entre parametros y argumentos en funciones?,2,Son lo mismo,"Parametros son en la definicion, argumentos al llamar la funcion","Argumentos son en la definicion, parametros al llamar la funcion",Los parametros son opcionales
+MC,,1.0,Como se importa un modulo llamado math en Python?,2,include math,import math,using math,require math
+MC,,1.0,Que ventaja principal tienen las funciones en programacion?,2,Hacen el codigo mas largo,Permiten reutilizar codigo y organizarlo mejor,Solo sirven para calculos matematicos,Son mas lentas que escribir codigo directo
+MC,,1.0,"Si una funcion no tiene return, que devuelve?",3,0,Error,None,El ultimo valor calculado
+MC,,1.0,Como se llama a una funcion llamada calcular_edad()?,3,call calcular_edad(),execute calcular_edad(),calcular_edad(),run calcular_edad()
+MC,,1.0,Que son los parametros por defecto en una funcion?,2,Parametros que se calculan automaticamente,Valores que se usan si no se proporciona un argumento,Parametros que no se pueden cambiar,El primer parametro de la funcion
+MC,,1.0,Para que sirve la documentacion (docstring) en una funcion?,2,Para hacer la funcion mas lenta,Para explicar que hace la funcion y como usarla,Para crear variables automaticamente,Solo para funciones matematicas
+MC,,1.0,Que instruccion necesitas para usar pandas en tu codigo?,2,import pandas,import pandas as pd,from pandas import pd,using pandas
+MC,,1.0,Como se llama la estructura principal de datos en pandas?,3,Array,List,DataFrame,Table
+MC,,1.0,Que funcion usas para leer un archivo CSV en pandas?,3,pd.open_csv(),pd.load_csv(),pd.read_csv(),pd.import_csv()
+MC,,1.0,"Si tienes un DataFrame df, como ves las primeras 5 filas?",3,df.first(5),df.top(5),df.head(5),df.show(5)
+MC,,1.0,Que comando usas para ver informacion sobre tipos de datos y valores nulos en un DataFrame?,1,df.info(),df.types(),df.describe(),df.summary()
+MC,,1.0,Cuales son las formas correctas de acceder a una columna llamada 'goles' en un DataFrame?,3,Solo df.goles,Solo df['goles'],Ambas df.goles y df['goles'],df.get('goles')
+MC,,1.0,"Si un DataFrame tiene 50 filas y 4 columnas, que devuelve len(df)?",2,4,50,54,200
+MC,,1.0,Que hace df.describe() en un DataFrame?,2,Muestra tipos de datos,Muestra estadisticas descriptivas de columnas numericas,Muestra las primeras filas,Cuenta valores unicos
+MC,,1.0,Como filtras un DataFrame df para mostrar solo jugadores con mas de 10 goles?,1,df[df['goles'] > 10],df.filter(goles > 10),df.where(goles > 10),df.select(goles > 10)
+MC,,1.0,Cual es el comando correcto para importar numpy?,2,import numpy,import numpy as np,from numpy import np,using numpy
+MC,,1.0,Cual es la forma comun de importar matplotlib para crear graficos?,2,import matplotlib as plt,import matplotlib.pyplot as plt,import pyplot as plt,from matplotlib import plt
+MC,,1.0,Que funcion usas para mostrar un grafico en matplotlib?,2,plt.display(),plt.show(),plt.plot(),plt.draw()
+MC,,1.0,Como agregas un titulo a un grafico en matplotlib?,2,plt.name('titulo'),plt.title('titulo'),plt.header('titulo'),plt.label('titulo')
+MC,,1.0,Que tipo de grafico es mejor para mostrar la evolucion de goles por mes?,2,Grafico de barras,Grafico de lineas,Grafico circular,Histograma
+MC,,1.0,Que tipo de grafico usarias para comparar el total de goles de diferentes equipos?,2,Grafico de lineas,Grafico de barras,Grafico de dispersion,Histograma
+MC,,1.0,Que funcion usas para crear un grafico de barras en matplotlib?,2,plt.line(),plt.bar(),plt.scatter(),plt.hist()
+MC,,1.0,Como etiquetas el eje X en un grafico de matplotlib?,2,plt.axisx('etiqueta'),plt.xlabel('etiqueta'),plt.xtitle('etiqueta'),plt.labelx('etiqueta')
+MC,,1.0,Que tipo de grafico usarias para mostrar la relacion entre goles anotados y puntos obtenidos?,3,Grafico de barras,Grafico de lineas,Grafico de dispersion,Grafico circular
+MC,,1.0,Como cambias el tamano de una figura antes de crear el grafico?,2,"plt.size(10,6)","plt.figure(figsize=(10,6))","plt.dimensions(10,6)","plt.resize(10,6)"
+MC,,1.0,Para que sirve plt.legend() en un grafico?,2,Para cambiar el titulo,Para mostrar las etiquetas de las series de datos,Para cambiar los colores,Para guardar el grafico

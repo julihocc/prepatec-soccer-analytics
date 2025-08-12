@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Generador directo de CSV para Kansas State Converter desde MD
-Convierte formato MD simplificado directamente a CSV sin JSON intermedio
+Generador directo de CSV para Kansas State Converter desde archivo de texto
+Convierte formato de texto simple directamente a CSV sin JSON intermedio
 
 Uso:
-    python md_to_csv_direct.py banco-preguntas-bloque1.md
+    python txt_to_csv_direct.py banco-preguntas-bloque1.txt
 
 Genera:
     - Archivo CSV compatible con Kansas State Converter
@@ -17,7 +17,7 @@ import csv
 import os
 import sys
 
-class MDToCSVConverter:
+class TxtToCSVConverter:
     def __init__(self):
         self.questions = []
         
@@ -39,12 +39,12 @@ class MDToCSVConverter:
         answer_map = {'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5}
         return str(answer_map.get(answer_letter, 1))
     
-    def parse_md_file(self, md_file):
-        """Parse archivo MD y extrae preguntas directamente"""
-        if not os.path.exists(md_file):
-            raise FileNotFoundError(f"Archivo no encontrado: {md_file}")
+    def parse_txt_file(self, txt_file):
+        """Parse archivo de texto y extrae preguntas directamente"""
+        if not os.path.exists(txt_file):
+            raise FileNotFoundError(f"Archivo no encontrado: {txt_file}")
         
-        with open(md_file, 'r', encoding='utf-8') as f:
+        with open(txt_file, 'r', encoding='utf-8') as f:
             content = f.read()
         
         lines = content.split('\n')
@@ -54,6 +54,10 @@ class MDToCSVConverter:
             line = line.strip()
             
             if not line:
+                # Línea vacía puede indicar fin de pregunta
+                if current_question and current_question.get('correct_answer'):
+                    self._save_current_question(current_question)
+                    current_question = None
                 continue
             
             # Detectar pregunta (Q1:, Q2:, etc.)
@@ -141,18 +145,18 @@ class MDToCSVConverter:
         
         return row
     
-    def convert_to_csv(self, md_file, output_file=None):
-        """Convierte archivo MD directamente a CSV"""
+    def convert_to_csv(self, txt_file, output_file=None):
+        """Convierte archivo de texto directamente a CSV"""
         
-        # Parse del archivo MD
-        questions = self.parse_md_file(md_file)
+        # Parse del archivo de texto
+        questions = self.parse_txt_file(txt_file)
         
         if not questions:
-            raise ValueError("No se encontraron preguntas válidas en el archivo MD")
+            raise ValueError("No se encontraron preguntas válidas en el archivo de texto")
         
         # Generar nombre de salida
         if output_file is None:
-            base_name = os.path.splitext(os.path.basename(md_file))[0]
+            base_name = os.path.splitext(os.path.basename(txt_file))[0]
             output_file = f"{base_name}_kansas.csv"
         
         # Escribir CSV (sin encabezados)
@@ -185,21 +189,21 @@ class MDToCSVConverter:
 
 def main():
     if len(sys.argv) != 2:
-        print("Uso: python md_to_csv_direct.py <archivo_md>")
-        print("Ejemplo: python md_to_csv_direct.py banco-preguntas-bloque1.md")
+        print("Uso: python txt_to_csv_direct.py <archivo_txt>")
+        print("Ejemplo: python txt_to_csv_direct.py banco-preguntas-bloque1.txt")
         sys.exit(1)
     
-    md_file = sys.argv[1]
+    txt_file = sys.argv[1]
     
     try:
-        converter = MDToCSVConverter()
-        output_file, question_count = converter.convert_to_csv(md_file)
+        converter = TxtToCSVConverter()
+        output_file, question_count = converter.convert_to_csv(txt_file)
         
         # Validar preguntas procesadas
         issues = converter.validate_questions(converter.questions)
         
-        print(f"✅ Conversión MD → CSV completada")
-        print(f"✅ Archivo MD: {md_file}")
+        print(f"✅ Conversión TXT → CSV completada")
+        print(f"✅ Archivo TXT: {txt_file}")
         print(f"✅ CSV generado: {output_file}")
         print(f"✅ Preguntas procesadas: {question_count}")
         
@@ -213,11 +217,11 @@ def main():
             print("✅ Sin problemas detectados")
         
         print(f"\n📋 Instrucciones:")
-        print(f"1. Ve a: https://canvas.k-state.edu/info/tools/scantron/faq/build-a-scantron-quiz.html")
-        print(f"2. Usa el 'Kansas State Classic to Canvas (QTI 2.0) Converter'")
-        print(f"3. Sube el archivo: {output_file}")
-        print(f"4. Descarga el ZIP generado")
-        print(f"5. Importa el ZIP en Canvas como Paquete QTI")
+        print(f"1. Usa el conversor CSV a QTI: python csv_to_kansas_qti.py {output_file}")
+        print(f"2. O usa el Kansas State Converter en línea:")
+        print(f"3. Ve a: https://canvas.k-state.edu/info/tools/scantron/faq/build-a-scantron-quiz.html")
+        print(f"4. Sube el archivo: {output_file}")
+        print(f"5. Descarga el ZIP generado e importa en Canvas")
         
     except Exception as e:
         print(f"❌ Error: {e}")

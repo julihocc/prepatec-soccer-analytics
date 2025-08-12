@@ -25,5 +25,8 @@
     "python.analysis.supportAllPythonDocuments": true,
     "editor.defaultFormatter": "ms-python.black-formatter",
     "python.languageServer": "Pylance",
-    "terminal.integrated.shellIntegration.enabled": true
+    "terminal.integrated.shellIntegration.enabled": true,
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    }
 }

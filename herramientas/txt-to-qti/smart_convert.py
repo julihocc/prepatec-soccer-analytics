@@ -74,12 +74,12 @@ def needs_regeneration(txt_file, csv_file, qti_file):
 def show_file_status(txt_file, csv_file, qti_file):
     """Muestra el estado actual de los archivos"""
     files = {
-        "📝 Fuente (TXT)": txt_file,
-        "📊 CSV generado": csv_file,
-        "📦 QTI Canvas": qti_file
+        "Fuente (TXT)": txt_file,
+        "CSV generado": csv_file,
+        "QTI Canvas": qti_file
     }
     
-    print("📋 Estado actual de archivos:")
+    print("Estado actual de archivos:")
     print("-" * 70)
     
     for label, filepath in files.items():
@@ -87,10 +87,10 @@ def show_file_status(txt_file, csv_file, qti_file):
             mtime = get_file_timestamp(filepath)
             timestamp = format_timestamp(mtime)
             filename = Path(filepath).name
-            print(f"✅ {label:<20}: {filename} ({timestamp})")
+            print(f"OK {label:<20}: {filename} ({timestamp})")
         else:
             filename = Path(filepath).name
-            print(f"❌ {label:<20}: {filename} (no existe)")
+            print(f"-- {label:<20}: {filename} (no existe)")
     print()
 
 def convert_with_intelligence(txt_file, output_qti=None, force=False, status_only=False):
@@ -117,7 +117,7 @@ def convert_with_intelligence(txt_file, output_qti=None, force=False, status_onl
     if output_qti:
         qti_file = output_qti
     
-    print(f"🎯 Smart Converter - {txt_path.name}")
+    print(f"Smart Converter - {txt_path.name}")
     print("=" * 60)
     
     # Mostrar estado actual
@@ -127,19 +127,19 @@ def convert_with_intelligence(txt_file, output_qti=None, force=False, status_onl
     if status_only:
         needs_regen = needs_regeneration(txt_file, csv_file, qti_file)
         if needs_regen:
-            print("📝 Evaluación: Necesita regeneración")
+            print("Evaluación: Necesita regeneración")
         else:
-            print("✅ Evaluación: Archivos actualizados")
+            print("Evaluación: Archivos actualizados")
         return qti_file, 0, False
     
     # Verificar si necesita regeneración
     needs_regen = needs_regeneration(txt_file, csv_file, qti_file)
     
     if not needs_regen and not force:
-        print("✅ Los archivos QTI están actualizados.")
+        print("Los archivos QTI están actualizados.")
         print("   No es necesario regenerar.")
         print()
-        print("💡 Opciones:")
+        print("Opciones:")
         print(f"   python {Path(__file__).name} {txt_file} --force     # Forzar regeneración")
         print(f"   python {Path(__file__).name} --status {txt_file}    # Solo mostrar estado")
         
@@ -158,48 +158,48 @@ def convert_with_intelligence(txt_file, output_qti=None, force=False, status_onl
     
     # Proceder con la regeneración
     if force:
-        print("🔄 Forzando regeneración...")
+        print("Forzando regeneración...")
     else:
-        print("🔄 Los archivos TXT han cambiado. Iniciando regeneración automática...")
+        print("Los archivos TXT han cambiado. Iniciando regeneración automática...")
     
-    print("\n🔄 Regenerando archivos QTI...")
+    print("\nRegenerando archivos QTI...")
     print("=" * 50)
     
     try:
         # Paso 1: TXT → CSV
-        print("📝 Paso 1/2: Convirtiendo TXT → CSV...")
+        print("Paso 1/2: Convirtiendo TXT -> CSV...")
         converter = TxtToCSVConverter()
         result_csv, question_count = converter.convert_to_csv(txt_file, csv_file)
-        print(f"   ✅ {question_count} preguntas procesadas")
+        print(f"   OK {question_count} preguntas procesadas")
         
         # Mostrar advertencias si las hay
         issues = converter.validate_questions(converter.questions)
         if issues:
-            print(f"   ⚠️  {len(issues)} advertencias:")
+            print(f"   WARN {len(issues)} advertencias:")
             for issue in issues[:3]:
                 print(f"      - {issue}")
             if len(issues) > 3:
                 print(f"      ... y {len(issues) - 3} más")
         
         # Paso 2: CSV → QTI
-        print("🎯 Paso 2/2: Generando paquete QTI...")
+        print("Paso 2/2: Generando paquete QTI...")
         generator = KansasQTIGenerator()
         _, qti_count, xml_name = generator.convert_csv_to_kansas_qti(result_csv, qti_file)
-        print(f"   ✅ QTI generado: {xml_name}")
-        print(f"   ✅ {qti_count} preguntas en el paquete")
+        print(f"   OK QTI generado: {xml_name}")
+        print(f"   OK {qti_count} preguntas en el paquete")
         
         # Reporte final
         print("\n" + "=" * 50)
-        print("✅ CONVERSIÓN INTELIGENTE COMPLETADA")
+        print("CONVERSION INTELIGENTE COMPLETADA")
         print("=" * 50)
-        print(f"📄 Archivo fuente: {Path(txt_file).name}")
-        print(f"📊 Preguntas: {question_count}")
-        print(f"📝 CSV: {Path(result_csv).name}")
-        print(f"📦 QTI: {Path(qti_file).name}")
+        print(f"Archivo fuente: {Path(txt_file).name}")
+        print(f"Preguntas: {question_count}")
+        print(f"CSV: {Path(result_csv).name}")
+        print(f"QTI: {Path(qti_file).name}")
         print()
-        print("📋 Para importar en Canvas:")
+        print("Para importar en Canvas:")
         print("1. Ve a tu curso en Canvas")
-        print("2. Configuración → Importar contenido del curso")
+        print("2. Configuración -> Importar contenido del curso")
         print("3. Selecciona 'Paquete QTI'")
         print(f"4. Sube el archivo: {Path(qti_file).name}")
         print("5. Las preguntas aparecerán en tu banco de preguntas")
@@ -207,7 +207,7 @@ def convert_with_intelligence(txt_file, output_qti=None, force=False, status_onl
         return qti_file, question_count, True
         
     except Exception as e:
-        print(f"\n❌ Error durante la conversión: {e}")
+        print(f"\nERROR durante la conversión: {e}")
         import traceback
         traceback.print_exc()
         raise
@@ -215,14 +215,14 @@ def convert_with_intelligence(txt_file, output_qti=None, force=False, status_onl
 def show_help():
     """Muestra ayuda de uso"""
     print("""
-🧠 Smart TXT to QTI Converter - Convertidor Inteligente
+Smart TXT to QTI Converter - Convertidor Inteligente
 
 CARACTERÍSTICAS INTELIGENTES:
-• 🧠 Detecta automáticamente cambios en archivos
-• ⚡ Solo regenera cuando es necesario  
-• 📊 Muestra estado detallado con timestamps
-• 🔄 Opción de regeneración forzada
-• 📁 Funciona desde cualquier directorio
+- Detecta automáticamente cambios en archivos
+- Solo regenera cuando es necesario  
+- Muestra estado detallado con timestamps
+- Opción de regeneración forzada
+- Funciona desde cualquier directorio
 
 USO:
     python smart_convert.py archivo.txt                    # Conversión inteligente
@@ -245,11 +245,11 @@ EJEMPLOS:
     python smart_convert.py preguntas.txt mi_examen.zip
 
 VENTAJAS vs convert.py:
-✅ Solo regenera si hay cambios reales
-✅ Muestra timestamps de todos los archivos  
-✅ Feedback más claro sobre qué está pasando
-✅ Más rápido para workflows repetitivos
-✅ Mejor para integración en scripts automatizados
+- Solo regenera si hay cambios reales
+- Muestra timestamps de todos los archivos  
+- Feedback más claro sobre qué está pasando
+- Más rápido para workflows repetitivos
+- Mejor para integración en scripts automatizados
 """)
 
 def main():
@@ -310,12 +310,12 @@ def main():
         
         if not status_only:
             if regenerated:
-                print("\n🎉 ¡Archivos QTI actualizados correctamente!")
+                print("\nArchivos QTI actualizados correctamente")
             else:
-                print(f"\n📁 Archivo QTI disponible: {Path(qti_file).name}")
+                print(f"\nArchivo QTI disponible: {Path(qti_file).name}")
         
     except Exception as e:
-        print(f"\n❌ Error: {e}")
+        print(f"\nERROR: {e}")
         sys.exit(1)
 
 if __name__ == "__main__":

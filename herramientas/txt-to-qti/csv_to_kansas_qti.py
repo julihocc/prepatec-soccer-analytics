@@ -251,20 +251,20 @@ def main():
         generator = KansasQTIGenerator()
         output_file, question_count, xml_name = generator.convert_csv_to_kansas_qti(csv_file)
         
-        print(f"✅ QTI generado (estilo Kansas State): {output_file}")
-        print(f"✅ Archivo XML interno: {xml_name}")
-        print(f"✅ Preguntas procesadas: {question_count}")
-        print(f"✅ Encoding: ISO-8859-1 (como Kansas State)")
-        print(f"✅ Estructura: Solo XML (sin manifest)")
-        print(f"\n📋 Para importar en Canvas:")
+        print(f"QTI generado (estilo Kansas State): {output_file}")
+        print(f"Archivo XML interno: {xml_name}")
+        print(f"Preguntas procesadas: {question_count}")
+        print(f"Encoding: ISO-8859-1 (como Kansas State)")
+        print(f"Estructura: Solo XML (sin manifest)")
+        print(f"\nPara importar en Canvas:")
         print(f"1. Ve a tu curso en Canvas")
-        print(f"2. Configuración → Importar contenido del curso")
+        print(f"2. Configuración -> Importar contenido del curso")
         print(f"3. Selecciona 'Paquete QTI'")
         print(f"4. Sube el archivo: {output_file}")
         print(f"5. Las preguntas aparecerán en tu banco")
         
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"ERROR: {e}")
         import traceback
         traceback.print_exc()
         sys.exit(1)

@@ -2,22 +2,22 @@
 
 Esta herramienta convierte bancos de preguntas en formato de texto simple a paquetes QTI compatibles con Canvas LMS. Permite a educadores crear exámenes en el formato más simple posible y desplegarlos directamente en Canvas.
 
-## 📋 Descripción
+## Descripción
 
 Herramienta universal para convertir preguntas de texto plano a formato QTI de Canvas. Ideal para educadores que quieren crear exámenes sin complicaciones técnicas.
 
-## 🚀 Uso Rápido
+## Uso Rápido
 
-### 🧠 Smart Converter (Recomendado)
+### Smart Converter (Recomendado)
 ```bash
 python smart_convert.py preguntas.txt
 ```
 
 **Características inteligentes:**
-- ✅ Solo regenera si hay cambios reales
-- ✅ Muestra estado detallado con timestamps  
-- ✅ Ejecutable desde cualquier directorio
-- ✅ Opciones de forzado y solo-estado
+- Solo regenera si hay cambios reales
+- Muestra estado detallado con timestamps  
+- Ejecutable desde cualquier directorio
+- Opciones de forzado y solo-estado
 
 ### Script Todo-en-Uno Clásico
 ```bash
@@ -27,20 +27,20 @@ python convert.py preguntas.txt --smart  # Con verificación de timestamps
 
 ### Uso por Etapas
 ```bash
-# Paso 1: TXT → CSV
+# Paso 1: TXT -> CSV
 python txt_to_csv_direct.py preguntas.txt
 
-# Paso 2: CSV → QTI
+# Paso 2: CSV -> QTI
 python csv_to_kansas_qti.py preguntas_kansas.csv
 ```
 
-## 📁 Archivos de la Herramienta
+## Archivos de la Herramienta
 
 ### Scripts Principales
-- `smart_convert.py` - **🧠 Convertidor inteligente** (recomendado)
+- `smart_convert.py` - **Convertidor inteligente** (recomendado)
 - `convert.py` - Convertidor todo-en-uno clásico
-- `txt_to_csv_direct.py` - Convertidor texto → CSV
-- `csv_to_kansas_qti.py` - Generador CSV → QTI
+- `txt_to_csv_direct.py` - Convertidor texto -> CSV
+- `csv_to_kansas_qti.py` - Generador CSV -> QTI
 
 ### Documentación
 - `README.md` - Esta guía
@@ -53,7 +53,7 @@ python csv_to_kansas_qti.py preguntas_kansas.csv
 - `tests/` - Suite completa de tests
 - `tests/run_tests.py` - Ejecutor de tests
 
-## 📝 Formato de Preguntas
+## Formato de Preguntas
 
 Crea un archivo `.txt` con este formato simple:
 
@@ -73,12 +73,12 @@ RESPUESTA: B
 ```
 
 ### Reglas del Formato
-- ✅ Preguntas numeradas secuencialmente (Q1, Q2, Q3...)
-- ✅ Mínimo 2 opciones (A, B), máximo 4 (A, B, C, D)
-- ✅ Una respuesta correcta con `RESPUESTA: [letra]`
-- ✅ Líneas en blanco separan preguntas (opcional)
+- Preguntas numeradas secuencialmente (Q1, Q2, Q3...)
+- Mínimo 2 opciones (A, B), máximo 4 (A, B, C, D)
+- Una respuesta correcta con `RESPUESTA: [letra]`
+- Líneas en blanco separan preguntas (opcional)
 
-## 🎯 Importar a Canvas
+## Importar a Canvas
 
 1. **Ejecutar conversión**:
    ```bash
@@ -86,12 +86,12 @@ RESPUESTA: B
    ```
 
 2. **En Canvas**:
-   - Ir a Configuración → Importar contenido del curso
+   - Ir a Configuración -> Importar contenido del curso
    - Seleccionar "Paquete QTI"
    - Subir el archivo ZIP generado
    - ¡Las preguntas aparecen en tu banco!
 
-## ⚙️ Instalación
+## Instalación
 
 ### Requisitos
 - Python 3.7 o superior
@@ -106,7 +106,7 @@ cd herramientas/txt-to-qti
 # O descargar solo esta carpeta
 ```
 
-## 🧪 Ejecutar Tests
+## Ejecutar Tests
 
 ```bash
 # Todos los tests
@@ -119,29 +119,29 @@ python tests/run_tests.py test_txt_to_csv
 python tests/run_tests.py --validate
 ```
 
-## 📊 Características
+## Características
 
-### ✅ Lo que hace bien
+### Lo que hace bien
 - **Ultra simple**: Solo texto plano, sin formato complejo
 - **Rápido**: Convierte 100 preguntas en segundos
 - **Confiable**: Compatible con Canvas usando formato Kansas State probado
 - **Validación**: Detecta errores automáticamente
 - **Portable**: Solo Python estándar, sin dependencias
 
-### 🎯 Ideal para
+### Ideal para
 - Profesores creando exámenes rápidos
 - Bancos de preguntas institucionales
 - Conversión masiva de preguntas existentes
 - Integración en sistemas automatizados
 
-### 🔧 Características técnicas
+### Características técnicas
 - Formato QTI 1.2 (máxima compatibilidad Canvas)
 - Encoding ISO-8859-1 (estándar Canvas)
 - IDs reproducibles con hash MD5
 - Validación automática de estructura
 - Tests comprensivos incluidos
 
-## 🆘 Resolución de Problemas
+## Resolución de Problemas
 
 ### Error: "Sin respuesta correcta"
 - Verifica que cada pregunta tenga `RESPUESTA: A` (o B, C, D)
@@ -159,7 +159,7 @@ python tests/run_tests.py --validate
 - Verifica que subiste el archivo .zip (no el .xml interno)
 - Asegúrate de seleccionar "Paquete QTI" en Canvas
 
-## 🔄 Ejemplos de Uso
+## Ejemplos de Uso
 
 ### Uso Inteligente (Recomendado)
 ```bash
@@ -205,13 +205,13 @@ for archivo in *.txt; do
 done
 ```
 
-## 📚 Documentación Adicional
+## Documentación Adicional
 
 - **[USAGE_GUIDE.md](USAGE_GUIDE.md)** - Guía completa con ejemplos
 - **[TECHNICAL_DETAILS.md](TECHNICAL_DETAILS.md)** - Implementación técnica
 - **[tests/README_TESTS.md](tests/README_TESTS.md)** - Documentación de tests
 
-## 🤝 Contribuir
+## Contribuir
 
 ### Reportar Problemas
 1. Ejecutar tests: `python tests/run_tests.py`
@@ -224,24 +224,24 @@ done
 3. Verificar que todos los tests pasen
 4. Actualizar documentación
 
-## 📄 Licencia
+## Licencia
 
 Herramienta educativa basada en estándares públicos:
 - Especificación QTI: IMS Global (implementable libremente)
 - Metodología Kansas State: Dominio público educativo
 - Implementación: Uso educativo libre
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 ```
-TXT File → [txt_to_csv_direct.py] → CSV → [csv_to_kansas_qti.py] → QTI ZIP
+TXT File -> [txt_to_csv_direct.py] -> CSV -> [csv_to_kansas_qti.py] -> QTI ZIP
     ↓                                ↓                              ↓
 Texto simple              Formato Kansas State            Canvas-ready
 ```
 
 La herramienta usa un pipeline de dos etapas para máxima confiabilidad y debugging sencillo.
 
-## 📈 Rendimiento
+## Rendimiento
 
 - **Pequeño** (1-25 preguntas): < 1 segundo
 - **Mediano** (26-100 preguntas): 1-3 segundos  

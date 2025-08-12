@@ -100,12 +100,12 @@ class TxtToCSVConverter:
         """Valida y guarda pregunta actual"""
         # Validar que tenga respuesta correcta
         if not question['correct_answer']:
-            print(f"⚠️  Pregunta {question['number']}: Sin respuesta correcta")
+            print(f"WARN Pregunta {question['number']}: Sin respuesta correcta")
             return
         
         # Validar que tenga al menos 2 opciones
         if len(question['options']) < 2:
-            print(f"⚠️  Pregunta {question['number']}: Menos de 2 opciones")
+            print(f"WARN Pregunta {question['number']}: Menos de 2 opciones")
             return
         
         # Asegurar exactamente 4 opciones (completar con vacías si faltan)
@@ -202,21 +202,21 @@ def main():
         # Validar preguntas procesadas
         issues = converter.validate_questions(converter.questions)
         
-        print(f"✅ Conversión TXT → CSV completada")
-        print(f"✅ Archivo TXT: {txt_file}")
-        print(f"✅ CSV generado: {output_file}")
-        print(f"✅ Preguntas procesadas: {question_count}")
+        print(f"Conversión TXT -> CSV completada")
+        print(f"Archivo TXT: {txt_file}")
+        print(f"CSV generado: {output_file}")
+        print(f"Preguntas procesadas: {question_count}")
         
         if issues:
-            print(f"\n⚠️  Advertencias encontradas:")
+            print(f"\nAdvertencias encontradas:")
             for issue in issues[:5]:  # Mostrar primeros 5
                 print(f"   - {issue}")
             if len(issues) > 5:
                 print(f"   ... y {len(issues) - 5} más")
         else:
-            print("✅ Sin problemas detectados")
+            print("Sin problemas detectados")
         
-        print(f"\n📋 Instrucciones:")
+        print(f"\nInstrucciones:")
         print(f"1. Usa el conversor CSV a QTI: python csv_to_kansas_qti.py {output_file}")
         print(f"2. O usa el Kansas State Converter en línea:")
         print(f"3. Ve a: https://canvas.k-state.edu/info/tools/scantron/faq/build-a-scantron-quiz.html")
@@ -224,7 +224,7 @@ def main():
         print(f"5. Descarga el ZIP generado e importa en Canvas")
         
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"ERROR: {e}")
         import traceback
         traceback.print_exc()
         sys.exit(1)

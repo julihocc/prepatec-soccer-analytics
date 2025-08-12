@@ -1,7 +1,9 @@
 # Banco de Preguntas Canvas - Bloque 3
+
 ## Introducción al Modelado Predictivo Simple en Fútbol
 
 **Instrucciones para Canvas:**
+
 - Preguntas de opción múltiple: 4 opciones (A, B, C, D)
 - Preguntas numéricas: respuesta exacta o calculable (tolerancia 5% si aplica)
 - Selección aleatoria de 20-25 preguntas por examen
@@ -11,7 +13,9 @@
 ---
 
 ## Alcance y Cobertura del Bloque 3
+
 Conceptos esenciales (permitidos por lineamientos):
+
 1. Vocabulario ML básico (modelo, entrenamiento, predicción, precisión, datos de prueba)
 2. Preparación simple de datos (selección columnas, variables derivadas simples)
 3. División train/test
@@ -27,13 +31,16 @@ Conceptos esenciales (permitidos por lineamientos):
 Tamaño inicial propuesto: 80 preguntas (Core 60 + Extended 20). Se podrá ampliar a 100+ tras primeras aplicaciones.
 
 ### Núcleo (60 preguntas)
+
 Cobertura balanceada: vocabulario, flujo de trabajo, preparación, división, uso de 1 modelo, interpretación básica, overfitting, precisión.
 Preguntas Núcleo: 1–60.
 
 ### Banco Extendido (20 preguntas)
+
 Preguntas 61–80: escenarios interpretativos [S], comparaciones entre modelos, matices sobre mejoras simples y reflexión ética básica (uso responsable de datos deportivos juveniles).
 
 ### Distribución Cognitiva Objetivo (aprox)
+
 - [R] Recuerdo: ~22
 - [C] Concepto: ~20
 - [A] Aplicación: ~25
@@ -41,6 +48,7 @@ Preguntas 61–80: escenarios interpretativos [S], comparaciones entre modelos, 
 (La suma excede 60 porque Extended añade parte de [S]; dentro del Núcleo se mantienen ~5–6 [S]).
 
 ### Uso Sugerido
+
 - Evaluaciones formales iniciales: muestrear mayormente Núcleo (≥85%).
 - Conforme avanza la semana 14–15 se añaden más ítems Extended.
 
@@ -585,6 +593,7 @@ D) Eliminar baseline
 ---
 
 ## Resumen Distribución (Inicial)
+
 - Total preguntas: 80
 - Núcleo: 1–60 (60)
 - Extended: 61–80 (20)
@@ -593,6 +602,7 @@ D) Eliminar baseline
 - Etiquetas aproximadas: [R] 22, [C] 20, [A] 25, [S] 13 (Extended concentra parte de [S])
 
 ### Próximos Pasos Sugeridos
+
 - Monitorear desempeño por etiqueta (ajustar balance si [S] resulta demasiado desafiante).
 - Ampliar a 100 preguntas añadiendo escenarios de mejora incremental y errores comunes.
 - Revisar si se requiere separar precisión y baseline en ejercicios adicionales.

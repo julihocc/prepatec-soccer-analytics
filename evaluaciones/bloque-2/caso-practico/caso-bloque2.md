@@ -1,4 +1,5 @@
 # Caso Práctico Colaborativo - Bloque 2
+
 ## Análisis Básico, Calidad de Datos e Interpretación de Rendimiento de Jugadores
 
 **Modalidad:** Colaborativa (equipos de 2-3 estudiantes)  
@@ -19,6 +20,7 @@ Tu equipo trabaja como analistas junior para una escuela de fútbol que quiere c
 ## Objetivos de Aprendizaje
 
 Al completar este caso práctico, los estudiantes serán capaces de:
+
 - Cargar y explorar datos de jugadores usando pandas
 - Crear gráficos básicos con seaborn y matplotlib
 - Calcular estadísticas simples (promedio, máximo, mínimo)
@@ -30,7 +32,9 @@ Al completar este caso práctico, los estudiantes serán capaces de:
 ## Dataset Proporcionado
 
 ### Dataset Principal: `jugadores_liga_juvenil.csv`
+
 **Versión simplificada con solo las columnas esenciales**
+
 ```csv
 jugador_id,nombre,edad,equipo,posicion,torneo,goles,asistencias,partidos_jugados
 1,Alejandro Martínez,17,Atlas Sub-20,Delantero,Liga MX Sub-20,12,5,18
@@ -41,6 +45,7 @@ jugador_id,nombre,edad,equipo,posicion,torneo,goles,asistencias,partidos_jugados
 ```
 
 **Descripción de columnas:**
+
 - `jugador_id`: Número único del jugador
 - `nombre`: Nombre completo del jugador
 - `edad`: Edad en años (16-18)
@@ -75,6 +80,7 @@ print("¡Datos cargados correctamente!")
 ```
 
 Preguntas socráticas iniciales:
+
 - ¿Por qué cargar los datos con pandas y no con otro método manual?
 - ¿Qué pasaría si el archivo tuviera una columna adicional no documentada?
 
@@ -88,6 +94,7 @@ Preguntas socráticas iniciales:
 - Identificar quién es el mejor goleador
 
 **Ejemplo de código:**
+
 ```python
 # Información básica
 print(f"Tenemos {len(datos_jugadores)} jugadores")
@@ -102,6 +109,7 @@ print(f"Máximo de goles: {datos_jugadores['goles'].max()}")
 ```
 
 Preguntas socráticas de exploración:
+
 - ¿Qué indica el número de columnas sobre la complejidad del dataset?
 - ¿Hay columnas categóricas que convenga convertir a categoría más adelante?
 
@@ -110,12 +118,14 @@ Preguntas socráticas de exploración:
 Objetivo: Verificar tipos, valores faltantes e inconsistencias simples.
 
 Lo que deben hacer:
+
 - Mostrar `datos_jugadores.info()`
 - Revisar tipos de datos (`datos_jugadores.dtypes`)
 - Contar valores faltantes (`datos_jugadores.isna().sum()`)
 - Comprobar rangos básicos (edad 15–20, goles >= 0) mediante condiciones simples
 
 Ejemplo de código:
+
 ```python
 print("Información estructural:")
 print(datos_jugadores.info())
@@ -132,6 +142,7 @@ if len(edades_invalidas) > 0:
 ```
 
 Preguntas socráticas:
+
 - ¿Qué implicaría encontrar valores faltantes en goles?
 - Si una columna numérica aparece como `object`, ¿qué riesgo trae para los cálculos?
 
@@ -140,11 +151,13 @@ Preguntas socráticas:
 Objetivo: Ir más allá de media y máximo para incluir mediana y dispersión.
 
 Lo que deben hacer:
+
 - Usar `.describe()` para visión general
 - Calcular media, mediana y desviación estándar de goles y asistencias
 - Reflexionar sobre diferencias media vs mediana
 
 Ejemplo de código:
+
 ```python
 resumen_numerico = datos_jugadores[['goles','asistencias','partidos_jugados']].describe()
 print(resumen_numerico)
@@ -157,6 +170,7 @@ print("¿Difieren media y mediana de goles? ¿Qué sugiere sobre valores extremo
 ```
 
 Preguntas socráticas:
+
 - ¿Qué nos dice una desviación estándar alta en asistencias?
 - ¿Por qué podría ser más robusta la mediana que la media en goles?
 
@@ -165,11 +179,13 @@ Preguntas socráticas:
 #### 2.1 Estadísticas por Posición (12 puntos)
 
 Lo que deben hacer:
+
 - Usar `.groupby('posicion')` y `agg` con media de goles, asistencias y partidos
 - Identificar mejor jugador por posición (máximo de goles)
 - Redondear a 1 decimal
 
 Ejemplo de código (base recomendado):
+
 ```python
 estadisticas_posicion = datos_jugadores.groupby('posicion').agg({
     'goles': 'mean',
@@ -185,6 +201,7 @@ for pos in datos_jugadores['posicion'].unique():
 ```
 
 Preguntas socráticas:
+
 - ¿Por qué comparar promedios por posición antes de elegir titulares?
 - ¿Qué riesgo hay si solo miramos el máximo de goles y no el promedio del rol?
 
@@ -193,12 +210,14 @@ Preguntas socráticas:
 Objetivo: Incorporar variables interpretables para decisiones deportivas.
 
 Lo que deben hacer:
+
 - Crear `goles_por_partido = goles / partidos_jugados`
 - Crear `contribucion_ofensiva = goles + asistencias`
 - Calcular promedios de estas métricas por posición
 - Identificar el top 3 por contribución ofensiva total
 
 Ejemplo:
+
 ```python
 datos_jugadores['goles_por_partido'] = (datos_jugadores['goles'] / datos_jugadores['partidos_jugados']).round(2)
 datos_jugadores['contribucion_ofensiva'] = datos_jugadores['goles'] + datos_jugadores['asistencias']
@@ -212,6 +231,7 @@ print(top_contribucion[['nombre','posicion','contribucion_ofensiva']])
 ```
 
 Preguntas socráticas:
+
 - ¿Por qué `goles_por_partido` puede ser mejor que solo goles totales?
 - ¿Cuándo podría engañarnos la contribución ofensiva (ej. pocos partidos)?
 
@@ -220,12 +240,14 @@ Preguntas socráticas:
 Objetivo: Reconocer valores extremos básicos que pueden distorsionar conclusiones.
 
 Lo que deben hacer:
+
 - Calcular media y desviación estándar de goles
 - Definir umbral: `media + 2 * std`
 - Listar jugadores por encima de ese umbral
 - Decidir (justificación escrita) si mantenerlos en el análisis
 
 Ejemplo:
+
 ```python
 media_g = datos_jugadores['goles'].mean()
 std_g = datos_jugadores['goles'].std()
@@ -236,6 +258,7 @@ print(outliers_goles[['nombre','goles','posicion']])
 ```
 
 Preguntas socráticas:
+
 - ¿Eliminarías un delantero muy por encima del umbral? ¿Por qué?
 - ¿Cómo afectaría mantenerlo al promedio de su posición?
 
@@ -244,11 +267,13 @@ Preguntas socráticas:
 #### 3.1 Gráficos Fundamentales (10 puntos)
 
 Gráficos obligatorios (cada uno con título claro, ejes etiquetados, fuente de datos opcional en nota):
+
 - Barras: jugadores por posición (ordenado de mayor a menor)
 - Caja: distribución de goles por posición (identificar variabilidad)
 - Dispersión: goles vs asistencias (distinguir posición con color)
 
 Preguntas socráticas (después de cada gráfico):
+
 - ¿Qué posición domina en cantidad de jugadores? ¿Eso explica algo de sus promedios?
 - ¿Qué posición muestra mayor dispersión en goles? ¿Por qué podría suceder?
 - ¿Observas relación entre goles y asistencias o roles diferenciados?
@@ -256,11 +281,13 @@ Preguntas socráticas (después de cada gráfico):
 #### 3.2 Visualizaciones de Profundización (10 puntos)
 
 Gráficos adicionales:
+
 - Top 5 goleadores (barras horizontal) con valores anotados
 - Comparación de `goles_por_partido` vs `contribucion_ofensiva` (scatter o barras agrupadas)
 - Distribución de edades (histograma o KDE simple)
 
 Preguntas socráticas:
+
 - ¿El top 5 por goles coincide con el top 3 por contribución ofensiva?
 - ¿Hay posiciones con jugadores jóvenes y alta eficiencia? ¿Qué implicaría para desarrollo?
 - ¿La distribución de edades es equilibrada o sesgada?
@@ -268,6 +295,7 @@ Preguntas socráticas:
 #### 3.3 Síntesis y Presentación (10 puntos)
 
 Debe incluir respuestas claras y justificadas a:
+
 1. ¿Qué posición marca más goles en promedio y qué tan consistente es (variabilidad)?
 2. ¿Quiénes son los 3 jugadores más valiosos considerando contribución ofensiva y eficiencia?
 3. ¿Qué patrón observas entre goles y asistencias? (rol de creadores vs finalizadores)
@@ -275,6 +303,7 @@ Debe incluir respuestas claras y justificadas a:
 5. ¿Qué decisión práctica recomendarías al entrenador (ej. reforzar mediocampo, promover un delantero)?
 
 Formato sugerido de presentación (3–4 diapositivas):
+
 - Diapositiva 1: Objetivo y dataset
 - Diapositiva 2: Métricas clave y gráficos principales
 - Diapositiva 3: Interpretaciones y outliers (decisión)
@@ -289,6 +318,7 @@ Formato sugerido de presentación (3–4 diapositivas):
 ### 1. Notebook Principal (`analisis_jugadores_equipo[X].ipynb`)
 
 **Debe incluir:**
+
 - Importaciones y carga de datos
 - Exploración básica (`.head()`, `.info()`, estadísticas)
 - Gráficos obligatorios bien etiquetados
@@ -298,6 +328,7 @@ Formato sugerido de presentación (3–4 diapositivas):
 ### 2. Presentación (`presentacion_equipo[X].pdf`)
 
 **Debe incluir:**
+
 - 3-4 diapositivas con sus mejores gráficos
 - Conclusiones principales  
 - Lo que aprendió cada integrante del equipo
@@ -309,6 +340,7 @@ Formato sugerido de presentación (3–4 diapositivas):
 Esta sección integra la rúbrica que antes residía en `rubricas/README.md` para centralizar criterios (archivo eliminado tras fusión). Modelo estándar 40/30/30.
 
 ### 1. Examen Canvas (Referencia Bloque 2)
+
 - Banco: 105 preguntas (75 Núcleo + 30 Extended con [S]).
 - Preguntas por examen: 22 (estratificado objetivo: [R] 7-8, [C] 7-8, [A] 5-6, [S] 1-2).
 - Formato: ~70% opción múltiple / ~30% numéricas.
@@ -316,6 +348,7 @@ Esta sección integra la rúbrica que antes residía en `rubricas/README.md` par
 - Temas 20% c/u: Exploración/calidad, estadística descriptiva, métricas derivadas, agrupaciones+outliers, visualización/interpretación.
 
 ### 2. Rúbrica Caso 40 / 30 / 30 (100 puntos)
+
 | Área | Puntos | Subcomponentes | Indicadores clave |
 |------|--------|----------------|-------------------|
 | Exploración y Calidad | 40 | Carga (5) + Exploración head/info (10) + Calidad/Tipos/NA (10) + Estadística descriptiva (15) | `.head()`, `.info()`, rangos validados, interpretación media vs mediana |
@@ -323,18 +356,21 @@ Esta sección integra la rúbrica que antes residía en `rubricas/README.md` par
 | Visualización e Interpretación | 30 | Gráficos base (10) + Profundización (10) + Síntesis/Presentación (10) | Gráficos limpios, respuestas socráticas, recomendaciones futbolísticas |
 
 ### 3. Niveles de Desempeño
+
 - Excelente: Completo, decisiones justificadas con métricas y reflexión.
 - Bueno: 1–2 omisiones menores; interpretación razonable.
 - Suficiente: Falta una métrica derivada u outliers; interpretación superficial.
 - Insuficiente: Errores que impiden análisis o falta de justificación.
 
 ### 4. Requisitos para Nivel Excelente (Transversales)
+
 - Variables en español descriptivas.
 - Comentarios justifican pasos críticos (no redundantes).
 - Preguntas socráticas respondidas tras cada bloque.
 - Notebook ejecuta limpio desde reinicio.
 
 ### 5. Autoevaluación Rápida (OK / Revisar)
+
 - [ ] Carga y exploración básica completa
 - [ ] Calidad (NA, tipos, rangos) revisada
 - [ ] Métricas derivadas creadas y explicadas
@@ -345,6 +381,7 @@ Esta sección integra la rúbrica que antes residía en `rubricas/README.md` par
 - [ ] Presentación preparada (3–4 diapositivas)
 
 ### 6. Integridad Académica
+
 | Aspecto | Criterio |
 |---------|---------|
 | Autoría | Trabajo colaborativo (≥80% código original del equipo) |
@@ -353,6 +390,7 @@ Esta sección integra la rúbrica que antes residía en `rubricas/README.md` par
 | Reproducibilidad | Notebook ejecutable sin celdas huérfanas |
 
 ### 7. Conversión Ponderada del Bloque
+
 - Examen Canvas: 20% × (puntaje/100)
 - Caso práctico: 15% × (puntaje/100)
 - Total Bloque 2 = 35% del curso
@@ -373,19 +411,21 @@ Esta sección integra la rúbrica que antes residía en `rubricas/README.md` par
 
 ## Consejos para el Equipo
 
-### Para Dividir el Trabajo:
+### Para Dividir el Trabajo
 
 **Opción 1:** Por partes
+
 - Persona 1: Exploración básica y carga de datos
 - Persona 2: Gráficos y visualizaciones
 - Persona 3: Análisis por posición y presentación
 
 **Opción 2:** Todos juntos
+
 - Trabajan todos en la misma computadora
 - Van rotando quién escribe el código
 - Todos participan en las decisiones
 
-### Tips Importantes:
+### Tips Importantes
 
 - **Variables en español y descriptivas:** `datos_jugadores`, `goles_por_partido`, `contribucion_ofensiva`.
 - **Buenas prácticas de gráficos:** títulos informativos (no genéricos), ejes con unidades, ordenar barras, anotar valores en top 5.

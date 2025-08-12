@@ -1,3 +1,21 @@
+# 4.4.0 (2025-08-11)
+
+- Agregados archivos .py para las presentaciones semanales de los bloques 1, 2 y 3.
+- Facilitan la reutilización y edición de contenido de presentaciones en flujos automatizados o materiales complementarios.
+- No afecta la estructura principal de notebooks ni sesiones, pero mejora el mantenimiento de recursos pedagógicos.
+
+# 4.3.0 (2025-08-11)
+
+- Entrega de presentaciones semanales en formato Marp/Markdown para semanas 4 a 15, alineadas con metodología socrática y estructura de sesiones de 50 minutos.
+- Creación y documentación del prompt de transformación Jupyter→Marp en `.github/prompts/jupyter-to-marp-presentacion.prompt.md`.
+- Proceso de commits y versionado siguiendo los prompts estandarizados del repositorio.
+
+# 4.3.0 (2025-08-11)
+
+- Entrega de presentaciones semanales en formato Marp/Markdown para semanas 4 a 15, alineadas con metodología socrática y estructura de sesiones de 50 minutos.
+- Creación y documentación del prompt de transformación Jupyter→Marp en `.github/prompts/jupyter-to-marp-presentacion.prompt.md`.
+- Proceso de commits y versionado siguiendo los prompts estandarizados del repositorio.
+
 # Historial de Cambios
 
 Todos los cambios notables de este proyecto serán documentados en este archivo.
@@ -8,49 +26,59 @@ y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 ## [Sin publicar]
 
 ## [4.2.0] - 2025-08-10
+
 ## [4.2.1] - 2025-08-10
 
 ### Cambiado
+
 - Renombrados archivos de syllabus para usar sufijo de periodo 202513.
 - Añadida versión en Markdown estructurada del Syllabus (tablas, secciones numeradas) para mayor legibilidad.
 
 ### Tipo de versión
+
 - Actualización de documentación sin impacto funcional (patch).
 
-
 ### Cambiado
+
 - Documentación alineada con nueva equivalencia de parciales (Bloque 1: 30%, Bloque 2: 30%, Bloque 3: 40%).
 - Desglose explícito de actividades: 5 de 15% + caso final 25% (presentación integrada en el caso, sin ponderación separada).
 - Incorporación formal del Quiz / Canvas ML Básico (15%) como verificación previa al caso final.
 
 ### Mejorado
+
 - Claridad en sub‑pesos internos del Caso Práctico Bloque 3 indicando impacto porcentual sobre el total del curso.
 
 ### Razonamiento de incremento menor
+
 - Cambio estructural documental sin alterar bancos de preguntas existentes ni lógica de código: bump menor (4.1.x → 4.2.0).
 
 ## [4.1.0] - 2025-08-10
 
 ### Agregado
+
 - Expansión del banco Canvas Bloque 2 (75 → 105) con ítems Extended [S] y etiquetado cognitivo completo.
 - Fusión de rúbricas en archivos centrales eliminando duplicados (casos prácticos y README Bloque 3).
 
 ### Cambiado
+
 - Renombrado y homologado el componente evaluativo del Bloque 3 a "Caso Práctico" siguiendo el patrón de Bloques 1 y 2.
 - Reestructurada carpeta `evaluaciones/bloque-3/` (carpetas estándar: caso-practico/, datasets/, solucion-caso-practico/).
 
 ### Eliminado
+
 - Directorio legacy `proyecto-integrador/` y archivos redundantes asociados (datasets y soluciones duplicadas).
 - README redundante en `caso-practico/` Bloque 3 tras fusión de contenido.
 
 ### Mejorado
+
 - Claridad documental del caso práctico Bloque 3 (preguntas socráticas, tareas con puntaje, checklist homogéneo).
 - Changelog global actualizado para reflejar limpieza y unificación evaluativa.
- - Sistema de ponderaciones redefinido: 5 actividades de 15% + caso final 25% (reemplaza esquema previo 35/35/30 con presentación separada).
+- Sistema de ponderaciones redefinido: 5 actividades de 15% + caso final 25% (reemplaza esquema previo 35/35/30 con presentación separada).
 
 ## [4.0.1] - 2025-08-10
 
 ### Mejorado
+
 - Actualización completa del README principal con metodología socrática y estructura de preparatoria
 - Actualización del README del Bloque 3 para consistencia con nivel preparatoria
 - Integración de preguntas motivadoras específicas para cada semana
@@ -59,6 +87,7 @@ y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 - Guía de inicio mejorada con progresión clara por bloques
 
 ### Cambiado
+
 - Tono de documentación adaptado para estudiantes de preparatoria (15-18 años)
 - Estructura de información reorganizada para mayor claridad pedagógica
 - Herramientas y tecnologías presentadas con contexto deportivo profesional
@@ -66,6 +95,7 @@ y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 ## [4.0.0] - 2025-08-10
 
 ### Agregado
+
 - Transformación completa del Bloque 3 de nivel universitario a preparatoria
 - Metodología socrática integrada en todos los notebooks
 - Restricciones temporales de 50 minutos por sesión implementadas
@@ -75,6 +105,7 @@ y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 - Sistema de evaluación que respeta el método socrático
 
 ### Cambiado
+
 - Semana 11: Transformación de conceptos universitarios a "entrenadores digitales"
 - Semana 12: Modelos como "equipos de especialistas" trabajando juntos
 - Semana 13: Métricas simplificadas con evaluación comprensible
@@ -82,27 +113,40 @@ y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 - Semana 15: Proyecto integrador con análisis profesional del Barcelona
 
 ### Mejorado
+
 - Soporte completo de Pylance para análisis de código Python
 - Documentación de instrucciones para GitHub Copilot
 - Configuración de entorno de desarrollo optimizada
 
-## [3.0.0] - 2025-08-09
+## [4.2.0] - 2025-08-10
 
-### Agregado
-- Sistema completo de evaluación con Canvas, casos prácticos y proyectos
-- Banco de preguntas automáticas con metodología socrática
-- Casos prácticos colaborativos para equipos de 3-4 estudiantes
-- Rúbricas detalladas con criterios específicos
-- Proyecto integrador final con análisis predictivo
+## [4.2.1] - 2025-08-10
 
 ### Cambiado
-- Estructura de evaluación alineada con estándares del Tecnológico de Monterrey
-- Distribución de calificaciones: 35% + 35% + 30%
-- Enfoque en competencias y proyectos colaborativos
+
+- Renombrados archivos de syllabus para usar sufijo de periodo 202513.
+
+### Tipo de versión
+
+- Actualización de documentación sin impacto funcional (patch).
+
+### Cambiado
+
+- Documentación alineada con nueva equivalencia de parciales (Bloque 1: 30%, Bloque 2: 30%, Bloque 3: 40%).
+
+### Mejorado
+
+- Claridad en sub‑pesos internos del Caso Práctico Bloque 3 indicando impacto porcentual sobre el total del curso.
+
+### Razonamiento de incremento menor
+
+- Cambio estructural documental sin alterar bancos de preguntas existentes ni lógica de código: bump menor (4.1.x → 4.2.0).
+- Expansión del banco Canvas Bloque 2 (75 → 105) con ítems Extended [S] y etiquetado cognitivo completo.
 
 ## [2.1.0] - 2025-08-08
 
 ### Agregado
+
 - Contenido completo del Bloque 2: Explorando Datos Deportivos
 - Notebooks interactivos para análisis estadístico aplicado al fútbol
 - Visualizaciones profesionales con seaborn y matplotlib
@@ -111,6 +155,7 @@ y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 ## [2.0.0] - 2025-08-07
 
 ### Agregado
+
 - Contenido completo del Bloque 1: Fundamentos de Programación con Python
 - Notebooks interactivos para aprendizaje progresivo
 - Analogías deportivas para conceptos de programación
@@ -119,17 +164,20 @@ y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 ## [1.3.0] - 2025-08-06
 
 ### Agregado
+
 - Estructura inicial del curso de 15 semanas
 - Documentación base del proyecto
 - Configuración inicial del repositorio
 
 ### Mejorado
+
 - README principal con información completa del curso
 - Referencias y bibliografía especializada
 
 ## [1.0.0] - 2025-08-01
 
 ### Agregado
+
 - Versión inicial del proyecto
 - Estructura básica de directorios
 - Documentación inicial

@@ -9,6 +9,7 @@ jupyter:
 ---
 
 <VSCode.Cell id="#VSC-semana10-header" language="markdown">
+
 # SEMANA 10: ¿Cómo transformar datos en decisiones estratégicas que cambien la historia deportiva?
 
 ## BLOQUE 2 - CULMINACIÓN: Explorando Datos Deportivos con Python
@@ -21,7 +22,8 @@ jupyter:
 
 **Tu metamorfosis**: De estudiante de análisis de datos a consultor estratégico capaz de influenciar decisiones que definan el futuro deportivo.
 
-### Tu recorrido transformador en este bloque:
+### Tu recorrido transformador en este bloque
+
 - **Semana 6**: ¿Dominaste la exploración inicial de datasets deportivos?
 - **Semana 7**: ¿Comprendiste cómo los tipos de datos revelan diferentes perspectivas del juego?
 - **Semana 8**: ¿Descubriste cómo la estadística descriptiva convierte números en narrativas?
@@ -53,7 +55,6 @@ jupyter:
 **Síntesis final**: ¿Cómo posicionarte como el analista que los equipos buscan cuando necesitan certeza en decisiones cruciales?
 
 ---
-
 
 ---
 
@@ -235,11 +236,13 @@ print("¿Qué otros criterios añadirías para evaluar la validez de un insight?
 Para practicar, vamos a crear datos falsos de partidos. Es como un videojuego donde nosotros controlamos todo.
 
 **Nuestros datos van a tener:**
+
 - Equipos famosos (Real Madrid, Barcelona, etc.)
 - Cuántos goles anotó cada equipo
 - Quién ganó el partido
 
 ### ¿Por qué usar datos falsos?
+
 - Para practicar sin complicaciones
 - Podemos controlar qué pasa
 - Nos enfocamos en aprender, no en conseguir datos reales
@@ -318,6 +321,7 @@ print("¿Qué discovery recomendarías para acción inmediata y cuál descartar�
 ## SÍNTESIS DE LA SESIÓN 1: ¿Qué hemos desarrollado sobre metodologías de interpretación rigurosa?
 
 **Reflexión de 50 minutos**:
+
 - ¿Cómo un framework sistemático de validación protege de recommendations basadas en correlaciones espurias?
 - ¿Qué valor tiene cuantificar la confianza en tus discoveries antes de comunicarlos?
 - ¿Por qué la combinación de múltiples criterios es superior a confiar en correlaciones simples?
@@ -579,6 +583,7 @@ print("¿Qué versión te parece más convincente para generar acción inmediata
 ## SÍNTESIS DE LA SESIÓN 2: ¿Qué hemos desarrollado sobre narrativas analíticas persuasivas?
 
 **Reflexión de 50 minutos**:
+
 - ¿Cómo las visualizaciones ejecutivas aceleran la toma de decisiones complejas?
 - ¿Qué valor tiene adaptar el mismo insight para diferentes tipos de audiencias?
 - ¿Por qué la estructura narrativa es tan importante como la precisión técnica?
@@ -801,38 +806,44 @@ print("¿Qué tipo de decisiones deportivas te gustaría influenciar con modelos
 
 **Reflexión culminante**: Has completado una transformación extraordinaria desde manipulador básico de datos hasta consultor estratégico capaz de influenciar decisiones deportivas millonarias.
 
-### Tu metamorfosis documentada:
+### Tu metamorfosis documentada
 
 #### SEMANA 6: ¿Descubriste cómo explorar la riqueza oculta en datasets deportivos?
+
 - **Logro**: Dominaste la investigación inicial de datos complejos
 - **Transformación**: De intimidación por datasets grandes a exploración sistemática y confiada
 
 #### SEMANA 7: ¿Comprendiste cómo diferentes tipos de datos revelan perspectivas únicas del juego?
+
 - **Logro**: Clasificaste y aprovechaste datos numéricos, categóricos, temporales y booleanos
 - **Transformación**: De ver "números" a reconocer insights específicos según tipo de información
 
 #### SEMANA 8: ¿Desarrollaste la capacidad de convertir estadísticas en narrativas convincentes?
+
 - **Logro**: Dominaste estadística descriptiva aplicada al contexto deportivo
 - **Transformación**: De calcular promedios a interpretar patrones que sugieren estrategias
 
 #### SEMANA 9: ¿Masterizaste el arte de hacer que los datos "hablen" visualmente?
+
 - **Logro**: Creaste visualizaciones que no solo informan sino que persuaden
 - **Transformación**: De gráficos básicos a narrativas visuales que inspiran acción
 
 #### SEMANA 10: ¿Integraste todo en metodologías de consultoría estratégica?
+
 - **Logro**: Desarrollaste frameworks para traducir complejidad en decisiones ejecutivas
 - **Transformación**: De procesador de datos a influenciador de decisiones estratégicas
 
-### Tu identidad profesional emergente:
+### Tu identidad profesional emergente
 
 **Analista Deportivo Estratégico**: Profesional capaz de:
+
 - ✅ Procesar datasets complejos con confianza y eficiencia
 - ✅ Identificar patrones genuinos vs. correlaciones espurias  
 - ✅ Crear visualizaciones que convencen a stakeholders no técnicos
 - ✅ Formular recomendaciones que justifican inversiones significativas
 - ✅ Adaptar comunicación técnica para diferentes audiencias ejecutivas
 
-### Preparación para el Bloque 3:
+### Preparación para el Bloque 3
 
 **Pregunta de transición**: ¿Estás listo para el salto más dramático - de analista descriptivo a "predictor del futuro deportivo"?
 
@@ -854,7 +865,6 @@ print("¿Qué tipo de decisiones deportivas te gustaría influenciar con modelos
 
 ### ¿Preparado para convertirte en indispensable?
 
-
 ### 📈 Análisis de Tendencias Temporales y Estacionalidad
 
 **Desafío de Inteligencia Comercial:**
@@ -866,16 +876,19 @@ Como **consultor de inteligencia de mercado**, has sido contratado por una red d
 **Tu análisis de inteligencia temporal debe responder:**
 
 🔍 **Análisis de ciclos de negocio:**
+
 - ¿En qué momentos del calendario se maximiza el "value proposition" del entretenimiento deportivo?
 - ¿Qué patrones de estacionalidad pueden predecir picos de audiencia?
 - ¿Cómo fluctúa la "intensidad del producto" (goles/espectáculo) temporalmente?
 
 🎯 **Optimización de cartera de contenidos:**
+
 - ¿Cuándo programar los eventos premium para maximizar engagement?
 - ¿Qué períodos requieren estrategias de activación de audiencia adicionales?
 - ¿Cómo anticipar y mitigar las caídas estacionales de interés?
 
 **Reflexión de consultor estratégico:**
+
 - Si fueras CEO de una plataforma de streaming deportivo, ¿cómo usarías estas tendencias temporales para diseñar tu estrategia anual de contenidos?
 - ¿Qué patrones temporales justificarían inversiones diferenciadas en marketing?
 - ¿Cómo convertirías la estacionalidad en ventaja competitiva sostenible?
@@ -1084,16 +1097,19 @@ Has completado tu primer **análisis integral de consultoría deportiva**. Como 
 **¿Qué habilidades de consultor estratégico has desarrollado hoy?**
 
 🔍 **Pensamiento Analítico de Élite:**
+
 - Capacidad de identificar patrones estratégicos ocultos en datasets complejos
 - Habilidad para cuantificar ventajas competitivas y oportunidades de mercado
 - Competencia en traducir análisis técnicos a recomendaciones ejecutivas
 
 💼 **Expertise en Inteligencia Comercial:**
+
 - Análisis de cuotas de mercado y posicionamiento competitivo
 - Evaluación de riesgo-retorno en decisiones de inversión deportiva
 - Optimización de estrategias de programación y monetización
 
 📈 **Capacidades de Consultoría Avanzada:**
+
 - Generación de insights accionables para comités de inversión
 - Desarrollo de marcos de análisis temporal para maximizar value proposition
 - Construcción de argumentos basados en evidencia para decisiones estratégicas

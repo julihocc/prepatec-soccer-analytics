@@ -1,7 +1,9 @@
 # Banco de Preguntas Canvas - Bloque 2
+
 ## Explorando Datos Deportivos con Python
 
 **Instrucciones para Canvas:**
+
 - Preguntas de opción múltiple: 4 opciones (A, B, C, D)
 - Preguntas numéricas: respuesta exacta con tolerancia del 5%
 - Selección aleatoria de 20-25 preguntas por examen
@@ -15,19 +17,24 @@
 El banco contiene 105 preguntas (75 Core + 30 Extended). Las preguntas 1–75 constituyen el Núcleo (cobertura mínima) y las 76–105 conforman la primera expansión Extended con introducción de etiqueta [S] (Socrática/Interpretativa).
 
 ### Núcleo (75 preguntas)
+
 Preguntas 1–75 (sin cambios).
 
 ### Banco Extendido (30 preguntas)
+
 Preguntas 76–105 (interpretación, refuerzo de recall y escenarios):
+
 - Interpretación de salidas de pandas y visualizaciones (boxplots, dispersión, conteos)
 - Razonamiento sobre calidad de datos y efecto de outliers
 - Mini escenarios deportivos multi‑métrica y relevancia práctica de diferencias pequeñas
 
 ### Uso Sugerido
+
 - Evaluaciones formales: muestrear mayormente Núcleo (≥85%).
 - Práctica/Refuerzo: incorporar gradualmente Extended al publicarse.
 
 ### Distribución Cognitiva (aprox tras expansión)
+
 - [R] Recuerdo: 37
 - [C] Concepto: 37
 - [A] Aplicación (incluye Numéricas): 23
@@ -574,7 +581,8 @@ D) Solo números sin contexto
 
 ## Instrucciones Técnicas para Canvas
 
-### Configuración de Preguntas:
+### Configuración de Preguntas
+
 - **Opción múltiple**: Preguntas 1-105 (excepto numéricas)
 - **Respuesta numérica**: Preguntas marcadas como (Numérica)
 - **Selección aleatoria**: 20-25 preguntas por examen (evaluación formal: 22 fijas estratificadas)
@@ -585,7 +593,8 @@ D) Solo números sin contexto
   - Análisis avanzado (15%): 56-75
   - Interpretación / Escenarios (15% uso gradual): 76-105
 
-### Ponderación Sugerida:
+### Ponderación Sugerida
+
 - Cada pregunta: 4-5 puntos
 - Total por examen: 80-100 puntos
 - Tiempo: 45-60 minutos
@@ -593,7 +602,8 @@ D) Solo números sin contexto
 - Mostrar respuestas correctas: Después del cierre
 - Recomendación: ≥85% de ítems de Núcleo en evaluaciones formales; Extended para refuerzo interpretativo.
 
-### Enfoque Pedagógico:
+### Enfoque Pedagógico
+
 - Énfasis en aplicación práctica en contexto deportivo
 - Combinación de conceptos técnicos con interpretación
 - Preguntas que evalúan conocimiento, comprensión, aplicación y juicio interpretativo
@@ -696,7 +706,7 @@ C) Binaria
 D) Temporal
 **Respuesta: B**
 
-**89. [R]** ¿Qué diferencia principal hay entre `mean` y `median`? 
+**89. [R]** ¿Qué diferencia principal hay entre `mean` y `median`?
 A) Son siempre iguales
 B) La media se afecta más por valores extremos
 C) La mediana se afecta más por outliers

@@ -18,7 +18,8 @@ jupyter:
 
 **Reflexión inicial**: Cuando ves a Pep Guardiola tomar decisiones que resultan perfectas, ¿crees que es solo suerte o que tiene algún método secreto? ¿Será que usa información del pasado para predecir qué va a pasar?
 
-### Pregunta motivadora para la semana:
+### Pregunta motivadora para la semana
+
 Si fueras entrenador del Barcelona y tuvieras que decidir la alineación para el Clásico contra el Real Madrid, ¿cómo usarías los datos de partidos anteriores para tomar la mejor decisión?
 
 ---
@@ -26,22 +27,28 @@ Si fueras entrenador del Barcelona y tuvieras que decidir la alineación para el
 ## ESTRUCTURA SEMANAL: 3 Sesiones de Descubrimiento
 
 ### SESIÓN 1: ¿Qué significa "predecir" usando datos? (50 min)
+
 **Pregunta guía**: ¿Cómo pasamos de "esto pasó" a "esto va a pasar"?
 **Contenido máximo**: 15 min teoría + 25 min práctica + 10 min reflexión
+
 - ¿Qué es una predicción y por qué es útil en el fútbol?
 - Diferencia entre adivinar y predecir con datos
 - Primera predicción simple: ¿quién gana en casa vs visitante?
 
 ### SESIÓN 2: ¿Cómo le enseñamos a la computadora a predecir? (50 min)  
+
 **Pregunta guía**: ¿Qué información necesita una computadora para hacer pronósticos?
 **Contenido máximo**: 10 min repaso + 30 min práctica + 10 min conexiones
+
 - Mi primer modelo de predicción con Python
 - Entrenamiento vs predicción (como entrenar a un jugador)
 - Probando nuestro modelo con datos nuevos
 
 ### SESIÓN 3: ¿Qué tan buenas son nuestras predicciones? (50 min)
+
 **Pregunta guía**: ¿Cómo sabemos si nuestro modelo está funcionando bien?
 **Contenido máximo**: 5 min repaso + 35 min aplicación + 10 min síntesis
+
 - Midiendo qué tanto acertamos
 - ¿Cuándo podemos confiar en nuestras predicciones?
 - Aplicación: prediciendo resultados de partidos reales
@@ -52,7 +59,8 @@ Si fueras entrenador del Barcelona y tuvieras que decidir la alineación para el
 
 **Pregunta reflexiva**: ¿Has notado que algunos equipos pequeños vencen a equipos grandes de manera "inesperada"? ¿Será realmente inesperado o podríamos haberlo predicho con datos?
 
-### La magia detrás de las decisiones deportivas:
+### La magia detrás de las decisiones deportivas
+
 - **¿Sabías que...?** Los equipos profesionales usan computadoras para decidir alineaciones
 - **¿Te imaginas que...?** Podemos predecir quién va a ganar un partido antes de que empiece
 - **¿Has considerado que...?** Los datos del pasado nos ayudan a tomar mejores decisiones para el futuro
@@ -60,7 +68,6 @@ Si fueras entrenador del Barcelona y tuvieras que decidir la alineación para el
 **Tu misión esta semana**: Aprender a hacer tus primeras predicciones deportivas usando Python.
 
 ¿Estás listo para descubrir cómo predecir el futuro del fútbol?
-
 
 # SESIÓN 1: ¿Qué significa "predecir" usando datos? (50 minutos)
 
@@ -75,8 +82,9 @@ Si fueras entrenador del Barcelona y tuvieras que decidir la alineación para el
 Imagina que vas a ver el partido Barcelona vs Real Madrid. Tu amigo te dice: "Seguro gana el Barcelona". ¿En qué se basa para decir eso?
 
 **Posibles respuestas:**
+
 - "Porque siempre gana el Barcelona"
-- "Porque tiene mejores jugadores" 
+- "Porque tiene mejores jugadores"
 - "Porque juega en casa"
 - "Porque ganó los últimos 3 partidos"
 
@@ -116,15 +124,18 @@ print("Pregunta: ¿Por qué crees que necesitamos bibliotecas especiales para pr
 **Analogía del entrenador**: Un entrenador experimentado predice resultados siguiendo estos pasos:
 
 ### Paso 1: Mirar el pasado (Datos históricos)
+
 - "En los últimos 10 partidos en casa, ganamos 8"
 - "Contra equipos similares, marcamos 2 goles en promedio"
 - "Cuando llueve, nuestro rendimiento baja 20%"
 
 ### Paso 2: Buscar patrones (Entrenamiento)
+
 - "Cuando jugamos en casa + tenemos a nuestro goleador = 90% de probabilidad de ganar"
 - "Si el rival ha perdido sus últimos 2 partidos = más fácil ganar"
 
 ### Paso 3: Aplicar al futuro (Predicción)
+
 - "Mañana jugamos en casa + tenemos al goleador + el rival perdió ayer"
 - "Conclusión: Alta probabilidad de ganar"
 
@@ -196,12 +207,14 @@ print("\nPregunta reflexiva: ¿Por qué crees que los equipos ganan más en casa
 
 ## Síntesis de la Sesión 1: ¿Qué hemos descubierto?
 
-### Lo que aprendimos:
+### Lo que aprendimos
+
 1. **Predecir** = Usar datos del pasado para saber qué puede pasar en el futuro
 2. **Diferencia clave**: Una predicción usa datos reales, una opinión solo usa intuición
 3. **Patrón descubierto**: Los equipos locales tienen ventaja (dato real que podemos usar)
 
-### Preguntas para reflexionar:
+### Preguntas para reflexionar
+
 - ¿Cómo usarías este conocimiento si fueras entrenador?
 - ¿Qué otros factores crees que influyen en el resultado de un partido?
 
@@ -215,24 +228,25 @@ print("\nPregunta reflexiva: ¿Por qué crees que los equipos ganan más en casa
 
 **Reflexiona**: Cuando entrenas a un jugador de fútbol, le muestras jugadas exitosas una y otra vez hasta que las aprende. ¿Crees que podemos hacer algo similar con una computadora?
 
-
 ## ¿Qué es un "modelo" de predicción?
 
 **Analogía simple**: Un modelo es como un entrenador virtual que:
 
 ### 1. Aprende de la experiencia (Entrenamiento)
+
 - Le mostramos muchos partidos del pasado
 - Le decimos quién ganó en cada caso
 - Busca patrones: "Ah, cuando juegan en casa, ganan más"
 
 ### 2. Hace predicciones nuevas
+
 - Le damos información de un partido futuro
 - Usa lo que aprendió para predecir quién ganará
 - Nos da su respuesta con un nivel de confianza
 
 **Pregunta clave**: ¿Es como tener un asistente técnico súper inteligente que nunca olvida nada?
 
-### Tipos de predicciones simples en fútbol:
+### Tipos de predicciones simples en fútbol
 
 **Tipo 1: ¿Quién gana?** (Gana Local / Gana Visitante / Empate)
 **Tipo 2: ¿Cuántos goles?** (0, 1, 2, 3, 4+)
@@ -332,13 +346,15 @@ print("\nPregunta reflexiva: ¿Te parece una predicción razonable? ¿Por qué?"
 
 ## Síntesis de la Sesión 2: ¿Qué hemos logrado?
 
-### Lo que aprendimos:
+### Lo que aprendimos
+
 1. **Modelo** = Un entrenador virtual que aprende patrones de datos pasados
 2. **Entrenamiento** = Mostrarle muchos ejemplos para que aprenda
 3. **Predicción** = Usar lo aprendido para predecir situaciones nuevas
 4. **Patrón descubierto**: Nuestro modelo aprendió la ventaja de jugar en casa
 
-### Conexiones con fútbol real:
+### Conexiones con fútbol real
+
 - Los entrenadores reales hacen esto mentalmente todo el tiempo
 - Los clubes profesionales usan modelos como este (pero más complejos)
 - Nosotros acabamos de crear nuestro primer sistema de predicción deportiva
@@ -353,16 +369,17 @@ print("\nPregunta reflexiva: ¿Te parece una predicción razonable? ¿Por qué?"
 
 **Reflexiona**: Un entrenador que acierta 9 de cada 10 predicciones es mejor que uno que acierta 5 de cada 10. ¿Cómo podemos medir qué tan bueno es nuestro modelo?
 
-
 ## ¿Cómo medimos qué tan bueno es nuestro modelo?
 
 **Analogía del examen**: Es como evaluar a un estudiante:
 
 ### Método 1: Porcentaje de aciertos (Precisión)
+
 - Si hace 10 predicciones y acierta 8 = 80% de precisión
 - Si hace 10 predicciones y acierta 5 = 50% de precisión
 
 ### ¿Qué es una buena precisión en fútbol?
+
 - **90-100%**: ¡Imposible! (El fútbol siempre tiene sorpresas)
 - **70-80%**: Excelente (Mejor que muchos expertos)
 - **60-70%**: Bueno (Mejor que adivinar al azar)
@@ -377,6 +394,7 @@ print("\nPregunta reflexiva: ¿Te parece una predicción razonable? ¿Por qué?"
 **Analogía**: Es como si un maestro enseñara las respuestas del examen y luego aplicara el mismo examen.
 
 **Solución**: Separar datos en dos grupos:
+
 - **Datos de entrenamiento**: Para que el modelo aprenda
 - **Datos de prueba**: Para ver qué tan bien predice datos nuevos
 
@@ -460,19 +478,22 @@ print(f"\nPregunta reflexiva: ¿Te sorprende este resultado? ¿Por qué?")
 
 ## Síntesis Final: ¿Qué hemos logrado esta semana?
 
-### Nuestro viaje completo:
+### Nuestro viaje completo
 
 #### SESIÓN 1: Entendimos qué es predecir
+
 - ✓ Diferencia entre opinión y predicción con datos
 - ✓ Descubrimos la ventaja de jugar en casa
 - ✓ Aprendimos que los datos del pasado nos ayudan a predecir el futuro
 
 #### SESIÓN 2: Creamos nuestro primer modelo
+
 - ✓ Construimos un "entrenador virtual"
 - ✓ Le enseñamos patrones de partidos anteriores
 - ✓ Hicimos nuestras primeras predicciones
 
 #### SESIÓN 3: Evaluamos qué tan bueno es
+
 - ✓ Medimos la precisión de nuestro modelo
 - ✓ Comparamos con métodos alternativos
 - ✓ Entendimos cómo interpretar resultados
@@ -482,12 +503,14 @@ print(f"\nPregunta reflexiva: ¿Te sorprende este resultado? ¿Por qué?")
 **Antes de este curso**: "Creo que va a ganar el Barcelona" (opinión)
 **Después de este curso**: "Basándome en datos históricos, el Barcelona tiene 70% de probabilidad de ganar" (predicción con datos)
 
-### Conexiones con el mundo profesional:
+### Conexiones con el mundo profesional
+
 - Los clubes reales usan modelos similares (pero más complejos)
 - Las casas de apuestas basan sus decisiones en estos análisis
 - Los entrenadores usan esta información para tomar decisiones estratégicas
 
-### Preguntas para reflexionar:
+### Preguntas para reflexionar
+
 1. ¿Cómo usarías este conocimiento si fueras director deportivo?
 2. ¿Qué otros factores agregarías para mejorar las predicciones?
 3. ¿Crees que las máquinas pueden predecir mejor que los humanos?

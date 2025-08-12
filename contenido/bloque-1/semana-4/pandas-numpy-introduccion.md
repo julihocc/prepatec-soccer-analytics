@@ -7,7 +7,7 @@ jupyter:
       format_version: '1.3'
       jupytext_version: 1.17.2
   kernelspec:
-    display_name: .venv
+    display_name: .venv (3.10.12)
     language: python
     name: python3
 ---
@@ -15,48 +15,62 @@ jupyter:
 # Semana 4: ¿Cómo procesan miles de datos los analistas profesionales?
 
 ## SESIÓN 1: ¿Por qué necesitas herramientas más potentes que listas simples? (50 min)
+
 **Pregunta guía**: ¿Cómo calcularías estadísticas de 1000 jugadores en segundos?
 
 ## SESIÓN 2: ¿Cómo organizas datos complejos como nombres, fechas y estadísticas? (50 min)  
+
 **Pregunta guía**: ¿Qué herramienta usarían los clubes para gestionar información completa de plantillas?
 
 ## SESIÓN 3: ¿Cómo integras todo en un sistema de análisis profesional? (50 min)
+
 **Pregunta guía**: ¿Cómo crearías un sistema que analice temporadas completas automáticamente?
 
 ---
 
 ### Pregunta Central de la Semana
+
 **¿Te has preguntado alguna vez cómo los clubes como el Real Madrid analizan datos de cientos de jugadores y miles de partidos para tomar decisiones estratégicas?**
 
 ### Descubrimiento de la Semana
+
 Vas a aprender las dos herramientas fundamentales que usan los científicos de datos profesionales:
+
 - **NumPy**: La calculadora más potente del mundo para números
 - **Pandas**: El organizador más inteligente para cualquier tipo de datos
 
 ### Conexión con tu experiencia
+
 ¿Recuerdas cuando calculabas promedios de goles uno por uno? ¿O cuando organizabas información de jugadores en listas separadas? ¡Eso está a punto de cambiar para siempre!
 
 ---
 
 <!-- #region -->
 # SESIÓN 1: ¿Por qué las listas normales no son suficientes para análisis masivos?
+
 **(50 minutos)**
 
 ## Pregunta Central de la Sesión
+
 **¿Te has preguntado cómo calculan los analistas deportivos estadísticas de temporadas completas en segundos?**
 
 ### Tu situación actual
+
 Hasta ahora has usado listas normales de Python. ¿Recuerdas cómo calculabas el promedio de goles?
+
 ```python
 goles = [2, 1, 3, 0, 2]
 promedio = sum(goles) / len(goles)
 ```
 
 ### Reflexión inicial
+
 ¿Qué pasaría si tuvieras que calcular promedios de 10,000 jugadores con este método? ¿Cuánto tiempo tardarías?
 
 ### Analogía deportiva
+
 **Piensa en esto**: ¿Cuál es la diferencia entre:
+
 - Cronometrar manualmente a cada corredor en una maratón vs.
 - Usar un chip electrónico que registra automáticamente todos los tiempos?
 
@@ -67,11 +81,13 @@ promedio = sum(goles) / len(goles)
 ## Descubriendo NumPy: Tu calculadora profesional
 
 ### ¿Qué hace diferente a NumPy?
+
 - Procesa miles de números simultáneamente
 - Realiza operaciones matemáticas en milisegundos
 - Es la base de todas las herramientas de ciencia de datos
 
 ### Primera pregunta práctica
+
 ¿Cómo crees que se vería la diferencia en velocidad entre listas normales y NumPy?
 <!-- #endregion -->
 
@@ -112,6 +128,7 @@ print(f"Promedio con NumPy: {promedio_array}")
 ## ¿Cómo se procesan miles de datos simultáneamente?
 
 ### Pregunta desafiante
+
 ¿Cómo calcularías el promedio de goles por partido para 20 jugadores que han jugado diferente número de partidos?
 
 **Con listas tradicionales**: Necesitarías un bucle que procese cada jugador individualmente.
@@ -119,6 +136,7 @@ print(f"Promedio con NumPy: {promedio_array}")
 **Con NumPy**: ¿Qué crees que pasaría si pudieras hacer todas las divisiones de una sola vez?
 
 ### Tu momento de descubrimiento
+
 Vas a ver algo que parece imposible: matemáticas simultáneas en múltiples números.
 
 ```python
@@ -161,14 +179,17 @@ print("Puntos fantasía calculados:", np.round(puntos_fantasia, 1))
 ## ¿Cómo organizas datos de múltiples jornadas simultáneamente?
 
 ### Pregunta de escalamiento
+
 ¿Qué harías si necesitas analizar goles de 10 jugadores durante 5 jornadas diferentes?
 
 **Con listas**: Tendrías que crear listas dentro de listas, muy complicado de manejar.
 
 ### Tu nuevo descubrimiento: Arrays 2D
+
 ¿Has visto alguna vez una tabla de Excel? NumPy puede crear "tablas" de números que se manejan como un solo objeto.
 
 ### Reflexión
+
 ¿Para qué situaciones deportivas sería útil organizar datos en forma de tabla?
 
 ```python
@@ -222,6 +243,7 @@ print("Promedio goles/jornada por jugador:", np.round(promedio_por_jugador, 2))
 **Tu desafío**: Crea un análisis NumPy de las asistencias de 4 jugadores durante 3 jornadas.
 
 **Datos sugeridos** (o usa datos reales de tu equipo favorito):
+
 ```
 Jugador 1: [3, 1, 2] asistencias
 Jugador 2: [0, 2, 1] asistencias  
@@ -230,6 +252,7 @@ Jugador 4: [2, 2, 0] asistencias
 ```
 
 **Tareas**:
+
 1. Crear la matriz de asistencias
 2. Calcular total de asistencias por jugador
 3. Encontrar la jornada con más asistencias
@@ -242,13 +265,15 @@ Jugador 4: [2, 2, 0] asistencias
 
 **¿Qué hemos descubierto sobre NumPy?**
 
-### Conceptos Clave:
+### Conceptos Clave
+
 - **Arrays**: Listas súper eficientes para cálculos masivos
 - **Operaciones vectorizadas**: Cálculos simultáneos en todos los elementos
 - **Arrays 2D**: Matrices para organizar datos multidimensionales
 - **Funciones estadísticas**: mean, sum, max, min, std automáticas
 
-### Ventajas sobre Listas Tradicionales:
+### Ventajas sobre Listas Tradicionales
+
 - **Velocidad**: Miles de veces más rápido
 - **Simplicidad**: Una línea hace lo que antes necesitaba bucles
 - **Funcionalidad**: Estadísticas avanzadas integradas
@@ -260,26 +285,32 @@ Jugador 4: [2, 2, 0] asistencias
 
 **Próxima sesión**: Pandas - Hojas de cálculo inteligentes para manejar datasets complejos con nombres, fechas y múltiples tipos de datos.
 
-
 # SESIÓN 2: ¿Cómo gestionas datos mixtos como nombres, fechas y estadísticas?
+
 **(50 minutos)**
 
 ## Pregunta Central de la Sesión
+
 **¿Te has preguntado cómo organizan los clubes información que incluye nombres de jugadores, fechas de partidos, equipos, posiciones Y estadísticas numéricas?**
 
 ### Tu situación actual
+
 NumPy es perfecto para números, pero... ¿qué pasa cuando necesitas manejar:
+
 - Nombres de jugadores (texto)
-- Fechas de partidos 
+- Fechas de partidos
 - Posiciones (categorías)
 - Equipos (texto)
 - Goles y asistencias (números)
 
 ### Reflexión inicial
+
 ¿Cómo organizarías en una sola estructura datos tan diferentes entre sí?
 
 ### Analogía deportiva
+
 **Piensa en esto**: ¿Cuál es la diferencia entre:
+
 - Una calculadora (que solo maneja números) vs.
 - Una hoja de cálculo completa (que maneja texto, fechas, números, fórmulas)?
 
@@ -290,12 +321,14 @@ NumPy es perfecto para números, pero... ¿qué pasa cuando necesitas manejar:
 ## Descubriendo Pandas: Tu organizador inteligente
 
 ### ¿Qué hace especial a Pandas?
+
 - Maneja cualquier tipo de dato: números, texto, fechas
 - Organiza información en tablas inteligentes
 - Permite filtros y búsquedas complejas
 - Es la herramienta estándar para análisis de datos
 
 ### Primera pregunta práctica
+
 ¿Cómo crees que se vería una "tabla inteligente" con información completa de jugadores?
 
 ```python
@@ -337,12 +370,15 @@ print(df_madrid.dtypes)
 ## ¿Cómo exploras rápidamente miles de datos deportivos?
 
 ### Pregunta práctica
+
 Si un director técnico recibe una base de datos con información de 500 jugadores, ¿cuáles serían las primeras preguntas que se haría?
 
 ### Tu situación como analista
+
 Pandas tiene métodos integrados que responden automáticamente las preguntas más comunes sobre cualquier conjunto de datos.
 
 ### Reflexión
+
 ¿Qué tipo de información básica te gustaría conocer antes de analizar datos deportivos en profundidad?
 
 ```python
@@ -444,20 +480,23 @@ print(por_posicion)
 
 **¿Qué hemos aprendido sobre Pandas?**
 
-### Conceptos Clave:
+### Conceptos Clave
+
 - **DataFrames**: Tablas inteligentes con múltiples tipos de datos
 - **Exploración**: head(), describe(), info() para análisis rápido
 - **Manipulación**: Crear columnas calculadas, ordenar datos
 - **Filtrado**: Condiciones simples y complejas para encontrar datos específicos
 - **Agrupación**: Análisis por categorías (nacionalidad, posición)
 
-### Ventajas sobre NumPy:
+### Ventajas sobre NumPy
+
 - **Versatilidad**: Maneja texto, números, fechas simultáneamente
 - **Etiquetas**: Columnas y filas con nombres descriptivos
 - **Filtros intuitivos**: Búsquedas complejas con sintaxis simple
 - **Agrupaciones**: Análisis automático por categorías
 
-### Operaciones Fundamentales Aprendidas:
+### Operaciones Fundamentales Aprendidas
+
 - Crear DataFrames desde diccionarios
 - Acceder a columnas específicas
 - Calcular nuevas columnas
@@ -470,29 +509,36 @@ print(por_posicion)
 
 **Próxima sesión**: Proyecto integrador - Combinaremos NumPy y Pandas para crear un sistema completo de análisis de temporada futbolística.
 
-
 # SESIÓN 3: ¿Cómo integras NumPy y Pandas en un sistema profesional?
+
 **(50 minutos)**
 
 ## Pregunta Central de la Sesión
+
 **¿Te has preguntado cómo combinan los analistas de clubes profesionales todas las herramientas que conoces para crear sistemas completos de análisis?**
 
 ### Tu evolución como analista
+
 En estas 3 sesiones has aprendido:
+
 - **NumPy**: Cálculos masivos instantáneos
 - **Pandas**: Organización inteligente de datos complejos
 
 ### El desafío final
+
 ¿Cómo crearías un sistema que analice una temporada completa como lo hacen equipos como el Real Madrid o Barcelona?
 
 ### Tu misión profesional
+
 Vas a combinar todo tu conocimiento para construir un sistema que:
+
 - Procese datos de temporadas completas
 - Genere tablas de posiciones automáticamente
 - Calcule estadísticas avanzadas
 - Produzca reportes ejecutivos
 
 ### Reflexión inicial
+
 ¿Qué información necesitaría un director técnico para evaluar el rendimiento de toda una temporada?
 
 ---
@@ -500,6 +546,7 @@ Vas a combinar todo tu conocimiento para construir un sistema que:
 ## Construyendo tu primer sistema de análisis profesional
 
 ### Pregunta estratégica
+
 Si tuvieras acceso a todos los datos de La Liga, ¿qué análisis harías primero?
 
 ```python
@@ -811,17 +858,20 @@ print("\n" + "="*60)
 **Tu desafío**: Modifica el sistema para analizar aspectos específicos que te interesen.
 
 **Opciones de personalización**:
+
 1. **Análisis de rivalidades**: Filtra partidos entre equipos específicos
 2. **Rendimiento por mes**: Agrupa datos por período temporal
 3. **Análisis de localía**: Compara rendimiento local vs visitante por equipo
 4. **Estadísticas extremas**: Encuentra patrones en resultados inusuales
 
 **Preguntas para explorar**:
+
 - ¿Qué equipo tiene mejor rendimiento como visitante?
 - ¿En qué jornadas se anotan más goles?
 - ¿Cuál es la diferencia de goles promedio en clásicos vs otros partidos?
 
 **Código base para empezar**:
+
 ```python
 # Ejemplo: Análisis de rendimiento visitante
 rendimiento_visitante = df_temporada.groupby('equipo_visitante').agg({
@@ -839,34 +889,41 @@ rendimiento_visitante = df_temporada.groupby('equipo_visitante').agg({
 **¿Qué sistema profesional hemos construido en estas 3 sesiones?**
 
 ### Sesión 1: NumPy - Poder Computacional
+
 - Arrays para cálculos masivos instantáneos
 - Operaciones vectorizadas con miles de datos
 - Matrices multidimensionales para análisis complejos
 - Estadísticas avanzadas integradas
 
 ### Sesión 2: Pandas - Manejo de Datos
+
 - DataFrames para datasets complejos
 - Filtrado y agrupación inteligente
 - Manipulación de datos estructurados
 - Análisis exploratorio profesional
 
 ### Sesión 3: Sistema Integrado
+
 - Generación de datasets realistas
 - Análisis estadístico completo
 - Tabla de posiciones automática
 - Predicciones basadas en datos
 - Reportes ejecutivos profesionales
 
-### Logros Alcanzados:
+### Logros Alcanzados
+
 **Has creado un sistema que puede**:
+
 - Procesar temporadas completas instantáneamente
 - Generar tablas de posiciones automáticamente
 - Calcular estadísticas avanzadas con precisión científica
 - Hacer proyecciones y predicciones básicas
 - Producir reportes de calidad profesional
 
-### Transformación de Capacidades:
+### Transformación de Capacidades
+
 **De herramientas básicas a sistema profesional**:
+
 - **Antes**: Listas y cálculos manuales uno por uno
 - **Ahora**: Análisis masivo de miles de datos simultáneamente
 - **Antes**: Operaciones repetitivas y propensas a errores
@@ -874,7 +931,8 @@ rendimiento_visitante = df_temporada.groupby('equipo_visitante').agg({
 - **Antes**: Datos simples sin estructura
 - **Ahora**: Datasets complejos con múltiples dimensiones
 
-### Habilidades Profesionales Desarrolladas:
+### Habilidades Profesionales Desarrolladas
+
 - **Análisis de datos masivos**: Como analistas de clubes profesionales
 - **Visualización estadística**: Comprensión de patrones y tendencias
 - **Pensamiento científico**: Correlaciones y predicciones basadas en datos
@@ -1153,23 +1211,29 @@ print("¿Para analizar qué aspectos del fútbol usarías Pandas?")
 **¿Qué has descubierto sobre el análisis profesional de datos?**
 
 ### Tu transformación como analista
+
 **Sesión 1**: Descubriste el poder de NumPy para cálculos masivos
+
 - Comprendiste por qué los arrays son superiores a las listas
 - Experimentaste operaciones simultáneas en miles de datos
 - Organizaste información multidimensional automáticamente
 
 **Sesión 2**: Dominaste Pandas para datos complejos
+
 - Aprendiste a manejar información mixta (texto, números, fechas)
 - Desarrollaste habilidades de filtrado y búsqueda avanzada
 - Creaste análisis exploratorios profesionales
 
 **Sesión 3**: Construiste un sistema integrado
+
 - Combinaste NumPy y Pandas de forma profesional
 - Generaste análisis automáticos de temporadas completas
 - Produjiste reportes de calidad ejecutiva
 
 ### Tu nueva capacidad profesional
+
 **Has evolucionado de programador básico a analista de datos**:
+
 - **Antes**: Calculabas promedios uno por uno
 - **Ahora**: Procesas temporadas completas instantáneamente
 - **Antes**: Manejabas datos simples en listas
@@ -1178,9 +1242,11 @@ print("¿Para analizar qué aspectos del fútbol usarías Pandas?")
 - **Ahora**: Automatizas análisis de nivel profesional
 
 ### Reflexión final
+
 ¿Cómo aplicarías estos conocimientos para analizar tu equipo favorito o crear tu propio sistema de scouting?
 
 ### Conexión con la próxima semana
+
 **Pregunta anticipatoria**: ¿Cómo crees que podrías convertir todos estos números y análisis en gráficos y visualizaciones que sean fáciles de entender?
 
 **Próxima semana**: Visualización básica - Aprenderás a crear gráficos profesionales que conviertan tus análisis en insights visuales impactantes.

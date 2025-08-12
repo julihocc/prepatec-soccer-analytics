@@ -15,17 +15,20 @@ jupyter:
 # Semana 13: ¿Cómo sabemos si nuestras predicciones son realmente buenas?
 
 ## SESIÓN 1: ¿Qué significa que un análisis sea "confiable"? (50 min)
+
 **Pregunta guía**: ¿Cómo evaluamos la calidad de las decisiones de nuestros "entrenadores digitales"?
 
 ### ¿Has notado cómo evalúan a los entrenadores de fútbol?
 
 Imagínate que eres periodista deportivo y debes evaluar a dos entrenadores del Barcelona después de 10 partidos:
 
-**Entrenador A**: 
+**Entrenador A**:
+
 - Ganó 8 partidos, perdió 2
 - Sus predicciones de alineación fueron correctas en 8/10 casos
 
 **Entrenador B**:
+
 - Ganó 7 partidos, perdió 3  
 - Sus predicciones de alineación fueron correctas en 7/10 casos
 
@@ -34,23 +37,25 @@ Imagínate que eres periodista deportivo y debes evaluar a dos entrenadores del 
 ### Más allá de solo contar aciertos
 
 Cuando evaluamos predicciones deportivas, necesitamos considerar:
+
 - ¿Qué tipo de errores cometió?
 - ¿Los errores fueron en decisiones importantes o menores?
 - ¿Qué tan seguro estaba de sus predicciones?
 
 Hoy aprenderemos a medir estas cosas de manera precisa.
 
-
 ### Tipos de errores en las predicciones deportivas
 
 Imagínate que tu "entrenador digital" debe predecir si un jugador será titular o suplente. Puede cometer dos tipos de errores:
 
 **Error Tipo 1: "Falsa Alarma"**
+
 - Predice: "Messi será suplente"
 - Realidad: "Messi fue titular"
 - ¿Qué tan grave es este error?
 
 **Error Tipo 2: "Se le pasó"**
+
 - Predice: "Ansu Fati será titular"  
 - Realidad: "Ansu Fati fue suplente"
 - ¿Este error es igual de grave que el anterior?
@@ -60,11 +65,11 @@ Imagínate que tu "entrenador digital" debe predecir si un jugador será titular
 ### La matriz de confusión: nuestro tablero de análisis
 
 Para entender mejor los errores, los organizamos en una tabla especial que nos muestra:
+
 - ¿Cuántas veces acertamos completamente?
 - ¿Cuántas veces nos equivocamos y de qué manera?
 
 Es como tener un reporte detallado del rendimiento de nuestro entrenador.
-
 
 ### Práctica inmediata: Evaluando las decisiones del Barcelona
 
@@ -73,6 +78,7 @@ Vamos a analizar las predicciones de nuestro "entrenador digital" sobre quién d
 **Situación**: Nuestro modelo analizó 15 jugadores y predijo quiénes serían titulares en el próximo partido. Ahora comparamos sus predicciones con lo que realmente pasó.
 
 **Datos que analizaremos:**
+
 - Predicciones del modelo: ¿Quién dijo que sería titular?
 - Realidad del partido: ¿Quién realmente fue titular?
 - Tipos de aciertos y errores cometidos
@@ -118,7 +124,7 @@ Mirando la tabla anterior, vamos a clasificar cada caso:
 
 **Pregunta reflexiva**: ¿Puedes identificar qué jugadores fueron predichos correctamente y cuáles incorrectamente?
 
-### Clasificando los resultados:
+### Clasificando los resultados
 
 1. **Acierto Total**: Predijo titular y fue titular (o predijo suplente y fue suplente)
 2. **Error Tipo 1**: Predijo suplente pero fue titular
@@ -127,6 +133,7 @@ Mirando la tabla anterior, vamos a clasificar cada caso:
 ### Creando nuestra matriz de confusión
 
 La matriz de confusión es como un marcador detallado que nos dice:
+
 - ¿Cuántos casos predijimos correctamente?
 - ¿Qué tipos de errores cometimos?
 - ¿Hay un patrón en nuestros errores?
@@ -157,17 +164,20 @@ print(f"\n🎯 Precisión total del modelo: {precision_total*100:.1f}%")
 ```
 
 ## SESIÓN 2: ¿Cómo medimos aspectos específicos del rendimiento? (50 min)
+
 **Pregunta guía**: ¿Qué otras medidas nos ayudan a evaluar qué tan bueno es nuestro modelo?
 
 ### Analogía deportiva: Evaluando a un delantero
 
 Imagínate que evalúas a dos delanteros del Barcelona después de 10 partidos:
 
-**Delantero A**: 
+**Delantero A**:
+
 - Intentó 20 disparos, marcó 8 goles
 - ¿Qué tan "efectivo" es? 8/20 = 40%
 
 **Delantero B**:
+
 - Intentó 10 disparos, marcó 6 goles  
 - ¿Qué tan "efectivo" es? 6/10 = 60%
 
@@ -176,6 +186,7 @@ Imagínate que evalúas a dos delanteros del Barcelona después de 10 partidos:
 ### Aplicando esto a nuestros modelos
 
 De la misma manera, podemos medir:
+
 - **Efectividad con titulares**: De los que dijimos que serían titulares, ¿cuántos realmente lo fueron?
 - **Capacidad de detección**: De los titulares reales, ¿a cuántos logramos identificar?
 
@@ -213,14 +224,16 @@ print(f"\n🎯 Precisión general: {precision_total*100:.1f}%")
 
 **Pregunta reflexiva**: Mirando los resultados anteriores, ¿qué fortalezas y debilidades tiene nuestro modelo?
 
-### Interpretando nuestras métricas:
+### Interpretando nuestras métricas
 
 **Efectividad con titulares (Precision)**
+
 - **Alta efectividad**: Cuando dice "titular", casi siempre acierta
 - **Baja efectividad**: Predice muchos titulares que terminan siendo suplentes
 - **En nuestro caso**: ¿Qué tan confiables son las predicciones de "titular"?
 
 **Capacidad de detección (Recall)**
+
 - **Alta capacidad**: Identifica a la mayoría de los titulares reales
 - **Baja capacidad**: Se le "escapan" muchos titulares verdaderos
 - **En nuestro caso**: ¿Cuántos titulares reales logra detectar?
@@ -228,6 +241,7 @@ print(f"\n🎯 Precisión general: {precision_total*100:.1f}%")
 ### ¿Cuál es más importante?
 
 Depende del contexto:
+
 - **Para un DT**: Prefiere alta capacidad de detección (no perderse ningún buen jugador)
 - **Para un analista**: Prefiere alta efectividad (sus recomendaciones deben ser precisas)
 
@@ -264,6 +278,7 @@ print("- Los números en las esquinas opuestas son nuestros errores")
 ```
 
 ## SESIÓN 3: ¿Cómo usamos esta información para mejorar? (50 min)
+
 **Pregunta guía**: ¿Qué podemos hacer con estos resultados para tomar mejores decisiones?
 
 ### Diagnóstico del rendimiento de nuestro modelo
@@ -271,10 +286,12 @@ print("- Los números en las esquinas opuestas son nuestros errores")
 Basándonos en nuestro análisis, podemos diagnosticar:
 
 **¿Nuestro modelo es demasiado "conservador"?**
+
 - Si predice pocos titulares pero casi siempre acierta
 - Alta efectividad, baja capacidad de detección
 
 **¿Nuestro modelo es demasiado "arriesgado"?**  
+
 - Si predice muchos titulares pero se equivoca frecuentemente
 - Baja efectividad, alta capacidad de detección
 
@@ -283,6 +300,7 @@ Basándonos en nuestro análisis, podemos diagnosticar:
 ### Comparando con diferentes estrategias
 
 Vamos a comparar nuestro modelo con dos estrategias extremas:
+
 1. **Estrategia conservadora**: Solo predecir titulares cuando estés muy seguro
 2. **Estrategia arriesgada**: Predecir titular para la mayoría de jugadores
 
@@ -331,7 +349,7 @@ metricas_arriesgada = calcular_metricas(estrategia_arriesgada, realidad_partido,
 
 **Pregunta final de reflexión**: ¿Por qué es importante medir más que solo el porcentaje de aciertos?
 
-### Lo que aprendimos hoy:
+### Lo que aprendimos hoy
 
 1. **Los errores no son todos iguales**
    - Equivocarse con un titular es diferente a equivocarse con un suplente
@@ -349,6 +367,7 @@ metricas_arriesgada = calcular_metricas(estrategia_arriesgada, realidad_partido,
 ### Aplicación práctica
 
 **En el fútbol real, esto nos ayuda a:**
+
 - Evaluar sistemas de análisis de jugadores
 - Comparar diferentes métodos de predicción
 - Tomar decisiones más informadas sobre fichajes

@@ -5,65 +5,37 @@ paginate: true
 class: lead
 ---
 
-# Semana 1: Primer paso en el análisis de datos de fútbol
 
-**Curso de Ciencia de Datos aplicada al Fútbol (Preparatoria)**
 
----
+# Semana 1: ¿Cómo empieza el análisis de datos en el fútbol?
 
-# ¿Por qué analizar fútbol con datos?
-
-- ¿Qué decisiones futbolísticas te gustaría respaldar con datos?
-- ¿Dónde ves hoy que se usan números en el fútbol?
-- ¿Qué te gustaría poder responder con datos al terminar el curso?
+**Programación Básica 1 – Prepa Tec**
 
 ---
 
-# Ruta del curso
-
-1. **Describir datos** (Bloque 1)
-2. **Analizar y visualizar** (Bloque 2)
-3. **Predecir resultados** (Bloque 3)
+# SESIÓN 1: ¿Cómo le explico a la computadora lo que sé de fútbol? (50 min)
 
 ---
 
-# Semana 1: Objetivo central
+## Pregunta guía
 
-Aprender a guardar y manipular datos simples (nombres, edades, goles) para que la computadora pueda "razonar" sobre ellos.
-
----
-
-# Preguntas guía de la semana
-
-1. ¿Cómo le digo a la computadora que un jugador se llama X y tiene Y goles?
-2. ¿Qué diferencia hay entre un número, un texto y un dato Verdadero/Falso?
-3. ¿Cómo realizar operaciones simples (sumar goles, calcular promedios)?
-4. ¿Por qué organizar bien la información desde el inicio facilita el análisis?
+¿Cómo le dirías a una computadora quién es tu jugador favorito y cuántos goles lleva?
 
 ---
 
-# SESIÓN 1: ¿Qué es realmente programar?
+## Teoría: ¿Qué es una variable en fútbol?
 
-- ¿En qué se parecen un entrenador y un programador?
-- Ambos dan instrucciones paso a paso para lograr un objetivo.
-
----
-
-# ¿Por qué Python?
-
-- Es el idioma favorito de los analistas deportivos.
-- Sencillo, claro y poderoso para datos.
+Imagina que eres el director deportivo y necesitas registrar información básica de tus jugadores: nombre, edad, goles, altura, ¿está activo?
 
 ---
 
-# ¿Cómo "recordamos" información sobre jugadores?
+## Pregunta reflexiva
 
-- Ejemplo: Messi tiene 37 años, juega en Inter Miami, 10 goles.
-- ¿Cómo organizarías esa información para que la computadora la entienda?
+¿Por qué no basta con solo recordar los datos en tu cabeza?
 
 ---
 
-# Primer código en Python
+## Práctica: Primer código en Python
 
 ```python
 jugador = "Lionel Messi"
@@ -76,7 +48,7 @@ print(f"Nombre: {jugador}, Edad: {edad}, Goles: {goles}, Altura: {altura}, ¿Act
 
 ---
 
-# Tipos de datos en fútbol
+## Tipos de datos en fútbol
 
 - **Texto**: nombres, equipos ("Barcelona")
 - **Números enteros**: goles, edad (10, 37)
@@ -85,11 +57,11 @@ print(f"Nombre: {jugador}, Edad: {edad}, Goles: {goles}, Altura: {altura}, ¿Act
 
 ---
 
-# Operaciones básicas
+## Práctica: Operaciones básicas
 
-- Sumar goles
-- Calcular promedios
-- Convertir unidades (metros a centímetros)
+¿Cómo sumarías los goles que le faltan a Messi para llegar a 15?
+
+---
 
 ```python
 goles_objetivo = 15
@@ -99,33 +71,52 @@ altura_cm = altura * 100
 
 ---
 
-# Reflexión
+## Síntesis de la sesión 1
 
 - ¿Por qué es importante distinguir entre tipos de datos?
 - ¿Qué errores podrías cometer si mezclas texto y números?
+- ¿Cómo ayuda la computadora a organizar la información del equipo?
 
 ---
 
-# SESIÓN 2: ¿Cómo calculamos como un entrenador?
-
-- Los entrenadores comparan estadísticas para tomar decisiones.
-- ¿Podemos enseñar a la computadora a comparar y decidir?
+# SESIÓN 2: ¿Cómo toma decisiones un entrenador usando datos? (50 min)
 
 ---
 
-# Comparaciones en Python
+## Pregunta guía
+
+¿Cómo decide un DT si un jugador debe ser titular o suplente?
+
+---
+
+## Teoría: Comparaciones y decisiones automáticas
+
+Los entrenadores comparan estadísticas para tomar decisiones. ¿Podemos enseñar a la computadora a comparar y decidir?
+
+---
+
+## Pregunta reflexiva
+
+¿Qué datos compararías para decidir si un jugador es veterano o está en forma?
+
+---
+
+## Práctica: Comparaciones en Python
 
 ```python
 es_veterano = edad > 30
 en_forma = goles > 8
+partidos_jugados = 25
 es_titular = partidos_jugados > 20
 ```
 
-- ¿Qué significa que el resultado sea True o False?
-
 ---
 
-# Decisiones automáticas: if/elif/else
+## Práctica: Decisiones automáticas con if/elif/else
+
+¿Cómo automatizarías la decisión de si un jugador es apto para alto rendimiento?
+
+---
 
 ```python
 if edad < 35:
@@ -134,25 +125,45 @@ else:
     print("Jugador veterano - requiere evaluación especial")
 ```
 
+---
+
+## Práctica: Asistente técnico automático
+
+¿Cómo decidirías si un jugador debe ser convocado según edad, goles y altura?
+
+---
+
+## Síntesis de la sesión 2
+
+- ¿Qué significa que el resultado de una comparación sea True o False?
 - ¿Cómo ayuda la indentación a Python?
+- ¿Cómo automatizamos decisiones simples como un entrenador?
 
 ---
 
-# Ejemplo: Asistente técnico automático
-
-- ¿Debería este jugador ser convocado?
-- Evaluar edad, goles, altura.
+# SESIÓN 3: ¿Cómo organiza un club profesional la información de su plantilla? (50 min)
 
 ---
 
-# SESIÓN 3: ¿Cómo organizamos datos como un club profesional?
+## Pregunta guía
 
-- ¿Cómo organiza el Barcelona la información de sus 25 jugadores?
-- ¿Prefieres 25 variables separadas o una forma más inteligente?
+¿Cómo gestiona el Barcelona la información de sus 25 jugadores?
 
 ---
 
-# Listas en Python
+## Teoría: Listas y diccionarios en Python
+
+¿Prefieres 25 variables separadas o una forma más inteligente de organizar la plantilla?
+
+---
+
+## Pregunta reflexiva
+
+¿Por qué los índices de las listas empiezan en 0?
+
+---
+
+## Práctica: Listas en Python
 
 ```python
 jugadores_convocados = [
@@ -164,11 +175,9 @@ jugadores_convocados = [
 ]
 ```
 
-- ¿Por qué los índices empiezan en 0?
-
 ---
 
-# Diccionarios en Python
+## Práctica: Diccionarios en Python
 
 ```python
 estadisticas_messi = {
@@ -179,18 +188,15 @@ estadisticas_messi = {
 }
 ```
 
-- ¿Cuándo usarías una lista y cuándo un diccionario?
+---
+
+## Práctica: Mini sistema de gestión deportiva
+
+Combina listas, diccionarios y decisiones automáticas para clasificar jugadores según goles y edad.
 
 ---
 
-# Mini sistema de gestión deportiva
-
-- Combina listas, diccionarios y decisiones automáticas.
-- Clasifica jugadores según goles y edad.
-
----
-
-# Ejemplo: Análisis de plantilla
+## Ejemplo: Análisis de plantilla
 
 ```python
 plantilla_completa = [
@@ -206,21 +212,19 @@ for jugador in plantilla_completa:
 
 ---
 
-# Resumen de la semana
+## Síntesis de la sesión 3
 
-- Guardar información con variables
-- Operaciones y comparaciones
-- Decisiones automáticas
-- Listas y diccionarios
-- Primer análisis real de datos de fútbol
+- ¿Qué ventajas tiene organizar la información en listas y diccionarios?
+- ¿Cómo automatizarías el análisis de una plantilla completa?
+- ¿En qué otras áreas podrías usar este pensamiento lógico?
 
 ---
 
-# Reflexión final
+# Preguntas para tu autoevaluación
 
-- ¿Qué fue lo más interesante?
-- ¿Qué aplicación le darías a lo aprendido?
-- ¿En qué otras áreas podrías usar este pensamiento lógico?
+- ¿Qué fue lo más claro y lo más desafiante?
+- ¿Cómo aplicarías estos patrones fuera del fútbol?
+- ¿Qué te gustaría automatizar en tu vida diaria usando lógica similar?
 
 ---
 

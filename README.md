@@ -2,7 +2,7 @@
 
 ## Información del Curso
 
-**Versión:** 4.0.2  
+**Versión:** 4.4.0  
 **Nivel:** Preparatoria/Bachillerato (15-18 años)  
 **Duración:** 15 semanas (3 bloques de 5 semanas cada uno)  
 **Modalidad:** 3 sesiones de 50 minutos por semana  
@@ -77,22 +77,18 @@ Este curso te introduce al fascinante mundo de la ciencia de datos aplicada al f
 
 #### Semana 6: ¿Qué secretos esconden los datos del fútbol?
 
-
 #### Semana 7: ¿Todos los datos del fútbol hablan el mismo idioma?
-
 
 #### Semana 8: ¿Cómo descubren los entrenadores elite las tendencias invisibles?
 
-
 #### Semana 9: ¿Cómo hacer que los números cuenten historias convincentes?
 
-
 #### Semana 10: ¿Cómo transformamos datos en recomendaciones que cambien estrategias?
-
 
 ---
 
 ### Bloque 3: ¿Podemos predecir el futuro del fútbol con datos? (Semanas 11-15)
+
 ... (estructura semanal existente más abajo en el documento) ...
 
 #### Semana 13: ¿Cómo saber si podemos confiar en nuestras predicciones?
@@ -201,24 +197,28 @@ print("¡Tu entorno de análisis deportivo está listo!")
 ### Características Pedagógicas Únicas
 
 #### **Metodología Socrática Integral**
+
 - **Preguntas motivadoras** que despiertan curiosidad antes de cada concepto
 - **Reflexiones continuas** durante el proceso de aprendizaje
 - **Descubrimiento guiado** en lugar de instrucción directa
 - **Conexiones conceptuales** entre diferentes temas
 
 #### **Enfoque de Preparatoria Profesional**
+
 - **Vocabulario accesible** pero técnicamente correcto
 - **Analogías deportivas familiares** para conceptos complejos
 - **Progresión gradual** desde fundamentos hasta aplicaciones avanzadas
 - **Sin emojis** manteniendo seriedad profesional
 
 #### **Restricciones Temporales Realistas**
+
 - **Sesiones de 50 minutos exactos** (15 min teoría + 25 min práctica + 10 min reflexión)
 - **Contenido validado** ejecutándose completamente en tiempo real
 - **Margen de seguridad** para preguntas y discusión
 - **Ritmo apropiado** para estudiantes de 15-18 años
 
 #### **Datos y Ejemplos Auténticos**
+
 - **Equipos reconocibles** (Barcelona, Real Madrid, Manchester City)
 - **Situaciones deportivas reales** que conectan con experiencias previas
 - **Herramientas profesionales** (scikit-learn, pandas, seaborn)
@@ -434,10 +434,12 @@ pip install -r requirements.txt
 ### 2.3 Quiz / Canvas ML Básico (15%)
 
 #### Propósito
+
 - Verificar comprensión conceptual básica de machine learning antes del desarrollo del caso final.
 - Mantener carga cognitiva acotada: vocabulario simplificado y analogías deportivas.
 
 #### Alcance de Contenidos
+
 - Concepto de modelo (entrenador) y entrenamiento (práctica).
 - Diferencia predicción vs. resultado real.
 - Regresión lineal y logística (idea cualitativa, sin matemáticas avanzadas).

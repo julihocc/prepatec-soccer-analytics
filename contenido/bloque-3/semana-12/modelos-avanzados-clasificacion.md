@@ -15,6 +15,7 @@ jupyter:
 # Semana 12: ¿Podemos combinar diferentes estrategias de predicción?
 
 ## SESIÓN 1: ¿Por qué los mejores equipos usan varios especialistas? (50 min)
+
 **Pregunta guía**: ¿Cómo pueden diferentes perspectivas mejorar nuestras predicciones deportivas?
 
 ### ¿Has notado cómo trabajan los cuerpos técnicos profesionales?
@@ -22,6 +23,7 @@ jupyter:
 Imagínate que eres el director técnico del Real Madrid. Para decidir si un jugador debe jugar el próximo partido, ¿consultarías solo a una persona?
 
 **Piensa en esto:**
+
 - ¿Solo preguntarías al entrenador principal?
 - ¿O también al preparador físico, al médico, y al analista de datos?
 
@@ -35,12 +37,12 @@ En el mundo del análisis deportivo, podemos usar varios "especialistas digitale
 
 ¿Qué crees que pasaría si combinamos sus "opiniones"?
 
-
 ### Analogía deportiva: El consejo de entrenadores
 
 **Situación**: El Barcelona debe decidir si Pedri debería jugar el próximo partido importante.
 
 **Consultan a tres especialistas:**
+
 1. **Entrenador táctico**: "Sí, es clave para nuestro sistema de juego"
 2. **Preparador físico**: "No, necesita descansar para evitar lesiones"  
 3. **Analista de datos**: "Sí, sus números contra este rival son excelentes"
@@ -57,18 +59,19 @@ Al igual que los especialistas del Barcelona, nuestros modelos pueden tener dife
 
 ¿Crees que usar los tres juntos nos dará mejores resultados?
 
-
 ### Práctica inmediata: Creemos nuestro equipo de especialistas digitales
 
 Vamos a crear datos de jugadores del Barcelona y entrenar tres modelos diferentes para predecir si un jugador debería ser titular.
 
 **Datos que usaremos:**
+
 - Goles marcados en la temporada
 - Minutos jugados  
 - Edad del jugador
 - ¿Es titular habitual? (Sí/No)
 
 **Nuestros tres "entrenadores digitales":**
+
 1. **Especialista en goles** (Regresión Logística)
 2. **Especialista en experiencia** (Regresión Lineal adaptada)
 3. **Especialista integral** (Random Forest)
@@ -109,6 +112,7 @@ print(f"\nTenemos {len(datos_barca)} jugadores en nuestro análisis")
 **Pregunta reflexiva**: Mirando la tabla anterior, ¿puedes identificar qué características comparten los jugadores titulares?
 
 **Analiza estos aspectos:**
+
 - ¿Los titulares tienden a tener más goles?
 - ¿Hay relación entre minutos jugados y ser titular?
 - ¿La edad influye en ser titular?
@@ -116,6 +120,7 @@ print(f"\nTenemos {len(datos_barca)} jugadores en nuestro análisis")
 ### Preparando nuestros datos para los "entrenadores digitales"
 
 Ahora vamos a separar nuestros datos en:
+
 - **Variables predictoras**: Goles, Minutos, Edad (lo que sabemos del jugador)
 - **Variable objetivo**: Es_Titular (lo que queremos predecir)
 
@@ -146,6 +151,7 @@ print(f"Datos para probar: {len(X_prueba)} jugadores")
 ```
 
 ## SESIÓN 2: ¿Cómo entrenan diferentes especialistas? (50 min)
+
 **Pregunta guía**: ¿Por qué cada modelo "aprende" de manera diferente?
 
 ### ¿Recuerdas cómo aprende cada entrenador?
@@ -153,14 +159,17 @@ print(f"Datos para probar: {len(X_prueba)} jugadores")
 Imagínate que tienes tres entrenadores observando los mismos partidos del Barcelona:
 
 **Entrenador 1 - "El Especialista en Goles"**
+
 - Se enfoca principalmente en cuántos goles marca cada jugador
 - Su filosofía: "Los que marcan goles deben ser titulares"
 
 **Entrenador 2 - "El Analista de Experiencia"**  
+
 - Mira la edad y minutos jugados
 - Su filosofía: "La experiencia y resistencia determinan quién juega"
 
 **Entrenador 3 - "El Estratega Integral"**
+
 - Considera múltiples factores simultáneamente
 - Su filosofía: "Todo influye en la decisión final"
 
@@ -197,6 +206,7 @@ Ahora vamos a pedirle a cada uno de nuestros "entrenadores digitales" que haga p
 ### Comparando las predicciones
 
 Vamos a ver qué dice cada entrenador sobre los mismos jugadores:
+
 - **1 = "Debería ser titular"**
 - **0 = "Debería ser suplente"**
 
@@ -227,6 +237,7 @@ print(f"\nLos tres entrenadores están de acuerdo en {sum(acuerdos)} de {len(acu
 ```
 
 ## SESIÓN 3: ¿Cómo combinar las opiniones de los especialistas? (50 min)
+
 **Pregunta guía**: ¿Qué pasa si tomamos una decisión considerando las tres opiniones?
 
 ### La reunión técnica del Barcelona
@@ -236,6 +247,7 @@ Imagínate esta situación en la Ciudad Deportiva del Barcelona:
 **Director Técnico**: "Necesitamos decidir la alineación para el Clásico contra el Real Madrid"
 
 **Los tres especialistas presentan sus recomendaciones:**
+
 - Especialista en Goles: "Ansu Fati debe ser titular"
 - Analista de Experiencia: "Ansu Fati debe ser suplente"  
 - Estratega Integral: "Ansu Fati debe ser titular"
@@ -285,6 +297,7 @@ print("\n¿Qué observas? ¿La decisión combinada es igual a alguno de los mode
 Ahora viene la pregunta importante: ¿Cuál de nuestros entrenadores (incluyendo la decisión combinada) acertó más veces?
 
 Para esto vamos a calcular la **precisión** de cada uno:
+
 - **Precisión = Aciertos / Total de predicciones**
 - Es como calcular el porcentaje de veces que el entrenador eligió correctamente
 
@@ -324,7 +337,7 @@ print(f"   Con una precisión de: {mejor_precision*100:.1f}%")
 
 **Pregunta final de reflexión**: ¿Por qué crees que es útil combinar diferentes modelos en lugar de usar solo uno?
 
-### Lo que aprendimos hoy:
+### Lo que aprendimos hoy
 
 1. **Múltiples perspectivas son valiosas**
    - Como en el fútbol real, diferentes especialistas aportan diferentes puntos de vista
@@ -340,6 +353,6 @@ print(f"   Con una precisión de: {mejor_precision*100:.1f}%")
 
 ### Conexión con el próximo tema
 
-**Pregunta puente**: Si ya sabemos combinar modelos, ¿cómo podríamos saber qué tan confiables son nuestras predicciones? 
+**Pregunta puente**: Si ya sabemos combinar modelos, ¿cómo podríamos saber qué tan confiables son nuestras predicciones?
 
 La próxima semana exploraremos cómo medir y mejorar la calidad de nuestros modelos de predicción.

@@ -15,6 +15,7 @@ jupyter:
 # Semana 5: ¿Cómo convierten los datos en historias visuales los medios deportivos?
 
 ## Enfoque semanal (3 sesiones de 50 min)
+
 - **Sesión 1 (Fundamentos)**: Gráficos básicos (barras, líneas, dispersión) para comunicar comparaciones, evolución y relaciones.
 - **Sesión 2 (Profundización)**: Subgráficos simples (2x2) y personalización básica (colores, títulos, etiquetas legibles).
 - **Sesión 3 (Integración)**: Combinar 2–3 gráficos adecuados para responder una pequeña pregunta analítica de fútbol.
@@ -24,18 +25,20 @@ Cada sesión sigue: Pregunta guía → Micro‑teoría → Ejemplos → Breve re
 ---
 
 ### Pregunta central de la semana
+
 **¿Por qué los comentaristas deportivos usan gráficos en lugar de solo mencionar números durante las transmisiones?**
 
 ### Descubrimiento esperado
+
 - Patrones visibles rápido
 - Tendencias simples
 - Claridad para audiencias no técnicas
 
 ### Conexión personal
+
 Piensa en el último gráfico futbolístico que viste en una transmisión: ¿qué entendiste de inmediato que habría sido más lento leer en una tabla?
 
 ---
-
 
 # SESIÓN 1 (50 min): Fundamentos de visualización
 
@@ -44,15 +47,18 @@ Pregunta guía: ¿Por qué un gráfico comunica más rápido que una lista de n�
 Objetivo: Reconocer cuándo usar barras (comparar), líneas (evolución) y dispersión (relación simple).
 
 Micro‑teoría breve:
+
 - El ojo detecta alturas, pendientes y agrupamientos más rápido que leer cifras.
 - Un gráfico = una pregunta clara. Cualquier elemento que no responde la pregunta estorba.
 
 Conceptos clave:
+
 1. Barras: comparar categorías (goles por equipo).
 2. Línea: ver cambio a lo largo del tiempo (puntos por jornada).
 3. Dispersión: explorar si dos variables se mueven juntas (goles vs puntos).
 
 Secuencia práctica:
+
 - Importar librerías.
 - Gráfico de barras simple.
 - Gráfico de línea de evolución.
@@ -62,13 +68,11 @@ Reflexiona tras cada salida: ¿Qué aprendí más rápido que leyendo números?
 
 ---
 
-
 # Primer contacto práctico
 
 A continuación comenzarás a crear tus primeras visualizaciones básicas paso a paso. Observa cómo un gráfico comunica más rápido que una lista de números y reflexiona después de cada salida.
 
 (El código de importación y configuración está en la primera celda de código para evitar confusiones.)
-
 
 ## Gráficos de Líneas: Mostrando Evolución en el Tiempo
 
@@ -189,6 +193,7 @@ Repaso rápido: barras (comparar), línea (evolución), dispersión (relación).
 Objetivo: Combinar vistas distintas en un panel 2x2 y aplicar ajustes mínimos de legibilidad.
 
 Preguntas mientras observas el panel:
+
 - ¿Cada panel aporta un ángulo distinto?
 - ¿Cuál eliminarías si tuvieras solo 3?
 - ¿Título general que describa todo?
@@ -289,21 +294,25 @@ print("Reflexión: ¿Qué otro cambio simple mejoraría claridad (ordenar, cambi
 Pregunta guía: ¿Cuál combinación mínima responde tu pregunta?
 
 Recordatorio rápido:
+
 - Barras = comparación
 - Línea = evolución
 - Dispersión = relación
 
 Pasos sugeridos:
+
 1. Formula una pregunta concreta (ej: ¿Ha mejorado el equipo A respecto a B?).
 2. Elige el tipo que mejor responde (1 a 3 gráficos máximo).
 3. Verifica que cada gráfico aporte algo distinto.
 
 Preguntas rápidas:
+
 - ¿Mi pregunta inicial sigue clara?
 - ¿Algún gráfico sobra?
 - ¿Puedo explicar cada gráfico en 1 frase?
 
 Síntesis (al final de la sesión): escribe 2 frases:
+
 - Hallazgo principal.
 - Gráfico que más ayudó y por qué.
 

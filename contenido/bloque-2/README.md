@@ -107,18 +107,21 @@ Cada semana sigue la metodología socrática estructurada:
 ### Desarrollo de Pensamiento Analítico
 
 **Habilidades Investigativas:**
+
 - Formulación de preguntas precisas para interrogar datos deportivos
 - Identificación de patrones ocultos mediante exploración sistemática  
 - Desarrollo de hipótesis sobre rendimiento deportivo basadas en evidencia
 - Validación crítica de conclusiones considerando posibles sesgos
 
 **Competencias Técnicas Contextualizadas:**
+
 - Manejo avanzado de pandas para datasets deportivos complejos
 - Aplicación de estadística descriptiva con interpretación futbolística
 - Creación de visualizaciones que comuniquen insights de manera profesional
 - Integración de múltiples tipos de datos para análisis comprehensivos
 
 **Comunicación Estratégica:**
+
 - Traducción de hallazgos técnicos a recomendaciones estratégicas
 - Adaptación del mensaje según la audiencia (entrenadores, directivos, aficionados)
 - Construcción de argumentos sólidos basados en evidencia cuantitativa
@@ -127,6 +130,7 @@ Cada semana sigue la metodología socrática estructurada:
 ## Prerequisitos
 
 **Dominio del Bloque 1 (Fundamental):**
+
 - Programación básica en Python con confianza en sintaxis y estructuras de datos
 - Manejo fluido de pandas para operaciones básicas (filtrado, agrupación, estadísticas simples)
 - Uso competente de Jupyter Notebook para análisis interactivo y documentación
@@ -134,6 +138,7 @@ Cada semana sigue la metodología socrática estructurada:
 - Pensamiento computacional desarrollado para descomponer problemas en pasos lógicos
 
 **Competencias Analíticas Desarrolladas:**
+
 - Curiosidad investigativa para formular preguntas sobre datos deportivos
 - Habilidad para interpretar gráficos simples y extraer conclusiones básicas
 - Comprensión de conceptos matemáticos de preparatoria (promedios, porcentajes, proporciones)
@@ -141,6 +146,7 @@ Cada semana sigue la metodología socrática estructurada:
 - Capacidad de reflexión metacognitiva sobre el propio proceso de aprendizaje
 
 **Preparación Tecnológica:**
+
 - Instalación y configuración exitosa del entorno Python/Anaconda
 - Navegación eficiente en el sistema operativo para gestión de archivos y carpetas  
 - Comprensión básica de la estructura de datasets (filas, columnas, variables)
@@ -149,6 +155,7 @@ Cada semana sigue la metodología socrática estructurada:
 ## Herramientas Principales
 
 ### Librerías Avanzadas para Análisis Deportivo
+
 ```python
 # Stack completo para análisis de datos deportivos profesional
 import pandas as pd
@@ -167,6 +174,7 @@ print("Herramientas equivalentes a las usadas en FC Barcelona y Manchester City"
 ```
 
 ### Datasets Deportivos Integrados
+
 - **FIFA 22 Player Dataset:** Análisis completo de más de 19,000 jugadores profesionales
 - **Champions League Historical Data:** Datos históricos de 20 años de competición europea
 - **Premier League Advanced Stats:** Métricas avanzadas de rendimiento por temporada
@@ -174,6 +182,7 @@ print("Herramientas equivalentes a las usadas en FC Barcelona y Manchester City"
 - **Simulaciones Realistas:** Datasets generados que replican patrones de fútbol real
 
 ### Herramientas de Análisis Profesional
+
 - **Jupyter Lab** (interfaz avanzada para análisis interactivo)
 - **pandas-profiling** (reportes automáticos de calidad de datos)
 - **plotly** (visualizaciones interactivas opcionales para estudiantes avanzados)
@@ -182,11 +191,13 @@ print("Herramientas equivalentes a las usadas en FC Barcelona y Manchester City"
 ## Evaluación con Metodología Socrática
 
 ### Distribución de Calificaciones
+
 - **Participación investigativa:** 35% (formulación de preguntas, hipótesis, reflexiones críticas en clase)
 - **Análisis semanales:** 35% (aplicación de conceptos con justificación metodológica completa)
 - **Proyecto final integrador:** 30% (reporte profesional de análisis deportivo con recomendaciones estratégicas)
 
 ### Criterios de Evaluación Centrados en Razonamiento
+
 - **Pensamiento crítico:** ¿Formula preguntas relevantes y evalúa críticamente las respuestas obtenidas?
 - **Metodología analítica:** ¿Justifica la selección de técnicas y herramientas para cada tipo de análisis?
 - **Interpretación contextual:** ¿Conecta hallazgos técnicos con realidades deportivas específicas?
@@ -197,13 +208,15 @@ print("Herramientas equivalentes a las usadas en FC Barcelona y Manchester City"
 **Pregunta motivadora del proyecto:** ¿Cómo convencerías a un director deportivo de invertir 50 millones de euros en un jugador específico usando solo análisis de datos?
 
 **Componentes requeridos:**
+
 1. **Investigación dirigida por hipótesis:** Formulación y validación de 3 hipótesis específicas sobre rendimiento deportivo
 2. **Análisis multi-dimensional:** Integración de datos numéricos, categóricos y temporales en un análisis cohesivo
 3. **Visualización estratégica:** Creación de dashboards que soporten decisiones ejecutivas específicas
 4. **Interpretación profesional:** Traducción de hallazgos técnicos a recomendaciones accionables
 5. **Validación crítica:** Identificación de limitaciones, sesgos y áreas de investigación futura
 
-**Datasets especializados disponibles:** 
+**Datasets especializados disponibles:**
+
 - Scouting reports de jugadores sub-23 con potencial de crecimiento
 - Análisis de rendimiento de equipos en diferentes competiciones
 - Datos de transferencias y valuación de mercado actualizada
@@ -213,19 +226,22 @@ print("Herramientas equivalentes a las usadas en FC Barcelona y Manchester City"
 
 Una vez completado exitosamente el Bloque 2, los estudiantes estarán preparados para:
 
-### Competencias Desarrolladas que Habilitan el Avance:
+### Competencias Desarrolladas que Habilitan el Avance
+
 - **Pensamiento analítico crítico:** Capacidad de cuestionar datos, identificar sesgos y validar conclusiones
 - **Manejo avanzado de datos:** Competencia en manipulación de datasets complejos y heterogéneos
 - **Comunicación técnica:** Habilidad para traducir análisis complejos a recomendaciones estratégicas claras
 - **Metodología investigativa:** Dominio del proceso completo desde pregunta inicial hasta conclusiones válidas
 
 ### Preparación para Bloque 3: "Predicciones y Machine Learning Deportivo"
+
 - **Modelos predictivos:** Evolución natural del análisis descriptivo hacia predicción de resultados futuros
 - **Algoritmos de clasificación:** Aplicación de técnicas de machine learning para categorizar jugadores y estrategias
 - **Clustering inteligente:** Agrupación automática de jugadores según características de rendimiento
 - **Optimización basada en datos:** Desarrollo de estrategias que maximicen probabilidades de éxito
 
-### Proyectos Avanzados que Podrán Abordar:
+### Proyectos Avanzados que Podrán Abordar
+
 - **Sistemas de recomendación:** Algoritmos para sugerir fichajes óptimos según necesidades específicas
 - **Predicción de lesiones:** Modelos que identifiquen factores de riesgo en patrones de juego
 - **Análisis táctico predictivo:** Anticipación de estrategias rivales basada en patrones históricos
@@ -247,6 +263,6 @@ Una vez completado exitosamente el Bloque 2, los estudiantes estarán preparados
 
 ---
 
-**¡Conviértete en el analista que los equipos profesionales necesitan!** 
+**¡Conviértete en el analista que los equipos profesionales necesitan!**
 
 *Este bloque te transformará de programador principiante a analista deportivo capaz de generar insights que influyan en decisiones estratégicas millonarias. Cada análisis que completes te acercará más a pensar como los profesionales que trabajan en los mejores clubes del mundo.*

@@ -15,6 +15,7 @@ jupyter:
 # Semana 14: ¿Cómo crear mejores estadísticas para nuestros análisis?
 
 ## SESIÓN 1: ¿Qué información necesita un buen scout de fútbol? (50 min)
+
 **Pregunta guía**: ¿Cómo podemos crear nuevas estadísticas que nos ayuden a entender mejor a los jugadores?
 
 ### ¿Has observado cómo trabajan los scouts profesionales?
@@ -22,6 +23,7 @@ jupyter:
 Imagínate que eres un scout del Real Madrid y debes evaluar a un jugador del Barcelona para un posible fichaje.
 
 **¿Qué observarías?**
+
 - ¿Solo los goles que marca?
 - ¿O también cómo se desempeña bajo presión?
 - ¿Su consistencia a lo largo de la temporada?
@@ -39,18 +41,19 @@ A veces necesitamos crear nuevas medidas que no existen directamente en los dato
 
 ¿Se te ocurren otras estadísticas útiles que podríamos crear?
 
-
 ### Práctica inmediata: Mejorando el análisis del Barcelona
 
 Tenemos datos básicos de jugadores del Barcelona, pero queremos crear estadísticas más inteligentes para entender mejor su rendimiento.
 
 **Datos básicos que tenemos:**
+
 - Goles marcados en la temporada
 - Partidos jugados
 - Minutos totales en el campo
 - Edad del jugador
 
 **Estadísticas nuevas que crearemos:**
+
 1. **Promedio de goles por partido**
 2. **Minutos promedio por partido**  
 3. **Eficiencia por minuto** (goles cada 90 minutos)
@@ -118,6 +121,7 @@ print("¿Quién es más eficiente: el que marca más goles totales o el que marc
 ```
 
 ## SESIÓN 2: ¿Cómo identificamos patrones ocultos en los datos? (50 min)
+
 **Pregunta guía**: ¿Qué historias nos cuentan nuestras nuevas estadísticas?
 
 ### Comparando jugadores con diferentes enfoques
@@ -125,11 +129,13 @@ print("¿Quién es más eficiente: el que marca más goles totales o el que marc
 Ahora que tenemos estadísticas más sofisticadas, podemos hacer comparaciones más justas:
 
 **Comparación tradicional:**
+
 - Lewandowski: 23 goles
 - Raphinha: 12 goles  
 - Conclusión: Lewandowski es mejor
 
 **Comparación con nuevas estadísticas:**
+
 - Lewandowski: 0.66 goles por partido
 - Raphinha: 0.35 goles por partido
 - Pero... ¿qué pasa si consideramos minutos jugados?
@@ -217,6 +223,7 @@ print("¿Las nuevas estadísticas revelan patrones que no veíamos antes?")
 ```
 
 ## SESIÓN 3: ¿Cómo mejoran nuestros modelos con mejores estadísticas? (50 min)
+
 **Pregunta guía**: ¿Nuestras nuevas estadísticas hacen que las predicciones sean más precisas?
 
 ### Experimento: Comparando modelos
@@ -224,9 +231,11 @@ print("¿Las nuevas estadísticas revelan patrones que no veíamos antes?")
 Vamos a comparar dos enfoques para predecir si un jugador será titular:
 
 **Modelo Básico:**
+
 - Solo usa: Goles totales, Edad, Minutos totales
 
 **Modelo Mejorado:**  
+
 - Usa nuestras nuevas estadísticas: Goles por partido, Eficiencia por 90min, Regularidad, Categoría de experiencia
 
 **Hipótesis**: El modelo con mejores estadísticas debería ser más preciso.
@@ -280,6 +289,7 @@ print(f"🎯 Objetivo: Predecir si es titular regular (1) o suplente (0)")
 **Nota importante**: Con pocos datos (14 jugadores), nuestro experimento es educativo. En análisis reales necesitaríamos cientos o miles de jugadores.
 
 **¿Qué esperamos descubrir?**
+
 - ¿Las estadísticas más específicas ayudan al modelo a entender mejor?
 - ¿Hay diferencias significativas en la precisión?
 - ¿Qué características son más importantes para determinar titularidad?
@@ -335,7 +345,7 @@ print(comparacion_detallada)
 
 **Pregunta final de reflexión**: ¿Por qué es importante pensar creativamente sobre qué información darle a nuestros modelos?
 
-### Lo que aprendimos hoy:
+### Lo que aprendimos hoy
 
 1. **Las estadísticas derivadas pueden ser más útiles que las básicas**
    - Goles por partido vs. goles totales
@@ -355,6 +365,7 @@ print(comparacion_detallada)
 ### Aplicación práctica en el fútbol real
 
 **Estas técnicas ayudan a:**
+
 - Scouts: Crear métricas más precisas para evaluar jugadores
 - Analistas: Descubrir patrones ocultos en el rendimiento
 - Entrenadores: Tomar decisiones basadas en estadísticas más inteligentes

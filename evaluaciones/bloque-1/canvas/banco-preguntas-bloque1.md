@@ -1,7 +1,9 @@
 # Banco de Preguntas Canvas - Bloque 1
+
 ## Python Fundamentals y Análisis de Datos Básico
 
 **Instrucciones para Canvas:**
+
 - Preguntas de opción múltiple: 4 opciones (A, B, C, D)
 - Preguntas numéricas: respuesta exacta con tolerancia del 5%
 - Selección aleatoria de 20-25 preguntas por examen
@@ -14,24 +16,28 @@
 Para quizzes introductorios (preparatoria) se recomienda usar SOLO el Núcleo de 75 preguntas. El resto (45) sirve como rotación/repaso adicional.
 
 ### Núcleo (75 preguntas)
-Cobertura balanceada: fundamentos, estructuras, funciones, pandas básico, NumPy y visualización inicial, aplicación futbolística. 
-Preguntas núcleo: 
+
+Cobertura balanceada: fundamentos, estructuras, funciones, pandas básico, NumPy y visualización inicial, aplicación futbolística.
+Preguntas núcleo:
 1-60, 63, 64, 65, 66, 67, 69, 70, 73, 74, 76, 78, 80, 88, 97, 100
 
 Total: 60 + 15 = 75.
 
 ### Banco Extendido (45 preguntas)
+
 Preguntas para ampliar dificultad, variar intentos o tareas de práctica:
 61-62, 68, 71-72, 75, 77, 79, 81-87, 89-96, 98-99, 101-120 (excluyendo las ya listadas en Núcleo).
 
 ### Uso sugerido en Moodle
+
 - Crear dos categorías: "Bloque1 Núcleo" y "Bloque1 Extendido".
 - Cargar primero solo Núcleo para evaluaciones formales iniciales.
 - Añadir 5-7 ítems del Extendido de forma aleatoria como preguntas extra (créditos parciales / práctica) si se desea.
 - Mantener proporción ~70% opción múltiple y ~30% numéricas dentro del Núcleo (actual: cercano; ajustar si se migra alguna pregunta).
 
 ### Próximo ajuste (opcional)
-Si se requiere, se pueden mover gradualmente algunas preguntas del Extendido al Núcleo reemplazando duplicadas según desempeño de los estudiantes (análisis de ítems). 
+
+Si se requiere, se pueden mover gradualmente algunas preguntas del Extendido al Núcleo reemplazando duplicadas según desempeño de los estudiantes (análisis de ítems).
 
 ---
 
@@ -80,6 +86,7 @@ D) Cuando goles es menor que 20
 **Respuesta: C**
 
 **7. [A]** ¿Cuál es la salida del siguiente código?
+
 ```python
 edad = 25
 if edad >= 18:
@@ -87,6 +94,7 @@ if edad >= 18:
 else:
     print("Menor de edad")
 ```
+
 A) Mayor de edad
 B) Menor de edad
 C) Error
@@ -94,10 +102,12 @@ D) No imprime nada
 **Respuesta: A**
 
 **8. [R] (Numérica)** ¿Cuántas veces se ejecuta `print("Gol")` en este código?
+
 ```python
 for i in range(3):
     print("Gol")
 ```
+
 **Respuesta: 3**
 
 **9. [R]** En un bucle `for jugador in ['Messi', 'Ronaldo', 'Neymar']:`, ¿cuántas iteraciones habrá?
@@ -108,12 +118,14 @@ D) Infinitas
 **Respuesta: B**
 
 **10. [R]** ¿Qué imprime este código?
+
 ```python
 contador = 0
 while contador < 2:
     print(contador)
     contador += 1
 ```
+
 A) 0, 1
 B) 1, 2
 C) 0, 1, 2
@@ -422,11 +434,13 @@ D) Cualquiera está bien
 **Respuesta: A**
 
 **52. [R] (Numérica)** Si ejecuto este código, ¿cuántos elementos tendrá la lista final?
+
 ```python
 goles = []
 for i in range(4):
     goles.append(i)
 ```
+
 **Respuesta: 4**
 
 ### Pensamiento Computacional
@@ -641,12 +655,14 @@ D) Error
 **Respuesta: A**
 
 **84. [R] (Numérica)** ¿Qué valor imprime este código?
+
 ```python
 contador = 0
 for i in range(1,6,2):
     contador += 1
 print(contador)
 ```
+
 **Respuesta: 3**
 
 **85. [R]** ¿Qué hace `range(2, 10, 2)`?
@@ -657,10 +673,12 @@ D) Genera 2,10
 **Respuesta: A**
 
 **86. [R]** ¿Qué imprime este código?
+
 ```python
 jugadores = ['Messi','Pedri','Gavi','Lewandowski']
 print(jugadores[1:3])
 ```
+
 A) ['Messi','Pedri','Gavi']
 B) ['Pedri','Gavi']
 C) ['Gavi','Lewandowski']
@@ -702,6 +720,7 @@ D) Cambia el valor a 0
 **Respuesta: B**
 
 **93. [A] (Numérica)** ¿Resultado de este bloque?
+
 ```python
 valores = [1,2,3,4]
 acum = 0
@@ -709,6 +728,7 @@ for v in valores:
     acum += v
 print(acum)
 ```
+
 **Respuesta: 10**
 
 **94. [R]** ¿Qué error produce esta línea: `3 + '2'`?
@@ -815,10 +835,12 @@ D) append ordena; extend filtra
 **Respuesta: 4**
 
 **111. [C]** ¿Qué hace este código?
+
 ```python
 def promedio(a,b=2):
     return (a+b)/2
 ```
+
 A) Error por parámetro por defecto
 B) Crea una función con un parámetro opcional
 C) Crea dos funciones
@@ -826,6 +848,7 @@ D) No devuelve nada
 **Respuesta: B**
 
 **112. [A]** ¿Qué imprime?
+
 ```python
 x = 5
 def f():
@@ -833,6 +856,7 @@ def f():
     return x + y
 print(f())
 ```
+
 A) 3
 B) 5
 C) 8
@@ -887,20 +911,22 @@ D) `df.filter(goles > 10 | asistencias > 7)`
 
 ## Instrucciones Técnicas para Canvas
 
-### Configuración de Preguntas:
+### Configuración de Preguntas
+
 - **Opción múltiple**: Preguntas 1-120 (excepto numéricas)
 - **Respuesta numérica**: Preguntas marcadas como (Numérica)
 - **Selección aleatoria**: 25 preguntas por examen (sugerido) para mayor variedad
 - **Categorías para balance (sugerido)**:
-    - Fundamentos Python / Control (25%): 1-15, 49-55, 81-90, 94-95, 106, 108-110, 113-114
-    - Estructuras de datos básicas (15%): 16-23, 86-93, 107-109, 117
-    - Funciones y pensamiento modular (10%): 11-15, 111-112
-    - Pandas / Manipulación (20%): 24-32, 56-59, 72-76, 96-105, 115-116, 119
-    - NumPy y operaciones (10%): 33-36, 79, 98, 102-103
-    - Visualización (10%): 37-40, 60-62, 77-78, 104-105
-    - Integración / Aplicaciones deportivas (10%): 41-48, 63-71, 80, 97, 100, 118, 120
+  - Fundamentos Python / Control (25%): 1-15, 49-55, 81-90, 94-95, 106, 108-110, 113-114
+  - Estructuras de datos básicas (15%): 16-23, 86-93, 107-109, 117
+  - Funciones y pensamiento modular (10%): 11-15, 111-112
+  - Pandas / Manipulación (20%): 24-32, 56-59, 72-76, 96-105, 115-116, 119
+  - NumPy y operaciones (10%): 33-36, 79, 98, 102-103
+  - Visualización (10%): 37-40, 60-62, 77-78, 104-105
+  - Integración / Aplicaciones deportivas (10%): 41-48, 63-71, 80, 97, 100, 118, 120
 
-### Ponderación Sugerida:
+### Ponderación Sugerida
+
 - Cada pregunta: 4 puntos (examen de 25 = 100 puntos)
 - Tiempo: 45-60 minutos
 - Intentos permitidos: 1

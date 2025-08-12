@@ -18,7 +18,8 @@ jupyter:
 
 **Reflexión inicial**: Cuando miras las estadísticas de tu jugador favorito, ves números como goles (3), texto como posición (delantero), y fechas como edad (23 años). ¿Crees que Python "entiende" que estos datos son fundamentalmente diferentes?
 
-### Pregunta motivadora para la semana:
+### Pregunta motivadora para la semana
+
 Si fueras analista del Real Madrid, ¿tratarías igual la información "Manchester City anotó 3 goles" que "el partido fue en enero"?
 
 ---
@@ -26,19 +27,25 @@ Si fueras analista del Real Madrid, ¿tratarías igual la información "Manchest
 ## ESTRUCTURA SEMANAL: 3 Sesiones de Descubrimiento
 
 ### SESIÓN 1: ¿Por qué importan los tipos de datos? (50 min)
+
 **Pregunta guía**: ¿Cómo distinguir entre diferentes "idiomas" de información deportiva?
+
 - ¿Qué diferencia un número de una palabra en análisis deportivo?
 - ¿Por qué Python necesita "entender" el tipo de cada dato?
 - ¿Cómo preparamos datos para análisis específicos?
 
 ### SESIÓN 2: ¿Qué revela cada tipo de dato? (50 min)  
+
 **Pregunta guía**: ¿Cómo cada tipo de información cuenta una historia diferente?
+
 - ¿Qué patrones emergen de datos numéricos vs categóricos?
 - ¿Cómo las fechas y tiempos transforman nuestro análisis?
 - ¿Qué secretos esconden las posiciones geográficas?
 
 ### SESIÓN 3: ¿Cómo combinar diferentes tipos sabiamente? (50 min)
+
 **Pregunta guía**: ¿Cuándo y cómo mezclar diferentes tipos de datos?
+
 - ¿Qué análisis requieren múltiples tipos de información?
 - ¿Cómo evitar errores al combinar datos diversos?
 - ¿Qué nuevos insights emergen de la integración inteligente?
@@ -49,7 +56,8 @@ Si fueras analista del Real Madrid, ¿tratarías igual la información "Manchest
 
 **Pregunta reflexiva**: ¿Has notado que algunos análisis deportivos son más profundos que otros? ¿Será porque usan diferentes tipos de datos de manera más inteligente?
 
-### La evolución del análisis deportivo moderno:
+### La evolución del análisis deportivo moderno
+
 - **¿Sabías que...?** Los scouts modernos manejan más de 15 tipos diferentes de datos por partido
 - **¿Te imaginas que...?** Un solo gol genera datos numéricos, categóricos, temporales y espaciales simultáneamente
 - **¿Has considerado que...?** La precisión de las predicciones depende de entender qué tipo de dato usar en cada situación
@@ -57,7 +65,6 @@ Si fueras analista del Real Madrid, ¿tratarías igual la información "Manchest
 **Tu misión esta semana**: Convertirte en un "traductor" experto entre diferentes idiomas de datos deportivos.
 
 ¿Estás listo para descubrir cómo cada tipo de dato cuenta una historia única del fútbol?
-
 
 # SESIÓN 1: ¿Por qué importan los tipos de datos? (50 minutos)
 
@@ -77,14 +84,13 @@ Imagina que le dices a Python: "Suma el nombre de Messi con la edad de Cristiano
 
 Antes de analizar, necesitamos entender que Python ve diferencias que nosotros damos por hechas. ¿Has notado que tratas diferente el número de goles (puedes sumarlo) que el nombre del equipo (no puedes sumarlo)?
 
-
 ## ¿Cómo exploramos los diferentes "idiomas" de datos en el fútbol?
 
 **Momento de reflexión**: En el mundo real, un partido genera información numérica (goles, minutos), textual (nombres, posiciones), fechas (cuándo se jugó), y más. ¿Pero cómo sabemos qué tipo de análisis hacer con cada uno?
 
 **Pregunta clave**: Si tuvieras que explicarle a Python la diferencia entre "3 goles" y "3 de marzo", ¿cómo lo harías?
 
-### ¡Vamos a ser "detectives de tipos de datos"!
+### ¡Vamos a ser "detectives de tipos de datos"
 
 Antes de analizar fútbol, necesitamos entender qué herramientas son mejores para cada tipo de información. ¿Has notado que usas diferentes métodos para organizar números que para organizar nombres?
 
@@ -124,7 +130,7 @@ print("Pregunta de reflexión: ¿Por qué crees que necesitamos herramientas esp
 
 **Pregunta clave**: Si tuvieras que elegir ligas y equipos para representar el fútbol europeo, ¿cuáles serían los más reconocibles para estudiantes mexicanos?
 
-### ¡Vamos a ser "arquitectos" de datos futbolísticos!
+### ¡Vamos a ser "arquitectos" de datos futbolísticos
 
 ```python
 # ¿Te has preguntado cómo los analistas organizan el universo futbolístico?
@@ -169,6 +175,7 @@ print("¿Qué otros tipos de información serían importantes incluir?")
 **Pregunta fundamental**: ¿Qué información del fútbol son números puros que podemos calcular matemáticamente?
 
 **Ejemplos en el fútbol**:
+
 - ¿Goles anotados, minutos jugados, edad de jugadores?
 - ¿Puedes sumar goles de diferentes partidos?
 - ¿Tiene sentido calcular el promedio de edad de un equipo?
@@ -239,6 +246,7 @@ print("¿Qué operaciones matemáticas podrías hacer con cada columna?")
 **Pregunta de clasificación**: ¿Qué información del fútbol son categorías o grupos que no podemos sumar?
 
 **Ejemplos en el fútbol**:
+
 - ¿Nombres de equipos, posiciones de jugadores, nombres de ligas?
 - ¿Puedes "sumar" Barcelona + Real Madrid?
 - ¿Tiene sentido calcular el promedio de "Delantero" + "Portero"?
@@ -295,6 +303,7 @@ print("¿Qué operaciones SÍ tienen sentido con datos categóricos?")
 ## SÍNTESIS DE LA SESIÓN 1: ¿Qué hemos descubierto sobre tipos de datos?
 
 **Reflexión de 50 minutos**:
+
 - ¿Cómo Python distingue automáticamente entre números y texto?
 - ¿Qué operaciones son posibles con cada tipo de dato?
 - ¿Por qué es importante entender estas diferencias para análisis deportivo?
@@ -372,6 +381,7 @@ print("¿Qué análisis temporales serían útiles para un entrenador?")
 **Pregunta de clasificación**: ¿Qué información del fútbol se puede expresar como "sí/no" o "verdadero/falso"?
 
 **Ejemplos en el fútbol**:
+
 - ¿Gol anotado (sí/no), tarjeta recibida (sí/no), partido ganado (sí/no)?
 - ¿Cómo analizamos datos que solo tienen dos opciones?
 - ¿Qué porcentajes podemos calcular con datos booleanos?
@@ -429,6 +439,7 @@ print("¿Qué otros datos verdadero/falso serían interesantes en fútbol?")
 ## SÍNTESIS DE LA SESIÓN 2: ¿Qué hemos revelado sobre tipos especializados?
 
 **Reflexión de 50 minutos**:
+
 - ¿Cómo las fechas nos permiten analizar tendencias temporales?
 - ¿Qué ventajas tienen los datos booleanos para calcular porcentajes?
 - ¿Por qué cada tipo de dato requiere diferentes técnicas de análisis?
@@ -549,21 +560,25 @@ print("¿Qué análisis NO serían posibles sin entender los diferentes tipos?")
 #### Pregunta de investigación: ¿Qué liga europea es más competitiva?
 
 **Paso 1: ¿Cómo definiríamos "competitividad"?**
+
 - Reflexiona: ¿Es la variabilidad de resultados, el equilibrio entre equipos, o la frecuencia de sorpresas?
 - ¿Qué métricas de cada tipo de dato podrían ayudarnos?
 
 **Paso 2: Analicemos con todos nuestros tipos de datos**
+
 - Numéricos: Promedios y variabilidad de goles
 - Categóricos: Distribución entre ligas
 - Temporales: Consistencia a lo largo del tiempo
 - Booleanos: Porcentajes de empates y goleadas
 
 **Paso 3: ¿Qué descubrimos?**
+
 - ¿Una liga tiene más empates (más equilibrio)?
 - ¿Una liga tiene mayor variabilidad en goles (más imprevisible)?
 - ¿Los patrones temporales revelan diferencias estacionales?
 
 #### Reflexión final
+
 - ¿Qué tipo de dato fue más revelador?
 - ¿Qué análisis NO podrías hacer sin entender los tipos de datos?
 - ¿Cómo cambió tu perspectiva sobre el análisis deportivo?
@@ -647,21 +662,27 @@ print("5. ¿Qué limitaciones tiene nuestro análisis con datos simulados?")
 ## Reflexión de las 3 sesiones (150 minutos totales)
 
 ### SESIÓN 1: ¿Por qué importan los tipos de datos?
+
 **Lo que dominamos ahora**:
+
 - Distinguir entre datos numéricos, categóricos, temporales y booleanos
 - Entender qué operaciones son posibles con cada tipo
 - Reconocer automáticamente los tipos que detecta Python
 - Saber cuándo usar cada tipo de análisis
 
 ### SESIÓN 2: ¿Qué revela cada tipo de dato?
+
 **Lo que revelamos**:
+
 - Cómo las fechas permiten análisis temporales sofisticados
 - Por qué los datos booleanos son perfectos para porcentajes
 - Qué visualizaciones funcionan mejor para cada tipo
 - Cómo cada tipo cuenta una historia diferente del fútbol
 
 ### SESIÓN 3: ¿Cómo combinar diferentes tipos sabiamente?
+
 **Lo que integramos**:
+
 - Análisis multidimensionales que combinan todos los tipos
 - Estrategias para responder preguntas complejas
 - Visualizaciones que muestran múltiples tipos simultáneamente
@@ -669,21 +690,24 @@ print("5. ¿Qué limitaciones tiene nuestro análisis con datos simulados?")
 
 ---
 
-## Pregunta de preparación para la próxima semana:
+## Pregunta de preparación para la próxima semana
 
 **¿Te has dado cuenta de que ahora "hablas" todos los idiomas de datos que usan los analistas profesionales?**
 
 ### ¿Qué nuevos análisis quieres crear ahora?
 
-**Reflexión personal**: 
+**Reflexión personal**:
+
 - ¿Cuál tipo de dato te resultó más sorprendente?
 - ¿Qué análisis te gustaría hacer con datos reales?
 - ¿Cómo cambió tu comprensión sobre la complejidad del análisis deportivo?
 
-### Vista previa de la próxima semana:
+### Vista previa de la próxima semana
+
 **¿Sabías que la calidad de tus análisis depende directamente de qué tan "limpios" estén tus datos?**
 
 La próxima semana exploraremos:
+
 - Cómo detectar y corregir errores en datos deportivos
 - Estrategias para manejar información faltante
 - Técnicas para preparar datos para análisis avanzados

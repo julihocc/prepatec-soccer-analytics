@@ -1,0 +1,17 @@
+Q1: Esta es una pregunta de prueba valida?
+A) Opcion A correcta
+B) Opcion B incorrecta
+C) Opcion C incorrecta
+D) Opcion D incorrecta
+RESPUESTA: A
+
+Q2: Pregunta con solo 2 opciones?
+A) Primera opcion
+B) Segunda opcion
+RESPUESTA: B
+
+Q3: Pregunta con 3 opciones?
+A) Opcion uno
+B) Opcion dos
+C) Opcion tres
+RESPUESTA: C

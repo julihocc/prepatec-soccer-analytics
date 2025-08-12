@@ -1,0 +1,13 @@
+Q1: Pregunta con caracteres especiales: ¿Cuál es la respuesta?
+A) Opción con acentos: ñ, á, é, í, ó, ú
+B) Opción con comillas "dobles" y 'simples'
+C) Opción con símbolos: +, -, *, /, =
+D) Opción normal
+RESPUESTA: A
+
+Q2: Pregunta muy larga que podria causar problemas en el formato CSV si no se maneja correctamente la longitud del texto?
+A) Respuesta muy larga que tambien podria causar problemas de formato si no se valida adecuadamente
+B) Respuesta corta
+C) Otra respuesta larga con muchos detalles que podrian ser problematicos para el procesamiento
+D) Normal
+RESPUESTA: B

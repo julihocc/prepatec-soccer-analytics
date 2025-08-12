@@ -1,27 +1,28 @@
-# 4.4.0 (2025-08-11)
 
-- Agregados archivos .py para las presentaciones semanales de los bloques 1, 2 y 3.
-- Facilitan la reutilización y edición de contenido de presentaciones en flujos automatizados o materiales complementarios.
-- No afecta la estructura principal de notebooks ni sesiones, pero mejora el mantenimiento de recursos pedagógicos.
-
-# 4.3.0 (2025-08-11)
-
-- Entrega de presentaciones semanales en formato Marp/Markdown para semanas 4 a 15, alineadas con metodología socrática y estructura de sesiones de 50 minutos.
-- Creación y documentación del prompt de transformación Jupyter→Marp en `.github/prompts/jupyter-to-marp-presentacion.prompt.md`.
-- Proceso de commits y versionado siguiendo los prompts estandarizados del repositorio.
-
-# 4.3.0 (2025-08-11)
-
-- Entrega de presentaciones semanales en formato Marp/Markdown para semanas 4 a 15, alineadas con metodología socrática y estructura de sesiones de 50 minutos.
-- Creación y documentación del prompt de transformación Jupyter→Marp en `.github/prompts/jupyter-to-marp-presentacion.prompt.md`.
-- Proceso de commits y versionado siguiendo los prompts estandarizados del repositorio.
-
-# Historial de Cambios
+# CHANGELOG
 
 Todos los cambios notables de este proyecto serán documentados en este archivo.
 
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
+
+## 4.5.0 (2025-08-11)
+
+- Actualización menor: mejora de la estructura de recursos pedagógicos.
+- Se agregaron archivos .py para presentaciones semanales en los bloques 1, 2 y 3, facilitando la edición y reutilización de contenido.
+- No se modificó la funcionalidad principal ni la estructura de notebooks.
+
+## 4.4.0 (2025-08-11)
+
+- Proceso de commits y versionado siguiendo los prompts estandarizados del repositorio.
+
+## 4.3.0 (2025-08-11)
+
+- Entrega de presentaciones semanales en formato Marp/Markdown para semanas 4 a 15, alineadas con metodología socrática y estructura de sesiones de 50 minutos.
+- Creación y documentación del prompt de transformación Jupyter→Marp en `.github/prompts/jupyter-to-marp-presentacion.prompt.md`.
+- Proceso de commits y versionado siguiendo los prompts estandarizados del repositorio.
+
+
 
 ## [Sin publicar]
 

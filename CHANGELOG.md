@@ -1,3 +1,27 @@
+# CHANGELOG
+
+Todos los cambios notables de este proyecto serán documentados en este archivo.
+
+El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
+y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
+
+## 4.7.0 (2025-08-12)
+- Se agrega banco de preguntas del Bloque 3 en formatos .md, .txt, .csv y script generar_qti.py para conversión automática a QTI Canvas.
+- Limpieza de mensajes en la herramienta herramientas/txt-to-qti para eliminar emojis y mantener estilo profesional.
+- Mejora la integración y consistencia documental para evaluaciones Canvas en bloque 3.
+
+## 4.5.0 (2025-08-11)
+- Actualización menor: mejora de la estructura de recursos pedagógicos.
+- Se agregaron archivos .py para presentaciones semanales en los bloques 1, 2 y 3, facilitando la edición y reutilización de contenido.
+- No se modificó la funcionalidad principal ni la estructura de notebooks.
+
+## 4.4.0 (2025-08-11)
+- Proceso de commits y versionado siguiendo los prompts estandarizados del repositorio.
+
+## 4.3.0 (2025-08-11)
+- Entrega de presentaciones semanales en formato Marp/Markdown para semanas 4 a 15, alineadas con metodología socrática y estructura de sesiones de 50 minutos.
+- Creación y documentación del prompt de transformación Jupyter→Marp en `.github/prompts/jupyter-to-marp-presentacion.prompt.md`.
+- Proceso de commits y versionado siguiendo los prompts estandarizados del repositorio.
 
 # CHANGELOG
 

@@ -112,7 +112,7 @@ def regenerate_qti():
         print("🎯 Paso 2/2: Generando paquete QTI...")
         generator = KansasQTIGenerator()
         qti_file = "banco-preguntas-bloque1_canvas_qti.zip"
-        result_qti, qti_count, xml_name = generator.convert_csv_to_kansas_qti(csv_file, qti_file)
+        _, qti_count, xml_name = generator.convert_csv_to_kansas_qti(csv_file, qti_file)
         print(f"   ✅ QTI generado: {xml_name}")
         print(f"   ✅ {qti_count} preguntas en el paquete")
         
@@ -142,15 +142,24 @@ def main():
     print("🎯 Generador QTI - Banco Preguntas Bloque 1")
     print("=" * 50)
     
-    # Verificar directorio actual
-    current_dir = os.getcwd()
-    expected_files = ["banco-preguntas-bloque1.txt"]
+    # Cambiar al directorio del script si no estamos ahí
+    script_dir = Path(__file__).parent
+    current_dir = Path.cwd()
     
-    if not all(os.path.exists(f) for f in expected_files):
-        print("❌ Error: Este script debe ejecutarse desde el directorio:")
-        print("   evaluaciones/bloque-1/canvas/")
-        print(f"\nDirectorio actual: {current_dir}")
-        print("Archivos esperados:", ", ".join(expected_files))
+    # Si no estamos en el directorio correcto, cambiar ahí
+    if current_dir != script_dir:
+        print(f"📁 Cambiando al directorio: {script_dir}")
+        os.chdir(script_dir)
+    
+    # Verificar que existen los archivos necesarios
+    expected_files = ["banco-preguntas-bloque1.txt"]
+    missing_files = [f for f in expected_files if not os.path.exists(f)]
+    
+    if missing_files:
+        print("❌ Error: Archivos faltantes en el directorio:")
+        print(f"   {script_dir}")
+        print("Archivos faltantes:", ", ".join(missing_files))
+        print("\n💡 Asegúrate de que el archivo banco-preguntas-bloque1.txt exista")
         sys.exit(1)
     
     # Mostrar estado actual

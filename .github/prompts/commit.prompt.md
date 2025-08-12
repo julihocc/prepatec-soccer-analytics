@@ -1,20 +1,25 @@
-Instrucciones Detalladas para Commits
-====================================
+
+INSTRUCCIONES DETALLADAS PARA COMMITS (EJECUCIÓN OBLIGATORIA, NO SOLO MOSTRAR)
+===============================================================================
 
 
-Verifica los Cambios Stageados
-===============================
 
-* Antes de commitear, asegúrate de que solo los archivos relevantes estén en el área de staging
-* Usa `git status` para revisar los archivos stageados
+1. VERIFICA LOS CAMBIOS STAGEADOS (EJECUTA, NO SOLO MUESTRES)
+-------------------------------------------------------------
+
+- Antes de commitear, el agente debe ejecutar el comando `git status` y mostrar el resultado.
+- Si no hay archivos en staging, el agente debe ejecutar `git add <archivo>` para agregar los archivos relevantes.
+- El agente debe asegurarse de que solo los archivos correctos estén en staging antes de continuar.
 
 
-Escribe un Mensaje de Commit Detallado
-=======================================
+
+2. ESCRIBE Y USA UN MENSAJE DE COMMIT DETALLADO (EJECUTA, NO SOLO MUESTRES)
+----------------------------------------------------------------------------
 
 El mensaje debe describir claramente *qué* cambiaste y *por qué*.
+El agente debe redactar el mensaje siguiendo el formato recomendado y luego ejecutar el commit con ese mensaje.
 
-Usa el siguiente formato recomendado:
+Formato recomendado:
 
 [source]
 ----
@@ -39,22 +44,25 @@ Se añadió una nueva función en analisis_goles.py que calcula la suma de goles
 ----
 
 
-Realiza el Commit
-=================
-
-Ejecuta el comando:
-
-[source,bash]
-----
 git commit
-----
 
-Se abrirá tu editor de texto para que escribas el mensaje siguiendo el formato anterior.
+3. REALIZA EL COMMIT (EJECUTA, NO SOLO MUESTRES)
+-------------------------------------------------
+
+El agente debe ejecutar el comando de commit directamente, usando el mensaje detallado generado en el paso anterior.
+No solo mostrar el comando, sino ejecutarlo realmente.
 
 
-Revisa el Commit
-================
 
-Después de commitear, usa `git log -1` para verificar que el mensaje sea claro y completo.
+4. REVISA EL COMMIT (EJECUTA, NO SOLO MUESTRES)
+------------------------------------------------
 
-*Recuerda:* Solo se deben commitear los cambios que estén en el área de staging. Si tienes archivos sin stagear, agrégalos con `git add <archivo>` antes de repetir el proceso.
+Después de commitear, el agente debe ejecutar `git log -1` y mostrar el resultado para verificar que el mensaje sea claro y completo.
+
+*Recuerda:* Solo se deben commitear los cambios que estén en el área de staging. Si tienes archivos sin stagear, el agente debe agregarlos con `git add <archivo>` antes de repetir el proceso.
+
+---
+
+NOTA PARA AGENTES AUTOMATIZADOS:
+--------------------------------
+No basta con mostrar los comandos o el flujo en el chat. Debes ejecutar cada paso de staging, commit y verificación de manera automática y secuencial, asegurando que el commit quede registrado en el repositorio. Si algún paso falla, debes informar y sugerir la corrección.

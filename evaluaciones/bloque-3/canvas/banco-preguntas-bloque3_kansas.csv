@@ -1,0 +1,25 @@
+MC,,1.0,"En este curso, ""modelo"" se compara con:",2,Un estadio,Un entrenador que aprende patrones,Un árbitro,Un aficionado
+MC,,1.0,"""Entrenar un modelo"" significa:",2,Memorizar únicamente los resultados exactos,Ajustar parámetros internos usando datos históricos,Editar manualmente las respuestas,Mezclar datos de prueba y entrenamiento sin orden
+MC,,1.0,"En scikit-learn, la función para dividir datos es:",2,split_train_test(),train_test_split(),make_split(),test_train_division()
+MC,,1.0,"Si divides datos con test_size=0.2 y tienes 250 partidos, cuántos quedan para entrenamiento aproximadamente?",2,50,200,250,300
+MC,,1.0,Overfitting en analogía futbolística es como:,2,Un entrenador que prueba nuevas tácticas,Un entrenador que memoriza jugadas sin entender el juego,Un aficionado que ve el marcador final,Un jugador lesionado
+MC,,1.0,Qué clase de scikit-learn usas para clasificación binaria básica (además de Random Forest)?,2,LinearRegression,LogisticRegression,KMeans,DecisionTreeRegressor
+MC,,1.0,"Si tu DataFrame tiene columnas goles_local, goles_visitante, tiros_local, cuál lista de características es válida?",1,"['goles_local','goles_visitante','tiros_local']",['resultado_final'] siempre,"[goles_local, goles_visitante, tiros_local] sin comillas",['goles_local + goles_visitante']
+MC,,1.0,Por qué no usarías demasiadas columnas irrelevantes?,2,Aumenta interpretabilidad,Puede introducir ruido y empeorar generalización,Disminuye tiempo de cómputo siempre,Asegura mejor precisión en prueba
+MC,,1.0,"En Random Forest, importancia de variables indica:",2,Orden alfabético,Contribución a reducir errores de predicción,Tamaño del dataset,Número de iteraciones
+MC,,1.0,Entrenas Regresión Logística y Random Forest; RF obtiene 0.70 y RL 0.68. Qué acción razonable inicial?,1,Conservar ambos y explicar diferencia ligera,Declarar RL inválida,Ajustar hiperparámetros avanzados ya,Fusionar modelos
+MC,,1.0,"""Precisión"" en clasificación es:",1,(Predicciones correctas) / (Total predicciones),(Goles locales) / (Goles visitantes),(Errores) / (Total goles),(Victorias) / (Empates)
+MC,,1.0,"Si tu modelo acierta 34 de 50 partidos, cuál es la precisión aproximada?",2,0.50,0.68,0.75,0.85
+MC,,1.0,Una matriz de confusión muestra:,2,Importancia exacta de cada variable,Verdaderos/ falsos positivos y negativos,Solo precisión,Árboles del bosque
+MC,,1.0,"Si tu baseline (mayoría clase) es 0.60 y tu modelo 0.62, qué conclusión cautelosa?",1,Mejora marginal que debe analizarse si vale el esfuerzo,Victoria aplastante,Sobreajuste severo,Precisión perfecta
+MC,,1.0,Un síntoma de overfitting sería:,1,Alta precisión en entrenamiento y baja en prueba,Baja en entrenamiento y alta en prueba,Ambas bajas,Ambas altas y estables
+MC,,1.0,Crear total_goles = goles_local + goles_visitante es un ejemplo de:,2,Modelado avanzado,Variable derivada simple,Ruido,División de datos
+MC,,1.0,"Si total_goles tiene mayor importancia que tiros_local, interpretas que:",2,No sirve para nada,Aporta más a las divisiones internas de los árboles,Debe eliminarse,Es ruido puro
+MC,,1.0,"Si tras eliminar una variable irrelevante la precisión se mantiene igual, qué concluyes?",1,La variable no aportaba,Eliminación dañó el modelo,Métrica rota,Perdió reproducibilidad
+MC,,1.0,"Si añades diferencia_goles = goles_local - goles_visitante y la precisión mejora, esto sugiere que:",2,La variable es irrelevante,La diferencia de goles es predictiva para el resultado,El modelo está roto,Necesitas más datos
+MC,,1.0,"Si añadido diferencia_goles la precisión sube de 0.62 a 0.66, cuál es el incremento absoluto?",1,0.04,0.4,4%,0.94
+MC,,1.0,Por qué limitar el número de modelos probados en este curso?,1,Para evitar confundir con exceso de complejidad y centrarse en fundamentos,Porque scikit no soporta más,Para subir artificialmente precisión,Para usar menos memoria
+MC,,1.0,"Si un modelo más sencillo (RL) rinde casi igual que RF, por qué podría preferirse?",2,Siempre gana en precisión máxima,Suele ser más interpretable y suficiente,Es obligatorio,Genera más overfitting
+MC,,1.0,Por qué comparar tu precisión con la baseline es importante?,2,Para inflar resultados,Para saber si el modelo supera predecir siempre la clase mayoritaria,Para eliminar datos de prueba,Para usar más árboles
+MC,,1.0,"Si creas gana_local como 1 cuando goles_local > goles_visitante y tienes 18 victorias locales de 40 partidos, qué proporción baseline tendrías?",1,0.45,0.55,0.18,0.40
+MC,,1.0,"Si tu precisión cae al añadir una variable irrelevante, qué aprendiste?",2,Que siempre se deben añadir más columnas,Que variables irrelevantes pueden introducir ruido,Que la métrica es inútil,Que debes eliminar train/test split

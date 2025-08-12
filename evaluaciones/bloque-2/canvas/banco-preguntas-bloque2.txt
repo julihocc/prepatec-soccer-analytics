@@ -1,0 +1,174 @@
+Q1: En el análisis de datos deportivos, que información básica contiene cada partido?
+A) Solo el marcador final
+B) Equipos, goles, fechas y competiciones
+C) Solo los nombres de los jugadores
+D) Solo la fecha del partido
+RESPUESTA: B
+
+Q2: Cual es la configuración correcta para importar seaborn para gráficos bonitos?
+A) import seaborn
+B) import seaborn as sns
+C) from seaborn import sns
+D) import sns
+RESPUESTA: B
+
+Q3: Que tipo de gráfico es mejor para mostrar "Cuántos goles marcan los equipos locales?"
+A) Gráfico de líneas
+B) Gráfico circular
+C) sns.countplot()
+D) Histograma complejo
+RESPUESTA: C
+
+Q4: Si de 30 partidos analizados, 15 los ganó el local, 8 el visitante y 7 fueron empates, que porcentaje representan las victorias locales?
+A) 40%
+B) 50%
+C) 60%
+D) 45%
+RESPUESTA: B
+
+Q5: Cual es la principal ventaja de usar seaborn sobre matplotlib básico?
+A) Es más rápido
+B) Crea gráficos bonitos automáticamente
+C) Solo funciona con datos deportivos
+D) No necesita matplotlib
+RESPUESTA: B
+
+Q6: En el análisis de fútbol, que son los "datos de resultados"?
+A) Solo los goleadores
+B) Información básica del partido: equipos, goles, fecha, competición
+C) Estadísticas de cada jugador
+D) Solo la posición en la tabla
+RESPUESTA: B
+
+Q7: Que información contienen los "datos de eventos" en fútbol?
+A) Solo el resultado final
+B) Información detallada: goles, tarjetas, sustituciones con minuto exacto
+C) Solo los nombres de equipos
+D) Solo estadísticas de temporada
+RESPUESTA: B
+
+Q8: Como creo una fecha aleatoria en Python para simular datos?
+A) fecha = random.date()
+B) fecha = f"2023-{np.random.randint(1, 13):02d}-{np.random.randint(1, 29):02d}"
+C) fecha = datetime.now()
+D) fecha = "2023"
+RESPUESTA: B
+
+Q9: Para simular goles con distribución realista, que función de numpy es más apropiada?
+A) np.random.randint()
+B) np.random.choice()
+C) np.random.poisson()
+D) np.random.normal()
+RESPUESTA: C
+
+Q10: Que ventaja tiene usar np.random.seed(42) al crear datos simulados?
+A) Hace los datos más realistas
+B) Garantiza reproducibilidad - todos obtienen los mismos datos
+C) Acelera la generación
+D) Crea más variedad
+RESPUESTA: B
+
+Q11: Que mide el promedio (mean) en el contexto de datos de fútbol?
+A) El valor más alto
+B) El valor típico o central de una variable
+C) El valor más bajo
+D) La diferencia entre valores
+RESPUESTA: B
+
+Q12: Si tres jugadores anotaron 10, 15 y 8 goles respectivamente, cual es el promedio?
+A) 10
+B) 11
+C) 12
+D) 15
+RESPUESTA: B
+
+Q13: En pandas, que método calcula automáticamente varias estadísticas descriptivas?
+A) .info()
+B) .head()
+C) .describe()
+D) .count()
+RESPUESTA: C
+
+Q14: Que tipo de gráfico es mejor para comparar goles promedio entre posiciones?
+A) Gráfico de líneas
+B) sns.boxplot()
+C) Gráfico circular
+D) Scatter plot
+RESPUESTA: B
+
+Q15: Que muestra un histograma de edades de jugadores?
+A) Los nombres de los jugadores
+B) La distribución/frecuencia de diferentes edades
+C) Solo la edad máxima
+D) El equipo de cada jugador
+RESPUESTA: B
+
+Q16: Cuando uso un gráfico de barras en análisis deportivo?
+A) Para mostrar cambios en el tiempo
+B) Para comparar categorías (equipos, posiciones, etc.)
+C) Para mostrar relaciones entre variables
+D) Solo para datos numéricos continuos
+RESPUESTA: B
+
+Q17: Que tipo de gráfico es mejor para mostrar la evolución de goles a lo largo de un partido?
+A) Gráfico de barras
+B) Gráfico de líneas con tiempo en x
+C) Gráfico circular
+D) Histograma
+RESPUESTA: B
+
+Q18: Para que sirve sns.scatterplot() en análisis deportivo?
+A) Contar elementos
+B) Mostrar relación entre dos variables (ej: tiros vs goles)
+C) Solo hacer puntos decorativos
+D) Comparar categorías
+RESPUESTA: B
+
+Q19: Como agrego etiquetas a los ejes en un gráfico?
+A) plt.xlabel() y plt.ylabel()
+B) sns.labels()
+C) graph.label()
+D) No se pueden agregar
+RESPUESTA: A
+
+Q20: Si quiero mostrar porcentajes en un gráfico circular y tengo 3 categorías con 10, 15 y 5 elementos respectivamente, que porcentaje representa la segunda categoría?
+A) 40%
+B) 50%
+C) 60%
+D) 33%
+RESPUESTA: B
+
+Q21: Al analizar datos, cual es el primer paso como "detective de datos"?
+A) Hacer gráficos inmediatamente
+B) Contar y sumar - obtener estadísticas básicas
+C) Crear presentaciones
+D) Buscar datos en internet
+RESPUESTA: B
+
+Q22: Que significa encontrar que el promedio de goles por partido es 2.1?
+A) Todos los partidos tuvieron exactamente 2.1 goles
+B) Es el valor típico, algunos tendrán más y otros menos
+C) Es un error en los datos
+D) Solo cuenta goles de un equipo
+RESPUESTA: B
+
+Q23: Cual es la secuencia correcta del análisis de datos?
+A) Gráficos - Datos - Interpretación
+B) Contar/Sumar - Comparar - Graficar - Interpretar
+C) Interpretación - Datos - Gráficos
+D) Solo hacer gráficos
+RESPUESTA: B
+
+Q24: Como identifico el resultado más común en mis datos?
+A) Solo mirar el primer dato
+B) Usar .mode() o contar frecuencias con .value_counts()
+C) Adivinar
+D) No es posible saberlo
+RESPUESTA: B
+
+Q25: Si defino "partidos emocionantes" como aquellos con 3+ goles, y de 50 partidos, 15 cumplen esta condición, cual es la tasa de partidos emocionantes?
+A) 25%
+B) 30%
+C) 35%
+D) 40%
+RESPUESTA: B

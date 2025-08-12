@@ -1,0 +1,174 @@
+Q1: En este curso, "modelo" se compara con:
+A) Un estadio
+B) Un entrenador que aprende patrones
+C) Un árbitro
+D) Un aficionado
+RESPUESTA: B
+
+Q2: "Entrenar un modelo" significa:
+A) Memorizar únicamente los resultados exactos
+B) Ajustar parámetros internos usando datos históricos
+C) Editar manualmente las respuestas
+D) Mezclar datos de prueba y entrenamiento sin orden
+RESPUESTA: B
+
+Q3: En scikit-learn, la función para dividir datos es:
+A) split_train_test()
+B) train_test_split()
+C) make_split()
+D) test_train_division()
+RESPUESTA: B
+
+Q4: Si divides datos con test_size=0.2 y tienes 250 partidos, cuántos quedan para entrenamiento aproximadamente?
+A) 50
+B) 200
+C) 250
+D) 300
+RESPUESTA: B
+
+Q5: Overfitting en analogía futbolística es como:
+A) Un entrenador que prueba nuevas tácticas
+B) Un entrenador que memoriza jugadas sin entender el juego
+C) Un aficionado que ve el marcador final
+D) Un jugador lesionado
+RESPUESTA: B
+
+Q6: Qué clase de scikit-learn usas para clasificación binaria básica (además de Random Forest)?
+A) LinearRegression
+B) LogisticRegression
+C) KMeans
+D) DecisionTreeRegressor
+RESPUESTA: B
+
+Q7: Si tu DataFrame tiene columnas goles_local, goles_visitante, tiros_local, cuál lista de características es válida?
+A) ['goles_local','goles_visitante','tiros_local']
+B) ['resultado_final'] siempre
+C) [goles_local, goles_visitante, tiros_local] sin comillas
+D) ['goles_local + goles_visitante']
+RESPUESTA: A
+
+Q8: Por qué no usarías demasiadas columnas irrelevantes?
+A) Aumenta interpretabilidad
+B) Puede introducir ruido y empeorar generalización
+C) Disminuye tiempo de cómputo siempre
+D) Asegura mejor precisión en prueba
+RESPUESTA: B
+
+Q9: En Random Forest, importancia de variables indica:
+A) Orden alfabético
+B) Contribución a reducir errores de predicción
+C) Tamaño del dataset
+D) Número de iteraciones
+RESPUESTA: B
+
+Q10: Entrenas Regresión Logística y Random Forest; RF obtiene 0.70 y RL 0.68. Qué acción razonable inicial?
+A) Conservar ambos y explicar diferencia ligera
+B) Declarar RL inválida
+C) Ajustar hiperparámetros avanzados ya
+D) Fusionar modelos
+RESPUESTA: A
+
+Q11: "Precisión" en clasificación es:
+A) (Predicciones correctas) / (Total predicciones)
+B) (Goles locales) / (Goles visitantes)
+C) (Errores) / (Total goles)
+D) (Victorias) / (Empates)
+RESPUESTA: A
+
+Q12: Si tu modelo acierta 34 de 50 partidos, cuál es la precisión aproximada?
+A) 0.50
+B) 0.68
+C) 0.75
+D) 0.85
+RESPUESTA: B
+
+Q13: Una matriz de confusión muestra:
+A) Importancia exacta de cada variable
+B) Verdaderos/ falsos positivos y negativos
+C) Solo precisión
+D) Árboles del bosque
+RESPUESTA: B
+
+Q14: Si tu baseline (mayoría clase) es 0.60 y tu modelo 0.62, qué conclusión cautelosa?
+A) Mejora marginal que debe analizarse si vale el esfuerzo
+B) Victoria aplastante
+C) Sobreajuste severo
+D) Precisión perfecta
+RESPUESTA: A
+
+Q15: Un síntoma de overfitting sería:
+A) Alta precisión en entrenamiento y baja en prueba
+B) Baja en entrenamiento y alta en prueba
+C) Ambas bajas
+D) Ambas altas y estables
+RESPUESTA: A
+
+Q16: Crear total_goles = goles_local + goles_visitante es un ejemplo de:
+A) Modelado avanzado
+B) Variable derivada simple
+C) Ruido
+D) División de datos
+RESPUESTA: B
+
+Q17: Si total_goles tiene mayor importancia que tiros_local, interpretas que:
+A) No sirve para nada
+B) Aporta más a las divisiones internas de los árboles
+C) Debe eliminarse
+D) Es ruido puro
+RESPUESTA: B
+
+Q18: Si tras eliminar una variable irrelevante la precisión se mantiene igual, qué concluyes?
+A) La variable no aportaba
+B) Eliminación dañó el modelo
+C) Métrica rota
+D) Perdió reproducibilidad
+RESPUESTA: A
+
+Q19: Si añades diferencia_goles = goles_local - goles_visitante y la precisión mejora, esto sugiere que:
+A) La variable es irrelevante
+B) La diferencia de goles es predictiva para el resultado
+C) El modelo está roto
+D) Necesitas más datos
+RESPUESTA: B
+
+Q20: Si añadido diferencia_goles la precisión sube de 0.62 a 0.66, cuál es el incremento absoluto?
+A) 0.04
+B) 0.4
+C) 4%
+D) 0.94
+RESPUESTA: A
+
+Q21: Por qué limitar el número de modelos probados en este curso?
+A) Para evitar confundir con exceso de complejidad y centrarse en fundamentos
+B) Porque scikit no soporta más
+C) Para subir artificialmente precisión
+D) Para usar menos memoria
+RESPUESTA: A
+
+Q22: Si un modelo más sencillo (RL) rinde casi igual que RF, por qué podría preferirse?
+A) Siempre gana en precisión máxima
+B) Suele ser más interpretable y suficiente
+C) Es obligatorio
+D) Genera más overfitting
+RESPUESTA: B
+
+Q23: Por qué comparar tu precisión con la baseline es importante?
+A) Para inflar resultados
+B) Para saber si el modelo supera predecir siempre la clase mayoritaria
+C) Para eliminar datos de prueba
+D) Para usar más árboles
+RESPUESTA: B
+
+Q24: Si creas gana_local como 1 cuando goles_local > goles_visitante y tienes 18 victorias locales de 40 partidos, qué proporción baseline tendrías?
+A) 0.45
+B) 0.55
+C) 0.18
+D) 0.40
+RESPUESTA: A
+
+Q25: Si tu precisión cae al añadir una variable irrelevante, qué aprendiste?
+A) Que siempre se deben añadir más columnas
+B) Que variables irrelevantes pueden introducir ruido
+C) Que la métrica es inútil
+D) Que debes eliminar train/test split
+RESPUESTA: B

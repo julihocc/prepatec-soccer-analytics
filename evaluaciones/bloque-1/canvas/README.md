@@ -5,8 +5,9 @@ Este directorio contiene el banco de preguntas específico para el Bloque 1 del 
 ## 📄 Archivos
 
 - `banco-preguntas-bloque1.txt` - Banco de 25 preguntas del Bloque 1
+- `generar_qti.py` - Script local para regenerar QTI automáticamente
 - `banco-preguntas-bloque1_kansas.csv` - Archivo CSV generado 
-- `banco-preguntas-bloque1_kansas_kansas_qti.zip` - Paquete QTI listo para Canvas
+- `banco-preguntas-bloque1_canvas_qti.zip` - Paquete QTI listo para Canvas
 - `README.md` - Esta documentación
 
 ## 📚 Contenido del Banco
@@ -21,15 +22,25 @@ Este directorio contiene el banco de preguntas específico para el Bloque 1 del 
 
 ## 🔄 Regenerar Archivos QTI
 
-Para actualizar o regenerar los archivos QTI, usa la herramienta de conversión:
+### Opción 1: Script Local (Recomendado)
+```bash
+# Desde este directorio (evaluaciones/bloque-1/canvas/)
+python generar_qti.py
+```
 
-### Opción 1: Script Todo-en-Uno (Recomendado)
+Este script:
+- ✅ Detecta automáticamente si hay cambios en el archivo TXT
+- ✅ Regenera solo si es necesario
+- ✅ Muestra el estado de todos los archivos
+- ✅ Fuerza regeneración con `--force`
+
+### Opción 2: Herramienta Global
 ```bash
 # Desde el directorio raíz del proyecto
 python herramientas/txt-to-qti/convert.py evaluaciones/bloque-1/canvas/banco-preguntas-bloque1.txt
 ```
 
-### Opción 2: Por Etapas
+### Opción 3: Por Etapas
 ```bash
 # Paso 1: TXT → CSV
 python herramientas/txt-to-qti/txt_to_csv_direct.py banco-preguntas-bloque1.txt
@@ -40,7 +51,7 @@ python herramientas/txt-to-qti/csv_to_kansas_qti.py banco-preguntas-bloque1_kans
 
 ## 📋 Importar a Canvas
 
-1. **Archivo listo**: `banco-preguntas-bloque1_kansas_kansas_qti.zip`
+1. **Archivo listo**: `banco-preguntas-bloque1_canvas_qti.zip`
 2. **En Canvas**:
    - Ir a Configuración → Importar contenido del curso
    - Seleccionar "Paquete QTI"

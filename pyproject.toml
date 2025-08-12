@@ -1,6 +1,6 @@
 [project]
 name = "ciencia-datos-futbol-preparatoria"
-version = "4.5.0"
+version = "4.6.0"
 description = "Curso de Ciencia de Datos aplicada al Fútbol para estudiantes de preparatoria usando metodología socrática"
 authors = [
     {name = "Tecnológico de Monterrey", email = ""},

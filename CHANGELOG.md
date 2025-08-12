@@ -30,13 +30,10 @@ y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 
 ## [4.2.1] - 2025-08-10
 
+- Se agrega generación y conversión automática QTI para banco de preguntas del Bloque 2:
+
 ### Cambiado
-
-- Renombrados archivos de syllabus para usar sufijo de periodo 202513.
 - Añadida versión en Markdown estructurada del Syllabus (tablas, secciones numeradas) para mayor legibilidad.
-
-### Tipo de versión
-
 - Actualización de documentación sin impacto funcional (patch).
 
 ### Cambiado

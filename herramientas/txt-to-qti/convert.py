@@ -22,7 +22,7 @@ from pathlib import Path
 from txt_to_csv_direct import TxtToCSVConverter
 from csv_to_kansas_qti import KansasQTIGenerator
 
-def convert_txt_to_qti(txt_file, output_qti=None, keep_csv=False):
+def convert_txt_to_qti(txt_file, output_qti=None, keep_csv=False, check_timestamps=False):
     """
     Convierte archivo TXT directamente a QTI ZIP
     
@@ -30,6 +30,7 @@ def convert_txt_to_qti(txt_file, output_qti=None, keep_csv=False):
         txt_file: Ruta al archivo .txt con preguntas
         output_qti: Ruta de salida para el archivo .zip QTI (opcional)
         keep_csv: Si mantener el archivo CSV intermedio
+        check_timestamps: Si verificar timestamps antes de convertir
     
     Returns:
         tuple: (archivo_qti_zip, numero_preguntas, archivo_csv_temporal)
@@ -38,6 +39,24 @@ def convert_txt_to_qti(txt_file, output_qti=None, keep_csv=False):
     # Validar archivo de entrada
     if not os.path.exists(txt_file):
         raise FileNotFoundError(f"Archivo no encontrado: {txt_file}")
+    
+    # Verificar timestamps si se solicita
+    if check_timestamps:
+        base_name = Path(txt_file).stem
+        csv_expected = f"{base_name}_kansas.csv"
+        qti_expected = f"{base_name}_canvas_qti.zip"
+        
+        if os.path.exists(csv_expected) and os.path.exists(qti_expected):
+            txt_time = os.path.getmtime(txt_file)
+            csv_time = os.path.getmtime(csv_expected)
+            qti_time = os.path.getmtime(qti_expected)
+            
+            if txt_time <= csv_time and txt_time <= qti_time:
+                print(f"✅ Los archivos están actualizados. No es necesario regenerar.")
+                print(f"   TXT: {Path(txt_file).name}")
+                print(f"   CSV: {csv_expected}")
+                print(f"   QTI: {qti_expected}")
+                return qti_expected, 0, csv_expected
     
     print(f"🔄 Iniciando conversión: {txt_file}")
     
@@ -100,25 +119,44 @@ def main():
     """Función principal del script"""
     
     if len(sys.argv) < 2:
-        print("Uso: python convert.py <archivo.txt> [archivo_salida.zip]")
+        print("Uso: python convert.py <archivo.txt> [archivo_salida.zip] [--smart]")
         print()
         print("Ejemplos:")
         print("  python convert.py preguntas.txt")
         print("  python convert.py preguntas.txt mi_examen.zip")
+        print("  python convert.py preguntas.txt --smart          # Verificar timestamps")
         print("  python convert.py banco-preguntas-bloque1.txt")
         print()
+        print("Opciones:")
+        print("  --smart    Verificar timestamps y solo regenerar si es necesario")
+        print()
         print("El script genera un archivo ZIP listo para importar en Canvas LMS.")
+        print()
+        print("💡 Para funcionalidad inteligente completa, usa:")
+        print("   python smart_convert.py archivo.txt")
         sys.exit(1)
     
+    # Procesar argumentos
     txt_file = sys.argv[1]
-    output_qti = sys.argv[2] if len(sys.argv) > 2 else None
+    output_qti = None
+    check_timestamps = False
+    
+    for arg in sys.argv[2:]:
+        if arg == '--smart':
+            check_timestamps = True
+        elif not output_qti:
+            output_qti = arg
+        else:
+            print(f"❌ Argumento desconocido: {arg}")
+            sys.exit(1)
     
     try:
         # Conversión completa
         qti_file, question_count, csv_file = convert_txt_to_qti(
             txt_file, 
             output_qti, 
-            keep_csv=True  # Mantener CSV para debugging
+            keep_csv=True,  # Mantener CSV para debugging
+            check_timestamps=check_timestamps
         )
         
         # Reporte final

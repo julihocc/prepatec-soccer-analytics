@@ -8,12 +8,22 @@ Herramienta universal para convertir preguntas de texto plano a formato QTI de C
 
 ## 🚀 Uso Rápido
 
-### Script Todo-en-Uno
+### 🧠 Smart Converter (Recomendado)
 ```bash
-python convert.py preguntas.txt
+python smart_convert.py preguntas.txt
 ```
 
-Este comando convierte automáticamente tu archivo de preguntas a un ZIP listo para Canvas.
+**Características inteligentes:**
+- ✅ Solo regenera si hay cambios reales
+- ✅ Muestra estado detallado con timestamps  
+- ✅ Ejecutable desde cualquier directorio
+- ✅ Opciones de forzado y solo-estado
+
+### Script Todo-en-Uno Clásico
+```bash
+python convert.py preguntas.txt
+python convert.py preguntas.txt --smart  # Con verificación de timestamps
+```
 
 ### Uso por Etapas
 ```bash
@@ -27,7 +37,8 @@ python csv_to_kansas_qti.py preguntas_kansas.csv
 ## 📁 Archivos de la Herramienta
 
 ### Scripts Principales
-- `convert.py` - **Convertidor todo-en-uno** (recomendado)
+- `smart_convert.py` - **🧠 Convertidor inteligente** (recomendado)
+- `convert.py` - Convertidor todo-en-uno clásico
 - `txt_to_csv_direct.py` - Convertidor texto → CSV
 - `csv_to_kansas_qti.py` - Generador CSV → QTI
 
@@ -150,7 +161,7 @@ python tests/run_tests.py --validate
 
 ## 🔄 Ejemplos de Uso
 
-### Ejemplo Básico
+### Uso Inteligente (Recomendado)
 ```bash
 # Archivo: examen_matematicas.txt
 Q1: ¿Cuánto es 5 x 3?
@@ -159,20 +170,36 @@ B) 15
 C) 18
 RESPUESTA: B
 
-# Convertir
-python convert.py examen_matematicas.txt
+# Convertir inteligentemente
+python smart_convert.py examen_matematicas.txt
 
-# Resultado: examen_matematicas_canvas_qti.zip
+# Solo muestra estado sin convertir
+python smart_convert.py --status examen_matematicas.txt
+
+# Forzar regeneración
+python smart_convert.py examen_matematicas.txt --force
 ```
 
-### Ejemplo con Nombres Personalizados
+### Uso Clásico
 ```bash
+# Conversión normal
+python convert.py examen_matematicas.txt
+
+# Con verificación de timestamps
+python convert.py examen_matematicas.txt --smart
+
+# Con nombre personalizado
 python convert.py preguntas.txt mi_examen_final.zip
 ```
 
 ### Procesamiento por Lotes
 ```bash
-# Convertir múltiples archivos
+# Conversión inteligente de múltiples archivos
+for archivo in *.txt; do
+    python smart_convert.py "$archivo"
+done
+
+# Conversión clásica
 for archivo in *.txt; do
     python convert.py "$archivo"
 done

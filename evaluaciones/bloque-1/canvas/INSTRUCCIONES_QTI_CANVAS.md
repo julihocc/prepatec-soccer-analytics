@@ -2,7 +2,7 @@
 
 ## Archivo Generado
 - **Nombre**: `banco-preguntas-bloque1_QTI_CANVAS.zip`
-- **Preguntas**: 120 preguntas del Bloque 1 (Python Fundamentals)
+- **Preguntas**: 50 preguntas del Bloque 1 (Python Fundamentals)
 - **Tipos**: Opción múltiple y numéricas
 - **Categorías**: Recordar (R), Aplicar (A), Comprender (C)
 
@@ -37,7 +37,7 @@ El paquete QTI incluye configuración automática:
 - **Tiempo límite**: 60 minutos
 - **Mostrar retroalimentación**: Sí
 - **Mostrar resultados**: Sí
-- **Preguntas sugeridas para examen**: 25 (de las 120 disponibles)
+- **Preguntas sugeridas para examen**: 25 (de las 50 disponibles)
 
 ## Crear Examen desde Banco de Preguntas
 
@@ -58,26 +58,41 @@ El paquete QTI incluye configuración automática:
 
 ## Distribución Sugerida por Categoría
 
-Para un examen balanceado de 25 preguntas:
+Para un examen balanceado de 25 preguntas (de las 50 disponibles):
 - **Recordar (R)**: 10-12 preguntas (40%)
 - **Comprender (C)**: 8-10 preguntas (35%)  
 - **Aplicar (A)**: 5-7 preguntas (25%)
 
-## Temas Incluidos
+## Temas Incluidos (5 semanas, 10 preguntas por semana)
 
-1. Variables y Tipos de Datos
-2. Estructuras de Control
-3. Funciones
-4. Listas y Diccionarios
-5. Introducción a Pandas
-6. NumPy Básico
-7. Matplotlib Básico
-8. Análisis de Datos Futbolísticos
-9. Estadísticas Deportivas
-10. Debugging y Errores Comunes
-11. Pensamiento Computacional
-12. Manipulación de Datos
-13. Visualización Avanzada
+**Semana 1: Configuración y Fundamentos de Python**
+- Variables y tipos de datos
+- Operaciones básicas
+- Sintaxis básica
+
+**Semana 2: Estructuras de Control**
+- Condicionales
+- Bucles
+- Operadores lógicos
+- Indentación
+
+**Semana 3: Funciones y Módulos**
+- Definición de funciones
+- Parámetros y argumentos
+- Return
+- Importaciones
+
+**Semana 4: Pandas y NumPy Introducción**
+- Importación de librerías
+- DataFrames
+- Operaciones básicas
+- Arrays
+
+**Semana 5: Visualización Básica**
+- Matplotlib
+- Tipos de gráficos
+- Personalización
+- Visualización de datos
 
 ## Solución de Problemas
 

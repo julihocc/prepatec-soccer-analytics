@@ -1,0 +1,77 @@
+{
+  "/home/julihocc/topico/main.worktrees/desarrollar-contenido-didactico/contenido/bloque-1/semana-1/configuracion-fundamentos.ipynb": {
+    "hash": "e15e7e922deb3914aeed6cecff63f6e0",
+    "converted_at": 1755042995.8887594,
+    "pdf_path": "contenido/bloque-1/semana-1/configuracion-fundamentos.pdf"
+  },
+  "/home/julihocc/topico/main.worktrees/desarrollar-contenido-didactico/contenido/bloque-1/semana-2/estructuras-control.ipynb": {
+    "hash": "c868a6a7f594718d045cd58706b96634",
+    "converted_at": 1755044391.3132374,
+    "pdf_path": "contenido/bloque-1/semana-2/estructuras-control.pdf"
+  },
+  "/home/julihocc/topico/main.worktrees/desarrollar-contenido-didactico/contenido/bloque-1/semana-3/funciones-modulos.ipynb": {
+    "hash": "2230c566459b6309806f7b26936f31a4",
+    "converted_at": 1755044391.3135345,
+    "pdf_path": "contenido/bloque-1/semana-3/funciones-modulos.pdf"
+  },
+  "/home/julihocc/topico/main.worktrees/desarrollar-contenido-didactico/contenido/bloque-1/semana-4/pandas-numpy-introduccion.ipynb": {
+    "hash": "50e7c1f1911da58a2c10c11eaece5c4a",
+    "converted_at": 1755044391.3137121,
+    "pdf_path": "contenido/bloque-1/semana-4/pandas-numpy-introduccion.pdf"
+  },
+  "/home/julihocc/topico/main.worktrees/desarrollar-contenido-didactico/contenido/bloque-1/semana-5/visualizacion-basica.ipynb": {
+    "hash": "f363b90e7918d9c825df98675630da16",
+    "converted_at": 1755044391.314477,
+    "pdf_path": "contenido/bloque-1/semana-5/visualizacion-basica.pdf"
+  },
+  "/home/julihocc/topico/main.worktrees/desarrollar-contenido-didactico/contenido/bloque-2/semana-10/analisis-interpretacion.ipynb": {
+    "hash": "a516f666a500856fa163b3bac351ef9f",
+    "converted_at": 1755044391.3146427,
+    "pdf_path": "contenido/bloque-2/semana-10/analisis-interpretacion.pdf"
+  },
+  "/home/julihocc/topico/main.worktrees/desarrollar-contenido-didactico/contenido/bloque-2/semana-6/introduccion-exploracion.ipynb": {
+    "hash": "537643fb94ae49ac711fb72e4853ccdf",
+    "converted_at": 1755044391.3149438,
+    "pdf_path": "contenido/bloque-2/semana-6/introduccion-exploracion.pdf"
+  },
+  "/home/julihocc/topico/main.worktrees/desarrollar-contenido-didactico/contenido/bloque-2/semana-7/tipos-datos-futbol.ipynb": {
+    "hash": "00f2033c4e1d295a462c5ba90656f559",
+    "converted_at": 1755044391.315059,
+    "pdf_path": "contenido/bloque-2/semana-7/tipos-datos-futbol.pdf"
+  },
+  "/home/julihocc/topico/main.worktrees/desarrollar-contenido-didactico/contenido/bloque-2/semana-8/estadistica-descriptiva.ipynb": {
+    "hash": "7d1a75d41d69520000b40feffd7deeeb",
+    "converted_at": 1755044391.315259,
+    "pdf_path": "contenido/bloque-2/semana-8/estadistica-descriptiva.pdf"
+  },
+  "/home/julihocc/topico/main.worktrees/desarrollar-contenido-didactico/contenido/bloque-2/semana-9/visualizacion-datos.ipynb": {
+    "hash": "5bc0d5ce6ff2ae3cc96528ba39d75adc",
+    "converted_at": 1755044391.3155448,
+    "pdf_path": "contenido/bloque-2/semana-9/visualizacion-datos.pdf"
+  },
+  "/home/julihocc/topico/main.worktrees/desarrollar-contenido-didactico/contenido/bloque-3/semana-11/modelado-predictivo-introduccion.ipynb": {
+    "hash": "97deea073af3127b1bf3ae5e0d05373d",
+    "converted_at": 1755044391.3156326,
+    "pdf_path": "contenido/bloque-3/semana-11/modelado-predictivo-introduccion.pdf"
+  },
+  "/home/julihocc/topico/main.worktrees/desarrollar-contenido-didactico/contenido/bloque-3/semana-12/modelos-avanzados-clasificacion.ipynb": {
+    "hash": "9ca7b6ccc43f1d8d3521a8bbc3cee9a2",
+    "converted_at": 1755044391.315779,
+    "pdf_path": "contenido/bloque-3/semana-12/modelos-avanzados-clasificacion.pdf"
+  },
+  "/home/julihocc/topico/main.worktrees/desarrollar-contenido-didactico/contenido/bloque-3/semana-13/metricas-avanzadas-evaluacion.ipynb": {
+    "hash": "2d93c07594a7bb2fc9b3bcaff8a6e016",
+    "converted_at": 1755044391.3159761,
+    "pdf_path": "contenido/bloque-3/semana-13/metricas-avanzadas-evaluacion.pdf"
+  },
+  "/home/julihocc/topico/main.worktrees/desarrollar-contenido-didactico/contenido/bloque-3/semana-14/feature-engineering-optimizacion.ipynb": {
+    "hash": "7aef8f165f129bad71f4fff8c9c86c03",
+    "converted_at": 1755044391.3162746,
+    "pdf_path": "contenido/bloque-3/semana-14/feature-engineering-optimizacion.pdf"
+  },
+  "/home/julihocc/topico/main.worktrees/desarrollar-contenido-didactico/contenido/bloque-3/semana-15/proyecto-final-integrador.ipynb": {
+    "hash": "ff6e58d42a63c39420b0fca54dcdfc38",
+    "converted_at": 1755044391.3169022,
+    "pdf_path": "contenido/bloque-3/semana-15/proyecto-final-integrador.pdf"
+  }
+}

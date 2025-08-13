@@ -2,7 +2,7 @@
 
 ## Información del Curso
 
-**Versión:** 4.6.0  
+**Versión:** 4.7.0  
 **Nivel:** Preparatoria/Bachillerato (15-18 años)  
 **Duración:** 15 semanas (3 bloques de 5 semanas cada uno)  
 **Modalidad:** 3 sesiones de 50 minutos por semana  
@@ -119,6 +119,40 @@ Este curso te introduce al fascinante mundo de la ciencia de datos aplicada al f
 - **Aplicación:** Proyecto completo simulando trabajo real para un club profesional
 
 ## Herramientas y Tecnologías
+
+### Herramientas Incluidas en el Curso
+
+#### 📄 Conversión de Notebooks a PDF
+Convierte automáticamente todos los notebooks Jupyter a PDF de alta calidad:
+
+```bash
+# Conversión inteligente (solo regenera cuando es necesario)
+make pdfs
+
+# Ver estado de conversión
+make status-pdfs
+
+# Usar herramientas directamente
+python3 herramientas/notebook-to-pdf/smart_convert.py contenido/
+```
+
+**Características:**
+- **Cache inteligente**: Solo regenera PDFs cuando hay cambios
+- **Múltiples motores LaTeX**: XeLaTeX, PDFLaTeX, LuaLaTeX
+- **Tests automatizados**: Suite completa de validación
+- **Documentación completa**: Guías de uso e instalación
+
+Ver [`herramientas/notebook-to-pdf/`](herramientas/notebook-to-pdf/) para documentación completa.
+
+#### 🎯 Conversión de Preguntas a QTI Canvas
+Convierte bancos de preguntas desde texto simple a formato QTI para Canvas LMS:
+
+```bash
+# Convertir preguntas a formato Canvas
+python herramientas/txt-to-qti/smart_convert.py preguntas.txt
+```
+
+Ver [`herramientas/txt-to-qti/`](herramientas/txt-to-qti/) para más detalles.
 
 ### Tu kit de herramientas profesional
 

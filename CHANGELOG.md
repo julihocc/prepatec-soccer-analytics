@@ -1,4 +1,3 @@
-
 # CHANGELOG
 
 Todos los cambios notables de este proyecto serán documentados en este archivo.
@@ -6,176 +5,30 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 
-## 4.5.0 (2025-08-11)
-
-- Actualización menor: mejora de la estructura de recursos pedagógicos.
-- Se agregaron archivos .py para presentaciones semanales en los bloques 1, 2 y 3, facilitando la edición y reutilización de contenido.
-- No se modificó la funcionalidad principal ni la estructura de notebooks.
-
-## 4.4.0 (2025-08-11)
-
-- Proceso de commits y versionado siguiendo los prompts estandarizados del repositorio.
-
-## 4.3.0 (2025-08-11)
-
-- Entrega de presentaciones semanales en formato Marp/Markdown para semanas 4 a 15, alineadas con metodología socrática y estructura de sesiones de 50 minutos.
-- Creación y documentación del prompt de transformación Jupyter→Marp en `.github/prompts/jupyter-to-marp-presentacion.prompt.md`.
-- Proceso de commits y versionado siguiendo los prompts estandarizados del repositorio.
-
-
-
-## [Sin publicar]
-
-## [4.2.0] - 2025-08-10
-
-## [4.2.1] - 2025-08-10
-
-- Se agrega generación y conversión automática QTI para banco de preguntas del Bloque 2:
-
-### Cambiado
-- Añadida versión en Markdown estructurada del Syllabus (tablas, secciones numeradas) para mayor legibilidad.
-- Actualización de documentación sin impacto funcional (patch).
-
-### Cambiado
-
-- Documentación alineada con nueva equivalencia de parciales (Bloque 1: 30%, Bloque 2: 30%, Bloque 3: 40%).
-- Desglose explícito de actividades: 5 de 15% + caso final 25% (presentación integrada en el caso, sin ponderación separada).
-- Incorporación formal del Quiz / Canvas ML Básico (15%) como verificación previa al caso final.
-
-### Mejorado
-
-- Claridad en sub‑pesos internos del Caso Práctico Bloque 3 indicando impacto porcentual sobre el total del curso.
-
-### Razonamiento de incremento menor
-
-- Cambio estructural documental sin alterar bancos de preguntas existentes ni lógica de código: bump menor (4.1.x → 4.2.0).
-
-## [4.1.0] - 2025-08-10
+## 4.8.0 (2025-08-12)
 
 ### Agregado
 
-- Expansión del banco Canvas Bloque 2 (75 → 105) con ítems Extended [S] y etiquetado cognitivo completo.
-- Fusión de rúbricas en archivos centrales eliminando duplicados (casos prácticos y README Bloque 3).
-
-### Cambiado
-
-- Renombrado y homologado el componente evaluativo del Bloque 3 a "Caso Práctico" siguiendo el patrón de Bloques 1 y 2.
-- Reestructurada carpeta `evaluaciones/bloque-3/` (carpetas estándar: caso-practico/, datasets/, solucion-caso-practico/).
+- Herramientas profesionales de conversión notebook-to-pdf en herramientas/notebook-to-pdf/
+- Sistema de cache inteligente con verificación MD5 para conversiones optimizadas
+- Suite completa de tests automatizados (14 casos de prueba)
+- Documentación profesional: README, USAGE_GUIDE, TECHNICAL_DETAILS, INSTALLATION
+- Scripts especializados: convert.py (básico), smart_convert.py (inteligente), convert.sh (bash)
+- Integración completa con Makefile del proyecto principal (comandos notebook-*)
+- Soporte para múltiples motores LaTeX: XeLaTeX, PDFLaTeX, LuaLaTeX
 
 ### Eliminado
 
-- Directorio legacy `proyecto-integrador/` y archivos redundantes asociados (datasets y soluciones duplicadas).
-- README redundante en `caso-practico/` Bloque 3 tras fusión de contenido.
+- Carpeta scripts/ redundante - funcionalidad supersedida por herramientas/notebook-to-pdf/
 
 ### Mejorado
 
-- Claridad documental del caso práctico Bloque 3 (preguntas socráticas, tareas con puntaje, checklist homogéneo).
-- Changelog global actualizado para reflejar limpieza y unificación evaluativa.
-- Sistema de ponderaciones redefinido: 5 actividades de 15% + caso final 25% (reemplaza esquema previo 35/35/30 con presentación separada).
+- Proceso de conversión de notebooks a PDF con detección automática de cambios
+- Verificación de dependencias automatizada
+- Interfaz unificada para conversión mediante comandos make
 
-## [4.0.1] - 2025-08-10
+## 4.7.0 (2025-08-12)
 
-### Mejorado
-
-- Actualización completa del README principal con metodología socrática y estructura de preparatoria
-- Actualización del README del Bloque 3 para consistencia con nivel preparatoria
-- Integración de preguntas motivadoras específicas para cada semana
-- Mejora en la descripción de sesiones de 50 minutos con distribución clara de tiempo
-- Documentación de características pedagógicas únicas del curso
-- Guía de inicio mejorada con progresión clara por bloques
-
-### Cambiado
-
-- Tono de documentación adaptado para estudiantes de preparatoria (15-18 años)
-- Estructura de información reorganizada para mayor claridad pedagógica
-- Herramientas y tecnologías presentadas con contexto deportivo profesional
-
-## [4.0.0] - 2025-08-10
-
-### Agregado
-
-- Transformación completa del Bloque 3 de nivel universitario a preparatoria
-- Metodología socrática integrada en todos los notebooks
-- Restricciones temporales de 50 minutos por sesión implementadas
-- Vocabulario simplificado apropiado para estudiantes de 15-18 años
-- Analogías deportivas familiares (Barcelona, Real Madrid, entrenadores digitales)
-- Proyecto final realista centrado en análisis del Barcelona
-- Sistema de evaluación que respeta el método socrático
-
-### Cambiado
-
-- Semana 11: Transformación de conceptos universitarios a "entrenadores digitales"
-- Semana 12: Modelos como "equipos de especialistas" trabajando juntos
-- Semana 13: Métricas simplificadas con evaluación comprensible
-- Semana 14: Feature engineering como "estadísticas inteligentes"
-- Semana 15: Proyecto integrador con análisis profesional del Barcelona
-
-### Mejorado
-
-- Soporte completo de Pylance para análisis de código Python
-- Documentación de instrucciones para GitHub Copilot
-- Configuración de entorno de desarrollo optimizada
-
-## [4.2.0] - 2025-08-10
-
-## [4.2.1] - 2025-08-10
-
-### Cambiado
-
-- Renombrados archivos de syllabus para usar sufijo de periodo 202513.
-
-### Tipo de versión
-
-- Actualización de documentación sin impacto funcional (patch).
-
-### Cambiado
-
-- Documentación alineada con nueva equivalencia de parciales (Bloque 1: 30%, Bloque 2: 30%, Bloque 3: 40%).
-
-### Mejorado
-
-- Claridad en sub‑pesos internos del Caso Práctico Bloque 3 indicando impacto porcentual sobre el total del curso.
-
-### Razonamiento de incremento menor
-
-- Cambio estructural documental sin alterar bancos de preguntas existentes ni lógica de código: bump menor (4.1.x → 4.2.0).
-- Expansión del banco Canvas Bloque 2 (75 → 105) con ítems Extended [S] y etiquetado cognitivo completo.
-
-## [2.1.0] - 2025-08-08
-
-### Agregado
-
-- Contenido completo del Bloque 2: Explorando Datos Deportivos
-- Notebooks interactivos para análisis estadístico aplicado al fútbol
-- Visualizaciones profesionales con seaborn y matplotlib
-- Metodología de investigación aplicada a datos deportivos
-
-## [2.0.0] - 2025-08-07
-
-### Agregado
-
-- Contenido completo del Bloque 1: Fundamentos de Programación con Python
-- Notebooks interactivos para aprendizaje progresivo
-- Analogías deportivas para conceptos de programación
-- Configuración de entorno de desarrollo
-
-## [1.3.0] - 2025-08-06
-
-### Agregado
-
-- Estructura inicial del curso de 15 semanas
-- Documentación base del proyecto
-- Configuración inicial del repositorio
-
-### Mejorado
-
-- README principal con información completa del curso
-- Referencias y bibliografía especializada
-
-## [1.0.0] - 2025-08-01
-
-### Agregado
-
-- Versión inicial del proyecto
-- Estructura básica de directorios
-- Documentación inicial
+- Se agrega banco de preguntas del Bloque 3 en formatos .md, .txt, .csv y script generar_qti.py para conversión automática a QTI Canvas.
+- Limpieza de mensajes en la herramienta herramientas/txt-to-qti para eliminar emojis y mantener estilo profesional.
+- Mejora la integración y consistencia documental para evaluaciones Canvas en bloque 3.

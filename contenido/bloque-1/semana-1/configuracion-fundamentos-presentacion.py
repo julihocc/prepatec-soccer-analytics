@@ -2,7 +2,6 @@
 # marp: true
 # theme: default
 # paginate: true
-# class: lead
 # ---
 
 # %% [markdown]

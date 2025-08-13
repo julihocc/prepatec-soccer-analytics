@@ -1,0 +1,34 @@
+# CHANGELOG
+
+Todos los cambios notables de este proyecto serán documentados en este archivo.
+
+El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
+y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
+
+## 4.8.0 (2025-08-12)
+
+### Agregado
+
+- Herramientas profesionales de conversión notebook-to-pdf en herramientas/notebook-to-pdf/
+- Sistema de cache inteligente con verificación MD5 para conversiones optimizadas
+- Suite completa de tests automatizados (14 casos de prueba)
+- Documentación profesional: README, USAGE_GUIDE, TECHNICAL_DETAILS, INSTALLATION
+- Scripts especializados: convert.py (básico), smart_convert.py (inteligente), convert.sh (bash)
+- Integración completa con Makefile del proyecto principal (comandos notebook-*)
+- Soporte para múltiples motores LaTeX: XeLaTeX, PDFLaTeX, LuaLaTeX
+
+### Eliminado
+
+- Carpeta scripts/ redundante - funcionalidad supersedida por herramientas/notebook-to-pdf/
+
+### Mejorado
+
+- Proceso de conversión de notebooks a PDF con detección automática de cambios
+- Verificación de dependencias automatizada
+- Interfaz unificada para conversión mediante comandos make
+
+## 4.7.0 (2025-08-12)
+
+- Se agrega banco de preguntas del Bloque 3 en formatos .md, .txt, .csv y script generar_qti.py para conversión automática a QTI Canvas.
+- Limpieza de mensajes en la herramienta herramientas/txt-to-qti para eliminar emojis y mantener estilo profesional.
+- Mejora la integración y consistencia documental para evaluaciones Canvas en bloque 3.

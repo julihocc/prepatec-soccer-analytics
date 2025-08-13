@@ -98,6 +98,31 @@ print("¿Qué patrones observas en estos datos?")
 
 #### Aplicación en Evaluaciones:
 - Preguntas que requieren razonamiento, no memorización
+
+### PARADIGMA ARQUITECTÓNICO: FORMATO PY:PERCENT (OBLIGATORIO)
+
+**DECISIÓN CRÍTICA**: El contenido educativo utiliza archivos `.py` con formato percent en lugar de notebooks `.ipynb` para mejorar mantenibilidad y colaboración.
+
+#### Beneficios del formato PY:PERCENT:
+- **✅ Control de versiones superior**: Diffs legibles, no conflictos JSON
+- **✅ Colaboración mejorada**: Editores completos con syntax highlighting 
+- **✅ Mantenimiento simplificado**: Sin conflictos JSON de notebooks
+- **✅ Compatibilidad total**: Conversión bidireccional automática con jupytext
+
+#### Estructura del proyecto:
+- **Un archivo `.py` por semana**: Formato percent con metadata automático
+- **Exclusión de `.ipynb`**: Están en .gitignore, no se versionan
+- **Conversión on-demand**: `jupytext --to notebook` cuando necesario
+
+#### Flujo de trabajo:
+1. **Editar contenido**: Trabajar directamente en archivos `.py`
+2. **Generar notebooks**: `jupytext --to notebook archivo.py` cuando necesario  
+3. **Generar PDFs**: Usar herramientas/notebook-to-pdf/ para conversión masiva
+
+#### Reglas obligatorias:
+- **Formato único**: Solo percent format (# %% [markdown] y # %%)
+- **Sin notebooks**: Los `.ipynb` están excluidos del control de versiones
+- **Conversión on-demand**: Generar notebooks solo cuando se requiera ejecución interactiva
 - Escenarios deportivos que demanden análisis crítico
 - Casos prácticos que integren múltiples conceptos
 - Evaluación del proceso de pensamiento, no solo resultados

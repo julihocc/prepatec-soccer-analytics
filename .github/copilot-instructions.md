@@ -118,11 +118,17 @@ print("¿Qué patrones observas en estos datos?")
 1. **Editar contenido**: Trabajar directamente en archivos `.py`
 2. **Generar notebooks**: `jupytext --to notebook archivo.py` cuando necesario  
 3. **Generar PDFs**: Usar herramientas/notebook-to-pdf/ para conversión masiva
+4. **Generar presentaciones**: Usar herramientas/py-to-marp/ para slides Marp
 
 #### Reglas obligatorias:
 - **Formato único**: Solo percent format (# %% [markdown] y # %%)
 - **Sin notebooks**: Los `.ipynb` están excluidos del control de versiones
 - **Conversión on-demand**: Generar notebooks solo cuando se requiera ejecución interactiva
+
+#### Herramientas de conversión disponibles:
+- **py-to-marp**: Convierte archivos .py a presentaciones Marp con estilos educativos
+- **notebook-to-pdf**: Convierte notebooks a PDFs profesionales con LaTeX
+- **jupytext**: Conversión bidireccional entre .py y .ipynb
 - Escenarios deportivos que demanden análisis crítico
 - Casos prácticos que integren múltiples conceptos
 - Evaluación del proceso de pensamiento, no solo resultados
@@ -277,8 +283,14 @@ for i in range(30):
 # Verificar entorno de desarrollo
 python -c "import pandas as pd; print('Pandas ready!')"
 
-# Ejecutar notebook completo para testing
-jupyter nbconvert --execute --to notebook contenido/bloque-1/semana-1/configuracion-fundamentos.ipynb
+# Convertir archivo a notebook y ejecutar para testing
+jupytext --to notebook archivo.py && jupyter nbconvert --execute archivo.ipynb
+
+# Generar presentación Marp desde archivo py:percent
+cd herramientas/py-to-marp && python3 convert.py ../../contenido/archivo.py --config educativo
+
+# Conversión masiva con Makefile
+cd herramientas/py-to-marp && make convert-all CONFIG=taller
 
 # Commit con estándares del proyecto (mensajes en español)
 git commit -m "Actualizar Semana X: mejorar metodología socrática"

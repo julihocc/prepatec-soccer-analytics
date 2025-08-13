@@ -64,6 +64,22 @@ convert-all:  ## Convierte todos los archivos .py del contenido (usar CONFIG=con
 	done
 	@echo "✅ Conversión masiva completada"
 
+convert-dir:  ## Convierte todos los archivos .py de un directorio específico (usar DIR=path CONFIG=config)
+	@if [ -z "$(DIR)" ]; then \
+		echo "❌ Error: especifica DIR=path/to/directory"; \
+		exit 1; \
+	fi
+	@if [ ! -d "$(DIR)" ]; then \
+		echo "❌ Error: el directorio $(DIR) no existe"; \
+		exit 1; \
+	fi
+	@echo "🔄 Convirtiendo archivos .py en $(DIR)..."
+	@find "$(DIR)" -name "*.py" -type f | while read file; do \
+		echo "   Procesando $$file"; \
+		$(PYTHON) $(CONVERTER) "$$file" --config $(or $(CONFIG),educativo); \
+	done
+	@echo "✅ Conversión de directorio completada"
+
 clean:  ## Limpia archivos .md generados
 	@echo "🧹 Limpiando archivos .md generados..."
 	@find $(CONTENIDO_DIR) -name "*.md" -type f -delete

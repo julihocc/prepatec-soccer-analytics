@@ -32,6 +32,12 @@ python convert.py archivo.py --config taller
 
 # Con título personalizado
 python convert.py archivo.py --title "Mi Presentación Especial"
+
+# Convertir todos los archivos de un directorio
+python convert.py --directory ./mi_carpeta --config educativo
+
+# Convertir directorio específico con configuración
+python convert.py --directory ../../contenido/bloque-1 --config taller
 ```
 
 ### Usando Makefile (recomendado)
@@ -41,6 +47,9 @@ make help
 
 # Convertir archivo específico
 make convert FILE=path/to/archivo.py CONFIG=educativo
+
+# Convertir directorio específico (NUEVA FUNCIÓN)
+make convert-dir DIR=path/to/directory CONFIG=taller
 
 # Convertir todo un bloque
 make convert-bloque BLOQUE=1 CONFIG=taller

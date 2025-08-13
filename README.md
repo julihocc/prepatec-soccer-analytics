@@ -120,6 +120,40 @@ Este curso te introduce al fascinante mundo de la ciencia de datos aplicada al f
 
 ## Herramientas y Tecnologías
 
+### Herramientas Incluidas en el Curso
+
+#### 📄 Conversión de Notebooks a PDF
+Convierte automáticamente todos los notebooks Jupyter a PDF de alta calidad:
+
+```bash
+# Conversión inteligente (solo regenera cuando es necesario)
+make pdfs
+
+# Ver estado de conversión
+make status-pdfs
+
+# Usar herramientas directamente
+python3 herramientas/notebook-to-pdf/smart_convert.py contenido/
+```
+
+**Características:**
+- **Cache inteligente**: Solo regenera PDFs cuando hay cambios
+- **Múltiples motores LaTeX**: XeLaTeX, PDFLaTeX, LuaLaTeX
+- **Tests automatizados**: Suite completa de validación
+- **Documentación completa**: Guías de uso e instalación
+
+Ver [`herramientas/notebook-to-pdf/`](herramientas/notebook-to-pdf/) para documentación completa.
+
+#### 🎯 Conversión de Preguntas a QTI Canvas
+Convierte bancos de preguntas desde texto simple a formato QTI para Canvas LMS:
+
+```bash
+# Convertir preguntas a formato Canvas
+python herramientas/txt-to-qti/smart_convert.py preguntas.txt
+```
+
+Ver [`herramientas/txt-to-qti/`](herramientas/txt-to-qti/) para más detalles.
+
 ### Tu kit de herramientas profesional
 
 - **Python 3.8+** - El mismo lenguaje que usan analistas de Manchester City y Real Madrid

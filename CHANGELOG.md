@@ -5,6 +5,30 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 
+## 4.9.0 (2025-08-12)
+
+### Agregado
+
+- Suite completa de tests para herramienta py-to-marp con cobertura exhaustiva
+- Tests diagnósticos para verificación de funcionalidad (test_diagnostics.py)
+- Suite de tests principal con 4 casos de prueba (run_tests.py)
+- Tests específicos para conversión py-to-marp (test_py_to_marp.py)
+- Archivo de muestra para testing (test_sample.py)
+- Generación automática de documentación en formato Markdown desde archivos py:percent
+
+### Corregido
+
+- Restauración completa de convert.py tras corrupción del archivo
+- Funcionalidad CLI de py-to-marp completamente operativa
+- Corrección de imports y dependencias en herramienta py-to-marp
+- Simplificación de Makefile para evitar conflictos de targets
+
+### Mejorado
+
+- Proceso de conversión de archivos py:percent a presentaciones Marp más robusto
+- Validación automática de todas las configuraciones disponibles (6 configuraciones)
+- Documentación técnica y procesos de testing mejorados
+
 ## 4.8.0 (2025-08-12)
 
 ### Agregado

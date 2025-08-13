@@ -98,6 +98,37 @@ print("¿Qué patrones observas en estos datos?")
 
 #### Aplicación en Evaluaciones:
 - Preguntas que requieren razonamiento, no memorización
+
+### PARADIGMA ARQUITECTÓNICO: FORMATO PY:PERCENT (OBLIGATORIO)
+
+**DECISIÓN CRÍTICA**: El contenido educativo utiliza archivos `.py` con formato percent en lugar de notebooks `.ipynb` para mejorar mantenibilidad y colaboración.
+
+#### Beneficios del formato PY:PERCENT:
+- **✅ Control de versiones superior**: Diffs legibles, no conflictos JSON
+- **✅ Colaboración mejorada**: Editores completos con syntax highlighting 
+- **✅ Mantenimiento simplificado**: Sin conflictos JSON de notebooks
+- **✅ Compatibilidad total**: Conversión bidireccional automática con jupytext
+
+#### Estructura del proyecto:
+- **Un archivo `.py` por semana**: Formato percent con metadata automático
+- **Exclusión de `.ipynb`**: Están en .gitignore, no se versionan
+- **Conversión on-demand**: `jupytext --to notebook` cuando necesario
+
+#### Flujo de trabajo:
+1. **Editar contenido**: Trabajar directamente en archivos `.py`
+2. **Generar notebooks**: `jupytext --to notebook archivo.py` cuando necesario  
+3. **Generar PDFs**: Usar herramientas/notebook-to-pdf/ para conversión masiva
+4. **Generar presentaciones**: Usar herramientas/py-to-marp/ para slides Marp
+
+#### Reglas obligatorias:
+- **Formato único**: Solo percent format (# %% [markdown] y # %%)
+- **Sin notebooks**: Los `.ipynb` están excluidos del control de versiones
+- **Conversión on-demand**: Generar notebooks solo cuando se requiera ejecución interactiva
+
+#### Herramientas de conversión disponibles:
+- **py-to-marp**: Convierte archivos .py a presentaciones Marp con estilos educativos
+- **notebook-to-pdf**: Convierte notebooks a PDFs profesionales con LaTeX
+- **jupytext**: Conversión bidireccional entre .py y .ipynb
 - Escenarios deportivos que demanden análisis crítico
 - Casos prácticos que integren múltiples conceptos
 - Evaluación del proceso de pensamiento, no solo resultados
@@ -252,8 +283,14 @@ for i in range(30):
 # Verificar entorno de desarrollo
 python -c "import pandas as pd; print('Pandas ready!')"
 
-# Ejecutar notebook completo para testing
-jupyter nbconvert --execute --to notebook contenido/bloque-1/semana-1/configuracion-fundamentos.ipynb
+# Convertir archivo a notebook y ejecutar para testing
+jupytext --to notebook archivo.py && jupyter nbconvert --execute archivo.ipynb
+
+# Generar presentación Marp desde archivo py:percent
+cd herramientas/py-to-marp && python3 convert.py ../../contenido/archivo.py --config educativo
+
+# Conversión masiva con Makefile
+cd herramientas/py-to-marp && make convert-all CONFIG=taller
 
 # Commit con estándares del proyecto (mensajes en español)
 git commit -m "Actualizar Semana X: mejorar metodología socrática"

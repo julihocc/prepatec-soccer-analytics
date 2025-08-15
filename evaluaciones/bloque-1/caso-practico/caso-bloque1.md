@@ -66,127 +66,118 @@ jugadores = {
 
 Usar un bucle for para contar victorias, empates y derrotas:
 
-```python
-# Definir las listas de datos (ya proporcionadas arriba)
-resultados_partidos = ["Victoria", "Derrota", "Victoria", "Empate", "Victoria", 
-                      "Derrota", "Victoria", "Empate", "Victoria", "Victoria"]
+- Definir las listas de datos proporcionadas en la sección de datos
+- Crear variables para contar cada tipo de resultado (victorias, empates, derrotas)
+- Usar bucle for e if para recorrer la lista y contar cada resultado
+- Mostrar los totales obtenidos
 
-# Su código aquí: contar cada tipo de resultado
-victorias = 0
-empates = 0  
-derrotas = 0
-
-# Usar bucle for e if para contar
-```
-
-Pregunta de reflexión: ¿Qué patrón observas entre victorias y empates? ¿Qué podría significar esto sobre la consistencia del equipo?
+**Pregunta de reflexión:** ¿Qué patrón observas entre victorias y empates? ¿Qué podría significar esto sobre la consistencia del equipo?
 
 #### 1.2 Crear Funciones Simples (20 puntos)
 
 Escribir estas 2 funciones obligatorias:
 
 **a) Función para calcular puntos:**
-
-```python
-def calcular_puntos(victorias, empates):
-    """Calcula puntos: Victoria=3, Empate=1"""
-    # Su código aquí
-    return total_puntos
-```
+- Crear función `calcular_puntos(victorias, empates)` que calcule puntos de liga
+- Aplicar reglas: Victoria = 3 puntos, Empate = 1 punto, Derrota = 0 puntos
+- Retornar el total de puntos calculado
+- Probar la función con casos de ejemplo
 
 **b) Función para encontrar mejor goleador:**
-
-```python
-def mejor_goleador(jugadores):
-    """Encuentra quién marcó más goles"""
-    # Su código aquí
-    return nombre_mejor, goles_mejor
-```
-
-Añade al final de cada función una prueba mínima (asegura funcionamiento):
-
-```python
-assert calcular_puntos(5, 2) == 17  # 5*3 + 2*1
-```
+- Crear función `mejor_goleador(jugadores)` que reciba el diccionario de jugadores
+- Iterar sobre los jugadores para encontrar quien tiene más goles
+- Retornar el nombre del mejor goleador y su cantidad de goles
+- Verificar que funciona correctamente con los datos dados
 
 **Pregunta de reflexión:** ¿Por qué es útil probar una función con un caso simple antes de usarla en todo el análisis? ¿Qué te da confianza sobre tu código?
 
 #### 1.3 Trabajar con Listas y Diccionarios (10 puntos)
 
+Realizar análisis básicos usando las estructuras de datos:
+
 - Calcular total de goles a favor usando la lista `goles_favor`
-- Encontrar el partido con más goles usando funciones básicas
-- Usar el diccionario `jugadores` para encontrar información básica
+- Encontrar el partido con más goles marcados usando funciones básicas
+- Usar el diccionario `jugadores` para extraer información por posición
+- Contar cuántos jugadores hay por posición
 
 **Pregunta de reflexión:** ¿Qué limitación notas al manejar varias listas separadas para analizar partidos? ¿Cómo crees que esto afectaría si tuvieras 100 partidos?
 
-### Parte 2: Análisis y Visualización (30 puntos)
+### Parte 2: Análisis y Métricas Básicas (30 puntos)
 
 #### 2.1 Estadísticas Básicas del Equipo (10 puntos)
 
-- Usar las funciones que crearon para calcular puntos totales
-- Calcular el promedio de goles por partido (total goles ÷ partidos)
+Usar las funciones creadas para realizar análisis estadístico básico:
+
+- Usar las funciones que crearon para calcular puntos totales del equipo
+- Calcular el promedio de goles por partido (total goles ÷ número de partidos)
 - Determinar si el equipo marcó más goles de los que recibió
+- Calcular la diferencia de goles total (goles a favor - goles en contra)
 
 **Pregunta de reflexión:** ¿El promedio de goles refleja toda la historia del rendimiento ofensivo? ¿Qué información importante NO te dice este número?
 
 #### 2.2 Análisis de Jugadores (10 puntos)  
 
-- Usar su función para encontrar el mejor goleador
-- Contar cuántos delanteros hay en el equipo
+Aplicar análisis usando diccionarios para entender el rendimiento individual:
+
+- Usar su función para encontrar el mejor goleador del equipo
+- Contar cuántos jugadores hay por posición (delanteros, mediocampo, defensa)
 - Calcular el total de goles marcados por todos los jugadores
+- Identificar qué posición tiene el promedio de goles más alto
 
 **Pregunta de reflexión:** ¿Ser el máximo goleador implica automáticamente mayor impacto para el equipo? ¿Qué otros datos considerarías para evaluar la contribución real de un jugador?
 
-#### 2.3 Mini Introducción a pandas (5 puntos)
+#### 2.3 Introducción a pandas (10 puntos)
 
-Construyan un DataFrame simple para unificar los datos y comparar ventajas respecto a listas:
+Construir un DataFrame simple para unificar los datos y comparar ventajas respecto a listas:
 
-```python
-import pandas as pd
-datos_partidos = pd.DataFrame({
-    'partido': range(1, len(goles_favor)+1),
-    'resultado': resultados_partidos,
-    'goles_favor': goles_favor,
-    'goles_contra': goles_contra
-})
-
-promedio_goles_df = datos_partidos['goles_favor'].mean()
-print("Promedio goles (DataFrame):", promedio_goles_df)
-```
+- Importar pandas y crear un DataFrame con los datos de partidos
+- Incluir columnas: número de partido, resultado, goles a favor, goles en contra
+- Calcular promedio de goles usando métodos de pandas
+- Comparar la facilidad de uso entre DataFrame y listas separadas
+- Mostrar las primeras filas del DataFrame creado
 
 **Pregunta de reflexión:** ¿Qué ventaja concreta te da el DataFrame frente a manejar tres listas independientes? ¿En qué situaciones crees que esta diferencia sería aún más importante?
 
-#### 2.4 Visualización Básica (5 puntos)
+### Parte 3: Visualización e Interpretación (30 puntos)
 
-Crear un gráfico de barras comparando goles a favor y en contra por partido:
+#### 3.1 Visualización Básica (15 puntos)
 
-```python
-import matplotlib.pyplot as plt
-partidos = range(1, len(goles_favor)+1)
-plt.bar(partidos, goles_favor, label='Goles a favor')
-plt.bar(partidos, goles_contra, label='Goles en contra', alpha=0.7)
-plt.xlabel('Partido')
-plt.ylabel('Goles')
-plt.title('Rendimiento ofensivo y defensivo')
-plt.legend()
-plt.show()
-```
+Crear visualizaciones profesionales para comunicar los hallazgos:
 
-**Pregunta de reflexión:** ¿En qué partidos la diferencia fue mayor? ¿Qué hipótesis podrías proponer sobre el rendimiento del equipo en esos momentos específicos?
+**a) Gráfico de barras - Rendimiento por partido:**
+- Crear gráfico de barras comparando goles a favor y en contra por partido
+- Usar matplotlib para generar el gráfico con etiquetas claras
+- Incluir título, etiquetas de ejes y leyenda profesional
+- Configurar colores y transparencia apropiados
 
-### Parte 3: Comunicación y Razonamiento (30 puntos)
+**b) Comparación de resultados:**
+- Crear gráfico que muestre la distribución de victorias, empates y derrotas
+- Usar gráfico de barras o pie chart para mostrar proporciones
+- Incluir números absolutos y porcentajes en la visualización
 
-#### 3.1 Notebook Limpio y Explicado (15 puntos)
+**Pregunta de reflexión:** ¿En qué partidos la diferencia de goles fue mayor? ¿Qué hipótesis podrías proponer sobre el rendimiento del equipo en esos momentos específicos?
 
-- Código funciona sin errores
-- Comentarios explicando qué hace cada parte
-- Estructura clara paso a paso
+#### 3.2 Análisis por Posición (10 puntos)
 
-#### 3.2 Presentación y Reflexión Grupal (15 puntos)
+Analizar el rendimiento de jugadores por posición:
 
-- 5 minutos máximo por equipo
-- Mostrar sus resultados principales
-- Cada integrante explica una parte
+- Agrupar jugadores por posición y calcular estadísticas básicas
+- Crear visualización mostrando goles promedio por posición
+- Identificar qué posiciones contribuyen más al ataque
+- Comparar el rendimiento individual vs grupal
+
+**Pregunta de reflexión:** ¿Los delanteros son los únicos responsables de los goles? ¿Qué te dice la distribución de goles por posición sobre el estilo de juego del equipo?
+
+#### 3.3 Interpretación y Comunicación (5 puntos)
+
+Preparar una síntesis clara de los hallazgos:
+
+- Comparar rendimiento ofensivo vs defensivo del equipo
+- Identificar fortalezas y debilidades basadas en los datos
+- Evaluar la consistencia del equipo a lo largo de los partidos
+- Proponer una recomendación práctica para mejorar el rendimiento
+
+**Pregunta de reflexión:** ¿Qué le recomendarías al entrenador para mejorar el rendimiento del equipo basándote en estos datos? ¿Qué aspectos priorizarías?
 
 ---
 
@@ -246,123 +237,146 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 ### Rúbrica del Caso Práctico (100 puntos totales)
 
-**Distribución**: 60% Desarrollo Técnico + 40% Comunicación y Reflexión
+**Distribución**: 70% Desarrollo Técnico + 30% Comunicación y Reflexión
 
 | Componente | Puntos | Criterios de Evaluación |
 |------------|--------|------------------------|
-| **Código y Funciones** | 35 | Bucles y conteo correcto (10) + Funciones implementadas y probadas (15) + Cálculos estadísticos (10) |
-| **Análisis con Datos** | 25 | DataFrame y comparación con listas (10) + Visualización básica (10) + Interpretación de resultados (5) |
-| **Video de Exposición** | 25 | Claridad en explicación (10) + Participación equilibrada del equipo (8) + Manejo del tiempo (≤15 min) (7) + Enlace en notebook |
-| **Reflexión y Documentación** | 15 | Preguntas reflexivas intermedias (7) + Reflexión final (3) + Comentarios claros en código (5) |
+| **Fundamentos y Funciones** | 40 | Bucles y conteo (10) + Funciones implementadas (20) + Listas y diccionarios (10) |
+| **Análisis y Métricas Básicas** | 30 | Estadísticas básicas (10) + Análisis de jugadores (10) + Introducción pandas (10) |
+| **Visualización e Interpretación** | 20 | Visualización básica (15) + Análisis por posición (5) |
+| **Comunicación y Documentación** | 10 | Video de exposición (7) + Reflexión final y comentarios (3) + Enlace en notebook |
 
 ### Criterios de Desempeño por Componente
 
-#### 1. Código y Funciones (35 puntos)
+#### 1. Fundamentos y Funciones (40 puntos)
 
-**Excelente (35 puntos ~ 100%):**
+**Excelente (40 puntos ~ 100%):**
+
 - Bucle for cuenta correctamente victorias, empates y derrotas
-- Funciones `calcular_puntos` y `mejor_goleador` implementadas y funcionan
-- Incluye pruebas con `assert`
+- Funciones `calcular_puntos` y `mejor_goleador` implementadas y funcionan correctamente
+- Incluye pruebas y validación de las funciones
 - Variables con nombres descriptivos en español
+- Manejo correcto de listas y diccionarios
 
-**Suficiente (25 puntos ~ 70%):**
+**Suficiente (28 puntos ~ 70%):**
+
 - Código funciona con errores menores
 - Una función implementada correctamente
 - Lógica básica presente
+- Algunos errores en manejo de estructuras de datos
 
-**Insuficiente (11 puntos ~ 30%):**
+**Insuficiente (12 puntos ~ 30%):**
+
 - Código parcialmente funcional
 - Errores en lógica pero intento claro
 - Falta alguna función o prueba
+- Dificultades con bucles o estructuras de datos
 
 **No presentó (0 puntos):**
+
 - Código no funciona o incompleto
 - Errores graves de sintaxis
-- Funciones faltantes
+- Funciones faltantes o no implementadas
 
-#### 2. Análisis con Datos (25 puntos)
+#### 2. Análisis y Métricas Básicas (30 puntos)
 
-**Excelente (25 puntos ~ 100%):**
-- DataFrame creado correctamente
-- Explica ventajas vs listas
-- Gráfico de barras legible con etiquetas
-- Interpreta resultados correctamente
+**Excelente (30 puntos ~ 100%):**
 
-**Suficiente (18 puntos ~ 70%):**
-- DataFrame funcional
-- Gráfico básico presente
-- Interpretación superficial
+- DataFrame creado correctamente y comparado con listas
+- Estadísticas básicas calculadas e interpretadas correctamente
+- Análisis completo de jugadores por posición
+- Explica ventajas de pandas sobre estructuras básicas
+- Interpretación clara de los resultados
 
-**Insuficiente (8 puntos ~ 30%):**
-- Intento de DataFrame o visualización
+**Suficiente (21 puntos ~ 70%):**
+
+- DataFrame funcional con análisis básico
+- Estadísticas calculadas correctamente
+- Interpretación superficial pero presente
+
+**Insuficiente (9 puntos ~ 30%):**
+
+- Intento de DataFrame o análisis estadístico
 - Resultados parcialmente correctos
+- Poca interpretación o análisis
+
+**No presentó (0 puntos):**
+
+- No logra crear DataFrame o realizar análisis
+- Sin estadísticas o cálculos incorrectos
+- Sin interpretación de resultados
+
+#### 3. Visualización e Interpretación (20 puntos)
+
+**Excelente (20 puntos ~ 100%):**
+
+- Gráficos implementados correctamente con títulos y etiquetas
+- Visualizaciones claras y profesionales
+- Análisis por posición bien desarrollado
+- Interpretaciones conectadas con conocimiento futbolístico
+- Recomendaciones prácticas fundamentadas
+
+**Suficiente (14 puntos ~ 70%):**
+
+- Gráficos básicos pero funcionales
+- Interpretación superficial
+- Algunas recomendaciones presentes
+
+**Insuficiente (6 puntos ~ 30%):**
+
+- Visualizaciones básicas o incompletas
 - Poca interpretación
+- Recomendaciones sin fundamento
 
 **No presentó (0 puntos):**
-- No logra crear DataFrame
-- Sin visualización o incorrecta
-- Sin interpretación
 
-#### 3. Video de Exposición (25 puntos)
+- Sin visualizaciones o no funcionan
+- Sin interpretación o análisis
+- Sin recomendaciones
 
-**Excelente (25 puntos ~ 100%):**
-- Explicación clara de código y resultados
-- Cada integrante participa equitativamente
-- Tiempo ≤15 minutos
-- Buen manejo del notebook durante presentación
+#### 4. Comunicación y Documentación (10 puntos)
 
-**Suficiente (18 puntos ~ 70%):**
-- Explicación clara pero participación desigual
-- Tiempo adecuado
-- Presentación organizada
+**Excelente (10 puntos ~ 100%):**
 
-**Insuficiente (8 puntos ~ 30%):**
-- Explicación básica
-- Participación mínima de algunos integrantes
-- Excede tiempo ligeramente (16-18 min)
-
-**No presentó (0 puntos):**
-- Explicación confusa o incompleta
-- Solo una persona presenta
-- Excede significativamente el tiempo (>18 min)
-- Video de mala calidad o inaudible
-
-#### 4. Reflexión y Documentación (15 puntos)
-
-**Excelente (15 puntos ~ 100%):**
-- Responde todas las preguntas reflexivas intermedias con profundidad
-- Completa reflexión final con 3 preguntas (análisis detallado)
-- Comentarios explican el "por qué", no solo el "qué"
+- Video claro, bien estructurado, ≤15 minutos
+- Participación equilibrada del equipo
+- Reflexión final completa con 3 preguntas respondidas
+- Comentarios explicativos claros en código
 - Conexiones claras entre conceptos
 
-**Suficiente (11 puntos ~ 70%):**
-- Responde la mayoría de preguntas reflexivas
-- Reflexión final básica pero presente
-- Comentarios básicos pero útiles
+**Suficiente (7 puntos ~ 70%):**
 
-**Insuficiente (5 puntos ~ 30%):**
-- Respuestas superficiales a preguntas reflexivas
-- Reflexión final incompleta o muy breve
-- Comentarios mínimos
+- Video básico pero funcional
+- Reflexión final presente
+- Algunos comentarios en código
+
+**Insuficiente (3 puntos ~ 30%):**
+
+- Video de baja calidad o excede tiempo
+- Reflexión final incompleta
+- Pocos comentarios explicativos
 
 **No presentó (0 puntos):**
-- No responde preguntas reflexivas intermedias
-- Falta reflexión final o comentarios inútiles
+
+- Sin video o video no accesible
+- Sin reflexión final
+- Código sin documentación
 
 ### Tabla Resumen de Calificación
 
 | Componente | Puntos Máximos | Excelente (~100%) | Suficiente (~70%) | Insuficiente (~30%) | No presentó (0%) |
 |------------|-----------------|-------------------|-------------------|---------------------|------------------|
-| Código y Funciones | 35 | 35 puntos | 25 puntos | 11 puntos | 0 puntos |
-| Análisis con Datos | 25 | 25 puntos | 18 puntos | 8 puntos | 0 puntos |
-| Video de Exposición | 25 | 25 puntos | 18 puntos | 8 puntos | 0 puntos |
-| Reflexión y Documentación | 15 | 15 puntos | 11 puntos | 5 puntos | 0 puntos |
-| **TOTAL** | **100** | **100 puntos** | **72 puntos** | **32 puntos** | **0 puntos** |
+| Fundamentos y Funciones | 40 | 40 puntos | 28 puntos | 12 puntos | 0 puntos |
+| Análisis y Métricas Básicas | 30 | 30 puntos | 21 puntos | 9 puntos | 0 puntos |
+| Visualización e Interpretación | 20 | 20 puntos | 14 puntos | 6 puntos | 0 puntos |
+| Comunicación y Documentación | 10 | 10 puntos | 7 puntos | 3 puntos | 0 puntos |
+| **TOTAL** | **100** | **100 puntos** | **70 puntos** | **30 puntos** | **0 puntos** |
 
 ### Requisitos Mínimos para Aprobar
 
 - Notebook ejecuta sin errores graves
 - Al menos una función implementada correctamente
+- DataFrame básico creado y funcionando
 - Video subido a YouTube con participación de todo el equipo
 - Duración del video ≤20 minutos (máximo absoluto)
 
@@ -400,40 +414,48 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 ### Para el Trabajo en Equipo
 
-- Una persona se encarga de los bucles
-- Otra persona se encarga de las funciones  
-- Todos participan en el análisis final
+- **Persona 1**: Fundamentos básicos, bucles y conteo de resultados
+- **Persona 2**: Funciones principales, análisis de jugadores y estadísticas básicas  
+- **Persona 3**: DataFrame, visualizaciones y preparación del video
+- **Todos**: Participan en interpretaciones y reflexión final
 
 ### Para el Video de Exposición
 
 - **Duración**: Practiquen para mantenerse en 12-15 minutos
 - **Participación**: Cada persona explica 4-5 minutos
-- **Estructura sugerida**: Introducción (1 min) + Código (8-10 min) + Resultados (4-5 min) + Conclusiones (1-2 min)
+- **Estructura sugerida**: 
+  - Introducción y datos (2 min)
+  - Código y funciones (4-5 min)
+  - Análisis y visualizaciones (4-5 min)
+  - Resultados y conclusiones (3-4 min)
 - **Técnico**: Graben pantalla mostrando el notebook, audio claro
 - **Herramientas**: Pueden usar Zoom, OBS, o la grabación de pantalla del sistema operativo
 
 ### Preguntas Frecuentes
 
-1. ¿Cómo cuento elementos en una lista? → Usar bucle for
+1. ¿Cómo cuento elementos en una lista? → Usar bucle for con contador
 2. ¿Cómo encuentro el máximo en un diccionario? → Usar bucle para comparar valores
-3. ¿Cómo calculo promedios? → suma total ÷ cantidad
+3. ¿Cómo calculo promedios? → suma total ÷ cantidad de elementos
 4. ¿El video puede ser "no listado" en YouTube? → Sí, pero debe ser accesible con el link
+5. ¿Qué pasa si mi función no funciona? → Probar con casos simples y revisar la lógica paso a paso
 
 ---
 
 ### Autoevaluación Rápida (Marcar OK / Revisar)
 
 **Código y Análisis:**
+
 - [ ] Conté victorias, empates y derrotas correctamente
 - [ ] Implementé y probé `calcular_puntos`
 - [ ] Implementé y probé `mejor_goleador`
-- [ ] Calculé promedios y diferencia de goles
-- [ ] Creé DataFrame y expliqué ventaja sobre listas
-- [ ] Generé gráfico barras goles a favor vs contra
+- [ ] Calculé estadísticas básicas del equipo
+- [ ] Creé DataFrame y expliqué ventajas sobre listas
+- [ ] Generé visualizaciones básicas con títulos y etiquetas
 - [ ] Respondí 3 preguntas de reflexión final
-- [ ] Comentarios claros e intencionales
+- [ ] Comentarios claros e intencionales en el código
 
 **Video de Exposición:**
+
 - [ ] Video dura máximo 15 minutos
 - [ ] Cada integrante participa en la explicación
 - [ ] Se explica claramente el código y los resultados
@@ -441,6 +463,7 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 - [ ] Video subido a YouTube y link funciona
 
 **Entrega:**
+
 - [ ] Notebook ejecuta completamente sin errores
 - [ ] Nombres de variables en español
 - [ ] Link de YouTube enviado en Canvas

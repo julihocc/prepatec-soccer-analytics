@@ -195,104 +195,137 @@ plt.show()
 ### 1. Notebook de Jupyter (`caso_bloque1_equipo[X].ipynb`)
 
 - Código funcional con las dos funciones solicitadas
-- Análisis paso a paso con comentarios
+- Análisis paso a paso con comentarios claros
 - Resultados de todos los cálculos
+- Respuestas a las preguntas de reflexión
 
-### 2. Presentación Simple (`presentacion_equipo[X].pdf`)
+### 2. Video de Exposición (YouTube)
 
-- 3-4 diapositivas máximo
-- Sus resultados principales
-- Explicación de qué aprendieron
+- **Duración máxima**: 15 minutos
+- **Formato**: Video grabado subido a YouTube (puede ser no listado)
+- **Contenido**: Presentación del notebook y explicación de resultados
+- **Participación**: Cada integrante debe explicar al menos una parte
+- **Envío**: Link de YouTube en el Canvas
 
 ---
 
-## Criterios de Evaluación (Rúbrica Completa Integrada)
+## Criterios de Evaluación
 
-Esta sección fusiona la rúbrica completa del Bloque 1 dentro del caso práctico (el archivo independiente ha sido retirado para simplificar la consulta). Mantiene el modelo estándar 40/30/30 y añade configuraciones del Examen Canvas para referencia global del bloque.
+### Rúbrica del Caso Práctico (100 puntos totales)
 
-### 1. Examen Canvas (Referencia del Bloque)
+**Distribución**: 60% Desarrollo Técnico + 40% Comunicación y Reflexión
 
-- Banco total: 120 preguntas (Core 1–75, Extended 76–120).
-- Preguntas por examen: 22 (muestreo estratificado objetivo: [R] 7-8, [C] 7-8, [A] 5-6, [S] 1-2).
-- Formato: ~70% opción múltiple / ~30% numéricas (tolerancia 5%).
-- Tiempo límite: 50 minutos. Intento único.
-- Segmentación: Uso principal Core (≥80%) + Extended para variabilidad e interpretación ([S]).
-- Temas 20% c/u: Variables y tipos, estructuras de control, funciones/modularidad, introducción pandas, visualización básica.
+| Componente | Puntos | Criterios de Evaluación |
+|------------|--------|------------------------|
+| **Código y Funciones** | 35 | Bucles y conteo correcto (10) + Funciones implementadas y probadas (15) + Cálculos estadísticos (10) |
+| **Análisis con Datos** | 25 | DataFrame y comparación con listas (10) + Visualización básica (10) + Interpretación de resultados (5) |
+| **Video de Exposición** | 25 | Claridad en explicación (10) + Participación equilibrada del equipo (8) + Manejo del tiempo (≤15 min) (7) |
+| **Reflexión y Documentación** | 15 | Respuestas a preguntas reflexivas (10) + Comentarios claros en código (5) |
 
-### 2. Caso Práctico Colaborativo (Este Documento)
+### Criterios de Desempeño por Componente
 
-Ponderación: 15% del curso. Equipos de 2–3 estudiantes. Semana de desarrollo.
+#### 1. Código y Funciones (35 puntos)
 
-### 3. Rúbrica 40 / 30 / 30 (100 puntos totales)
+**Excelente (32-35):**
+- Bucle for cuenta correctamente victorias, empates y derrotas
+- Funciones `calcular_puntos` y `mejor_goleador` implementadas y funcionan
+- Incluye pruebas con `assert`
+- Variables con nombres descriptivos en español
 
-| Área | Puntos | Subcomponentes | Evidencia clave |
-|------|--------|----------------|-----------------|
-| Fundamentos de Código | 40 | Variables y estructuras (15) + Bucles y condicionales (15) + Funciones simples (10) | Código limpio, nombres descriptivos, lógica correcta, asserts |
-| Análisis Básico | 30 | Cálculos (puntos, promedios, diferencia goles) (15) + Análisis jugadores (10) + Primera visualización / DataFrame (5) | Resultados correctos explicados |
-| Comunicación y Colaboración | 30 | Comentarios y claridad (10) + Reflexiones fundamentadas (10) + Roles y presentación (10) | Justificaciones, roles visibles, coherencia estilo |
+**Bueno (28-31):**
+- Código funciona con errores menores
+- Una función implementada correctamente
+- Lógica básica presente
 
-### 4. Criterios de Desempeño Detallados
+**Suficiente (24-27):**
+- Código parcialmente funcional
+- Errores en lógica pero intento claro
+- Falta alguna función o prueba
 
-#### 4.1 Fundamentos y Funciones (40)
+**Insuficiente (<24):**
+- Código no funciona o incompleto
+- Errores graves de sintaxis
+- Funciones faltantes
 
-- Excelente (36–40): Código sin errores, funciones probadas con `assert`, nombres descriptivos y comentarios intencionales.
-- Bueno (32–35): Funciona; mínimos detalles de claridad.
-- Suficiente (28–31): Funciona con errores lógicos menores o ausencia de alguna prueba.
-- Insuficiente (<28): Errores graves o funciones incompletas.
+#### 2. Análisis con Datos (25 puntos)
 
-#### 4.2 Análisis y Visualización (30)
+**Excelente (23-25):**
+- DataFrame creado correctamente
+- Explica ventajas vs listas
+- Gráfico de barras legible con etiquetas
+- Interpreta resultados correctamente
 
-- Excelente (27–30): Estadísticas correctas, DataFrame claro, gráfico legible + interpretación breve.
-- Bueno (24–26): Cálculos correctos, interpretación superficial.
-- Suficiente (21–23): Cálculos parcialmente correctos o visualización sin explicación.
-- Insuficiente (<21): Cálculos erróneos o falta de evidencia visual.
+**Bueno (20-22):**
+- DataFrame funcional
+- Gráfico básico presente
+- Interpretación superficial
 
-#### 4.3 Comunicación y Razonamiento (30)
+**Suficiente (17-19):**
+- Intento de DataFrame o visualización
+- Resultados parcialmente correctos
+- Poca interpretación
 
-- Excelente (27–30): Presentación clara, responde preguntas reflexivas con justificación, 2 conclusiones + 1 limitación explícita.
-- Bueno (24–26): Presentación clara, reflexión breve.
-- Suficiente (21–23): Presentación básica, reflexión incompleta.
-- Insuficiente (<21): Falta reflexión o incoherente.
+**Insuficiente (<17):**
+- No logra crear DataFrame
+- Sin visualización o incorrecta
+- Sin interpretación
 
-### 5. Requisitos Transversales para Nivel Excelente
+#### 3. Video de Exposición (25 puntos)
 
-- Variables en español y descriptivas.
-- Preguntas de reflexión respondidas en cada parte.
-- Comentarios explican intención (no repiten el código literal).
-- Notebook ejecuta de inicio a fin sin errores.
+**Excelente (23-25):**
+- Explicación clara de código y resultados
+- Cada integrante participa equitativamente
+- Tiempo ≤15 minutos
+- Buen manejo del notebook durante presentación
 
-### 6. Integridad Académica (Aplicada a Examen y Caso)
+**Bueno (20-22):**
+- Explicación clara pero participación desigual
+- Tiempo adecuado
+- Presentación organizada
 
-| Componente | Examen Canvas | Caso Práctico |
-|------------|---------------|---------------|
-| Autoría | Individual | Colaborativa (80% código original del equipo) |
-| Material externo | Limitado según instrucciones | Referencias citadas si se usan |
-| IA Asistiva | Declarar si se usó (breve nota) | Declarar rol de la IA (no sustituye autoría) |
-| Intentos | 1 | Iterativo con checkpoint interno |
+**Suficiente (17-19):**
+- Explicación básica
+- Participación mínima de algunos integrantes
+- Excede tiempo ligeramente (16-18 min)
 
-### 7. Autoevaluación Rápida (Marcar OK / Revisar)
+**Insuficiente (<17):**
+- Explicación confusa o incompleta
+- Solo una persona presenta
+- Excede significativamente el tiempo (>18 min)
+- Video de mala calidad o inaudible
 
-- [ ] Conté victorias, empates y derrotas correctamente
-- [ ] Implementé y probé `calcular_puntos`
-- [ ] Implementé y probé `mejor_goleador`
-- [ ] Calculé promedios y diferencia de goles
-- [ ] Creé DataFrame y expliqué ventaja sobre listas
-- [ ] Generé gráfico barras goles a favor vs contra
-- [ ] Respondí 3 preguntas de reflexión final
-- [ ] Comentarios claros e intencionales
-- [ ] Roles de equipo visibles
+#### 4. Reflexión y Documentación (15 puntos)
 
-### 8. Conversión de Calificaciones (Bloque 1)
+**Excelente (14-15):**
+- Responde todas las preguntas reflexivas con profundidad
+- Comentarios explican el "por qué", no solo el "qué"
+- Conexiones claras entre conceptos
 
-- Examen Canvas: 20% × (puntaje/100)
-- Caso práctico: 15% × (puntaje/100)
-- Total Bloque 1 = suma ponderada (35% del curso)
+**Bueno (12-13):**
+- Responde la mayoría de preguntas reflexivas
+- Comentarios básicos pero útiles
 
-### 9. Notas de Alcance
+**Suficiente (10-11):**
+- Respuestas superficiales
+- Comentarios mínimos
 
-- No se exige manejo avanzado de errores o programación orientada a objetos.
-- No añadir librerías fuera del stack básico (pandas, matplotlib opcional, numpy implícito).
-- Mantener tiempos: Caso debe poder repasarse en <15 min por equipo al presentar.
+**Insuficiente (<10):**
+- No responde preguntas reflexivas
+- Sin comentarios o comentarios inútiles
+
+### Requisitos Mínimos para Aprobar
+
+- Notebook ejecuta sin errores graves
+- Al menos una función implementada correctamente
+- Video subido a YouTube con participación de todo el equipo
+- Duración del video ≤20 minutos (máximo absoluto)
+
+### Penalizaciones
+
+- **-5 puntos**: Video excede 20 minutos
+- **-3 puntos**: No todos los integrantes participan en el video
+- **-5 puntos**: Notebook no ejecuta por errores de sintaxis
+- **-2 puntos**: Variables en inglés o nombres no descriptivos
 
 ---
 
@@ -302,7 +335,9 @@ Ponderación: 15% del curso. Equipos de 2–3 estudiantes. Semana de desarrollo.
 |-----|-------------|--------|
 | **Lunes** | Formar equipos, entender el problema | 1 hora |
 | **Miércoles** | Escribir código: bucles, funciones, cálculos | 2 horas |
-| **Viernes** | Terminar análisis y presentar resultados | 1 hora |
+| **Viernes** | Terminar análisis, grabar video de exposición | 1.5 horas |
+
+**Fecha límite de entrega**: Domingo 11:59 PM (notebook + link de YouTube)
 
 ---
 
@@ -320,15 +355,50 @@ Ponderación: 15% del curso. Equipos de 2–3 estudiantes. Semana de desarrollo.
 - Otra persona se encarga de las funciones  
 - Todos participan en el análisis final
 
+### Para el Video de Exposición
+
+- **Duración**: Practiquen para mantenerse en 12-15 minutos
+- **Participación**: Cada persona explica 4-5 minutos
+- **Estructura sugerida**: Introducción (1 min) + Código (8-10 min) + Resultados (4-5 min) + Conclusiones (1-2 min)
+- **Técnico**: Graben pantalla mostrando el notebook, audio claro
+- **Herramientas**: Pueden usar Zoom, OBS, o la grabación de pantalla del sistema operativo
+
 ### Preguntas Frecuentes
 
 1. ¿Cómo cuento elementos en una lista? → Usar bucle for
 2. ¿Cómo encuentro el máximo en un diccionario? → Usar bucle para comparar valores
 3. ¿Cómo calculo promedios? → suma total ÷ cantidad
+4. ¿El video puede ser "no listado" en YouTube? → Sí, pero debe ser accesible con el link
 
 ---
 
-### 3. Reflexión Final (en el notebook)
+### Autoevaluación Rápida (Marcar OK / Revisar)
+
+**Código y Análisis:**
+- [ ] Conté victorias, empates y derrotas correctamente
+- [ ] Implementé y probé `calcular_puntos`
+- [ ] Implementé y probé `mejor_goleador`
+- [ ] Calculé promedios y diferencia de goles
+- [ ] Creé DataFrame y expliqué ventaja sobre listas
+- [ ] Generé gráfico barras goles a favor vs contra
+- [ ] Respondí 3 preguntas de reflexión final
+- [ ] Comentarios claros e intencionales
+
+**Video de Exposición:**
+- [ ] Video dura máximo 15 minutos
+- [ ] Cada integrante participa en la explicación
+- [ ] Se explica claramente el código y los resultados
+- [ ] Audio e imagen son de buena calidad
+- [ ] Video subido a YouTube y link funciona
+
+**Entrega:**
+- [ ] Notebook ejecuta completamente sin errores
+- [ ] Nombres de variables en español
+- [ ] Link de YouTube enviado en Canvas
+
+---
+
+## Reflexión Final (en el notebook)
 
 Responder brevemente (2–4 líneas cada una) a TRES preguntas de las siguientes cinco opciones:
 

@@ -35,26 +35,35 @@ Al completar este caso práctico, los estudiantes serán capaces de:
 
 Trabajarán con un dataset CSV de partidos históricos de UEFA Champions League.
 
-### Dataset Principal: `champions_partidos.csv`
+### Dataset Principal: `champions_league_matches.csv`
 
-Archivo CSV con información de 300+ partidos de Champions League de las últimas 5 temporadas.
+Archivo CSV con información de 50 partidos históricos de Champions League de las últimas temporadas.
 
 **Descripción de columnas principales:**
 
+- `match_id`: Identificador único del partido
+- `fecha`: Fecha del partido (YYYY-MM-DD)
 - `equipo_local`, `equipo_visitante`: Nombres de los equipos
 - `goles_local`, `goles_visitante`: Goles marcados por cada equipo
-- `resultado`: Victoria_Local, Empate, Victoria_Visitante
+- `resultado_final`: Local, Visitante, o Empate
+- `fase_competicion`: Fase de Grupos, Octavos de Final, Cuartos de Final, Semifinales, Final
+- `temporada`: Temporada de la competición (ej. 2023-24)
 - `posesion_local`, `posesion_visitante`: Porcentaje de posesión del balón
 - `tiros_local`, `tiros_visitante`: Número total de tiros
+- `tiros_arco_local`, `tiros_arco_visitante`: Tiros a portería
+- `corners_local`, `corners_visitante`: Número de corners
+- `faltas_local`, `faltas_visitante`: Número de faltas cometidas
 - `tarjetas_amarillas_local`, `tarjetas_amarillas_visitante`: Tarjetas amarillas recibidas
-- `fase_torneo`: Grupos, Octavos, Cuartos, Semifinal, Final
+- `tarjetas_rojas_local`, `tarjetas_rojas_visitante`: Tarjetas rojas recibidas
+- `asistencia`: Número de asistentes al estadio
 
 **Características del dataset:**
-- **Tamaño**: 300+ partidos de Champions League
-- **Balance**: Aproximadamente 40% victorias locales, 25% empates, 35% victorias visitantes
-- **Variables numéricas**: 12 columnas con estadísticas de juego
-- **Variables categóricas**: 4 columnas (equipos, resultado, fase)
+- **Tamaño**: 50 partidos de Champions League de temporadas recientes
+- **Balance**: Aproximadamente 40% victorias locales, 20% empates, 40% victorias visitantes
+- **Variables numéricas**: 15+ columnas con estadísticas detalladas (goles, tiros, posesión, tarjetas, etc.)
+- **Variables categóricas**: 5 columnas (equipos, resultado_final, fase_competicion, temporada, árbitro)
 - **Datos limpios**: Sin valores faltantes, listo para usar
+- **Equipos incluidos**: Real Madrid, Barcelona, Manchester City, Bayern Munich, Liverpool, Chelsea, PSG, AC Milan, y otros grandes clubes europeos
 
 ---
 

@@ -226,18 +226,18 @@ plt.show()
 
 #### 1. Código y Funciones (35 puntos)
 
-**Excelente (35 puntos = 100%):**
+**Excelente (35 puntos ~ 100%):**
 - Bucle for cuenta correctamente victorias, empates y derrotas
 - Funciones `calcular_puntos` y `mejor_goleador` implementadas y funcionan
 - Incluye pruebas con `assert`
 - Variables con nombres descriptivos en español
 
-**Bueno (25 puntos = 70%):**
+**Bueno (25 puntos ~ 70%):**
 - Código funciona con errores menores
 - Una función implementada correctamente
 - Lógica básica presente
 
-**Suficiente (11 puntos = 30%):**
+**Suficiente (11 puntos ~ 30%):**
 - Código parcialmente funcional
 - Errores en lógica pero intento claro
 - Falta alguna función o prueba
@@ -249,18 +249,18 @@ plt.show()
 
 #### 2. Análisis con Datos (25 puntos)
 
-**Excelente (25 puntos = 100%):**
+**Excelente (25 puntos ~ 100%):**
 - DataFrame creado correctamente
 - Explica ventajas vs listas
 - Gráfico de barras legible con etiquetas
 - Interpreta resultados correctamente
 
-**Bueno (18 puntos = 70%):**
+**Bueno (18 puntos ~ 70%):**
 - DataFrame funcional
 - Gráfico básico presente
 - Interpretación superficial
 
-**Suficiente (8 puntos = 30%):**
+**Suficiente (8 puntos ~ 30%):**
 - Intento de DataFrame o visualización
 - Resultados parcialmente correctos
 - Poca interpretación
@@ -272,18 +272,18 @@ plt.show()
 
 #### 3. Video de Exposición (25 puntos)
 
-**Excelente (25 puntos = 100%):**
+**Excelente (25 puntos ~ 100%):**
 - Explicación clara de código y resultados
 - Cada integrante participa equitativamente
 - Tiempo ≤15 minutos
 - Buen manejo del notebook durante presentación
 
-**Bueno (18 puntos = 70%):**
+**Bueno (18 puntos ~ 70%):**
 - Explicación clara pero participación desigual
 - Tiempo adecuado
 - Presentación organizada
 
-**Suficiente (8 puntos = 30%):**
+**Suficiente (8 puntos ~ 30%):**
 - Explicación básica
 - Participación mínima de algunos integrantes
 - Excede tiempo ligeramente (16-18 min)
@@ -296,16 +296,16 @@ plt.show()
 
 #### 4. Reflexión y Documentación (15 puntos)
 
-**Excelente (15 puntos = 100%):**
+**Excelente (15 puntos ~ 100%):**
 - Responde todas las preguntas reflexivas con profundidad
 - Comentarios explican el "por qué", no solo el "qué"
 - Conexiones claras entre conceptos
 
-**Bueno (11 puntos = 70%):**
+**Bueno (11 puntos ~ 70%):**
 - Responde la mayoría de preguntas reflexivas
 - Comentarios básicos pero útiles
 
-**Suficiente (5 puntos = 30%):**
+**Suficiente (5 puntos ~ 30%):**
 - Respuestas superficiales
 - Comentarios mínimos
 
@@ -315,8 +315,8 @@ plt.show()
 
 ### Tabla Resumen de Calificación
 
-| Componente | Puntos Máximos | Excelente (100%) | Bueno (70%) | Suficiente (30%) | Insuficiente (0%) |
-|------------|-----------------|------------------|-------------|------------------|-------------------|
+| Componente | Puntos Máximos | Excelente (~100%) | Bueno (~70%) | Suficiente (~30%) | Insuficiente (0%) |
+|------------|-----------------|-------------------|--------------|-------------------|-------------------|
 | Código y Funciones | 35 | 35 puntos | 25 puntos | 11 puntos | 0 puntos |
 | Análisis con Datos | 25 | 25 puntos | 18 puntos | 8 puntos | 0 puntos |
 | Video de Exposición | 25 | 25 puntos | 18 puntos | 8 puntos | 0 puntos |

@@ -220,7 +220,7 @@ plt.show()
 | **Código y Funciones** | 35 | Bucles y conteo correcto (10) + Funciones implementadas y probadas (15) + Cálculos estadísticos (10) |
 | **Análisis con Datos** | 25 | DataFrame y comparación con listas (10) + Visualización básica (10) + Interpretación de resultados (5) |
 | **Video de Exposición** | 25 | Claridad en explicación (10) + Participación equilibrada del equipo (8) + Manejo del tiempo (≤15 min) (7) |
-| **Reflexión y Documentación** | 15 | Respuestas a preguntas reflexivas (10) + Comentarios claros en código (5) |
+| **Reflexión y Documentación** | 15 | Preguntas reflexivas intermedias (7) + Reflexión final (3) + Comentarios claros en código (5) |
 
 ### Criterios de Desempeño por Componente
 
@@ -297,21 +297,24 @@ plt.show()
 #### 4. Reflexión y Documentación (15 puntos)
 
 **Excelente (15 puntos ~ 100%):**
-- Responde todas las preguntas reflexivas con profundidad
+- Responde todas las preguntas reflexivas intermedias con profundidad
+- Completa reflexión final con 3 preguntas (análisis detallado)
 - Comentarios explican el "por qué", no solo el "qué"
 - Conexiones claras entre conceptos
 
 **Bueno (11 puntos ~ 70%):**
 - Responde la mayoría de preguntas reflexivas
+- Reflexión final básica pero presente
 - Comentarios básicos pero útiles
 
 **Suficiente (5 puntos ~ 30%):**
-- Respuestas superficiales
+- Respuestas superficiales a preguntas reflexivas
+- Reflexión final incompleta o muy breve
 - Comentarios mínimos
 
 **Insuficiente (0 puntos):**
-- No responde preguntas reflexivas
-- Sin comentarios o comentarios inútiles
+- No responde preguntas reflexivas intermedias
+- Falta reflexión final o comentarios inútiles
 
 ### Tabla Resumen de Calificación
 

@@ -329,6 +329,53 @@ print(f"Promedio: {promedio_edad} años")
 print("¿Qué nos dice este promedio sobre la experiencia del equipo?")
 ```
 
+### METODOLOGÍA OBLIGATORIA PARA ACTUALIZACIÓN DE VERSIONES
+
+**REGLA CRÍTICA**: Antes de actualizar cualquier versión, se debe revisar TODOS los commits desde la versión anterior para determinar el scope real de cambios.
+
+#### Proceso Obligatorio para Versionado:
+
+1. **ANÁLISIS COMPLETO DE COMMITS**:
+```bash
+# Revisar todos los commits desde la última versión
+git log --oneline --stat vX.Y.Z..HEAD
+
+# Analizar el impacto de cada commit:
+# - ¿Qué archivos se modificaron?
+# - ¿Cuántas líneas agregadas/eliminadas?
+# - ¿Qué tipo de cambio representa?
+```
+
+2. **CLASIFICACIÓN DE IMPACTO**:
+   - **MAYOR (X.0.0)**: Cambios arquitectónicos, reestructuración completa de casos prácticos, soluciones nuevas masivas (>500 líneas), cambios incompatibles
+   - **MENOR (X.Y.0)**: Nuevas funcionalidades, mejoras significativas, adiciones de contenido educativo sustancial
+   - **PARCHE (X.Y.Z)**: Correcciones menores, ajustes de documentación, fixes pequeños
+
+3. **DOCUMENTACIÓN EXHAUSTIVA EN CHANGELOG**:
+   - Documentar TODOS los cambios significativos desde la versión anterior
+   - Agrupar por tipo: Agregado, Mejorado, Corregido, Eliminado
+   - No omitir cambios importantes por enfocarse solo en la sesión actual
+
+4. **VALIDACIÓN DE REGLAS DEL PROYECTO**:
+   - Verificar que no hay emojis en commits (CRÍTICO)
+   - Confirmar que mensajes están en español
+   - Validar que cambios educativos tienen documentación correspondiente
+
+#### Ejemplo de Análisis Correcto:
+```bash
+# Desde v4.12.0 detectamos:
+# - Solución completa Bloque 3: +946 líneas → MAYOR
+# - Múltiples refactorizaciones casos prácticos → MAYOR  
+# - Transformaciones estructurales → MAYOR
+# Conclusión: Requiere versión MAYOR (5.0.0)
+```
+
+#### Errores a Evitar:
+- ❌ Solo considerar cambios de la sesión actual
+- ❌ Omitir commits previos no documentados
+- ❌ Subestimar el impacto de refactorizaciones masivas
+- ❌ Ignorar violaciones a reglas del proyecto (emojis, idioma)
+
 ### Flujo de Trabajo de Contenido
 1. **Pregunta motivadora inicial** (genera curiosidad)
 2. **Analogía deportiva** (conecta con experiencia previa)

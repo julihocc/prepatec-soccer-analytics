@@ -5,23 +5,39 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 
-## 4.13.0 (2025-08-15)
+## 5.0.0 (2025-08-15)
+
+### Agregado
+
+- Solución completa del caso práctico del Bloque 3 con código ejecutable y análisis de predicción de partidos
+- Implementación completa de machine learning para predicción de resultados deportivos
+- Solución técnica masiva con +946 líneas iniciales y +1404 líneas de mejoras
+- Documentación profesional para casos prácticos de análisis deportivo avanzado
 
 ### Mejorado
 
-- Reestructuración completa del caso práctico del Bloque 1 para consistencia con otros bloques
-- Eliminación de plantillas restrictivas de código en caso-bloque1.md
-- Transformación a formato colaborativo profesional con distribución 40-30-30 puntos
-- Actualización de rúbrica de evaluación a 70% Técnica + 30% Comunicación y Reflexión
-- Corrección y validación completa de solución educativa caso_bloque1_equipoSOLUCION.py
-- Mejora en visualizaciones matplotlib con corrección de compatibilidad
+- Reestructuración arquitectónica completa del caso práctico del Bloque 1 para consistencia estructural
+- Transformación completa del caso práctico del Bloque 3 con múltiples refactorizaciones
+- Refactorización sustancial del caso práctico del Bloque 2 (-187 líneas optimizadas)
+- Eliminación de plantillas restrictivas de código en formato colaborativo profesional
+- Actualización de rúbricas de evaluación a 70% Técnica + 30% Comunicación y Reflexión
 - Unificación de estructura y metodología evaluativa en los tres bloques del curso
+- Corrección y validación completa de soluciones educativas con visualizaciones mejoradas
 
 ### Corregido
 
-- Resolución de error de compatibilidad en gráficos de matplotlib (parámetro alpha)
-- Validación completa de ejecución de archivo de solución educativa
-- Eliminación de inconsistencias estructurales entre casos prácticos de diferentes bloques
+- Resolución de múltiples inconsistencias estructurales entre casos prácticos
+- Corrección de nombres y descripciones de datasets en casos educativos
+- Restauración de formato colaborativo consistente en todos los bloques
+- Eliminación de variables categóricas no codificadas en soluciones técnicas
+- Corrección de compatibilidad matplotlib y validación de ejecución completa
+- Restauración de rúbricas y secciones pedagógicas eliminadas incorrectamente
+
+### Eliminado
+
+- Código de ejemplo restrictivo y plantillas que limitaban creatividad estudiantil
+- Detalles de rúbricas redundantes para simplificar evaluación
+- Variables categóricas problemáticas en análisis de datos deportivos
 
 ## 4.12.0 (2025-08-15)
 

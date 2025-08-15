@@ -347,7 +347,10 @@ plt.show()
 | **Miércoles** | Escribir código: bucles, funciones, cálculos | 2 horas |
 | **Viernes** | Terminar análisis, grabar video de exposición | 1.5 horas |
 
-**Fecha límite de entrega**: Domingo 11:59 PM (notebook + link de YouTube)
+**Fecha límite de entrega**: 17 de noviembre de 2025, 11:59 PM  
+**Recomendación**: Completar durante la semana del 10-14 de noviembre para evitar contratiempos
+
+**Entrega**: Notebook + link de YouTube en Canvas
 
 ---
 

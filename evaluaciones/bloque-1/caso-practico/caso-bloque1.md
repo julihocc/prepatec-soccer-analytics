@@ -221,7 +221,24 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 - **Formato**: Video grabado subido a YouTube (puede ser no listado)
 - **Contenido**: Presentación del notebook y explicación de resultados
 - **Participación**: Cada integrante debe explicar al menos una parte
-- **Envío**: Link de YouTube en el Canvas
+- **Envío**: Link de YouTube incluido en el notebook
+
+### IMPORTANTE: Enlace en el Notebook
+
+**Al final de su notebook, en una celda de Markdown claramente identificada, deben incluir:**
+
+```markdown
+## 📹 Video de Presentación del Equipo
+
+**Enlace al video de YouTube:** [TÍTULO DEL VIDEO](URL_DEL_VIDEO_DE_YOUTUBE)
+
+**Integrantes del equipo:**
+- Nombre Completo 1 (Matrícula)
+- Nombre Completo 2 (Matrícula) 
+- Nombre Completo 3 (Matrícula)
+
+**Fecha de grabación:** DD/MM/AAAA
+```
 
 ---
 
@@ -235,7 +252,7 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 |------------|--------|------------------------|
 | **Código y Funciones** | 35 | Bucles y conteo correcto (10) + Funciones implementadas y probadas (15) + Cálculos estadísticos (10) |
 | **Análisis con Datos** | 25 | DataFrame y comparación con listas (10) + Visualización básica (10) + Interpretación de resultados (5) |
-| **Video de Exposición** | 25 | Claridad en explicación (10) + Participación equilibrada del equipo (8) + Manejo del tiempo (≤15 min) (7) |
+| **Video de Exposición** | 25 | Claridad en explicación (10) + Participación equilibrada del equipo (8) + Manejo del tiempo (≤15 min) (7) + Enlace en notebook |
 | **Reflexión y Documentación** | 15 | Preguntas reflexivas intermedias (7) + Reflexión final (3) + Comentarios claros en código (5) |
 
 ### Criterios de Desempeño por Componente

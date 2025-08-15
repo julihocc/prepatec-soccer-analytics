@@ -382,7 +382,24 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 - **Formato**: Video grabado subido a YouTube (puede ser no listado)
 - **Contenido**: Presentación del notebook y explicación de hallazgos principales
 - **Participación**: Cada integrante debe explicar al menos una parte
-- **Envío**: Link de YouTube en el Canvas
+- **Envío**: Link de YouTube incluido en el notebook
+
+### IMPORTANTE: Enlace en el Notebook
+
+**Al final de su notebook, en una celda de Markdown claramente identificada, deben incluir:**
+
+```markdown
+## 📹 Video de Presentación del Equipo
+
+**Enlace al video de YouTube:** [TÍTULO DEL VIDEO](URL_DEL_VIDEO_DE_YOUTUBE)
+
+**Integrantes del equipo:**
+- Nombre Completo 1 (Matrícula)
+- Nombre Completo 2 (Matrícula) 
+- Nombre Completo 3 (Matrícula)
+
+**Fecha de grabación:** DD/MM/AAAA
+```
 
 ---
 
@@ -397,7 +414,7 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 | **Exploración y Calidad de Datos** | 40 | Carga correcta (5) + Exploración estructural (10) + Calidad y validación (10) + Estadística descriptiva (15) |
 | **Análisis y Métricas Avanzadas** | 30 | GroupBy y análisis por posición (12) + Métricas derivadas (10) + Detección de outliers (8) |
 | **Visualización e Interpretación** | 20 | Gráficos fundamentales (15) + Visualizaciones avanzadas (5) |
-| **Comunicación y Documentación** | 10 | Video de exposición (7) + Reflexión final y comentarios (3) |
+| **Comunicación y Documentación** | 10 | Video de exposición (7) + Reflexión final y comentarios (3) + Enlace en notebook |
 
 ### Criterios de Desempeño por Componente
 

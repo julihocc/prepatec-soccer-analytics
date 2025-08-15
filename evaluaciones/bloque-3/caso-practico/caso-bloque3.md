@@ -111,7 +111,7 @@ Bayern Munich,PSG,3,0,2023-24,Octavos,20,8,11,3
 |----------|-------------------|-------------------|---------------------|-------------------|
 | **Reflexiones escritas** | Respuestas profundas, pensamiento crítico evidente | Respuestas adecuadas, comprensión básica | Respuestas superficiales o incorrectas | No responde preguntas |
 | **Colaboración en equipo** | Excelente distribución de tareas, trabajo cohesivo | Colaboración básica funcional | Colaboración limitada o desbalanceada | Sin evidencia de trabajo en equipo |
-| **Video de presentación** | Comunicación clara, técnicamente precisa, audiencia apropiada | Presentación básica comprensible | Presentación confusa o técnicamente incorrecta | No presenta video |
+| **Video de presentación** | Comunicación clara, técnicamente precisa, audiencia apropiada, enlace funcional en notebook | Presentación básica comprensible, enlace incluido | Presentación confusa o técnicamente incorrecta, enlace faltante/no funcional | No presenta video o enlace |
 
 ### Notas Importantes:
 - **Requisito mínimo**: Código debe ejecutar sin errores fatales para obtener calificación aprobatoria
@@ -356,6 +356,42 @@ print(f"Probabilidades: No gana {prob_2[0]:.2%}, Gana {prob_2[1]:.2%}")
 ```
 
 **Pregunta de reflexión:** ¿Cómo explicarías estos resultados a un entrenador de fútbol? ¿Qué recomendaciones tácticas podrías dar basándote en lo que "aprende" el modelo?
+
+---
+
+## Video de Presentación (OBLIGATORIO)
+
+### Instrucciones para el Video
+
+1. **Duración**: 3-4 minutos exactos
+2. **Plataforma**: YouTube (puede ser no listado, pero debe ser accesible)
+3. **Contenido**: Presentación ejecutiva dirigida a directivos del club
+4. **Participación**: Todos los miembros del equipo deben participar visiblemente
+
+### IMPORTANTE: Enlace en el Notebook
+
+**Al final de su notebook, en una celda de Markdown claramente identificada, deben incluir:**
+
+```markdown
+## 📹 Video de Presentación del Equipo
+
+**Enlace al video de YouTube:** [TÍTULO DEL VIDEO](URL_DEL_VIDEO_DE_YOUTUBE)
+
+**Integrantes del equipo:**
+- Nombre Completo 1 (Matrícula)
+- Nombre Completo 2 (Matrícula) 
+- Nombre Completo 3 (Matrícula)
+- Nombre Completo 4 (Matrícula)
+
+**Fecha de grabación:** DD/MM/AAAA
+```
+
+### Estructura Sugerida del Video
+
+1. **Introducción** (30 seg): Presentación del equipo y contexto del problema
+2. **Metodología** (60 seg): Explicación simple de los datos y el modelo usado
+3. **Resultados clave** (90 seg): 2-3 insights principales con visualizaciones
+4. **Recomendaciones** (60 seg): Aplicaciones prácticas para el club
 
 ---
 

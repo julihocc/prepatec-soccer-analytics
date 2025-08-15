@@ -58,7 +58,7 @@ jugadores = {
 
 ## Tareas Requeridas
 
-> NOTA SOCRÁTICA: Cada subtarea incluye (a) Acción técnica y (b) Pregunta de reflexión breve. Responde siempre antes de seguir al siguiente bloque.
+> NOTA IMPORTANTE: Cada subtarea incluye (a) Acción técnica y (b) Pregunta de reflexión breve. Responde siempre estas preguntas antes de continuar al siguiente bloque - te ayudarán a profundizar tu comprensión.
 
 ### Parte 1: Fundamentos y Funciones (40 puntos)
 
@@ -79,7 +79,7 @@ derrotas = 0
 # Usar bucle for e if para contar
 ```
 
-Pregunta de reflexión: ¿Qué patrón observas entre victorias y empates? ¿Qué podría significar sobre la consistencia del equipo?
+Pregunta de reflexión: ¿Qué patrón observas entre victorias y empates? ¿Qué podría significar esto sobre la consistencia del equipo?
 
 #### 1.2 Crear Funciones Simples (20 puntos)
 
@@ -109,7 +109,7 @@ Añade al final de cada función una prueba mínima (asegura funcionamiento):
 assert calcular_puntos(5, 2) == 17  # 5*3 + 2*1
 ```
 
-Pregunta de reflexión: ¿Por qué es útil probar una función con un caso simple antes de usarla en todo el análisis?
+**Pregunta de reflexión:** ¿Por qué es útil probar una función con un caso simple antes de usarla en todo el análisis? ¿Qué te da confianza sobre tu código?
 
 #### 1.3 Trabajar con Listas y Diccionarios (10 puntos)
 
@@ -117,7 +117,7 @@ Pregunta de reflexión: ¿Por qué es útil probar una función con un caso simp
 - Encontrar el partido con más goles usando funciones básicas
 - Usar el diccionario `jugadores` para encontrar información básica
 
-Pregunta de reflexión: ¿Qué limitación notas al manejar varias listas separadas para analizar partidos?
+**Pregunta de reflexión:** ¿Qué limitación notas al manejar varias listas separadas para analizar partidos? ¿Cómo crees que esto afectaría si tuvieras 100 partidos?
 
 ### Parte 2: Análisis y Visualización (30 puntos)
 
@@ -127,7 +127,7 @@ Pregunta de reflexión: ¿Qué limitación notas al manejar varias listas separa
 - Calcular el promedio de goles por partido (total goles ÷ partidos)
 - Determinar si el equipo marcó más goles de los que recibió
 
-Pregunta de reflexión: ¿El promedio de goles refleja toda la historia del rendimiento ofensivo? ¿Qué NO te dice?
+**Pregunta de reflexión:** ¿El promedio de goles refleja toda la historia del rendimiento ofensivo? ¿Qué información importante NO te dice este número?
 
 #### 2.2 Análisis de Jugadores (10 puntos)  
 
@@ -135,7 +135,7 @@ Pregunta de reflexión: ¿El promedio de goles refleja toda la historia del rend
 - Contar cuántos delanteros hay en el equipo
 - Calcular el total de goles marcados por todos los jugadores
 
-Pregunta de reflexión: ¿Ser el máximo goleador implica automáticamente mayor impacto para el equipo? ¿Qué otro dato considerarías?
+**Pregunta de reflexión:** ¿Ser el máximo goleador implica automáticamente mayor impacto para el equipo? ¿Qué otros datos considerarías para evaluar la contribución real de un jugador?
 
 #### 2.3 Mini Introducción a pandas (5 puntos)
 
@@ -154,7 +154,7 @@ promedio_goles_df = datos_partidos['goles_favor'].mean()
 print("Promedio goles (DataFrame):", promedio_goles_df)
 ```
 
-Pregunta de reflexión: ¿Qué ventaja concreta te da el DataFrame frente a manejar tres listas independientes?
+**Pregunta de reflexión:** ¿Qué ventaja concreta te da el DataFrame frente a manejar tres listas independientes? ¿En qué situaciones crees que esta diferencia sería aún más importante?
 
 #### 2.4 Visualización Básica (5 puntos)
 
@@ -172,7 +172,7 @@ plt.legend()
 plt.show()
 ```
 
-Pregunta de reflexión: ¿En qué partidos la diferencia fue mayor? ¿Qué hipótesis podrías proponer?
+**Pregunta de reflexión:** ¿En qué partidos la diferencia fue mayor? ¿Qué hipótesis podrías proponer sobre el rendimiento del equipo en esos momentos específicos?
 
 ### Parte 3: Comunicación y Razonamiento (30 puntos)
 
@@ -229,7 +229,7 @@ Ponderación: 15% del curso. Equipos de 2–3 estudiantes. Semana de desarrollo.
 |------|--------|----------------|-----------------|
 | Fundamentos de Código | 40 | Variables y estructuras (15) + Bucles y condicionales (15) + Funciones simples (10) | Código limpio, nombres descriptivos, lógica correcta, asserts |
 | Análisis Básico | 30 | Cálculos (puntos, promedios, diferencia goles) (15) + Análisis jugadores (10) + Primera visualización / DataFrame (5) | Resultados correctos explicados |
-| Comunicación y Colaboración | 30 | Comentarios y claridad (10) + Reflexiones socráticas (10) + Roles y presentación (10) | Justificaciones, roles visibles, coherencia estilo |
+| Comunicación y Colaboración | 30 | Comentarios y claridad (10) + Reflexiones fundamentadas (10) + Roles y presentación (10) | Justificaciones, roles visibles, coherencia estilo |
 
 ### 4. Criterios de Desempeño Detallados
 
@@ -249,7 +249,7 @@ Ponderación: 15% del curso. Equipos de 2–3 estudiantes. Semana de desarrollo.
 
 #### 4.3 Comunicación y Razonamiento (30)
 
-- Excelente (27–30): Presentación clara, responde preguntas socráticas con justificación, 2 conclusiones + 1 limitación explícita.
+- Excelente (27–30): Presentación clara, responde preguntas reflexivas con justificación, 2 conclusiones + 1 limitación explícita.
 - Bueno (24–26): Presentación clara, reflexión breve.
 - Suficiente (21–23): Presentación básica, reflexión incompleta.
 - Insuficiente (<21): Falta reflexión o incoherente.
@@ -257,7 +257,7 @@ Ponderación: 15% del curso. Equipos de 2–3 estudiantes. Semana de desarrollo.
 ### 5. Requisitos Transversales para Nivel Excelente
 
 - Variables en español y descriptivas.
-- Preguntas socráticas respondidas en cada parte.
+- Preguntas de reflexión respondidas en cada parte.
 - Comentarios explican intención (no repiten el código literal).
 - Notebook ejecuta de inicio a fin sin errores.
 
@@ -330,7 +330,7 @@ Ponderación: 15% del curso. Equipos de 2–3 estudiantes. Semana de desarrollo.
 
 ### 3. Reflexión Final (en el notebook)
 
-Responder brevemente (2–4 líneas cada una) a TRES preguntas:
+Responder brevemente (2–4 líneas cada una) a TRES preguntas de las siguientes cinco opciones:
 
 1. ¿Qué métrica adicional incluirías para evaluar solidez defensiva y por qué?
 2. ¿Qué limitación tiene usar solo 10 partidos para conclusiones?
@@ -338,4 +338,4 @@ Responder brevemente (2–4 líneas cada una) a TRES preguntas:
 4. ¿Qué mostrarías a un entrenador para convencerlo de mejorar el ataque?
 5. ¿Cuál sería tu siguiente paso de análisis en el Bloque 2?
 
-*Este caso práctico ahora integra fundamentos, primeras nociones de pandas, visualización básica y razonamiento reflexivo para cerrar el Bloque 1 de forma completa.*
+*Este caso práctico integra fundamentos técnicos, primeras nociones de pandas, visualización básica y razonamiento reflexivo para cerrar el Bloque 1 de forma completa y significativa.*

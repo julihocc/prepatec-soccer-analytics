@@ -355,6 +355,10 @@ fase_cols = [col for col in datos_champions.columns if col.startswith('fase_')]
 if fase_cols:
     variables_predictoras.extend(fase_cols[:3])  # Solo algunas fases
 
+# Remover variables categóricas que no fueron codificadas
+variables_a_remover = ['fase_competicion']  # Esta es categórica sin codificar
+variables_predictoras = [var for var in variables_predictoras if var not in variables_a_remover and var in datos_champions.columns]
+
 print(f"Variables predictoras seleccionadas ({len(variables_predictoras)}):")
 for i, var in enumerate(variables_predictoras, 1):
     print(f"  {i:2}. {var}")

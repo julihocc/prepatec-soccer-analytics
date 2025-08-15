@@ -1,19 +1,19 @@
 # Caso Práctico Colaborativo - Bloque 2
 
-## Análisis Básico, Calidad de Datos e Interpretación de Rendimiento de Jugadores
+## Análisis de Rendimiento de Jugadores con Pandas y Visualización
 
 **Modalidad:** Colaborativa (equipos de 2-3 estudiantes)  
-**Ponderación:** 15% del 2do Parcial  
+**Ponderación:** 15% del curso total  
 **Duración:** 1 semana  
-**Entrega:** Notebook de Jupyter + presentación simple
+**Entrega:** Notebook de Jupyter + video de exposición (YouTube)
 
 ---
 
 ## Contexto del Problema
 
-Tu equipo trabaja como analistas junior para una escuela de fútbol que quiere conocer mejor a sus jugadores. Tienen datos básicos de jugadores de diferentes equipos y necesitan crear un análisis simple para entender quiénes son los mejores.
+Eres parte de un equipo que ayuda a analizar el rendimiento avanzado de jugadores juveniles de fútbol. Una escuela deportiva necesita entender mejor a sus jugadores usando herramientas de ciencia de datos.
 
-**Situación:** La escuela tiene información básica de jugadores (goles, asistencias, edad, posición) y quiere saber qué jugadores destacan más en cada posición.
+**Situación:** Tienen un dataset con información detallada de jugadores (goles, asistencias, edad, posición) y quieren identificar patrones, evaluar calidad de datos y crear visualizaciones profesionales para tomar decisiones informadas.
 
 ---
 
@@ -21,19 +21,23 @@ Tu equipo trabaja como analistas junior para una escuela de fútbol que quiere c
 
 Al completar este caso práctico, los estudiantes serán capaces de:
 
-- Cargar y explorar datos de jugadores usando pandas
-- Crear gráficos básicos con seaborn y matplotlib
-- Calcular estadísticas simples (promedio, máximo, mínimo)
-- Comparar rendimiento entre posiciones
-- Presentar resultados de forma clara
+- Cargar y explorar datasets usando pandas avanzado
+- Evaluar calidad de datos y detectar inconsistencias
+- Crear métricas derivadas para análisis deportivo
+- Generar visualizaciones profesionales con seaborn y matplotlib
+- Aplicar estadística descriptiva para comparar grupos
+- Trabajar en equipo para resolver problemas complejos
+- Comunicar resultados técnicos de forma clara
 
 ---
 
-## Dataset Proporcionado
+## Datos Que Van a Usar
+
+Trabajarán con un dataset CSV real de jugadores juveniles de fútbol mexicano.
 
 ### Dataset Principal: `jugadores_liga_juvenil.csv`
 
-**Versión simplificada con solo las columnas esenciales**
+Archivo CSV con información de 50 jugadores de ligas juveniles mexicanas.
 
 ```csv
 jugador_id,nombre,edad,equipo,posicion,torneo,goles,asistencias,partidos_jugados
@@ -46,356 +50,468 @@ jugador_id,nombre,edad,equipo,posicion,torneo,goles,asistencias,partidos_jugados
 
 **Descripción de columnas:**
 
-- `jugador_id`: Número único del jugador
+- `jugador_id`: Número único del jugador (1-50)
 - `nombre`: Nombre completo del jugador
 - `edad`: Edad en años (16-18)
-- `equipo`: Equipo al que pertenece
+- `equipo`: Equipo al que pertenece (Atlas, Chivas, América, etc.)
 - `posicion`: Posición en el campo (Delantero, Mediocampo, Defensa, Portero)
 - `torneo`: Liga MX Sub-20 o Liga MX Femenil Sub-18
-- `goles`: Cantidad total de goles marcados
-- `asistencias`: Cantidad total de asistencias dadas
-- `partidos_jugados`: Número de partidos que ha jugado
+- `goles`: Cantidad total de goles marcados (0-16)
+- `asistencias`: Cantidad total de asistencias dadas (0-18)
+- `partidos_jugados`: Número de partidos que ha jugado (14-22)
+
+**Características del dataset:**
+- **Tamaño**: 50 jugadores (25 masculinos Sub-20, 25 femeninos Sub-18)
+- **Balance por posición**: Delanteros (15), Mediocampo (15), Defensa (13), Porteros (7)
+- **Sin valores faltantes**: Dataset completo y limpio
+- **Outliers interesantes**: Goleador máximo con 16 goles, mejor asistente con 18 asistencias
 
 ---
 
 ## Tareas Requeridas
 
-La estructura se reorganiza para alinear con los contenidos reales de las semanas 6–10 e incorporar calidad de datos, estadística descriptiva completa, métricas derivadas e interpretación progresiva. Se integra el enfoque socrático (preguntas para guiar el razonamiento) y se estandariza la rúbrica 40/30/30.
+> NOTA IMPORTANTE: Cada subtarea incluye (a) Acción técnica y (b) Pregunta de reflexión breve. Responde siempre estas preguntas antes de continuar al siguiente bloque - te ayudarán a profundizar tu comprensión.
 
 ### Parte 1: Exploración y Calidad de Datos (40 puntos)
 
-#### 1.1 Cargar los Datos (5 puntos)
+#### 1.1 Cargar y Configurar Entorno (5 puntos)
 
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import numpy as np
 
 # Configuración obligatoria de seaborn
 sns.set_theme(style="whitegrid", palette="viridis")
 
-# Cargar el dataset simplificado
+# Cargar el dataset
 datos_jugadores = pd.read_csv('jugadores_liga_juvenil.csv')
-print("¡Datos cargados correctamente!")
+print("Datos cargados correctamente!")
 ```
 
-Preguntas socráticas iniciales:
-
-- ¿Por qué cargar los datos con pandas y no con otro método manual?
-- ¿Qué pasaría si el archivo tuviera una columna adicional no documentada?
+**Pregunta de reflexión:** ¿Por qué usamos pandas para cargar datos en lugar de leer el archivo línea por línea? ¿Qué ventajas nos da esta librería?
 
 #### 1.2 Exploración Estructural Básica (10 puntos)
 
-**Lo que deben hacer:**
-
-- Ver las primeras filas con `.head()`
-- Contar cuántos jugadores hay por posición con `.value_counts()`
-- Calcular estadísticas básicas con `.mean()`, `.max()`, `.min()`
-- Identificar quién es el mejor goleador
-
-**Ejemplo de código:**
+Usar métodos de pandas para entender la estructura de los datos:
 
 ```python
-# Información básica
+# Información básica del dataset
 print(f"Tenemos {len(datos_jugadores)} jugadores")
 print(f"Columnas disponibles: {list(datos_jugadores.columns)}")
 
-# Jugadores por posición  
+# Ver las primeras filas
+print(datos_jugadores.head())
+
+# Contar jugadores por posición  
 print(datos_jugadores['posicion'].value_counts())
 
-# Estadísticas básicas de goles
+# Estadísticas básicas de goles y asistencias
 print(f"Promedio de goles: {datos_jugadores['goles'].mean():.1f}")
 print(f"Máximo de goles: {datos_jugadores['goles'].max()}")
+print(f"Promedio de asistencias: {datos_jugadores['asistencias'].mean():.1f}")
 ```
 
-Preguntas socráticas de exploración:
+**Pregunta de reflexión:** ¿Qué información te da el conteo por posición sobre el balance del dataset? ¿Hay alguna posición que podría estar subrepresentada?
 
-- ¿Qué indica el número de columnas sobre la complejidad del dataset?
-- ¿Hay columnas categóricas que convenga convertir a categoría más adelante?
+#### 1.3 Evaluación de Calidad de Datos (10 puntos)
 
-#### 1.3 Calidad y Tipos de Datos (10 puntos)
-
-Objetivo: Verificar tipos, valores faltantes e inconsistencias simples.
-
-Lo que deben hacer:
-
-- Mostrar `datos_jugadores.info()`
-- Revisar tipos de datos (`datos_jugadores.dtypes`)
-- Contar valores faltantes (`datos_jugadores.isna().sum()`)
-- Comprobar rangos básicos (edad 15–20, goles >= 0) mediante condiciones simples
-
-Ejemplo de código:
+Verificar la integridad y consistencia de los datos:
 
 ```python
-print("Información estructural:")
+# Información estructural completa
+print("Información del dataset:")
 print(datos_jugadores.info())
-print("Tipos de datos:")
+
+# Verificar tipos de datos
+print("Tipos de datos por columna:")
 print(datos_jugadores.dtypes)
+
+# Detectar valores faltantes
 print("Valores faltantes por columna:")
 print(datos_jugadores.isna().sum())
 
-# Comprobaciones de rangos sencillas
-edades_invalidas = datos_jugadores[~datos_jugadores['edad'].between(15, 20)]
+# Verificar rangos lógicos
+edades_invalidas = datos_jugadores[~datos_jugadores['edad'].between(16, 18)]
+goles_negativos = datos_jugadores[datos_jugadores['goles'] < 0]
+
 if len(edades_invalidas) > 0:
-    print("Advertencia: edades fuera de rango esperado:")
-    print(edades_invalidas[['nombre','edad']])
+    print("Advertencia: edades fuera de rango esperado")
+else:
+    print("Todas las edades están en rango válido (16-18 años)")
+    
+if len(goles_negativos) > 0:
+    print("Advertencia: goles negativos encontrados")
+else:
+    print("Todos los valores de goles son válidos (≥0)")
 ```
 
-Preguntas socráticas:
+**Pregunta de reflexión:** ¿Qué problemas podría causar trabajar con un dataset que tiene valores faltantes en las columnas de goles? ¿Cómo afectaría tus análisis posteriores?
 
-- ¿Qué implicaría encontrar valores faltantes en goles?
-- Si una columna numérica aparece como `object`, ¿qué riesgo trae para los cálculos?
+#### 1.4 Estadística Descriptiva Completa (15 puntos)
 
-#### 1.4 Estadística Descriptiva Inicial (15 puntos)
-
-Objetivo: Ir más allá de media y máximo para incluir mediana y dispersión.
-
-Lo que deben hacer:
-
-- Usar `.describe()` para visión general
-- Calcular media, mediana y desviación estándar de goles y asistencias
-- Reflexionar sobre diferencias media vs mediana
-
-Ejemplo de código:
+Ir más allá de promedios básicos para entender la distribución de los datos:
 
 ```python
-resumen_numerico = datos_jugadores[['goles','asistencias','partidos_jugados']].describe()
+# Resumen estadístico completo
+resumen_numerico = datos_jugadores[['goles', 'asistencias', 'partidos_jugados', 'edad']].describe()
+print("Resumen estadístico completo:")
 print(resumen_numerico)
 
-import numpy as np
-estadisticas_extra = datos_jugadores[['goles','asistencias']].agg(['mean','median','std']).T
-print("Estadísticas complementarias:\n", estadisticas_extra)
+# Estadísticas adicionales importantes
+estadisticas_extra = datos_jugadores[['goles', 'asistencias']].agg(['mean', 'median', 'std']).round(2)
+print("Comparación media vs mediana:")
+print(estadisticas_extra)
 
-print("¿Difieren media y mediana de goles? ¿Qué sugiere sobre valores extremos?")
+# Identificar el mejor goleador
+mejor_goleador = datos_jugadores.loc[datos_jugadores['goles'].idxmax()]
+print(f"Mejor goleador: {mejor_goleador['nombre']} con {mejor_goleador['goles']} goles")
+
+# Mostrar también el mejor asistente
+mejor_asistente = datos_jugadores.loc[datos_jugadores['asistencias'].idxmax()]
+print(f"Mejor asistente: {mejor_asistente['nombre']} con {mejor_asistente['asistencias']} asistencias")
 ```
 
-Preguntas socráticas:
+**Pregunta de reflexión:** ¿Qué nos indica cuando la media y mediana de goles son muy diferentes? ¿Qué sugiere esto sobre la distribución de goleadores en el dataset?
 
-- ¿Qué nos dice una desviación estándar alta en asistencias?
-- ¿Por qué podría ser más robusta la mediana que la media en goles?
+### Parte 2: Análisis y Métricas Avanzadas (30 puntos)
 
-### Parte 2: Análisis y Métricas Derivadas (30 puntos)
+#### 2.1 Análisis por Grupos usando GroupBy (12 puntos)
 
-#### 2.1 Estadísticas por Posición (12 puntos)
-
-Lo que deben hacer:
-
-- Usar `.groupby('posicion')` y `agg` con media de goles, asistencias y partidos
-- Identificar mejor jugador por posición (máximo de goles)
-- Redondear a 1 decimal
-
-Ejemplo de código (base recomendado):
+Comparar rendimiento entre diferentes posiciones usando pandas avanzado:
 
 ```python
+# Estadísticas por posición
 estadisticas_posicion = datos_jugadores.groupby('posicion').agg({
-    'goles': 'mean',
-    'asistencias': 'mean',
+    'goles': ['mean', 'max', 'count'],
+    'asistencias': ['mean', 'max'],
     'partidos_jugados': 'mean'
-}).round(1)
-print("Promedios por posición:\n", estadisticas_posicion)
+}).round(2)
 
-for pos in datos_jugadores['posicion'].unique():
-    subset = datos_jugadores[datos_jugadores['posicion'] == pos]
+print("Estadísticas por posición:")
+print(estadisticas_posicion)
+
+# Encontrar el mejor jugador de cada posición
+print("Mejor goleador por posición:")
+for posicion in datos_jugadores['posicion'].unique():
+    subset = datos_jugadores[datos_jugadores['posicion'] == posicion]
     mejor = subset.loc[subset['goles'].idxmax()]
-    print(f"{pos}: {mejor['nombre']} con {mejor['goles']} goles")
+    print(f"{posicion}: {mejor['nombre']} ({mejor['goles']} goles)")
 ```
 
-Preguntas socráticas:
+**Pregunta de reflexión:** ¿Por qué es importante comparar jugadores dentro de su misma posición en lugar de comparar todos juntos? ¿Qué sesgos podríamos introducir si no agrupamos por posición?
 
-- ¿Por qué comparar promedios por posición antes de elegir titulares?
-- ¿Qué riesgo hay si solo miramos el máximo de goles y no el promedio del rol?
+#### 2.2 Creación de Métricas Derivadas (10 puntos)
 
-#### 2.2 Métricas Derivadas de Eficiencia (10 puntos)
-
-Objetivo: Incorporar variables interpretables para decisiones deportivas.
-
-Lo que deben hacer:
-
-- Crear `goles_por_partido = goles / partidos_jugados`
-- Crear `contribucion_ofensiva = goles + asistencias`
-- Calcular promedios de estas métricas por posición
-- Identificar el top 3 por contribución ofensiva total
-
-Ejemplo:
+Crear nuevas variables que nos ayuden a evaluar mejor el rendimiento:
 
 ```python
+# Crear métricas de eficiencia
 datos_jugadores['goles_por_partido'] = (datos_jugadores['goles'] / datos_jugadores['partidos_jugados']).round(2)
 datos_jugadores['contribucion_ofensiva'] = datos_jugadores['goles'] + datos_jugadores['asistencias']
 
-promedios_eficiencia = datos_jugadores.groupby('posicion')[['goles_por_partido','contribucion_ofensiva']].mean().round(2)
-print(promedios_eficiencia)
+# Calcular promedios de las nuevas métricas por posición
+metricas_eficiencia = datos_jugadores.groupby('posicion')[['goles_por_partido', 'contribucion_ofensiva']].mean().round(2)
+print("Métricas de eficiencia por posición:")
+print(metricas_eficiencia)
 
-top_contribucion = datos_jugadores.sort_values('contribucion_ofensiva', ascending=False).head(3)
-print("Top 3 por contribución ofensiva:")
-print(top_contribucion[['nombre','posicion','contribucion_ofensiva']])
+# Top 5 jugadores por contribución ofensiva
+top_contribucion = datos_jugadores.nlargest(5, 'contribucion_ofensiva')
+print("Top 5 por contribución ofensiva:")
+print(top_contribucion[['nombre', 'posicion', 'goles', 'asistencias', 'contribucion_ofensiva']])
 ```
 
-Preguntas socráticas:
+**Pregunta de reflexión:** ¿Por qué `goles_por_partido` puede ser más útil que el total de goles para evaluar a un jugador? ¿En qué situaciones esta métrica podría ser engañosa?
 
-- ¿Por qué `goles_por_partido` puede ser mejor que solo goles totales?
-- ¿Cuándo podría engañarnos la contribución ofensiva (ej. pocos partidos)?
+#### 2.3 Detección de Valores Atípicos (8 puntos)
 
-#### 2.3 Detección Simple de Valores Atípicos (Outliers) (8 puntos)
-
-Objetivo: Reconocer valores extremos básicos que pueden distorsionar conclusiones.
-
-Lo que deben hacer:
-
-- Calcular media y desviación estándar de goles
-- Definir umbral: `media + 2 * std`
-- Listar jugadores por encima de ese umbral
-- Decidir (justificación escrita) si mantenerlos en el análisis
-
-Ejemplo:
+Identificar jugadores con rendimientos excepcionales que podrían afectar nuestros análisis:
 
 ```python
-media_g = datos_jugadores['goles'].mean()
-std_g = datos_jugadores['goles'].std()
-umbral = media_g + 2*std_g
-outliers_goles = datos_jugadores[datos_jugadores['goles'] > umbral]
-print(f"Umbral outlier goles: {umbral:.1f}")
-print(outliers_goles[['nombre','goles','posicion']])
+# Método simple: media + 2 desviaciones estándar
+media_goles = datos_jugadores['goles'].mean()
+std_goles = datos_jugadores['goles'].std()
+umbral_superior = media_goles + 2 * std_goles
+
+# Identificar outliers en goles
+outliers_goles = datos_jugadores[datos_jugadores['goles'] > umbral_superior]
+print(f"Umbral para outliers en goles: {umbral_superior:.1f}")
+print("Jugadores con goles excepcionales:")
+print(outliers_goles[['nombre', 'posicion', 'goles', 'partidos_jugados']])
+
+# Decisión: ¿mantenerlos o no?
+print("Decisión del equipo: [Explicar aquí si mantienen o excluyen estos jugadores y por qué]")
 ```
 
-Preguntas socráticas:
+**Pregunta de reflexión:** Si encuentras un delantero con muchos más goles que el resto, ¿lo considerarías un outlier problemático o talento excepcional? ¿Cómo afectaría al promedio de su posición?
 
-- ¿Eliminarías un delantero muy por encima del umbral? ¿Por qué?
-- ¿Cómo afectaría mantenerlo al promedio de su posición?
+### Parte 3: Visualización e Interpretación (30 puntos)
 
-### Parte 3: Visualización, Interpretación y Comunicación (30 puntos)
+#### 3.1 Gráficos Fundamentales (15 puntos)
 
-#### 3.1 Gráficos Fundamentales (10 puntos)
+Crear visualizaciones profesionales para comunicar los hallazgos:
 
-Gráficos obligatorios (cada uno con título claro, ejes etiquetados, fuente de datos opcional en nota):
+**a) Gráfico de barras - Distribución por posición:**
 
-- Barras: jugadores por posición (ordenado de mayor a menor)
-- Caja: distribución de goles por posición (identificar variabilidad)
-- Dispersión: goles vs asistencias (distinguir posición con color)
+```python
+plt.figure(figsize=(10, 6))
+conteo_posiciones = datos_jugadores['posicion'].value_counts().sort_values(ascending=False)
+plt.bar(conteo_posiciones.index, conteo_posiciones.values)
+plt.title('Distribución de Jugadores por Posición')
+plt.xlabel('Posición')
+plt.ylabel('Número de Jugadores')
+plt.xticks(rotation=45)
+plt.show()
+```
 
-Preguntas socráticas (después de cada gráfico):
+**b) Gráfico de cajas - Distribución de goles por posición:**
 
-- ¿Qué posición domina en cantidad de jugadores? ¿Eso explica algo de sus promedios?
-- ¿Qué posición muestra mayor dispersión en goles? ¿Por qué podría suceder?
-- ¿Observas relación entre goles y asistencias o roles diferenciados?
+```python
+plt.figure(figsize=(12, 6))
+sns.boxplot(data=datos_jugadores, x='posicion', y='goles')
+plt.title('Distribución de Goles por Posición')
+plt.xlabel('Posición')
+plt.ylabel('Goles')
+plt.xticks(rotation=45)
+plt.show()
+```
 
-#### 3.2 Visualizaciones de Profundización (10 puntos)
+**c) Gráfico de dispersión - Relación goles vs asistencias:**
 
-Gráficos adicionales:
+```python
+plt.figure(figsize=(10, 8))
+sns.scatterplot(data=datos_jugadores, x='goles', y='asistencias', hue='posicion', s=100)
+plt.title('Relación entre Goles y Asistencias por Posición')
+plt.xlabel('Goles')
+plt.ylabel('Asistencias')
+plt.legend(title='Posición')
+plt.show()
+```
 
-- Top 5 goleadores (barras horizontal) con valores anotados
-- Comparación de `goles_por_partido` vs `contribucion_ofensiva` (scatter o barras agrupadas)
-- Distribución de edades (histograma o KDE simple)
+**Pregunta de reflexión:** ¿Qué posición muestra mayor variabilidad en goles según el boxplot? ¿Observas alguna relación clara entre goles y asistencias en el gráfico de dispersión?
 
-Preguntas socráticas:
+#### 3.2 Visualizaciones Avanzadas (10 puntos)
 
-- ¿El top 5 por goles coincide con el top 3 por contribución ofensiva?
-- ¿Hay posiciones con jugadores jóvenes y alta eficiencia? ¿Qué implicaría para desarrollo?
-- ¿La distribución de edades es equilibrada o sesgada?
+Crear gráficos adicionales para profundizar en el análisis:
 
-#### 3.3 Síntesis y Presentación (10 puntos)
+**a) Top 5 goleadores:**
 
-Debe incluir respuestas claras y justificadas a:
+```python
+plt.figure(figsize=(10, 6))
+top_goleadores = datos_jugadores.nlargest(5, 'goles')
+plt.barh(top_goleadores['nombre'], top_goleadores['goles'])
+plt.title('Top 5 Goleadores')
+plt.xlabel('Goles')
+plt.ylabel('Jugador')
+# Añadir valores en las barras
+for i, v in enumerate(top_goleadores['goles']):
+    plt.text(v + 0.1, i, str(v), va='center')
+plt.show()
+```
 
-1. ¿Qué posición marca más goles en promedio y qué tan consistente es (variabilidad)?
-2. ¿Quiénes son los 3 jugadores más valiosos considerando contribución ofensiva y eficiencia?
-3. ¿Qué patrón observas entre goles y asistencias? (rol de creadores vs finalizadores)
-4. ¿La edad promedio por posición sugiere etapas de desarrollo distintas?
-5. ¿Qué decisión práctica recomendarías al entrenador (ej. reforzar mediocampo, promover un delantero)?
+**b) Comparación de eficiencia:**
 
-Formato sugerido de presentación (3–4 diapositivas):
+```python
+plt.figure(figsize=(12, 6))
+sns.scatterplot(data=datos_jugadores, x='goles_por_partido', y='contribucion_ofensiva', 
+                hue='posicion', s=100, alpha=0.7)
+plt.title('Eficiencia: Goles por Partido vs Contribución Ofensiva')
+plt.xlabel('Goles por Partido')
+plt.ylabel('Contribución Ofensiva (Goles + Asistencias)')
+plt.legend(title='Posición')
+plt.show()
+```
 
-- Diapositiva 1: Objetivo y dataset
-- Diapositiva 2: Métricas clave y gráficos principales
-- Diapositiva 3: Interpretaciones y outliers (decisión)
-- Diapositiva 4 (opcional si cabe): Recomendaciones y próximos pasos
+**c) Distribución de edades:**
+
+```python
+plt.figure(figsize=(10, 6))
+plt.hist(datos_jugadores['edad'], bins=8, alpha=0.7, edgecolor='black')
+plt.title('Distribución de Edades de los Jugadores')
+plt.xlabel('Edad')
+plt.ylabel('Frecuencia')
+plt.show()
+```
+
+**Pregunta de reflexión:** ¿Los mejores goleadores también tienen alta contribución ofensiva? ¿Qué indica la distribución de edades sobre el nivel de desarrollo de los jugadores?
+
+#### 3.3 Interpretación y Comunicación (5 puntos)
+
+Preparar una síntesis clara de los hallazgos:
+
+- Comparar rendimiento promedio por posición
+- Identificar los 3 jugadores más valiosos del dataset
+- Analizar patrones en la relación goles-asistencias
+- Evaluar la distribución de edades y su impacto
+- Proponer una recomendación práctica para el cuerpo técnico
 
 ---
+
+## Reflexión Final (IMPORTANTE - Incluir en el notebook)
+
+**ESTA SECCIÓN ES OBLIGATORIA - contribuye a su nota del rubro Reflexión y Documentación**
+
+Al completar todas las tareas técnicas, incluye en tu notebook una sección de "Reflexión Final" donde respondas brevemente (2–4 líneas cada una) a **TRES preguntas** de las siguientes cinco opciones:
+
+1. ¿Qué ventajas tiene usar pandas groupby en lugar de filtrar manualmente por cada posición?
+2. ¿Por qué es importante evaluar la calidad de datos antes de hacer visualizaciones?
+3. ¿Qué información adicional necesitarías para hacer un análisis más completo de rendimiento?
+4. ¿Cómo podrían los outliers afectar las decisiones de un entrenador si no los identificas?
+5. ¿Cuál sería tu siguiente paso de análisis en el Bloque 3 (Machine Learning)?
+
+**Propósito:** Esta reflexión ayuda a consolidar tu aprendizaje y conectar los conceptos técnicos con aplicaciones reales del análisis de datos deportivos.
 
 ---
 
 ## Entregables
 
-### 1. Notebook Principal (`analisis_jugadores_equipo[X].ipynb`)
+### 1. Notebook de Jupyter (`caso_bloque2_equipo[X].ipynb`)
 
-**Debe incluir:**
+- Código funcional que carga y analiza los datos correctamente
+- Exploración completa con verificación de calidad de datos
+- Métricas derivadas implementadas y explicadas
+- Visualizaciones profesionales con títulos y etiquetas claras
+- Análisis por grupos usando groupby
+- Respuestas a las preguntas de reflexión intermedias
+- Reflexión final completa
 
-- Importaciones y carga de datos
-- Exploración básica (`.head()`, `.info()`, estadísticas)
-- Gráficos obligatorios bien etiquetados
-- Análisis por posición
-- Conclusiones escritas
+### 2. Video de Exposición (YouTube)
 
-### 2. Presentación (`presentacion_equipo[X].pdf`)
-
-**Debe incluir:**
-
-- 3-4 diapositivas con sus mejores gráficos
-- Conclusiones principales  
-- Lo que aprendió cada integrante del equipo
-
----
-
-## Criterios de Evaluación (Rúbrica Completa Integrada)
-
-Esta sección integra la rúbrica que antes residía en `rubricas/README.md` para centralizar criterios (archivo eliminado tras fusión). Modelo estándar 40/30/30.
-
-### 1. Examen Canvas (Referencia Bloque 2)
-
-- Banco: 105 preguntas (75 Núcleo + 30 Extended con [S]).
-- Preguntas por examen: 22 (estratificado objetivo: [R] 7-8, [C] 7-8, [A] 5-6, [S] 1-2).
-- Formato: ~70% opción múltiple / ~30% numéricas.
-- Tiempo: 50 minutos. Intento único.
-- Temas 20% c/u: Exploración/calidad, estadística descriptiva, métricas derivadas, agrupaciones+outliers, visualización/interpretación.
-
-### 2. Rúbrica Caso 40 / 30 / 30 (100 puntos)
-
-| Área | Puntos | Subcomponentes | Indicadores clave |
-|------|--------|----------------|-------------------|
-| Exploración y Calidad | 40 | Carga (5) + Exploración head/info (10) + Calidad/Tipos/NA (10) + Estadística descriptiva (15) | `.head()`, `.info()`, rangos validados, interpretación media vs mediana |
-| Análisis y Métricas | 30 | Groupby posiciones (12) + Métricas derivadas (10) + Outliers simples (8) | `goles_por_partido`, `contribucion_ofensiva`, criterio outliers documentado |
-| Visualización e Interpretación | 30 | Gráficos base (10) + Profundización (10) + Síntesis/Presentación (10) | Gráficos limpios, respuestas socráticas, recomendaciones futbolísticas |
-
-### 3. Niveles de Desempeño
-
-- Excelente: Completo, decisiones justificadas con métricas y reflexión.
-- Bueno: 1–2 omisiones menores; interpretación razonable.
-- Suficiente: Falta una métrica derivada u outliers; interpretación superficial.
-- Insuficiente: Errores que impiden análisis o falta de justificación.
-
-### 4. Requisitos para Nivel Excelente (Transversales)
-
-- Variables en español descriptivas.
-- Comentarios justifican pasos críticos (no redundantes).
-- Preguntas socráticas respondidas tras cada bloque.
-- Notebook ejecuta limpio desde reinicio.
-
-### 5. Autoevaluación Rápida (OK / Revisar)
-
-- [ ] Carga y exploración básica completa
-- [ ] Calidad (NA, tipos, rangos) revisada
-- [ ] Métricas derivadas creadas y explicadas
-- [ ] Outliers identificados y decisión documentada
-- [ ] Gráficos base implementados + interpretaciones
-- [ ] Gráficos de profundización implementados + interpretaciones
-- [ ] Síntesis final con recomendaciones
-- [ ] Presentación preparada (3–4 diapositivas)
-
-### 6. Integridad Académica
-
-| Aspecto | Criterio |
-|---------|---------|
-| Autoría | Trabajo colaborativo (≥80% código original del equipo) |
-| Fuentes | Citar si se usa código externo o adaptado |
-| IA Asistiva | Declarar uso y describir apoyo (no reemplaza comprensión) |
-| Reproducibilidad | Notebook ejecutable sin celdas huérfanas |
-
-### 7. Conversión Ponderada del Bloque
-
-- Examen Canvas: 20% × (puntaje/100)
-- Caso práctico: 15% × (puntaje/100)
-- Total Bloque 2 = 35% del curso
+- **Duración máxima**: 15 minutos
+- **Formato**: Video grabado subido a YouTube (puede ser no listado)
+- **Contenido**: Presentación del notebook y explicación de hallazgos principales
+- **Participación**: Cada integrante debe explicar al menos una parte
+- **Envío**: Link de YouTube en el Canvas
 
 ---
+
+## Criterios de Evaluación
+
+### Rúbrica del Caso Práctico (100 puntos totales)
+
+**Distribución**: 70% Desarrollo Técnico + 30% Comunicación y Reflexión
+
+| Componente | Puntos | Criterios de Evaluación |
+|------------|--------|------------------------|
+| **Exploración y Calidad de Datos** | 40 | Carga correcta (5) + Exploración estructural (10) + Calidad y validación (10) + Estadística descriptiva (15) |
+| **Análisis y Métricas Avanzadas** | 30 | GroupBy y análisis por posición (12) + Métricas derivadas (10) + Detección de outliers (8) |
+| **Visualización e Interpretación** | 20 | Gráficos fundamentales (15) + Visualizaciones avanzadas (5) |
+| **Comunicación y Documentación** | 10 | Video de exposición (7) + Reflexión final y comentarios (3) |
+
+### Criterios de Desempeño por Componente
+
+#### 1. Exploración y Calidad de Datos (40 puntos)
+
+**Excelente (40 puntos ~ 100%):**
+- Carga datos correctamente y configura entorno
+- Exploración completa con `.head()`, `.info()`, conteos por posición
+- Evalúa calidad: tipos, valores faltantes, rangos válidos
+- Estadística descriptiva completa con interpretación de media vs mediana
+
+**Suficiente (28 puntos ~ 70%):**
+- Carga datos y exploración básica funcional
+- Evaluación superficial de calidad
+- Estadísticas básicas sin interpretación profunda
+
+**Insuficiente (12 puntos ~ 30%):**
+- Exploración incompleta o con errores
+- No evalúa calidad de datos
+- Estadísticas mínimas
+
+**No presentó (0 puntos):**
+- No carga datos o errores graves
+- Exploración ausente o no funcional
+
+#### 2. Análisis y Métricas Avanzadas (30 puntos)
+
+**Excelente (30 puntos ~ 100%):**
+- GroupBy implementado correctamente con múltiples estadísticas
+- Métricas derivadas creadas y bien explicadas
+- Outliers identificados con criterio justificado
+- Interpretaciones claras de los resultados
+
+**Suficiente (21 puntos ~ 70%):**
+- GroupBy básico funcional
+- Al menos una métrica derivada
+- Outliers identificados sin justificación profunda
+
+**Insuficiente (9 puntos ~ 30%):**
+- GroupBy parcial o con errores
+- Métricas derivadas incompletas
+- No identifica outliers
+
+**No presentó (0 puntos):**
+- No implementa groupby
+- Falta análisis por grupos
+
+#### 3. Visualización e Interpretación (20 puntos)
+
+**Excelente (20 puntos ~ 100%):**
+- Todos los gráficos fundamentales implementados correctamente
+- Gráficos con títulos, etiquetas y formato profesional
+- Visualizaciones avanzadas añaden valor al análisis
+- Interpretaciones claras después de cada gráfico
+
+**Suficiente (14 puntos ~ 70%):**
+- Mayoría de gráficos implementados
+- Formato básico pero legible
+- Interpretaciones superficiales
+
+**Insuficiente (6 puntos ~ 30%):**
+- Solo algunos gráficos implementados
+- Formato pobre o confuso
+- Pocas interpretaciones
+
+**No presentó (0 puntos):**
+- Gráficos ausentes o no funcionan
+- Sin interpretaciones
+
+#### 4. Comunicación y Documentación (10 puntos)
+
+**Excelente (10 puntos ~ 100%):**
+- Video claro, bien estructurado, ≤15 minutos
+- Participación equilibrada del equipo
+- Reflexión final completa con 3 preguntas respondidas
+- Comentarios explicativos en código
+
+**Suficiente (7 puntos ~ 70%):**
+- Video básico pero funcional
+- Reflexión final presente
+- Algunos comentarios en código
+
+**Insuficiente (3 puntos ~ 30%):**
+- Video de baja calidad o excede tiempo
+- Reflexión final incompleta
+- Pocos comentarios
+
+**No presentó (0 puntos):**
+- Sin video o video no accesible
+- Sin reflexión final
+
+### Tabla Resumen de Calificación
+
+| Componente | Puntos Máximos | Excelente (~100%) | Suficiente (~70%) | Insuficiente (~30%) | No presentó (0%) |
+|------------|-----------------|-------------------|-------------------|---------------------|------------------|
+| Exploración y Calidad de Datos | 40 | 40 puntos | 28 puntos | 12 puntos | 0 puntos |
+| Análisis y Métricas Avanzadas | 30 | 30 puntos | 21 puntos | 9 puntos | 0 puntos |
+| Visualización e Interpretación | 20 | 20 puntos | 14 puntos | 6 puntos | 0 puntos |
+| Comunicación y Documentación | 10 | 10 puntos | 7 puntos | 3 puntos | 0 puntos |
+| **TOTAL** | **100** | **100 puntos** | **70 puntos** | **30 puntos** | **0 puntos** |
+
+### Requisitos Mínimos para Aprobar
+
+- Notebook ejecuta sin errores graves
+- Implementa groupby básico y al menos una métrica derivada
+- Video subido a YouTube con participación de todo el equipo
+- Duración del video ≤20 minutos (máximo absoluto)
+
+### Penalizaciones
+
+- **-5 puntos**: Video excede 20 minutos
+- **-3 puntos**: No todos los integrantes participan en el video
+- **-5 puntos**: Notebook no ejecuta por errores de sintaxis
+- **-2 puntos**: Variables en inglés o nombres no descriptivos
 
 ---
 
@@ -403,36 +519,77 @@ Esta sección integra la rúbrica que antes residía en `rubricas/README.md` par
 
 | Día | ¿Qué hacer? | Tiempo |
 |-----|-------------|--------|
-| **Lunes** | Formar equipos, cargar y explorar datos básicos | 2 horas |
-| **Miércoles** | Crear gráficos básicos, análisis por posición | 2 horas |
-| **Viernes** | Preparar presentación y entregar | 1 hora |
+| **Lunes** | Formar equipos, cargar datos, exploración y calidad | 2 horas |
+| **Miércoles** | Análisis con groupby, métricas derivadas, outliers | 2.5 horas |
+| **Viernes** | Crear visualizaciones, grabar video de exposición | 2 horas |
+
+**Fecha límite de entrega**: 17 de noviembre de 2025, 11:59 PM  
+**Recomendación**: Completar durante la semana del 10-14 de noviembre para evitar contratiempos
+
+**Entrega**: Notebook + link de YouTube en Canvas
 
 ---
 
-## Consejos para el Equipo
+## Consejos Útiles
 
-### Para Dividir el Trabajo
+### Para el Código
 
-**Opción 1:** Por partes
+- Usen variables con nombres claros: `datos_jugadores`, `estadisticas_posicion`, `outliers_goles`
+- Comenten el código para explicar decisiones importantes (por qué mantener/excluir outliers)
+- Validen que todos los gráficos tengan títulos y etiquetas profesionales
 
-- Persona 1: Exploración básica y carga de datos
-- Persona 2: Gráficos y visualizaciones
-- Persona 3: Análisis por posición y presentación
+### Para el Trabajo en Equipo
 
-**Opción 2:** Todos juntos
+- **Persona 1**: Exploración, calidad de datos y estadística descriptiva
+- **Persona 2**: Análisis con groupby, métricas derivadas y outliers  
+- **Persona 3**: Visualizaciones y preparación del video
+- **Todos**: Participan en interpretaciones y reflexión final
 
-- Trabajan todos en la misma computadora
-- Van rotando quién escribe el código
-- Todos participan en las decisiones
+### Para el Video de Exposición
 
-### Tips Importantes
+- **Duración**: Practiquen para mantenerse en 12-15 minutos
+- **Participación**: Cada persona explica 4-5 minutos
+- **Estructura sugerida**: 
+  - Introducción y dataset (2 min)
+  - Exploración y calidad (4-5 min)
+  - Análisis y métricas (4-5 min)
+  - Visualizaciones y conclusiones (3-4 min)
+- **Técnico**: Graben pantalla mostrando el notebook, audio claro
+- **Herramientas**: Pueden usar Zoom, OBS, o la grabación de pantalla del sistema operativo
 
-- **Variables en español y descriptivas:** `datos_jugadores`, `goles_por_partido`, `contribucion_ofensiva`.
-- **Buenas prácticas de gráficos:** títulos informativos (no genéricos), ejes con unidades, ordenar barras, anotar valores en top 5.
-- **Interpretar SIEMPRE después de visualizar:** añadir una frase respondiendo a la pregunta socrática sugerida.
-- **Documentar supuestos:** si decides mantener outliers, anota por qué.
-- **Valida antes de entregar:** ejecutar todo el notebook desde cero sin errores.
+### Preguntas Frecuentes
+
+1. ¿Cómo interpreto un boxplot? → Las cajas muestran el rango intercuartílico, los puntos externos son outliers
+2. ¿Qué hacer si encuentro valores faltantes? → Documentar cuántos hay y decidir si eliminar o mantener
+3. ¿Cómo sé si una métrica derivada es útil? → Debe tener interpretación clara y aportar información nueva
+4. ¿El video puede ser "no listado" en YouTube? → Sí, pero debe ser accesible con el link
 
 ---
 
-*Este caso práctico ahora integra exploración estructural, calidad, estadística descriptiva, métricas de eficiencia e interpretación futbolística para preparar la transición a análisis predictivo en el siguiente bloque.*
+### Autoevaluación Rápida (Marcar OK / Revisar)
+
+**Exploración y Análisis:**
+- [ ] Cargué datos correctamente y configuré seaborn
+- [ ] Exploré estructura con `.head()`, `.info()`, conteos por posición
+- [ ] Evalué calidad: tipos, valores faltantes, rangos válidos
+- [ ] Calculé estadística descriptiva completa con interpretación
+- [ ] Implementé groupby por posición con múltiples estadísticas
+- [ ] Creé métricas derivadas (`goles_por_partido`, `contribucion_ofensiva`)
+- [ ] Identifiqué outliers y documenté decisión
+
+**Visualización y Comunicación:**
+- [ ] Creé gráficos fundamentales (barras, boxplot, dispersión)
+- [ ] Agregué visualizaciones avanzadas (top 5, eficiencia, edades)
+- [ ] Todos los gráficos tienen títulos y etiquetas claras
+- [ ] Respondí preguntas de reflexión intermedias
+- [ ] Completé reflexión final (3 preguntas elegidas)
+- [ ] Video dura máximo 15 minutos con participación equilibrada
+
+**Entrega:**
+- [ ] Notebook ejecuta completamente sin errores
+- [ ] Variables y comentarios en español
+- [ ] Link de YouTube enviado en Canvas
+
+---
+
+*Este caso práctico integra exploración avanzada de datos, estadística descriptiva, visualización profesional y análisis por grupos para preparar el camino hacia machine learning en el Bloque 3.*

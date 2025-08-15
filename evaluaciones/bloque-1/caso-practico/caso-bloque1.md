@@ -190,6 +190,22 @@ plt.show()
 
 ---
 
+## Reflexión Final (IMPORTANTE - Incluir en el notebook)
+
+**ESTA SECCIÓN ES OBLIGATORIA - contribuye a su nota del rubro Reflexión y Documentación**
+
+Al completar todas las tareas técnicas, incluye en tu notebook una sección de "Reflexión Final" donde respondas brevemente (2–4 líneas cada una) a **TRES preguntas** de las siguientes cinco opciones:
+
+1. ¿Qué métrica adicional incluirías para evaluar solidez defensiva y por qué?
+2. ¿Qué limitación tiene usar solo 10 partidos para conclusiones?
+3. ¿Qué beneficio te dio el DataFrame frente a listas separadas?
+4. ¿Qué mostrarías a un entrenador para convencerlo de mejorar el ataque?
+5. ¿Cuál sería tu siguiente paso de análisis en el Bloque 2?
+
+**Propósito:** Esta reflexión ayuda a consolidar tu aprendizaje y conectar los conceptos técnicos con aplicaciones reales del análisis de datos deportivos.
+
+---
+
 ## Entregables
 
 ### 1. Notebook de Jupyter (`caso_bloque1_equipo[X].ipynb`)
@@ -232,17 +248,17 @@ plt.show()
 - Incluye pruebas con `assert`
 - Variables con nombres descriptivos en español
 
-**Bueno (25 puntos ~ 70%):**
+**Suficiente (25 puntos ~ 70%):**
 - Código funciona con errores menores
 - Una función implementada correctamente
 - Lógica básica presente
 
-**Suficiente (11 puntos ~ 30%):**
+**Insuficiente (11 puntos ~ 30%):**
 - Código parcialmente funcional
 - Errores en lógica pero intento claro
 - Falta alguna función o prueba
 
-**Insuficiente (0 puntos):**
+**No presentó (0 puntos):**
 - Código no funciona o incompleto
 - Errores graves de sintaxis
 - Funciones faltantes
@@ -255,17 +271,17 @@ plt.show()
 - Gráfico de barras legible con etiquetas
 - Interpreta resultados correctamente
 
-**Bueno (18 puntos ~ 70%):**
+**Suficiente (18 puntos ~ 70%):**
 - DataFrame funcional
 - Gráfico básico presente
 - Interpretación superficial
 
-**Suficiente (8 puntos ~ 30%):**
+**Insuficiente (8 puntos ~ 30%):**
 - Intento de DataFrame o visualización
 - Resultados parcialmente correctos
 - Poca interpretación
 
-**Insuficiente (0 puntos):**
+**No presentó (0 puntos):**
 - No logra crear DataFrame
 - Sin visualización o incorrecta
 - Sin interpretación
@@ -278,17 +294,17 @@ plt.show()
 - Tiempo ≤15 minutos
 - Buen manejo del notebook durante presentación
 
-**Bueno (18 puntos ~ 70%):**
+**Suficiente (18 puntos ~ 70%):**
 - Explicación clara pero participación desigual
 - Tiempo adecuado
 - Presentación organizada
 
-**Suficiente (8 puntos ~ 30%):**
+**Insuficiente (8 puntos ~ 30%):**
 - Explicación básica
 - Participación mínima de algunos integrantes
 - Excede tiempo ligeramente (16-18 min)
 
-**Insuficiente (0 puntos):**
+**No presentó (0 puntos):**
 - Explicación confusa o incompleta
 - Solo una persona presenta
 - Excede significativamente el tiempo (>18 min)
@@ -302,24 +318,24 @@ plt.show()
 - Comentarios explican el "por qué", no solo el "qué"
 - Conexiones claras entre conceptos
 
-**Bueno (11 puntos ~ 70%):**
+**Suficiente (11 puntos ~ 70%):**
 - Responde la mayoría de preguntas reflexivas
 - Reflexión final básica pero presente
 - Comentarios básicos pero útiles
 
-**Suficiente (5 puntos ~ 30%):**
+**Insuficiente (5 puntos ~ 30%):**
 - Respuestas superficiales a preguntas reflexivas
 - Reflexión final incompleta o muy breve
 - Comentarios mínimos
 
-**Insuficiente (0 puntos):**
+**No presentó (0 puntos):**
 - No responde preguntas reflexivas intermedias
 - Falta reflexión final o comentarios inútiles
 
 ### Tabla Resumen de Calificación
 
-| Componente | Puntos Máximos | Excelente (~100%) | Bueno (~70%) | Suficiente (~30%) | Insuficiente (0%) |
-|------------|-----------------|-------------------|--------------|-------------------|-------------------|
+| Componente | Puntos Máximos | Excelente (~100%) | Suficiente (~70%) | Insuficiente (~30%) | No presentó (0%) |
+|------------|-----------------|-------------------|-------------------|---------------------|------------------|
 | Código y Funciones | 35 | 35 puntos | 25 puntos | 11 puntos | 0 puntos |
 | Análisis con Datos | 25 | 25 puntos | 18 puntos | 8 puntos | 0 puntos |
 | Video de Exposición | 25 | 25 puntos | 18 puntos | 8 puntos | 0 puntos |
@@ -413,15 +429,5 @@ plt.show()
 - [ ] Link de YouTube enviado en Canvas
 
 ---
-
-## Reflexión Final (en el notebook)
-
-Responder brevemente (2–4 líneas cada una) a TRES preguntas de las siguientes cinco opciones:
-
-1. ¿Qué métrica adicional incluirías para evaluar solidez defensiva y por qué?
-2. ¿Qué limitación tiene usar solo 10 partidos para conclusiones?
-3. ¿Qué beneficio te dio el DataFrame frente a listas separadas?
-4. ¿Qué mostrarías a un entrenador para convencerlo de mejorar el ataque?
-5. ¿Cuál sería tu siguiente paso de análisis en el Bloque 2?
 
 *Este caso práctico integra fundamentos técnicos, primeras nociones de pandas, visualización básica y razonamiento reflexivo para cerrar el Bloque 1 de forma completa y significativa.*

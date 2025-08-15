@@ -5,6 +5,30 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 
+## 4.10.0 (2025-08-15)
+
+### Mejorado
+
+- Refinamiento completo del caso práctico colaborativo del Bloque 1
+- Reubicación de sección Reflexión Final para mayor visibilidad estudiantil
+- Simplificación del sistema de calificación con porcentajes fijos y símbolos de aproximación
+- Estandarización de niveles de calificación: Excelente/Suficiente/Insuficiente/No presentó
+- Corrección de ponderación académica y especificación de fechas límite de entrega
+- Mejora en claridad de instrucciones para entregables y criterios de evaluación
+
+### Corregido
+
+- Eliminación de emojis en documentación para cumplir política profesional del proyecto
+- Corrección de notación matemática inapropiada en rúbricas de evaluación
+- Aclaración de distribución de puntos en componente Reflexión y Documentación
+- Simplificación de referencias metodológicas para evitar confusión terminológica
+
+### Cambiado
+
+- Estructura de rúbrica más clara con distribución explícita de puntos por componente
+- Cronograma de entrega específico con fechas concretas (17 de noviembre de 2025)
+- Formato de tabla resumen de calificación más legible y consistente
+
 ## 4.9.0 (2025-08-12)
 
 ### Agregado

@@ -76,19 +76,12 @@ jugador_id,nombre,edad,equipo,posicion,torneo,goles,asistencias,partidos_jugados
 
 #### 1.1 Cargar y Configurar Entorno (5 puntos)
 
-```python
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import numpy as np
+Configurar el entorno de trabajo y cargar los datos:
 
-# Configuración obligatoria de seaborn
-sns.set_theme(style="whitegrid", palette="viridis")
-
-# Cargar el dataset
-datos_jugadores = pd.read_csv('jugadores_liga_juvenil.csv')
-print("Datos cargados correctamente!")
-```
+- Importar las librerías necesarias (pandas, matplotlib, seaborn, numpy)
+- Configurar seaborn con el tema y paleta apropiados
+- Cargar el dataset CSV usando pandas
+- Verificar que los datos se cargaron correctamente
 
 **Pregunta de reflexión:** ¿Por qué usamos pandas para cargar datos en lugar de leer el archivo línea por línea? ¿Qué ventajas nos da esta librería?
 
@@ -96,22 +89,10 @@ print("Datos cargados correctamente!")
 
 Usar métodos de pandas para entender la estructura de los datos:
 
-```python
-# Información básica del dataset
-print(f"Tenemos {len(datos_jugadores)} jugadores")
-print(f"Columnas disponibles: {list(datos_jugadores.columns)}")
-
-# Ver las primeras filas
-print(datos_jugadores.head())
-
-# Contar jugadores por posición  
-print(datos_jugadores['posicion'].value_counts())
-
-# Estadísticas básicas de goles y asistencias
-print(f"Promedio de goles: {datos_jugadores['goles'].mean():.1f}")
-print(f"Máximo de goles: {datos_jugadores['goles'].max()}")
-print(f"Promedio de asistencias: {datos_jugadores['asistencias'].mean():.1f}")
-```
+- Mostrar información básica del dataset (número de filas, columnas disponibles)
+- Examinar las primeras filas para entender el formato
+- Contar jugadores por posición para verificar balance
+- Calcular estadísticas básicas de goles y asistencias (promedio, máximo)
 
 **Pregunta de reflexión:** ¿Qué información te da el conteo por posición sobre el balance del dataset? ¿Hay alguna posición que podría estar subrepresentada?
 
@@ -119,33 +100,11 @@ print(f"Promedio de asistencias: {datos_jugadores['asistencias'].mean():.1f}")
 
 Verificar la integridad y consistencia de los datos:
 
-```python
-# Información estructural completa
-print("Información del dataset:")
-print(datos_jugadores.info())
-
-# Verificar tipos de datos
-print("Tipos de datos por columna:")
-print(datos_jugadores.dtypes)
-
-# Detectar valores faltantes
-print("Valores faltantes por columna:")
-print(datos_jugadores.isna().sum())
-
-# Verificar rangos lógicos
-edades_invalidas = datos_jugadores[~datos_jugadores['edad'].between(16, 18)]
-goles_negativos = datos_jugadores[datos_jugadores['goles'] < 0]
-
-if len(edades_invalidas) > 0:
-    print("Advertencia: edades fuera de rango esperado")
-else:
-    print("Todas las edades están en rango válido (16-18 años)")
-    
-if len(goles_negativos) > 0:
-    print("Advertencia: goles negativos encontrados")
-else:
-    print("Todos los valores de goles son válidos (≥0)")
-```
+- Obtener información estructural completa del dataset (tipos de datos, memoria)
+- Verificar tipos de datos por columna para detectar inconsistencias
+- Detectar y contar valores faltantes por columna
+- Verificar rangos lógicos (edades válidas, goles no negativos)
+- Reportar hallazgos sobre la calidad general de los datos
 
 **Pregunta de reflexión:** ¿Qué problemas podría causar trabajar con un dataset que tiene valores faltantes en las columnas de goles? ¿Cómo afectaría tus análisis posteriores?
 
@@ -153,25 +112,10 @@ else:
 
 Ir más allá de promedios básicos para entender la distribución de los datos:
 
-```python
-# Resumen estadístico completo
-resumen_numerico = datos_jugadores[['goles', 'asistencias', 'partidos_jugados', 'edad']].describe()
-print("Resumen estadístico completo:")
-print(resumen_numerico)
-
-# Estadísticas adicionales importantes
-estadisticas_extra = datos_jugadores[['goles', 'asistencias']].agg(['mean', 'median', 'std']).round(2)
-print("Comparación media vs mediana:")
-print(estadisticas_extra)
-
-# Identificar el mejor goleador
-mejor_goleador = datos_jugadores.loc[datos_jugadores['goles'].idxmax()]
-print(f"Mejor goleador: {mejor_goleador['nombre']} con {mejor_goleador['goles']} goles")
-
-# Mostrar también el mejor asistente
-mejor_asistente = datos_jugadores.loc[datos_jugadores['asistencias'].idxmax()]
-print(f"Mejor asistente: {mejor_asistente['nombre']} con {mejor_asistente['asistencias']} asistencias")
-```
+- Generar resumen estadístico completo de variables numéricas (describe())
+- Calcular estadísticas adicionales importantes (media, mediana, desviación estándar)
+- Identificar al mejor goleador y mejor asistente del dataset
+- Comparar media vs mediana para entender la distribución de los datos
 
 **Pregunta de reflexión:** ¿Qué nos indica cuando la media y mediana de goles son muy diferentes? ¿Qué sugiere esto sobre la distribución de goleadores en el dataset?
 
@@ -181,24 +125,10 @@ print(f"Mejor asistente: {mejor_asistente['nombre']} con {mejor_asistente['asist
 
 Comparar rendimiento entre diferentes posiciones usando pandas avanzado:
 
-```python
-# Estadísticas por posición
-estadisticas_posicion = datos_jugadores.groupby('posicion').agg({
-    'goles': ['mean', 'max', 'count'],
-    'asistencias': ['mean', 'max'],
-    'partidos_jugados': 'mean'
-}).round(2)
-
-print("Estadísticas por posición:")
-print(estadisticas_posicion)
-
-# Encontrar el mejor jugador de cada posición
-print("Mejor goleador por posición:")
-for posicion in datos_jugadores['posicion'].unique():
-    subset = datos_jugadores[datos_jugadores['posicion'] == posicion]
-    mejor = subset.loc[subset['goles'].idxmax()]
-    print(f"{posicion}: {mejor['nombre']} ({mejor['goles']} goles)")
-```
+- Crear estadísticas agrupadas por posición (media, máximo, conteo de goles y asistencias)
+- Calcular promedio de partidos jugados por posición
+- Encontrar el mejor goleador de cada posición específica
+- Interpretar las diferencias de rendimiento entre posiciones
 
 **Pregunta de reflexión:** ¿Por qué es importante comparar jugadores dentro de su misma posición en lugar de comparar todos juntos? ¿Qué sesgos podríamos introducir si no agrupamos por posición?
 
@@ -206,21 +136,10 @@ for posicion in datos_jugadores['posicion'].unique():
 
 Crear nuevas variables que nos ayuden a evaluar mejor el rendimiento:
 
-```python
-# Crear métricas de eficiencia
-datos_jugadores['goles_por_partido'] = (datos_jugadores['goles'] / datos_jugadores['partidos_jugados']).round(2)
-datos_jugadores['contribucion_ofensiva'] = datos_jugadores['goles'] + datos_jugadores['asistencias']
-
-# Calcular promedios de las nuevas métricas por posición
-metricas_eficiencia = datos_jugadores.groupby('posicion')[['goles_por_partido', 'contribucion_ofensiva']].mean().round(2)
-print("Métricas de eficiencia por posición:")
-print(metricas_eficiencia)
-
-# Top 5 jugadores por contribución ofensiva
-top_contribucion = datos_jugadores.nlargest(5, 'contribucion_ofensiva')
-print("Top 5 por contribución ofensiva:")
-print(top_contribucion[['nombre', 'posicion', 'goles', 'asistencias', 'contribucion_ofensiva']])
-```
+- Calcular goles por partido para cada jugador
+- Crear variable de contribución ofensiva (goles + asistencias)
+- Calcular promedios de las nuevas métricas por posición
+- Identificar top 5 jugadores por contribución ofensiva
 
 **Pregunta de reflexión:** ¿Por qué `goles_por_partido` puede ser más útil que el total de goles para evaluar a un jugador? ¿En qué situaciones esta métrica podría ser engañosa?
 
@@ -228,21 +147,10 @@ print(top_contribucion[['nombre', 'posicion', 'goles', 'asistencias', 'contribuc
 
 Identificar jugadores con rendimientos excepcionales que podrían afectar nuestros análisis:
 
-```python
-# Método simple: media + 2 desviaciones estándar
-media_goles = datos_jugadores['goles'].mean()
-std_goles = datos_jugadores['goles'].std()
-umbral_superior = media_goles + 2 * std_goles
-
-# Identificar outliers en goles
-outliers_goles = datos_jugadores[datos_jugadores['goles'] > umbral_superior]
-print(f"Umbral para outliers en goles: {umbral_superior:.1f}")
-print("Jugadores con goles excepcionales:")
-print(outliers_goles[['nombre', 'posicion', 'goles', 'partidos_jugados']])
-
-# Decisión: ¿mantenerlos o no?
-print("Decisión del equipo: [Explicar aquí si mantienen o excluyen estos jugadores y por qué]")
-```
+- Calcular umbral para outliers usando método estadístico (media + 2 desviaciones estándar)
+- Identificar jugadores con goles excepcionales comparados con sus posiciones
+- Analizar si estos outliers representan talento excepcional o errores de datos
+- Tomar decisión documentada sobre mantener o excluir estos jugadores
 
 **Pregunta de reflexión:** Si encuentras un delantero con muchos más goles que el resto, ¿lo considerarías un outlier problemático o talento excepcional? ¿Cómo afectaría al promedio de su posición?
 
@@ -253,41 +161,19 @@ print("Decisión del equipo: [Explicar aquí si mantienen o excluyen estos jugad
 Crear visualizaciones profesionales para comunicar los hallazgos:
 
 **a) Gráfico de barras - Distribución por posición:**
-
-```python
-plt.figure(figsize=(10, 6))
-conteo_posiciones = datos_jugadores['posicion'].value_counts().sort_values(ascending=False)
-plt.bar(conteo_posiciones.index, conteo_posiciones.values)
-plt.title('Distribución de Jugadores por Posición')
-plt.xlabel('Posición')
-plt.ylabel('Número de Jugadores')
-plt.xticks(rotation=45)
-plt.show()
-```
+- Crear gráfico de barras mostrando conteo de jugadores por posición
+- Ordenar las barras de mayor a menor cantidad
+- Incluir título, etiquetas de ejes y formato profesional
 
 **b) Gráfico de cajas - Distribución de goles por posición:**
-
-```python
-plt.figure(figsize=(12, 6))
-sns.boxplot(data=datos_jugadores, x='posicion', y='goles')
-plt.title('Distribución de Goles por Posición')
-plt.xlabel('Posición')
-plt.ylabel('Goles')
-plt.xticks(rotation=45)
-plt.show()
-```
+- Usar boxplot de seaborn para mostrar distribución de goles por posición
+- Configurar tamaño de figura apropiado y rotación de etiquetas
+- Interpretar las diferencias de variabilidad entre posiciones
 
 **c) Gráfico de dispersión - Relación goles vs asistencias:**
-
-```python
-plt.figure(figsize=(10, 8))
-sns.scatterplot(data=datos_jugadores, x='goles', y='asistencias', hue='posicion', s=100)
-plt.title('Relación entre Goles y Asistencias por Posición')
-plt.xlabel('Goles')
-plt.ylabel('Asistencias')
-plt.legend(title='Posición')
-plt.show()
-```
+- Crear scatter plot con goles en x y asistencias en y
+- Usar colores diferentes por posición (hue parameter)
+- Incluir leyenda y formato profesional
 
 **Pregunta de reflexión:** ¿Qué posición muestra mayor variabilidad en goles según el boxplot? ¿Observas alguna relación clara entre goles y asistencias en el gráfico de dispersión?
 
@@ -296,43 +182,19 @@ plt.show()
 Crear gráficos adicionales para profundizar en el análisis:
 
 **a) Top 5 goleadores:**
-
-```python
-plt.figure(figsize=(10, 6))
-top_goleadores = datos_jugadores.nlargest(5, 'goles')
-plt.barh(top_goleadores['nombre'], top_goleadores['goles'])
-plt.title('Top 5 Goleadores')
-plt.xlabel('Goles')
-plt.ylabel('Jugador')
-# Añadir valores en las barras
-for i, v in enumerate(top_goleadores['goles']):
-    plt.text(v + 0.1, i, str(v), va='center')
-plt.show()
-```
+- Crear gráfico de barras horizontales con los 5 mejores goleadores
+- Mostrar valores numéricos en las barras para facilitar lectura
+- Ordenar de mayor a menor número de goles
 
 **b) Comparación de eficiencia:**
-
-```python
-plt.figure(figsize=(12, 6))
-sns.scatterplot(data=datos_jugadores, x='goles_por_partido', y='contribucion_ofensiva', 
-                hue='posicion', s=100, alpha=0.7)
-plt.title('Eficiencia: Goles por Partido vs Contribución Ofensiva')
-plt.xlabel('Goles por Partido')
-plt.ylabel('Contribución Ofensiva (Goles + Asistencias)')
-plt.legend(title='Posición')
-plt.show()
-```
+- Gráfico de dispersión con goles_por_partido vs contribucion_ofensiva
+- Usar colores por posición y transparencia apropiada
+- Interpretar qué jugadores son más eficientes por tiempo jugado
 
 **c) Distribución de edades:**
-
-```python
-plt.figure(figsize=(10, 6))
-plt.hist(datos_jugadores['edad'], bins=8, alpha=0.7, edgecolor='black')
-plt.title('Distribución de Edades de los Jugadores')
-plt.xlabel('Edad')
-plt.ylabel('Frecuencia')
-plt.show()
-```
+- Histograma de edades de los jugadores con bins apropiados
+- Usar transparencia y bordes para mejor visualización
+- Analizar si hay concentración en ciertas edades
 
 **Pregunta de reflexión:** ¿Los mejores goleadores también tienen alta contribución ofensiva? ¿Qué indica la distribución de edades sobre el nivel de desarrollo de los jugadores?
 

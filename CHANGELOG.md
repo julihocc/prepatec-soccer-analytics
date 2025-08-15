@@ -5,6 +5,21 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 
+## 4.12.0 (2025-08-15)
+
+### Agregado
+
+- Solución completa del caso práctico del Bloque 1 con código ejecutable y documentado
+- Solución completa del caso práctico del Bloque 2 con análisis pandas y visualizaciones
+- Archivos de solución para referencia docente y validación de ejercicios
+- Implementaciones de referencia que cumplen todos los criterios de evaluación
+
+### Mejorado
+
+- Recursos pedagógicos completos para casos prácticos con soluciones oficiales
+- Herramientas de validación para evaluación consistente de proyectos estudiantiles
+- Documentación de referencia para instructores y asistentes de enseñanza
+
 ## 4.11.0 (2025-08-15)
 
 ### Agregado

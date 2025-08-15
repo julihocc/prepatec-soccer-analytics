@@ -2,18 +2,27 @@
 
 ## Predicción de Resultados de Fútbol con Machine Learning
 
-**Modalidad:** Colaborativa (equipos de 2-3 estudiantes)  
-**Ponderación:** 15% del curso total  
-**Duración:** 1 semana  
+**Modalidad:** Colaborativa (equipos de 3-4 estudiantes)  
+**Ponderación:** 25% del curso total  
+**Duración:** 2 semanas completas  
 **Entrega:** Notebook de Jupyter + video de exposición (YouTube)
 
 ---
 
 ## Contexto del Problema
 
-Eres parte de un equipo que ayuda a un club deportivo a utilizar inteligencia artificial para mejorar sus decisiones estratégicas. Necesitan un sistema básico de predicción de resultados de partidos usando datos históricos de Champions League.
+Eres parte de un equipo de **analistas de datos junior** que ha sido contratado por un club profesional de fútbol para desarrollar su **primer sistema de inteligencia artificial** para apoyo en decisiones estratégicas. Este es un proyecto **piloto de alta visibilidad** que determinará si el club continuará invirtiendo en ciencia de datos.
 
-**Situación:** Tienen un dataset con información de partidos históricos y quieren construir un modelo simple de machine learning que pueda predecir si el equipo local ganará o no, usando conceptos básicos de clasificación y evaluación de modelos.
+**Situación crítica:** La directiva necesita evidencia concreta del valor de la analítica deportiva. Deben construir un sistema completo de predicción de resultados que no solo funcione técnicamente, sino que genere **insights accionables** para entrenadores y directivos.
+
+**Expectativas del club:**
+- Sistema predictivo que supere significativamente las predicciones por intuición
+- Análisis profundo de factores que determinan victorias
+- Recomendaciones tácticas basadas en datos
+- Presentación ejecutiva clara para stakeholders no técnicos
+- Documentación completa para futuras expansiones del sistema
+
+**Complejidad del reto:** Este proyecto integra **todos los conocimientos del curso** (Python, pandas, visualización, machine learning) en un entregable de **calidad profesional** que simula un encargo real de la industria deportiva.
 
 ---
 
@@ -114,42 +123,45 @@ Bayern Munich,PSG,3,0,2023-24,Octavos,20,8,11,3
 
 ## Cronograma Sugerido
 
-### Semana 1: Preparación y Exploración
-- **Días 1-2**: Formar equipos, familiarizarse con dataset
-- **Días 3-4**: Completar Parte 1 (Preparación de datos)
-- **Días 5-7**: Iniciar Parte 2 (Modelado)
+### Semana 1: Preparación Integral y Modelado Inicial
 
-### Semana 2: Modelado y Análisis  
-- **Días 1-3**: Completar Parte 2 (Modelado predictivo)
-- **Días 4-5**: Parte 3 (Análisis e interpretación)
-- **Días 6-7**: Revisión técnica y depuración
+- **Días 1-2**: Formación de equipos, análisis detallado del dataset, definición de roles específicos
+- **Días 3-4**: Completar Parte 1 (Preparación de datos) con exploración exhaustiva
+- **Días 5-7**: Iniciar Parte 2 (Modelado predictivo) con experimentos preliminares
 
-### Semana 3: Síntesis y Presentación
-- **Días 1-2**: Reflexión final y documentación
-- **Días 3-4**: Preparación y grabación de video
-- **Días 5-7**: Revisión final y entrega
+### Semana 2: Modelado Avanzado, Análisis y Síntesis Final
+
+- **Días 1-3**: Completar Parte 2 (Modelado) y Parte 3 (Análisis e interpretación)
+- **Días 4-5**: Optimización de modelos, validación rigurosa, documentación técnica completa
+- **Días 6-7**: Reflexión final integral, grabación de video profesional, entrega final
 
 ---
 
 ## Consejos Útiles
 
 ### Para el Trabajo en Equipo
-- **Dividir responsabilidades**: Un miembro enfocado en limpieza de datos, otro en modelado, otro en interpretación
-- **Reuniones regulares**: Al menos 2-3 sesiones de trabajo conjunto por semana
-- **Documento compartido**: Usar Google Colab o GitHub para colaboración en tiempo real
-- **Revisión cruzada**: Cada miembro debe revisar y entender el trabajo de los demás
 
-### Para el Machine Learning
-- **Comenzar simple**: No complejizar el modelo sin necesidad
-- **Validar paso a paso**: Verificar que cada etapa funciona antes de continuar
-- **Interpretar siempre**: Cada resultado numérico debe tener explicación futbolística
-- **Documentar decisiones**: Explicar por qué eligieron ciertos parámetros o variables
+- **Distribución de roles especializados**: Líder técnico, especialista en datos, analista de modelos, comunicador ejecutivo
+- **Reuniones de seguimiento**: Mínimo 4-5 sesiones de trabajo conjunto durante las 2+ semanas
+- **Documento compartido avanzado**: Usar Google Colab con control de versiones para colaboración simultánea
+- **Revisión cruzada especializada**: Cada miembro debe dominar y validar el trabajo de los demás
+- **Gestión de proyecto**: Establecer milestones claros y distribución equitativa de carga de trabajo
 
-### Para la Presentación
-- **Audiencia objetivo**: Directivos de club sin conocimiento técnico
-- **Estructura clara**: Problema → Método → Resultados → Recomendaciones
-- **Visuales simples**: Gráficos comprensibles, evitar jerga técnica
-- **Tiempo específico**: Practicar para mantenerse en 3-4 minutos exactos
+### Para el Machine Learning Avanzado
+
+- **Experimentación sistemática**: Probar múltiples configuraciones de modelos y documentar resultados
+- **Validación rigurosa**: Implementar validación cruzada y análisis de robustez del modelo
+- **Interpretación profunda**: No solo reportar métricas, sino explicar qué aprende el modelo
+- **Optimización iterativa**: Refinar modelos basándose en análisis de errores y limitaciones
+- **Documentación técnica**: Justificar cada decisión metodológica con razonamiento sólido
+
+### Para la Presentación Ejecutiva
+
+- **Audiencia objetivo**: Directivos de club y stakeholders que toman decisiones estratégicas
+- **Narrativa persuasiva**: Problema → Solución → Valor → Recomendaciones → ROI potencial
+- **Visuales de impacto**: Gráficos ejecutivos claros, evitar jerga técnica, enfocarse en insights
+- **Casos de uso específicos**: Demostrar aplicaciones concretas para decisiones tácticas
+- **Cronometraje estricto**: Practicar múltiples veces para mantener precisión en 3-4 minutos exactos
 
 ### Recursos de Apoyo
 - **Documentación oficial**: scikit-learn, pandas, matplotlib

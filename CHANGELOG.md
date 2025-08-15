@@ -5,6 +5,38 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 
+## 4.11.0 (2025-08-15)
+
+### Agregado
+
+- Archivo CLAUDE.md con guía completa para asistente Claude Code
+- Documentación exhaustiva de arquitectura pedagógica y técnica del proyecto
+- Guía de comandos de desarrollo y flujo de trabajo para mantenimiento
+- Especificaciones técnicas completas del stack y metodología educativa
+
+### Mejorado
+
+- Unificación completa de estructura en casos prácticos de los tres bloques
+- Estandarización de formato de encabezados con ponderaciones consistentes
+- Integración obligatoria de enlaces de YouTube directamente en notebooks
+- Refinamiento de rúbricas con criterios específicos para enlaces funcionales
+- Optimización de cronogramas con distribución temporal apropiada por complejidad
+- Elevación del nivel profesional del caso práctico Bloque 3 (25% ponderación)
+
+### Corregido
+
+- Corrección de duración del caso práctico Bloque 3 de 3 semanas a 2 semanas optimizadas
+- Actualización de expectativas profesionales acordes al peso del 25% del curso
+- Eliminación de referencias inconsistentes a entrega por Canvas vs notebook
+- Estandarización de template de información del equipo en todos los bloques
+
+### Cambiado
+
+- Casos prácticos Bloque 1 y 2 mantienen 15% pero con estructura unificada
+- Caso práctico Bloque 3 elevado a 25% con contexto profesional completo
+- Metodología de evaluación consistente: Excelente/Suficiente/Insuficiente/No presentó
+- Instrucciones específicas para inclusión de enlaces de video en entregables
+
 ## 4.10.0 (2025-08-15)
 
 ### Mejorado

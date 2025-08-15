@@ -3,7 +3,7 @@
 **Proyecto**: Curso de Ciencia de Datos aplicada al Fútbol (Preparatoria/Bachillerato)  
 **Idioma**: Español completo (código, comentarios, documentación)  
 **Contexto**: Análisis deportivo con datos reales de fútbol  
-**Metodología**: Socrática + 3 sesiones de 50 minutos por semana
+**Metodología**: Enfoque reflexivo + 3 sesiones de 50 minutos por semana
 
 ## CONTEXTO EDUCATIVO CRÍTICO
 
@@ -61,12 +61,12 @@ contenido/
 ### Sistema de Evaluación
 ```
 evaluaciones/
-├── canvas/ (Bancos de preguntas automáticas CON MÉTODO SOCRÁTICO)
-├── casos-practicos/ (Proyectos colaborativos 3-4 estudiantes CON REFLEXIÓN GUIADA)
-└── rubricas/ (40% técnico + 30% aplicación + 30% comunicación/RAZONAMIENTO)
+├── canvas/ (Bancos de preguntas automáticas con enfoque reflexivo)
+├── casos-practicos/ (Proyectos colaborativos 3-4 estudiantes con reflexión guiada)
+└── rubricas/ (40% técnico + 30% aplicación + 30% comunicación/razonamiento)
 ```
 
-#### Enfoque Socrático en Evaluaciones:
+#### Enfoque Reflexivo en Evaluaciones:
 - **Canvas**: Preguntas que evalúan comprensión conceptual, no memorización
 - **Casos prácticos**: Situaciones deportivas complejas que requieren análisis paso a paso
 - **Rúbricas**: Valorar proceso de razonamiento y justificación de decisiones
@@ -74,8 +74,8 @@ evaluaciones/
 
 ## Convenciones Críticas
 
-### Metodología Socrática Obligatoria
-**APLICAR EN TODO EL PROYECTO**: Contenido educativo Y evaluaciones deben usar método socrático.
+### Metodología de Preguntas y Descubrimiento
+**APLICAR EN TODO EL PROYECTO**: Contenido educativo Y evaluaciones deben guiar al estudiante hacia el descubrimiento mediante preguntas reflexivas.
 
 ```python
 # PATRÓN: Pregunta → Reflexión → Descubrimiento → Código
@@ -214,7 +214,7 @@ print("Este análisis nos muestra los patrones de goles!")
 > Nota: Esta política sustituye cualquier interpretación previa ambigua sobre “no múltiples archivos”; la restricción aplica únicamente a múltiples notebooks `.ipynb` en el mismo nivel raíz de una carpeta de semana.
 
 ### Creación de Contenido Semanal
-1. **Comenzar con pregunta socrática** ("¿Alguna vez te has preguntado...?")
+1. **Comenzar con pregunta motivadora** ("¿Alguna vez te has preguntado...?")
 2. **Estructurar en 3 sesiones exactas** de 50 minutos
 3. **Usar datos futbolísticos reales** (Barcelona, Real Madrid, equipos europeos)
 4. **Incluir reflexiones intermedias** ("¿Qué patrones observas?")
@@ -249,7 +249,7 @@ equipos = ['Barcelona', 'Real Madrid', 'Manchester City', 'Bayern Munich']
 - **Sesión 3**: Máximo 50 minutos (5 repaso + 35 aplicación + 10 síntesis)
 - **Margen de error**: Planificar para 45 minutos, reservar 5 para preguntas
 
-#### Principios de Evaluación Socrática:
+#### Principios de Evaluación Reflexiva:
 1. **Preguntas abiertas**: "¿Por qué crees que...?" en lugar de "¿Cuál es...?"
 2. **Análisis de casos**: Presentar situaciones deportivas para analizar
 3. **Justificación obligatoria**: Estudiantes deben explicar su razonamiento
@@ -292,8 +292,10 @@ cd herramientas/py-to-marp && python3 convert.py ../../contenido/archivo.py --co
 # Conversión masiva con Makefile
 cd herramientas/py-to-marp && make convert-all CONFIG=taller
 
+```bash
 # Commit con estándares del proyecto (mensajes en español)
-git commit -m "Actualizar Semana X: mejorar metodología socrática"
+git commit -m "Actualizar Semana X: mejorar metodología reflexiva"
+```
 ```
 
 ## Referencias Clave
@@ -402,7 +404,7 @@ Si cualquier respuesta es NO, el concepto es demasiado avanzado.
 
 ## PATRONES PARA DISEÑO DE BANCOS DE PREGUNTAS (Canvas/Moodle)
 
-Esta sección estandariza la construcción de bancos evaluativos alineados con la metodología socrática y el nivel preparatoria. Aplicar en los tres bloques.
+Esta sección estandariza la construcción de bancos evaluativos alineados con la metodología reflexiva y el nivel preparatoria. Aplicar en los tres bloques.
 
 ### Objetivos del Banco
 - Medir comprensión real, no memorización literal.
@@ -420,7 +422,7 @@ Esta sección estandariza la construcción de bancos evaluativos alineados con l
 - [R] Recuerdo básico (definición, sintaxis mínima, función directa).
 - [C] Comprensión/Concepto (interpretar ejemplo, explicar diferencia, clasificar caso).
 - [A] Aplicación (resolver mini‑situación con datos simples o ajuste de código mental).
-- [S] (Opcional sugerido) Socrática/Interpretativa: justificar decisión, inferir implicación de salida, explicar causa futbolística de patrón observado.
+- [S] (Opcional sugerido) Reflexiva/Interpretativa: justificar decisión, inferir implicación de salida, explicar causa futbolística de patrón observado.
 
 Distribución sugerida en Núcleo: ~35–40% [R], ~35–40% [C], ~20–25% [A], opcional 5–10% [S] conforme avance el curso. En semanas iniciales priorizar [R]/[C]; introducir [A] y luego [S] gradualmente.
 

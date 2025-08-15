@@ -170,3 +170,209 @@ Escribe como si fueras a presentar esto al director técnico de un equipo profes
 **Tiempo sugerido**: 6-8 horas de exploración, experimentación y análisis.  
 **Modalidad**: Individual, pero puedes discutir ideas con compañeros.  
 **Fecha límite**: [Definida por el profesor]
+
+---
+
+## Rúbrica de Evaluación Detallada
+
+### Criterios Técnicos (40%)
+
+| Criterio | Excelente (~100%) | Suficiente (~70%) | Insuficiente (~30%) | No presentó (0%) |
+|----------|-------------------|-------------------|---------------------|-------------------|
+| **Código funcional** | Ejecuta sin errores, sintaxis perfecta, cumple objetivos | Ejecuta con errores menores, cumple objetivos principales | Errores significativos, objetivos parcialmente logrados | No ejecuta o no entregado |
+| **Uso de librerías ML** | sklearn, pandas, numpy usados correctamente y eficientemente | Uso básico correcto con pequeñas ineficiencias | Uso incorrecto o confuso de algunas funciones | No usa las librerías requeridas |
+| **Calidad del modelo** | Modelo bien configurado, evaluación completa, precisión razonable | Modelo básico funcional, evaluación simple | Modelo problemático, evaluación incompleta | No crea modelo válido |
+
+### Criterios de Aplicación (30%)
+
+| Criterio | Excelente (~100%) | Suficiente (~70%) | Insuficiente (~30%) | No presentó (0%) |
+|----------|-------------------|-------------------|---------------------|-------------------|
+| **Contexto futbolístico** | Excelente conexión entre análisis y conceptos deportivos reales | Conexión básica adecuada con el contexto | Conexión débil o superficial | Sin conexión deportiva |
+| **Interpretación resultados** | Análisis profundo y significativo de patrones y predicciones | Interpretación básica correcta | Interpretación superficial o incorrecta | No interpreta resultados |
+| **Casos prácticos** | Escenarios realistas, análisis completo de implicaciones | Escenarios básicos, análisis simple | Escenarios poco realistas o análisis pobre | No incluye casos prácticos |
+
+### Criterios de Comunicación y Razonamiento (30%)
+
+| Criterio | Excelente (~100%) | Suficiente (~70%) | Insuficiente (~30%) | No presentó (0%) |
+|----------|-------------------|-------------------|---------------------|-------------------|
+| **Reflexiones escritas** | Respuestas profundas, pensamiento crítico evidente | Respuestas adecuadas, comprensión básica | Respuestas superficiales o incorrectas | No responde preguntas |
+| **Documentación del proceso** | Experimentos bien documentados, decisiones justificadas | Documentación básica, algunas justificaciones | Documentación limitada o confusa | Sin documentación del proceso |
+| **Comunicación técnica** | Explica conceptos complejos claramente, audiencia apropiada | Comunicación básica comprensible | Comunicación confusa o técnicamente incorrecta | No comunica hallazgos |
+
+### Notas Importantes:
+- **Requisito mínimo**: Código debe ejecutar sin errores fatales para obtener calificación aprobatoria
+- **Creatividad valorada**: Enfoques innovadores recibirán puntuación adicional
+- **Honestidad académica**: Reconocer limitaciones es más valioso que pretender perfección
+
+---
+
+## Cronograma Sugerido
+
+### Semana 1: Exploración y Experimentación Inicial
+
+- **Días 1-2**: Análisis exploratorio libre, identificación de patrones interesantes
+- **Días 3-4**: Experimentación con diferentes variables y combinaciones
+- **Días 5-7**: Construcción inicial de modelos, pruebas de diferentes enfoques
+
+### Semana 2: Refinamiento y Análisis Profundo
+
+- **Días 1-3**: Optimización de modelos, análisis de importancia de variables
+- **Días 4-5**: Interpretación de resultados, conexión con contexto futbolístico
+- **Días 6-7**: Documentación final, reflexiones críticas, preparación de entregables
+
+---
+
+## Recursos de Apoyo
+
+### Dataset y Herramientas
+- **Dataset Champions League**: Proporcionado por el profesor con documentación incluida
+- **Librerías requeridas**: pandas, numpy, sklearn, matplotlib, seaborn
+- **Entorno sugerido**: Jupyter Notebook o Google Colab
+
+### Consultas y Soporte
+- **Horario de oficina**: Disponible para dudas técnicas y metodológicas
+- **Foros de discusión**: Para intercambio de ideas entre estudiantes (sin compartir código)
+- **Documentación oficial**: Links a recursos de sklearn, pandas, etc.
+
+### Ejemplos de Referencia
+
+- **Análisis exploratorios**: Ejemplos de visualizaciones efectivas para datos deportivos
+- **Interpretación de modelos**: Cómo explicar importancia de variables en contexto futbolístico
+- **Presentación de resultados**: Formatos para comunicar hallazgos a audiencias no técnicas
+
+---
+
+## Entregables Específicos
+
+### 1. Notebook Principal (`caso_bloque3_[TuNombre].ipynb`)
+
+**Estructura mínima requerida:**
+
+1. **Introducción y Objetivos** (1 sección)
+   - Descripción de tu enfoque personal al problema
+   - Hipótesis iniciales sobre qué factores pueden predecir mejor
+
+2. **Análisis Exploratorio** (2-3 secciones)
+   - Visualizaciones que revelen patrones interesantes
+   - Estadísticas descriptivas relevantes para tu análisis
+   - Al menos 3 insights únicos sobre los datos
+
+3. **Construcción y Evaluación de Modelos** (2-3 secciones)
+   - Experimentación con al menos 2 algoritmos diferentes
+   - Evaluación comparativa de rendimiento
+   - Análisis de importancia de variables/características
+
+4. **Interpretación Futbolística** (1-2 secciones)
+   - Conexión entre resultados técnicos y realidad deportiva
+   - Casos específicos donde el modelo acierta o falla
+   - Implicaciones para entrenadores, analistas o aficionados
+
+5. **Reflexiones Finales** (1 sección)
+   - Limitaciones de tu análisis
+   - Posibles mejoras futuras
+   - Aprendizajes personales del proceso
+
+### 2. Documento de Reflexión (`reflexion_caso3_[TuNombre].pdf`)
+
+**Extensión**: 2-3 páginas máximo, formato libre
+
+**Preguntas guía para la reflexión** (no es cuestionario rígido):
+- ¿Qué fue lo más sorprendente que descubriste en los datos?
+- ¿Qué variables resultaron más importantes y por qué crees que es así?
+- Si fueras un director técnico, ¿cómo usarías estos insights?
+- ¿Qué limitaciones encontraste en tu análisis?
+- ¿Cómo ha cambiado tu perspectiva sobre el análisis deportivo?
+
+### 3. Presentación de Hallazgos (`presentacion_caso3_[TuNombre].pptx/pdf`)
+
+**Formato**: 8-10 diapositivas máximo
+
+**Contenido sugerido**:
+- Slide 1: Tu enfoque único al problema
+- Slides 2-4: Hallazgos clave del análisis exploratorio
+- Slides 5-6: Comparación de modelos y mejores resultados
+- Slides 7-8: Interpretación futbolística e implicaciones prácticas
+- Slides 9-10: Limitaciones y oportunidades futuras
+
+---
+
+## Criterios de Evaluación por Entregable
+
+### Notebook Principal (50% de la calificación total)
+- **Código funcional y bien organizado** (20%)
+- **Análisis técnico profundo** (15%)  
+- **Creatividad en el enfoque** (10%)
+- **Documentación clara** (5%)
+
+### Documento de Reflexión (30% de la calificación total)
+- **Profundidad de reflexión** (15%)
+- **Conexión teoría-práctica** (10%)
+- **Autocrítica y reconocimiento de limitaciones** (5%)
+
+### Presentación de Hallazgos (20% de la calificación total)
+- **Claridad comunicativa** (10%)
+- **Síntesis efectiva de resultados** (5%)
+- **Impacto visual y profesionalismo** (5%)
+
+---
+
+## Consejos Prácticos para el Éxito
+
+### Gestión del Tiempo
+- **No te obsesiones con la perfección técnica**: Enfócate en insights interesantes
+- **Documenta mientras trabajas**: No dejes la reflexión para el final
+- **Prueba rápido, itera frecuentemente**: Mejor varios enfoques simples que uno complejo
+
+### Enfoque Analítico
+- **Comienza con preguntas simples**: "¿Qué equipos tienen mejor rendimiento local vs visitante?"
+- **Visualiza antes de modelar**: Las gráficas revelan patrones que guían el análisis
+- **No ignores resultados inesperados**: Los "errores" del modelo pueden ser los insights más valiosos
+
+### Comunicación Efectiva
+- **Habla como analista deportivo, no como programador**: Tu audiencia ama el fútbol
+- **Usa analogías deportivas**: "Este modelo es como un scout que identifica patrones..."
+- **Sé honesto sobre limitaciones**: Reconocer problemas demuestra madurez analítica
+
+### Conexión con el Contexto Real
+- **Investiga un poco sobre los equipos**: Conocer su historia enriquece el análisis
+- **Piensa como diferentes stakeholders**: ¿Qué le importaría a un entrenador vs un aficionado?
+- **Propón aplicaciones concretas**: "Los equipos podrían usar esto para..."
+
+---
+
+## Apoyo Durante el Desarrollo
+
+### ¿Cuándo Buscar Ayuda?
+- **Errores técnicos bloqueantes**: Si tu código no ejecuta después de varios intentos
+- **Interpretación de resultados confusos**: Cuando los números no tienen sentido deportivo
+- **Dirección del análisis**: Si sientes que te perdiste o no sabes cómo continuar
+
+### ¿Qué NO es Válido para Ayuda?
+- **Escribir código por ti**: El análisis debe ser tu trabajo original
+- **Elegir tu enfoque**: La creatividad y decisiones analíticas deben ser tuyas
+- **Garantizar resultados**: No todos los experimentos funcionan, y eso está bien
+
+### Recursos Disponibles
+- **Documentación técnica**: Links directos a pandas, sklearn, etc.
+- **Ejemplos metodológicos**: Patrones generales de análisis (sin soluciones específicas)
+- **Sesiones de consulta**: Para discutir enfoques e interpretar resultados
+
+---
+
+## Fecha de Entrega y Modalidades
+
+**Fecha límite**: [A definir por el profesor - mínimo 2 semanas de desarrollo]
+
+**Modalidad de entrega**: 
+- Subir archivos al LMS institucional
+- Nombrar archivos con tu nombre: `caso_bloque3_[TuNombre].*`
+- Formato aceptado: `.ipynb`, `.pdf`, `.pptx`
+
+**Presentaciones orales**: [Opcional - a definir por el profesor]
+- 5 minutos por estudiante
+- Enfoque en hallazgos más interesantes
+- Q&A breve con compañeros
+
+---
+
+**¡Recuerda**: Este caso práctico vale 25% de tu calificación total del curso. Invierte el tiempo necesario, pero sobre todo... ¡disfruta explorando el fascinante mundo donde el fútbol se encuentra con los datos!

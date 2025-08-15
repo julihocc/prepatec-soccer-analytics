@@ -5,6 +5,24 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 
+## 4.13.0 (2025-08-15)
+
+### Mejorado
+
+- Reestructuración completa del caso práctico del Bloque 1 para consistencia con otros bloques
+- Eliminación de plantillas restrictivas de código en caso-bloque1.md
+- Transformación a formato colaborativo profesional con distribución 40-30-30 puntos
+- Actualización de rúbrica de evaluación a 70% Técnica + 30% Comunicación y Reflexión
+- Corrección y validación completa de solución educativa caso_bloque1_equipoSOLUCION.py
+- Mejora en visualizaciones matplotlib con corrección de compatibilidad
+- Unificación de estructura y metodología evaluativa en los tres bloques del curso
+
+### Corregido
+
+- Resolución de error de compatibilidad en gráficos de matplotlib (parámetro alpha)
+- Validación completa de ejecución de archivo de solución educativa
+- Eliminación de inconsistencias estructurales entre casos prácticos de diferentes bloques
+
 ## 4.12.0 (2025-08-15)
 
 ### Agregado

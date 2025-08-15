@@ -3,9 +3,9 @@
 ## Análisis Básico de un Equipo de Fútbol
 
 **Modalidad:** Colaborativa (equipos de 2-3 estudiantes)  
-**Ponderación:** 15% del 1er Parcial  
+**Ponderación:** 15% del curso total  
 **Duración:** 1 semana  
-**Entrega:** Notebook de Jupyter + presentación simple
+**Entrega:** Notebook de Jupyter + video de exposición (YouTube)
 
 ---
 

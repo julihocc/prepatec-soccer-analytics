@@ -7,10 +7,8 @@
 **Duración:** 1 semana  
 **Entrega:** Notebook de Jupyter + video de exposición (YouTube)
 
+
 ---
-
-## Contexto del Problema
-
 Eres parte de un equipo que ayuda a analizar el rendimiento avanzado de jugadores juveniles de fútbol. Una escuela deportiva necesita entender mejor a sus jugadores usando herramientas de ciencia de datos.
 
 **Situación:** Tienen un dataset con información detallada de jugadores (goles, asistencias, edad, posición) y quieren identificar patrones, evaluar calidad de datos y crear visualizaciones profesionales para tomar decisiones informadas.
@@ -61,6 +59,7 @@ jugador_id,nombre,edad,equipo,posicion,torneo,goles,asistencias,partidos_jugados
 - `partidos_jugados`: Número de partidos que ha jugado (14-22)
 
 **Características del dataset:**
+
 - **Tamaño**: 50 jugadores (25 masculinos Sub-20, 25 femeninos Sub-18)
 - **Balance por posición**: Delanteros (15), Mediocampo (15), Defensa (13), Porteros (7)
 - **Sin valores faltantes**: Dataset completo y limpio
@@ -161,16 +160,19 @@ Identificar jugadores con rendimientos excepcionales que podrían afectar nuestr
 Crear visualizaciones profesionales para comunicar los hallazgos:
 
 **a) Gráfico de barras - Distribución por posición:**
+
 - Crear gráfico de barras mostrando conteo de jugadores por posición
 - Ordenar las barras de mayor a menor cantidad
 - Incluir título, etiquetas de ejes y formato profesional
 
 **b) Gráfico de cajas - Distribución de goles por posición:**
+
 - Usar boxplot de seaborn para mostrar distribución de goles por posición
 - Configurar tamaño de figura apropiado y rotación de etiquetas
 - Interpretar las diferencias de variabilidad entre posiciones
 
 **c) Gráfico de dispersión - Relación goles vs asistencias:**
+
 - Crear scatter plot con goles en x y asistencias en y
 - Usar colores diferentes por posición (hue parameter)
 - Incluir leyenda y formato profesional
@@ -182,16 +184,19 @@ Crear visualizaciones profesionales para comunicar los hallazgos:
 Crear gráficos adicionales para profundizar en el análisis:
 
 **a) Top 5 goleadores:**
+
 - Crear gráfico de barras horizontales con los 5 mejores goleadores
 - Mostrar valores numéricos en las barras para facilitar lectura
 - Ordenar de mayor a menor número de goles
 
 **b) Comparación de eficiencia:**
+
 - Gráfico de dispersión con goles_por_partido vs contribucion_ofensiva
 - Usar colores por posición y transparencia apropiada
 - Interpretar qué jugadores son más eficientes por tiempo jugado
 
 **c) Distribución de edades:**
+
 - Histograma de edades de los jugadores con bins apropiados
 - Usar transparencia y bordes para mejor visualización
 - Analizar si hay concentración en ciertas edades
@@ -212,7 +217,7 @@ Preparar una síntesis clara de los hallazgos:
 
 ## Reflexión Final (IMPORTANTE - Incluir en el notebook)
 
-**ESTA SECCIÓN ES OBLIGATORIA - contribuye a su nota del rubro Reflexión y Documentación**
+### ESTA SECCIÓN ES OBLIGATORIA - contribuye a su nota del rubro Reflexión y Documentación
 
 Al completar todas las tareas técnicas, incluye en tu notebook una sección de "Reflexión Final" donde respondas brevemente (2–4 líneas cada una) a **TRES preguntas** de las siguientes cinco opciones:
 
@@ -251,7 +256,7 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 **Al final de su notebook, en una celda de Markdown claramente identificada, deben incluir:**
 
 ```markdown
-## 📹 Video de Presentación del Equipo
+## Video de Presentación del Equipo
 
 **Enlace al video de YouTube:** [TÍTULO DEL VIDEO](URL_DEL_VIDEO_DE_YOUTUBE)
 
@@ -283,112 +288,139 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 #### 1. Exploración y Calidad de Datos (40 puntos)
 
 **Sobresaliente (40 puntos ~ 100%):**
+ 
 - Trabajo de nivel profesional: carga y configuración robusta del entorno, exploración exhaustiva y bien documentada
 - Evaluación de calidad con validaciones explícitas, manejo de casos borde y propuestas justificadas de limpieza
 - Estadística descriptiva completa con interpretaciones claras y recomendaciones accionables
 - Código reproducible, pruebas básicas y comentarios pedagógicos que facilitan la lectura
 
 **Competente (36 puntos ~ 90%):**
+ 
 - Código correcto y organizado; carga y exploración completas con uso de `.head()`, `.info()` y conteos por posición
 - Identifica y documenta problemas de calidad (tipos, valores faltantes, rangos) y propone soluciones razonables
 - Estadística descriptiva con interpretación clara (media vs mediana) aunque puede faltar una validación o ejemplo adicional
 - Visualizaciones y tablas auxiliares que apoyan la interpretación
 
 **Suficiente (28 puntos ~ 70%):**
+ 
 - Carga datos y exploración básica funcional
 - Evaluación superficial de calidad
 - Estadísticas básicas sin interpretación profunda
 
 **Insuficiente (12 puntos ~ 30%):**
+ 
 - Exploración incompleta o con errores
 - No evalúa calidad de datos
 - Estadísticas mínimas
 
 **No presentó (0 puntos):**
+ 
 - No carga datos o errores graves
 - Exploración ausente o no funcional
 
 #### 2. Análisis y Métricas Avanzadas (30 puntos)
 
 **Sobresaliente (30 puntos ~ 100%):**
+ 
 - Análisis avanzado y profesional: `groupby` con múltiples estadísticas, pivot tables y comparaciones bien justificadas
 - Métricas derivadas completas y validadas; top players claramente identificados con criterios reproducibles
 - Outliers analizados críticamente (talento vs error) y decisiones sobre inclusión/exclusión justificadas
 - Interpretaciones profundas que enlazan con decisiones prácticas para el cuerpo técnico
 
 **Competente (27 puntos ~ 90%):**
+ 
 - `groupby` y agregaciones implementadas correctamente con estadísticas relevantes por posición
 - Métricas derivadas (por ejemplo `goles_por_partido`, `contribucion_ofensiva`) calculadas y explicadas
 - Outliers identificados y discutidos con razonamiento razonable, aunque puede faltar análisis estadístico más profundo
 - Resultados interpretados y presentados de forma clara
 
 **Suficiente (21 puntos ~ 70%):**
+ 
 - GroupBy básico funcional
 - Al menos una métrica derivada
 - Outliers identificados sin justificación profunda
 
 **Insuficiente (9 puntos ~ 30%):**
+ 
 - GroupBy parcial o con errores
 - Métricas derivadas incompletas
 - No identifica outliers
 
 **No presentó (0 puntos):**
+ 
 - No implementa groupby
 - Falta análisis por grupos
 
 #### 3. Visualización e Interpretación (20 puntos)
 
 **Sobresaliente (20 puntos ~ 100%):**
+ 
 - Visualizaciones de nivel profesional: todos los gráficos fundamentales implementados con etiquetado, escalas y formato pulido
 - Visualizaciones avanzadas que aportan insight adicional; uso apropiado de colores, leyendas y anotaciones
 - Interpretaciones detalladas que conectan gráficos con recomendaciones prácticas
 - Figuras reproducibles y código limpio para generar cada visualización
 
 **Competente (18 puntos ~ 90%):**
+ 
 - La mayoría de los gráficos fundamentales implementados correctamente con títulos y etiquetas claras
 - Visualizaciones avanzadas presentes y legibles; pueden faltar pequeños ajustes estéticos
 - Interpretaciones claras y pertinentes, aunque no exhaustivas
 - Uso consistente de `sns.set_theme(style="whitegrid", palette="viridis")` para estilo
 
 **Suficiente (14 puntos ~ 70%):**
+ 
+
 - Mayoría de gráficos implementados
 - Formato básico pero legible
 - Interpretaciones superficiales
 
 **Insuficiente (6 puntos ~ 30%):**
+
 - Solo algunos gráficos implementados
 - Formato pobre o confuso
 - Pocas interpretaciones
 
 **No presentó (0 puntos):**
+
 - Gráficos ausentes o no funcionan
 - Sin interpretaciones
 
 #### 4. Comunicación y Documentación (10 puntos)
 
-**Excelente (10 puntos ~ 100%):**
-- Video claro, bien estructurado, ≤15 minutos
+**Sobresaliente (10 puntos ~ 100%):**
+
+- Video claro, bien estructurado, menor o igual que15 minutos
 - Participación equilibrada del equipo
 - Reflexión final completa con 3 preguntas respondidas
 - Comentarios explicativos en código
 
+**Competente (9 puntos ~ 90%):**
+
+- Video claro y organizado; duración menor o igual que15 minutos
+- Participación de la mayoría de integrantes
+- Reflexión final presente y coherente
+- Comentarios en el código suficientes para entender la lógica
+
 **Suficiente (7 puntos ~ 70%):**
+
 - Video básico pero funcional
 - Reflexión final presente
 - Algunos comentarios en código
 
 **Insuficiente (3 puntos ~ 30%):**
+
 - Video de baja calidad o excede tiempo
 - Reflexión final incompleta
 - Pocos comentarios
 
 **No presentó (0 puntos):**
+
 - Sin video o video no accesible
 - Sin reflexión final
 
 ### Tabla Resumen de Calificación
 
-| Componente | Puntos Máximos | Excelente (~100%) | Suficiente (~70%) | Insuficiente (~30%) | No presentó (0%) |
+| Componente | Puntos Máximos | Sobresaliente (~100%) | Suficiente (~70%) | Insuficiente (~30%) | No presentó (0%) |
 |------------|-----------------|-------------------|-------------------|---------------------|------------------|
 | Exploración y Calidad de Datos | 40 | 40 puntos | 28 puntos | 12 puntos | 0 puntos |
 | Análisis y Métricas Avanzadas | 30 | 30 puntos | 21 puntos | 9 puntos | 0 puntos |
@@ -401,7 +433,7 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 - Notebook ejecuta sin errores graves
 - Implementa groupby básico y al menos una métrica derivada
 - Video subido a YouTube con participación de todo el equipo
-- Duración del video ≤20 minutos (máximo absoluto)
+- Duración del video menor o igual que20 minutos (máximo absoluto)
 
 ### Penalizaciones
 
@@ -445,12 +477,26 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 ### Para el Video de Exposición
 
 - **Duración**: Practiquen para mantenerse en 12-15 minutos
+
 - **Participación**: Cada persona explica 4-5 minutos
-- **Estructura sugerida**: 
+
+- [ ] Cargué datos correctamente y configuré seaborn
+
+- [ ] Creé gráficos fundamentales (barras, boxplot, dispersión)
+- [ ] Agregué visualizaciones avanzadas (top 5, eficiencia, edades)
+- [ ] Todos los gráficos tienen títulos y etiquetas claras
+- [ ] Respondí preguntas de reflexión intermedias
+- [ ] Completé reflexión final (3 preguntas elegidas)
+- [ ] Video dura máximo 15 minutos con participación equilibrada
+- [ ] Notebook ejecuta completamente sin errores
+- [ ] Variables y comentarios en español
+- [ ] Link de YouTube enviado en Canvas
+
   - Introducción y dataset (2 min)
   - Exploración y calidad (4-5 min)
   - Análisis y métricas (4-5 min)
   - Visualizaciones y conclusiones (3-4 min)
+
 - **Técnico**: Graben pantalla mostrando el notebook, audio claro
 - **Herramientas**: Pueden usar Zoom, OBS, o la grabación de pantalla del sistema operativo
 
@@ -463,9 +509,11 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 ---
 
+
 ### Autoevaluación Rápida (Marcar OK / Revisar)
 
 **Exploración y Análisis:**
+
 - [ ] Cargué datos correctamente y configuré seaborn
 - [ ] Exploré estructura con `.head()`, `.info()`, conteos por posición
 - [ ] Evalué calidad: tipos, valores faltantes, rangos válidos
@@ -475,6 +523,7 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 - [ ] Identifiqué outliers y documenté decisión
 
 **Visualización y Comunicación:**
+
 - [ ] Creé gráficos fundamentales (barras, boxplot, dispersión)
 - [ ] Agregué visualizaciones avanzadas (top 5, eficiencia, edades)
 - [ ] Todos los gráficos tienen títulos y etiquetas claras
@@ -483,6 +532,7 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 - [ ] Video dura máximo 15 minutos con participación equilibrada
 
 **Entrega:**
+
 - [ ] Notebook ejecuta completamente sin errores
 - [ ] Variables y comentarios en español
 - [ ] Link de YouTube enviado en Canvas

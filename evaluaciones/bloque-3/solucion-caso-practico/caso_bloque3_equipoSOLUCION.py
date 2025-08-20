@@ -1,29 +1,57 @@
 # %% [markdown]
 """
 # Caso Práctico Colaborativo - Bloque 3
+
 ## Predicción de Resultados en Champions League con Machine Learning
 
-**Curso:** Ciencia de Datos Aplicada al Fútbol  
-**Institución:** Tecnológico de Monterrey  
 **Modalidad:** Colaborativa (equipos de 2-3 estudiantes)  
 **Ponderación:** 25% del curso total  
 **Duración:** 2 semanas  
 **Entrega:** Notebook de Jupyter + video de exposición (YouTube)
 
-### Contexto del Proyecto
-Somos parte de un equipo que ayuda a un club europeo a predecir resultados de partidos 
-usando machine learning básico. El director técnico quiere entender qué factores influyen 
-más en ganar o perder partidos de Champions League.
+---
 
-### Situación
-Tenemos un dataset histórico con estadísticas de partidos de Champions League y queremos 
-crear un modelo simple que nos ayude a identificar patrones de victoria y derrota.
+## Contexto del Problema
 
-### Dataset Utilizado
-- **Archivo:** `../datasets/champions_league_matches.csv`
-- **Contenido:** 50 partidos históricos de Champions League de las últimas temporadas
-- **Variables:** Estadísticas detalladas de cada partido
-- **Objetivo:** Predecir resultados (Local, Visitante, Empate)
+Eres parte de un equipo que ayuda a un club europeo a predecir resultados de partidos usando machine learning básico. El director técnico quiere entender qué factores influyen más en ganar o perder partidos de Champions League.
+
+**Situación:** Tienen un dataset histórico con estadísticas de partidos de Champions League y quieren crear un modelo simple que les ayude a identificar patrones de victoria y derrota.
+
+---
+
+## Datos Que Van a Usar
+
+Trabajarán con un dataset CSV de partidos históricos de UEFA Champions League.
+
+### Dataset Principal: `champions_league_matches.csv`
+
+Archivo CSV con información de 50 partidos históricos de Champions League de las últimas temporadas.
+
+**Descripción de columnas principales:**
+
+- `match_id`: Identificador único del partido
+- `fecha`: Fecha del partido (YYYY-MM-DD)
+- `equipo_local`, `equipo_visitante`: Nombres de los equipos
+- `goles_local`, `goles_visitante`: Goles marcados por cada equipo
+- `resultado_final`: Local, Visitante, o Empate
+- `fase_competicion`: Fase de Grupos, Octavos de Final, Cuartos de Final, Semifinales, Final
+- `temporada`: Temporada de la competición (ej. 2023-24)
+- `posesion_local`, `posesion_visitante`: Porcentaje de posesión del balón
+- `tiros_local`, `tiros_visitante`: Número total de tiros
+- `tiros_arco_local`, `tiros_arco_visitante`: Tiros a portería
+- `corners_local`, `corners_visitante`: Número de corners
+- `faltas_local`, `faltas_visitante`: Número de faltas cometidas
+- `tarjetas_amarillas_local`, `tarjetas_amarillas_visitante`: Tarjetas amarillas recibidas
+- `tarjetas_rojas_local`, `tarjetas_rojas_visitante`: Tarjetas rojas recibidas
+- `asistencia`: Número de asistentes al estadio
+
+**Características del dataset:**
+- **Tamaño**: 50 partidos de Champions League de temporadas recientes
+- **Balance**: Aproximadamente 40% victorias locales, 20% empates, 40% victorias visitantes
+- **Variables numéricas**: 15+ columnas con estadísticas detalladas (goles, tiros, posesión, tarjetas, etc.)
+- **Variables categóricas**: 5 columnas (equipos, resultado_final, fase_competicion, temporada, árbitro)
+- **Datos limpios**: Sin valores faltantes, listo para usar
+- **Equipos incluidos**: Real Madrid, Barcelona, Manchester City, Bayern Munich, Liverpool, Chelsea, PSG, AC Milan, y otros grandes clubes europeos
 """
 
 # %% [markdown]
@@ -110,7 +138,7 @@ print()
 
 **Respuesta:** El balance de resultados en Champions League revela aspectos importantes sobre la competición:
 
-1. **Ventaja de casa moderada**: Si observamos aproximadamente 58% victorias locales vs 32% visitantes (con 10% empates), existe una ventaja del local, pero no es dominante como en ligas domésticas.
+1. **Ventaja de casa limitada**: Si observamos aproximadamente 40% victorias locales vs 40% visitantes (con 20% empates), la ventaja del local es menor de lo esperado comparado con ligas domésticas.
 
 2. **Nivel competitivo alto**: Los equipos que participan en Champions League son de élite mundial, lo que reduce significativamente la ventaja tradicional de jugar en casa.
 
@@ -138,7 +166,9 @@ datos_champions['resultado_numerico'] = datos_champions['resultado_final'].map(r
 variables_estadisticas = []
 for var in ['goles_local', 'goles_visitante', 'posesion_local', 'posesion_visitante',
             'tiros_local', 'tiros_visitante', 'tiros_arco_local', 'tiros_arco_visitante',
-            'corners_local', 'corners_visitante', 'faltas_local', 'faltas_visitante']:
+            'corners_local', 'corners_visitante', 'faltas_local', 'faltas_visitante',
+            'tarjetas_amarillas_local', 'tarjetas_amarillas_visitante', 
+            'tarjetas_rojas_local', 'tarjetas_rojas_visitante']:
     if var in datos_champions.columns:
         variables_estadisticas.append(var)
 
@@ -349,6 +379,12 @@ if 'corners_local' in datos_champions.columns:
 
 if 'faltas_local' in datos_champions.columns:
     variables_predictoras.extend(['faltas_local', 'faltas_visitante'])
+
+if 'tarjetas_amarillas_local' in datos_champions.columns:
+    variables_predictoras.extend(['tarjetas_amarillas_local', 'tarjetas_amarillas_visitante'])
+
+if 'tarjetas_rojas_local' in datos_champions.columns:
+    variables_predictoras.extend(['tarjetas_rojas_local', 'tarjetas_rojas_visitante'])
 
 # Agregar algunas variables dummy de fase (evitar multicolinealidad)
 fase_cols = [col for col in datos_champions.columns if col.startswith('fase_')]
@@ -1622,14 +1658,14 @@ print()
 """
 ## 📹 Video de Presentación del Equipo
 
-**Enlace al video de YouTube:** [Predicción de Resultados Champions League - Análisis ML](https://youtube.com/watch?v=EJEMPLO_URL_AQUI)
+**Enlace al video de YouTube:** [TÍTULO DEL VIDEO](URL_DEL_VIDEO_DE_YOUTUBE)
 
 **Integrantes del equipo:**
-- Equipo SOLUCIÓN - Análisis Técnico Completo (Matrícula: DEMO001)
-- Claude Code Assistant - Implementación ML (Matrícula: DEMO002) 
-- Especialista en Fútbol - Interpretación Deportiva (Matrícula: DEMO003)
+- Nombre Completo 1 (Matrícula)
+- Nombre Completo 2 (Matrícula) 
+- Nombre Completo 3 (Matrícula)
 
-**Fecha de grabación:** 15/08/2024
+**Fecha de grabación:** DD/MM/AAAA
 
 ### Estructura del Video (máximo 20 minutos)
 

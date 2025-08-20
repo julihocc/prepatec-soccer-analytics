@@ -219,7 +219,7 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 **Al final de su notebook, en una celda de Markdown claramente identificada, deben incluir:**
 
 ```markdown
-## 📹 Video de Presentación del Equipo
+## Video de Presentación del Equipo
 
 **Enlace al video de YouTube:** [TÍTULO DEL VIDEO](URL_DEL_VIDEO_DE_YOUTUBE)
 
@@ -394,7 +394,7 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 ### Tabla Resumen de Calificación
 
-| Componente | Puntos Máximos | Excelente (~100%) | Suficiente (~70%) | Insuficiente (~30%) | No presentó (0%) |
+| Componente | Puntos Máximos | Sobresaliente (~100%) | Competente (~90%) | Suficiente (~70%) | Insuficiente (~30%) | No presentó (0%) |
 |------------|-----------------|-------------------|-------------------|---------------------|------------------|
 | Fundamentos y Funciones | 40 | 40 puntos | 28 puntos | 12 puntos | 0 puntos |
 | Análisis y Métricas Básicas | 30 | 30 puntos | 21 puntos | 9 puntos | 0 puntos |
@@ -408,7 +408,7 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 - Al menos una función implementada correctamente
 - DataFrame básico creado y funcionando
 - Video subido a YouTube con participación de todo el equipo
-- Duración del video ≤20 minutos (máximo absoluto)
+- Duración del video menor o igual 20 minutos (máximo absoluto)
 
 ### Penalizaciones
 

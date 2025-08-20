@@ -335,7 +335,7 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 #### 4. Comunicación y Documentación (10 puntos)
 
-**Excelente (10 puntos ~ 100%):**
+**Sobresaliente (10 puntos ~ 100%):**
 - Video claro, bien estructurado, ≤20 minutos
 - Participación equilibrada del equipo
 - Reflexión final completa con 3 preguntas respondidas
@@ -357,7 +357,7 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 ### Tabla Resumen de Calificación
 
-| Componente | Puntos Máximos | Excelente (~100%) | Suficiente (~70%) | Insuficiente (~30%) | No presentó (0%) |
+| Componente | Puntos Máximos | Sobresaliente (~100%) | Suficiente (~70%) | Insuficiente (~30%) | No presentó (0%) |
 |------------|-----------------|-------------------|-------------------|---------------------|------------------|
 | Exploración y Preparación | 30 | 30 puntos | 21 puntos | 9 puntos | 0 puntos |
 | Construcción y Evaluación | 40 | 40 puntos | 28 puntos | 12 puntos | 0 puntos |

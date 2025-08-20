@@ -83,28 +83,33 @@ Referenciada para consistencia de criterios (no aplicable directamente al proyec
 2. Trabajo Colaborativo (30%)  
 3. Comunicación y Presentación (30%)
 
-Cada sub‑criterio presenta niveles: Excelente / Bueno / Suficiente / Insuficiente.
+Cada sub‑criterio presenta niveles: Sobresaliente / Competente / Suficiente / Insuficiente.
 
 ---
 
 ### 3. Rúbrica Proyecto Integrador Final (Bloque 3)
 
-La siguiente rúbrica se aplica al Caso Práctico (25% del curso). Comunicación y presentación quedan integradas.
+La rúbrica del Caso Práctico del Bloque 3 se ha estandarizado para coincidir con el estilo usado en Bloques 1 y 2: los niveles de desempeño se presentan como niveles (Satisfactorio / Competente / Sobresaliente) con descripciones claras por componente.
 
 #### 3.1 Caso Práctico (25% del curso)
 
-Subcomponentes y pesos relativos dentro del notebook (entre paréntesis el equivalente sobre la calificación total del curso):
+Subcomponentes y pesos relativos dentro del notebook (equivalencia sobre la calificación total del curso):
 
 - Análisis Exploratorio de Datos (25% del notebook = 5% total)
 - Modelado de Machine Learning (35% del notebook = 7% total)
 - Dashboard Interactivo (25% del notebook = 5% total)
 - Documentación y Código (15% del notebook = 3% total)
 
-Cada subcomponente se evalúa en cuatro dimensiones: Exhaustividad/Implementación, Calidad de Insights / Selección de Modelos / Funcionalidad / Calidad del Código, Limpieza de Datos / Evaluación de Modelos / UX / Documentación, e Interpretación / Integración / Reproducibilidad según corresponda.
+Cada subcomponente se evalúa con los siguientes niveles (ejemplo resumen):
+
+- Nivel Sobresaliente (100% del componente): trabajo profesional, reproducible, con análisis profundo, visualizaciones y justificaciones técnicas; documentación completa y decisiones justificadas.
+- Nivel Competente (≈90% del componente): implementación correcta y bien documentada, análisis sólido y visualizaciones adecuadas; pueden faltar validaciones experimentales más profundas.
+- Nivel Satisfactorio (≈70% del componente): implementación funcional con análisis básico; resultados correctos pero con interpretación limitada.
+- Nivel Insuficiente / No presentó: desempeño por debajo del umbral esperado o entrega ausente.
 
 #### 3.2 Comunicación Integrada
 
-La presentación en vivo se evalúa mediante evidencia en el notebook y exposición breve (dentro del mismo 25%). Criterios de narrativa y claridad se integran en Documentación y Código.
+La comunicación se evalúa como parte del componente de Documentación y Código dentro del notebook; la exposición breve (si aplica) refuerza la evidencia documental y se valora la claridad narrativa y la capacidad de traducir resultados técnicos a recomendaciones prácticas.
 
 ---
 
@@ -332,7 +337,7 @@ from sklearn.pipeline import Pipeline
 
 ### Infraestructura de Proyecto
 
-```
+```text
 proyecto_final/
 ├── notebooks/
 │   ├── 01_eda_completo.ipynb

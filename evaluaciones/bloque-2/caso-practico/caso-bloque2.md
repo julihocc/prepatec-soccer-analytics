@@ -282,11 +282,17 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 #### 1. Exploración y Calidad de Datos (40 puntos)
 
-**Excelente (40 puntos ~ 100%):**
-- Carga datos correctamente y configura entorno
-- Exploración completa con `.head()`, `.info()`, conteos por posición
-- Evalúa calidad: tipos, valores faltantes, rangos válidos
-- Estadística descriptiva completa con interpretación de media vs mediana
+**Sobresaliente (40 puntos ~ 100%):**
+- Trabajo de nivel profesional: carga y configuración robusta del entorno, exploración exhaustiva y bien documentada
+- Evaluación de calidad con validaciones explícitas, manejo de casos borde y propuestas justificadas de limpieza
+- Estadística descriptiva completa con interpretaciones claras y recomendaciones accionables
+- Código reproducible, pruebas básicas y comentarios pedagógicos que facilitan la lectura
+
+**Competente (36 puntos ~ 90%):**
+- Código correcto y organizado; carga y exploración completas con uso de `.head()`, `.info()` y conteos por posición
+- Identifica y documenta problemas de calidad (tipos, valores faltantes, rangos) y propone soluciones razonables
+- Estadística descriptiva con interpretación clara (media vs mediana) aunque puede faltar una validación o ejemplo adicional
+- Visualizaciones y tablas auxiliares que apoyan la interpretación
 
 **Suficiente (28 puntos ~ 70%):**
 - Carga datos y exploración básica funcional
@@ -304,11 +310,17 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 #### 2. Análisis y Métricas Avanzadas (30 puntos)
 
-**Excelente (30 puntos ~ 100%):**
-- GroupBy implementado correctamente con múltiples estadísticas
-- Métricas derivadas creadas y bien explicadas
-- Outliers identificados con criterio justificado
-- Interpretaciones claras de los resultados
+**Sobresaliente (30 puntos ~ 100%):**
+- Análisis avanzado y profesional: `groupby` con múltiples estadísticas, pivot tables y comparaciones bien justificadas
+- Métricas derivadas completas y validadas; top players claramente identificados con criterios reproducibles
+- Outliers analizados críticamente (talento vs error) y decisiones sobre inclusión/exclusión justificadas
+- Interpretaciones profundas que enlazan con decisiones prácticas para el cuerpo técnico
+
+**Competente (27 puntos ~ 90%):**
+- `groupby` y agregaciones implementadas correctamente con estadísticas relevantes por posición
+- Métricas derivadas (por ejemplo `goles_por_partido`, `contribucion_ofensiva`) calculadas y explicadas
+- Outliers identificados y discutidos con razonamiento razonable, aunque puede faltar análisis estadístico más profundo
+- Resultados interpretados y presentados de forma clara
 
 **Suficiente (21 puntos ~ 70%):**
 - GroupBy básico funcional
@@ -326,11 +338,17 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 #### 3. Visualización e Interpretación (20 puntos)
 
-**Excelente (20 puntos ~ 100%):**
-- Todos los gráficos fundamentales implementados correctamente
-- Gráficos con títulos, etiquetas y formato profesional
-- Visualizaciones avanzadas añaden valor al análisis
-- Interpretaciones claras después de cada gráfico
+**Sobresaliente (20 puntos ~ 100%):**
+- Visualizaciones de nivel profesional: todos los gráficos fundamentales implementados con etiquetado, escalas y formato pulido
+- Visualizaciones avanzadas que aportan insight adicional; uso apropiado de colores, leyendas y anotaciones
+- Interpretaciones detalladas que conectan gráficos con recomendaciones prácticas
+- Figuras reproducibles y código limpio para generar cada visualización
+
+**Competente (18 puntos ~ 90%):**
+- La mayoría de los gráficos fundamentales implementados correctamente con títulos y etiquetas claras
+- Visualizaciones avanzadas presentes y legibles; pueden faltar pequeños ajustes estéticos
+- Interpretaciones claras y pertinentes, aunque no exhaustivas
+- Uso consistente de `sns.set_theme(style="whitegrid", palette="viridis")` para estilo
 
 **Suficiente (14 puntos ~ 70%):**
 - Mayoría de gráficos implementados

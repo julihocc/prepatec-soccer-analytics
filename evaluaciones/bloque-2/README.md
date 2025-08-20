@@ -88,25 +88,34 @@ La rúbrica completa del caso y criterios del examen están integrados en `caso-
 
 ---
 
-## Criterios de Éxito (Alineados a Rúbrica 40/30/30)
 
-### Suficiente (70-79%)
+## Criterios de Éxito
 
-- Exploración estructural y estadísticas básicas correctas.
-- Visualizaciones mínimas presentes con títulos simples.
-- Interpretaciones breves pero correctas.
+### Nivel Satisfactorio (70-79%)
 
-### Competente (80-89%)
+- Exploración estructural y estadísticas descriptivas esenciales correctamente implementadas.
+- Visualizaciones básicas (barras, boxplot, histograma) presentes con títulos y ejes claros.
+- Interpretaciones correctas pero limitadas; conclusiones elementales y recomendaciones generales.
 
-- Calidad revisada (rangos, NA) y métricas derivadas correctas.
-- Visualizaciones claras y ordenadas; respuestas a preguntas socráticas.
-- Conclusiones conectan métricas con roles de posición.
+### Nivel Competente (80-89%)
 
-### Sobresaliente (90-100%)
+- Calidad de datos revisada (tipos, rangos, NA) y métricas derivadas (p. ej. `goles_por_partido`) calculadas y documentadas.
+- Visualizaciones claras y coherentes con la narrativa del análisis; uso consistente de paleta y formato.
+- Interpretaciones que relacionan métricas con roles de posición y proponen acciones sencillas para el cuerpo técnico.
 
-- Outliers evaluados con criterio y justificación.
-- Métricas derivadas usadas para recomendaciones concretas.
-- Síntesis final clara: priorización y recomendación para entrenador.
+### Nivel Competente (90-99%)
+
+- Análisis robusto y reproducible: agregaciones por posición, comparaciones y tablas claras.
+- Outliers identificados y analizados con criterio; discusión sobre si representan talento o errores en datos.
+- Presentación de hallazgos con recomendaciones prácticas y criterios de seguimiento.
+
+### Nivel Sobresaliente (100%)
+
+- Trabajo de nivel profesional: decisiones reproducibles, validaciones y justificaciones documentadas.
+- Métricas derivadas utilizadas para priorizar acciones concretas; síntesis final clara y accionable.
+- Comunicación impecable: visualizaciones pulidas, narrativa consistente y documentación completa en el notebook.
+
+> Nota: la rúbrica del caso (`caso-practico/caso-bloque2.md`) contiene la asignación de puntos por componente (40/30/30). Estos niveles describen expectativas de calidad y profundidad en el análisis.
 
 ---
 

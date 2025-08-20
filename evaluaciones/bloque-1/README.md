@@ -106,7 +106,7 @@ La rúbrica completa del caso y criterios del examen están ahora integrados dir
 - **Análisis deportivo** con insights relevantes
 - **Presentación profesional** con manejo de preguntas
 
-### Nivel Competente (90%)
+### Nivel Competente (90-99%)
 
 - Trabajo competente para nivel preparatoria: implementación completa y correcta de las funciones requeridas
 - Pruebas básicas presentes (`assert`) y comentarios claros en código

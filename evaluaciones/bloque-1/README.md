@@ -106,12 +106,19 @@ La rúbrica completa del caso y criterios del examen están ahora integrados dir
 - **Análisis deportivo** con insights relevantes
 - **Presentación profesional** con manejo de preguntas
 
-### Nivel Sobresaliente (90-100%)
+### Nivel Competente (90%)
 
-- **Código optimizado** siguiendo mejores prácticas
-- **Aplicación creativa** de conceptos a problemas complejos
-- **Insights únicos** sobre rendimiento deportivo
-- **Liderazgo colaborativo** evidente en el equipo
+- Trabajo competente para nivel preparatoria: implementación completa y correcta de las funciones requeridas
+- Pruebas básicas presentes (`assert`) y comentarios claros en código
+- Análisis con interpretaciones relevantes y visualizaciones adecuadas
+- Presentación clara y participación equilibrada en el equipo
+
+### Nivel Sobresaliente (100%)
+
+- Código optimizado y robusto que sigue prácticas profesionales; preparado para extensión y reutilización
+- Pruebas exhaustivas que incluyen casos borde y validaciones de entrada
+- Interpretaciones profundas y propuestas de seguimiento con métricas accionables
+- Liderazgo colaborativo y documentación de calidad apta para comunicación externa
 
 ---
 

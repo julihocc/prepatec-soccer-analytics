@@ -259,7 +259,7 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 - Variables descriptivas en español, comentarios pedagógicos y pequeñas notas que facilitan la lectura a terceros
 - Manejo cohesionado de listas y diccionarios, con estructura de código preparada para ampliaciones o reuso
 
-**Muy bueno (36 puntos ~ 90%):**
+**Competente (36 puntos ~ 90%):**
 
 - Código funciona correctamente en su mayoría; pequeñas mejoras de estilo o documentación pendientes
 - Ambas funciones `calcular_puntos` y `mejor_goleador` están implementadas y probadas con casos sencillos
@@ -297,7 +297,7 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 - Ventajas de pandas explicadas con ejemplos reproduci-bles que muestran eficiencia y reproducibilidad
 - Resultados presentados de forma clara, replicable y listos para comunicación a terceros
 
-**Muy bueno (27 puntos ~ 90%):**
+**Competente (27 puntos ~ 90%):**
 
 - DataFrame creado correctamente y usado para la mayoría de los cálculos; pueden faltar comparaciones secundarias
 - Estadísticas calculadas correctamente con interpretaciones claras pero no exhaustivas
@@ -332,7 +332,7 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 - Análisis por posición profundo, con comparaciones y métricas complementarias que van más allá de la media
 - Interpretaciones y recomendaciones fundamentadas, con posibles acciones concretas y métricas para seguimiento
 
-**Muy bueno (18 puntos ~ 90%):**
+**Competente (18 puntos ~ 90%):**
 
 - Gráficos bien implementados con títulos y etiquetas; pueden mejorarse detalles estéticos o la legibilidad fina
 - Visualizaciones claras y útiles para la interpretación, aunque falta un punto adicional de análisis que las conecte con estrategia de equipo
@@ -367,7 +367,7 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 - Reflexión final exhaustiva y bien escrita; comentarios en el código que sirven de guía para docentes y terceros
 - Documentación y enlaces impecables; el notebook puede compartirse como recurso público sin ajustes
 
-**Muy bueno (9 puntos ~ 90%):**
+**Competente (9 puntos ~ 90%):**
 
 - Video claro y bien estructurado dentro del tiempo recomendado; podría mejorar la profesionalidad de la presentación
 - Participación equilibrada o con una ligera diferencia entre integrantes

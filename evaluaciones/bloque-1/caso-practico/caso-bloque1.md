@@ -248,15 +248,23 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 ### Criterios de Desempeño por Componente
 
+
 #### 1. Fundamentos y Funciones (40 puntos)
 
-**Excelente (40 puntos ~ 100%):**
+**Sobresaliente (40 puntos ~ 100%):**
 
-- Bucle for cuenta correctamente victorias, empates y derrotas
-- Funciones `calcular_puntos` y `mejor_goleador` implementadas y funcionan correctamente
-- Incluye pruebas y validación de las funciones
-- Variables con nombres descriptivos en español
-- Manejo correcto de listas y diccionarios
+- Trabajo de nivel profesional que supera las expectativas de preparatoria: código robusto, legible y bien documentado
+- Ambas funciones `calcular_puntos` y `mejor_goleador` implementadas con pruebas exhaustivas que incluyen casos borde y validación de entradas
+- Uso eficiente y claro de bucles y estructuras de control; manejo explícito de errores y condiciones inesperadas
+- Variables descriptivas en español, comentarios pedagógicos y pequeñas notas que facilitan la lectura a terceros
+- Manejo cohesionado de listas y diccionarios, con estructura de código preparada para ampliaciones o reuso
+
+**Muy bueno (36 puntos ~ 90%):**
+
+- Código funciona correctamente en su mayoría; pequeñas mejoras de estilo o documentación pendientes
+- Ambas funciones `calcular_puntos` y `mejor_goleador` están implementadas y probadas con casos sencillos
+- Variables en español y nombres descriptivos, con quizás una o dos excepciones menores
+- Manejo correcto de estructuras, aunque puede faltar una validación o un caso borde
 
 **Suficiente (28 puntos ~ 70%):**
 
@@ -280,13 +288,21 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 #### 2. Análisis y Métricas Básicas (30 puntos)
 
-**Excelente (30 puntos ~ 100%):**
 
-- DataFrame creado correctamente y comparado con listas
-- Estadísticas básicas calculadas e interpretadas correctamente
-- Análisis completo de jugadores por posición
-- Explica ventajas de pandas sobre estructuras básicas
-- Interpretación clara de los resultados
+**Sobresaliente (30 puntos ~ 100%):**
+
+- Análisis de nivel profesional: DataFrame bien diseñado, con manejo de tipos, limpieza y comparaciones relevantes
+- Estadísticas calculadas con verificaciones y visualizaciones de apoyo; interpretación profunda y conectada con contexto futbolístico
+- Análisis de jugadores por posición exhaustivo, con discusión sobre sesgos y limitaciones de los datos
+- Ventajas de pandas explicadas con ejemplos reproduci-bles que muestran eficiencia y reproducibilidad
+- Resultados presentados de forma clara, replicable y listos para comunicación a terceros
+
+**Muy bueno (27 puntos ~ 90%):**
+
+- DataFrame creado correctamente y usado para la mayoría de los cálculos; pueden faltar comparaciones secundarias
+- Estadísticas calculadas correctamente con interpretaciones claras pero no exhaustivas
+- Análisis de jugadores por posición presente y correcto, con pequeñas omisiones en la discusión
+- Ventajas de pandas expuestas; podría mejorarse la presentación de ejemplos
 
 **Suficiente (21 puntos ~ 70%):**
 
@@ -308,13 +324,20 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 #### 3. Visualización e Interpretación (20 puntos)
 
-**Excelente (20 puntos ~ 100%):**
 
-- Gráficos implementados correctamente con títulos y etiquetas
-- Visualizaciones claras y profesionales
-- Análisis por posición bien desarrollado
-- Interpretaciones conectadas con conocimiento futbolístico
-- Recomendaciones prácticas fundamentadas
+**Sobresaliente (20 puntos ~ 100%):**
+
+- Visualizaciones con calidad publicable: etiquetado impecable, escalas adecuadas y atención a accesibilidad y legibilidad
+- Integración entre visualizaciones y narrativa: cada gráfico soporta una conclusión clara y accionable para entrenamiento o táctica
+- Análisis por posición profundo, con comparaciones y métricas complementarias que van más allá de la media
+- Interpretaciones y recomendaciones fundamentadas, con posibles acciones concretas y métricas para seguimiento
+
+**Muy bueno (18 puntos ~ 90%):**
+
+- Gráficos bien implementados con títulos y etiquetas; pueden mejorarse detalles estéticos o la legibilidad fina
+- Visualizaciones claras y útiles para la interpretación, aunque falta un punto adicional de análisis que las conecte con estrategia de equipo
+- Análisis por posición desarrollado, con visualizaciones correctas pero sin comparación avanzada
+- Recomendaciones basadas en datos sólidas pero breves
 
 **Suficiente (14 puntos ~ 70%):**
 
@@ -336,13 +359,20 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 #### 4. Comunicación y Documentación (10 puntos)
 
-**Excelente (10 puntos ~ 100%):**
 
-- Video claro, bien estructurado, ≤15 minutos
-- Participación equilibrada del equipo
-- Reflexión final completa con 3 preguntas respondidas
-- Comentarios explicativos claros en código
-- Conexiones claras entre conceptos
+**Sobresaliente (10 puntos ~ 100%):**
+
+- Presentación de nivel profesional: video claro, bien editado, con narrativa pedagógica y evidencia de revisiones previas
+- Participación equilibrada y rol definido para cada integrante; comunicación efectiva y dominio técnico en la exposición
+- Reflexión final exhaustiva y bien escrita; comentarios en el código que sirven de guía para docentes y terceros
+- Documentación y enlaces impecables; el notebook puede compartirse como recurso público sin ajustes
+
+**Muy bueno (9 puntos ~ 90%):**
+
+- Video claro y bien estructurado dentro del tiempo recomendado; podría mejorar la profesionalidad de la presentación
+- Participación equilibrada o con una ligera diferencia entre integrantes
+- Reflexión final completa con 3 preguntas respondidas, comentarios en código presentes pero no exhaustivos
+- Documentación y enlace en el notebook correctos, con pequeñas mejoras posibles en redacción
 
 **Suficiente (7 puntos ~ 70%):**
 

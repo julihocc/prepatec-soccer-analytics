@@ -249,17 +249,22 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 ### Criterios de Desempeño por Componente
 
 #### 1. Exploración y Preparación de Datos (30 puntos)
+**Sobresaliente (30 puntos ~ 100%):**
+- Exploración completa del dataset con análisis de balance, correlaciones y visualizaciones que revelan insights útiles para ML
+- Preparación rigurosa: separación train/test, codificación correcta de categóricas y verificación de formatos
+- Identificación y tratamiento de problemas de calidad de datos; decisiones sobre exclusión o transformación debidamente justificadas
+- Resultados reproducibles y documentación clara que permite replicar el flujo de preprocesamiento
 
-**Excelente (30 puntos ~ 100%):**
-- Exploración completa del dataset con análisis de balance y correlaciones
-- Análisis exploratorio revela insights relevantes para ML
-- Preparación correcta: train/test split, codificación categóricas
-- Identificación clara de variables predictoras
+**Competente (27 puntos ~ 90%):**
+- Exploración amplia del dataset con análisis de balance y correlaciones relevantes
+- Preparación adecuada: separación train/test y codificación de variables categóricas aplicada correctamente
+- Identifica problemas importantes de calidad de datos y propone soluciones razonables
+- Documentación y visualizaciones suficientes para apoyar las decisiones técnicas
 
 **Suficiente (21 puntos ~ 70%):**
-- Exploración básica funcional
-- Preparación de datos correcta
-- Análisis superficial de patrones
+ - Exploración básica funcional
+ - Preparación de datos correcta
+ - Análisis superficial de patrones
 
 **Insuficiente (9 puntos ~ 30%):**
 - Exploración incompleta o con errores
@@ -272,11 +277,18 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 #### 2. Construcción y Evaluación de Modelos (40 puntos)
 
-**Excelente (40 puntos ~ 100%):**
-- Ambos modelos implementados correctamente
-- Comparación clara de rendimiento entre modelos
-- Matriz de confusión y métricas interpretadas correctamente
-- Análisis de casos donde modelos fallan
+**Sobresaliente (40 puntos ~ 100%):**
+
+- Ambos modelos implementados correctamente y validados con procedimientos básicos de evaluación
+- Comparación exhaustiva entre modelos con métricas relevantes y visualizaciones de soporte
+- Matrices de confusión y análisis de errores detallados; interpretación práctica de cuándo y por qué fallan los modelos
+- Experimentación reproducible (parametrizaciones documentadas) y conclusiones claras sobre el rendimiento
+
+**Competente (36 puntos ~ 90%):**
+
+- Implementa correctamente ambos modelos o los enfoques propuestos, con comparaciones razonables
+- Calcula métricas principales y presenta matrices de confusión; discusión adecuada de errores comunes
+- Interpretación clara de resultados, aunque puede faltar análisis experimental más profundo
 
 **Suficiente (28 puntos ~ 70%):**
 - Al menos un modelo implementado correctamente
@@ -294,11 +306,18 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 #### 3. Interpretación y Aplicación Futbolística (20 puntos)
 
-**Excelente (20 puntos ~ 100%):**
-- Análisis claro de importancia de variables
-- Conexión sólida entre resultados técnicos y contexto futbolístico
-- Predicciones en escenarios específicos bien justificadas
-- Recomendaciones prácticas para equipos
+**Sobresaliente (20 puntos ~ 100%):**
+
+- Análisis profundo de importancia de variables con visualizaciones y justificaciones técnicas
+- Conexión sólida y explícita entre resultados técnicos y decisiones tácticas o estratégicas aplicables por un equipo
+- Predicciones en escenarios específicos bien justificadas y analizadas en términos de probabilidades y riesgos
+- Recomendaciones prácticas y accionables para el cuerpo técnico basadas en los hallazgos
+
+**Competente (18 puntos ~ 90%):**
+
+- Análisis claro de importancia de variables con alguna visualización de apoyo
+- Buena conexión entre resultados técnicos y contexto futbolístico, con recomendaciones razonables
+- Predicciones en escenarios específicos presentadas y discutidas, aunque puede faltar profundidad estadística
 
 **Suficiente (14 puntos ~ 70%):**
 - Análisis básico de importancia
@@ -390,23 +409,30 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 - Documenten experimentos: qué probaron y qué resultados obtuvieron
 
 ### Para el Trabajo en Equipo
-
+ 
 - **Persona 1**: Exploración, preparación de datos y regresión logística
-- **Persona 2**: Random Forest, evaluación comparativa y matriz de confusión  
+
+- **Persona 2**: Random Forest, evaluación comparativa y matriz de confusión
+
 - **Persona 3**: Interpretación de resultados, predicciones específicas y preparación del video
+
 - **Todos**: Participan en análisis de importancia de variables y reflexiones
 
 ### Para el Video de Exposición
 
 - **Duración**: Practiquen para mantenerse en 15-18 minutos
+
 - **Participación**: Cada persona explica 6-7 minutos
-- **Estructura sugerida**: 
+
+- **Estructura sugerida:**
   - Introducción y dataset (3 min)
   - Exploración y preparación (5 min)
   - Modelos y comparación (6 min)
   - Interpretación y aplicaciones (4-5 min)
   - Limitaciones y conclusiones (2 min)
+
 - **Técnico**: Graben pantalla mostrando el notebook, audio claro
+
 - **Herramientas**: Pueden usar Zoom, OBS, o la grabación de pantalla del sistema operativo
 
 ### Preguntas Frecuentes
@@ -418,35 +444,52 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 ---
 
-### Autoevaluación Rápida (Marcar OK / Revisar)
+-### Autoevaluación Rápida (Marcar OK / Revisar)
 
 **Exploración y Preparación:**
+
 - [ ] Cargué y exploré el dataset correctamente
 - [ ] Analicé correlaciones y balance de clases
 - [ ] Preparé datos con train_test_split y codificación categóricas
 - [ ] Identifiqué variables predictoras relevantes
 
+
 **Modelos de Machine Learning:**
+
 - [ ] Implementé regresión logística correctamente
+
 - [ ] Implementé random forest y lo comparé con regresión
+
 - [ ] Calculé accuracy y matriz de confusión para ambos
+
 - [ ] Analicé importancia de variables en ambos modelos
 
 **Interpretación y Aplicación:**
+
 - [ ] Conecté resultados técnicos con contexto futbolístico
+
 - [ ] Hice predicciones en escenarios específicos
+
 - [ ] Identifiqué limitaciones de los modelos
+
 - [ ] Propuse recomendaciones prácticas para equipos
 
 **Comunicación:**
+
 - [ ] Respondí preguntas de reflexión intermedias
+
 - [ ] Completé reflexión final (3 preguntas elegidas)
+
 - [ ] Video dura máximo 20 minutos con participación equilibrada
+
 - [ ] Notebook ejecuta completamente sin errores
 
 **Entrega:**
+
 - [ ] Variables y comentarios en español
+
 - [ ] Link de YouTube incluido en notebook
+
 - [ ] Archivo enviado en Canvas antes de fecha límite
 
 ---

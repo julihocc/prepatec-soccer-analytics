@@ -6,9 +6,9 @@ Convierte banco-preguntas-bloque1.txt a formato QTI para Canvas
 Uso:
     python generar_qti.py [--force] [--status]
 
-Este script usa la solución inteligente generalizada para:
+Este script usa la librería txttoqti para:
 1. Detectar cambios en banco-preguntas-bloque1.txt
-2. Regenerar automáticamente CSV y QTI solo si es necesario
+2. Regenerar automáticamente QTI solo si es necesario
 3. Proporcionar feedback claro sobre el estado
 """
 
@@ -16,18 +16,12 @@ import os
 import sys
 from pathlib import Path
 
-# Agregar herramientas al path
-current_dir = Path(__file__).parent
-project_root = current_dir.parent.parent.parent
-tools_path = project_root / "herramientas" / "txt-to-qti"
-sys.path.insert(0, str(tools_path))
-
-# Importar el convertidor inteligente
+# Importar la librería txttoqti
 try:
-    from smart_convert import convert_with_intelligence
+    from txttoqti import SmartConverter
 except ImportError as e:
-    print(f"❌ Error: No se puede importar el convertidor inteligente.")
-    print(f"   Verifica que exista: {tools_path}/smart_convert.py")
+    print(f"❌ Error: No se puede importar la librería txttoqti.")
+    print(f"   Instala con: pip install -e .")
     print(f"   Error específico: {e}")
     sys.exit(1)
 
@@ -109,10 +103,11 @@ def main():
         sys.exit(1)
     
     try:
-        # Usar el convertidor inteligente generalizado
-        qti_file, question_count, regenerated = convert_with_intelligence(
+        # Usar el SmartConverter de txttoqti
+        converter = SmartConverter()
+        qti_file, question_count, regenerated = converter.convert_with_intelligence(
             txt_file,
-            output_qti=None,  # Usar nombres por defecto
+            output_file=None,  # Usar nombres por defecto
             force=force,
             status_only=status_only
         )
@@ -120,10 +115,11 @@ def main():
         # Mensaje final según el resultado
         if not status_only:
             if regenerated:
-                print("\n🎉 ¡Archivos QTI actualizados usando solución inteligente!")
+                print(f"\n🎉 ¡{question_count} preguntas convertidas exitosamente!")
+                print(f"📦 QTI generado: {Path(qti_file).name}")
             else:
                 print(f"\n📁 Archivo QTI disponible: {Path(qti_file).name}")
-                print("   (Usada solución inteligente - sin cambios necesarios)")
+                print(f"✅ {question_count} preguntas - sin cambios necesarios")
         
     except Exception as e:
         print(f"\n❌ Error: {e}")

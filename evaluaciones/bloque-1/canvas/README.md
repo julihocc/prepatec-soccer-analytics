@@ -34,19 +34,24 @@ Este script:
 - ✅ Muestra el estado de todos los archivos
 - ✅ Fuerza regeneración con `--force`
 
-### Opción 2: Herramienta Global
+### Opción 2: Herramienta txttoqti (Recomendado)
 ```bash
-# Desde el directorio raíz del proyecto
-python herramientas/txt-to-qti/convert.py evaluaciones/bloque-1/canvas/banco-preguntas-bloque1.txt
+# Desde cualquier directorio - usando la librería txttoqti
+txt-to-qti evaluaciones/bloque-1/canvas/banco-preguntas-bloque1.txt
+
+# Ver estado de archivos
+txt-to-qti --status evaluaciones/bloque-1/canvas/banco-preguntas-bloque1.txt
+
+# Forzar regeneración
+txt-to-qti evaluaciones/bloque-1/canvas/banco-preguntas-bloque1.txt --force
 ```
 
-### Opción 3: Por Etapas
-```bash
-# Paso 1: TXT → CSV
-python herramientas/txt-to-qti/txt_to_csv_direct.py banco-preguntas-bloque1.txt
-
-# Paso 2: CSV → QTI  
-python herramientas/txt-to-qti/csv_to_kansas_qti.py banco-preguntas-bloque1_kansas.csv
+### Opción 3: API de Python
+```python
+# Usar la API directamente en scripts
+from txttoqti import convert_txt_to_qti
+qti_file = convert_txt_to_qti('banco-preguntas-bloque1.txt')
+print(f'QTI generado: {qti_file}')
 ```
 
 ## 📋 Importar a Canvas
@@ -66,17 +71,19 @@ python herramientas/txt-to-qti/csv_to_kansas_qti.py banco-preguntas-bloque1_kans
 
 ## 🔗 Herramientas de Conversión
 
-Las herramientas de conversión TXT→QTI están en:
+La librería txttoqti proporciona conversión TXT→QTI:
 ```
-herramientas/txt-to-qti/
-├── convert.py              # Script principal todo-en-uno
-├── txt_to_csv_direct.py   # Convertidor TXT→CSV
-├── csv_to_kansas_qti.py   # Generador CSV→QTI
-├── tests/                 # Suite de tests
-└── *.md                   # Documentación técnica
+txttoqti/
+├── __init__.py           # API principal y funciones de conveniencia
+├── parser.py             # Análisis de archivos de texto
+├── validator.py          # Validación de preguntas
+├── qti_generator.py      # Generación de XML QTI
+├── smart_converter.py    # Conversión inteligente con detección de cambios
+├── cli.py                # Interfaz de línea de comandos
+└── tests/                # Suite de tests completa
 ```
 
-Ver [herramientas/txt-to-qti/README.md](../../herramientas/txt-to-qti/README.md) para documentación completa de las herramientas.
+La librería txttoqti es independiente y puede instalarse como paquete Python.
 
 ## 📊 Especificaciones Técnicas
 
@@ -91,11 +98,11 @@ Ver [herramientas/txt-to-qti/README.md](../../herramientas/txt-to-qti/README.md)
 Para validar el banco de preguntas:
 
 ```bash
-# Validar formato y estructura
-python herramientas/txt-to-qti/tests/run_tests.py --validate
+# Validar usando txttoqti
+txt-to-qti --validate evaluaciones/bloque-1/canvas/banco-preguntas-bloque1.txt
 
-# Ejecutar todos los tests
-python herramientas/txt-to-qti/tests/run_tests.py
+# Ejecutar tests de la librería
+python txttoqti/tests/test_core.py
 ```
 
 ## 📈 Historial de Versiones

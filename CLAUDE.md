@@ -64,15 +64,24 @@ python herramientas/py-to-marp/convert.py --list-configs
 
 #### Assessment Generation (TXT to QTI Canvas)
 ```bash
-# Convert question banks to Canvas QTI format
-python herramientas/txt-to-qti/smart_convert.py evaluaciones/bloque-1/canvas/banco-preguntas-bloque1.txt
+# Convert question banks to Canvas QTI format using txttoqti library
+txt-to-qti evaluaciones/bloque-1/canvas/banco-preguntas-bloque1.txt
+
+# Check conversion status
+txt-to-qti --status evaluaciones/bloque-1/canvas/banco-preguntas-bloque1.txt
+
+# Force regeneration
+txt-to-qti evaluaciones/bloque-1/canvas/banco-preguntas-bloque1.txt --force
+
+# Python API usage
+python -c "from txttoqti import convert_txt_to_qti; convert_txt_to_qti('file.txt')"
 ```
 
 ### Testing Commands
 ```bash
 # Run tests for conversion tools
 python herramientas/notebook-to-pdf/tests/run_tests.py
-python herramientas/txt-to-qti/tests/run_tests.py
+python txttoqti/tests/test_core.py
 ```
 
 ### Make Commands (Comprehensive)
@@ -130,8 +139,16 @@ evaluaciones/
 ```
 herramientas/
 ├── notebook-to-pdf/   # Professional notebook to PDF conversion
-├── py-to-marp/        # Python percent format to Marp presentations  
-└── txt-to-qti/        # Text questions to Canvas QTI format
+└── py-to-marp/        # Python percent format to Marp presentations
+
+txttoqti/              # Independent Canvas QTI generation library
+├── __init__.py        # Main API and convenience functions
+├── parser.py          # Text question parsing
+├── validator.py       # Question validation
+├── qti_generator.py   # QTI XML generation
+├── smart_converter.py # Intelligent conversion with change detection
+├── cli.py             # Command-line interface
+└── tests/             # Comprehensive test suite
 ```
 
 ## Pedagogical Architecture
@@ -185,7 +202,7 @@ Each notebook follows this structure:
 
 ### Assessment Development
 1. Write question banks in simple text format
-2. Convert to Canvas QTI format using the txt-to-qti tool
+2. Convert to Canvas QTI format using the txttoqti library (`txt-to-qti` command)
 3. Test practical cases with real football datasets
 4. Ensure all assessments align with learning objectives
 

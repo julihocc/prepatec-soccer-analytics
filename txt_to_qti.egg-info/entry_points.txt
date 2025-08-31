@@ -1,4 +1,0 @@
-[console_scripts]
-txt-to-qti = txttoqti.cli:main
-txt2qti = txttoqti.cli:main
-

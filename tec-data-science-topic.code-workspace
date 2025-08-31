@@ -23,6 +23,7 @@
 		"github.copilot.chat.notebook.followCellExecution.enabled": true,
 		"notebook.defaultFormatter": "ms-python.black-formatter",
 		"python.languageServer": "Pylance",
-		"terminal.integrated.shellIntegration.enabled": true
+		"terminal.integrated.shellIntegration.enabled": true,
+		"ty.experimental.rename": true
 	}
 }

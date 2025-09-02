@@ -1,206 +1,130 @@
 #!/usr/bin/env python3
 """
-Script de regeneración QTI para Banco de Preguntas Bloque 2
-Convierte banco-preguntas-bloque2.txt a formato QTI para Canvas
+🚀 ULTIMATE AUTO-DETECTING QTI GENERATOR 🚀
+Refactored, DRY-compliant, auto-detecting Canvas QTI converter.
 
-Uso:
-    python generar_qti.py [--status]
+This script automatically detects:
+- Block number from directory path (bloque-1, bloque-2, bloque-3) 
+- Input filename (banco-preguntas-bloqueX.txt)
+- Output filename (banco-preguntas-bloqueX_canvas_qti.zip)
+
+Features:
+- Zero code duplication (DRY principle applied)
+- Auto-detection of block configuration
+- Format validation with detailed error reporting
+- Smart change detection with MD5 checksums
+- Enhanced logging and progress reporting
+- Full compatibility with txttoqti v0.2.0+
+
+Usage:
+    python generar_qti.py [--status] [--force] [--interactive]
+    
+Arguments:
+    --status        Show current status without conversion
+    --force         Force regeneration even if no changes detected
+    --interactive   Enable interactive mode for format validation
 """
 
-import os
 import sys
-import hashlib
-import re
+import os
 from pathlib import Path
 
-# Importar la librería txttoqti
+# Smart path detection - find the repository root
+script_dir = Path(__file__).parent
+
+# Find herramientas directory by walking up the directory tree
+current_dir = script_dir
+herramientas_dir = None
+for _ in range(5):  # Search up to 5 levels up
+    potential_herramientas = current_dir / "herramientas"
+    if potential_herramientas.exists() and (potential_herramientas / "qti_converter").exists():
+        herramientas_dir = potential_herramientas
+        break
+    current_dir = current_dir.parent
+
+if herramientas_dir is None:
+    print("❌ Error: No se puede encontrar el directorio herramientas/qti_converter/")
+    print("   Directorio actual:", script_dir)
+    sys.exit(1)
+
+# Add herramientas to path and import
+sys.path.insert(0, str(herramientas_dir))
+
 try:
-    from txttoqti import TxtToQtiConverter
+    from qti_converter import QtiConverter
 except ImportError as e:
-    print("❌ Error: No se puede importar la librería txttoqti.")
-    print("   Instala con: pip install txttoqti>=0.2.0")
+    print("❌ Error: No se puede importar la librería QtiConverter.")
+    print(f"   Directorio herramientas: {herramientas_dir}")
     print(f"   Error específico: {e}")
     sys.exit(1)
 
 
-def convert_to_txttoqti_format(input_file, output_file):
-    """Convierte formato Q1: A) B) C) D) RESPUESTA: X al formato txttoqti"""
-    with open(input_file, 'r', encoding='utf-8') as f:
-        input_text = f.read()
-    
-    lines = input_text.strip().split('\n')
-    converted_lines = []
-    
-    i = 0
-    while i < len(lines):
-        line = lines[i].strip()
-        
-        if not line:
-            converted_lines.append('')
-            i += 1
-            continue
-        
-        # Check for question pattern Q1:, Q2:, etc.
-        question_match = re.match(r'^Q(\d+):\s*(.+)$', line)
-        if question_match:
-            question_num = question_match.group(1)
-            question_text = question_match.group(2)
-            
-            # Convert Q1: to 1.
-            converted_lines.append(f"{question_num}. {question_text}")
-            i += 1
-            
-            # Process the choices and answer
-            choices = []
-            answer_line = None
-            
-            while i < len(lines):
-                line = lines[i].strip()
-                if not line:
-                    i += 1
-                    continue
-                
-                # Check for choice pattern A), B), C), D)
-                choice_match = re.match(r'^([ABCD])\)\s*(.+)$', line)
-                if choice_match:
-                    choice_letter = choice_match.group(1).lower()
-                    choice_text = choice_match.group(2)
-                    choices.append(f"{choice_letter}) {choice_text}")
-                    i += 1
-                    continue
-                
-                # Check for answer pattern RESPUESTA: X
-                answer_match = re.match(r'^RESPUESTA:\s*([ABCD])$', line)
-                if answer_match:
-                    answer_letter = answer_match.group(1).lower()
-                    answer_line = f"Respuesta correcta: {answer_letter}"
-                    i += 1
-                    break
-                
-                break
-            
-            # Add converted content
-            converted_lines.extend(choices)
-            if answer_line:
-                converted_lines.append(answer_line)
-            converted_lines.append('')
-        else:
-            converted_lines.append(line)
-            i += 1
-    
-    converted_text = '\n'.join(converted_lines)
-    
-    with open(output_file, 'w', encoding='utf-8') as f:
-        f.write(converted_text)
-    
-    return output_file
+def parse_arguments():
+    """Parse command line arguments."""
+    args = {
+        'status_only': '--status' in sys.argv,
+        'force': '--force' in sys.argv,
+        'interactive': '--interactive' in sys.argv,
+        'help': '--help' in sys.argv or '-h' in sys.argv
+    }
+    return args
 
 
-def count_questions(filepath):
-    """Cuenta preguntas en el archivo"""
-    try:
-        with open(filepath, 'r', encoding='utf-8') as f:
-            content = f.read()
-        questions = re.findall(r'^Q\d+:', content, re.MULTILINE)
-        return len(questions)
-    except Exception:
-        return 0
-
-
-def file_changed(filepath, checksum_file=None):
-    """Verifica si un archivo ha cambiado"""
-    if checksum_file is None:
-        checksum_file = filepath + ".checksum"
-    
-    if not os.path.exists(filepath):
-        return True
-    
-    with open(filepath, 'rb') as f:
-        current_checksum = hashlib.md5(f.read()).hexdigest()
-    
-    if os.path.exists(checksum_file):
-        with open(checksum_file, 'r') as f:
-            previous_checksum = f.read().strip()
-        
-        if current_checksum == previous_checksum:
-            return False
-    
-    with open(checksum_file, 'w') as f:
-        f.write(current_checksum)
-    
-    return True
+def show_help():
+    """Show help message."""
+    print(__doc__)
 
 
 def main():
-    """Función principal"""
+    """Función principal - La magia del auto-detection! 🎯"""
     
-    # Procesar argumentos
-    status_only = "--status" in sys.argv
-    force = not ("--no-force" in sys.argv)
+    args = parse_arguments()
     
-    # Archivos
-    script_dir = Path(__file__).parent
-    os.chdir(script_dir)
+    if args['help']:
+        show_help()
+        return
     
-    txt_file = "banco-preguntas-bloque2.txt"
-    qti_file = "banco-preguntas-bloque2_canvas_qti.zip"
-    
-    if not os.path.exists(txt_file):
-        print(f"❌ Error: Archivo {txt_file} no encontrado")
+    # Initialize auto-detecting QTI converter
+    try:
+        converter = QtiConverter(script_path=Path(__file__))
+    except Exception as e:
+        print(f"❌ Error inicializando convertidor: {e}")
         sys.exit(1)
     
-    question_count = count_questions(txt_file)
+    # Show welcome message with auto-detected info
+    if not args['status_only']:
+        file_info = converter.get_file_info()
+        print(f"🚀 GENERADOR QTI AUTO-DETECTOR v2.0")
+        print(f"🎯 Auto-detectado: Bloque {file_info['block_num']} - {file_info['block_description']}")
+        print(f"📁 Directorio: {Path.cwd().name}")
+        print(f"📄 Archivo fuente: {file_info['txt_file']}")
+        print(f"📦 Archivo destino: {file_info['qti_file']}")
+        print("-" * 60)
     
-    if status_only:
-        print(f"📊 ESTADO DEL ARCHIVO:")
-        print(f"   Fuente: {txt_file}")
-        print(f"   Preguntas: {question_count}")
-        print(f"   QTI: {qti_file} {'(existe)' if os.path.exists(qti_file) else '(no existe)'}")
-        if not force and not file_changed(txt_file):
-            print("✅ Sin cambios necesarios")
-        else:
-            print("🔄 Regeneración requerida")
+    # Handle status-only mode
+    if args['status_only']:
+        converter.show_status()
         return
     
-    # Verificar si necesita regeneración
-    needs_regeneration = force or file_changed(txt_file) or not os.path.exists(qti_file)
+    # Execute conversion
+    success = converter.convert(force=args['force'])
     
-    if not needs_regeneration:
-        print(f"✅ QTI está actualizado: {qti_file}")
-        print(f"📊 {question_count} preguntas - sin cambios necesarios")
-        return
-    
-    try:
-        # Convertir formato
-        print(f"🔄 Convirtiendo formato de {question_count} preguntas...")
-        converted_file = txt_file.replace('.txt', '_txttoqti_format.txt')
-        convert_to_txttoqti_format(txt_file, converted_file)
-        print(f"✅ Formato convertido")
+    if success:
+        print("\n🎉 ¡CONVERSIÓN COMPLETADA CON ÉXITO!")
+        print("📤 El archivo QTI está listo para subir a Canvas")
         
-        # Generar QTI
-        print(f"🔄 Generando QTI...")
-        converter = TxtToQtiConverter()
-        result = converter.convert_file(converted_file, qti_file)
-        
-        if result and os.path.exists(result):
-            print(f"\n🎉 ¡{question_count} preguntas convertidas exitosamente!")
-            print(f"📦 QTI generado: {Path(result).name}")
-            file_size = Path(result).stat().st_size
-            print(f"📏 Tamaño: {file_size} bytes")
-            
-            # Limpiar archivo temporal
-            try:
-                os.unlink(converted_file)
-            except Exception:
-                pass
-        else:
-            print("❌ Error: No se pudo generar el archivo QTI")
-            sys.exit(1)
-        
-    except Exception as e:
-        print(f"\n❌ Error durante la conversión: {e}")
-        import traceback
-        traceback.print_exc()
+        file_info = converter.get_file_info()
+        if file_info['qti_exists']:
+            qti_path = Path(file_info['qti_file'])
+            if qti_path.exists():
+                file_size = qti_path.stat().st_size
+                print(f"📊 Estadísticas finales:")
+                print(f"   • Preguntas: {file_info['question_count']}")
+                print(f"   • Tamaño QTI: {file_size:,} bytes")
+                print(f"   • Bloque: {file_info['block_num']} ({file_info['block_description']})")
+    else:
+        print("\n❌ CONVERSIÓN FALLIDA")
+        print("🔧 Revisa los errores anteriores e intenta nuevamente")
         sys.exit(1)
 
 

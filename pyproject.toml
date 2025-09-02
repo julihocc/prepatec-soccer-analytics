@@ -15,7 +15,7 @@ dependencies = [
     "seaborn>=0.11.0",
     "scikit-learn>=1.0.0",
     "jupyter>=1.0.0",
-    "txttoqti",
+    "txttoqti>=0.2.0",
 ]
 keywords = ["ciencia-datos", "futbol", "educacion", "preparatoria", "python", "machine-learning"]
 classifiers = [
@@ -43,5 +43,3 @@ build-backend = "setuptools.build_meta"
 packages = ["contenido"]
 include-package-data = true
 
-[tool.uv.sources]
-txttoqti = { git = "https://github.com/julihocc/txttoqti.git", rev = "main" }

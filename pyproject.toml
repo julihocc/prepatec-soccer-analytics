@@ -1,9 +1,9 @@
 [project]
-name = "ciencia-datos-futbol-preparatoria"
+name = "prepatec-soccer-analytics"
 version = "5.0.0"
 description = "Curso de Ciencia de Datos aplicada al Fútbol para estudiantes de preparatoria usando metodología socrática"
 authors = [
-    {name = "Tecnológico de Monterrey", email = ""},
+    {name = "Juliho C.C.", email = "julihocc@yahoo.com"},
 ]
 readme = "README.md"
 license = {text = "MIT"}

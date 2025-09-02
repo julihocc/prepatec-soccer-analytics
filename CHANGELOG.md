@@ -5,6 +5,45 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 
+## 5.1.0 (2025-09-02)
+
+### Agregado
+
+- Integración completa con txttoqti GitHub package para generación automática de QTI Canvas
+- Scripts de conversión de formato automática (`convert_to_txttoqti_format()`) en todos los bloques de evaluación
+- Sistema de generación QTI inteligente con detección de cambios basada en hash
+- Archivos ZIP compatibles con Canvas LMS generados automáticamente
+- Documentación completa de AI agents en `.github/copilot-instructions.md`
+- Comandos de validación para verificar dependencias críticas y tiempos de ejecución
+
+### Cambiado
+
+- **BREAKING**: Actualización de requisito mínimo de Python de 3.8 a 3.10 para compatibilidad con txttoqti
+- Reemplazo completo de implementación local txttoqti con package externo desde GitHub main branch
+- Migración de generación QTI desde implementación interna a herramienta externa profesional
+- Actualización de classifiers en pyproject.toml para incluir Python 3.12
+
+### Removido
+
+- Eliminación completa del directorio local `txttoqti/` con todos sus módulos
+- Remoción de 11 archivos de implementación local (converter.py, parser.py, qti_generator.py, etc.)
+- Limpieza de 2110+ líneas de código de implementación local incompleta
+
+### Mejorado
+
+- Proceso de generación QTI ahora completamente automatizado con conversión de formato integrada
+- Conversión automática de formato interno `Q1: A) B) C) RESPUESTA: X` a formato txttoqti estándar
+- Cache inteligente previene regeneración innecesaria de archivos QTI
+- Mejor manejo de errores y retroalimentación durante proceso de conversión
+- Scripts de estado (`--status`) para verificar necesidad de regeneración
+
+### Validado
+
+- Generación exitosa de packages QTI para bloque-1 (25 preguntas, 3196 bytes)
+- Verificación completa de compatibilidad con Canvas LMS
+- Pruebas exitosas de conversión de formato automática
+- Validación de dependencias críticas y workflows de desarrollo
+
 ## 5.0.0 (2025-08-15)
 
 ### Agregado

@@ -24,8 +24,11 @@ Each week contains Jupyter notebooks (`.ipynb` files) for interactive learning, 
 # Install dependencies automatically
 python install_dependencies.py
 
-# Or manually
+# Or manually install from requirements.txt
 pip install -r requirements.txt
+
+# For full project setup (includes txttoqti from GitHub)
+pip install -e .
 
 # Create virtual environment (recommended)
 python -m venv .venv
@@ -64,24 +67,24 @@ python herramientas/py-to-marp/convert.py --list-configs
 
 #### Assessment Generation (TXT to QTI Canvas)
 ```bash
-# Convert question banks to Canvas QTI format using txttoqti library
-txt-to-qti evaluaciones/bloque-1/canvas/banco-preguntas-bloque1.txt
+# Convert question banks to Canvas QTI format using embedded scripts
+cd evaluaciones/bloque-1/canvas/ && python generar_qti.py
 
 # Check conversion status
-txt-to-qti --status evaluaciones/bloque-1/canvas/banco-preguntas-bloque1.txt
+cd evaluaciones/bloque-1/canvas/ && python generar_qti.py --status
 
-# Force regeneration
-txt-to-qti evaluaciones/bloque-1/canvas/banco-preguntas-bloque1.txt --force
-
-# Python API usage
-python -c "from txttoqti import convert_txt_to_qti; convert_txt_to_qti('file.txt')"
+# Force regeneration (Python API - txttoqti v0.2.0+ is installed as dependency)
+python -c "from txttoqti import TxtToQtiConverter; converter = TxtToQtiConverter(); converter.convert_file('file.txt')"
 ```
 
 ### Testing Commands
 ```bash
 # Run tests for conversion tools
 python herramientas/notebook-to-pdf/tests/run_tests.py
-python txttoqti/tests/test_core.py
+python herramientas/py-to-marp/tests/run_tests.py
+
+# Test txttoqti v0.2.0+ functionality (installed as external dependency)
+python -c "from txttoqti import TxtToQtiConverter; print('txttoqti v0.2.0+ OK')"
 ```
 
 ### Make Commands (Comprehensive)
@@ -139,16 +142,17 @@ evaluaciones/
 ```
 herramientas/
 ├── notebook-to-pdf/   # Professional notebook to PDF conversion
+│   ├── convert.py     # Core conversion functionality
+│   ├── smart_convert.py # Intelligent conversion with change detection
+│   └── tests/         # Conversion test suite
 └── py-to-marp/        # Python percent format to Marp presentations
+    ├── convert.py     # Main conversion script
+    ├── py_to_marp.py  # Core conversion logic
+    ├── configs.py     # Presentation configurations
+    └── tests/         # Marp conversion tests
 
-txttoqti/              # Independent Canvas QTI generation library
-├── __init__.py        # Main API and convenience functions
-├── parser.py          # Text question parsing
-├── validator.py       # Question validation
-├── qti_generator.py   # QTI XML generation
-├── smart_converter.py # Intelligent conversion with change detection
-├── cli.py             # Command-line interface
-└── tests/             # Comprehensive test suite
+# txttoqti v0.2.0+ is installed as external dependency from PyPI
+# Available via: pip install txttoqti>=0.2.0
 ```
 
 ## Pedagogical Architecture
@@ -247,9 +251,50 @@ Each notebook follows this structure:
 - All code examples must be executable and produce meaningful output
 
 ### Infrastructure Requirements
-- Python 3.8+ required for all functionality
-- LaTeX installation needed for PDF generation
+- Python 3.10+ required (updated for txttoqti compatibility)
+- LaTeX installation needed for PDF generation (XeLaTeX recommended for Spanish text)
 - Node.js required only if generating presentations
 - Git for version control and collaboration
+- txttoqti v0.2.0+ from PyPI (automatically installed via pyproject.toml)
+
+## Critical Development Constraints
+
+### Time Constraints (STRICTLY ENFORCED)
+- **Maximum session duration**: 50 minutes of executable content
+- **Validation requirement**: All notebooks must complete execution within 45 minutes
+- **Planning structure**: 15 min theory + 25 min practice + 10 min synthesis
+
+### Language and Content Rules
+- **NO EMOJIS POLICY**: Strictly prohibited in all code, documentation, comments, and commit messages
+- **Spanish naming convention**: All variables, functions, and comments must be in Spanish
+- **Professional tone**: Academic level appropriate for 15-18 year old students
+
+### Educational Context
+- **Target audience**: Preparatoria students (15-18 years) with ZERO programming experience
+- **Mathematical level**: Basic algebra only
+- **Session constraint**: If content doesn't fit in 50 minutes, it must be split
+
+### Code Patterns (MANDATORY)
+```python
+# CORRECT - Spanish naming
+goles_por_partido = df['goles'].mean()
+jugadores_barcelona = df[df['equipo'] == 'Barcelona']
+modelo_prediccion = LogisticRegression()
+
+# INCORRECT - English naming  
+goals_per_match = df['goals'].mean()
+barcelona_players = df[df['team'] == 'Barcelona']
+```
+
+### Visualization Standards
+```python
+# Required configuration for all plots
+sns.set_theme(style="whitegrid", palette="viridis")
+plt.figure(figsize=(10, 6))
+plt.title('Distribución de Goles por Jugador - Barcelona 2023')
+plt.xlabel('Minutos Jugados')
+plt.ylabel('Goles Marcados')
+```
 
 This educational repository represents a complete, production-ready curriculum for teaching data science to Spanish-speaking high school students using football as the engaging context.
+- Commit changes in suitable chunks to preserve a clean git history

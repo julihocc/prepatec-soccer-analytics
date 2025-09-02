@@ -1,6 +1,6 @@
 [project]
 name = "prepatec-soccer-analytics"
-version = "5.1.0"
+version = "5.2.0"
 description = "Curso de Ciencia de Datos aplicada al Fútbol para estudiantes de preparatoria usando metodología socrática"
 authors = [
     {name = "Juliho C.C.", email = "julihocc@yahoo.com"},

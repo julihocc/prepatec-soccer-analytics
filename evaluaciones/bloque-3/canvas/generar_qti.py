@@ -18,7 +18,7 @@ try:
     from txttoqti import TxtToQtiConverter
 except ImportError as e:
     print("❌ Error: No se puede importar la librería txttoqti.")
-    print("   Instala con: uv add git+https://github.com/julihocc/txttoqti.git@main")
+    print("   Instala con: pip install txttoqti>=0.2.0")
     print(f"   Error específico: {e}")
     sys.exit(1)
 

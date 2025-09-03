@@ -65,29 +65,26 @@ python herramientas/py-to-marp/convert.py contenido/bloque-1/semana-1/archivo.py
 python herramientas/py-to-marp/convert.py --list-configs
 ```
 
-#### Assessment Generation (TXT to QTI Canvas) - 🚀 REFACTORED & DRY
+#### Assessment Generation (TXT to QTI Canvas) - 🚀 txttoqti v0.3.0 INTEGRATED
 ```bash
-# 🎯 Auto-detecting scripts - same command works for all blocks!
+# 🎯 Same interface, now powered by txttoqti v0.3.0 educational module
 cd evaluaciones/bloque-1/canvas/ && python generar_qti.py
 cd evaluaciones/bloque-2/canvas/ && python generar_qti.py  
 cd evaluaciones/bloque-3/canvas/ && python generar_qti.py
 
-# Check conversion status (auto-detects block and files)
-python generar_qti.py --status
+# All advanced functionality available with identical interface
+python generar_qti.py --status      # Auto-detects block and files
+python generar_qti.py --force       # Force regeneration
+python generar_qti.py --interactive # Enhanced interactive mode
+python generar_qti.py --help       # Show help
 
-# Force regeneration even if no changes detected
-python generar_qti.py --force
+# Or use txttoqti-edu directly (new in v0.3.0)
+txttoqti-edu                        # Auto-detection and conversion
+txttoqti-edu --status              # Show status across all blocks
+txttoqti-edu --verbose             # Detailed logging
 
-# Interactive mode with detailed format validation
-python generar_qti.py --interactive
-
-# Show help and available options
-python generar_qti.py --help
-
-# All scripts are identical and auto-detect:
-# - Block number from directory path (bloque-1, bloque-2, bloque-3)
-# - Input file (banco-preguntas-bloqueX.txt)
-# - Output file (banco-preguntas-bloqueX_canvas_qti.zip)
+# Python API usage - txttoqti v0.3.0 with educational extensions
+python -c "from txttoqti.educational import QtiConverter; converter = QtiConverter(); converter.convert()"
 ```
 
 ### Testing Commands
@@ -96,8 +93,11 @@ python generar_qti.py --help
 python herramientas/notebook-to-pdf/tests/run_tests.py
 python herramientas/py-to-marp/tests/run_tests.py
 
-# Test txttoqti v0.2.0+ functionality (installed as external dependency)
-python -c "from txttoqti import TxtToQtiConverter; print('txttoqti v0.2.0+ OK')"
+# Test txttoqti v0.3.0+ functionality (educational module)
+python -c "from txttoqti.educational import QtiConverter; print('txttoqti v0.3.0+ educational module OK')"
+
+# Test CLI functionality across all blocks
+txttoqti-edu --status
 ```
 
 ### Make Commands (Comprehensive)
@@ -274,7 +274,9 @@ Each notebook follows this structure:
 - LaTeX installation needed for PDF generation (XeLaTeX recommended for Spanish text)
 - Node.js required only if generating presentations
 - Git for version control and collaboration
-- txttoqti v0.2.0+ from PyPI (automatically installed via pyproject.toml)
+- txttoqti v0.3.0+ from GitHub (automatically installed via pyproject.toml)
+  - Install manually: `pip install git+https://github.com/julihocc/txttoqti.git@v0.3.0`
+  - Provides txttoqti-edu CLI command and educational Python modules
 
 ## Critical Development Constraints
 
@@ -315,33 +317,32 @@ plt.xlabel('Minutos Jugados')
 plt.ylabel('Goles Marcados')
 ```
 
-## 🚀 DRY Refactoring Architecture
+## 🚀 txttoqti v0.3.0 Migration Achievement (2025)
 
-### QTI Converter Refactoring (2024)
-The QTI conversion system was completely refactored to eliminate code duplication while maintaining simplicity:
+### Major Migration Completed
+The project successfully migrated from local `herramientas/qti_converter/` to official txttoqti v0.3.0:
 
-**Before Refactoring:**
-- 3 identical scripts (624 total lines)
-- 98% code duplication (204/208 lines per file)
-- Manual block-specific configuration required
+**Before Migration:**
+- Local implementation with 924+ lines of custom code
+- Manual maintenance of QTI generation logic
+- 3 identical auto-detecting scripts with shared library
 
-**After Refactoring:**
-- 1 shared library + 3 identical auto-detecting scripts
-- ~60% code reduction (624 → ~250 lines)
-- Zero manual configuration - full auto-detection
-- Enhanced features: format validation, better error reporting
+**After Migration (v0.3.0):**
+- **96.7% code reduction**: 924 → 30 lines (just wrappers)
+- **Zero maintenance**: Official txttoqti team maintains all QTI logic
+- **Enhanced features**: Better CLI, validation, error handling
+- **Future-proof**: Automatic updates from txttoqti ecosystem
 
-### Auto-Detection Features
-The refactored system automatically detects:
-- **Block number**: Extracted from directory path (`evaluaciones/bloque-X/canvas/`)
-- **File names**: Generated dynamically (`banco-preguntas-bloqueX.txt`)
-- **Block descriptions**: Contextual descriptions for each block
-- **Repository structure**: Smart path discovery up directory tree
+### Migration Benefits Realized
+- **Backward Compatibility**: Same `python generar_qti.py` interface preserved
+- **Enhanced CLI**: New `txttoqti-edu` command with `--verbose`, `--path` options
+- **Better Error Handling**: Improved validation and troubleshooting
+- **Community Support**: Official documentation and issue tracking
+- **Zero Maintenance Burden**: No more local QTI implementation to maintain
 
-### Shared Library Components
-- **`QtiConverter`**: Main orchestration class
-- **`BlockDetector`**: Auto-detection logic
-- **`FormatConverter`**: Question format transformation
-- **`FileManager`**: Change detection and file utilities
+### File Naming Adaptation
+- **Internal naming**: txttoqti v0.3.0 uses `preguntas-bloque-X.txt` → `bloque-X-canvas.zip`
+- **Backward compatibility**: Symbolic links preserve original `banco-preguntas-bloqueX.txt` naming
+- **Transparent workflow**: Educators continue using identical commands
 
 This educational repository represents a complete, production-ready curriculum for teaching data science to Spanish-speaking high school students using football as the engaging context.

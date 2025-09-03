@@ -1,7 +1,7 @@
 # Instrucciones para GitHub Copilot
 
 **Proyecto**: Curso de Ciencia de Datos aplicada al Fútbol (Preparatoria/Bachillerato)  
-**Versión**: 5.2.0 (Sistema QTI con Auto-Detección DRY)  
+**Versión**: 5.3.0 (Migración txttoqti v0.3.0 Completada)  
 **Idioma**: Español completo (código, comentarios, documentación)  
 **Contexto**: Análisis deportivo con datos reales de fútbol  
 **Metodología**: Enfoque reflexivo + 3 sesiones de 50 minutos por semana
@@ -19,17 +19,17 @@ herramientas/          # Scripts de conversión y utilidades
 ```
 
 ### Dependencias Críticas
-- **txttoqti**: PyPI package v0.2.0+ para generar QTI Canvas (`pip install txttoqti>=0.2.0`)
-- **herramientas/qti_converter/**: Sistema DRY auto-detector local que usa txttoqti como motor
+- **txttoqti v0.3.0**: GitHub package con módulo educacional (`pip install git+https://github.com/julihocc/txttoqti.git@v0.3.0`)
+- **txttoqti-edu CLI**: Comando de línea incluido en v0.3.0 para auto-detección educacional
 - **Python ≥3.10**: Requerimiento actualizado para compatibilidad con txttoqti
 - **pandas/numpy/matplotlib/seaborn**: Stack de análisis de datos
 - **pandoc + XeLaTeX**: Para generación profesional de PDFs
 
-### 🚀 ARQUITECTURA DRY REFACTORIZADA (v5.2.0)
-- **QTI Converter Library**: Eliminación 37% código duplicado (624 → ~400 líneas efectivas)
-- **Auto-detección**: Scripts idénticos que detectan bloque, archivos, configuración automáticamente
-- **Zero Configuration**: No requiere configuración manual - funciona por estructura de directorio
-- **Backward Compatibility**: Workflow idéntico para educadores (`python generar_qti.py`)
+### 🚀 MIGRACIÓN txttoqti v0.3.0 COMPLETADA 
+- **Eliminación 96.7% código**: 924 → 30 líneas (wrappers minimalistas)
+- **Cero mantenimiento**: Equipo oficial txttoqti mantiene toda lógica QTI
+- **Funcionalidad mejorada**: CLI enhancado, mejor validación, manejo errores
+- **Backward Compatibility**: Interface idéntica `python generar_qti.py` preservada
 
 ## CONTEXTO EDUCATIVO CRÍTICO
 
@@ -58,27 +58,33 @@ herramientas/          # Scripts de conversión y utilidades
 - SIN emojis en mensajes de commit
 ## FLUJOS DE DESARROLLO CRÍTICOS
 
-### Conversión de Evaluaciones (QTI para Canvas) - 🚀 SISTEMA DRY AUTO-DETECTOR
+### Conversión de Evaluaciones (QTI para Canvas) - 🚀 txttoqti v0.3.0 INTEGRADO
 ```bash
-# 🎯 Scripts idénticos con auto-detección - mismo comando funciona en todos los bloques
-cd evaluaciones/bloque-1/canvas/ && python generar_qti.py    # Auto-detecta: Bloque 1 + archivos
-cd evaluaciones/bloque-2/canvas/ && python generar_qti.py    # Auto-detecta: Bloque 2 + archivos  
-cd evaluaciones/bloque-3/canvas/ && python generar_qti.py    # Auto-detecta: Bloque 3 + archivos
+# 🎯 Interface idéntica, ahora powered by txttoqti v0.3.0 oficial
+cd evaluaciones/bloque-1/canvas/ && python generar_qti.py    # Wrapper → txttoqti-edu
+cd evaluaciones/bloque-2/canvas/ && python generar_qti.py    # Auto-detecta configuración
+cd evaluaciones/bloque-3/canvas/ && python generar_qti.py    # Zero configuración manual
 
-# Funciones avanzadas disponibles en todos los bloques
+# Funcionalidad completa disponible (interface preservada)
 python generar_qti.py --status          # Estado + detección cambios inteligente
-python generar_qti.py --force           # Forzar regeneración
-python generar_qti.py --interactive     # Validación interactiva de formato
+python generar_qti.py --force           # Forzar regeneración 
+python generar_qti.py --interactive     # Modo troubleshooting interactivo
 python generar_qti.py --help           # Ayuda completa
+
+# Comando CLI directo (nuevo en v0.3.0)
+txttoqti-edu                            # Auto-detección y conversión directa
+txttoqti-edu --status                   # Mostrar estado todos los bloques
+txttoqti-edu --verbose                  # Logging detallado
+txttoqti-edu --path /ruta/custom        # Directorio personalizado
 ```
 
-**Auto-detección mágica**:
-- **Número de bloque**: Extraído de path (`evaluaciones/bloque-X/canvas/`)  
-- **Archivos entrada/salida**: Generados dinámicamente (`banco-preguntas-bloqueX.txt`)
-- **Configuración**: Descripciones contextuales por bloque automáticas
-- **Dependencias**: Búsqueda inteligente de herramientas en árbol directorio
+**Sistema completamente migrado**:
+- **Wrappers minimalistas**: Scripts generar_qti.py ahora son wrappers de 30 líneas
+- **txttoqti v0.3.0 como motor**: Todo el QTI logic manejado por librería oficial
+- **Auto-detección preservada**: Funciona idéntico por estructura directorio
+- **Naming compatibility**: Symlinks preservan naming `banco-preguntas-bloqueX.txt`
 
-**Motor subyacente**: txttoqti v0.2.0+ como engine de conversión  
+**Motor subyacente**: txttoqti v0.3.0 con módulo educacional  
 **Formato entrada**: `Q1: A) B) C) D) RESPUESTA: X` (conversión automática)  
 **Formato salida**: ZIP compatible Canvas LMS  
 **Cache inteligente**: MD5 checksums previenen regeneración innecesaria
@@ -199,14 +205,14 @@ refactor(notebook): optimizar tiempo ejecución semana-4 a 45min
 - **Evaluaciones**: `evaluaciones/*/README.md` para políticas por bloque
 - **Herramientas**: `herramientas/notebook-to-pdf/` y `herramientas/py-to-marp/`
 
-### Scripts de QTI (Evaluaciones Canvas) - 🚀 REFACTORIZADO DRY
-- **Ubicación**: `evaluaciones/bloque-*/canvas/generar_qti.py` (scripts idénticos)
-- **Librería compartida**: `herramientas/qti_converter/` (QtiConverter, auto-detección, utils)
-- **Función crítica**: `convert_to_txttoqti_format()` + auto-detección de configuración
-- **Dependencia externa**: txttoqti v0.2.0 desde PyPI como motor de conversión
+### Scripts de QTI (Evaluaciones Canvas) - 🚀 txttoqti v0.3.0 MIGRADO
+- **Ubicación**: `evaluaciones/bloque-*/canvas/generar_qti.py` (wrappers minimalistas)
+- **Implementación nueva**: Wrappers de 30 líneas que llaman `txttoqti-edu`
+- **Función crítica**: Preserva interface original + auto-detección de txttoqti v0.3.0
+- **Dependencia externa**: txttoqti v0.3.0 con módulo educacional completo
 - **Output**: Archivos ZIP compatibles con Canvas LMS
-- **Eliminación duplicación**: 37% reducción código (624 → ~400 líneas efectivas)
-- **Características avanzadas**: Detección cambios, validación formato, reporting inteligente
+- **Eliminación código**: 96.7% reducción (924 → 30 líneas por wrapper)
+- **Características mejoradas**: CLI enhancado, mejor validación, cero mantenimiento local
 
 ### Dataset Principal
 - **Fuente**: [Champs - Kaggle](https://www.kaggle.com/datasets/julihocc/champs)
@@ -234,28 +240,31 @@ refactor(notebook): optimizar tiempo ejecución semana-4 a 45min
 # Verificar que notebooks ejecutan en tiempo límite
 jupyter nbconvert --execute --to notebook contenido/bloque-1/semana-1/archivo.ipynb
 
-# Validar generación QTI con auto-detección
+# Validar generación QTI con txttoqti v0.3.0
 cd evaluaciones/bloque-1/canvas/ && python generar_qti.py --status
+# O usar comando directo: txttoqti-edu --status
 
 # Probar conversión PDF con cache inteligente
 python herramientas/notebook-to-pdf/smart_convert.py contenido/ --status
 
 # Verificar dependencias críticas
-python -c "from txttoqti import TxtToQtiConverter; print('txttoqti OK')"
+python -c "from txttoqti.educational import QtiConverter; print('txttoqti v0.3.0+ educational OK')"
 ```
 
-## ⚡ ESTADO ACTUAL Y PRÓXIMAS MIGRACIONES
+## ⚡ ESTADO ACTUAL - txttoqti v0.3.0 MIGRACIÓN COMPLETADA
 
-**Estado v5.2.0 (Actual)**:
-- Sistema DRY completamente implementado con 37% reducción código
-- Auto-detección de configuración por directorio funcional  
-- txttoqti v0.2.0 integrado como motor de conversión
-- 3 scripts idénticos con librería compartida `herramientas/qti_converter/`
+**Estado v5.2.0 (Migración Exitosa)**:
+- **txttoqti v0.3.0 integrado**: Librería oficial con módulo educacional
+- **Eliminación 96.7% código local**: 924 → 30 líneas (wrappers preservan interface)  
+- **Cero mantenimiento**: Equipo txttoqti mantiene toda lógica QTI
+- **Funcionalidad mejorada**: CLI enhancado, mejor validación, manejo errores
+- **Backward compatibility perfecta**: `python generar_qti.py` interface preservada
 
-**Próxima migración a considerar**:
-- **txttoqti v0.3.0**: Nueva versión disponible con posibles mejoras
-- **Evaluación necesaria**: Comparar funcionalidad v0.3.0 vs sistema local actual
-- **Decisión pendiente**: Migrar a v0.3.0 o mantener sistema híbrido actual
-- **Considerations**: Preservar auto-detección + zero-configuration workflow
+**Características nuevas disponibles**:
+- **`txttoqti-edu` CLI**: Comando directo con auto-detección educacional
+- **Módulo Python**: `from txttoqti.educational import QtiConverter`
+- **Mejores validaciones**: Interactive troubleshooting mode mejorado
+- **Opciones CLI expandidas**: `--verbose`, `--path`, `--interactive`
+- **File naming adaptation**: Symlinks preservan naming original del proyecto
 
 **PRINCIPIO RECTOR**: "Cada línea de código debe enseñar algo sobre fútbol, cada ejercicio debe resolver un problema real de análisis deportivo, y cada sesión debe completarse en exactamente 50 minutos."

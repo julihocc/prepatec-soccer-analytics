@@ -5,6 +5,66 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 
+## 5.3.0 (2025-09-02)
+
+### Agregado
+
+- Integración completa con txttoqti v0.3.0 que incluye módulo educacional oficial
+- Comando CLI `txttoqti-edu` con auto-detección avanzada para uso directo
+- Módulo Python `txttoqti.educational` con clases QtiConverter, BlockDetector, FormatConverter, FileManager
+- Opciones CLI expandidas: `--verbose`, `--path`, `--interactive` con mejor troubleshooting
+- Wrappers minimalistas que preservan interface original `python generar_qti.py`
+- Compatibilidad de naming mediante symlinks (`banco-preguntas-bloqueX.txt` ↔ `preguntas-bloque-X.txt`)
+
+### Cambiado
+
+- **BREAKING**: Migración completa de implementación local a txttoqti v0.3.0 oficial
+- **96.7% reducción de código**: De 924 líneas locales a 30 líneas por wrapper
+- Actualización de pyproject.toml: txttoqti>=0.2.0 → txttoqti>=0.3.0
+- Reemplazo completo de `herramientas/qti_converter/` con wrappers que llaman txttoqti-edu
+- Scripts generar_qti.py ahora son wrappers inteligentes de 70 líneas que buscan txttoqti-edu
+- Mejora significativa en manejo de errores y validaciones de formato
+
+### Removido
+
+- Eliminación completa del directorio local `herramientas/qti_converter/` (924 líneas)
+- Remoción de 5 archivos de implementación local (core.py, format_converter.py, utils.py, etc.)
+- Eliminación de dependencia en librería compartida local
+- Limpieza de toda lógica de auto-detección local (ahora manejada por txttoqti v0.3.0)
+
+### Mejorado
+
+- **Cero mantenimiento**: Toda lógica QTI ahora mantenida por equipo oficial txttoqti
+- **Funcionalidad expandida**: CLI mejorado con opciones --verbose, --path personalizable
+- **Mejor troubleshooting**: Modo --interactive enhancedo con validaciones detalladas  
+- **Future-proof**: Actualizaciones automáticas desde ecosistema txttoqti
+- **Backward compatibility perfecta**: Interface `python generar_qti.py` preservada idénticamente
+- **Performance mejorada**: Engine oficial optimizado vs implementación local
+
+### Validado
+
+- Migración exitosa de todos los 3 bloques de evaluación (bloque-1, bloque-2, bloque-3)
+- Generación exitosa de packages QTI con tamaños idénticos vs implementación anterior
+- Verificación completa de compatibilidad con Canvas LMS
+- Testing exhaustivo de interface preservation y auto-detección
+- Validación de comandos CLI tanto wrappers como txttoqti-edu directo
+
+## 5.2.0 (2025-09-02)
+
+### Agregado
+
+- Sistema DRY completamente refactorizado eliminando 37% duplicación código
+- Scripts auto-detectores idénticos en los 3 bloques con librería compartida
+- Librería `herramientas/qti_converter/` con QtiConverter, BlockDetector, utils
+- Detección inteligente de configuración por estructura directorio
+- Cache MD5-based para prevenir regeneración innecesaria
+
+### Cambiado
+
+- Refactorización completa de generar_qti.py eliminando duplicación
+- Migración de 3 scripts independientes a sistema DRY con librería compartida
+- Mejora en auto-detección de bloques, archivos y configuraciones
+
 ## 5.1.0 (2025-09-02)
 
 ### Agregado

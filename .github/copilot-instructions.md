@@ -1,10 +1,11 @@
 # Instrucciones para GitHub Copilot
 
 **Proyecto**: Curso de Ciencia de Datos aplicada al Fútbol (Preparatoria/Bachillerato)  
+**Versión**: 5.2.0 (Sistema QTI con Auto-Detección DRY)  
 **Idioma**: Español completo (código, comentarios, documentación)  
 **Contexto**: Análisis deportivo con datos reales de fútbol  
 **Metodología**: Enfoque reflexivo + 3 sesiones de 50 minutos por semana
-**Stack**: Python + Jupyter + txttoqti + herramientas de conversión
+**Stack**: Python + Jupyter + txttoqti + DRY herramientas de conversión
 
 ## ARQUITECTURA DEL PROYECTO
 
@@ -18,10 +19,17 @@ herramientas/          # Scripts de conversión y utilidades
 ```
 
 ### Dependencias Críticas
-- **txttoqti**: GitHub package para generar QTI Canvas (`uv add git+https://github.com/julihocc/txttoqti.git@main`)
+- **txttoqti**: PyPI package v0.2.0+ para generar QTI Canvas (`pip install txttoqti>=0.2.0`)
+- **herramientas/qti_converter/**: Sistema DRY auto-detector local que usa txttoqti como motor
 - **Python ≥3.10**: Requerimiento actualizado para compatibilidad con txttoqti
 - **pandas/numpy/matplotlib/seaborn**: Stack de análisis de datos
 - **pandoc + XeLaTeX**: Para generación profesional de PDFs
+
+### 🚀 ARQUITECTURA DRY REFACTORIZADA (v5.2.0)
+- **QTI Converter Library**: Eliminación 37% código duplicado (624 → ~400 líneas efectivas)
+- **Auto-detección**: Scripts idénticos que detectan bloque, archivos, configuración automáticamente
+- **Zero Configuration**: No requiere configuración manual - funciona por estructura de directorio
+- **Backward Compatibility**: Workflow idéntico para educadores (`python generar_qti.py`)
 
 ## CONTEXTO EDUCATIVO CRÍTICO
 
@@ -50,15 +58,30 @@ herramientas/          # Scripts de conversión y utilidades
 - SIN emojis en mensajes de commit
 ## FLUJOS DE DESARROLLO CRÍTICOS
 
-### Conversión de Evaluaciones (QTI para Canvas)
+### Conversión de Evaluaciones (QTI para Canvas) - 🚀 SISTEMA DRY AUTO-DETECTOR
 ```bash
-# En cada carpeta evaluaciones/bloque-X/canvas/
-python generar_qti.py                    # Genera QTI automáticamente
-python generar_qti.py --status          # Verifica estado de archivos
+# 🎯 Scripts idénticos con auto-detección - mismo comando funciona en todos los bloques
+cd evaluaciones/bloque-1/canvas/ && python generar_qti.py    # Auto-detecta: Bloque 1 + archivos
+cd evaluaciones/bloque-2/canvas/ && python generar_qti.py    # Auto-detecta: Bloque 2 + archivos  
+cd evaluaciones/bloque-3/canvas/ && python generar_qti.py    # Auto-detecta: Bloque 3 + archivos
+
+# Funciones avanzadas disponibles en todos los bloques
+python generar_qti.py --status          # Estado + detección cambios inteligente
+python generar_qti.py --force           # Forzar regeneración
+python generar_qti.py --interactive     # Validación interactiva de formato
+python generar_qti.py --help           # Ayuda completa
 ```
-**Formato de entrada**: `Q1: A) B) C) D) RESPUESTA: X`  
-**Formato de salida**: ZIP compatible con Canvas LMS  
-**Conversión automática**: Script embebido convierte formato interno a txttoqti
+
+**Auto-detección mágica**:
+- **Número de bloque**: Extraído de path (`evaluaciones/bloque-X/canvas/`)  
+- **Archivos entrada/salida**: Generados dinámicamente (`banco-preguntas-bloqueX.txt`)
+- **Configuración**: Descripciones contextuales por bloque automáticas
+- **Dependencias**: Búsqueda inteligente de herramientas en árbol directorio
+
+**Motor subyacente**: txttoqti v0.2.0+ como engine de conversión  
+**Formato entrada**: `Q1: A) B) C) D) RESPUESTA: X` (conversión automática)  
+**Formato salida**: ZIP compatible Canvas LMS  
+**Cache inteligente**: MD5 checksums previenen regeneración innecesaria
 
 ### Generación de PDFs Profesionales
 ```bash
@@ -176,11 +199,14 @@ refactor(notebook): optimizar tiempo ejecución semana-4 a 45min
 - **Evaluaciones**: `evaluaciones/*/README.md` para políticas por bloque
 - **Herramientas**: `herramientas/notebook-to-pdf/` y `herramientas/py-to-marp/`
 
-### Scripts de QTI (Evaluaciones Canvas)
-- **Ubicación**: `evaluaciones/bloque-*/canvas/generar_qti.py`
-- **Función crítica**: `convert_to_txttoqti_format()` - convierte formato interno
-- **Dependencia externa**: txttoqti v0.2.0 desde GitHub main branch
+### Scripts de QTI (Evaluaciones Canvas) - 🚀 REFACTORIZADO DRY
+- **Ubicación**: `evaluaciones/bloque-*/canvas/generar_qti.py` (scripts idénticos)
+- **Librería compartida**: `herramientas/qti_converter/` (QtiConverter, auto-detección, utils)
+- **Función crítica**: `convert_to_txttoqti_format()` + auto-detección de configuración
+- **Dependencia externa**: txttoqti v0.2.0 desde PyPI como motor de conversión
 - **Output**: Archivos ZIP compatibles con Canvas LMS
+- **Eliminación duplicación**: 37% reducción código (624 → ~400 líneas efectivas)
+- **Características avanzadas**: Detección cambios, validación formato, reporting inteligente
 
 ### Dataset Principal
 - **Fuente**: [Champs - Kaggle](https://www.kaggle.com/datasets/julihocc/champs)
@@ -208,7 +234,7 @@ refactor(notebook): optimizar tiempo ejecución semana-4 a 45min
 # Verificar que notebooks ejecutan en tiempo límite
 jupyter nbconvert --execute --to notebook contenido/bloque-1/semana-1/archivo.ipynb
 
-# Validar generación QTI
+# Validar generación QTI con auto-detección
 cd evaluaciones/bloque-1/canvas/ && python generar_qti.py --status
 
 # Probar conversión PDF con cache inteligente
@@ -217,5 +243,19 @@ python herramientas/notebook-to-pdf/smart_convert.py contenido/ --status
 # Verificar dependencias críticas
 python -c "from txttoqti import TxtToQtiConverter; print('txttoqti OK')"
 ```
+
+## ⚡ ESTADO ACTUAL Y PRÓXIMAS MIGRACIONES
+
+**Estado v5.2.0 (Actual)**:
+- Sistema DRY completamente implementado con 37% reducción código
+- Auto-detección de configuración por directorio funcional  
+- txttoqti v0.2.0 integrado como motor de conversión
+- 3 scripts idénticos con librería compartida `herramientas/qti_converter/`
+
+**Próxima migración a considerar**:
+- **txttoqti v0.3.0**: Nueva versión disponible con posibles mejoras
+- **Evaluación necesaria**: Comparar funcionalidad v0.3.0 vs sistema local actual
+- **Decisión pendiente**: Migrar a v0.3.0 o mantener sistema híbrido actual
+- **Considerations**: Preservar auto-detección + zero-configuration workflow
 
 **PRINCIPIO RECTOR**: "Cada línea de código debe enseñar algo sobre fútbol, cada ejercicio debe resolver un problema real de análisis deportivo, y cada sesión debe completarse en exactamente 50 minutos."

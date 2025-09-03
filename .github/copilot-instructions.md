@@ -1,29 +1,56 @@
 # Instrucciones para GitHub Copilot
 
 **Proyecto**: Curso de Ciencia de Datos aplicada al Fútbol (Preparatoria/Bachillerato)  
-**Versión**: 5.3.0 (Migración txttoqti v0.3.0 Completada)  
+**Versión**: 5.4.0+ (Arquitectura Modular Completada)  
+**Branch Actual**: `splitting-evalua### Scripts QTI (Evaluaciones Canvas) - txttoqti Ext## ⚡ ESTADO ACTUAL - txttoqti v0.3.0 MIGRACIÓN COMPLETADA
+
+**Estado v5.2.0 (Migración Exitosa)**:
+- **txttoqti v0.3.0 integrado**: Librería oficial con módulo educacional
+- **Eliminación 96.7% código local**: 924 → 30 líneas (wrappers preservan interface)  
+- **Cero mantenimiento**: Equipo txttoqti mantiene toda lógica QTI
+- **Funcionalidad mejorada**: CLI enhancido, mejor validación, manejo errores
+- **Backward compatibility perfecta**: `python generar_qti.py` interface preservada
+
+**Características nuevas disponibles**:
+- **`txttoqti-edu` CLI**: Comando directo con auto-detección educacional
+- **Módulo Python**: `from txttoqti.educational import QtiConverter`
+- **Mejores validaciones**: Interactive troubleshooting mode mejorado
+- **Opciones CLI expandidas**: `--verbose`, `--path`, `--interactive`
+- **File naming adaptation**: Symlinks preservan naming original del proyectoión**: `evaluaciones/bloque-*/canvas/generar_qti.py` (submodule privado)
+- **Implementación**: Wrappers que detectan y llaman txttoqti externo
+- **Dependencia externa**: `pip install git+https://github.com/julihocc/txttoqti.git`
+- **Repositorio txttoqti**: Motor QTI completamente independiente y mantenido externamente
+- **Output**: Archivos ZIP compatibles con Canvas LMS
+- **Submodule privado**: Evaluaciones en repositorio separado por seguridad académicacerns`  
 **Idioma**: Español completo (código, comentarios, documentación)  
 **Contexto**: Análisis deportivo con datos reales de fútbol  
 **Metodología**: Enfoque reflexivo + 3 sesiones de 50 minutos por semana
-**Stack**: Python + Jupyter + txttoqti + DRY herramientas de conversión
+**Stack**: Python + Jupyter + txttoqti (externa) + herramientas modulares
 
-## ARQUITECTURA DEL PROYECTO
+## ARQUITECTURA MODULAR (v5.4.0+)
 
-### Estructura Principal
+### Repositorios Separados
+- **Principal**: `prepatec-soccer-analytics` - Contenido educativo y herramientas
+- **Evaluaciones**: Submodule privado con bancos de preguntas y Canvas QTI
+- **txttoqti**: Repositorio externo `github.com/julihocc/txttoqti` - Motor QTI independiente
+
+### Estructura del Repositorio Principal
 ```
 contenido/              # Material educativo por semana (3 bloques × 5 semanas)
-evaluaciones/           # Sistema completo de evaluación con Canvas QTI
-herramientas/          # Scripts de conversión y utilidades
+evaluaciones/          # SUBMODULE PRIVADO - Sistema evaluativo completo
+herramientas/          # Scripts de conversión y utilidades independientes
 ├── notebook-to-pdf/   # Conversión profesional de notebooks
 └── py-to-marp/       # Presentaciones desde código Python
+referencias/           # Material de apoyo y documentación
+temario/              # Syllabus y planificación académica
 ```
 
-### Dependencias Críticas
-- **txttoqti v0.3.0**: GitHub package con módulo educacional (`pip install git+https://github.com/julihocc/txttoqti.git@v0.3.0`)
-- **txttoqti-edu CLI**: Comando de línea incluido en v0.3.0 para auto-detección educacional
-- **Python ≥3.10**: Requerimiento actualizado para compatibilidad con txttoqti
+### Dependencias Críticas Actuales
+- **txttoqti**: Repositorio externo independiente (`pip install git+https://github.com/julihocc/txttoqti.git`)
+- **Python ≥3.10**: Requerimiento para compatibilidad completa
 - **pandas/numpy/matplotlib/seaborn**: Stack de análisis de datos
 - **pandoc + XeLaTeX**: Para generación profesional de PDFs
+- **Jupyter**: Entorno de desarrollo interactivo
 
 ### 🚀 MIGRACIÓN txttoqti v0.3.0 COMPLETADA 
 - **Eliminación 96.7% código**: 924 → 30 líneas (wrappers minimalistas)
@@ -56,38 +83,41 @@ herramientas/          # Scripts de conversión y utilidades
 - SIN emojis en comentarios o strings
 - SIN emojis en print statements
 - SIN emojis en mensajes de commit
-## FLUJOS DE DESARROLLO CRÍTICOS
+## FLUJOS DE DESARROLLO ACTUALES
 
-### Conversión de Evaluaciones (QTI para Canvas) - 🚀 txttoqti v0.3.0 INTEGRADO
+### Gestión de Submodules
 ```bash
-# 🎯 Interface idéntica, ahora powered by txttoqti v0.3.0 oficial
-cd evaluaciones/bloque-1/canvas/ && python generar_qti.py    # Wrapper → txttoqti-edu
-cd evaluaciones/bloque-2/canvas/ && python generar_qti.py    # Auto-detecta configuración
-cd evaluaciones/bloque-3/canvas/ && python generar_qti.py    # Zero configuración manual
+# Inicializar submodules tras clonar repositorio
+git submodule update --init --recursive
 
-# Funcionalidad completa disponible (interface preservada)
-python generar_qti.py --status          # Estado + detección cambios inteligente
-python generar_qti.py --force           # Forzar regeneración 
-python generar_qti.py --interactive     # Modo troubleshooting interactivo
-python generar_qti.py --help           # Ayuda completa
+# Actualizar submodule de evaluaciones (solo con permisos)
+cd evaluaciones && git pull origin master && cd ..
+git add evaluaciones && git commit -m "docs: update evaluaciones submodule"
 
-# Comando CLI directo (nuevo en v0.3.0)
-txttoqti-edu                            # Auto-detección y conversión directa
-txttoqti-edu --status                   # Mostrar estado todos los bloques
-txttoqti-edu --verbose                  # Logging detallado
-txttoqti-edu --path /ruta/custom        # Directorio personalizado
+# Verificar estado submodules
+git submodule status
 ```
 
-**Sistema completamente migrado**:
-- **Wrappers minimalistas**: Scripts generar_qti.py ahora son wrappers de 30 líneas
-- **txttoqti v0.3.0 como motor**: Todo el QTI logic manejado por librería oficial
-- **Auto-detección preservada**: Funciona idéntico por estructura directorio
-- **Naming compatibility**: Symlinks preservan naming `banco-preguntas-bloqueX.txt`
+### Conversión QTI (Canvas) - txttoqti Externo
+```bash
+# Instalar txttoqti desde repositorio externo
+pip install git+https://github.com/julihocc/txttoqti.git
 
-**Motor subyacente**: txttoqti v0.3.0 con módulo educacional  
-**Formato entrada**: `Q1: A) B) C) D) RESPUESTA: X` (conversión automática)  
-**Formato salida**: ZIP compatible Canvas LMS  
-**Cache inteligente**: MD5 checksums previenen regeneración innecesaria
+# Usar wrappers en evaluaciones/ (si tienes acceso al submodule)
+cd evaluaciones/bloque-1/canvas/ && python generar_qti.py
+cd evaluaciones/bloque-2/canvas/ && python generar_qti.py
+cd evaluaciones/bloque-3/canvas/ && python generar_qti.py
+
+# Comando directo txttoqti (si está instalado globalmente)
+txttoqti-edu --path evaluaciones/ --status
+txttoqti-edu --path evaluaciones/bloque-1/canvas/
+```
+
+**Arquitectura actual**:
+- **Wrappers minimalistas**: Scripts generar_qti.py son interfaces de 90 líneas
+- **txttoqti independiente**: Motor QTI manejado por repositorio externo
+- **Submodule evaluaciones**: Contenido evaluativo en repositorio privado separado
+- **Zero local maintenance**: Toda lógica QTI en repositorio txttoqti oficial
 
 ### Generación de PDFs Profesionales
 ```bash
@@ -240,15 +270,15 @@ refactor(notebook): optimizar tiempo ejecución semana-4 a 45min
 # Verificar que notebooks ejecutan en tiempo límite
 jupyter nbconvert --execute --to notebook contenido/bloque-1/semana-1/archivo.ipynb
 
-# Validar generación QTI con txttoqti v0.3.0
+# Validar generación QTI (requiere acceso al submodule evaluaciones)
 cd evaluaciones/bloque-1/canvas/ && python generar_qti.py --status
-# O usar comando directo: txttoqti-edu --status
+# O instalar txttoqti directamente: pip install git+https://github.com/julihocc/txttoqti.git
 
 # Probar conversión PDF con cache inteligente
 python herramientas/notebook-to-pdf/smart_convert.py contenido/ --status
 
 # Verificar dependencias críticas
-python -c "from txttoqti.educational import QtiConverter; print('txttoqti v0.3.0+ educational OK')"
+python -c "import txttoqti; print('txttoqti externo OK')"
 ```
 
 ## ⚡ ESTADO ACTUAL - txttoqti v0.3.0 MIGRACIÓN COMPLETADA

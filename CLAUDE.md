@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is an educational project called "Ciencia de Datos Aplicada al Fútbol" (Data Science Applied to Football) for high school students (15-18 years old) at Tecnológico de Monterrey. It's a 15-week course teaching Python programming fundamentals, data exploration, and basic predictive modeling using football/soccer datasets and contexts.
+This is an educational project called "PS5005 Programación Básica 1 - Ciencia de Datos Aplicada al Fútbol" (Data Science Applied to Football) for high school students (15-18 years old) at Prepa Tec. It's a 15-week course teaching Python programming fundamentals, data exploration, and basic predictive modeling using football/soccer datasets and contexts.
 
 The course uses Socratic methodology with football analogies to make data science concepts accessible to preparatoria students.
 

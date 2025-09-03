@@ -1,7 +1,11 @@
-# Ciencia de Datos Aplicada al Fútbol - Curso de Preparatoria
+# PS5005 Programación Básica 1 - Ciencia de Datos Aplicada al Fútbol
 
 ## Información del Curso
 
+**Unidad de Formación:** PS5005 Programación Básica 1  
+**Institución:** Prepa Tec  
+**Autor:** Juliho Castillo Colmenares  
+**Email:** julihocc@tec.mx  
 **Versión:** 5.0.0  
 **Nivel:** Preparatoria/Bachillerato (15-18 años)  
 **Duración:** 15 semanas (3 bloques de 5 semanas cada uno)  
@@ -353,7 +357,7 @@ pip install -r requirements.txt
 ### Resumen: Nueva Estructura de Evaluación
 
 **Fecha de implementación:** Semestre actual  
-**Alineación:** Estándares Tecnológico de Monterrey  
+**Alineación:** Estándares Prepa Tec  
 **Modalidad:** Competencias y proyectos colaborativos
 
 ---

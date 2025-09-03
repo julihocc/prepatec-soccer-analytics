@@ -1,7 +1,8 @@
 # Manifiesto del Uso de Inteligencia Artificial en Educación
-## Proyecto: Ciencia de Datos Aplicada al Fútbol
+## PS5005 Programación Básica 1 - Ciencia de Datos Aplicada al Fútbol
 
-**Institución:** Tecnológico de Monterrey  
+**Institución:** Prepa Tec  
+**Unidad de Formación:** PS5005 Programación Básica 1  
 **Nivel:** Preparatoria (15-18 años)  
 **Versión:** v1.1 (Septiembre 2025) - Actualizado con Arquitectura Modular v5.4.0+  
 **Branch Actual:** `splitting-evaluation-concerns`  
@@ -327,7 +328,7 @@ En este proyecto educativo, **toda aplicación de IA está subordinada al objeti
 
 ### Contacto Académico
 - **Autor**: Juliho Castillo Colmenares
-- **Institución**: Tecnológico de Monterrey
+- **Institución**: Prepa Tec
 - **Email**: julihocc@tec.mx
 - **LinkedIn**: [Perfil académico]
 

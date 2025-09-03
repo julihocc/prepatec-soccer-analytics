@@ -1,6 +1,8 @@
 # Instrucciones para GitHub Copilot
 
-**Proyecto**: Curso de Ciencia de Datos aplicada al Fútbol (Preparatoria/Bachillerato)  
+**Proyecto**: PS5005 Programación Básica 1 - Ciencia de Datos aplicada al Fútbol  
+**Institución**: Prepa Tec  
+**Unidad de Formación**: PS5005 Programación Básica 1  
 **Versión**: 5.4.0+ (Arquitectura Modular Completada)  
 **Branch Actual**: `splitting-evaluation-concerns`  
 **Autor**: Juliho Castillo Colmenares  
@@ -287,6 +289,6 @@ python -c "import txttoqti; print('txttoqti externo OK')"
 ## INFORMACIÓN DEL AUTOR
 
 **Autor**: Juliho Castillo Colmenares  
-**Institución**: Tecnológico de Monterrey  
+**Institución**: Prepa Tec  
 **Email**: julihocc@tec.mx  
 **Repositorio**: https://github.com/julihocc/prepatec-soccer-analytics

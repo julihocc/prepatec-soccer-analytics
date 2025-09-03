@@ -1,0 +1,3 @@
+[submodule "evaluaciones"]
+	path = evaluaciones
+	url = https://github.com/julihocc/prepatec-soccer-analytics-evaluations.git

@@ -65,26 +65,32 @@ python herramientas/py-to-marp/convert.py contenido/bloque-1/semana-1/archivo.py
 python herramientas/py-to-marp/convert.py --list-configs
 ```
 
-#### Assessment Generation (TXT to QTI Canvas) - 🚀 txttoqti v0.3.0 INTEGRATED
+#### Assessment Generation (Private Submodule) - 🔒 Independent Repository
 ```bash
-# 🎯 Same interface, now powered by txttoqti v0.3.0 educational module
+# 🔒 Evaluaciones now in private repository: prepatec-soccer-analytics-evaluations
+# First-time setup: Initialize submodule and install dependencies
+git submodule update --init --recursive evaluaciones
+cd evaluaciones && pip install -e .
+
+# 🎯 New specialized CLI tools - unified interface for all evaluations
+eval-qti --status          # Global status of all blocks
+eval-qti --convert-all     # Mass conversion of all blocks
+eval-qti --path bloque-1   # Convert specific block
+eval-qti --force --verbose # Force regeneration with detailed output
+
+# Advanced evaluation tools
+eval-validate               # Validate format and content of all evaluations
+eval-validate --bloque bloque-2 --verbose  # Validate specific block with details
+eval-batch                 # Parallel batch conversion of all blocks
+eval-batch --sequential --force  # Sequential conversion with force
+
+# Legacy compatibility - individual block scripts still work
 cd evaluaciones/bloque-1/canvas/ && python generar_qti.py
 cd evaluaciones/bloque-2/canvas/ && python generar_qti.py  
 cd evaluaciones/bloque-3/canvas/ && python generar_qti.py
 
-# All advanced functionality available with identical interface
-python generar_qti.py --status      # Auto-detects block and files
-python generar_qti.py --force       # Force regeneration
-python generar_qti.py --interactive # Enhanced interactive mode
-python generar_qti.py --help       # Show help
-
-# Or use txttoqti-edu directly (new in v0.3.0)
-txttoqti-edu                        # Auto-detection and conversion
-txttoqti-edu --status              # Show status across all blocks
-txttoqti-edu --verbose             # Detailed logging
-
-# Python API usage - txttoqti v0.3.0 with educational extensions
-python -c "from txttoqti.educational import QtiConverter; converter = QtiConverter(); converter.convert()"
+# Update evaluaciones submodule to latest version
+git submodule update --remote evaluaciones
 ```
 
 ### Testing Commands
@@ -93,11 +99,13 @@ python -c "from txttoqti.educational import QtiConverter; converter = QtiConvert
 python herramientas/notebook-to-pdf/tests/run_tests.py
 python herramientas/py-to-marp/tests/run_tests.py
 
-# Test txttoqti v0.3.0+ functionality (educational module)
-python -c "from txttoqti.educational import QtiConverter; print('txttoqti v0.3.0+ educational module OK')"
+# Test evaluaciones private submodule functionality
+cd evaluaciones && eval-qti --status
+cd evaluaciones && eval-validate
+cd evaluaciones && python -c "from evaluaciones.cli import main; print('Evaluaciones CLI OK')"
 
-# Test CLI functionality across all blocks
-txttoqti-edu --status
+# Test txttoqti v0.3.0+ integration in evaluaciones
+cd evaluaciones && python -c "from txttoqti.educational import QtiConverter; print('txttoqti v0.3.0+ educational module OK')"
 ```
 
 ### Make Commands (Comprehensive)

@@ -2,26 +2,9 @@
 
 **Proyecto**: Curso de Ciencia de Datos aplicada al Fútbol (Preparatoria/Bachillerato)  
 **Versión**: 5.4.0+ (Arquitectura Modular Completada)  
-**Branch Actual**: `splitting-evalua### Scripts QTI (Evaluaciones Canvas) - txttoqti Ext## ⚡ ESTADO ACTUAL - txttoqti v0.3.0 MIGRACIÓN COMPLETADA
-
-**Estado v5.2.0 (Migración Exitosa)**:
-- **txttoqti v0.3.0 integrado**: Librería oficial con módulo educacional
-- **Eliminación 96.7% código local**: 924 → 30 líneas (wrappers preservan interface)  
-- **Cero mantenimiento**: Equipo txttoqti mantiene toda lógica QTI
-- **Funcionalidad mejorada**: CLI enhancido, mejor validación, manejo errores
-- **Backward compatibility perfecta**: `python generar_qti.py` interface preservada
-
-**Características nuevas disponibles**:
-- **`txttoqti-edu` CLI**: Comando directo con auto-detección educacional
-- **Módulo Python**: `from txttoqti.educational import QtiConverter`
-- **Mejores validaciones**: Interactive troubleshooting mode mejorado
-- **Opciones CLI expandidas**: `--verbose`, `--path`, `--interactive`
-- **File naming adaptation**: Symlinks preservan naming original del proyectoión**: `evaluaciones/bloque-*/canvas/generar_qti.py` (submodule privado)
-- **Implementación**: Wrappers que detectan y llaman txttoqti externo
-- **Dependencia externa**: `pip install git+https://github.com/julihocc/txttoqti.git`
-- **Repositorio txttoqti**: Motor QTI completamente independiente y mantenido externamente
-- **Output**: Archivos ZIP compatibles con Canvas LMS
-- **Submodule privado**: Evaluaciones en repositorio separado por seguridad académicacerns`  
+**Branch Actual**: `splitting-evaluation-concerns`  
+**Autor**: Juliho Castillo Colmenares  
+**Email**: julihocc@tec.mx  
 **Idioma**: Español completo (código, comentarios, documentación)  
 **Contexto**: Análisis deportivo con datos reales de fútbol  
 **Metodología**: Enfoque reflexivo + 3 sesiones de 50 minutos por semana
@@ -298,3 +281,12 @@ python -c "import txttoqti; print('txttoqti externo OK')"
 - **File naming adaptation**: Symlinks preservan naming original del proyecto
 
 **PRINCIPIO RECTOR**: "Cada línea de código debe enseñar algo sobre fútbol, cada ejercicio debe resolver un problema real de análisis deportivo, y cada sesión debe completarse en exactamente 50 minutos."
+
+---
+
+## INFORMACIÓN DEL AUTOR
+
+**Autor**: Juliho Castillo Colmenares  
+**Institución**: Tecnológico de Monterrey  
+**Email**: julihocc@tec.mx  
+**Repositorio**: https://github.com/julihocc/prepatec-soccer-analytics

@@ -2,9 +2,9 @@
 
 **Curso:** PS5005 Programación Básica 1 - Ciencia de Datos aplicada al Fútbol  
 **Institución:** Prepa Tec  
-**Duración:** 15 semanas (3 bloques de 5 semanas)  
+**Duración:** 17 semanas (3 bloques de 5 semanas y 2 semanas adicionales para proyecto)  
 **Modalidad:** Presencial con componentes digitales  
-**Nivel:** Preparatoria (15-18 años)  
+**Nivel:** Preparatoria, 5o Semestre
 **Prerrequisitos:** Ninguno (curso introductorio)  
 
 ---
@@ -409,12 +409,6 @@ from sklearn.metrics import accuracy_score
 **Repositorio del curso:** https://github.com/julihocc/prepatec-soccer-analytics  
 **Plataforma LMS:** Canvas  
 **Modalidad:** Presencial con componentes digitales
-
----
-
-**Última actualización:** Enero 2025  
-**Versión del documento:** 1.0  
-**Estado:** Documento oficial vigente para el periodo académico actual
 
 ---
 

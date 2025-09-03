@@ -78,12 +78,14 @@ Usar un bucle for para contar victorias, empates y derrotas:
 Escribir estas 2 funciones obligatorias:
 
 **a) Función para calcular puntos:**
+
 - Crear función `calcular_puntos(victorias, empates)` que calcule puntos de liga
 - Aplicar reglas: Victoria = 3 puntos, Empate = 1 punto, Derrota = 0 puntos
 - Retornar el total de puntos calculado
 - Probar la función con casos de ejemplo
 
 **b) Función para encontrar mejor goleador:**
+
 - Crear función `mejor_goleador(jugadores)` que reciba el diccionario de jugadores
 - Iterar sobre los jugadores para encontrar quien tiene más goles
 - Retornar el nombre del mejor goleador y su cantidad de goles
@@ -145,12 +147,14 @@ Construir un DataFrame simple para unificar los datos y comparar ventajas respec
 Crear visualizaciones profesionales para comunicar los hallazgos:
 
 **a) Gráfico de barras - Rendimiento por partido:**
+
 - Crear gráfico de barras comparando goles a favor y en contra por partido
 - Usar matplotlib para generar el gráfico con etiquetas claras
 - Incluir título, etiquetas de ejes y leyenda profesional
 - Configurar colores y transparencia apropiados
 
 **b) Comparación de resultados:**
+
 - Crear gráfico que muestre la distribución de victorias, empates y derrotas
 - Usar gráfico de barras o pie chart para mostrar proporciones
 - Incluir números absolutos y porcentajes en la visualización
@@ -248,7 +252,6 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 ### Criterios de Desempeño por Componente
 
-
 #### 1. Fundamentos y Funciones (40 puntos)
 
 **Sobresaliente (40 puntos ~ 100%):**
@@ -288,7 +291,6 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 #### 2. Análisis y Métricas Básicas (30 puntos)
 
-
 **Sobresaliente (30 puntos ~ 100%):**
 
 - Análisis de nivel profesional: DataFrame bien diseñado, con manejo de tipos, limpieza y comparaciones relevantes
@@ -324,7 +326,6 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 #### 3. Visualización e Interpretación (20 puntos)
 
-
 **Sobresaliente (20 puntos ~ 100%):**
 
 - Visualizaciones con calidad publicable: etiquetado impecable, escalas adecuadas y atención a accesibilidad y legibilidad
@@ -358,7 +359,6 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 - Sin recomendaciones
 
 #### 4. Comunicación y Documentación (10 puntos)
-
 
 **Sobresaliente (10 puntos ~ 100%):**
 
@@ -453,7 +453,7 @@ Al completar todas las tareas técnicas, incluye en tu notebook una sección de 
 
 - **Duración**: Practiquen para mantenerse en 12-15 minutos
 - **Participación**: Cada persona explica 4-5 minutos
-- **Estructura sugerida**: 
+- **Estructura sugerida**:
   - Introducción y datos (2 min)
   - Código y funciones (4-5 min)
   - Análisis y visualizaciones (4-5 min)

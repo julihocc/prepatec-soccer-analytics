@@ -166,20 +166,14 @@ herramientas/
 │   ├── convert.py     # Core conversion functionality
 │   ├── smart_convert.py # Intelligent conversion with change detection
 │   └── tests/         # Conversion test suite
-├── py-to-marp/        # Python percent format to Marp presentations
-│   ├── convert.py     # Main conversion script
-│   ├── py_to_marp.py  # Core conversion logic
-│   ├── configs.py     # Presentation configurations
-│   └── tests/         # Marp conversion tests
-└── qti_converter/     # 🚀 DRY-refactored QTI conversion library
-    ├── __init__.py    # Library exports and version
-    ├── core.py        # Main QtiConverter orchestration class
-    ├── format_converter.py # Format conversion logic (Q1: A) B) → txttoqti)
-    ├── utils.py       # File management and auto-detection utilities
-    └── generar_qti.py # Universal auto-detecting script template
+└── py-to-marp/        # Python percent format to Marp presentations
+    ├── convert.py     # Main conversion script
+    ├── py_to_marp.py  # Core conversion logic
+    ├── configs.py     # Presentation configurations
+    └── tests/         # Marp conversion tests
 
-# txttoqti v0.2.0+ is installed as external dependency from PyPI
-# Available via: pip install txttoqti>=0.2.0
+# QTI conversion moved to private submodule evaluaciones/
+# txttoqti v0.3.0+ installed as external dependency with educational extensions
 ```
 
 ## Pedagogical Architecture
@@ -232,10 +226,11 @@ Each notebook follows this structure:
 4. Create presentation versions if needed for classroom projection
 
 ### Assessment Development
-1. Write question banks in simple text format
-2. Convert to Canvas QTI format using the txttoqti library (`txt-to-qti` command)
-3. Test practical cases with real football datasets
-4. Ensure all assessments align with learning objectives
+1. Work within the evaluaciones submodule directory for sensitive content
+2. Write question banks in simple text format within evaluaciones/bloque-X/canvas/
+3. Use specialized CLI tools (eval-qti, eval-validate, eval-batch) or legacy scripts
+4. Test practical cases with real football datasets
+5. Ensure all assessments align with learning objectives
 
 ### Quality Assurance
 - All notebooks must execute completely within time constraints
@@ -259,10 +254,49 @@ Each notebook follows this structure:
 4. Test with actual course content files
 
 ### When Working with Assessments
-1. Use the established formats in the `evaluaciones/` directory
-2. Ensure Canvas compatibility for digital assessments
-3. Include rubrics and evaluation criteria
-4. Test with sample student responses
+1. Enter the evaluaciones submodule directory: `cd evaluaciones/`
+2. Work within the appropriate bloque directory (evaluaciones/bloque-X/)
+3. Use established text formats for question banks
+4. Commit and push changes to the private repository: `git add . && git commit -m "update: description" && git push`
+5. Update submodule pointer in main repo if needed: `cd .. && git add evaluaciones && git commit -m "update: evaluaciones submodule"`
+6. Ensure Canvas compatibility for digital assessments
+7. Include rubrics and evaluation criteria
+8. Test with sample student responses
+
+## Git Submodule Workflow
+
+### Understanding the Architecture
+The evaluaciones directory is a **git submodule** pointing to a private repository:
+- **Main repo**: Public course content and tools
+- **Submodule**: Private evaluations repository (`prepatec-soccer-analytics-evaluations`)
+
+### Working with Submodules
+```bash
+# First time setup
+git submodule update --init --recursive evaluaciones
+cd evaluaciones && pip install -e .
+
+# Making changes to evaluaciones
+cd evaluaciones/
+# Make changes to files
+git add . && git commit -m "update: description"
+git push origin main  # Pushes to PRIVATE repo
+
+# Update main repo to point to new submodule commit
+cd ..  # Back to main repo
+git add evaluaciones
+git commit -m "update: evaluaciones submodule pointer"
+git push  # Updates main repo
+
+# Getting latest evaluaciones updates
+git submodule update --remote evaluaciones
+```
+
+### Critical Points
+- Changes to `evaluaciones/` must be committed **inside** the submodule directory
+- The main repo only stores a "pointer" to a specific commit in the private repo
+- Two separate git repositories with independent histories
+- Sensitive evaluation content is protected in private repository
 
 ## Important Technical Notes
 
@@ -282,7 +316,7 @@ Each notebook follows this structure:
 - LaTeX installation needed for PDF generation (XeLaTeX recommended for Spanish text)
 - Node.js required only if generating presentations
 - Git for version control and collaboration
-- txttoqti v0.3.0+ from GitHub (automatically installed via pyproject.toml)
+- txttoqti v0.3.0+ from GitHub (available in evaluaciones submodule)
   - Install manually: `pip install git+https://github.com/julihocc/txttoqti.git@v0.3.0`
   - Provides txttoqti-edu CLI command and educational Python modules
 

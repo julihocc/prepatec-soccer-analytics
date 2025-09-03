@@ -1,7 +1,9 @@
-# Syllabus | Programación Básica 1
+# Syllabus | PS5005 Programación Básica 1
 
 ## Tópico: Ciencia de Datos Aplicada al Fútbol
 
+**Institución:** Prepa Tec  
+**Unidad de Formación:** PS5005 Programación Básica 1  
 **Periodo:** Agosto - Diciembre 2025 (202513)  
 **Frecuencia:** 3 sesiones por semana (50 minutos cada una)  
 **Modalidad:** Presencial / Híbrida con soporte en Canvas  

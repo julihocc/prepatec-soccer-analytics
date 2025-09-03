@@ -1,5 +1,5 @@
-# Makefile para el proyecto de Ciencia de Datos aplicada al Fútbol
-# Tecnológico de Monterrey
+# Makefile para PS5005 Programación Básica 1 - Ciencia de Datos aplicada al Fútbol
+# Prepa Tec
 
 # Variables
 CONTENIDO_DIR = ./contenido

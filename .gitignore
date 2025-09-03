@@ -1,21 +1,37 @@
+# Environment and dependencies
 .history/
 .venv/
+*.egg-info/
+__pycache__/
+*.pyc
+*.lock
+
+# Generated files
 *.pdf
+*.xml
+*.zip
+*.log
+
+# Office documents  
 *.doc
 *.docx
 *.xls
 *.xlsx
 *.ppt
 *.pptx
-*.xml
-*.zip
-*.pyc
-__pycache__/
+
+# Jupyter
 *.ipynb_checkpoints
+*.ipynb
+
+# IDE and OS
 .DS_Store
-.env
-*.log
-*.ipynb 
-*.egg-info/
-*.lock
 .vscode/
+.env
+
+# Build artifacts from migrations
+dist/
+build/
+txttoqti/
+*temp*/
+*tmp*/

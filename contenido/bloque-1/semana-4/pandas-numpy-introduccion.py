@@ -696,7 +696,7 @@ def crear_tabla_posiciones(df):
     resultados_equipos = []
 
     # Obtener todos los equipos únicos
-    equipos = pd.concat([df["equipo_local"], df["equipo_visitante"]]).unique()
+    equipos = list(set(df["equipo_local"].tolist() + df["equipo_visitante"].tolist()))
 
     for equipo in equipos:
         # Partidos como local

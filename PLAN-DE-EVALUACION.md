@@ -2,7 +2,7 @@
 
 **Curso:** PS5005 Programación Básica 1 - Ciencia de Datos aplicada al Fútbol  
 **Institución:** Prepa Tec  
-**Duración:** 17 semanas (3 bloques de 5 semanas y 2 semanas adicionales para proyecto)  
+**Duración:** 17 semanas (3 períodos evaluativos de igual peso)  
 **Modalidad:** Presencial con componentes digitales  
 **Nivel:** Preparatoria, 5o Semestre
 **Prerrequisitos:** Ninguno (curso introductorio)  
@@ -11,24 +11,32 @@
 
 ## 1. ESTRUCTURA GENERAL DEL CURSO
 
-### 1.1 Organización por Bloques
-- **Bloque 1** (Semanas 1-5): Fundamentos de Python
-- **Bloque 2** (Semanas 6-10): Análisis de Datos  
-- **Bloque 3** (Semanas 11-15): Modelado Predictivo y Proyecto Final
+### 1.1 Organización por Períodos
+- **Período 1** (Semanas 1-5): Fundamentos de Python
+- **Período 2** (Semanas 6-10): Análisis de Datos  
+- **Período 3** (Semanas 11-15): Modelado Predictivo y Proyecto Final
 
-### 1.2 Distribución de Ponderaciones
-**Total de 6 actividades evaluativas:**
+### 1.2 Sistema de Ponderaciones por Períodos
+El curso se evalúa en **tres períodos de igual peso (33.33% cada uno)**:
 
-| Actividad | Descripción | Ponderación |
-|-----------|-------------|-------------|
-| Actividad 1 | Examen Canvas Bloque 1 | 15% |
-| Actividad 2 | Caso Práctico Bloque 1 | 15% |
-| Actividad 3 | Examen Canvas Bloque 2 | 15% |
-| Actividad 4 | Caso Práctico Bloque 2 | 15% |
-| Actividad 5 | Quiz Canvas ML Básico Bloque 3 | 15% |
-| Actividad 6 | Proyecto Integrador Final | 25% |
+#### Estructura por Períodos Evaluativos
+| Período | Actividades | Peso del Período |
+|---------|-------------|------------------|
+| **Primer Parcial** | Act. 1 (Canvas P1) + Act. 2 (Caso P1) | 33.33% |
+| **Segundo Parcial** | Act. 3 (Canvas P2) + Act. 4 (Caso P2) | 33.33% |
+| **Período Final** | Act. 5 (Canvas P3) + Act. 6 (Caso P3) | 33.33% |
 
-**Total:** 100%
+#### Distribución por Actividad
+| Actividad | Descripción | Peso en Período | Peso Total |
+|-----------|-------------|----------------|------------|
+| 1 | Examen Canvas Período 1 | 50% (1er Parcial) | 16.67% |
+| 2 | Caso Práctico Período 1 | 50% (1er Parcial) | 16.67% |
+| 3 | Examen Canvas Período 2 | 50% (2do Parcial) | 16.67% |
+| 4 | Caso Práctico Período 2 | 50% (2do Parcial) | 16.67% |
+| 5 | Examen Canvas Período 3 | 50% (Final) | 16.67% |
+| 6 | Caso Práctico Período 3 (Proyecto Predictivo) | 50% (Final) | 16.67% |
+
+**Calificación Semestral = (Primer Parcial + Segundo Parcial + Período Final) ÷ 3**
 
 ---
 
@@ -44,17 +52,17 @@
 ### 2.2 Competencias Transversales
 - **Pensamiento computacional:** Descomposición de problemas, patrones
 - **Comunicación técnica:** Interpretación y presentación de resultados
-- **Trabajo colaborativo:** Proyectos en equipo (Bloques 1 y 2)
+- **Trabajo colaborativo:** Proyectos en equipo (Períodos 1 y 2)
 - **Pensamiento crítico:** Análisis e interpretación de datos deportivos
 - **Responsabilidad ética:** Integridad académica, transparencia metodológica
 
 ---
 
-## 3. EVALUACIÓN POR BLOQUES
+## 3. EVALUACIÓN POR PERÍODOS
 
-### 3.1 BLOQUE 1: Fundamentos de Python (Semanas 1-5)
+### 3.1 PERÍODO 1: Fundamentos de Python (Semanas 1-5)
 
-#### 3.1.1 Examen Canvas Bloque 1 (15% del curso)
+#### 3.1.1 Examen Canvas Período 1 (50% del Primer Parcial = 16.67% del curso)
 **Formato:** Examen digital en plataforma Canvas LMS  
 **Duración:** 45-60 minutos  
 **Estructura:**
@@ -75,7 +83,7 @@
 - Comprensión (35%): Interpretación de código
 - Aplicación (25%): Resolución de problemas simples
 
-#### 3.1.2 Caso Práctico Bloque 1 (15% del curso)
+#### 3.1.2 Caso Práctico Período 1 (50% del Primer Parcial = 16.67% del curso)
 **Modalidad:** Colaborativa (equipos de 3-4 estudiantes)  
 **Duración:** Desarrollo durante las semanas 4-5  
 **Tema:** "Análisis básico de estadísticas de jugadores"
@@ -90,15 +98,15 @@
 - Presentación de 10 minutos por equipo
 - Reporte escrito de metodología
 
-### 3.2 BLOQUE 2: Análisis de Datos (Semanas 6-10)
+### 3.2 PERÍODO 2: Análisis de Datos (Semanas 6-10)
 
-#### 3.2.1 Examen Canvas Bloque 2 (15% del curso)
-**Formato:** Similar al Bloque 1 con complejidad incrementada  
+#### 3.2.1 Examen Canvas Período 2 (50% del Segundo Parcial = 16.67% del curso)
+**Formato:** Similar al Período 1 con complejidad incrementada  
 **Contenido:** Pandas avanzado, visualización, estadística descriptiva
-**Banco de preguntas:** 25+ preguntas específicas del bloque
+**Banco de preguntas:** 25+ preguntas específicas del período
 **Enfoque:** Mayor énfasis en interpretación de resultados
 
-#### 3.2.2 Caso Práctico Bloque 2 (15% del curso)
+#### 3.2.2 Caso Práctico Período 2 (50% del Segundo Parcial = 16.67% del curso)
 **Modalidad:** Colaborativa (equipos de 3-4 estudiantes)  
 **Tema:** "Exploración avanzada de datos de equipos de fútbol"
 **Enfoque:** Análisis exploratorio profundo, visualizaciones complejas
@@ -109,40 +117,40 @@
 - Interpretación estadística avanzada
 - Identificación de patrones y tendencias
 
-### 3.3 BLOQUE 3: Modelado Predictivo y Proyecto Final (Semanas 11-15)
+### 3.3 PERÍODO 3: Modelado Predictivo y Proyecto Final (Semanas 11-15)
 
-#### 3.3.1 Quiz Canvas ML Básico (15% del curso)
-**Propósito:** Verificar comprensión conceptual antes del proyecto final  
+#### 3.3.1 Examen Canvas Período 3 (50% del Período Final = 16.67% del curso)
+**Propósito:** Evaluar comprensión de machine learning básico  
 **Duración:** 25-30 minutos  
 **Formato:** 12-18 preguntas (70% opción múltiple, 30% numéricas)  
 **Contenido:** Conceptos básicos de machine learning, modelos, entrenamiento, predicción, overfitting  
 **Criterio mínimo:** ≥70% para demostrar preparación
 
-#### 3.3.2 Proyecto Integrador Final (25% del curso)
+#### 3.3.2 Caso Práctico Período 3 - Proyecto Integrador Final (50% del Período Final = 16.67% del curso)
 **Modalidad:** Individual intensivo  
 **Duración:** Semanas 14-15 (desarrollo) + Semana 16 (presentación)  
 **Enfoque:** Sistema predictivo completo profesional
 
 **Componentes del proyecto:**
-1. **Análisis Exploratorio de Datos (25% del proyecto = 6.25% del curso)**
+1. **Análisis Exploratorio de Datos (25% del caso = 4.17% del curso)**
    - Múltiples datasets, validación de integridad
    - EDA profundo con análisis multivariado
    - Feature engineering estratégico
    - Generación de hipótesis para modelado
 
-2. **Modelado de Machine Learning (35% del proyecto = 8.75% del curso)**
+2. **Modelado de Machine Learning (35% del caso = 5.83% del curso)**
    - Implementación de modelos baseline y avanzados
    - Optimización con hyperparameter tuning
    - Cross-validation y evaluación comparativa
    - Análisis de errores y interpretabilidad
 
-3. **Dashboard Interactivo (25% del proyecto = 6.25% del curso)**
+3. **Dashboard Interactivo (25% del caso = 4.17% del curso)**
    - Interface de usuario intuitiva
    - Visualizaciones en tiempo real
    - Sistema de predicción para nuevos datos
    - Exportación automática de reportes
 
-4. **Documentación y Código (15% del proyecto = 3.75% del curso)**
+4. **Documentación y Código (15% del caso = 2.50% del curso)**
    - README completo y manual de usuario
    - Código nivel profesional (PEP8, modular)
    - Documentación técnica exhaustiva
@@ -152,7 +160,7 @@
 
 ## 4. RÚBRICAS DE EVALUACIÓN
 
-### 4.1 Rúbrica para Exámenes Canvas (Bloques 1, 2 y Quiz ML)
+### 4.1 Rúbrica para Exámenes Canvas (Períodos 1, 2 y 3)
 
 | Criterio | Sobresaliente (90-100%) | Competente (80-89%) | Satisfactorio (70-79%) | Insuficiente (<70%) |
 |----------|------------------------|---------------------|----------------------|-------------------|
@@ -160,7 +168,7 @@
 | **Aplicación práctica** | Resuelve problemas complejos con facilidad | Resuelve problemas estándar correctamente | Resuelve problemas simples | Dificultad en resolución de problemas |
 | **Interpretación de código** | Lee e interpreta código avanzado | Comprende código de complejidad media | Interpreta código básico | Dificultad para leer código |
 
-### 4.2 Rúbrica para Casos Prácticos Colaborativos (Bloques 1 y 2)
+### 4.2 Rúbrica para Casos Prácticos Colaborativos (Períodos 1 y 2)
 
 #### 4.2.1 Análisis Técnico (40%)
 | Nivel | Descripción | Puntuación |
@@ -186,9 +194,9 @@
 | **Satisfactorio** | Presentación básica pero clara, visualizaciones simples, dominio suficiente | 70-79% |
 | **Insuficiente** | Presentación poco clara, visualizaciones deficientes, dominio limitado | <70% |
 
-### 4.3 Rúbrica para Proyecto Integrador Final (Bloque 3)
+### 4.3 Rúbrica para Caso Práctico Período 3 - Proyecto Integrador Final
 
-#### 4.3.1 Análisis Exploratorio de Datos (25% del proyecto)
+#### 4.3.1 Análisis Exploratorio de Datos (25% del caso = 4.17% del curso)
 | Nivel | Descripción |
 |-------|-------------|
 | **Sobresaliente (100%)** | EDA exhaustivo con múltiples datasets, feature engineering sofisticado, insights profundos, visualizaciones profesionales |
@@ -196,7 +204,7 @@
 | **Satisfactorio (70%)** | EDA básico pero funcional, feature engineering simple, insights básicos, visualizaciones adecuadas |
 | **Insuficiente** | EDA incompleto o superficial, feature engineering inadecuado, falta de insights |
 
-#### 4.3.2 Modelado de Machine Learning (35% del proyecto)
+#### 4.3.2 Modelado de Machine Learning (35% del caso = 5.83% del curso)
 | Nivel | Descripción |
 |-------|-------------|
 | **Sobresaliente (100%)** | Múltiples modelos optimizados, evaluación rigurosa, interpretabilidad clara, metodología impecable |
@@ -204,7 +212,7 @@
 | **Satisfactorio (70%)** | Modelos básicos funcionales, evaluación simple, interpretación básica, metodología suficiente |
 | **Insuficiente** | Modelos deficientes, evaluación inadecuada, interpretación incorrecta |
 
-#### 4.3.3 Dashboard Interactivo (25% del proyecto)
+#### 4.3.3 Dashboard Interactivo (25% del caso = 4.17% del curso)
 | Nivel | Descripción |
 |-------|-------------|
 | **Sobresaliente (100%)** | Dashboard profesional, UX excelente, funcionalidad completa, diseño intuitivo |
@@ -212,7 +220,7 @@
 | **Satisfactorio (70%)** | Dashboard básico operativo, UX simple, funcionalidad mínima, diseño básico |
 | **Insuficiente** | Dashboard no funcional o muy limitado, UX deficiente |
 
-#### 4.3.4 Documentación y Código (15% del proyecto)
+#### 4.3.4 Documentación y Código (15% del caso = 2.50% del curso)
 | Nivel | Descripción |
 |-------|-------------|
 | **Sobresaliente (100%)** | Código nivel profesional, documentación exhaustiva, README completo, reproducibilidad total |
@@ -252,8 +260,8 @@
 pip install git+https://github.com/julihocc/txttoqti.git
 
 # Generación QTI usando wrappers locales
-cd evaluaciones/bloque-1/canvas/ && python generar_qti.py
-cd evaluaciones/bloque-2/canvas/ && python generar_qti.py
+cd evaluaciones/periodo-1/canvas/ && python generar_qti.py
+cd evaluaciones/periodo-2/canvas/ && python generar_qti.py
 
 # Comando directo (si está instalado globalmente)
 txttoqti-edu --path evaluaciones/ --status
@@ -301,17 +309,17 @@ from sklearn.metrics import accuracy_score
 |--------|--------|------------|-----------|
 | 5 | 1 | Canvas Exam + Caso | Examen individual + Proyecto colaborativo |
 | 10 | 2 | Canvas Exam + Caso | Examen individual + Proyecto colaborativo |
-| 14 | 3 | Quiz ML | Verificación conceptual |
-| 15-16 | 3 | Proyecto Final | Desarrollo y presentación individual |
+| 14 | 3 | Canvas Exam | Evaluación ML básico |
+| 15-16 | 3 | Caso Práctico Final | Desarrollo y presentación individual |
 
 ### 6.2 Fechas Críticas
 
 - **Semana 4:** Formación de equipos para casos prácticos
-- **Semana 5:** Entrega Caso Práctico Bloque 1 + Examen Canvas
-- **Semana 9:** Formación de equipos para Caso Práctico Bloque 2
-- **Semana 10:** Entrega Caso Práctico Bloque 2 + Examen Canvas  
+- **Semana 5:** Entrega Caso Práctico Período 1 + Examen Canvas
+- **Semana 9:** Formación de equipos para Caso Práctico Período 2
+- **Semana 10:** Entrega Caso Práctico Período 2 + Examen Canvas  
 - **Semana 13:** Selección de tema para Proyecto Final
-- **Semana 14:** Quiz ML + Inicio desarrollo proyecto
+- **Semana 14:** Examen Canvas Período 3 + Inicio desarrollo proyecto
 - **Semana 15:** Desarrollo intensivo Proyecto Final
 - **Semana 16:** Presentación y entrega final
 

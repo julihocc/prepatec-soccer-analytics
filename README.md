@@ -393,17 +393,19 @@ El curso se evalúa en **tres períodos de igual peso (33.33% cada uno)**:
 
 ## 2. COMPONENTES DE EVALUACIÓN DETALLADOS
 
-### 2.1 Exámenes Canvas (Uno por período - 50% de cada período)
+### 2.1 Exámenes Canvas (Tres exámenes - 50% de cada período = 16.67% cada uno)
 
-#### Características
+#### Características Generales
 
 - **Modalidad:** Individual, automático
 - **Formato:** 70% opción múltiple + 30% respuesta numérica
 - **Duración:** 45-60 minutos cada uno
-- **Banco:** 70-75 preguntas por bloque
 - **Selección:** 20-25 preguntas aleatorias por examen
 
-#### Período 1 - Canvas (50% del Primer Parcial = 16.67% total)
+#### Examen Canvas Período 1 (50% del Primer Parcial = 16.67% total)
+
+- **Banco:** 70 preguntas
+- **Enfoque:** Fundamentos de Python
 
 ```python
 # Temas evaluados:
@@ -414,7 +416,10 @@ El curso se evalúa en **tres períodos de igual peso (33.33% cada uno)**:
 - Pandas y numpy básico (20%)
 ```
 
-#### Período 2 - Canvas (50% del Segundo Parcial = 16.67% total)
+#### Examen Canvas Período 2 (50% del Segundo Parcial = 16.67% total)
+
+- **Banco:** 75 preguntas
+- **Enfoque:** Exploración y análisis de datos
 
 ```python
 # Temas evaluados:
@@ -424,7 +429,20 @@ El curso se evalúa en **tres períodos de igual peso (33.33% cada uno)**:
 - Visualización con seaborn (25%)
 ```
 
-### 2.2 Casos Prácticos Colaborativos (33.33% total por períodos)
+#### Examen Canvas Período 3 (50% del Período Final = 16.67% total)
+
+- **Banco:** 60-65 preguntas
+- **Enfoque:** Machine Learning básico
+
+```python
+# Temas evaluados:
+- Concepto de modelo y entrenamiento (25%)
+- Diferencia predicción vs. resultado real (25%)
+- Regresión lineal y logística básica (25%)
+- Overfitting y generalización (25%)
+```
+
+### 2.2 Casos Prácticos (Tres casos - 50% de cada período = 16.67% cada uno)
 
 #### Modalidad de Trabajo
 
@@ -475,27 +493,9 @@ El curso se evalúa en **tres períodos de igual peso (33.33% cada uno)**:
 - Comunicación (10%)
 ```
 
-### 2.3 Examen Canvas Período 3 (50% del Período Final = 16.67% total)
+#### Caso Período 3: "Sistema de Análisis Predictivo para Fútbol" (50% del Período Final = 16.67% total)
 
-#### Características
-
-- **Modalidad:** Individual, automático
-- **Formato:** 70% opción múltiple + 30% respuesta numérica
-- **Duración:** 45-60 minutos
-- **Banco:** 60-65 preguntas
-- **Selección:** 20-25 preguntas aleatorias
-
-#### Período 3 - Canvas (50% del Período Final = 16.67% total)
-
-```python
-# Temas evaluados:
-- Concepto de modelo y entrenamiento (25%)
-- Diferencia predicción vs. resultado real (25%)
-- Regresión lineal y logística básica (25%)
-- Overfitting y generalización (25%)
-```
-
-### 2.4 Caso Práctico Período 3 (50% del Período Final = 16.67% total)
+**Modalidad:** Individual (cambio respecto a períodos anteriores)
 
 #### Estructura del Caso (Presentación integrada)
 
@@ -504,11 +504,11 @@ El curso se evalúa en **tres períodos de igual peso (33.33% cada uno)**:
 ### Modalidad: Individual
 ### Ventana de desarrollo: Semanas 15-16
 
-## Componentes (sub‑pesos internos del 50% del Período Final):
-- Análisis Exploratorio (25% del caso = 12.5% del período final = 4.17% curso)
-- Modelado ML Básico (35% del caso = 17.5% del período final = 5.83% curso)
-- Dashboard / Visualización (25% del caso = 12.5% del período final = 4.17% curso)
-- Documentación + Narrativa (15% del caso = 7.5% del período final = 2.5% curso)
+## Componentes (sub‑pesos internos del 16.67% del curso total):
+- Análisis Exploratorio (25% del caso = 4.17% del curso)
+- Modelado ML Básico (35% del caso = 5.83% del curso)  
+- Dashboard / Visualización (25% del caso = 4.17% del curso)
+- Documentación + Narrativa (15% del caso = 2.50% del curso)
 
 La presentación y comunicación se evalúan dentro de Documentación + Narrativa; no existe ponderación separada.
 ```
@@ -529,8 +529,8 @@ La presentación y comunicación se evalúan dentro de Documentación + Narrativ
 ├── Semana 4: Listas y diccionarios  
 ├── Semana 5: Pandas y numpy básico
 └──  PRIMER PARCIAL (33.33%):
-    ├── Examen Canvas B1 (50% del parcial - Semana 6)
-    └── Caso Práctico B1 (50% del parcial - Semanas 6-7)
+    ├── Examen Canvas P1 (50% del parcial - Semana 6)
+    └── Caso Práctico P1 (50% del parcial - Semanas 6-7)
 
 🟩 PERÍODO 2: EXPLORACIÓN DE DATOS (Semanas 8-12)
 ├── Semana 8: Introducción exploración
@@ -539,15 +539,15 @@ La presentación y comunicación se evalúan dentro de Documentación + Narrativ
 ├── Semana 11: Visualización datos
 ├── Semana 12: Análisis e interpretación
 └──  SEGUNDO PARCIAL (33.33%):
-    ├── Examen Canvas B2 (50% del parcial - Semana 13)  
-    └── Caso Práctico B2 (50% del parcial - Semanas 13-14)
+    ├── Examen Canvas P2 (50% del parcial - Semana 13)  
+    └── Caso Práctico P2 (50% del parcial - Semanas 13-14)
 
 🟨 PERÍODO 3: MODELADO PREDICTIVO (Semanas 15-16)
 ├── Semana 15: Desarrollo caso predictivo
 ├── Semana 16: Iteración final y comunicación integrada
 └──  PERÍODO FINAL (33.33%):
-    ├── Examen Canvas B3 (50% del final)
-    └── Caso Práctico B3 (50% del final)
+    ├── Examen Canvas P3 (50% del final)
+    └── Caso Práctico P3 (50% del final)
 ```
 
 ---

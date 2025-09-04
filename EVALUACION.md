@@ -44,7 +44,7 @@ El curso se evalúa en **tres períodos de igual peso (33.33% cada uno)**:
 
 ### 2.1 Competencias Técnicas Fundamentales
 - **Programación en Python:** Variables, estructuras de control, funciones
-- **Manipulación de datos:** Pandas, NumPy, limpieza y transformación
+- **Manipulación de datos:** Listas, diccionarios, estructuras básicas de Python
 - **Visualización:** Matplotlib, Seaborn, gráficos interpretativos
 - **Análisis estadístico básico:** Medidas de tendencia central, correlaciones
 - **Machine Learning básico:** Modelos predictivos simples
@@ -75,7 +75,7 @@ El curso se evalúa en **tres períodos de igual peso (33.33% cada uno)**:
 - Q1-Q5: Configuración y fundamentos de Python
 - Q6-Q10: Estructuras de control (if, for, while)
 - Q11-Q15: Funciones y módulos
-- Q16-Q20: Introducción a Pandas y NumPy
+- Q16-Q20: Estructuras de datos avanzadas en Python
 - Q21-Q25: Visualización básica
 
 **Distribución cognitiva:**
@@ -89,9 +89,9 @@ El curso se evalúa en **tres períodos de igual peso (33.33% cada uno)**:
 **Tema:** "Análisis básico de estadísticas de jugadores"
 
 **Componentes evaluativos:**
-- **Análisis Técnico (40%):** Implementación correcta de código Python
-- **Trabajo Colaborativo (30%):** Contribución equitativa, comunicación efectiva
-- **Comunicación y Presentación (30%):** Claridad en reportes y exposición
+- **Fundamentos y Funciones (40%):** Bucles, funciones, listas y diccionarios
+- **Análisis y Métricas Básicas (40%):** Cálculos estadísticos, análisis de datos
+- **Visualización e Interpretación (20%):** Gráficos básicos y conclusiones
 
 **Entregables:**
 - Notebook Jupyter con análisis completo
@@ -102,7 +102,7 @@ El curso se evalúa en **tres períodos de igual peso (33.33% cada uno)**:
 
 #### 3.2.1 Examen Canvas Período 2 (50% del Segundo Parcial = 16.67% del curso)
 **Formato:** Similar al Período 1 con complejidad incrementada  
-**Contenido:** Pandas avanzado, visualización, estadística descriptiva
+**Contenido:** Pandas, visualización, estadística descriptiva
 **Banco de preguntas:** 25+ preguntas específicas del período
 **Enfoque:** Mayor énfasis en interpretación de resultados
 
@@ -277,7 +277,7 @@ txttoqti-edu --path evaluaciones/ --status
 
 #### 5.3.1 Librerías Obligatorias
 ```python
-# Análisis de datos
+# Análisis de datos (desde Período 2)
 import pandas as pd
 import numpy as np
 
@@ -295,7 +295,7 @@ from sklearn.metrics import accuracy_score
 #### 5.3.2 Herramientas de Desarrollo
 - **Python ≥3.10:** Requerimiento para compatibilidad completa
 - **Jupyter:** Entorno de desarrollo interactivo
-- **pandas/numpy/matplotlib/seaborn:** Stack de análisis de datos
+- **pandas/numpy/matplotlib/seaborn:** Stack de análisis de datos (desde Período 2)
 - **pandoc + XeLaTeX:** Para generación profesional de PDFs
 - **Git:** Control de versiones para proyectos
 

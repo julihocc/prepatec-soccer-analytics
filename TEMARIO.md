@@ -31,7 +31,7 @@ Desarrollar competencias básicas de pensamiento computacional y análisis de da
 Al finalizar el curso el estudiante será capaz de:
 
 1. Explicar variables, tipos de datos, estructuras de control, listas, diccionarios y funciones con ejemplos futbolísticos.  
-2. Cargar, limpiar y explorar datasets de partidos y jugadores usando pandas.  
+2. Cargar, limpiar y explorar datasets de partidos y jugadores usando pandas (desde Período 2).  
 3. Calcular e interpretar métricas descriptivas (promedio, mediana, moda, rango) vinculadas a rendimiento deportivo.  
 4. Formular y responder preguntas investigables sobre desempeño de equipos mediante notebooks reproducibles.  
 5. Construir y evaluar un modelo predictivo simple (regresión lineal o logística o Random Forest básico) usando analogías futbolísticas (modelo = entrenador, entrenamiento = práctica).  
@@ -74,7 +74,7 @@ Al finalizar el curso el estudiante será capaz de:
 | 2 | Estructuras de control | Conteo de goles, filtros simples |
 | 3 | Listas y diccionarios | Plantillas, alineaciones, eventos |
 | 4 | Funciones y módulos simples | Cálculos de rendimiento reutilizables |
-| 5 | pandas y numpy básico | Lectura y manipulación de dataset de partidos |
+| 5 | Estructuras de datos avanzadas | Preparación para análisis con pandas |
 
 ### Bloque 2 (Semanas 6-10) Exploración y Análisis Descriptivo
 
@@ -226,7 +226,7 @@ Comunicación integrada en Documentación y Narrativa.
 
 | Incluye | Excluye |
 |---------|---------|
-| Python básico, pandas, seaborn | Deep learning, big data |
+| Python básico, pandas (Período 2+), seaborn | Deep learning, big data |
 | Regresión lineal/logística | Modelos complejos (SVM, redes profundas) |
 | Random Forest básico | Optimización avanzada de hiperparámetros |
 | Métricas simples (accuracy) | Métricas avanzadas (AUC, F1 detallado) |

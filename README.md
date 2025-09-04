@@ -364,30 +364,36 @@ pip install -r requirements.txt
 
 ## 1. SISTEMA DE PONDERACIONES
 
-### Distribución General (100%)
+### Estructura por Períodos Evaluativos
+
+El curso se evalúa en **tres períodos de igual peso (33.33% cada uno)**:
 
 ```
- EVALUACIÓN COMPLETA DEL CURSO (Nueva Distribución)
-├── Actividad 1: Examen Canvas Bloque 1 (15%)
-├── Actividad 2: Caso Práctico Bloque 1 (15%)
-├── Actividad 3: Examen Canvas Bloque 2 (15%)
-├── Actividad 4: Caso Práctico Bloque 2 (15%)
-├── Actividad 5: Quiz / Canvas ML Básico Bloque 3 (15%)
-└── Actividad 6: Caso Práctico Bloque 3 (25%)
+ EVALUACIÓN COMPLETA DEL CURSO
+├── PRIMER PARCIAL (33.33%)
+│   ├── Actividad 1: Examen Canvas Período 1 (50% del parcial)
+│   └── Actividad 2: Caso Práctico Período 1 (50% del parcial)
+├── SEGUNDO PARCIAL (33.33%)
+│   ├── Actividad 3: Examen Canvas Período 2 (50% del parcial)
+│   └── Actividad 4: Caso Práctico Período 2 (50% del parcial)
+└── PERÍODO FINAL (33.33%)
+    ├── Actividad 5: Examen Canvas Período 3 (50% del final)
+    └── Actividad 6: Caso Práctico Período 3 (50% del final)
 ```
 
-### Equivalencias con Syllabus Tec (Actualizadas)
+### Cálculo de Calificación Semestral
 
-- **1er Parcial = Bloque 1** (30%: Canvas 15% + Caso 15%)
-- **2do Parcial = Bloque 2** (30%: Canvas 15% + Caso 15%)
-- **Final = Bloque 3** (40%: Quiz ML 15% + Caso Práctico 25%)
-- **Integración de presentación final** dentro del Caso Práctico Bloque 3 (no ponderación separada)
+**Calificación Final = (Primer Parcial + Segundo Parcial + Período Final) ÷ 3**
+
+- Cada período se evalúa de 0 a 100 puntos
+- La calificación semestral es el **promedio aritmético simple** de los tres períodos
+- **Integración de presentación final** dentro del Caso Práctico Bloque 3 (sin ponderación separada)
 
 ---
 
 ## 2. COMPONENTES DE EVALUACIÓN DETALLADOS
 
-### 2.1 Exámenes Canvas (30% total: 15% + 15%)
+### 2.1 Exámenes Canvas (Uno por período - 50% de cada período)
 
 #### Características
 
@@ -397,7 +403,7 @@ pip install -r requirements.txt
 - **Banco:** 70-75 preguntas por bloque
 - **Selección:** 20-25 preguntas aleatorias por examen
 
-#### Bloque 1 - Canvas (15%)
+#### Período 1 - Canvas (50% del Primer Parcial = 16.67% total)
 
 ```python
 # Temas evaluados:
@@ -408,7 +414,7 @@ pip install -r requirements.txt
 - Pandas y numpy básico (20%)
 ```
 
-#### Bloque 2 - Canvas (15%)
+#### Período 2 - Canvas (50% del Segundo Parcial = 16.67% total)
 
 ```python
 # Temas evaluados:
@@ -418,7 +424,7 @@ pip install -r requirements.txt
 - Visualización con seaborn (25%)
 ```
 
-### 2.2 Casos Prácticos Colaborativos (30% total: 15% + 15%)
+### 2.2 Casos Prácticos Colaborativos (33.33% total por períodos)
 
 #### Modalidad de Trabajo
 
@@ -426,7 +432,7 @@ pip install -r requirements.txt
 - **Duración:** 2 semanas cada caso
 - **Entrega:** Notebook + Presentación grupal
 
-#### Caso Bloque 1: "Análisis de Rendimiento de Club" (15%)
+#### Caso Período 1: "Análisis de Rendimiento de Club" (50% del Primer Parcial = 16.67% total)
 
 ```markdown
 ## Objetivos:
@@ -436,7 +442,7 @@ pip install -r requirements.txt
 - Crear análisis deportivo básico
 
 ## Entregables:
-- caso_bloque1_equipo[X].ipynb
+- caso_periodo1_equipo[X].ipynb
 - presentacion_equipo[X].pdf  
 - reporte_equipo[X].pdf
 
@@ -446,7 +452,7 @@ pip install -r requirements.txt
 - Comunicación (30%)
 ```
 
-#### Caso Bloque 2: "Sistema de Scouting y Análisis Táctico" (15%)
+#### Caso Período 2: "Sistema de Scouting y Análisis Táctico" (50% del Segundo Parcial = 16.67% total)
 
 ```markdown
 ## Objetivos:
@@ -469,21 +475,27 @@ pip install -r requirements.txt
 - Comunicación (10%)
 ```
 
-### 2.3 Quiz / Canvas ML Básico (15%)
+### 2.3 Examen Canvas Período 3 (50% del Período Final = 16.67% total)
 
-#### Propósito
+#### Características
 
-- Verificar comprensión conceptual básica de machine learning antes del desarrollo del caso final.
-- Mantener carga cognitiva acotada: vocabulario simplificado y analogías deportivas.
+- **Modalidad:** Individual, automático
+- **Formato:** 70% opción múltiple + 30% respuesta numérica
+- **Duración:** 45-60 minutos
+- **Banco:** 60-65 preguntas
+- **Selección:** 20-25 preguntas aleatorias
 
-#### Alcance de Contenidos
+#### Período 3 - Canvas (50% del Período Final = 16.67% total)
 
-- Concepto de modelo (entrenador) y entrenamiento (práctica).
-- Diferencia predicción vs. resultado real.
-- Regresión lineal y logística (idea cualitativa, sin matemáticas avanzadas).
-- Overfitting (memorización de jugadas) y generalización.
+```python
+# Temas evaluados:
+- Concepto de modelo y entrenamiento (25%)
+- Diferencia predicción vs. resultado real (25%)
+- Regresión lineal y logística básica (25%)
+- Overfitting y generalización (25%)
+```
 
-### 2.4 Caso Práctico Bloque 3 (25%)
+### 2.4 Caso Práctico Período 3 (50% del Período Final = 16.67% total)
 
 #### Estructura del Caso (Presentación integrada)
 
@@ -492,11 +504,11 @@ pip install -r requirements.txt
 ### Modalidad: Individual
 ### Ventana de desarrollo: Semanas 15-16
 
-## Componentes (sub‑pesos internos del 25%):
-- Análisis Exploratorio (25% del notebook = 6.25% curso)
-- Modelado ML Básico (35% del notebook = 8.75% curso)
-- Dashboard / Visualización (25% del notebook = 6.25% curso)
-- Documentación + Narrativa (15% del notebook = 3.75% curso)
+## Componentes (sub‑pesos internos del 50% del Período Final):
+- Análisis Exploratorio (25% del caso = 12.5% del período final = 4.17% curso)
+- Modelado ML Básico (35% del caso = 17.5% del período final = 5.83% curso)
+- Dashboard / Visualización (25% del caso = 12.5% del período final = 4.17% curso)
+- Documentación + Narrativa (15% del caso = 7.5% del período final = 2.5% curso)
 
 La presentación y comunicación se evalúan dentro de Documentación + Narrativa; no existe ponderación separada.
 ```
@@ -510,30 +522,32 @@ La presentación y comunicación se evalúan dentro de Documentación + Narrativ
 ```
  CRONOGRAMA DETALLADO
 
-🟦 BLOQUE 1: PYTHON FUNDAMENTALS (Semanas 1-5)
+🟦 PERÍODO 1: PYTHON FUNDAMENTALS (Semanas 1-5)
 ├── Semana 1: Variables y tipos de datos
 ├── Semana 2: Estructuras de control
 ├── Semana 3: Funciones
 ├── Semana 4: Listas y diccionarios  
 ├── Semana 5: Pandas y numpy básico
-└──  Evaluación Bloque 1:
-    ├── Examen Canvas B1 (Semana 6)
-    └── Caso Práctico B1 (Semanas 6-7)
+└──  PRIMER PARCIAL (33.33%):
+    ├── Examen Canvas B1 (50% del parcial - Semana 6)
+    └── Caso Práctico B1 (50% del parcial - Semanas 6-7)
 
-🟩 BLOQUE 2: EXPLORACIÓN DE DATOS (Semanas 8-12)
+🟩 PERÍODO 2: EXPLORACIÓN DE DATOS (Semanas 8-12)
 ├── Semana 8: Introducción exploración
 ├── Semana 9: Tipos de datos deportivos
 ├── Semana 10: Estadística descriptiva
 ├── Semana 11: Visualización datos
 ├── Semana 12: Análisis e interpretación
-└──  Evaluación Bloque 2:
-    ├── Examen Canvas B2 (Semana 13)  
-    └── Caso Práctico B2 (Semanas 13-14)
+└──  SEGUNDO PARCIAL (33.33%):
+    ├── Examen Canvas B2 (50% del parcial - Semana 13)  
+    └── Caso Práctico B2 (50% del parcial - Semanas 13-14)
 
-🟨 BLOQUE 3: MODELADO PREDICTIVO (Semanas 15-16)
+🟨 PERÍODO 3: MODELADO PREDICTIVO (Semanas 15-16)
 ├── Semana 15: Desarrollo caso predictivo
 ├── Semana 16: Iteración final y comunicación integrada
-└──  Evaluaciones: Quiz ML (15%) + Caso Práctico (25%)
+└──  PERÍODO FINAL (33.33%):
+    ├── Examen Canvas B3 (50% del final)
+    └── Caso Práctico B3 (50% del final)
 ```
 
 ---
@@ -546,7 +560,7 @@ La presentación y comunicación se evalúan dentro de Documentación + Narrativ
 
 ```
  evaluaciones/canvas/
-├── banco-preguntas-bloque1.md (70 preguntas)
+├── banco-preguntas-periodo1.md (70 preguntas)
 │   ├── Variables y tipos (10 preguntas)
 │   ├── Estructuras control (10 preguntas)
 │   ├── Funciones (10 preguntas) 
@@ -554,7 +568,7 @@ La presentación y comunicación se evalúan dentro de Documentación + Narrativ
 │   ├── Pandas/numpy (15 preguntas)
 │   └── Aplicaciones prácticas (10 preguntas)
 │
-└── banco-preguntas-bloque2.md (75 preguntas)
+└── banco-preguntas-periodo2.md (75 preguntas)
     ├── Exploración datos (20 preguntas)
     ├── Tipos datos deportivos (20 preguntas)
     ├── Estadística descriptiva (15 preguntas)
@@ -573,7 +587,7 @@ La presentación y comunicación se evalúan dentro de Documentación + Narrativ
 
 ```
  evaluaciones/casos-practicos/
-├── caso-bloque1.md
+├── caso-periodo1.md
 │   ├── Contexto del problema
 │   ├── Datasets proporcionados
 │   ├── Tareas específicas requeridas
@@ -581,7 +595,7 @@ La presentación y comunicación se evalúan dentro de Documentación + Narrativ
 │   ├── Cronograma detallado
 │   └── Recursos de apoyo
 │
-└── caso-bloque2.md
+└── caso-periodo2.md
     ├── Sistema de scouting completo
     ├── Análisis con múltiples datasets
     ├── Dashboard interactivo
@@ -899,5 +913,5 @@ Para dudas sobre el curso o el material didáctico, contacta al equipo docente.
 2025-08-10: Fusión de rúbrica completa de Bloque 3 en evaluaciones/bloque-3/README.md y eliminación de rubricas/rubrica-completa.md para consolidar criterios en punto único.
 2025-08-10: Renombrado componente evaluativo de Bloque 3 a "Caso Práctico"; posteriormente fusionado contenido y eliminado `evaluaciones/bloque-3/caso-practico/README.md` para homologar con Bloques 1 y 2.
 2025-08-10: Consolidación final Bloque 3: eliminado directorio `evaluaciones/bloque-3/proyecto-integrador/` (contenido migrado a caso-practico/datasets y solucion-caso-practico).
-2025-08-10: Homologada estructura de `evaluaciones/bloque-3/` a formato de Bloques 1 y 2 (carpetas: caso-practico/, datasets/, solucion-caso-practico/; archivo de caso renombrado a caso-bloque3.md).
+2025-08-10: Homologada estructura de `evaluaciones/bloque-3/` a formato de Bloques 1 y 2 (carpetas: caso-practico/, datasets/, solucion-caso-practico/; archivo de caso renombrado a caso-periodo3.md).
 2025-08-10: Limpieza final Bloque 3: eliminación de archivos legacy y duplicados (README residual, carpeta proyecto-integrador y assets obsoletos) asegurando fuente única del caso práctico.

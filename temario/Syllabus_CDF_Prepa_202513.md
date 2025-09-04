@@ -114,26 +114,35 @@ Consolidación, reforzamiento y preparación conceptual para ML sin añadir comp
 
 ---
 
-## 8. Evaluación (Distribución 100 %)
+## 8. Evaluación (Sistema por Períodos)
 
-| Actividad | Descripción | Peso |
-|-----------|-------------|------|
-| 1 | Examen Canvas Bloque 1 | 15 % |
-| 2 | Caso Práctico Bloque 1 | 15 % |
-| 3 | Examen Canvas Bloque 2 | 15 % |
-| 4 | Caso Práctico Bloque 2 | 15 % |
-| 5 | Quiz / Canvas ML Básico Bloque 3 | 15 % |
-| 6 | Caso Práctico Bloque 3 (Proyecto Predictivo) | 25 % |
-| **Total** |  | **100 %** |
+### Estructura por Períodos Evaluativos
+| Período | Actividades | Peso del Período |
+|---------|-------------|------------------|
+| **Primer Parcial** | Act. 1 (Canvas P1) + Act. 2 (Caso P1) | 33.33% |
+| **Segundo Parcial** | Act. 3 (Canvas P2) + Act. 4 (Caso P2) | 33.33% |
+| **Período Final** | Act. 5 (Canvas P3) + Act. 6 (Caso P3) | 33.33% |
 
-### Desglose Caso Práctico Bloque 3 (25 %)
+### Distribución por Actividad
+| Actividad | Descripción | Peso en Período | Peso Total |
+|-----------|-------------|----------------|------------|
+| 1 | Examen Canvas Período 1 | 50% (1er Parcial) | 16.67% |
+| 2 | Caso Práctico Período 1 | 50% (1er Parcial) | 16.67% |
+| 3 | Examen Canvas Período 2 | 50% (2do Parcial) | 16.67% |
+| 4 | Caso Práctico Período 2 | 50% (2do Parcial) | 16.67% |
+| 5 | Examen Canvas Período 3 | 50% (Final) | 16.67% |
+| 6 | Caso Práctico Período 3 (Proyecto Predictivo) | 50% (Final) | 16.67% |
 
-| Componente | % del Caso | % del Curso |
-|------------|------------|-------------|
-| EDA | 25 % | 6.25 % |
-| Modelado ML Básico | 35 % | 8.75 % |
-| Visualización / Dashboard | 25 % | 6.25 % |
-| Documentación y Narrativa | 15 % | 3.75 % |
+**Calificación Semestral = (Primer Parcial + Segundo Parcial + Período Final) ÷ 3**
+
+### Desglose Caso Práctico Bloque 3 (50% del Período Final)
+
+| Componente | % del Caso | % del Período Final | % del Curso |
+|------------|------------|-------------------|------------|
+| EDA | 25 % | 12.5% | 4.17% |
+| Modelado ML Básico | 35 % | 17.5% | 5.83% |
+| Visualización / Dashboard | 25 % | 12.5% | 4.17% |
+| Documentación y Narrativa | 15 % | 7.5% | 2.5% |
 
 ---
 

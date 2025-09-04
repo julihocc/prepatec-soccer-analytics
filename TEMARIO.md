@@ -46,7 +46,7 @@ Al finalizar el curso el estudiante será capaz de:
 - Análisis y Visualización de Datos  
 - Razonamiento Estadístico Descriptivo  
 - Comunicación de Resultados  
-- Colaboración (Bloques 1 y 2)  
+- Colaboración (Períodos 1 y 2)  
 - Ética e Integridad Académica
 
 ---
@@ -66,7 +66,7 @@ Al finalizar el curso el estudiante será capaz de:
 
 ## 6. Estructura Temporal (Bloques y Semanas)
 
-### Bloque 1 (Semanas 1-5) Fundamentos de Python
+### Período 1 (Semanas 1-5) Fundamentos de Python
 
 | Semana | Tema Central | Enfoque Práctico |
 |--------|--------------|------------------|
@@ -76,7 +76,7 @@ Al finalizar el curso el estudiante será capaz de:
 | 4 | Funciones y módulos simples | Cálculos de rendimiento reutilizables |
 | 5 | Estructuras de datos avanzadas | Preparación para análisis con pandas |
 
-### Bloque 2 (Semanas 6-10) Exploración y Análisis Descriptivo
+### Período 2 (Semanas 6-10) Exploración y Análisis Descriptivo
 
 | Semana | Tema Central | Enfoque Práctico |
 |--------|--------------|------------------|
@@ -90,7 +90,7 @@ Al finalizar el curso el estudiante será capaz de:
 
 Consolidación, reforzamiento y preparación conceptual para ML sin añadir complejidad técnica adicional.
 
-### Bloque 3 (Semanas 13-16) Introducción al Modelado Predictivo
+### Período 3 (Semanas 13-16) Introducción al Modelado Predictivo
 
 | Semana | Tema Central | Enfoque Práctico |
 |--------|--------------|------------------|
@@ -106,8 +106,8 @@ Consolidación, reforzamiento y preparación conceptual para ML sin añadir comp
 | Hito | Semana | Descripción |
 |------|--------|-------------|
 | Inicio de curso | 1 | Introducción y setup |
-| Cierre Bloque 1 | 6 | Examen Canvas + Caso Bloque 1 |
-| Cierre Bloque 2 | 13 | Examen Canvas + Caso Bloque 2 |
+| Cierre Período 1 | 6 | Examen Canvas + Caso Período 1 |
+| Cierre Período 2 | 13 | Examen Canvas + Caso Período 2 |
 | Quiz ML Básico | 15 | Verificación conceptual previa al caso final |
 | Entrega Caso Final | 16 | Notebook completo y documentación |
 | Fin de curso | 16 | Síntesis y retroalimentación global |
@@ -135,7 +135,7 @@ Consolidación, reforzamiento y preparación conceptual para ML sin añadir comp
 
 **Calificación Semestral = (Primer Parcial + Segundo Parcial + Período Final) ÷ 3**
 
-### Desglose Caso Práctico Bloque 3 (50% del Período Final)
+### Desglose Caso Práctico Período 3 (50% del Período Final)
 
 | Componente | % del Caso | % del Período Final | % del Curso |
 |------------|------------|-------------------|------------|
@@ -177,7 +177,7 @@ Consolidación, reforzamiento y preparación conceptual para ML sin añadir comp
 | Entregas | Hora límite estándar 22:00; después (si se acepta) máximo sobre 90 hasta 23:59. |
 | Integridad | Declarar cualquier apoyo de IA; prohibido delegar análisis e interpretación. |
 | Revisión | Retroalimentación formativa en avances; solicitudes dentro de plazos oficiales. |
-| Colaboración | Equipos 3-4 (Bloques 1 y 2); roles rotativos y resolución temprana de conflictos. |
+| Colaboración | Equipos 3-4 (Períodos 1 y 2); roles rotativos y resolución temprana de conflictos. |
 | Uso de Datos | Datasets provistos; documentar transformaciones y supuestos. |
 
 ---
@@ -189,7 +189,7 @@ Consolidación, reforzamiento y preparación conceptual para ML sin añadir comp
 - Distribución cognitiva objetivo: [R] y [C] predominantes al inicio; incremento de [A] y [S] progresivo.  
 - Formato: 70 % opción múltiple, 30 % numéricas.
 
-### Casos Prácticos Bloques 1 y 2
+### Casos Prácticos Períodos 1 y 2
 
 | Criterio | Peso |
 |----------|------|
@@ -197,7 +197,7 @@ Consolidación, reforzamiento y preparación conceptual para ML sin añadir comp
 | Trabajo Colaborativo | 30 % |
 | Comunicación | 30 % |
 
-### Caso Bloque 3 (Ver Desglose en Sección 8)
+### Caso Período 3 (Ver Desglose en Sección 8)
 
 Comunicación integrada en Documentación y Narrativa.
 
@@ -216,7 +216,7 @@ Comunicación integrada en Documentación y Narrativa.
 | Momento | Tipo | Objetivo |
 |---------|------|----------|
 | Post Canvas | Automática por tema | Identificar refuerzos inmediatos |
-| Avances Caso (B1/B2) | Formativa escrita | Corregir rumbo técnico y conceptual |
+| Avances Caso (P1/P2) | Formativa escrita | Corregir rumbo técnico y conceptual |
 | Semana 15 Checkpoint | Lista de mejoras | Asegurar completitud antes de cierre |
 | Retro final | Sumativa + recomendaciones | Proyección a cursos avanzados |
 

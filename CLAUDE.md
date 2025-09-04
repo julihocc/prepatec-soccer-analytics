@@ -127,7 +127,7 @@ contenido/
 │   ├── semana-1/      # Variables, data types, basic operations
 │   ├── semana-2/      # Control structures (if/else, loops)
 │   ├── semana-3/      # Functions and modules
-│   ├── semana-4/      # Pandas and NumPy introduction
+│   ├── semana-4/      # Data structures (lists, dictionaries)
 │   └── semana-5/      # Basic data visualization
 ├── bloque-2/          # Data exploration (weeks 6-10)
 │   ├── semana-6/      # Introduction to data exploration

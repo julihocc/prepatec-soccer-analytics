@@ -57,9 +57,9 @@ Este curso te introduce al fascinante mundo de la ciencia de datos aplicada al f
 
 #### Semana 4: ¿Cómo manejan datos masivos los clubes de fútbol profesional?
 
-- **Notebook:** `pandas-numpy-introduccion.ipynb`
+- **Notebook:** `estructuras-datos-avanzadas.ipynb`
 - **Pregunta motivadora:** ¿Cómo gestiona Manchester City información de 25 jugadores en 38 partidos de liga?
-- **Sesión 1 (50 min):** ¿Qué son las hojas de cálculo inteligentes? - Introducción a pandas y DataFrames
+- **Sesión 1 (50 min):** ¿Cómo organizamos datos complejos sin pandas? - Listas y diccionarios anidados
 - **Sesión 2 (50 min):** ¿Cómo calculamos estadísticas como los profesionales? - Operaciones básicas con datos
 - **Sesión 3 (50 min):** ¿Cómo filtramos información relevante eficientemente? - Consultas y selecciones de datos
 - **Aplicación:** Análisis de plantilla completa usando herramientas profesionales
@@ -168,7 +168,7 @@ Ver [`herramientas/txt-to-qti/`](herramientas/txt-to-qti/) para más detalles.
 
 ```python
 # Para manipular datos como un profesional
-import pandas as pd
+# import pandas as pd  # Se introduce en Bloque 2
 import numpy as np
 
 # Para crear visualizaciones impresionantes
@@ -213,7 +213,7 @@ print("¡Tu entorno de análisis deportivo está listo!")
 - **Semana 1**: `configuracion-fundamentos.ipynb` - Variables, tipos de datos y estructuras básicas con analogías futbolísticas
 - **Semana 2**: `estructuras-control.ipynb` - Bucles y condicionales aplicados a gestión de equipos
 - **Semana 3**: `funciones-modulos.ipynb` - Herramientas reutilizables para análisis deportivo
-- **Semana 4**: `pandas-numpy-introduccion.ipynb` - Manejo de datos masivos como clubes profesionales
+- **Semana 4**: `estructuras-datos-avanzadas.ipynb` - Preparación para análisis de datos
 - **Semana 5**: `visualizacion-basica.ipynb` - Comunicación visual de insights deportivos
 
 #### **Bloque 2: Explorando Datos Deportivos con Python** ✅
@@ -270,7 +270,7 @@ print("¡Tu entorno de análisis deportivo está listo!")
 - Completa `semana-1/configuracion-fundamentos.ipynb`
 - Aprende estructuras de datos con `semana-2/estructuras-control.ipynb`
 - Domina funciones con `semana-3/funciones-modulos.ipynb`
-- Familiarízate con pandas/numpy en `semana-4/pandas-numpy-introduccion.ipynb`
+- Practica estructuras de datos en `semana-4/estructuras-datos-avanzadas.ipynb`
 - Crea tus primeros gráficos con `semana-5/visualizacion-basica.ipynb`
 
 ### 2. **Continúa con el Bloque 2: Análisis de Datos Deportivos**
@@ -413,7 +413,7 @@ El curso se evalúa en **tres períodos de igual peso (33.33% cada uno)**:
 - Estructuras de control (20%) 
 - Funciones y parámetros (20%)
 - Listas y diccionarios (20%)
-- Pandas y numpy básico (20%)
+- Estructuras de datos avanzadas (20%)
 ```
 
 #### Examen Canvas Período 2 (50% del Segundo Parcial = 16.67% total)
@@ -527,7 +527,7 @@ La presentación y comunicación se evalúan dentro de Documentación + Narrativ
 ├── Semana 2: Estructuras de control
 ├── Semana 3: Funciones
 ├── Semana 4: Listas y diccionarios  
-├── Semana 5: Pandas y numpy básico
+├── Semana 5: Visualización básica
 └──  PRIMER PARCIAL (33.33%):
     ├── Examen Canvas P1 (50% del parcial - Semana 6)
     └── Caso Práctico P1 (50% del parcial - Semanas 6-7)
@@ -565,7 +565,7 @@ La presentación y comunicación se evalúan dentro de Documentación + Narrativ
 │   ├── Estructuras control (10 preguntas)
 │   ├── Funciones (10 preguntas) 
 │   ├── Listas/diccionarios (15 preguntas)
-│   ├── Pandas/numpy (15 preguntas)
+│   ├── Estructuras de datos (15 preguntas)
 │   └── Aplicaciones prácticas (10 preguntas)
 │
 └── banco-preguntas-periodo2.md (75 preguntas)
@@ -751,7 +751,7 @@ La presentación y comunicación se evalúan dentro de Documentación + Narrativ
 - Completa `semana-1/configuracion-fundamentos.ipynb`
 - Aprende estructuras de datos con `semana-2/estructuras-control.ipynb`
 - Domina funciones con `semana-3/funciones-modulos.ipynb`
-- Familiarízate con pandas/numpy en `semana-4/pandas-numpy-introduccion.ipynb`
+- Practica estructuras de datos en `semana-4/estructuras-datos-avanzadas.ipynb`
 - Crea tus primeros gráficos con `semana-5/visualizacion-basica.ipynb`
 
 ### 2. **Continúa con el Bloque 2: Análisis de Datos Deportivos**

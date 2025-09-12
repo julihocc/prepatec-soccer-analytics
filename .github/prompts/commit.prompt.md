@@ -2,4 +2,8 @@
 mode: agent
 ---
 
-Commit changes in suitable chunks to maintain a clean git history
+---
+mode: agent
+---
+
+Commit changes in suitable chunks to maintain a clean history.

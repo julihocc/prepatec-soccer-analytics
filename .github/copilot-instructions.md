@@ -3,8 +3,8 @@
 **Proyecto**: PS5005 Programación Básica 1 - Ciencia de Datos aplicada al Fútbol  
 **Institución**: Prepa Tec  
 **Unidad de Formación**: PS5005 Programación Básica 1  
-**Versión**: 5.4.0+ (Arquitectura Modular Completada)  
-**Branch Actual**: `splitting-evaluation-concerns`  
+**Versión**: 5.6.0 (Prompt System Reorganized & Documentation Updated)  
+**Branch Actual**: `main`  
 **Autor**: Juliho Castillo Colmenares  
 **Email**: julihocc@tec.mx  
 **Idioma**: Español completo (código, comentarios, documentación)  
@@ -12,7 +12,7 @@
 **Metodología**: Enfoque reflexivo + 3 sesiones de 50 minutos por semana
 **Stack**: Python + Jupyter + txttoqti (externa) + herramientas modulares
 
-## ARQUITECTURA MODULAR (v5.4.0+)
+## ARQUITECTURA MODULAR (v5.6.0)
 
 ### Repositorios Separados
 - **Principal**: `prepatec-soccer-analytics` - Contenido educativo y herramientas

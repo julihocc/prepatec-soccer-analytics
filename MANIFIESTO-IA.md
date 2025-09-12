@@ -4,8 +4,8 @@
 **Institución:** Prepa Tec  
 **Unidad de Formación:** PS5005 Programación Básica 1  
 **Nivel:** Preparatoria (15-18 años)  
-**Versión:** v1.1 (Septiembre 2025) - Actualizado con Arquitectura Modular v5.4.0+  
-**Branch Actual:** `splitting-evaluation-concerns`  
+**Versión:** v1.2 (Septiembre 2025) - Actualizado con v5.6.0 Prompt System Reorganized  
+**Branch Actual:** `main`  
 **Autor:** Juliho Castillo Colmenares  
 **Email:** julihocc@tec.mx  
 

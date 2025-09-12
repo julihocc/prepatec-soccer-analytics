@@ -6,7 +6,7 @@
 **Institución:** Prepa Tec  
 **Autor:** Juliho Castillo Colmenares  
 **Email:** julihocc@tec.mx  
-**Versión:** 5.0.0  
+**Versión:** 5.6.0  
 **Nivel:** Preparatoria/Bachillerato (15-18 años)  
 **Duración:** 15 semanas (3 bloques de 5 semanas cada uno)  
 **Modalidad:** 3 sesiones de 50 minutos por semana  

@@ -1,3 +1,6 @@
 [submodule "evaluaciones"]
 	path = evaluaciones
 	url = https://github.com/julihocc/prepatec-soccer-analytics-evaluations.git
+[submodule "herramientas/tec-innovacion-educativa"]
+	path = herramientas/tec-innovacion-educativa
+	url = https://github.com/julihocc/tec-innovacion-educativa

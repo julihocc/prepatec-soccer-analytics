@@ -5,6 +5,43 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere al [Versionado Semántico](https://semver.org/lang/es/).
 
+## 5.6.0 (2025-09-18)
+
+### Agregado
+
+- Artículo Typst `innovacion-educativa-copilot.typ` sobre integración de IA y flujo docente en submódulo `tec-innovacion-educativa`
+- Estructura `agentic-development-for-didactics/` para alojar material de innovación educativa
+
+### Corregido
+
+- Reparación completa de submódulo `tec-innovacion-educativa` tras conflicto de tipo (directorio vs submódulo) y artefactos `~Updated upstream`
+- Eliminación de referencia Git corrupta `refs/tags/v5.6.0` con puntero nulo (000000...) que impedía `git fetch --recurse-submodules`
+- Limpieza de objeto vacío corrupto y revalidación de integridad (`git fsck` limpio)
+
+### Cambiado
+
+- Actualización de URL remoto principal a `https://github.com/julihocc/prepatec-soccer-analytics.git`
+- Reempaquetado del repositorio (`git gc --aggressive`) para optimizar almacenamiento tras limpieza
+
+### Infraestructura
+
+- Verificación y saneamiento profundo de refs y objetos antes de recrear tag
+- Recreación anotada de tag `v5.6.0` apuntando al commit estable `34f5fe2` (actualización de puntero submódulo incluida)
+
+### Validado
+
+- `git fetch --prune --tags --recurse-submodules` sin errores post-limpieza
+- `git fsck` sin referencias inválidas ni objetos colgantes críticos
+- Submódulos `evaluaciones` y `tec-innovacion-educativa` sincronizados correctamente
+
+### Notas
+
+- Si se requiere reproducir el procedimiento de saneamiento: respaldar `refs/` y `packed-refs`, eliminar ref corrupta, ejecutar `git gc`, recrear tag, y validar con `git fsck`.
+
+## 5.5.0 (2025-09-02)
+
+_Entrada consolidada en versiones previas; ver historial si se requiere el detalle exacto._
+
 ## 5.3.0 (2025-09-02)
 
 ### Agregado

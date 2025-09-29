@@ -4,3 +4,6 @@
 [submodule "tec-innovacion-educativa"]
 	path = tec-innovacion-educativa
 	url = https://github.com/julihocc/tec-innovacion-educativa
+[submodule "contenido"]
+	path = contenido
+	url = https://github.com/julihocc/prepatec-soccer-analytics-lessons.git

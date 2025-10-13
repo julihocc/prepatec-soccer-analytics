@@ -22,7 +22,6 @@ __pycache__/
 
 # Jupyter
 *.ipynb_checkpoints
-*.ipynb
 
 # IDE and OS
 .DS_Store

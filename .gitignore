@@ -34,3 +34,9 @@ build/
 txttoqti/
 *temp*/
 *tmp*/
+
+.github/
+.idea/
+.claude/
+
+CLAUDE.md

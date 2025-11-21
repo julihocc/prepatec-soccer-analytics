@@ -1,8 +1,11 @@
 [project]
-name = "SPORT-DATA-ANALYTICS"
+name = "ciencia-de-datos-para-el-analisis-deportivo"
 version = "0.1.0"
-description = "Add your description here"
+description = "Repositorio para el curso de Ciencia de Datos para el Análisis Deportivo"
 readme = "README.md"
+authors = [
+    { name = "Juliho Castillo Colmenares", email = "julihocc@tec.mx" }
+]
 requires-python = ">=3.10"
 dependencies = [
     "ipykernel>=7.0.1",

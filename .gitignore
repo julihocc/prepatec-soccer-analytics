@@ -38,8 +38,8 @@ txttoqti/
 .github/
 .idea/
 .claude/
-
 CLAUDE.md
+GEMINI.md
 
 __pycache__/
 *.pyc
